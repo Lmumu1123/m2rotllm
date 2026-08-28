@@ -207,3 +207,24 @@ marimo/_lsp/
 __marimo__/
 
 .DS_STORE
+
+# --- m2rotllm project-specific ---
+# Local symlinks to large external datasets (do not commit)
+/data
+/weights
+/qwen_weights
+/mbhm_dataset
+/logs_data1
+/src
+
+# Large raw sensor data
+*.bin
+!datasets/**/*.bin
+
+# Alignment test outputs
+cross_modal_alignment/_test_align_out/
+cross_modal_alignment/_align_out/
+cross_modal_alignment/_align_out_full/
+
+# Training logs
+logs/

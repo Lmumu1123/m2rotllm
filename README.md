@@ -1,3 +1,34 @@
+# m2rotllm / RotLLM
+
+> **Repository**: [https://github.com/Lmumu1123/m2rotllm](https://github.com/Lmumu1123/m2rotllm)
+
+This repository extends the original [RotLLM](https://github.com/SIA-IDE/RotLLM) framework with **cross-modal time alignment** between 77GHz mmWave radar IQ data and contact tactile sensor data, enabling multimodal fusion for rotating machinery health management.
+
+## Quick Start: Cross-Modal Alignment
+
+```bash
+conda create -n rotllm python=3.12 -y && conda activate rotllm
+pip install -r requirements.txt
+
+python cross_modal_alignment/align_cross_modal.py \
+  --radar_bin /path/to/radar.bin \
+  --tactile_csv /path/to/data_0.csv \
+  --out_dir ./cross_modal_alignment/_align_out
+
+python cross_modal_alignment/tests/run_tests.py
+```
+
+## Documentation
+
+| Document | Description |
+|----------|-------------|
+| [Conversation Summary](docs/CONVERSATION_SUMMARY.md) | Full project discussion and design decisions |
+| [Reproduction Guide](docs/REPRODUCTION_GUIDE.md) | Step-by-step setup on a new server |
+| [Algorithm](docs/CROSS_MODAL_ALIGNMENT_ALGORITHM.md) | Cross-modal alignment algorithm details |
+| [Testing](docs/TESTING_GUIDE.md) | Test cases and validation procedures |
+
+---
+
 # RotLLM: A Unified Rotating Machinery Health Management Framework
 
 This repository contains the core implementation for the paper: **"A Unified Rotating Machinery Health Management Framework Leveraging Large Language Models for Diverse Components, Conditions, and Tasks"**.
@@ -22,6 +53,11 @@ The core innovation of RotLLM is the deep semantic alignment between numerical v
 
 ```text
 /
+├── cross_modal_alignment/    # NEW: mmWave radar + tactile sensor time alignment
+│   ├── align_cross_modal.py  # End-to-end alignment CLI
+│   ├── dtw_alignment.py      # Constrained DTW + cross-correlation
+│   └── tests/run_tests.py    # Unit & integration tests
+├── docs/                     # Project documentation (Chinese)
 ├── code/
 │   ├── dataset_constructor/  # Scripts to build datasets from public sources
 │   ├── pre_train/            # Code for Stage 1: Encoder pre-training
