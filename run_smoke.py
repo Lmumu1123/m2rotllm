@@ -16,14 +16,14 @@ load_dotenv(".env")
 import torch
 from torch.utils.data import DataLoader
 
-from src.fine_tune.convert_weights import VibrationProjection
-from src.models.SFN import SpecFoldNet, VibrationEncoder
-from src.pre_train.dataloader import (
+from code.fine_tune.convert_weights import VibrationProjection
+from code.models.SFN import SpecFoldNet, VibrationEncoder
+from code.pre_train.dataloader import (
     VibrationDataset,
     get_filtered_sample_list,
     split_file_list,
 )
-from src.pre_train.main import LtModel
+from code.pre_train.main import LtModel
 
 
 def main() -> None:

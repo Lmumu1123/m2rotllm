@@ -2,7 +2,7 @@
 
 Usage (after data.hdf5 is downloaded):
   conda activate rotllm
-  cd /home/huangyating/RotLLM
+  cd /path/to/m2rotllm
   CUDA_VISIBLE_DEVICES=0 python run_mbhm_pretrain.py --epochs 5
 """
 from __future__ import annotations
@@ -19,13 +19,12 @@ from dotenv import dotenv_values, load_dotenv
 
 load_dotenv(os.path.join(ROOT, ".env"))
 
-# Point RotLLM data paths at MBHM (prefer /data1/datasets)
+# Point RotLLM data paths at MBHM from .env or the command environment.
 _CFG = dict(dotenv_values(os.path.join(ROOT, ".env")))
-_MBHM = _CFG.get("MBHM_DIR") or (
-    "/data1/datasets/RotLLM/mbhm_dataset"
-    if os.path.isdir("/data1/datasets/RotLLM/mbhm_dataset")
-    else os.path.join(ROOT, "mbhm_dataset")
-)
+for _key in list(_CFG):
+    if os.environ.get(_key) is not None:
+        _CFG[_key] = os.environ[_key]
+_MBHM = _CFG.get("MBHM_DIR") or os.path.join(ROOT, "mbhm_dataset")
 _CFG["DATASET_METADATA_PATH"] = _CFG.get("MBHM_METADATA_PATH") or os.path.join(
     _MBHM, "metadata.sqlite"
 )
@@ -50,8 +49,8 @@ from torch.utils.data import DataLoader, Dataset
 import lightning as L
 from lightning.pytorch.callbacks import EarlyStopping, ModelCheckpoint
 
-from src.models.SFN import SpecFoldNet
-from src.pre_train.dataloader import get_filtered_sample_list, split_file_list
+from code.models.SFN import SpecFoldNet
+from code.pre_train.dataloader import get_filtered_sample_list, split_file_list
 
 
 class MBHMVibrationDataset(Dataset):
@@ -62,13 +61,13 @@ class MBHMVibrationDataset(Dataset):
         path = _CFG["DCN_DATASET_PATH"]
         if snr is not None:
             path = path.replace("data.hdf5", f"data_noise_{snr}.hdf5")
-        f = h5pickle.File(path, "r")
-        if "data" in f:
-            self.data = f["data"]
-        elif "vibration" in f:
-            self.data = f["vibration"]
+        self._file = h5pickle.File(path, "r")
+        if "data" in self._file:
+            self.data = self._file["data"]
+        elif "vibration" in self._file:
+            self.data = self._file["vibration"]
         else:
-            raise KeyError(f"No data/vibration in {path}: {list(f.keys())}")
+            raise KeyError(f"No data/vibration in {path}: {list(self._file.keys())}")
 
     def __len__(self):
         return len(self.info)
@@ -139,6 +138,7 @@ def main():
     ap.add_argument("--num-workers", type=int, default=4)
     ap.add_argument("--max-samples", type=int, default=0, help="0 = all")
     ap.add_argument("--eval-only", action="store_true")
+    ap.add_argument("--seed", type=int, default=42)
     ap.add_argument(
         "--init-encoder",
         default=os.path.join(ROOT, "weights", "encoder_weights.pth"),
@@ -146,6 +146,9 @@ def main():
     )
     ap.add_argument("--no-init-encoder", action="store_true")
     args = ap.parse_args()
+
+    L.seed_everything(args.seed, workers=True)
+    torch.set_float32_matmul_precision("high")
 
     data_path = _CFG["DCN_DATASET_PATH"]
     if not os.path.exists(data_path):

@@ -4,7 +4,7 @@ from dotenv import dotenv_values
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch.nn as nn
 import h5pickle
-from src.fine_tune.convert_weights import VibrationEncoder, VibrationProjection
+from code.fine_tune.convert_weights import VibrationEncoder, VibrationProjection
 
 
 def get_obj_loc(token_tensor: torch.Tensor):

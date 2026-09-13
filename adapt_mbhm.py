@@ -7,18 +7,19 @@ MBHM differences vs RotLLM LMR:
 """
 from __future__ import annotations
 
+import argparse
 import os
 import sqlite3
 
+from dotenv import dotenv_values, load_dotenv
 import pandas as pd
 
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-MBHM_DIR = os.environ.get(
-    "MBHM_DIR",
-    "/data1/datasets/RotLLM/mbhm_dataset"
-    if os.path.isdir("/data1/datasets/RotLLM/mbhm_dataset")
-    else os.path.join(ROOT, "mbhm_dataset"),
+load_dotenv(os.path.join(ROOT, ".env"))
+_CFG = dotenv_values(os.path.join(ROOT, ".env"))
+MBHM_DIR = os.environ.get("MBHM_DIR") or _CFG.get("MBHM_DIR") or os.path.join(
+    ROOT, "mbhm_dataset"
 )
 
 
@@ -28,8 +29,15 @@ def parquet_to_sqlite(
 ) -> str:
     parquet_path = parquet_path or os.path.join(MBHM_DIR, "metadata.parquet")
     sqlite_path = sqlite_path or os.path.join(MBHM_DIR, "metadata.sqlite")
+    if not os.path.exists(parquet_path):
+        raise FileNotFoundError(parquet_path)
     df = pd.read_parquet(parquet_path)
+    required = {"file_id", "condition_id", "label", "dataset", "bearing_code", "channel", "rpm", "load"}
+    missing = sorted(required.difference(df.columns))
+    if missing:
+        raise ValueError(f"MBHM metadata is missing columns: {missing}")
 
+    os.makedirs(os.path.dirname(os.path.abspath(sqlite_path)), exist_ok=True)
     if os.path.exists(sqlite_path):
         os.remove(sqlite_path)
     conn = sqlite3.connect(sqlite_path)
@@ -145,9 +153,21 @@ def link_vibration_as_data(src_hdf5: str | None = None, dst_hdf5: str | None = N
 
 
 if __name__ == "__main__":
-    parquet_to_sqlite()
-    hdf5 = os.path.join(MBHM_DIR, "data.hdf5")
+    ap = argparse.ArgumentParser(description="Adapt MBHM metadata/HDF5 for RotLLM.")
+    ap.add_argument("--mbhm-dir", default=MBHM_DIR,
+                    help="Directory containing metadata.parquet and data.hdf5")
+    ap.add_argument("--parquet-path", default=None)
+    ap.add_argument("--sqlite-path", default=None)
+    ap.add_argument("--hdf5-path", default=None)
+    ap.add_argument("--wrapper-path", default=None)
+    args = ap.parse_args()
+    MBHM_DIR = os.path.abspath(args.mbhm_dir)
+    parquet_to_sqlite(
+        parquet_path=args.parquet_path,
+        sqlite_path=args.sqlite_path,
+    )
+    hdf5 = args.hdf5_path or os.path.join(MBHM_DIR, "data.hdf5")
     if os.path.exists(hdf5):
-        link_vibration_as_data()
+        link_vibration_as_data(src_hdf5=hdf5, dst_hdf5=args.wrapper_path)
     else:
         print(f"skip hdf5 wrapper; missing {hdf5}")

@@ -11,7 +11,9 @@ def _zscore(x: np.ndarray, eps: float = 1e-8) -> np.ndarray:
 
 
 def derivative(x: np.ndarray) -> np.ndarray:
-    """First-order discrete derivative with same length (pads 0 at the end)."""
+    """
+    First-order discrete derivative with same length (pads 0 at the end).
+    """
     x = np.asarray(x, dtype=np.float32)
     d = np.diff(x, prepend=x[0])
     return d.astype(np.float32)
@@ -29,6 +31,10 @@ def constrained_dtw_path(
 
     Cost uses both values and derivatives:
       C(i,j) = alpha*(x[i]-y[j])^2 + (1-alpha)*(dx[i]-dy[j])^2
+
+    Returns:
+      path_x: indices in x along the warping path
+      path_y: indices in y along the warping path
     """
     x = _zscore(x)
     y = _zscore(y)
@@ -39,13 +45,17 @@ def constrained_dtw_path(
     m = y.shape[0]
     w = int(max(0, w))
 
+    # DP arrays for banded computation.
+    # We store only the band columns for each i.
     inf = np.float32(1e30)
     D = np.full((n, m), inf, dtype=np.float32)
-    ptr = np.full((n, m), -1, dtype=np.int8)
+    ptr = np.full((n, m), -1, dtype=np.int8)  # 0:diag, 1:up, 2:left
 
     D[0, 0] = 0.0
 
-    for i in range(n):
+    i_start = 0
+    i_end = n
+    for i in range(i_start, i_end):
         jmin = max(0, i - w)
         jmax = min(m - 1, i + w)
         for j in range(jmin, jmax + 1):
@@ -58,16 +68,19 @@ def constrained_dtw_path(
 
             best = inf
             best_ptr = -1
+            # diag
             if i > 0 and j > 0:
                 v = D[i - 1, j - 1] + cost
                 if v < best:
                     best = v
                     best_ptr = 0
+            # up
             if i > 0:
                 v = D[i - 1, j] + cost
                 if v < best:
                     best = v
                     best_ptr = 1
+            # left
             if j > 0:
                 v = D[i, j - 1] + cost
                 if v < best:
@@ -77,6 +90,7 @@ def constrained_dtw_path(
             D[i, j] = best
             ptr[i, j] = best_ptr
 
+    # backtrack
     i = n - 1
     j = m - 1
     if not np.isfinite(D[i, j]) or D[i, j] >= inf / 10:
@@ -106,7 +120,14 @@ def constrained_dtw_path(
 
 
 def best_lag_correlation(x: np.ndarray, y: np.ndarray, *, max_lag: int) -> int:
-    """Find lag L on y that maximizes dot-product correlation with x."""
+    """
+    Find lag L (on y) that maximizes correlation with x.
+    Convention:
+      overlap: x[i] with y[i+L], when L>=0
+      for L<0: x[i-L] with y[i]
+    Returns:
+      best L in [-max_lag, max_lag]
+    """
     x = _zscore(x)
     y = _zscore(y)
     n = x.shape[0]
@@ -116,17 +137,23 @@ def best_lag_correlation(x: np.ndarray, y: np.ndarray, *, max_lag: int) -> int:
 
     for L in range(-max_lag, max_lag + 1):
         if L >= 0:
+            # y is shifted forward relative to x
+            i0 = 0
             i1 = min(n, m - L)
             j0 = L
+            j1 = L + i1
             if i1 <= 5:
                 continue
-            score = float(np.dot(x[:i1], y[j0 : j0 + i1]))
+            score = float(np.dot(x[i0:i1], y[j0:j1]))
         else:
+            # L < 0, y is shifted backward
+            j0 = 0
             j1 = min(m, n + L)
             i0 = -L
+            i1 = i0 + j1
             if j1 <= 5:
                 continue
-            score = float(np.dot(x[i0 : i0 + j1], y[:j1]))
+            score = float(np.dot(x[i0:i1], y[j0:j1]))
 
         if score > best_score:
             best_score = score

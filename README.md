@@ -1,119 +1,99 @@
 # m2rotllm / RotLLM
 
-> **Repository**: [https://github.com/Lmumu1123/m2rotllm](https://github.com/Lmumu1123/m2rotllm)
+This repository contains the RotLLM rotating-machinery health-management code and the reproducible experiments added during the MBHM and mmWave–tactile alignment work.
 
-This repository extends the original [RotLLM](https://github.com/SIA-IDE/RotLLM) framework with **cross-modal time alignment** between 77GHz mmWave radar IQ data and contact tactile sensor data, enabling multimodal fusion for rotating machinery health management.
+The repository deliberately excludes raw sensor files, MBHM HDF5 data, model checkpoints, Qwen weights, and generated logs. Put those assets on the target server and configure their paths in `.env`.
 
-## Quick Start: Cross-Modal Alignment
-
-```bash
-conda create -n rotllm python=3.12 -y && conda activate rotllm
-pip install -r requirements.txt
-
-python cross_modal_alignment/align_cross_modal.py \
-  --radar_bin /path/to/radar.bin \
-  --tactile_csv /path/to/data_0.csv \
-  --out_dir ./cross_modal_alignment/_align_out
-
-python cross_modal_alignment/tests/run_tests.py
-```
-
-## Documentation
-
-| Document | Description |
-|----------|-------------|
-| [Conversation Summary](docs/CONVERSATION_SUMMARY.md) | Full project discussion and design decisions |
-| [Reproduction Guide](docs/REPRODUCTION_GUIDE.md) | Step-by-step setup on a new server |
-| [Algorithm](docs/CROSS_MODAL_ALIGNMENT_ALGORITHM.md) | Cross-modal alignment algorithm details |
-| [Testing](docs/TESTING_GUIDE.md) | Test cases and validation procedures |
-
----
-
-# RotLLM: A Unified Rotating Machinery Health Management Framework
-
-This repository contains the core implementation for the paper: **"A Unified Rotating Machinery Health Management Framework Leveraging Large Language Models for Diverse Components, Conditions, and Tasks"**.
-
-## ⚠️ Note
-
-The content herein represents the core implementation of the methods described in our paper. Please note that the code has been extracted directly from our research drafts. While functional, it may require further debugging and refactoring for robust execution. We are actively working on adding comprehensive comments and improving the code's readability.
-
-## 1. Abstract
-
-This study introduces the Rotating Machinery Large Language Model (RotLLM), a unified framework for rotating machinery health management that integrates deep learning with large language models (LLMs) to address diverse operational conditions, components, and health management tasks. RotLLM employs a novel Spectral Folding Network (SFN) to transform the vibration spectrum into a unified feature space that preserves essential health state information. A dedicated projection layer then maps these features into the semantic domain of an LLM. The framework is trained using a three-stage strategy: first, pre-training the encoder on the Large-scale Multimodal Rotating Machinery (LMR) dataset; second, initializing the projection layer with textual health state labels; and finally, fine-tuning using parameter-efficient Low-Rank Adaptation (LoRA) with a high-quality corpus for various health management tasks. Experimental evaluations demonstrate that RotLLM achieves state-of-the-art performance in fault classification, maintains strong robustness under noisy conditions, and delivers rapid multi-task inference with minimal computational overhead.
-
-## 2. Framework Overview
-
-The core innovation of RotLLM is the deep semantic alignment between numerical vibration signals and the textual domain of an LLM. This is achieved through a three-stage training strategy:
-
-1. **Encoder Pre-training:** A Spectral Folding Network (SFN) is pre-trained on a vast collection of vibration signals to learn a robust and generalized representation of machinery health states.
-2. **Projection Layer Initialization:** A projection layer is initialized to map the SFN's feature output into the LLM's embedding space. This is seeded using text embeddings of known health state labels, bridging the modal gap.
-3. **Instruction Fine-Tuning:** The entire model (SFN encoder, projection layer, and LLM) is jointly fine-tuned end-to-end using a high-quality, multi-modal corpus. This stage uses Parameter-Efficient Fine-Tuning (PEFT) with LoRA to efficiently adapt the LLM to generate precise and context-aware responses for various PHM tasks.
-
-## 3. Repository Structure
+## Repository layout
 
 ```text
-/
-├── cross_modal_alignment/    # NEW: mmWave radar + tactile sensor time alignment
-│   ├── align_cross_modal.py  # End-to-end alignment CLI
-│   ├── dtw_alignment.py      # Constrained DTW + cross-correlation
-│   └── tests/run_tests.py    # Unit & integration tests
-├── docs/                     # Project documentation (Chinese)
-├── code/
-│   ├── dataset_constructor/  # Scripts to build datasets from public sources
-│   ├── pre_train/            # Code for Stage 1: Encoder pre-training
-│   ├── fine_tune/            # Code for Stage 2 & 3: Initialization and Instruction fine-tuning
-│   └── models/               # Implementations of SFN and other baseline models
-├── datasets/
-│   ├── vibration_metadata.sqlite # Metadata for vibration signals
-│   └── corpus_example.json       # A sample of the multi-modal instruction corpus
-├── weights/
-│   ├── encoder_weights.pth   # Pre-trained weights for the SFN encoder
-│   └── ...                   # Other pre-trained weights (projection layer, etc.)
-└── README.md                 # This file
+code/                         RotLLM models, pre-training and fine-tuning
+cross_modal_alignment/        Radar/tactile alignment and validation scripts
+adapt_mbhm.py                 Convert MBHM metadata and create an HDF5 wrapper
+run_mbhm_pretrain.py          Train/evaluate SFN on the 10-class MBHM bearing set
+run_smoke.py                  RotLLM encoder/projection smoke test
+run_inference_smoke.py        Optional Qwen multimodal inference smoke test
+datasets/                     Small tracked metadata/examples
+.env.example                  Portable configuration template
 ```
 
-- **`code/`**: Contains the core source code for the RotLLM framework.
-  - **`dataset_constructor/`**: Scripts for processing public raw vibration data (from sources like CWRU, SEU, XJTU, etc.) into a unified format.
-  - **`pre_train/`**: Contains the implementation for the first stage of training, focusing on the SFN encoder.
-  - **`fine_tune/`**: Contains the implementation for the second and the third stages, performing instruction-based fine-tuning of the integrated RotLLM.
-  - **`models/`**: Contains the PyTorch implementation of our proposed SFN model and other baseline encoder models used for comparison.
-- **`datasets/`**: Contains sample data to illustrate data structure.
-  - **`vibration_metadata.sqlite`**: An SQLite database containing the metadata (operating conditions, fault labels, etc.) for all 237,298 vibration samples in our LMR dataset.
-  - **`corpus_example.json`**: An example snippet from the high-quality, multi-modal instruction corpus used for fine-tuning.
-- **`weights/`**: Contains the pre-trained weights for key components of the RotLLM.
+## Environment
 
-## 4. Dataset Information
+```bash
+git clone https://github.com/Lmumu1123/m2rotllm.git
+cd m2rotllm
+conda create -n rotllm python=3.12 -y
+conda activate rotllm
+pip install -r requirements.txt
+cp .env.example .env
+```
 
-For now, only the metadata for the vibration signals and a limited subset of the instruction corpus are included in this release.
-To reconstruct the full dataset, you may use the scripts provided in the `code/dataset_constructor/` directory to process the raw data from the original public sources.
+Edit `.env` for the server's data, weights, Qwen, and log directories. Relative paths are resolved from the repository root by the supplied runners.
 
-We are actively curating and processing the complete Large-scale Multimodal Rotating machinery (LMR) dataset, and will make it publicly available on Hugging Face as soon as possible to ensure reproducibility and support future research.
+Run the code-only checks at any time:
 
-## 5. High-Level Workflow
+```bash
+python -m cross_modal_alignment.tests.run_tests
+```
 
-The intended workflow to replicate our results is as follows:
+The real-data test is skipped unless `RADAR_BIN` and `TACTILE_CSV` are set.
 
-1. **Dataset Construction**: Use the scripts in `code/dataset_constructor/` to download and process the raw data from the public sources listed in the paper. This will create the vibration signal dataset.
-2. **Stage 1: Pre-training**: Run the main script in `code/pre_train/` to pre-train the SFN encoder on the newly constructed dataset. The resulting `encoder_weights.pth` will be saved.
-3. **Stage 2 & 3: Fine-tuning**: Use the scripts in `code/fine_tune/` to perform the final instruction-based fine-tuning. This stage initializes the projection layer and fine-tunes it jointly with the LLM using the provided multi-modal corpus examples.
+## MBHM reproduction
 
-*Note: As mentioned, the code is in a draft state and may require adjustments to run seamlessly.*
+The current MBHM artifact used locally has 135,516 samples of length 24,000, a `vibration` HDF5 dataset, and labels 0–9. The large `data.hdf5` file is not stored in Git.
 
-## 6. Citation
+After placing `metadata.parquet` and `data.hdf5` in the configured MBHM directory:
 
-If you find this work useful in your research, please consider citing our paper. 
+```bash
+python adapt_mbhm.py --mbhm-dir /path/to/mbhm_dataset
+CUDA_VISIBLE_DEVICES=0 python run_mbhm_pretrain.py \
+  --epochs 5 --batch-size 256 --num-workers 4 --seed 42
+```
+
+`adapt_mbhm.py` creates `metadata.sqlite` for the existing RotLLM dataloader and a small `data_as_rotllm.hdf5` external-link wrapper. The wrapper contains an absolute link to `data.hdf5`; recreate it after moving the dataset to another server. For a quick loader check, add `--max-samples 100 --num-workers 0 --no-init-encoder`.
+
+If `weights/encoder_weights.pth` is available, MBHM evaluation initializes the SFN encoder from it. Use `--no-init-encoder` to train from scratch.
+
+## Corrected radar/tactile validation
+
+The final analysis found that the recorded radar file is real ADC data, not interleaved complex I/Q: 4 RX × 512 real samples/chirp, 3 chirps/loop, and a 666.67 Hz loop rate. The corrected main program is:
+
+```bash
+python -m cross_modal_alignment.rd_alignment_test \
+  --radar_bin /path/to/20260807-153437-1786088077053250.bin \
+  --tactile_csv /path/to/15-34-23-384/data_0.csv \
+  --radar_start_clock 15:34:37 \
+  --out_dir ./runs/rd_alignment
+```
+
+It extracts a target range-bin phase displacement and compares it with the corrected tactile columns under direct timestamp alignment, smoothing-scale scans, lag scans, and a circular-shift DTW null test. The recorded conclusion is that the phase-displacement envelope is useful for slow trends (up to about `r=0.97` after 10 s smoothing), while the initial magnitude-proxy/DTW improvement must not be treated as evidence of alignment because DTW can overfit.
+
+For the raw tactile binary timestamp check:
+
+```bash
+python -m cross_modal_alignment.bin_alignment_test \
+  --tactile_bin /path/to/15-34-23-384/data_0.bin \
+  --radar_bin /path/to/20260807-153437-1786088077053250.bin \
+  --radar_start_clock 15:34:37 \
+  --out_dir ./runs/bin_alignment
+```
+
+See [the reproduction guide](docs/REPRODUCTION_GUIDE.md), [the corrected algorithm notes](docs/CROSS_MODAL_ALIGNMENT_ALGORITHM.md), [the current status report](docs/ALIGNMENT_STATUS.md), and the [MBHM feasibility report](docs/轴承故障分类可行性汇报.md) for data-format details and interpretation. The remaining diagnostic scripts in `cross_modal_alignment/` are supplementary analyses; they use the same external-data convention through `ALIGNMENT_DATA_DIR`, `RADAR_BIN`, `TACTILE_CSV`, and `ALIGNMENT_OUT_DIR` where applicable.
+
+## Original RotLLM workflow
+
+RotLLM uses an SFN vibration encoder, a projection layer into the Qwen embedding space, and instruction fine-tuning with LoRA. The original training modules remain under `code/pre_train/` and `code/fine_tune/`. `code/` is now imported directly as a repository package; no `src -> code` symlink is required.
+
+## Citation
 
 ```bibtex
 @article{RotLLM,
   title = {A Unified Rotating Machinery Health Management Framework Leveraging Large Language Models for Diverse Components, Conditions, and Tasks},
   author = {Peng, Haotian and Gao, Jie and Liu, Jiawei and Du, Jinsong and Wang, Wei},
   year = {2025},
-  month = dec,
   journal = {Engineering Applications of Artificial Intelligence},
   volume = {162},
   pages = {112544},
-  issn = {09521976},
-  doi = {10.1016/j.engappai.2025.112544},
-  urldate = {2025-10-08}
+  doi = {10.1016/j.engappai.2025.112544}
 }
 ```

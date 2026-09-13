@@ -1,6 +1,6 @@
 from dotenv import dotenv_values
 import torch
-from src.models.SFN import SpecFoldNet
+from code.models.SFN import SpecFoldNet
 
 
 def main(v_num=1):

@@ -6,10 +6,10 @@ import lightning as L
 from lightning.pytorch.callbacks import ModelCheckpoint, EarlyStopping
 from dotenv import dotenv_values
 
-from src.models.SFN import SpecFoldNet
-from src.pre_train.dataloader import split_file_list, VibrationDataset
-from src.pre_train.dataloader import get_filtered_sample_list
-# from src.exp.gener_study import get_filtered_sample_list
+from code.models.SFN import SpecFoldNet
+from code.pre_train.dataloader import split_file_list, VibrationDataset
+from code.pre_train.dataloader import get_filtered_sample_list
+# from code.exp.gener_study import get_filtered_sample_list
 
 torch.set_float32_matmul_precision('high')
 

@@ -37,7 +37,7 @@ _dotenv.dotenv_values = _dotenv_values
 import torch
 from transformers import AutoTokenizer
 
-from src.fine_tune.rotllm import get_mod_qwen
+from code.fine_tune.rotllm import get_mod_qwen
 
 
 def main() -> None:

@@ -208,23 +208,29 @@ __marimo__/
 
 .DS_STORE
 
-# --- m2rotllm project-specific ---
-# Local symlinks to large external datasets (do not commit)
-/data
-/weights
-/qwen_weights
-/mbhm_dataset
-/logs_data1
-/src
+# Local configuration and external assets. These paths are intentionally kept
+# outside version control; configure them in .env (see .env.example).
+.env
+data
+weights
+qwen_weights
+mbhm_dataset
+raw_datasets
+logs
+logs_data1
+src
+runs
 
-# Large raw sensor data
+# Large experimental inputs and generated alignment outputs.
 *.bin
-!datasets/**/*.bin
-
-# Alignment test outputs
+*.h5
+*.hdf5
+*.ckpt
+*.npz
+*.npy
 cross_modal_alignment/_test_align_out/
 cross_modal_alignment/_align_out/
 cross_modal_alignment/_align_out_full/
-
-# Training logs
-logs/
+cross_modal_alignment/_rd_test_out/
+cross_modal_alignment/_bin_align_out/
+cross_modal_alignment/_fine_align_out/

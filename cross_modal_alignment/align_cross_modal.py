@@ -1,3 +1,10 @@
+"""Legacy coarse-proxy + constrained-DTW alignment pipeline.
+
+This module is retained as a baseline for reproducing the initial experiment.
+For the corrected radar format and timestamp-based validation, use
+``python -m cross_modal_alignment.rd_alignment_test`` instead.
+"""
+
 import argparse
 import json
 import os
@@ -8,8 +15,10 @@ import numpy as np
 import pandas as pd
 
 try:
+    # When executed as a module: python -m cross_modal_alignment.align_cross_modal
     from cross_modal_alignment.dtw_alignment import best_lag_correlation, constrained_dtw_path
 except ImportError:  # pragma: no cover
+    # When executed as a script: python align_cross_modal.py (from this directory)
     from dtw_alignment import best_lag_correlation, constrained_dtw_path
 
 
@@ -318,4 +327,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

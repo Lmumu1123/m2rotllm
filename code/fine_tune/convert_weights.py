@@ -1,7 +1,7 @@
 import numpy as np
 from dotenv import dotenv_values
 import torch
-from src.models.SFN import VibrationEncoder
+from code.models.SFN import VibrationEncoder
 import torch.nn as nn
 
 
