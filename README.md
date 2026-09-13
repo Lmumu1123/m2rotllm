@@ -78,7 +78,7 @@ python -m cross_modal_alignment.bin_alignment_test \
   --out_dir ./runs/bin_alignment
 ```
 
-See [the reproduction guide](docs/REPRODUCTION_GUIDE.md), [the corrected algorithm notes](docs/CROSS_MODAL_ALIGNMENT_ALGORITHM.md), [the current status report](docs/ALIGNMENT_STATUS.md), and the [MBHM feasibility report](docs/轴承故障分类可行性汇报.md) for data-format details and interpretation. The remaining diagnostic scripts in `cross_modal_alignment/` are supplementary analyses; they use the same external-data convention through `ALIGNMENT_DATA_DIR`, `RADAR_BIN`, `TACTILE_CSV`, and `ALIGNMENT_OUT_DIR` where applicable.
+See [the reproduction guide](docs/REPRODUCTION_GUIDE.md), [the experiment/status briefing](docs/跨模态时序对齐实验结果与当前状态汇报.md), [the corrected algorithm notes](docs/CROSS_MODAL_ALIGNMENT_ALGORITHM.md), [the current status report](docs/ALIGNMENT_STATUS.md), and the [MBHM feasibility report](docs/轴承故障分类可行性汇报.md) for data-format details and interpretation. The remaining diagnostic scripts in `cross_modal_alignment/` are supplementary analyses; they use the same external-data convention through `ALIGNMENT_DATA_DIR`, `RADAR_BIN`, `TACTILE_CSV`, and `ALIGNMENT_OUT_DIR` where applicable.
 
 ## Original RotLLM workflow
 
