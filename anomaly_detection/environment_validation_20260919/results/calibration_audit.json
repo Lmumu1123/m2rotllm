@@ -1,0 +1,19 @@
+{
+  "range_offset_by_environment_from_off_m": {
+    "narrow": 0.06377411479209905,
+    "room": 0.06377411479209905
+  },
+  "P1_common_distances_cm": [
+    20,
+    80
+  ],
+  "rejected_off_references": [
+    {
+      "file": "room-off-40cm-motor.bin",
+      "range_residual_m": 0.18254533323188077,
+      "reason": "off target range inconsistent; pending acquisition metadata"
+    }
+  ],
+  "reference_tolerance_m": 0.1,
+  "note": "P1 excludes off from diagnosis tests; matched P0 comparators use same distances"
+}

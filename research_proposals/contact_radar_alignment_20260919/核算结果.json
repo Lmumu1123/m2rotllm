@@ -1,0 +1,56 @@
+{
+  "status": "analytical_checks_passed_not_hardware_or_model_validation",
+  "hardware_reported_by_user": "AWR1843 + DCA1000",
+  "assumptions": [
+    "Standard SDK CLI meanings",
+    "Configuration successfully applied",
+    "4 RX, 256 complex samples per chirp, int16 I and Q",
+    "ADC payload only, no headers, no packet loss"
+  ],
+  "radar": {
+    "chirp_interval_us": 500.0,
+    "in_frame_slow_rate_hz": 2000.0,
+    "frame_period_ms": 100.0,
+    "frame_rate_hz": 10.0,
+    "chirps_per_frame": 192,
+    "nominal_chirp_block_ms": 96.0,
+    "nominal_inter_frame_idle_ms": 4.0000000000000036,
+    "last_to_next_first_chirp_ms": 4.5000000000000036,
+    "missing_grid_slots_per_frame": 8,
+    "mean_chirps_per_second_not_uniform_sample_rate": 1920.0,
+    "single_frame_fft_spacing_hz": 10.416666666666666,
+    "adc_duration_us": 74.63556851311954,
+    "adc_end_within_ramp_us": 79.63556851311954,
+    "effective_sweep_bandwidth_ghz": 3.731032069970846,
+    "ideal_range_resolution_cm": 4.017554022288833,
+    "wavelength_at_start_mm": 3.8934085454545455,
+    "frame_adc_bytes": 786432,
+    "mean_adc_MB_per_s": 7.86432,
+    "adc_GB_for_270_120s_runs": 254.803968,
+    "beat_khz_at_distances_m": {
+      "0.5": 166.7486911895562,
+      "1.0": 333.4973823791124,
+      "1.5": 500.24607356866863,
+      "2.0": 666.9947647582248
+    },
+    "range_at_350khz_m": 1.04948349969994
+  },
+  "accelerometer": {
+    "assumed_rate_hz": 5000,
+    "samples_per_axis": 4096,
+    "packet_duration_s": 0.8192,
+    "fft_spacing_hz": 1.220703125,
+    "dct_II_basis_spacing_hz": 0.6103515625
+  },
+  "phi_s_check": {
+    "max_coordinate_variance_error": 1.3322676295501878e-15,
+    "max_scaled_distance_error": 2.842170943040401e-14,
+    "max_inverse_error": 2.7533531010703882e-14,
+    "max_off_diagonal_covariance": 0.9088474839896747,
+    "interpretation": "Equal coordinate variance; not complete whitening or structural invariance"
+  },
+  "cyclic_coherence_check": {
+    "max_modulus_error_ideal_nonzero_LTI": 3.3306690738754696e-16,
+    "interpretation": "Algebraic identity only; not a finite-record estimator validation"
+  }
+}

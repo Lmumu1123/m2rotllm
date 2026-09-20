@@ -1,0 +1,22 @@
+{
+  "time_utc": "2026-09-19T13:39:43.148867+00:00",
+  "python": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "environment": "m2vllm",
+  "packages": {
+    "numpy": "1.26.0",
+    "scipy": "1.15.2",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "matplotlib": "3.10.1",
+    "torch": "2.11.0+cu128",
+    "h5py": "3.16.0",
+    "transformers": "4.49.0",
+    "peft": "0.15.2",
+    "safetensors": "0.6.2"
+  },
+  "repo_commit": "4bdd29bf013971909e81cd79732c4b3813101ca9",
+  "original_repo_modified_by_this_task": false,
+  "original_weights_modified": false,
+  "local_markdown_links": "passed",
+  "raw_data_copied_to_archive": false
+}

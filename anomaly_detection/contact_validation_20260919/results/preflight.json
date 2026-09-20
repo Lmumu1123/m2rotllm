@@ -1,0 +1,10 @@
+{
+  "status": "insufficient_contiguous_data",
+  "recordings": 3,
+  "full_packets": 0,
+  "usable_1s_windows": 0,
+  "cross_packet_stitching": false,
+  "character_repair": false,
+  "healthy_reference_requirement": "Independent same-condition recording, not another axis or self",
+  "inference_on_current_recordings": "not_run: no strict one-second windows"
+}

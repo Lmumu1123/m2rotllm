@@ -1,0 +1,26 @@
+[
+  {
+    "direction": "room->narrow",
+    "macro_f1": 1.0,
+    "balanced_accuracy": 1.0,
+    "n_files": 15,
+    "n_classes": 3,
+    "source_centers_hz": {
+      "1000": 16.5,
+      "2000": 33.0,
+      "3000": 49.5
+    }
+  },
+  {
+    "direction": "narrow->room",
+    "macro_f1": 1.0,
+    "balanced_accuracy": 1.0,
+    "n_files": 21,
+    "n_classes": 3,
+    "source_centers_hz": {
+      "1000": 16.5,
+      "2000": 33.0,
+      "3000": 49.5
+    }
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "file": "R1_single_tx_2khz.cfg",
+    "chirp_interval_us": 500.0,
+    "slow_hz": 2000.0,
+    "chirps": 192,
+    "frame_ms": 100.0,
+    "idle_ms": 4.0000000000000036,
+    "missing_slots": 8,
+    "adc_MBps": 7.86432
+  },
+  {
+    "file": "R2_single_tx_5khz.cfg",
+    "chirp_interval_us": 199.99999999999997,
+    "slow_hz": 5000.0,
+    "chirps": 192,
+    "frame_ms": 40.0,
+    "idle_ms": 1.600000000000004,
+    "missing_slots": 8,
+    "adc_MBps": 19.6608
+  },
+  {
+    "file": "R3_single_tx_5khz_gap_trial.cfg",
+    "chirp_interval_us": 199.99999999999997,
+    "slow_hz": 5000.0,
+    "chirps": 192,
+    "frame_ms": 39.0,
+    "idle_ms": 0.6000000000000033,
+    "missing_slots": 3,
+    "adc_MBps": 20.164923076923078
+  }
+]
