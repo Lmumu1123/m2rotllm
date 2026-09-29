@@ -9,6 +9,7 @@ __pycache__/
 # External acquisition datasets and fresh reruns
 /datasets/r2/
 /datasets/mbhm_dataset/data.hdf5
+/external/bearllm-assets/mbhm_dataset/data.hdf5
 /runs/
 # Reconstructed large files are present as verified compressed parts in Git
 /external/bearllm-assets/qwen_weights/model.safetensors

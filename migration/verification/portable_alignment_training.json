@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "task": "fresh isolated CPU training, full + direct_MLP, seed17, three held-out RPM folds",
+  "models_created": 6,
+  "verification": {
+    "input_hashes_unchanged": true,
+    "folds": 3,
+    "leakage_checks_passed": true,
+    "heldout_contact_targets_used_only_in_evaluation": true,
+    "source_head_not_modified": true,
+    "radar_recordings": 144,
+    "contact_sessions": 12,
+    "repeated_seeds_do_not_increase_physical_sample_count": true,
+    "completed": true
+  },
+  "training_metrics_vs_archive_max_absolute_accuracy_difference": 0.20416666666666672,
+  "source_archive_unchanged": true,
+  "not_new_physical_test_evidence": true
+}

@@ -21,7 +21,7 @@
 
 ## 在另一台机器启动
 
-建议先准备 **25 GB 可用空间**（不含额外数据集）；Git 对象、工作树、完整模型还原和新实验会各占空间。
+建议先准备 **30 GB 可用空间**（不含额外数据集）；Git 对象、工作树、完整模型还原和新实验会各占空间。
 
 ```bash
 git clone --branch C2R --single-branch https://github.com/Lmumu1123/m2rotllm.git C2R
@@ -36,7 +36,7 @@ python scripts/verify_repository.py
 python scripts/c2r.py verify --output ../c2r_verify.json
 ```
 
-Linux NVIDIA 机器改装 `environment/core-cuda128.txt`，执行时用 `--device cuda:0`。原机器是 Python 3.12、PyTorch 2.11.0+cu128；[原环境清单](migration/environment/runtime_original.json) 和 [完整包版本](migration/environment/pip-freeze-versions.txt) 用于对照。不能直接把服务器的 `miniconda3/` 拷到 Mac 使用。Mac 的原始数据导出使用 [本地预处理工具](anomaly_detection/local_preprocessing_r2_20260928/README_本地预处理.md) 及其独立依赖；本迁移验收针对 Linux，未宣称在所有平台重新安装测试过。
+Linux NVIDIA 机器改装 `environment/core-cuda128.txt`，执行时用 `--device cuda:0`。CPU 和 CUDA 两组依赖均已忽略现有安装进行完整解析并通过，见 [解析记录](migration/verification/dependency_resolution.json)；这不等同新主机驱动验收。原机器是 Python 3.12、PyTorch 2.11.0+cu128；[原环境清单](migration/environment/runtime_original.json) 和 [完整包版本](migration/environment/pip-freeze-versions.txt) 用于对照。不能直接把服务器的 `miniconda3/` 拷到 Mac 使用。Mac 的原始数据导出使用 [本地预处理工具](anomaly_detection/local_preprocessing_r2_20260928/README_本地预处理.md) 及其独立依赖；本迁移验收针对 Linux，未宣称在所有平台重新安装测试过。
 
 `verify` 会执行原始数据解析与雷达特征数值测试、加载真实接触权重和固定健康参考、重放保存的雷达模型。模型重放会拒绝读取旧服务器的项目及 NAS 资源。更完整的 171 个 checkpoint 审计：
 
@@ -49,6 +49,7 @@ python scripts/audit_all_checkpoints.py --output ../c2r_all_checkpoint_audit
 ```bash
 python -m pip install -r environment/llm-extra.txt
 python scripts/restore_artifacts.py --qwen
+python scripts/c2r.py configure
 # 如需读取两份完整历史逐样本评测 JSONL，再执行：
 python scripts/restore_artifacts.py --results
 ```
@@ -85,7 +86,7 @@ python scripts/c2r.py run full --from-exports --workspace ../c2r_from_exports_01
 
 - [模型与参数清单](migration/model_inventory.json)：各文件角色、原始位置及 SHA-256；包括历史模型，不能把所有文件都视作可部署最佳模型。
 - [源文件快照](migration/manifests/source_snapshot.csv)：原始文件与新仓库路径对应。结果 JSON/CSV 中的旧路径作为历史记录保留；程序通过 `c2r_paths.py` 显式解析。
-- [路径适配说明](migration/PORTABILITY.md)：修改仅发生在迁移副本，未重训或改动模型权重。原始源码另保存在 `migration/original_sources.tar.gz` 和适配记录内。
+- [路径适配说明](PORTABILITY.md)：修改仅发生在迁移副本，未重训或改动模型权重。原始源码另保存在 `migration/original_sources.tar.gz` 和适配记录内。
 - [服务器清理建议](migration/docs/服务器清理建议.md)：本次只整理，未删除原数据/代码。先在新机器复核，再按清单决定清理。
 - [第三方来源与许可](migration/docs/THIRD_PARTY_NOTICES.md)：保留各上游许可；本交接快照没有给第三方代码重新赋予许可证。
 

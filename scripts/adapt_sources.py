@@ -72,6 +72,8 @@ def main():
         raise SystemExit('Refusing to alter original workspace')
     if not (root / 'c2r_paths.py').exists():
         raise SystemExit('Place c2r_paths.py at staging root first')
+    output = root / 'migration_source_adaptations.json'
+    prior = json.loads(output.read_text())['files'] if output.exists() else []
     report = []
     for base in ('anomaly_detection', 'BearLLM', 'research_proposals'):
         for p in sorted((root / base).rglob('*.py')):
@@ -132,10 +134,11 @@ if cached.exists() and protocol.exists():
                 original.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(p, original)
                 p.write_text(new_text, encoding='utf-8')
-    output = root / 'migration_source_adaptations.json'
     if args.apply:
-        output.write_text(json.dumps(dict(policy='source-only explicit relocation; no result JSON/CSV changes', files=report), indent=2) + '\n')
-    print(json.dumps(dict(apply=args.apply, changed_files=len(report), report=str(output)), indent=2))
+        merged = {item['path']: item for item in prior}
+        merged.update({item['path']: item for item in report})
+        output.write_text(json.dumps(dict(policy='source-only explicit relocation; no result JSON/CSV changes', files=[merged[k] for k in sorted(merged)]), indent=2) + '\n')
+    print(json.dumps(dict(apply=args.apply, changed_files_this_invocation=len(report), report=str(output)), indent=2))
 
 
 if __name__ == '__main__':

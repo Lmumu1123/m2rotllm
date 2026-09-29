@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "new_workspace": "/home/huangyating/c2r_migration_notes_20260929/portability/_run_contact_heads/anomaly_detection/r2_validation_20260928/contact/diagnostic_heads",
+  "checks": [
+    {
+      "file": "packet_predictions.csv",
+      "rows": 1715,
+      "identical_values": true
+    },
+    {
+      "file": "session_predictions.csv",
+      "rows": 60,
+      "identical_values": true
+    },
+    {
+      "file": "metrics.csv",
+      "rows": 40,
+      "identical_values": true
+    }
+  ],
+  "archive_overwritten": false,
+  "note": "Same cached data and protocol; computational reproduction, not additional physical evidence"
+}

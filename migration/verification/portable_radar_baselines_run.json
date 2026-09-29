@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "task": "fresh isolated cached-feature radar baselines, 3 leave-one-RPM-out folds",
+  "workspace": "/home/huangyating/c2r_migration_notes_20260929/portability/_run_baselines/anomaly_detection/r2_validation_20260928/baselines",
+  "methods": [
+    "linear_svc",
+    "rbf_svc",
+    "knn5_distance",
+    "random_forest"
+  ],
+  "feature_variants": [
+    "complex_shape",
+    "phase_shape",
+    "geometry_complex_shape",
+    "nuisance",
+    "qc_only"
+  ],
+  "source_archive_unchanged": true,
+  "not_additional_physical_evidence": true
+}

@@ -1,0 +1,93 @@
+{
+  "status": "both_combinations_resolved",
+  "checked_at_utc": "2026-09-29T03:48:57.589939+00:00",
+  "checks": [
+    {
+      "mode": "cpu",
+      "status": "resolved_successfully",
+      "exit_code": 0,
+      "ignore_installed": true,
+      "isolated_pip_configuration": true,
+      "requirements_sha256": {
+        "core-cpu.txt": "7a7408d3b97fc817a162cade003f83e6dbfa0a5ca7dc520b363e8d452a488f89",
+        "llm-extra.txt": "079d351c13a8516babf5179911e81c20211427822e388732a161bffdd825d3cb"
+      },
+      "package_count": 54,
+      "report_file": "dependency_resolution_cpu_pip_report.json",
+      "report_sha256": "c17558f264cbc1c16ec7c661e8e522720b66192f9c4306ad146aab9bd741a4b8",
+      "pip_version": "26.2.1",
+      "resolver_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.12.14",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "5.10.134-013.8.2.kangaroo.al8.x86_64",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP Thu Mar 12 10:20:37 UTC 2026",
+        "python_full_version": "3.12.14",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.12",
+        "sys_platform": "linux"
+      },
+      "fixed_package_checks": {
+        "torch": "2.11.0+cpu",
+        "h5py": "3.16.0",
+        "numpy": "1.26.0",
+        "scipy": "1.15.2",
+        "transformers": "4.49.0",
+        "peft": "0.15.2"
+      },
+      "resolved_lock": "environment/resolved-cpu-with-llm.txt"
+    },
+    {
+      "mode": "cuda128",
+      "status": "resolved_successfully",
+      "exit_code": 0,
+      "ignore_installed": true,
+      "isolated_pip_configuration": true,
+      "requirements_sha256": {
+        "core-cuda128.txt": "bdb472dd8b60aa669c4e28b8a2aafd3c051061f2234e5724992f5ea16c2cae1c",
+        "llm-extra.txt": "079d351c13a8516babf5179911e81c20211427822e388732a161bffdd825d3cb"
+      },
+      "package_count": 73,
+      "report_file": "dependency_resolution_cuda128_pip_report.json",
+      "report_sha256": "f32aeae113c03a08d6219325ebec6363b57002cc654269e6a93a87725dabb7c6",
+      "pip_version": "26.2.1",
+      "resolver_environment": {
+        "implementation_name": "cpython",
+        "implementation_version": "3.12.14",
+        "os_name": "posix",
+        "platform_machine": "x86_64",
+        "platform_release": "5.10.134-013.8.2.kangaroo.al8.x86_64",
+        "platform_system": "Linux",
+        "platform_version": "#1 SMP Thu Mar 12 10:20:37 UTC 2026",
+        "python_full_version": "3.12.14",
+        "platform_python_implementation": "CPython",
+        "python_version": "3.12",
+        "sys_platform": "linux"
+      },
+      "fixed_package_checks": {
+        "torch": "2.11.0+cu128",
+        "h5py": "3.16.0",
+        "numpy": "1.26.0",
+        "scipy": "1.15.2",
+        "transformers": "4.49.0",
+        "peft": "0.15.2"
+      },
+      "resolved_lock": "environment/resolved-cuda128-with-llm.txt"
+    }
+  ],
+  "installed_environment_modified": false,
+  "new_clean_environment_installed": false,
+  "all_wheels_fully_downloaded_and_installed": false,
+  "nvidia_driver_or_new_host_runtime_verified": false,
+  "method": "pip --isolated install --dry-run --ignore-installed --index-url https://pypi.org/simple --report REPORT -r environment/CORE_REQUIREMENTS -r environment/llm-extra.txt",
+  "scope": "Linux x86_64 / CPython 3.12 dependency availability and constraint resolution; not a completed fresh-machine installation",
+  "cuda_index_change": {
+    "before": "--extra-index-url https://download.pytorch.org/whl/cu128",
+    "after": "--find-links https://download.pytorch.org/whl/cu128/torch/",
+    "reason": "Restrict the PyTorch mirror to Torch wheel discovery. Other packages use PyPI with standalone metadata. The broad mirror selected a 658MB cuDNN wheel lacking standalone metadata and the dry-run download was interrupted.",
+    "package_versions_changed": false,
+    "superseded_original_cuda_attempt_status": "stopped after corrected official-Torch-only resolver succeeded"
+  }
+}

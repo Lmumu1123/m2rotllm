@@ -1,0 +1,26 @@
+{
+  "stats": {
+    "model_paths": 784,
+    "unique_model_contents": 749,
+    "model_logical_bytes": 3995720677,
+    "auxiliary_paths": 606,
+    "auxiliary_logical_bytes": 52719905,
+    "unique_content_objects": 1268,
+    "unique_stored_bytes": 3856210426,
+    "categories": {
+      "model": 784,
+      "support": 255,
+      "code": 335,
+      "environment": 16
+    }
+  },
+  "verification": {
+    "status": "passed",
+    "verified_file_paths": 1390,
+    "verified_unique_inodes": 1268,
+    "checked_available_sources_have_independent_inodes": true,
+    "original_source_paths_checked": 1390
+  },
+  "status": "complete_verified",
+  "path": "/media/nas_users/huangyating/C2R_model_vault_20260929"
+}

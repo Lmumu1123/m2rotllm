@@ -19,6 +19,10 @@ python scripts/c2r.py verify --output runs/migration_smoke.json
 
 CPU 与 CUDA 两份核心依赖择一安装。NVIDIA 驱动不包含在 Python 环境中。Mac 本地 BIN/DAT 预处理只需对应工具目录下的 `requirements.txt`；不必安装上述 Linux CUDA 环境。
 
+2026-09-29 已对两套「核心依赖＋LLM 额外依赖」分别执行 `pip --isolated install --dry-run --ignore-installed`：CPU 与 CUDA 12.8 均解析成功，包括 PyTorch 2.11.0、h5py 3.16.0 和传递依赖。现有环境中的已安装包未参与这次解析；完整报告见 `migration/verification/dependency_resolution.json`。这仅验证索引可取得匹配的包元数据且依赖约束可满足，**没有创建全新环境完成安装，也未验收另一台主机的驱动或运行结果**。`environment/resolved-*-with-llm.txt` 保存本次解析得到的完整版本清单。
+
+CUDA 依赖文件用 `--find-links https://download.pytorch.org/whl/cu128/torch/` 只从 PyTorch 官方页面选择 Torch，其他包仍走 PyPI。这样避免宽泛额外索引把 cuDNN 等包转到缺少独立元数据的镜像；所有原来固定的包版本均未改变。
+
 `doctor` 检查固定接触参考、接触 FCN 权重、保留准确率的历史分类头以及两种模态的特征缓存。Qwen 大模型和原始数据在报告中单独列为可选依赖；普通接触/雷达分类不需要加载 Qwen。要运行文本诊断或原 BearLLM 语言模型训练，再安装 `environment/llm-extra.txt`，并按仓库的大文件恢复说明恢复 Qwen 权重。
 
 ## 2. 无原始大数据也可以完成的复现

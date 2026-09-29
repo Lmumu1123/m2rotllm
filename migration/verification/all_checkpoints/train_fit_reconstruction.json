@@ -1,0 +1,248 @@
+[
+  {
+    "experiment": "archived__complex_shape",
+    "fold": "holdout_1000",
+    "all_train_only_fits_match": true,
+    "max_saved_parameter_error": 0.0,
+    "component_errors": {
+      "contact_mean": 0.0,
+      "contact_scale": 0.0,
+      "radar_mean": 0.0,
+      "radar_scale": 0.0,
+      "targets": 0.0,
+      "class_prototypes": 0.0,
+      "physical_mean": 0.0,
+      "physical_scale": 0.0,
+      "readout_coef": 0.0,
+      "readout_intercept": 0.0,
+      "head_weight": 0.0,
+      "head_bias": 0.0
+    }
+  },
+  {
+    "experiment": "archived__complex_shape",
+    "fold": "holdout_2000",
+    "all_train_only_fits_match": true,
+    "max_saved_parameter_error": 0.0,
+    "component_errors": {
+      "contact_mean": 0.0,
+      "contact_scale": 0.0,
+      "radar_mean": 0.0,
+      "radar_scale": 0.0,
+      "targets": 0.0,
+      "class_prototypes": 0.0,
+      "physical_mean": 0.0,
+      "physical_scale": 0.0,
+      "readout_coef": 0.0,
+      "readout_intercept": 0.0,
+      "head_weight": 0.0,
+      "head_bias": 0.0
+    }
+  },
+  {
+    "experiment": "archived__complex_shape",
+    "fold": "holdout_3000",
+    "all_train_only_fits_match": true,
+    "max_saved_parameter_error": 0.0,
+    "component_errors": {
+      "contact_mean": 0.0,
+      "contact_scale": 0.0,
+      "radar_mean": 0.0,
+      "radar_scale": 0.0,
+      "targets": 0.0,
+      "class_prototypes": 0.0,
+      "physical_mean": 0.0,
+      "physical_scale": 0.0,
+      "readout_coef": 0.0,
+      "readout_intercept": 0.0,
+      "head_weight": 0.0,
+      "head_bias": 0.0
+    }
+  },
+  {
+    "experiment": "archived__geometry_complex_shape",
+    "fold": "holdout_1000",
+    "all_train_only_fits_match": true,
+    "max_saved_parameter_error": 0.0,
+    "component_errors": {
+      "contact_mean": 0.0,
+      "contact_scale": 0.0,
+      "radar_mean": 0.0,
+      "radar_scale": 0.0,
+      "targets": 0.0,
+      "class_prototypes": 0.0,
+      "physical_mean": 0.0,
+      "physical_scale": 0.0,
+      "readout_coef": 0.0,
+      "readout_intercept": 0.0,
+      "head_weight": 0.0,
+      "head_bias": 0.0
+    }
+  },
+  {
+    "experiment": "archived__geometry_complex_shape",
+    "fold": "holdout_2000",
+    "all_train_only_fits_match": true,
+    "max_saved_parameter_error": 0.0,
+    "component_errors": {
+      "contact_mean": 0.0,
+      "contact_scale": 0.0,
+      "radar_mean": 0.0,
+      "radar_scale": 0.0,
+      "targets": 0.0,
+      "class_prototypes": 0.0,
+      "physical_mean": 0.0,
+      "physical_scale": 0.0,
+      "readout_coef": 0.0,
+      "readout_intercept": 0.0,
+      "head_weight": 0.0,
+      "head_bias": 0.0
+    }
+  },
+  {
+    "experiment": "archived__geometry_complex_shape",
+    "fold": "holdout_3000",
+    "all_train_only_fits_match": true,
+    "max_saved_parameter_error": 0.0,
+    "component_errors": {
+      "contact_mean": 0.0,
+      "contact_scale": 0.0,
+      "radar_mean": 0.0,
+      "radar_scale": 0.0,
+      "targets": 0.0,
+      "class_prototypes": 0.0,
+      "physical_mean": 0.0,
+      "physical_scale": 0.0,
+      "readout_coef": 0.0,
+      "readout_intercept": 0.0,
+      "head_weight": 0.0,
+      "head_bias": 0.0
+    }
+  },
+  {
+    "experiment": "archived__phase_shape",
+    "fold": "holdout_1000",
+    "all_train_only_fits_match": true,
+    "max_saved_parameter_error": 0.0,
+    "component_errors": {
+      "contact_mean": 0.0,
+      "contact_scale": 0.0,
+      "radar_mean": 0.0,
+      "radar_scale": 0.0,
+      "targets": 0.0,
+      "class_prototypes": 0.0,
+      "physical_mean": 0.0,
+      "physical_scale": 0.0,
+      "readout_coef": 0.0,
+      "readout_intercept": 0.0,
+      "head_weight": 0.0,
+      "head_bias": 0.0
+    }
+  },
+  {
+    "experiment": "archived__phase_shape",
+    "fold": "holdout_2000",
+    "all_train_only_fits_match": true,
+    "max_saved_parameter_error": 0.0,
+    "component_errors": {
+      "contact_mean": 0.0,
+      "contact_scale": 0.0,
+      "radar_mean": 0.0,
+      "radar_scale": 0.0,
+      "targets": 0.0,
+      "class_prototypes": 0.0,
+      "physical_mean": 0.0,
+      "physical_scale": 0.0,
+      "readout_coef": 0.0,
+      "readout_intercept": 0.0,
+      "head_weight": 0.0,
+      "head_bias": 0.0
+    }
+  },
+  {
+    "experiment": "archived__phase_shape",
+    "fold": "holdout_3000",
+    "all_train_only_fits_match": true,
+    "max_saved_parameter_error": 0.0,
+    "component_errors": {
+      "contact_mean": 0.0,
+      "contact_scale": 0.0,
+      "radar_mean": 0.0,
+      "radar_scale": 0.0,
+      "targets": 0.0,
+      "class_prototypes": 0.0,
+      "physical_mean": 0.0,
+      "physical_scale": 0.0,
+      "readout_coef": 0.0,
+      "readout_intercept": 0.0,
+      "head_weight": 0.0,
+      "head_bias": 0.0
+    }
+  },
+  {
+    "experiment": "diagnostic__complex_shape",
+    "fold": "holdout_1000",
+    "all_train_only_fits_match": true,
+    "max_saved_parameter_error": 0.0,
+    "component_errors": {
+      "contact_mean": 0.0,
+      "contact_scale": 0.0,
+      "radar_mean": 0.0,
+      "radar_scale": 0.0,
+      "targets": 0.0,
+      "class_prototypes": 0.0,
+      "physical_mean": 0.0,
+      "physical_scale": 0.0,
+      "readout_coef": 0.0,
+      "readout_intercept": 0.0,
+      "head_weight": 0.0,
+      "head_bias": 0.0,
+      "diagnostic_train_only_weight": 0.0,
+      "diagnostic_train_only_bias": 0.0
+    }
+  },
+  {
+    "experiment": "diagnostic__complex_shape",
+    "fold": "holdout_2000",
+    "all_train_only_fits_match": true,
+    "max_saved_parameter_error": 0.0,
+    "component_errors": {
+      "contact_mean": 0.0,
+      "contact_scale": 0.0,
+      "radar_mean": 0.0,
+      "radar_scale": 0.0,
+      "targets": 0.0,
+      "class_prototypes": 0.0,
+      "physical_mean": 0.0,
+      "physical_scale": 0.0,
+      "readout_coef": 0.0,
+      "readout_intercept": 0.0,
+      "head_weight": 0.0,
+      "head_bias": 0.0,
+      "diagnostic_train_only_weight": 0.0,
+      "diagnostic_train_only_bias": 0.0
+    }
+  },
+  {
+    "experiment": "diagnostic__complex_shape",
+    "fold": "holdout_3000",
+    "all_train_only_fits_match": true,
+    "max_saved_parameter_error": 0.0,
+    "component_errors": {
+      "contact_mean": 0.0,
+      "contact_scale": 0.0,
+      "radar_mean": 0.0,
+      "radar_scale": 0.0,
+      "targets": 0.0,
+      "class_prototypes": 0.0,
+      "physical_mean": 0.0,
+      "physical_scale": 0.0,
+      "readout_coef": 0.0,
+      "readout_intercept": 0.0,
+      "head_weight": 0.0,
+      "head_bias": 0.0,
+      "diagnostic_train_only_weight": 0.0,
+      "diagnostic_train_only_bias": 0.0
+    }
+  }
+]

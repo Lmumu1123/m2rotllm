@@ -1,0 +1,19 @@
+{
+  "api_sha256": "41fc28b5bc8409b982c3e1fdc261fa9eed27e7e8631ad13c30364e8561c29347",
+  "contact_script_sha256": "47af118939da2205874250b6dca911565c97a512edbcba2b41f56cc097e813a6",
+  "raw_cache_sha256": "ec78a877c51693e5e3934e9a35ba8ced8a4d6b3c84f127f256c738f3e9b1535b",
+  "source_original_model_weights": {
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/pretrain/fcn/feature_encoder.pth": "e7322e179238ab5edf779830c2be562e2a0d613ac1285c4ccdb35080cc97f84e",
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/pretrain/fcn/classifier.pth": "885d03d3be3e6aef0966d1d74b305ca94f3cef1814467413af270bb02e9c3340"
+  },
+  "cached_references_identical_to_MBHM_source": true,
+  "torch_version": "2.11.0+cu128",
+  "device": "cpu",
+  "batch": 3,
+  "threads": 2,
+  "raw_rows": [
+    0
+  ],
+  "raw_precision": "float32 saved cache",
+  "hidden_sha256": "f925d5e32c0dbb497dad8ba831efa27d1172673e0a47e9beb5a5eed780b74a98"
+}

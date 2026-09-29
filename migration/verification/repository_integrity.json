@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "files": 3497,
+  "verified_bytes": 4879473819,
+  "errors": [],
+  "note": "Manifest excludes itself and post-verification receipt; checks packaged files, not externally omitted data."
+}

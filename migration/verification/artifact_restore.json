@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "qwen": {
+    "parts": 62,
+    "compressed_bytes": 2472676721,
+    "restored_bytes": 3087467144,
+    "restored_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee"
+  },
+  "large_results": [
+    {
+      "target": "external/bearllm-runs/released-code-seed42/official_evaluation/vibration_predictions.jsonl",
+      "restored_bytes": 266591955,
+      "restored_sha256": "23373a08b5f042dfe7aed07d94bd327d28bf0ce064f752662cf95fa97922c004"
+    },
+    {
+      "target": "external/bearllm-runs/released-code-seed42/trained_evaluation/vibration_predictions.jsonl",
+      "restored_bytes": 266288605,
+      "restored_sha256": "9b06aa189e775b319d82319d7b91c07f5e8d1c4bab0c91466a796f28a41d335c"
+    }
+  ],
+  "method": "Executed scripts/restore_artifacts.py --all to reconstruct new files in staging; checked compressed chunks, per-chunk contents and final full-file SHA256."
+}
