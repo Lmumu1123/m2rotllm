@@ -1,0 +1,51 @@
+name: Materialize verified public Qwen base
+on:
+  workflow_dispatch:
+  push:
+    branches: [C2R]
+    paths: ['.github/workflows/materialize-public-qwen.yml']
+permissions:
+  contents: write
+concurrency:
+  group: c2r-public-base-materialization
+  cancel-in-progress: false
+jobs:
+  materialize:
+    if: github.ref == 'refs/heads/C2R'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: C2R
+          fetch-depth: 1
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.github/
+            /scripts/ci_materialize_qwen.py
+            /migration/manifests/qwen_parts.json
+      - name: Rebuild exact public model chunks and verify original SHA256
+        run: python3 scripts/ci_materialize_qwen.py
+      - name: Commit verified chunks in bounded pushes
+        shell: python
+        run: |
+          import json, subprocess
+          from pathlib import Path
+          def git(*args):
+              return subprocess.run(['git', *args], check=True)
+          git('config', 'user.name', 'github-actions[bot]')
+          git('config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com')
+          git('config', 'pack.window', '0')
+          git('config', 'gc.auto', '0')
+          parts = json.loads(Path('migration/manifests/qwen_parts.json').read_text())['parts']
+          for offset in range(0, len(parts), 16):
+              names = [p['path'] for p in parts[offset:offset + 16]]
+              git('add', '--sparse', '-f', '--', *names)
+              state = subprocess.run(['git', 'diff', '--cached', '--quiet'])
+              if state.returncode == 1:
+                  git('commit', '-m', f'Preserve SHA-verified public Qwen chunks {offset + 1}-{min(offset + 16, len(parts))}')
+                  git('push', 'origin', 'HEAD:refs/heads/C2R')
+              elif state.returncode != 0:
+                  raise RuntimeError('Failed to inspect index')
+          git('status', '--short')
