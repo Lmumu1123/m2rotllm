@@ -1,0 +1,41 @@
+[
+  {
+    "fold": "115200_to_460800",
+    "train_count_by_class": {
+      "0": 1,
+      "2": 1,
+      "1": 1,
+      "3": 1
+    },
+    "has_heldout_bags": true,
+    "distinct_training_same_class_donor_available": false,
+    "class_prototype_equals_recording_mean": true,
+    "train_test_overlap": []
+  },
+  {
+    "fold": "460800_to_115200",
+    "train_count_by_class": {
+      "0": 1,
+      "2": 1,
+      "1": 1,
+      "3": 1
+    },
+    "has_heldout_bags": true,
+    "distinct_training_same_class_donor_available": false,
+    "class_prototype_equals_recording_mean": true,
+    "train_test_overlap": []
+  },
+  {
+    "fold": "all_known",
+    "train_count_by_class": {
+      "0": 2,
+      "2": 2,
+      "1": 2,
+      "3": 2
+    },
+    "has_heldout_bags": false,
+    "distinct_training_same_class_donor_available": true,
+    "class_prototype_equals_recording_mean": false,
+    "train_test_overlap": []
+  }
+]

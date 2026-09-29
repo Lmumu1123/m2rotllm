@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "official_demo_exit_code": 0,
+  "explicit_input_exit_code": 0,
+  "fixed_seed_outputs_identical": true,
+  "seed": 42,
+  "predicted_label": "Fault-Free",
+  "ground_truth_provided": false,
+  "response_characters": 4022,
+  "visible_response_tokens": 792,
+  "wall_time_seconds": 17.726,
+  "verified_asset_count": 12,
+  "response_sha256": "04fb05c8cd77b54f746633e09f08d9e65006c1b6d2f16a5f2c09376236d0e89f",
+  "input_validation": "passed: official sample accepted; invalid structure, placeholder, zero energy, and nonfinite signals rejected",
+  "scope": "official demo and inference only"
+}

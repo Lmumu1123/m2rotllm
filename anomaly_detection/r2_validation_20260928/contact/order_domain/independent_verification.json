@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "sine_true_order": 5,
+  "raw_peak_orders": [
+    4.994140625,
+    4.994140625,
+    4.994140625
+  ],
+  "envelope_peak_orders": [
+    4.994140625,
+    4.994140625,
+    4.994140625
+  ],
+  "amplitude_invariance_max_error": 1.1013412404281553e-13,
+  "all_metrics_recomputed": true,
+  "all36_fits_holdout_sessions_disjoint": true,
+  "inputs_still_unchanged": true,
+  "verification_script_sha256": "320f9edd2f56c011c45997a40a61854d9afd66838150b608f49cfce258579d3c",
+  "hz_control_metrics_recomputed": true,
+  "hz_and_order_identical_at_reference_2000rpm": true
+}

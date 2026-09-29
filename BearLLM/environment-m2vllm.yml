@@ -1,0 +1,27 @@
+name: m2vllm
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu128
+      - torch==2.11.0+cu128
+      - transformers==4.49.0
+      - peft==0.15.2
+      - accelerate==1.4.0
+      - numpy==1.26.0
+      - scipy==1.15.2
+      - python-dotenv==1.0.1
+      - h5pickle==0.4.2
+      - h5py==3.16.0
+      - huggingface-hub==0.36.2
+      - tokenizers==0.21.4
+      - safetensors==0.6.2
+      - pandas==2.2.3
+      - pyarrow==19.0.1
+      - scikit-learn==1.6.1
+      - matplotlib==3.10.1
+      - rouge-score==0.1.2
+      - nltk==3.9.1
+      - tqdm==4.67.1

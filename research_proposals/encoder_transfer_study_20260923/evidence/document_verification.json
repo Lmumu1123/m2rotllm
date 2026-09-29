@@ -1,0 +1,45 @@
+{
+  "all_local_markdown_links_exist": true,
+  "unique_external_links": 73,
+  "markdown_files": {
+    "README.md": {
+      "bytes": 2475,
+      "code_fences": 0,
+      "display_math_open": 0,
+      "display_math_close": 0
+    },
+    "sensing_prior_art_notes.md": {
+      "bytes": 12200,
+      "code_fences": 0,
+      "display_math_open": 0,
+      "display_math_close": 0
+    },
+    "model_baselines_notes.md": {
+      "bytes": 15234,
+      "code_fences": 0,
+      "display_math_open": 0,
+      "display_math_close": 0
+    },
+    "Encoder知识迁移验证_文献调研与SenSys实验方案.md": {
+      "bytes": 49369,
+      "code_fences": 2,
+      "display_math_open": 13,
+      "display_math_close": 13
+    },
+    "representation_validation_notes.md": {
+      "bytes": 23578,
+      "code_fences": 0,
+      "display_math_open": 0,
+      "display_math_close": 0
+    },
+    "通俗讲解_现有结果与其他模型验证.md": {
+      "bytes": 10512,
+      "code_fences": 4,
+      "display_math_open": 0,
+      "display_math_close": 0
+    }
+  },
+  "review": "model availability, experimental fairness, formula and novelty review incorporated",
+  "new_training_performed": false,
+  "plain_language_revision": "Section 2 rewritten; accessible guide added; trained-teacher evidence clarified; existing numerical results unchanged."
+}

@@ -1,0 +1,31 @@
+{
+  "methods": [
+    "ce_only",
+    "matched_bag_mse",
+    "full",
+    "label_code_mse",
+    "label_code_ce_mse",
+    "wrong_class_mse"
+  ],
+  "seeds": [
+    17,
+    42,
+    73
+  ],
+  "encoder_steps": 400,
+  "optimizer": "AdamW lr=.001 weight_decay=.01 grad_clip=5",
+  "batch": "16 windows sampled with replacement per training recording",
+  "label_code_construction": "400 Adam lr=.05 steps: grouped_head_CE + .001 standardized code L2; uses only frozen head and global train-contact mean/scale",
+  "all_methods_same_scalers_initialization_minibatches": true,
+  "prior_development_data": true,
+  "test_based_model_or_hyperparameter_selection": false,
+  "primary_evaluation": "all fixed final-step models, two recording splits; no bearing/motor holdout",
+  "limitations": [
+    "outer-race radar ROI invalid",
+    "each class has one training recording per fold",
+    "no synchronized segment matching",
+    "same-class shuffling and within-class cross-recording CKA unavailable",
+    "label codes exploit learned shared head plus global contact scales, not label-only from scratch"
+  ],
+  "source_head": "existing stage_b_v0 retained_head_v1; not the later conservative all-known head"
+}

@@ -1,0 +1,42 @@
+{
+  "cross_groups_by_source": {
+    "HIT": 144,
+    "PU": 4
+  },
+  "validation_queries_identical_to_training_query": 92,
+  "test_queries_identical_to_training_query": 31,
+  "test_query_ids": [
+    12621,
+    12631,
+    12861,
+    12871,
+    12981,
+    12991,
+    13111,
+    13121,
+    13241,
+    13471,
+    13481,
+    13601,
+    13721,
+    13731,
+    13851,
+    13861,
+    14081,
+    14091,
+    14211,
+    14221,
+    14331,
+    14341,
+    14461,
+    14471,
+    14691,
+    14701,
+    14821,
+    14831,
+    14951,
+    119183,
+    119223
+  ],
+  "cross_groups_with_inconsistent_labels": 0
+}

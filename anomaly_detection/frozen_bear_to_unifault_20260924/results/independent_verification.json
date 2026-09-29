@@ -1,0 +1,211 @@
+{
+  "passed": true,
+  "prediction_files_checked": 40,
+  "source_hashes_unchanged": true,
+  "metric_counts_recomputed": true,
+  "mapping_reapplication_verified": true,
+  "head_outputs_recomputed": true,
+  "train_test_separation_checked": true,
+  "checks": [
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/115200_to_460800__Bear_contact_mapped_to_Uni_local4__none__seed-1.npz",
+      "rows": 88,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/115200_to_460800__direct_Uni_contact_local4__none__seed-1.npz",
+      "rows": 88,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/115200_to_460800__frozen_Bear_radar_mapped_to_Uni_local4__ce_only__seed17.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/115200_to_460800__frozen_Bear_radar_mapped_to_Uni_local4__ce_only__seed42.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/115200_to_460800__frozen_Bear_radar_mapped_to_Uni_local4__ce_only__seed73.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/115200_to_460800__frozen_Bear_radar_mapped_to_Uni_local4__full__seed17.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/115200_to_460800__frozen_Bear_radar_mapped_to_Uni_local4__full__seed42.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/115200_to_460800__frozen_Bear_radar_mapped_to_Uni_local4__full__seed73.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/115200_to_460800__frozen_Bear_radar_mapped_to_Uni_local4__label_code_ce_mse__seed17.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/115200_to_460800__frozen_Bear_radar_mapped_to_Uni_local4__label_code_ce_mse__seed42.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/115200_to_460800__frozen_Bear_radar_mapped_to_Uni_local4__label_code_ce_mse__seed73.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/115200_to_460800__frozen_Bear_radar_mapped_to_Uni_local4__label_code_mse__seed17.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/115200_to_460800__frozen_Bear_radar_mapped_to_Uni_local4__label_code_mse__seed42.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/115200_to_460800__frozen_Bear_radar_mapped_to_Uni_local4__label_code_mse__seed73.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/115200_to_460800__frozen_Bear_radar_mapped_to_Uni_local4__matched_bag_mse__seed17.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/115200_to_460800__frozen_Bear_radar_mapped_to_Uni_local4__matched_bag_mse__seed42.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/115200_to_460800__frozen_Bear_radar_mapped_to_Uni_local4__matched_bag_mse__seed73.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/115200_to_460800__frozen_Bear_radar_mapped_to_Uni_local4__wrong_class_mse__seed17.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/115200_to_460800__frozen_Bear_radar_mapped_to_Uni_local4__wrong_class_mse__seed42.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/115200_to_460800__frozen_Bear_radar_mapped_to_Uni_local4__wrong_class_mse__seed73.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/460800_to_115200__Bear_contact_mapped_to_Uni_local4__none__seed-1.npz",
+      "rows": 88,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/460800_to_115200__direct_Uni_contact_local4__none__seed-1.npz",
+      "rows": 88,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/460800_to_115200__frozen_Bear_radar_mapped_to_Uni_local4__ce_only__seed17.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/460800_to_115200__frozen_Bear_radar_mapped_to_Uni_local4__ce_only__seed42.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/460800_to_115200__frozen_Bear_radar_mapped_to_Uni_local4__ce_only__seed73.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/460800_to_115200__frozen_Bear_radar_mapped_to_Uni_local4__full__seed17.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/460800_to_115200__frozen_Bear_radar_mapped_to_Uni_local4__full__seed42.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/460800_to_115200__frozen_Bear_radar_mapped_to_Uni_local4__full__seed73.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/460800_to_115200__frozen_Bear_radar_mapped_to_Uni_local4__label_code_ce_mse__seed17.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/460800_to_115200__frozen_Bear_radar_mapped_to_Uni_local4__label_code_ce_mse__seed42.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/460800_to_115200__frozen_Bear_radar_mapped_to_Uni_local4__label_code_ce_mse__seed73.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/460800_to_115200__frozen_Bear_radar_mapped_to_Uni_local4__label_code_mse__seed17.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/460800_to_115200__frozen_Bear_radar_mapped_to_Uni_local4__label_code_mse__seed42.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/460800_to_115200__frozen_Bear_radar_mapped_to_Uni_local4__label_code_mse__seed73.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/460800_to_115200__frozen_Bear_radar_mapped_to_Uni_local4__matched_bag_mse__seed17.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/460800_to_115200__frozen_Bear_radar_mapped_to_Uni_local4__matched_bag_mse__seed42.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/460800_to_115200__frozen_Bear_radar_mapped_to_Uni_local4__matched_bag_mse__seed73.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/460800_to_115200__frozen_Bear_radar_mapped_to_Uni_local4__wrong_class_mse__seed17.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/460800_to_115200__frozen_Bear_radar_mapped_to_Uni_local4__wrong_class_mse__seed42.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    },
+    {
+      "file": "/home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results/predictions/460800_to_115200__frozen_Bear_radar_mapped_to_Uni_local4__wrong_class_mse__seed73.npz",
+      "rows": 614,
+      "head_probability_error": 0.0
+    }
+  ]
+}

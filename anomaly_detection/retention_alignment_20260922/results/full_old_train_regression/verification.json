@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "original_training_queries": 85955,
+  "reference_pairs": 257865,
+  "no_training_or_model_selection": true,
+  "already_frozen_conservative_heads": true,
+  "input_data_already_DCN": true,
+  "original_reference_protocol_preserved": true,
+  "user_constraint": "Original training and test accuracies checked separately; not unseen-data generalization.",
+  "original_weights": {
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/pretrain/fcn/feature_encoder.pth": "e7322e179238ab5edf779830c2be562e2a0d613ac1285c4ccdb35080cc97f84e",
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/pretrain/fcn/classifier.pth": "885d03d3be3e6aef0966d1d74b305ca94f3cef1814467413af270bb02e9c3340"
+  }
+}

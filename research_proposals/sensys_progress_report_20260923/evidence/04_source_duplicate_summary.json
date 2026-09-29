@@ -1,0 +1,13 @@
+{
+  "source_dcn_rows_hashed": 135516,
+  "source_dcn_row_bytes": 96000,
+  "source_exact_duplicate_groups": 600,
+  "source_exact_duplicate_rows": 1504,
+  "source_cross_split_exact_duplicate_groups": 148,
+  "source_cross_split_exact_duplicate_rows": 299,
+  "hdf5_file_attributes": {},
+  "hdf5_dataset_attributes": {},
+  "physical_origin_available": false,
+  "limitation": "Byte-distinct derived DCN windows may still overlap in original raw recording or share physical bearing; no original time/start/recording fields available.",
+  "elapsed_seconds": 58.81439396785572
+}

@@ -1,0 +1,10 @@
+{
+  "current_replay_training_queries_with_test_DCN_duplicate_test_queries": [
+    12991,
+    14081
+  ],
+  "n_local_contact_axis_DCN_compared_to_full_source": 264,
+  "n_exact_source_local_DCN_matches": 0,
+  "matches": [],
+  "sensitivity_limit": "Removing 31 query duplicates leaves cross-split healthy references, shared conditions, unknown original recordings/entities and reused test; not a clean test."
+}

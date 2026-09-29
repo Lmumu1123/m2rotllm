@@ -1,0 +1,6 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+/usr/local/lib/python3.12/dist-packages/torch/nn/init.py:567: UserWarning: Initializing zero-element tensors is a no-op
+  warnings.warn("Initializing zero-element tensors is a no-op")
+{"event": "ram_preload", "shape": [20, 24000], "bytes": 1920000, "seconds": 0.0012981821782886982}
+trainable params: 4,672,080 || all params: 1,549,445,922 || trainable%: 0.3015
+{"event": "finetune_complete", "results": "/home/huangyating/BearLLM/outputs/training_smoke/finetune/results.json"}

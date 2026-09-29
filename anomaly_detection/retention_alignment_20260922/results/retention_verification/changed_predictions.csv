@@ -1,0 +1,5 @@
+version,variant,classes,n,prediction_changed,old_correct_new_wrong,old_wrong_new_correct
+retained_head_conservative,query_no_demean,10,12279,31,18,9
+retained_head_conservative,query_no_demean,4,12279,26,15,8
+retained_head_conservative,v0,10,12279,40,19,18
+retained_head_conservative,v0,4,12279,39,19,18

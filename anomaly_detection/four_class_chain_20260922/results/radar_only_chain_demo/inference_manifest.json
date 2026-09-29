@@ -1,0 +1,59 @@
+{
+  "status": "complete",
+  "purpose": "radar-only interface demonstration, not held-out accuracy evaluation",
+  "windows": 614,
+  "recordings": 12,
+  "python": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "device": "cuda:0",
+  "input_feature": "frame_shape",
+  "metadata_columns_used": [
+    "bag_id",
+    "range_center_m",
+    "intended_distance_m",
+    "geometry_roi_mismatch"
+  ],
+  "original_label_state_or_contact_fields_read": false,
+  "contact_feature_files_read": false,
+  "inference_true_label": "constant -1 solely for legacy evaluator interface; never measured truth",
+  "placeholder_fields": {
+    "task": "interface_control",
+    "fold": "inference_no_labels",
+    "direction": "no_evaluation",
+    "modality": "radar"
+  },
+  "diagnostic_accuracy_reported": false,
+  "unknown_detection_supported": false,
+  "raw_llm_probability_fidelity": 1.0,
+  "language_fallback_count": 0,
+  "invalid_or_unverified_roi_count": 4,
+  "diagnosis_status_counts": {
+    "experimental_known_class_candidate": 8,
+    "invalid_target_roi": 4
+  },
+  "hashes": {
+    "/home/huangyating/anomaly_detection/four_class_chain_20260922/results/chain_v1/models/four_class_provisional_roi/all_known/distill_seed42.pt": "c5e4557cea17f996649faa82cdb96c3c4dde49cade440253d80d43b7e86ea624",
+    "/home/huangyating/anomaly_detection/four_class_chain_20260922/results/radar_only_demo_inputs/features.npz": "aaa9863247d8bf8c88493fd8982ec2adc1b8e870d20cb82562eeb2e6ae7171e9",
+    "/home/huangyating/anomaly_detection/four_class_chain_20260922/results/radar_only_demo_inputs/metadata.csv": "35677c54f3579d3bf7d6d6854a38100757d10547218245f549d60d93a0cec41e",
+    "/home/huangyating/anomaly_detection/four_class_chain_20260922/scripts/predict_chain.py": "19f99fb0cf5756cacfe50bba3aa6775ea0cd143559c76e0c10a1a406b932e9b3"
+  },
+  "bridge_command": [
+    "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+    "/home/huangyating/anomaly_detection/four_class_chain_20260922/contact/run_llm_bridge.py",
+    "--inputs",
+    "/home/huangyating/anomaly_detection/four_class_chain_20260922/results/radar_only_chain_demo/llm_bridge_inputs.csv",
+    "--no-controls",
+    "--device",
+    "cuda:0",
+    "--output",
+    "/home/huangyating/anomaly_detection/four_class_chain_20260922/results/radar_only_chain_demo/llm"
+  ],
+  "guard_command": [
+    "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+    "/home/huangyating/anomaly_detection/four_class_chain_20260922/contact/guard_llm_output.py",
+    "--directory",
+    "/home/huangyating/anomaly_detection/four_class_chain_20260922/results/radar_only_chain_demo/llm",
+    "--radar-quality",
+    "/home/huangyating/anomaly_detection/four_class_chain_20260922/results/radar_only_chain_demo/actual_radar_geometry.csv"
+  ],
+  "elapsed_seconds": 6.017068910878152
+}

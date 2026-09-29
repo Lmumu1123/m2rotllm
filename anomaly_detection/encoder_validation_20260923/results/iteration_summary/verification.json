@@ -1,0 +1,16 @@
+{
+  "aggregation": "Pool complementary test folds within each seed, then average the 3 seeds. Identical denominators per seed allow equivalent pooled correct/total calculation.",
+  "warning": "Repeated counts in CSV are computational totals, not independent physical sample counts.",
+  "unique_main_recordings": 8,
+  "unique_main_contact_windows": 58,
+  "unique_main_radar_windows": 412,
+  "known_roi_valid_radar_windows": 312,
+  "old_data_previously_used_for_development": true,
+  "inputs": {
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923/controls/results/metrics.csv": "239f8bd7bf0ddeb7ad5b12f39423bb21f9d23fed1723169cf050009857c4c46c",
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923/rotllm/radar/metrics.csv": "d8672d74eb118d8772a1f1c4c4ec0b06a558013ffe9306364643036991bae014",
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923/results/contact_only_stitch/metrics.csv": "72b820fa1200fd349ab4de42b5f62d1a6f2fae5915c4d4954133a1bbd7570cf7",
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923/controls/results/contact_predictions.csv": "696ef7a17d7e26ce35e087e4d8dfbb4b32427086c588c820bfcee579b5507800",
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923/rotllm/pooled_metrics.csv": "6a0c2850fe956ec62d2eada645991181ec407c39652cbe0a18a67b1ff1f29568"
+  }
+}

@@ -1,0 +1,25 @@
+variant,fold,unit,split,n,correct,accuracy,macro_f1,confusion_matrix
+paper_100ms,115200_to_460800,window,train,32,32,1.0,1.0,"[[7, 0, 0, 0], [0, 8, 0, 0], [0, 0, 8, 0], [0, 0, 0, 9]]"
+paper_100ms,115200_to_460800,window,test,26,26,1.0,1.0,"[[6, 0, 0, 0], [0, 7, 0, 0], [0, 0, 10, 0], [0, 0, 0, 3]]"
+paper_100ms,115200_to_460800,window,external_normal_only,12,0,0.0,,
+paper_100ms,115200_to_460800,recording,train,4,4,1.0,1.0,"[[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]"
+paper_100ms,115200_to_460800,recording,test,4,4,1.0,1.0,"[[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]"
+paper_100ms,115200_to_460800,recording,external_normal_only,2,0,0.0,,
+paper_100ms,460800_to_115200,window,train,26,26,1.0,1.0,"[[6, 0, 0, 0], [0, 7, 0, 0], [0, 0, 10, 0], [0, 0, 0, 3]]"
+paper_100ms,460800_to_115200,window,test,32,32,1.0,1.0,"[[7, 0, 0, 0], [0, 8, 0, 0], [0, 0, 8, 0], [0, 0, 0, 9]]"
+paper_100ms,460800_to_115200,window,external_normal_only,12,12,1.0,,
+paper_100ms,460800_to_115200,recording,train,4,4,1.0,1.0,"[[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]"
+paper_100ms,460800_to_115200,recording,test,4,4,1.0,1.0,"[[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]"
+paper_100ms,460800_to_115200,recording,external_normal_only,2,2,1.0,,
+code_native1024,115200_to_460800,window,train,32,32,1.0,1.0,"[[7, 0, 0, 0], [0, 8, 0, 0], [0, 0, 8, 0], [0, 0, 0, 9]]"
+code_native1024,115200_to_460800,window,test,26,26,1.0,1.0,"[[6, 0, 0, 0], [0, 7, 0, 0], [0, 0, 10, 0], [0, 0, 0, 3]]"
+code_native1024,115200_to_460800,window,external_normal_only,12,12,1.0,,
+code_native1024,115200_to_460800,recording,train,4,4,1.0,1.0,"[[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]"
+code_native1024,115200_to_460800,recording,test,4,4,1.0,1.0,"[[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]"
+code_native1024,115200_to_460800,recording,external_normal_only,2,2,1.0,,
+code_native1024,460800_to_115200,window,train,26,26,1.0,1.0,"[[6, 0, 0, 0], [0, 7, 0, 0], [0, 0, 10, 0], [0, 0, 0, 3]]"
+code_native1024,460800_to_115200,window,test,32,32,1.0,1.0,"[[7, 0, 0, 0], [0, 8, 0, 0], [0, 0, 8, 0], [0, 0, 0, 9]]"
+code_native1024,460800_to_115200,window,external_normal_only,12,12,1.0,,
+code_native1024,460800_to_115200,recording,train,4,4,1.0,1.0,"[[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]"
+code_native1024,460800_to_115200,recording,test,4,4,1.0,1.0,"[[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]"
+code_native1024,460800_to_115200,recording,external_normal_only,2,2,1.0,,

@@ -1,0 +1,18 @@
+{
+  "python": "3.12.14 (main, Sep  2 2026, 23:27:36) [GCC 15.3.0]",
+  "executable": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "platform": "Linux-5.10.134-013.8.2.kangaroo.al8.x86_64-x86_64-with-glibc2.39",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "numpy": "1.26.0",
+    "scipy": "1.15.2",
+    "scikit-learn": "1.6.1",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.1",
+    "transformers": "4.49.0",
+    "peft": "0.15.2",
+    "safetensors": "0.6.2",
+    "accelerate": "1.4.0"
+  },
+  "environment_modified": false
+}

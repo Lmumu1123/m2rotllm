@@ -1,0 +1,23 @@
+{
+  "question": "If no radar sample from one class is used to fit the radar model, can the existing contact classifier recognize that class through the radar encoder?",
+  "status": "Declared before this leave-one-radar-class experiment; existing previously inspected development recordings, not a newly blind dataset",
+  "radar_source": "../geometry_corrected/radar/features.npz, frame_shape128, corrected fixed distance gate 0.29-0.61m",
+  "contact_source": "/home/huangyating/anomaly_detection/retention_alignment_20260922/preprocessing/variants/v0/retrained_fcn/contact_features.npz",
+  "head": "Unmodified per-fold stage_b_v0 retained_head_v1 weight10/bias10, grouped into four labels normal/inner/outer/ball",
+  "allowed_prior_knowledge": "The pretrained contact backbone and previously fitted contact head already have all four classes. This is radar-class holdout, NOT entire-system zero-shot and NOT absence of target-class contact knowledge.",
+  "folds": ["115200_to_460800", "460800_to_115200"],
+  "heldout_labels": [0, 1, 2, 3],
+  "methods": ["ce_only", "matched_bag_mse", "full", "label_code_mse"],
+  "seeds": [17, 42, 73],
+  "total_models": 96,
+  "data_exclusion": "For each fold/class, exclude that class from ALL radar fitting, including source recording and target recording, min-max/scaler, code fitting, minibatches, losses, model selection and stopping. Student only sees the other three source recordings. Radar scaler and contact scaler use only these three source recordings, recording-balanced. Heldout class source radar is not evaluated.",
+  "contact_target": "Only corresponding three contact training-recording mean features are used as student targets. Frozen head knowledge of the fourth class remains allowed.",
+  "artificial_codes": "Construct only three codes for the three seen labels using frozen four-class head, global three-class train-contact mean/scale; 400 Adam steps lr.05, CE+.001 standardized code L2. No class-specific real contact mean enters code construction.",
+  "student": "Original 128-128-LayerNorm-GELU-Dropout(.1)-64-GELU-128 MLP; zero initialize last linear; output ReLU(contact_mean + contact_scale*net). Same initialization and mini-batch draws for each method under a seed.",
+  "training": "400 steps, AdamW lr=.001 weight_decay=.01, gradient clip5; 16 replacement samples per seen training recording each step",
+  "loss": "CE-only; standardized bag MSE-only; full=CE+MSE+.1 contrast(tau .2)+.5 KD(T2); artificial-code MSE-only. Four-output head retained for every method.",
+  "selection": "No validation selection, no best seed/class/step selection, all 96 final-step results reported",
+  "evaluation": "Only the four opposite-direction recordings. Report all4, seen3, unseen1 separately at window and recording(mean probabilities) level. Report heldout recall and seen-to-heldout false prediction rate. Standardized mean feature MSE/cosine descriptive only, fitted scale fixed from seen3.",
+  "limitations": "One training recording per seen fault; same physical bearings between directions; previously developed data. Success does not by itself prove severity, causal physics or broad generalization. Failure means this existing training recipe lacks this demonstrated capability, not that all cross-modal transfer is impossible.",
+  "environment": "m2vllm, CPU 2 threads, no original files overwritten"
+}

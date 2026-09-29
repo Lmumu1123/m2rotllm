@@ -1,0 +1,28 @@
+{
+  "teacher": "Official UniFault Tiny pretrained Transformer; frozen backbone, per-fold contact-only four-class readout",
+  "teacher_input": "predeclared paper_100ms branch, 10 time blocks x 3 axes averaged per 1s contact window",
+  "radar_input": "geometry-corrected frame_shape 128",
+  "constraints": [
+    "signed_linear",
+    "legacy_nonnegative_relu"
+  ],
+  "constraints_reason": "UniFault LayerNorm features contain negative values; legacy ReLU is a deliberate incorrect-support control",
+  "methods": [
+    "ce_only",
+    "embedding_only",
+    "full"
+  ],
+  "seeds": [
+    17,
+    42,
+    73
+  ],
+  "steps": 400,
+  "windows_per_bag": 16,
+  "optimizer": "AdamW lr.001 wd.01 clip5",
+  "loss": "CE + MSE + .1 contrast(tau.2) + .5 KD(T2)",
+  "fixed_final_step_no_target_selection": true,
+  "test_is_seen_development_data": true,
+  "source_public_retention": "Untouched original model; new readout has not been evaluated on original public task",
+  "no_new_physical_samples": true
+}

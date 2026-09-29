@@ -1,0 +1,511 @@
+{
+  "created_at_utc": "2026-09-18T17:08:16.087020+00:00",
+  "data_dir": "/media/nas_users/huangyating/bearllm-assets/mbhm_dataset",
+  "scope": "complete",
+  "checks": {
+    "all_requested_file_hashes_match": true,
+    "sqlite_integrity": true,
+    "sqlite_foreign_keys": true,
+    "all_file_rows_join_conditions": true,
+    "file_ids_contiguous_from_zero": true,
+    "valid_label_ids": true,
+    "sqlite_parquet_identical": true,
+    "corpus_records_valid": true,
+    "corpus_ids_unique": true,
+    "corpus_ids_contiguous_from_zero": true,
+    "hdf5_expected_shape": true,
+    "hdf5_float32": true,
+    "hdf5_all_values_finite": true,
+    "hdf5_no_zero_signals": true,
+    "hdf5_dcn_energy_matches": true
+  },
+  "warnings": [
+    "The upstream healthy-reference rule excludes 12724 samples. Data integrity coverage includes them, but official paired model evaluation cannot. Any cross-condition reference fallback must be reported separately.",
+    "The release contains no fixed train/val/test or reference-pair manifest; regenerated splits and references cannot establish independence from published model training.",
+    "600/600 published corpus vibration queries belong to the regenerated upstream training split. Corpus replay is not an independent held-out benchmark."
+  ],
+  "dataset_revision": "78cd9b8b6b65cd43eebf4879b060d783d5f7dcfe",
+  "file_verification": {
+    ".gitattributes": {
+      "bytes": 2559,
+      "verified": true,
+      "hash_type": "git_blob_sha1",
+      "expected_hash": "41ea47c1fcf071b1a70e1c5936ab7e75134d6ab9"
+    },
+    "README.md": {
+      "bytes": 2802,
+      "verified": true,
+      "hash_type": "git_blob_sha1",
+      "expected_hash": "f0fcc2f18dda0ac3c241125367ca939381c40791"
+    },
+    "corpus.json": {
+      "bytes": 1507812,
+      "verified": true,
+      "hash_type": "git_blob_sha1",
+      "expected_hash": "885d711835e46c9a0f2a72d04c67042815387861"
+    },
+    "data.hdf5": {
+      "bytes": 13009537400,
+      "verified": true,
+      "hash_type": "sha256",
+      "expected_hash": "ba5e5c9da0538e8d0dfd22d683b95098cb1abee14c6c6e2bbc478ee6339040b8"
+    },
+    "demo_data.json": {
+      "bytes": 1520901,
+      "verified": true,
+      "hash_type": "git_blob_sha1",
+      "expected_hash": "5372317dfbc97700df48315b528c53a91191946a"
+    },
+    "metadata.parquet": {
+      "bytes": 836365,
+      "verified": true,
+      "hash_type": "sha256",
+      "expected_hash": "1589edfde1172d3997c3037a228c2f8fc40c9fe010c761750e42ce488b909cf8"
+    },
+    "metadata.sqlite": {
+      "bytes": 4464640,
+      "verified": true,
+      "hash_type": "sha256",
+      "expected_hash": "87134ccb87c93646b8613251bca712b4afb8910baf32d049c263dc8ab9e96ef0"
+    },
+    "src/dcn.py": {
+      "bytes": 596,
+      "verified": true,
+      "hash_type": "git_blob_sha1",
+      "expected_hash": "de0577366b9458589f564aa99465d514048fae8d"
+    },
+    "src/demo.py": {
+      "bytes": 1922,
+      "verified": true,
+      "hash_type": "git_blob_sha1",
+      "expected_hash": "535c51a07a4d8bca49829f54e86a6c76a50fa880"
+    }
+  },
+  "metadata": {
+    "schema": {
+      "condition": "CREATE TABLE condition (condition_id INTEGER PRIMARY KEY, dataset TEXT, code TEXT, channel INTEGER, rpm TEXT, load TEXT)",
+      "file_info": "CREATE TABLE file_info (file_id INTEGER PRIMARY KEY, condition_id INTEGER, label INTEGER, FOREIGN KEY (condition_id) REFERENCES condition(condition_id))",
+      "label_note": "CREATE TABLE label_note (label INTEGER PRIMARY KEY, note TEXT)"
+    },
+    "sample_count": 135516,
+    "condition_count": 1043,
+    "source_count": 9,
+    "sources": {
+      "CWRU": {
+        "samples": 3932,
+        "conditions": 38,
+        "label_counts": {
+          "0": 70,
+          "1": 310,
+          "2": 296,
+          "3": 350,
+          "4": 310,
+          "5": 310,
+          "6": 350,
+          "7": 918,
+          "8": 340,
+          "9": 678
+        },
+        "eligible_label_counts": {
+          "0": 70
+        },
+        "excluded_label_counts": {
+          "1": 310,
+          "2": 296,
+          "3": 350,
+          "4": 310,
+          "5": 310,
+          "6": 350,
+          "7": 918,
+          "8": 340,
+          "9": 678
+        },
+        "same_condition_healthy_reference_samples": 70,
+        "missing_same_condition_healthy_reference_samples": 3862
+      },
+      "DIRG": {
+        "samples": 7140,
+        "conditions": 714,
+        "label_counts": {
+          "0": 1020,
+          "1": 1020,
+          "2": 1020,
+          "3": 1020,
+          "4": 1020,
+          "5": 1020,
+          "6": 1020
+        },
+        "eligible_label_counts": {
+          "0": 1020
+        },
+        "excluded_label_counts": {
+          "1": 1020,
+          "2": 1020,
+          "3": 1020,
+          "4": 1020,
+          "5": 1020,
+          "6": 1020
+        },
+        "same_condition_healthy_reference_samples": 1020,
+        "missing_same_condition_healthy_reference_samples": 6120
+      },
+      "HIT": {
+        "samples": 9648,
+        "conditions": 40,
+        "label_counts": {
+          "0": 3816,
+          "2": 4032,
+          "8": 1800
+        },
+        "eligible_label_counts": {
+          "0": 3816,
+          "2": 4032,
+          "8": 1800
+        },
+        "excluded_label_counts": {},
+        "same_condition_healthy_reference_samples": 9648,
+        "missing_same_condition_healthy_reference_samples": 0
+      },
+      "IMS": {
+        "samples": 46480,
+        "conditions": 16,
+        "label_counts": {
+          "0": 43176,
+          "1": 812,
+          "5": 1000,
+          "6": 312,
+          "7": 575,
+          "8": 447,
+          "9": 158
+        },
+        "eligible_label_counts": {
+          "0": 43176,
+          "1": 812,
+          "5": 1000,
+          "6": 312,
+          "7": 575,
+          "8": 447,
+          "9": 158
+        },
+        "excluded_label_counts": {},
+        "same_condition_healthy_reference_samples": 46480,
+        "missing_same_condition_healthy_reference_samples": 0
+      },
+      "JUST": {
+        "samples": 43986,
+        "conditions": 36,
+        "label_counts": {
+          "0": 10932,
+          "2": 11124,
+          "5": 10956,
+          "8": 10974
+        },
+        "eligible_label_counts": {
+          "0": 10932,
+          "2": 11124,
+          "5": 10956,
+          "8": 10974
+        },
+        "excluded_label_counts": {},
+        "same_condition_healthy_reference_samples": 43986,
+        "missing_same_condition_healthy_reference_samples": 0
+      },
+      "MFPT": {
+        "samples": 78,
+        "conditions": 9,
+        "label_counts": {
+          "0": 18,
+          "2": 21,
+          "8": 39
+        },
+        "eligible_label_counts": {
+          "0": 18,
+          "8": 18
+        },
+        "excluded_label_counts": {
+          "2": 21,
+          "8": 21
+        },
+        "same_condition_healthy_reference_samples": 36,
+        "missing_same_condition_healthy_reference_samples": 42
+      },
+      "NCEPU": {
+        "samples": 3600,
+        "conditions": 180,
+        "label_counts": {
+          "0": 900,
+          "2": 900,
+          "5": 900,
+          "8": 900
+        },
+        "eligible_label_counts": {
+          "0": 900
+        },
+        "excluded_label_counts": {
+          "2": 900,
+          "5": 900,
+          "8": 900
+        },
+        "same_condition_healthy_reference_samples": 900,
+        "missing_same_condition_healthy_reference_samples": 2700
+      },
+      "PU": {
+        "samples": 7316,
+        "conditions": 4,
+        "label_counts": {
+          "0": 1918,
+          "1": 954,
+          "2": 633,
+          "7": 2223,
+          "8": 1588
+        },
+        "eligible_label_counts": {
+          "0": 1918,
+          "1": 954,
+          "2": 633,
+          "7": 2223,
+          "8": 1588
+        },
+        "excluded_label_counts": {},
+        "same_condition_healthy_reference_samples": 7316,
+        "missing_same_condition_healthy_reference_samples": 0
+      },
+      "XJTU": {
+        "samples": 13336,
+        "conditions": 6,
+        "label_counts": {
+          "0": 11014,
+          "1": 64,
+          "2": 28,
+          "3": 232,
+          "4": 30,
+          "5": 60,
+          "6": 356,
+          "7": 284,
+          "8": 260,
+          "9": 1008
+        },
+        "eligible_label_counts": {
+          "0": 11014,
+          "1": 64,
+          "2": 28,
+          "3": 232,
+          "4": 30,
+          "5": 60,
+          "6": 356,
+          "7": 284,
+          "8": 260,
+          "9": 1008
+        },
+        "excluded_label_counts": {},
+        "same_condition_healthy_reference_samples": 13336,
+        "missing_same_condition_healthy_reference_samples": 0
+      }
+    },
+    "label_names": {
+      "0": "Normal State",
+      "1": "Bearing Inner Ring Minor Fault",
+      "2": "Bearing Inner Ring General Fault",
+      "3": "Bearing Inner Ring Severe Fault",
+      "4": "Bearing Ball Minor Fault",
+      "5": "Bearing Ball General Fault",
+      "6": "Bearing Ball Severe Fault",
+      "7": "Bearing Outer Ring Minor Fault",
+      "8": "Bearing Outer Ring General Fault",
+      "9": "Bearing Outer Ring Severe Fault"
+    },
+    "label_counts": {
+      "0": 72864,
+      "1": 3160,
+      "2": 18054,
+      "3": 1602,
+      "4": 1360,
+      "5": 14246,
+      "6": 2038,
+      "7": 4000,
+      "8": 16348,
+      "9": 1844
+    },
+    "parquet_shape": [
+      135516,
+      8
+    ]
+  },
+  "official_reference_coverage": {
+    "eligible_unique_samples": 122792,
+    "excluded_unique_samples": 12724,
+    "eligible_conditions": 258,
+    "excluded_conditions": 785,
+    "excluded_by_source": {
+      "CWRU": 3862,
+      "DIRG": 6120,
+      "MFPT": 42,
+      "NCEPU": 2700
+    },
+    "excluded_label_counts": {
+      "1": 1330,
+      "2": 2237,
+      "3": 1370,
+      "4": 1330,
+      "5": 2230,
+      "6": 1370,
+      "7": 918,
+      "8": 1261,
+      "9": 678
+    },
+    "eligible_sources_with_only_healthy_queries": [
+      "CWRU",
+      "DIRG",
+      "NCEPU"
+    ],
+    "excluded_manifest": "/home/huangyating/BearLLM/outputs/mbhm_excluded_missing_reference.csv",
+    "unique_samples_per_official_split": {
+      "test": 12279,
+      "train": 85955,
+      "val": 24558
+    },
+    "pairs_per_official_split": {
+      "test": 36837,
+      "train": 257865,
+      "val": 73674
+    },
+    "split_rule": "Enumerate eligible samples in file_id order; index%10<7 train, <9 val, otherwise test. Upstream creates 3 random same-condition healthy reference pairs per sample.",
+    "published_fixed_split_or_reference_manifest": false,
+    "reference_pool_rule": "Healthy references are selected from the entire same-condition pool before splitting; references are not constrained to the query split."
+  },
+  "corpus": {
+    "sample_count": 600,
+    "task_counts": {
+      "0": 150,
+      "1": 150,
+      "2": 150,
+      "3": 150
+    },
+    "task_names": {
+      "0": "fault_detection",
+      "1": "fault_diagnosis",
+      "2": "maintenance_recommendation",
+      "3": "risk_assessment"
+    },
+    "label_counts": {
+      "0": 60,
+      "1": 60,
+      "2": 60,
+      "3": 60,
+      "4": 60,
+      "5": 60,
+      "6": 60,
+      "7": 60,
+      "8": 60,
+      "9": 60
+    },
+    "label_names": {
+      "0": "Fault-Free",
+      "1": "Minor Inner Ring Fault",
+      "2": "Moderate Inner Ring Fault",
+      "3": "Severe Inner Ring Fault",
+      "4": "Minor Ball Fault",
+      "5": "Moderate Ball Fault",
+      "6": "Severe Ball Fault",
+      "7": "Minor Outer Ring Fault",
+      "8": "Moderate Outer Ring Fault",
+      "9": "Severe Outer Ring Fault"
+    },
+    "task_label_counts": {
+      "0": {
+        "0": 15,
+        "1": 15,
+        "2": 15,
+        "3": 15,
+        "4": 15,
+        "5": 15,
+        "6": 15,
+        "7": 15,
+        "8": 15,
+        "9": 15
+      },
+      "1": {
+        "0": 15,
+        "1": 15,
+        "2": 15,
+        "3": 15,
+        "4": 15,
+        "5": 15,
+        "6": 15,
+        "7": 15,
+        "8": 15,
+        "9": 15
+      },
+      "2": {
+        "0": 15,
+        "1": 15,
+        "2": 15,
+        "3": 15,
+        "4": 15,
+        "5": 15,
+        "6": 15,
+        "7": 15,
+        "8": 15,
+        "9": 15
+      },
+      "3": {
+        "0": 15,
+        "1": 15,
+        "2": 15,
+        "3": 15,
+        "4": 15,
+        "5": 15,
+        "6": 15,
+        "7": 15,
+        "8": 15,
+        "9": 15
+      }
+    },
+    "source_counts": {
+      "DIRG": 1,
+      "HIT": 31,
+      "IMS": 123,
+      "JUST": 150,
+      "NCEPU": 2,
+      "PU": 81,
+      "XJTU": 212
+    },
+    "vibration_split_membership_under_regenerated_split": {
+      "train": 600
+    },
+    "unique_vibration_ids": 551,
+    "unique_reference_ids": 593,
+    "violations": []
+  },
+  "hdf5": {
+    "keys": [
+      "vibration"
+    ],
+    "shape": [
+      135516,
+      24000
+    ],
+    "dtype": "float32",
+    "chunks": null,
+    "compression": null,
+    "preprocessing": "Already DCN; do not apply DCN again.",
+    "values_checked": 3252384000,
+    "rows_checked": 135516,
+    "min": -1.54150390625,
+    "max": 1.5446267127990723,
+    "max_abs_dc_coefficient": 1.5446267127990723,
+    "energy_expected": 2.4,
+    "energy_quantiles": {
+      "min": 2.399998690362689,
+      "p01": 2.3999995075456746,
+      "median": 2.4000000016819274,
+      "p99": 2.400000513638851,
+      "max": 2.4000015076110244
+    },
+    "nonfinite_row_ids": [],
+    "zero_energy_row_ids": [],
+    "unexpected_energy_row_ids": []
+  },
+  "passed": true,
+  "elapsed_seconds": 106.655
+}

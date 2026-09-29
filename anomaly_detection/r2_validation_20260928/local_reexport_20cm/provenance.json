@@ -1,0 +1,6 @@
+{
+  "derived_from": "uploaded recording.json metadata, not original missing manifest",
+  "count": 48,
+  "source_files_unchanged": true,
+  "purpose": "local re-export expanded ROI after range QC; no labels used to tune range rule"
+}

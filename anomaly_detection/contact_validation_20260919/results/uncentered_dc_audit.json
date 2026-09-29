@@ -1,0 +1,47 @@
+[
+  {
+    "rpm": 1000,
+    "axis": "x",
+    "uncentered_dct_dc_energy_fraction": 0.8312661910078014
+  },
+  {
+    "rpm": 1000,
+    "axis": "y",
+    "uncentered_dct_dc_energy_fraction": 0.710999570647212
+  },
+  {
+    "rpm": 1000,
+    "axis": "z",
+    "uncentered_dct_dc_energy_fraction": 0.9975317425319653
+  },
+  {
+    "rpm": 2000,
+    "axis": "x",
+    "uncentered_dct_dc_energy_fraction": 0.22603168012512756
+  },
+  {
+    "rpm": 2000,
+    "axis": "y",
+    "uncentered_dct_dc_energy_fraction": 0.3019667898338067
+  },
+  {
+    "rpm": 2000,
+    "axis": "z",
+    "uncentered_dct_dc_energy_fraction": 0.9698874817291866
+  },
+  {
+    "rpm": 3000,
+    "axis": "x",
+    "uncentered_dct_dc_energy_fraction": 0.1665774166169264
+  },
+  {
+    "rpm": 3000,
+    "axis": "y",
+    "uncentered_dct_dc_energy_fraction": 0.0648579365593252
+  },
+  {
+    "rpm": 3000,
+    "axis": "z",
+    "uncentered_dct_dc_energy_fraction": 0.9579779721883804
+  }
+]

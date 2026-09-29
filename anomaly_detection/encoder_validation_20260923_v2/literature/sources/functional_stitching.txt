@@ -1,0 +1,66 @@
+Functional Alignment Can Mislead: Examining Model Stitching
+[
+edit
+]
+Functional Alignment Can Mislead: Examining Model Stitching
+Damian Smith, Harvey Mannering, Antonia Marcu
+Proceedings of the 42nd International Conference on Machine Learning
+, PMLR 267:55972-55998, 2025.
+Abstract
+A common belief in the representational comparison literature is that if two representations can be functionally aligned, they must capture similar information. In this paper we focus on model stitching and show that models can be functionally aligned, but represent very different information. Firstly, we show that discriminative models with very different biases can be stitched together. We then show that models trained to solve entirely different tasks on different data modalities, and even clustered random noise, can be successfully stitched into MNIST or ImageNet-trained models. We end with a discussion of the wider impact of our results on the community’s current beliefs. Overall, our paper draws attention to the need to correctly interpret the results of such functional similarity measures and highlights the need for approaches that capture informational similarity.
+Cite this Paper
+BibTeX
+@InProceedings{pmlr-v267-smith25a,
+title = 	 {Functional Alignment Can Mislead: Examining Model Stitching},
+author =       {Smith, Damian and Mannering, Harvey and Marcu, Antonia},
+booktitle = 	 {Proceedings of the 42nd International Conference on Machine Learning},
+pages = 	 {55972--55998},
+year = 	 {2025},
+editor = 	 {Singh, Aarti and Fazel, Maryam and Hsu, Daniel and Lacoste-Julien, Simon and Berkenkamp, Felix and Maharaj, Tegan and Wagstaff, Kiri and Zhu, Jerry},
+volume = 	 {267},
+series = 	 {Proceedings of Machine Learning Research},
+month = 	 {13--19 Jul},
+publisher =    {PMLR},
+pdf = 	 {https://raw.githubusercontent.com/mlresearch/v267/main/assets/smith25a/smith25a.pdf},
+url = 	 {https://proceedings.mlr.press/v267/smith25a.html},
+abstract = 	 {A common belief in the representational comparison literature is that if two representations can be functionally aligned, they must capture similar information. In this paper we focus on model stitching and show that models can be functionally aligned, but represent very different information. Firstly, we show that discriminative models with very different biases can be stitched together. We then show that models trained to solve entirely different tasks on different data modalities, and even clustered random noise, can be successfully stitched into MNIST or ImageNet-trained models. We end with a discussion of the wider impact of our results on the community’s current beliefs. Overall, our paper draws attention to the need to correctly interpret the results of such functional similarity measures and highlights the need for approaches that capture informational similarity.}
+}
+Copy to Clipboard
+Download
+Endnote
+%0 Conference Paper
+%T Functional Alignment Can Mislead: Examining Model Stitching
+%A Damian Smith
+%A Harvey Mannering
+%A Antonia Marcu
+%B Proceedings of the 42nd International Conference on Machine Learning
+%C Proceedings of Machine Learning Research
+%D 2025
+%E Aarti Singh
+%E Maryam Fazel
+%E Daniel Hsu
+%E Simon Lacoste-Julien
+%E Felix Berkenkamp
+%E Tegan Maharaj
+%E Kiri Wagstaff
+%E Jerry Zhu
+%F pmlr-v267-smith25a
+%I PMLR
+%P 55972--55998
+%U https://proceedings.mlr.press/v267/smith25a.html
+%V 267
+%X A common belief in the representational comparison literature is that if two representations can be functionally aligned, they must capture similar information. In this paper we focus on model stitching and show that models can be functionally aligned, but represent very different information. Firstly, we show that discriminative models with very different biases can be stitched together. We then show that models trained to solve entirely different tasks on different data modalities, and even clustered random noise, can be successfully stitched into MNIST or ImageNet-trained models. We end with a discussion of the wider impact of our results on the community’s current beliefs. Overall, our paper draws attention to the need to correctly interpret the results of such functional similarity measures and highlights the need for approaches that capture informational similarity.
+Copy to Clipboard
+Download
+APA
+Smith, D., Mannering, H. & Marcu, A.. (2025). Functional Alignment Can Mislead: Examining Model Stitching.
+Proceedings of the 42nd International Conference on Machine Learning
+, in
+Proceedings of Machine Learning Research
+267:55972-55998 Available from https://proceedings.mlr.press/v267/smith25a.html.
+Copy to Clipboard
+Download
+Related Material
+Download PDF
+OpenReview
+Software

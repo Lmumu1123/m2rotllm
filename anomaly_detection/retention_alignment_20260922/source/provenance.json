@@ -1,0 +1,16 @@
+{
+  "checkpoint": "independent FCN exported by released-code-seed42/pretrain; NOT final LLM LoRA adapter",
+  "weights": {
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/pretrain/fcn/feature_encoder.pth": "e7322e179238ab5edf779830c2be562e2a0d613ac1285c4ccdb35080cc97f84e",
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/pretrain/fcn/classifier.pth": "885d03d3be3e6aef0966d1d74b305ca94f3cef1814467413af270bb02e9c3340"
+  },
+  "metadata_sha256": "87134ccb87c93646b8613251bca712b4afb8910baf32d049c263dc8ab9e96ef0",
+  "training_dataset_json_sha256": "0ad21e94140f9866f046ef6a0e0b081e64a88f53a638ad15c84aadaed1b4455f",
+  "epochs_completed": 19,
+  "best_epoch": 11,
+  "source_selected_epoch": 11,
+  "python": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "torch": "2.11.0+cu128",
+  "source_sha256": "44e0812b5051707aeaf7206d458091fd2591560abebaf7906fd01842058f2aa9",
+  "fcndef_sha256": "e296b0bc6411ebeead68cf1d4e26f01e62b19c2b882928db7f1ccebbb6406b6a"
+}

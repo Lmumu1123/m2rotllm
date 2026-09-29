@@ -1,0 +1,11 @@
+{
+  "split": "test",
+  "seed": 42,
+  "unique_queries": 12279,
+  "smoke_test_only": false,
+  "reference_policy": "first of 3 seeded upstream same-condition healthy reference draws per query",
+  "instruction_corpus_id": 150,
+  "instruction": "Bearing State Overview: #state_place_holder#. Your task is to determine the most fitting bearing state type from the following options: [Fault-Free, Minor Inner Ring Fault, Moderate Inner Ring Fault, Severe Inner Ring Fault, Minor Ball Fault, Moderate Ball Fault, Severe Ball Fault, Minor Outer Ring Fault, Moderate Outer Ring Fault, Severe Outer Ring Fault], based on the description provided.",
+  "interpretation": "greedy classification generation on reconstructed split, one response per unique query; independent held-out status requires the checkpoint to have been trained only on this reconstructed training split",
+  "original_checkpoint_membership": "unknown; do not assert released-checkpoint held-out accuracy"
+}

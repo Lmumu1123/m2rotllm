@@ -1,0 +1,305 @@
+{
+  "models": [
+    {
+      "fold": "115200_to_460800",
+      "method": "ce_only",
+      "seed": 17,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "ce_only",
+      "seed": 42,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "ce_only",
+      "seed": 73,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "matched_bag_mse",
+      "seed": 17,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "matched_bag_mse",
+      "seed": 42,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "matched_bag_mse",
+      "seed": 73,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "full",
+      "seed": 17,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "full",
+      "seed": 42,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "full",
+      "seed": 73,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "label_code_mse",
+      "seed": 17,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "label_code_mse",
+      "seed": 42,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "label_code_mse",
+      "seed": 73,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "label_code_ce_mse",
+      "seed": 17,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "label_code_ce_mse",
+      "seed": 42,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "label_code_ce_mse",
+      "seed": 73,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "wrong_class_mse",
+      "seed": 17,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "wrong_class_mse",
+      "seed": 42,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "wrong_class_mse",
+      "seed": 73,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "ce_only",
+      "seed": 17,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "ce_only",
+      "seed": 42,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "ce_only",
+      "seed": 73,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "matched_bag_mse",
+      "seed": 17,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "matched_bag_mse",
+      "seed": 42,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "matched_bag_mse",
+      "seed": 73,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "full",
+      "seed": 17,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "full",
+      "seed": 42,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "full",
+      "seed": 73,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "label_code_mse",
+      "seed": 17,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "label_code_mse",
+      "seed": 42,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "label_code_mse",
+      "seed": 73,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "label_code_ce_mse",
+      "seed": 17,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "label_code_ce_mse",
+      "seed": 42,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "label_code_ce_mse",
+      "seed": 73,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "wrong_class_mse",
+      "seed": 17,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "wrong_class_mse",
+      "seed": 42,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "wrong_class_mse",
+      "seed": 73,
+      "reload_probability_max_error": 0.0,
+      "head_unchanged": true,
+      "hidden_nonnegative": true
+    }
+  ],
+  "source_files_unchanged": true,
+  "original_contact_encoder_and_head_untouched": true,
+  "no_fit_on_test": true,
+  "no_fit_on_external": true,
+  "standardized_error_decomposition_checked": true,
+  "test_used_for_final_reporting_only": true,
+  "no_new_physical_samples": true,
+  "model_instances": 36,
+  "python": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "torch": "2.11.0+cu128",
+  "cpu_threads": 2,
+  "script_sha256": "f2e0a3e4f9c5302f9d205b4642e2ab7dbc7f67123d84b0e253bb4d901ee1a3ff",
+  "elapsed_seconds": 20.0216064453125
+}

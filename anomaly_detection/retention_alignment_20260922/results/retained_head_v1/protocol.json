@@ -1,0 +1,36 @@
+{
+  "user_max_accuracy_drop_percentage_points": 0.5,
+  "representation": "Frozen original FCN + linear1 ReLU, 128D; only residual linear2 is trained",
+  "four_type_interface": "group logsumexp of 10 logits; internal ten logits retained for source knowledge",
+  "variants": [
+    "v0",
+    "query_no_demean",
+    "query_no_demean_ref2k"
+  ],
+  "folds": [
+    "115200_to_460800",
+    "460800_to_115200",
+    "all_known"
+  ],
+  "source_weights": [
+    0,
+    1,
+    10,
+    100
+  ],
+  "steps": [
+    200,
+    400,
+    800
+  ],
+  "optimizer": "AdamW lr .003, weight_decay 0",
+  "losses": "local grouped CE + lambda*(source ten CE + 2*T^2 KL(original_T||new_T)); T=2; + .001 delta parameter MSE",
+  "source_batch": "256 query-reference draws from fixed source training replay only",
+  "local_batch": "16 windows per training recording, equal recording weight",
+  "selection": "Among rehearsal lambda>0 candidates passing source-val ten/four accuracy drop<=.005, maximize local TRAIN file macro-F1, then minimize local TRAIN CE, then maximize source-val ten accuracy, then minimum step/lambda. No local heldout metric participates.",
+  "fallback": "If no trained candidate qualifies, unchanged original head. Source test evaluated only after selection is written.",
+  "source_test_acceptance": "Post-selection ten and four accuracy drop<=.005; failure is reported/rejected, not used to retune/select another candidate.",
+  "external": "keep/bigNormal excluded from all training/scalers/selection",
+  "source_protocol_limit": "Original MBHM references may be from val/test and self references; this is an inherited regression benchmark, not independent physical generalization.",
+  "seed": 42
+}

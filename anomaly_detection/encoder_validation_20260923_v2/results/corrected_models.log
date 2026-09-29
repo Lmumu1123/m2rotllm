@@ -1,0 +1,117 @@
+115200_to_460800__ce_only__seed17 test: 1.0 1.0 mse: 0.97837 seconds: 1.2
+115200_to_460800__ce_only__seed42 test: 1.0 1.0 mse: 1.01957 seconds: 1.8
+115200_to_460800__ce_only__seed73 test: 1.0 1.0 mse: 0.98696 seconds: 2.3
+115200_to_460800__matched_bag_mse__seed17 test: 1.0 1.0 mse: 0.3388 seconds: 2.8
+115200_to_460800__matched_bag_mse__seed42 test: 1.0 1.0 mse: 0.3376 seconds: 3.3
+115200_to_460800__matched_bag_mse__seed73 test: 1.0 1.0 mse: 0.33935 seconds: 3.8
+115200_to_460800__full__seed17 test: 1.0 1.0 mse: 0.33922 seconds: 4.3
+115200_to_460800__full__seed42 test: 1.0 1.0 mse: 0.34125 seconds: 4.9
+115200_to_460800__full__seed73 test: 1.0 1.0 mse: 0.33815 seconds: 5.5
+115200_to_460800__label_code_mse__seed17 test: 1.0 1.0 mse: 0.84206 seconds: 6.0
+115200_to_460800__label_code_mse__seed42 test: 1.0 1.0 mse: 0.82154 seconds: 6.5
+115200_to_460800__label_code_mse__seed73 test: 1.0 1.0 mse: 0.82505 seconds: 7.0
+115200_to_460800__label_code_ce_mse__seed17 test: 1.0 1.0 mse: 0.82095 seconds: 7.5
+115200_to_460800__label_code_ce_mse__seed42 test: 1.0 1.0 mse: 0.8065 seconds: 8.0
+115200_to_460800__label_code_ce_mse__seed73 test: 1.0 1.0 mse: 0.81929 seconds: 8.6
+115200_to_460800__wrong_class_mse__seed17 test: 0.0 0.0 mse: 0.9701 seconds: 9.0
+115200_to_460800__wrong_class_mse__seed42 test: 0.0 0.0 mse: 0.97902 seconds: 9.5
+115200_to_460800__wrong_class_mse__seed73 test: 0.0 0.0 mse: 0.975 seconds: 10.0
+460800_to_115200__ce_only__seed17 test: 1.0 0.9952830188679245 mse: 0.74472 seconds: 10.7
+460800_to_115200__ce_only__seed42 test: 1.0 0.9952830188679245 mse: 0.77742 seconds: 11.2
+460800_to_115200__ce_only__seed73 test: 1.0 1.0 mse: 0.76552 seconds: 11.7
+460800_to_115200__matched_bag_mse__seed17 test: 1.0 0.9905660377358491 mse: 0.28322 seconds: 12.1
+460800_to_115200__matched_bag_mse__seed42 test: 1.0 0.9952830188679245 mse: 0.26751 seconds: 12.6
+460800_to_115200__matched_bag_mse__seed73 test: 1.0 1.0 mse: 0.28377 seconds: 13.1
+460800_to_115200__full__seed17 test: 1.0 0.9952830188679245 mse: 0.27347 seconds: 13.7
+460800_to_115200__full__seed42 test: 1.0 0.9952830188679245 mse: 0.27254 seconds: 14.3
+460800_to_115200__full__seed73 test: 1.0 1.0 mse: 0.27515 seconds: 15.0
+460800_to_115200__label_code_mse__seed17 test: 1.0 0.9905660377358491 mse: 0.6126 seconds: 15.5
+460800_to_115200__label_code_mse__seed42 test: 1.0 0.9952830188679245 mse: 0.62541 seconds: 16.1
+460800_to_115200__label_code_mse__seed73 test: 1.0 1.0 mse: 0.62946 seconds: 16.6
+460800_to_115200__label_code_ce_mse__seed17 test: 1.0 0.9952830188679245 mse: 0.62109 seconds: 17.2
+460800_to_115200__label_code_ce_mse__seed42 test: 1.0 0.9952830188679245 mse: 0.62161 seconds: 17.8
+460800_to_115200__label_code_ce_mse__seed73 test: 1.0 0.9952830188679245 mse: 0.62014 seconds: 18.4
+460800_to_115200__wrong_class_mse__seed17 test: 0.0 0.0 mse: 0.89096 seconds: 19.0
+460800_to_115200__wrong_class_mse__seed42 test: 0.0 0.0 mse: 0.90347 seconds: 19.5
+460800_to_115200__wrong_class_mse__seed73 test: 0.0 0.0 mse: 0.90971 seconds: 20.0
+115200_to_460800__native15__ce_only__seed17 [('file', 1.0), ('window', 1.0)] 1.2
+115200_to_460800__native15__ce_only__seed42 [('file', 1.0), ('window', 1.0)] 1.8
+115200_to_460800__native15__ce_only__seed73 [('file', 1.0), ('window', 1.0)] 2.4
+115200_to_460800__native15__embedding_only__seed17 [('file', 0.25), ('window', 0.24)] 3.0
+115200_to_460800__native15__embedding_only__seed42 [('file', 0.25), ('window', 0.24)] 3.6
+115200_to_460800__native15__embedding_only__seed73 [('file', 0.25), ('window', 0.24)] 4.1
+115200_to_460800__native15__full__seed17 [('file', 0.25), ('window', 0.265)] 4.8
+115200_to_460800__native15__full__seed42 [('file', 0.25), ('window', 0.275)] 5.5
+115200_to_460800__native15__full__seed73 [('file', 0.25), ('window', 0.24)] 6.2
+115200_to_460800__new_contact4__ce_only__seed17 [('file', 1.0), ('window', 1.0)] 6.7
+115200_to_460800__new_contact4__ce_only__seed42 [('file', 1.0), ('window', 1.0)] 7.2
+115200_to_460800__new_contact4__ce_only__seed73 [('file', 1.0), ('window', 1.0)] 7.7
+115200_to_460800__new_contact4__embedding_only__seed17 [('file', 1.0), ('window', 1.0)] 8.2
+115200_to_460800__new_contact4__embedding_only__seed42 [('file', 1.0), ('window', 1.0)] 8.7
+115200_to_460800__new_contact4__embedding_only__seed73 [('file', 1.0), ('window', 1.0)] 9.2
+115200_to_460800__new_contact4__full__seed17 [('file', 1.0), ('window', 1.0)] 9.8
+115200_to_460800__new_contact4__full__seed42 [('file', 1.0), ('window', 1.0)] 10.3
+115200_to_460800__new_contact4__full__seed73 [('file', 1.0), ('window', 1.0)] 10.9
+460800_to_115200__native15__ce_only__seed17 [('file', 1.0), ('window', 0.9858)] 11.5
+460800_to_115200__native15__ce_only__seed42 [('file', 1.0), ('window', 0.9906)] 12.1
+460800_to_115200__native15__ce_only__seed73 [('file', 1.0), ('window', 0.9953)] 12.7
+460800_to_115200__native15__embedding_only__seed17 [('file', 0.25), ('window', 0.2877)] 13.3
+460800_to_115200__native15__embedding_only__seed42 [('file', 0.25), ('window', 0.2877)] 13.9
+460800_to_115200__native15__embedding_only__seed73 [('file', 0.25), ('window', 0.2877)] 14.4
+460800_to_115200__native15__full__seed17 [('file', 0.25), ('window', 0.2877)] 15.1
+460800_to_115200__native15__full__seed42 [('file', 0.25), ('window', 0.2877)] 15.8
+460800_to_115200__native15__full__seed73 [('file', 0.25), ('window', 0.2877)] 16.5
+460800_to_115200__new_contact4__ce_only__seed17 [('file', 1.0), ('window', 0.9953)] 16.9
+460800_to_115200__new_contact4__ce_only__seed42 [('file', 1.0), ('window', 1.0)] 17.4
+460800_to_115200__new_contact4__ce_only__seed73 [('file', 1.0), ('window', 1.0)] 17.9
+460800_to_115200__new_contact4__embedding_only__seed17 [('file', 1.0), ('window', 0.9953)] 18.3
+460800_to_115200__new_contact4__embedding_only__seed42 [('file', 1.0), ('window', 0.9953)] 18.8
+460800_to_115200__new_contact4__embedding_only__seed73 [('file', 1.0), ('window', 0.9953)] 19.2
+460800_to_115200__new_contact4__full__seed17 [('file', 1.0), ('window', 0.9953)] 19.8
+460800_to_115200__new_contact4__full__seed42 [('file', 1.0), ('window', 0.9953)] 20.3
+460800_to_115200__new_contact4__full__seed73 [('file', 1.0), ('window', 1.0)] 20.8
+        head         method                   subset   unit  accuracy_mean  accuracy_std  macro_f1_mean  n_models  mse_standardized  cosine_standardized
+    native15        ce_only all_four_provisional_roi   file       1.000000      0.000000       1.000000         6          6.178058            -0.005365
+    native15        ce_only all_four_provisional_roi window       0.995283      0.005967       0.995160         6               NaN                  NaN
+    native15        ce_only    geometry_valid_subset   file       1.000000      0.000000       1.000000         6          6.178058            -0.005365
+    native15        ce_only    geometry_valid_subset window       0.995283      0.005967       0.995737         6               NaN                  NaN
+    native15 embedding_only all_four_provisional_roi   file       0.250000      0.000000       0.100000         6          0.200278             0.636807
+    native15 embedding_only all_four_provisional_roi window       0.263868      0.026146       0.104248         6               NaN                  NaN
+    native15 embedding_only    geometry_valid_subset   file       0.250000      0.000000       0.133333         6          0.200278             0.636807
+    native15 embedding_only    geometry_valid_subset window       0.263868      0.026146       0.138997         6               NaN                  NaN
+    native15           full all_four_provisional_roi   file       0.250000      0.000000       0.100000         6          0.598499             0.474134
+    native15           full all_four_provisional_roi window       0.273868      0.018994       0.123058         6               NaN                  NaN
+    native15           full    geometry_valid_subset   file       0.250000      0.000000       0.133333         6          0.598499             0.474134
+    native15           full    geometry_valid_subset window       0.273868      0.018994       0.142201         6               NaN                  NaN
+new_contact4        ce_only all_four_provisional_roi   file       1.000000      0.000000       1.000000         6          0.506414             0.512427
+new_contact4        ce_only all_four_provisional_roi window       0.999214      0.001926       0.999249         6               NaN                  NaN
+new_contact4        ce_only    geometry_valid_subset   file       1.000000      0.000000       1.000000         6          0.506414             0.512427
+new_contact4        ce_only    geometry_valid_subset window       0.999214      0.001926       0.998998         6               NaN                  NaN
+new_contact4 embedding_only all_four_provisional_roi   file       1.000000      0.000000       1.000000         6          0.200278             0.636807
+new_contact4 embedding_only all_four_provisional_roi window       0.997642      0.002584       0.997746         6               NaN                  NaN
+new_contact4 embedding_only    geometry_valid_subset   file       1.000000      0.000000       1.000000         6          0.200278             0.636807
+new_contact4 embedding_only    geometry_valid_subset window       0.997642      0.002584       0.996995         6               NaN                  NaN
+new_contact4           full all_four_provisional_roi   file       1.000000      0.000000       1.000000         6          0.200071             0.637154
+new_contact4           full all_four_provisional_roi window       0.998428      0.002436       0.998497         6               NaN                  NaN
+new_contact4           full    geometry_valid_subset   file       1.000000      0.000000       1.000000         6          0.200071             0.637154
+new_contact4           full    geometry_valid_subset window       0.998428      0.002436       0.997997         6               NaN                  NaN
+115200_to_460800 contact map train/test MSE 0.017664065351687686 0.5128689711219537
+460800_to_115200 contact map train/test MSE 0.024744903889279538 1.0401956808202362
+                                                            accuracy  macro_f1
+head                 path                radar_method                         
+contact_only_new4    A_contact_to_B      none               0.875000  0.833333
+                     frozen_radar_A_to_B ce_only            0.750000  0.666667
+                                         full               1.000000  1.000000
+                                         label_code_ce_mse  0.791667  0.722222
+                                         label_code_mse     0.750000  0.666667
+                                         matched_bag_mse    1.000000  1.000000
+                                         wrong_class_mse    0.000000  0.000000
+                     native_B_contact    none               1.000000  1.000000
+native15_conditioned A_contact_to_B      none               0.250000  0.100000
+                     frozen_radar_A_to_B ce_only            0.250000  0.100000
+                                         full               0.250000  0.100000
+                                         label_code_ce_mse  0.250000  0.100000
+                                         label_code_mse     0.250000  0.100000
+                                         matched_bag_mse    0.250000  0.100000
+                                         wrong_class_mse    0.250000  0.100000
+                     native_B_contact    none               0.250000  0.100000

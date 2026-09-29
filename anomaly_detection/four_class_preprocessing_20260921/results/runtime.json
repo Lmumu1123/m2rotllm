@@ -1,0 +1,24 @@
+{
+  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "numpy": "2.0.2",
+  "scipy": "1.13.1",
+  "preprocessing_sha256": "4978c28eac430c1ed1dd95357b4e92bebc125c4f6d8746abdf50b4f82b2e857c",
+  "config_sha256": "5db86ab2364401b646d82028180898b244015b110d5085eebaaf6f7502174429",
+  "command": [
+    "preprocess.py",
+    "--data",
+    "/Users/anthea/Desktop/C2RLLM/data接触式和非接触式同时采集",
+    "--output",
+    "results"
+  ],
+  "distance_m": null,
+  "class_map": {
+    "normal": 0,
+    "inBroken": 1,
+    "outBroken": 2,
+    "roll": 3
+  },
+  "keep_and_bigNormal": "label -1; excluded pending confirmation",
+  "reference_policy": "not auto-assigned; require training-only independently recorded matched normal reference",
+  "time_alignment": "none; never infer sampling gaps from baud or file size"
+}

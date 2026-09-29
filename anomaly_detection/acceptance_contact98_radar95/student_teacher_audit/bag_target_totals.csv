@@ -1,0 +1,7 @@
+role,target_kind,correct,n
+heldout_diagnostic_only,mean_T1_prob_prediction,8,8
+heldout_diagnostic_only,KD_T2_bag_target_prediction,8,8
+heldout_diagnostic_only,head_of_MSE_bag_prototype_prediction,8,8
+source_train,mean_T1_prob_prediction,8,8
+source_train,KD_T2_bag_target_prediction,8,8
+source_train,head_of_MSE_bag_prototype_prediction,8,8

@@ -1,0 +1,28 @@
+CVPR 2019 Open Access Repository
+CVPR 2019
+open access
+These CVPR 2019 papers are the Open Access versions, provided by the
+Computer Vision Foundation.
+Except for the watermark, they are identical to the accepted versions; the final published version of the proceedings is available on IEEE Xplore.
+This material is presented to ensure timely dissemination of scholarly and technical work.
+Copyright and all rights therein are retained by authors or by other copyright holders.
+All persons copying this information are expected to adhere to the terms and constraints invoked by each author's copyright.
+Relational Knowledge Distillation
+Wonpyo Park,  Dongju Kim,  Yan Lu,  Minsu Cho
+; Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019, pp. 3967-3976
+Abstract
+Knowledge distillation aims at transferring knowledge acquired in one model (a teacher) to another model (a student) that is typically smaller. Previous approaches can be expressed as a form of training the student to mimic output activations of individual data examples represented by the teacher. We introduce a novel approach, dubbed relational knowledge distillation (RKD), that transfers mutual relations of data examples instead. For concrete realizations of RKD, we propose distance-wise and angle-wise distillation losses that penalize structural differences in relations. Experiments conducted on different tasks show that the proposed method improves educated student models with a significant margin. In particular for metric learning, it allows students to outperform their teachers' performance, achieving the state of the arts on standard benchmark datasets.
+Related Material
+[
+pdf
+]
+[
+bibtex
+]
+@InProceedings{Park_2019_CVPR,
+author = {Park, Wonpyo and Kim, Dongju and Lu, Yan and Cho, Minsu},
+title = {Relational Knowledge Distillation},
+booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2019}
+}

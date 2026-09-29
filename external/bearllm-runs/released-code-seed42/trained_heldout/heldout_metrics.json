@@ -1,0 +1,4693 @@
+{
+  "complete": true,
+  "smoke_test_only": false,
+  "count": 12279,
+  "truncated_outputs": 0,
+  "mean_generated_tokens": 3.190162065314765,
+  "metrics": {
+    "generated_classification": {
+      "all": {
+        "count": 12279,
+        "accuracy": 0.9377799495072888,
+        "macro_f1_fixed_classes": 0.8149801811102447,
+        "macro_f1_present_classes": 0.8149801811102447,
+        "invalid_predictions": 0,
+        "per_class": [
+          {
+            "label": 0,
+            "name": "Fault-Free",
+            "support": 7274,
+            "precision": 0.9969320672023375,
+            "recall": 0.9381358262304097,
+            "f1": 0.9666406969332105
+          },
+          {
+            "label": 1,
+            "name": "Minor Inner Ring Fault",
+            "support": 184,
+            "precision": 0.7920353982300885,
+            "recall": 0.9728260869565217,
+            "f1": 0.8731707317073171
+          },
+          {
+            "label": 2,
+            "name": "Moderate Inner Ring Fault",
+            "support": 1588,
+            "precision": 0.7988855116514691,
+            "recall": 0.993073047858942,
+            "f1": 0.8854576080853453
+          },
+          {
+            "label": 3,
+            "name": "Severe Inner Ring Fault",
+            "support": 23,
+            "precision": 0.5641025641025641,
+            "recall": 0.9565217391304348,
+            "f1": 0.7096774193548387
+          },
+          {
+            "label": 4,
+            "name": "Minor Ball Fault",
+            "support": 3,
+            "precision": 0.2,
+            "recall": 1.0,
+            "f1": 0.33333333333333337
+          },
+          {
+            "label": 5,
+            "name": "Moderate Ball Fault",
+            "support": 1202,
+            "precision": 0.9635826771653543,
+            "recall": 0.8144758735440932,
+            "f1": 0.8827772768259694
+          },
+          {
+            "label": 6,
+            "name": "Severe Ball Fault",
+            "support": 66,
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.8571428571428571
+          },
+          {
+            "label": 7,
+            "name": "Minor Outer Ring Fault",
+            "support": 309,
+            "precision": 0.8871951219512195,
+            "recall": 0.941747572815534,
+            "f1": 0.913657770800628
+          },
+          {
+            "label": 8,
+            "name": "Moderate Outer Ring Fault",
+            "support": 1514,
+            "precision": 0.9276190476190476,
+            "recall": 0.964993394980185,
+            "f1": 0.9459371965037229
+          },
+          {
+            "label": 9,
+            "name": "Severe Outer Ring Fault",
+            "support": 116,
+            "precision": 0.653179190751445,
+            "recall": 0.9741379310344828,
+            "f1": 0.7820069204152249
+          }
+        ],
+        "confusion_matrix": [
+          [
+            6824,
+            47,
+            206,
+            10,
+            8,
+            35,
+            5,
+            32,
+            74,
+            33,
+            0
+          ],
+          [
+            0,
+            179,
+            0,
+            4,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1577,
+            3,
+            0,
+            1,
+            0,
+            0,
+            6,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            22,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            0,
+            165,
+            0,
+            3,
+            979,
+            17,
+            0,
+            27,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            66,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            291,
+            6,
+            6,
+            0
+          ],
+          [
+            3,
+            0,
+            26,
+            0,
+            0,
+            1,
+            0,
+            3,
+            1461,
+            20,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            113,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "unparseable"
+        ]
+      },
+      "source/CWRU": {
+        "count": 7,
+        "accuracy": 1.0,
+        "macro_f1_fixed_classes": 0.1,
+        "macro_f1_present_classes": 1.0,
+        "invalid_predictions": 0,
+        "per_class": [
+          {
+            "label": 0,
+            "name": "Fault-Free",
+            "support": 7,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          {
+            "label": 1,
+            "name": "Minor Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 2,
+            "name": "Moderate Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 3,
+            "name": "Severe Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 4,
+            "name": "Minor Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 5,
+            "name": "Moderate Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 6,
+            "name": "Severe Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 7,
+            "name": "Minor Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 8,
+            "name": "Moderate Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 9,
+            "name": "Severe Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ],
+        "confusion_matrix": [
+          [
+            7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "unparseable"
+        ]
+      },
+      "source/DIRG": {
+        "count": 102,
+        "accuracy": 0.9803921568627451,
+        "macro_f1_fixed_classes": 0.099009900990099,
+        "macro_f1_present_classes": 0.99009900990099,
+        "invalid_predictions": 0,
+        "per_class": [
+          {
+            "label": 0,
+            "name": "Fault-Free",
+            "support": 102,
+            "precision": 1.0,
+            "recall": 0.9803921568627451,
+            "f1": 0.99009900990099
+          },
+          {
+            "label": 1,
+            "name": "Minor Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 2,
+            "name": "Moderate Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 3,
+            "name": "Severe Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 4,
+            "name": "Minor Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 5,
+            "name": "Moderate Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 6,
+            "name": "Severe Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 7,
+            "name": "Minor Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 8,
+            "name": "Moderate Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 9,
+            "name": "Severe Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ],
+        "confusion_matrix": [
+          [
+            100,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "unparseable"
+        ]
+      },
+      "source/HIT": {
+        "count": 964,
+        "accuracy": 0.9699170124481328,
+        "macro_f1_fixed_classes": 0.2926865609506433,
+        "macro_f1_present_classes": 0.9756218698354777,
+        "invalid_predictions": 0,
+        "per_class": [
+          {
+            "label": 0,
+            "name": "Fault-Free",
+            "support": 371,
+            "precision": 1.0,
+            "recall": 0.9326145552560647,
+            "f1": 0.9651324965132497
+          },
+          {
+            "label": 1,
+            "name": "Minor Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 2,
+            "name": "Moderate Inner Ring Fault",
+            "support": 407,
+            "precision": 0.9712230215827338,
+            "recall": 0.995085995085995,
+            "f1": 0.983009708737864
+          },
+          {
+            "label": 3,
+            "name": "Severe Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 4,
+            "name": "Minor Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 5,
+            "name": "Moderate Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 6,
+            "name": "Severe Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 7,
+            "name": "Minor Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 8,
+            "name": "Moderate Outer Ring Fault",
+            "support": 186,
+            "precision": 0.968421052631579,
+            "recall": 0.989247311827957,
+            "f1": 0.9787234042553192
+          },
+          {
+            "label": 9,
+            "name": "Severe Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ],
+        "confusion_matrix": [
+          [
+            346,
+            0,
+            10,
+            1,
+            0,
+            0,
+            1,
+            1,
+            5,
+            7,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            405,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            184,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "unparseable"
+        ]
+      },
+      "source/IMS": {
+        "count": 4648,
+        "accuracy": 0.9819277108433735,
+        "macro_f1_fixed_classes": 0.5872507097981081,
+        "macro_f1_present_classes": 0.8389295854258687,
+        "invalid_predictions": 0,
+        "per_class": [
+          {
+            "label": 0,
+            "name": "Fault-Free",
+            "support": 4318,
+            "precision": 0.9981295300444236,
+            "recall": 0.9886521537748958,
+            "f1": 0.9933682373472948
+          },
+          {
+            "label": 1,
+            "name": "Minor Inner Ring Fault",
+            "support": 81,
+            "precision": 0.7232142857142857,
+            "recall": 1.0,
+            "f1": 0.839378238341969
+          },
+          {
+            "label": 2,
+            "name": "Moderate Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 3,
+            "name": "Severe Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 4,
+            "name": "Minor Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 5,
+            "name": "Moderate Ball Fault",
+            "support": 100,
+            "precision": 1.0,
+            "recall": 0.82,
+            "f1": 0.9010989010989011
+          },
+          {
+            "label": 6,
+            "name": "Severe Ball Fault",
+            "support": 31,
+            "precision": 0.62,
+            "recall": 1.0,
+            "f1": 0.7654320987654321
+          },
+          {
+            "label": 7,
+            "name": "Minor Outer Ring Fault",
+            "support": 57,
+            "precision": 0.8125,
+            "recall": 0.9122807017543859,
+            "f1": 0.859504132231405
+          },
+          {
+            "label": 8,
+            "name": "Moderate Outer Ring Fault",
+            "support": 45,
+            "precision": 0.9,
+            "recall": 0.8,
+            "f1": 0.8470588235294118
+          },
+          {
+            "label": 9,
+            "name": "Severe Outer Ring Fault",
+            "support": 16,
+            "precision": 0.5652173913043478,
+            "recall": 0.8125,
+            "f1": 0.6666666666666667
+          }
+        ],
+        "confusion_matrix": [
+          [
+            4269,
+            31,
+            0,
+            0,
+            0,
+            0,
+            2,
+            9,
+            2,
+            5,
+            0
+          ],
+          [
+            0,
+            81,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            82,
+            17,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            31,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            52,
+            1,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            36,
+            5,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            13,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "unparseable"
+        ]
+      },
+      "source/JUST": {
+        "count": 4399,
+        "accuracy": 0.8790634235053422,
+        "macro_f1_fixed_classes": 0.3521904241369097,
+        "macro_f1_present_classes": 0.8804760603422743,
+        "invalid_predictions": 0,
+        "per_class": [
+          {
+            "label": 0,
+            "name": "Fault-Free",
+            "support": 1092,
+            "precision": 0.986335403726708,
+            "recall": 0.7271062271062271,
+            "f1": 0.8371112282551396
+          },
+          {
+            "label": 1,
+            "name": "Minor Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 2,
+            "name": "Moderate Inner Ring Fault",
+            "support": 1114,
+            "precision": 0.7452956989247311,
+            "recall": 0.9955116696588869,
+            "f1": 0.8524212144504226
+          },
+          {
+            "label": 3,
+            "name": "Severe Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 4,
+            "name": "Minor Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 5,
+            "name": "Moderate Ball Fault",
+            "support": 1096,
+            "precision": 0.9612903225806452,
+            "recall": 0.8156934306569343,
+            "f1": 0.882527147087858
+          },
+          {
+            "label": 6,
+            "name": "Severe Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 7,
+            "name": "Minor Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 8,
+            "name": "Moderate Outer Ring Fault",
+            "support": 1097,
+            "precision": 0.9256055363321799,
+            "recall": 0.97538742023701,
+            "f1": 0.9498446515756769
+          },
+          {
+            "label": 9,
+            "name": "Severe Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ],
+        "confusion_matrix": [
+          [
+            794,
+            0,
+            190,
+            2,
+            0,
+            35,
+            0,
+            13,
+            54,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1109,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            10,
+            0,
+            165,
+            0,
+            0,
+            894,
+            0,
+            0,
+            27,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            24,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1070,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "unparseable"
+        ]
+      },
+      "source/MFPT": {
+        "count": 4,
+        "accuracy": 0.75,
+        "macro_f1_fixed_classes": 0.14666666666666667,
+        "macro_f1_present_classes": 0.7333333333333334,
+        "invalid_predictions": 0,
+        "per_class": [
+          {
+            "label": 0,
+            "name": "Fault-Free",
+            "support": 2,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          {
+            "label": 1,
+            "name": "Minor Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 2,
+            "name": "Moderate Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 3,
+            "name": "Severe Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 4,
+            "name": "Minor Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 5,
+            "name": "Moderate Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 6,
+            "name": "Severe Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 7,
+            "name": "Minor Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 8,
+            "name": "Moderate Outer Ring Fault",
+            "support": 2,
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1": 0.8
+          },
+          {
+            "label": 9,
+            "name": "Severe Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ],
+        "confusion_matrix": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "unparseable"
+        ]
+      },
+      "source/NCEPU": {
+        "count": 90,
+        "accuracy": 0.9888888888888889,
+        "macro_f1_fixed_classes": 0.09944134078212291,
+        "macro_f1_present_classes": 0.9944134078212291,
+        "invalid_predictions": 0,
+        "per_class": [
+          {
+            "label": 0,
+            "name": "Fault-Free",
+            "support": 90,
+            "precision": 1.0,
+            "recall": 0.9888888888888889,
+            "f1": 0.9944134078212291
+          },
+          {
+            "label": 1,
+            "name": "Minor Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 2,
+            "name": "Moderate Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 3,
+            "name": "Severe Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 4,
+            "name": "Minor Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 5,
+            "name": "Moderate Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 6,
+            "name": "Severe Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 7,
+            "name": "Minor Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 8,
+            "name": "Moderate Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 9,
+            "name": "Severe Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ],
+        "confusion_matrix": [
+          [
+            89,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "unparseable"
+        ]
+      },
+      "source/PU": {
+        "count": 731,
+        "accuracy": 0.945280437756498,
+        "macro_f1_fixed_classes": 0.47170109640672936,
+        "macro_f1_present_classes": 0.9434021928134587,
+        "invalid_predictions": 0,
+        "per_class": [
+          {
+            "label": 0,
+            "name": "Fault-Free",
+            "support": 191,
+            "precision": 0.9871794871794872,
+            "recall": 0.806282722513089,
+            "f1": 0.8876080691642652
+          },
+          {
+            "label": 1,
+            "name": "Minor Inner Ring Fault",
+            "support": 96,
+            "precision": 0.8558558558558559,
+            "recall": 0.9895833333333334,
+            "f1": 0.9178743961352658
+          },
+          {
+            "label": 2,
+            "name": "Moderate Inner Ring Fault",
+            "support": 63,
+            "precision": 0.9253731343283582,
+            "recall": 0.9841269841269841,
+            "f1": 0.9538461538461538
+          },
+          {
+            "label": 3,
+            "name": "Severe Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 4,
+            "name": "Minor Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 5,
+            "name": "Moderate Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 6,
+            "name": "Severe Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 7,
+            "name": "Minor Outer Ring Fault",
+            "support": 222,
+            "precision": 0.9692982456140351,
+            "recall": 0.9954954954954955,
+            "f1": 0.9822222222222222
+          },
+          {
+            "label": 8,
+            "name": "Moderate Outer Ring Fault",
+            "support": 159,
+            "precision": 0.9520958083832335,
+            "recall": 1.0,
+            "f1": 0.9754601226993864
+          },
+          {
+            "label": 9,
+            "name": "Severe Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ],
+        "confusion_matrix": [
+          [
+            154,
+            16,
+            5,
+            0,
+            0,
+            0,
+            0,
+            6,
+            8,
+            2,
+            0
+          ],
+          [
+            0,
+            95,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            62,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            221,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            159,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "unparseable"
+        ]
+      },
+      "source/XJTU": {
+        "count": 1334,
+        "accuracy": 0.9437781109445277,
+        "macro_f1_fixed_classes": 0.6702448866356565,
+        "macro_f1_present_classes": 0.6702448866356565,
+        "invalid_predictions": 0,
+        "per_class": [
+          {
+            "label": 0,
+            "name": "Fault-Free",
+            "support": 1101,
+            "precision": 1.0,
+            "recall": 0.9663941871026339,
+            "f1": 0.9829099307159352
+          },
+          {
+            "label": 1,
+            "name": "Minor Inner Ring Fault",
+            "support": 7,
+            "precision": 1.0,
+            "recall": 0.42857142857142855,
+            "f1": 0.6
+          },
+          {
+            "label": 2,
+            "name": "Moderate Inner Ring Fault",
+            "support": 4,
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4
+          },
+          {
+            "label": 3,
+            "name": "Severe Inner Ring Fault",
+            "support": 23,
+            "precision": 0.6111111111111112,
+            "recall": 0.9565217391304348,
+            "f1": 0.7457627118644068
+          },
+          {
+            "label": 4,
+            "name": "Minor Ball Fault",
+            "support": 3,
+            "precision": 0.2,
+            "recall": 1.0,
+            "f1": 0.33333333333333337
+          },
+          {
+            "label": 5,
+            "name": "Moderate Ball Fault",
+            "support": 6,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          {
+            "label": 6,
+            "name": "Severe Ball Fault",
+            "support": 35,
+            "precision": 0.9459459459459459,
+            "recall": 1.0,
+            "f1": 0.9722222222222222
+          },
+          {
+            "label": 7,
+            "name": "Minor Outer Ring Fault",
+            "support": 30,
+            "precision": 0.8181818181818182,
+            "recall": 0.6,
+            "f1": 0.6923076923076923
+          },
+          {
+            "label": 8,
+            "name": "Moderate Outer Ring Fault",
+            "support": 25,
+            "precision": 0.5263157894736842,
+            "recall": 0.4,
+            "f1": 0.45454545454545453
+          },
+          {
+            "label": 9,
+            "name": "Severe Outer Ring Fault",
+            "support": 100,
+            "precision": 0.746268656716418,
+            "recall": 1.0,
+            "f1": 0.8547008547008548
+          }
+        ],
+        "confusion_matrix": [
+          [
+            1064,
+            0,
+            0,
+            7,
+            8,
+            0,
+            2,
+            3,
+            4,
+            13,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            22,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            35,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            18,
+            5,
+            6,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            10,
+            14,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            100,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "unparseable"
+        ]
+      }
+    },
+    "adapter_classification": {
+      "all": {
+        "count": 12279,
+        "accuracy": 0.9403045850639303,
+        "macro_f1_fixed_classes": 0.8126587940391603,
+        "macro_f1_present_classes": 0.8126587940391603,
+        "invalid_predictions": 0,
+        "per_class": [
+          {
+            "label": 0,
+            "name": "Fault-Free",
+            "support": 7274,
+            "precision": 0.9969298245614036,
+            "recall": 0.9374484465218587,
+            "f1": 0.9662746209437438
+          },
+          {
+            "label": 1,
+            "name": "Minor Inner Ring Fault",
+            "support": 184,
+            "precision": 0.75,
+            "recall": 0.9782608695652174,
+            "f1": 0.849056603773585
+          },
+          {
+            "label": 2,
+            "name": "Moderate Inner Ring Fault",
+            "support": 1588,
+            "precision": 0.8003041054232134,
+            "recall": 0.9943324937027708,
+            "f1": 0.8868295422634093
+          },
+          {
+            "label": 3,
+            "name": "Severe Inner Ring Fault",
+            "support": 23,
+            "precision": 0.5238095238095238,
+            "recall": 0.9565217391304348,
+            "f1": 0.6769230769230768
+          },
+          {
+            "label": 4,
+            "name": "Minor Ball Fault",
+            "support": 3,
+            "precision": 0.15,
+            "recall": 1.0,
+            "f1": 0.2608695652173913
+          },
+          {
+            "label": 5,
+            "name": "Moderate Ball Fault",
+            "support": 1202,
+            "precision": 0.956480605487228,
+            "recall": 0.8410981697171381,
+            "f1": 0.8950863213811422
+          },
+          {
+            "label": 6,
+            "name": "Severe Ball Fault",
+            "support": 66,
+            "precision": 0.7586206896551724,
+            "recall": 1.0,
+            "f1": 0.8627450980392156
+          },
+          {
+            "label": 7,
+            "name": "Minor Outer Ring Fault",
+            "support": 309,
+            "precision": 0.9575163398692811,
+            "recall": 0.948220064724919,
+            "f1": 0.9528455284552846
+          },
+          {
+            "label": 8,
+            "name": "Moderate Outer Ring Fault",
+            "support": 1514,
+            "precision": 0.9383033419023136,
+            "recall": 0.964332892998679,
+            "f1": 0.9511400651465797
+          },
+          {
+            "label": 9,
+            "name": "Severe Outer Ring Fault",
+            "support": 116,
+            "precision": 0.7151898734177216,
+            "recall": 0.9741379310344828,
+            "f1": 0.8248175182481751
+          }
+        ],
+        "confusion_matrix": [
+          [
+            6819,
+            59,
+            232,
+            13,
+            13,
+            43,
+            5,
+            9,
+            62,
+            19,
+            0
+          ],
+          [
+            0,
+            180,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1579,
+            3,
+            0,
+            2,
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            22,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            1,
+            134,
+            0,
+            3,
+            1011,
+            16,
+            0,
+            26,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            66,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            293,
+            4,
+            6,
+            0
+          ],
+          [
+            3,
+            0,
+            28,
+            0,
+            0,
+            1,
+            0,
+            3,
+            1460,
+            19,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            113,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "unparseable"
+        ]
+      },
+      "source/CWRU": {
+        "count": 7,
+        "accuracy": 1.0,
+        "macro_f1_fixed_classes": 0.1,
+        "macro_f1_present_classes": 1.0,
+        "invalid_predictions": 0,
+        "per_class": [
+          {
+            "label": 0,
+            "name": "Fault-Free",
+            "support": 7,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          {
+            "label": 1,
+            "name": "Minor Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 2,
+            "name": "Moderate Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 3,
+            "name": "Severe Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 4,
+            "name": "Minor Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 5,
+            "name": "Moderate Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 6,
+            "name": "Severe Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 7,
+            "name": "Minor Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 8,
+            "name": "Moderate Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 9,
+            "name": "Severe Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ],
+        "confusion_matrix": [
+          [
+            7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "unparseable"
+        ]
+      },
+      "source/DIRG": {
+        "count": 102,
+        "accuracy": 0.9803921568627451,
+        "macro_f1_fixed_classes": 0.099009900990099,
+        "macro_f1_present_classes": 0.99009900990099,
+        "invalid_predictions": 0,
+        "per_class": [
+          {
+            "label": 0,
+            "name": "Fault-Free",
+            "support": 102,
+            "precision": 1.0,
+            "recall": 0.9803921568627451,
+            "f1": 0.99009900990099
+          },
+          {
+            "label": 1,
+            "name": "Minor Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 2,
+            "name": "Moderate Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 3,
+            "name": "Severe Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 4,
+            "name": "Minor Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 5,
+            "name": "Moderate Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 6,
+            "name": "Severe Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 7,
+            "name": "Minor Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 8,
+            "name": "Moderate Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 9,
+            "name": "Severe Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ],
+        "confusion_matrix": [
+          [
+            100,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "unparseable"
+        ]
+      },
+      "source/HIT": {
+        "count": 964,
+        "accuracy": 0.9719917012448133,
+        "macro_f1_fixed_classes": 0.2933845318921139,
+        "macro_f1_present_classes": 0.9779484396403797,
+        "invalid_predictions": 0,
+        "per_class": [
+          {
+            "label": 0,
+            "name": "Fault-Free",
+            "support": 371,
+            "precision": 1.0,
+            "recall": 0.9353099730458221,
+            "f1": 0.9665738161559888
+          },
+          {
+            "label": 1,
+            "name": "Minor Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 2,
+            "name": "Moderate Inner Ring Fault",
+            "support": 407,
+            "precision": 0.9643705463182898,
+            "recall": 0.9975429975429976,
+            "f1": 0.9806763285024155
+          },
+          {
+            "label": 3,
+            "name": "Severe Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 4,
+            "name": "Minor Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 5,
+            "name": "Moderate Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 6,
+            "name": "Severe Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 7,
+            "name": "Minor Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 8,
+            "name": "Moderate Outer Ring Fault",
+            "support": 186,
+            "precision": 0.983957219251337,
+            "recall": 0.989247311827957,
+            "f1": 0.9865951742627346
+          },
+          {
+            "label": 9,
+            "name": "Severe Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ],
+        "confusion_matrix": [
+          [
+            347,
+            0,
+            13,
+            1,
+            0,
+            0,
+            1,
+            0,
+            3,
+            6,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            406,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            184,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "unparseable"
+        ]
+      },
+      "source/IMS": {
+        "count": 4648,
+        "accuracy": 0.9814974182444062,
+        "macro_f1_fixed_classes": 0.5950478550859017,
+        "macro_f1_present_classes": 0.850068364408431,
+        "invalid_predictions": 0,
+        "per_class": [
+          {
+            "label": 0,
+            "name": "Fault-Free",
+            "support": 4318,
+            "precision": 0.9981282171268133,
+            "recall": 0.9879573876794813,
+            "f1": 0.9930167597765364
+          },
+          {
+            "label": 1,
+            "name": "Minor Inner Ring Fault",
+            "support": 81,
+            "precision": 0.6639344262295082,
+            "recall": 1.0,
+            "f1": 0.7980295566502463
+          },
+          {
+            "label": 2,
+            "name": "Moderate Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 3,
+            "name": "Severe Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 4,
+            "name": "Minor Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 5,
+            "name": "Moderate Ball Fault",
+            "support": 100,
+            "precision": 1.0,
+            "recall": 0.82,
+            "f1": 0.9010989010989011
+          },
+          {
+            "label": 6,
+            "name": "Severe Ball Fault",
+            "support": 31,
+            "precision": 0.6326530612244898,
+            "recall": 1.0,
+            "f1": 0.775
+          },
+          {
+            "label": 7,
+            "name": "Minor Outer Ring Fault",
+            "support": 57,
+            "precision": 0.8412698412698413,
+            "recall": 0.9298245614035088,
+            "f1": 0.8833333333333334
+          },
+          {
+            "label": 8,
+            "name": "Moderate Outer Ring Fault",
+            "support": 45,
+            "precision": 0.9230769230769231,
+            "recall": 0.8,
+            "f1": 0.8571428571428571
+          },
+          {
+            "label": 9,
+            "name": "Severe Outer Ring Fault",
+            "support": 16,
+            "precision": 0.6842105263157895,
+            "recall": 0.8125,
+            "f1": 0.742857142857143
+          }
+        ],
+        "confusion_matrix": [
+          [
+            4266,
+            40,
+            0,
+            0,
+            0,
+            0,
+            2,
+            7,
+            2,
+            1,
+            0
+          ],
+          [
+            0,
+            81,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            82,
+            16,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            31,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            53,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            36,
+            5,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            13,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "unparseable"
+        ]
+      },
+      "source/JUST": {
+        "count": 4399,
+        "accuracy": 0.8858831552625597,
+        "macro_f1_fixed_classes": 0.3541398128844112,
+        "macro_f1_present_classes": 0.8853495322110281,
+        "invalid_predictions": 0,
+        "per_class": [
+          {
+            "label": 0,
+            "name": "Fault-Free",
+            "support": 1092,
+            "precision": 0.9863013698630136,
+            "recall": 0.7252747252747253,
+            "f1": 0.8358839050131924
+          },
+          {
+            "label": 1,
+            "name": "Minor Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 2,
+            "name": "Moderate Inner Ring Fault",
+            "support": 1114,
+            "precision": 0.74949358541526,
+            "recall": 0.9964093357271095,
+            "f1": 0.8554913294797688
+          },
+          {
+            "label": 3,
+            "name": "Severe Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 4,
+            "name": "Minor Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 5,
+            "name": "Moderate Ball Fault",
+            "support": 1096,
+            "precision": 0.9536560247167868,
+            "recall": 0.8448905109489051,
+            "f1": 0.8959845186260281
+          },
+          {
+            "label": 6,
+            "name": "Severe Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 7,
+            "name": "Minor Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 8,
+            "name": "Moderate Outer Ring Fault",
+            "support": 1097,
+            "precision": 0.9344405594405595,
+            "recall": 0.9744758432087511,
+            "f1": 0.9540383757251227
+          },
+          {
+            "label": 9,
+            "name": "Severe Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ],
+        "confusion_matrix": [
+          [
+            792,
+            0,
+            211,
+            0,
+            0,
+            43,
+            0,
+            0,
+            46,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1110,
+            0,
+            0,
+            1,
+            0,
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            10,
+            0,
+            134,
+            0,
+            0,
+            926,
+            0,
+            0,
+            26,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            26,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1069,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "unparseable"
+        ]
+      },
+      "source/MFPT": {
+        "count": 4,
+        "accuracy": 0.75,
+        "macro_f1_fixed_classes": 0.14666666666666667,
+        "macro_f1_present_classes": 0.7333333333333334,
+        "invalid_predictions": 0,
+        "per_class": [
+          {
+            "label": 0,
+            "name": "Fault-Free",
+            "support": 2,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          {
+            "label": 1,
+            "name": "Minor Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 2,
+            "name": "Moderate Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 3,
+            "name": "Severe Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 4,
+            "name": "Minor Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 5,
+            "name": "Moderate Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 6,
+            "name": "Severe Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 7,
+            "name": "Minor Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 8,
+            "name": "Moderate Outer Ring Fault",
+            "support": 2,
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1": 0.8
+          },
+          {
+            "label": 9,
+            "name": "Severe Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ],
+        "confusion_matrix": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "unparseable"
+        ]
+      },
+      "source/NCEPU": {
+        "count": 90,
+        "accuracy": 0.9888888888888889,
+        "macro_f1_fixed_classes": 0.09944134078212291,
+        "macro_f1_present_classes": 0.9944134078212291,
+        "invalid_predictions": 0,
+        "per_class": [
+          {
+            "label": 0,
+            "name": "Fault-Free",
+            "support": 90,
+            "precision": 1.0,
+            "recall": 0.9888888888888889,
+            "f1": 0.9944134078212291
+          },
+          {
+            "label": 1,
+            "name": "Minor Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 2,
+            "name": "Moderate Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 3,
+            "name": "Severe Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 4,
+            "name": "Minor Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 5,
+            "name": "Moderate Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 6,
+            "name": "Severe Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 7,
+            "name": "Minor Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 8,
+            "name": "Moderate Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 9,
+            "name": "Severe Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ],
+        "confusion_matrix": [
+          [
+            89,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "unparseable"
+        ]
+      },
+      "source/PU": {
+        "count": 731,
+        "accuracy": 0.9493844049247606,
+        "macro_f1_fixed_classes": 0.4714284972246815,
+        "macro_f1_present_classes": 0.942856994449363,
+        "invalid_predictions": 0,
+        "per_class": [
+          {
+            "label": 0,
+            "name": "Fault-Free",
+            "support": 191,
+            "precision": 0.9873417721518988,
+            "recall": 0.8167539267015707,
+            "f1": 0.8939828080229226
+          },
+          {
+            "label": 1,
+            "name": "Minor Inner Ring Fault",
+            "support": 96,
+            "precision": 0.8347826086956521,
+            "recall": 1.0,
+            "f1": 0.909952606635071
+          },
+          {
+            "label": 2,
+            "name": "Moderate Inner Ring Fault",
+            "support": 63,
+            "precision": 0.8985507246376812,
+            "recall": 0.9841269841269841,
+            "f1": 0.9393939393939393
+          },
+          {
+            "label": 3,
+            "name": "Severe Inner Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 4,
+            "name": "Minor Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 5,
+            "name": "Moderate Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 6,
+            "name": "Severe Ball Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "label": 7,
+            "name": "Minor Outer Ring Fault",
+            "support": 222,
+            "precision": 0.9954954954954955,
+            "recall": 0.9954954954954955,
+            "f1": 0.9954954954954955
+          },
+          {
+            "label": 8,
+            "name": "Moderate Outer Ring Fault",
+            "support": 159,
+            "precision": 0.9520958083832335,
+            "recall": 1.0,
+            "f1": 0.9754601226993864
+          },
+          {
+            "label": 9,
+            "name": "Severe Outer Ring Fault",
+            "support": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ],
+        "confusion_matrix": [
+          [
+            156,
+            19,
+            7,
+            0,
+            0,
+            0,
+            0,
+            1,
+            8,
+            0,
+            0
+          ],
+          [
+            0,
+            96,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            62,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            221,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            159,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "unparseable"
+        ]
+      },
+      "source/XJTU": {
+        "count": 1334,
+        "accuracy": 0.9422788605697151,
+        "macro_f1_fixed_classes": 0.6674641647696616,
+        "macro_f1_present_classes": 0.6674641647696616,
+        "invalid_predictions": 0,
+        "per_class": [
+          {
+            "label": 0,
+            "name": "Fault-Free",
+            "support": 1101,
+            "precision": 1.0,
+            "recall": 0.963669391462307,
+            "f1": 0.9814986123959297
+          },
+          {
+            "label": 1,
+            "name": "Minor Inner Ring Fault",
+            "support": 7,
+            "precision": 1.0,
+            "recall": 0.42857142857142855,
+            "f1": 0.6
+          },
+          {
+            "label": 2,
+            "name": "Moderate Inner Ring Fault",
+            "support": 4,
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4
+          },
+          {
+            "label": 3,
+            "name": "Severe Inner Ring Fault",
+            "support": 23,
+            "precision": 0.55,
+            "recall": 0.9565217391304348,
+            "f1": 0.6984126984126985
+          },
+          {
+            "label": 4,
+            "name": "Minor Ball Fault",
+            "support": 3,
+            "precision": 0.15,
+            "recall": 1.0,
+            "f1": 0.2608695652173913
+          },
+          {
+            "label": 5,
+            "name": "Moderate Ball Fault",
+            "support": 6,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          {
+            "label": 6,
+            "name": "Severe Ball Fault",
+            "support": 35,
+            "precision": 0.9459459459459459,
+            "recall": 1.0,
+            "f1": 0.9722222222222222
+          },
+          {
+            "label": 7,
+            "name": "Minor Outer Ring Fault",
+            "support": 30,
+            "precision": 0.9047619047619048,
+            "recall": 0.6333333333333333,
+            "f1": 0.7450980392156863
+          },
+          {
+            "label": 8,
+            "name": "Moderate Outer Ring Fault",
+            "support": 25,
+            "precision": 0.625,
+            "recall": 0.4,
+            "f1": 0.48780487804878053
+          },
+          {
+            "label": 9,
+            "name": "Severe Outer Ring Fault",
+            "support": 100,
+            "precision": 0.7575757575757576,
+            "recall": 1.0,
+            "f1": 0.8620689655172413
+          }
+        ],
+        "confusion_matrix": [
+          [
+            1061,
+            0,
+            0,
+            11,
+            13,
+            0,
+            2,
+            1,
+            2,
+            11,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            22,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            35,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            19,
+            4,
+            6,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            10,
+            14,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            100,
+            0
+          ]
+        ],
+        "confusion_columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          "unparseable"
+        ]
+      }
+    }
+  }
+}

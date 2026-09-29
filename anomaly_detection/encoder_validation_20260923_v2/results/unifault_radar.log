@@ -1,0 +1,50 @@
+115200_to_460800__signed_linear__ce_only__seed17 1.0
+115200_to_460800__signed_linear__ce_only__seed42 1.0
+115200_to_460800__signed_linear__ce_only__seed73 1.0
+115200_to_460800__signed_linear__embedding_only__seed17 1.0
+115200_to_460800__signed_linear__embedding_only__seed42 1.0
+115200_to_460800__signed_linear__embedding_only__seed73 1.0
+115200_to_460800__signed_linear__full__seed17 1.0
+115200_to_460800__signed_linear__full__seed42 1.0
+115200_to_460800__signed_linear__full__seed73 1.0
+115200_to_460800__legacy_nonnegative_relu__ce_only__seed17 1.0
+115200_to_460800__legacy_nonnegative_relu__ce_only__seed42 1.0
+115200_to_460800__legacy_nonnegative_relu__ce_only__seed73 1.0
+115200_to_460800__legacy_nonnegative_relu__embedding_only__seed17 0.43
+115200_to_460800__legacy_nonnegative_relu__embedding_only__seed42 0.385
+115200_to_460800__legacy_nonnegative_relu__embedding_only__seed73 0.455
+115200_to_460800__legacy_nonnegative_relu__full__seed17 1.0
+115200_to_460800__legacy_nonnegative_relu__full__seed42 1.0
+115200_to_460800__legacy_nonnegative_relu__full__seed73 0.99
+460800_to_115200__signed_linear__ce_only__seed17 0.9953
+460800_to_115200__signed_linear__ce_only__seed42 0.9953
+460800_to_115200__signed_linear__ce_only__seed73 1.0
+460800_to_115200__signed_linear__embedding_only__seed17 0.9953
+460800_to_115200__signed_linear__embedding_only__seed42 0.9953
+460800_to_115200__signed_linear__embedding_only__seed73 1.0
+460800_to_115200__signed_linear__full__seed17 0.9953
+460800_to_115200__signed_linear__full__seed42 0.9953
+460800_to_115200__signed_linear__full__seed73 1.0
+460800_to_115200__legacy_nonnegative_relu__ce_only__seed17 0.9906
+460800_to_115200__legacy_nonnegative_relu__ce_only__seed42 0.9953
+460800_to_115200__legacy_nonnegative_relu__ce_only__seed73 1.0
+460800_to_115200__legacy_nonnegative_relu__embedding_only__seed17 0.5189
+460800_to_115200__legacy_nonnegative_relu__embedding_only__seed42 0.5142
+460800_to_115200__legacy_nonnegative_relu__embedding_only__seed73 0.5236
+460800_to_115200__legacy_nonnegative_relu__full__seed17 0.9953
+460800_to_115200__legacy_nonnegative_relu__full__seed42 0.9953
+460800_to_115200__legacy_nonnegative_relu__full__seed73 1.0
+                                                  correct     n  accuracy
+constraint              method         unit                              
+legacy_nonnegative_relu ce_only        recording       24    24  1.000000
+                                       window        1233  1236  0.997573
+                        embedding_only recording       12    24  0.500000
+                                       window         584  1236  0.472492
+                        full           recording       24    24  1.000000
+                                       window        1232  1236  0.996764
+signed_linear           ce_only        recording       24    24  1.000000
+                                       window        1234  1236  0.998382
+                        embedding_only recording       24    24  1.000000
+                                       window        1234  1236  0.998382
+                        full           recording       24    24  1.000000
+                                       window        1234  1236  0.998382

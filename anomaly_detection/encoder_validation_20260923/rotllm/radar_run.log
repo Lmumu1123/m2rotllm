@@ -1,0 +1,61 @@
+115200_to_460800__native15__ce_only__seed17 [('file', 1.0), ('window', 1.0)] 1.2
+115200_to_460800__native15__ce_only__seed42 [('file', 1.0), ('window', 1.0)] 1.7
+115200_to_460800__native15__ce_only__seed73 [('file', 1.0), ('window', 1.0)] 2.3
+115200_to_460800__native15__embedding_only__seed17 [('file', 0.25), ('window', 0.24)] 2.8
+115200_to_460800__native15__embedding_only__seed42 [('file', 0.25), ('window', 0.24)] 3.3
+115200_to_460800__native15__embedding_only__seed73 [('file', 0.25), ('window', 0.24)] 3.9
+115200_to_460800__native15__full__seed17 [('file', 0.25), ('window', 0.265)] 4.5
+115200_to_460800__native15__full__seed42 [('file', 0.25), ('window', 0.24)] 5.1
+115200_to_460800__native15__full__seed73 [('file', 0.25), ('window', 0.24)] 5.7
+115200_to_460800__new_contact4__ce_only__seed17 [('file', 1.0), ('window', 1.0)] 6.2
+115200_to_460800__new_contact4__ce_only__seed42 [('file', 1.0), ('window', 0.995)] 6.6
+115200_to_460800__new_contact4__ce_only__seed73 [('file', 1.0), ('window', 1.0)] 7.1
+115200_to_460800__new_contact4__embedding_only__seed17 [('file', 1.0), ('window', 1.0)] 7.5
+115200_to_460800__new_contact4__embedding_only__seed42 [('file', 1.0), ('window', 0.995)] 8.0
+115200_to_460800__new_contact4__embedding_only__seed73 [('file', 1.0), ('window', 1.0)] 8.4
+115200_to_460800__new_contact4__full__seed17 [('file', 1.0), ('window', 1.0)] 9.0
+115200_to_460800__new_contact4__full__seed42 [('file', 1.0), ('window', 1.0)] 9.5
+115200_to_460800__new_contact4__full__seed73 [('file', 1.0), ('window', 1.0)] 10.0
+460800_to_115200__native15__ce_only__seed17 [('file', 1.0), ('window', 0.9811)] 10.5
+460800_to_115200__native15__ce_only__seed42 [('file', 1.0), ('window', 0.967)] 11.1
+460800_to_115200__native15__ce_only__seed73 [('file', 1.0), ('window', 0.9858)] 11.6
+460800_to_115200__native15__embedding_only__seed17 [('file', 0.25), ('window', 0.2877)] 12.2
+460800_to_115200__native15__embedding_only__seed42 [('file', 0.25), ('window', 0.2877)] 12.7
+460800_to_115200__native15__embedding_only__seed73 [('file', 0.25), ('window', 0.2877)] 13.2
+460800_to_115200__native15__full__seed17 [('file', 0.25), ('window', 0.2877)] 13.8
+460800_to_115200__native15__full__seed42 [('file', 0.25), ('window', 0.2877)] 14.5
+460800_to_115200__native15__full__seed73 [('file', 0.25), ('window', 0.2877)] 15.1
+460800_to_115200__new_contact4__ce_only__seed17 [('file', 1.0), ('window', 0.9858)] 15.6
+460800_to_115200__new_contact4__ce_only__seed42 [('file', 1.0), ('window', 0.9953)] 16.1
+460800_to_115200__new_contact4__ce_only__seed73 [('file', 1.0), ('window', 0.9953)] 16.5
+460800_to_115200__new_contact4__embedding_only__seed17 [('file', 1.0), ('window', 0.9906)] 17.0
+460800_to_115200__new_contact4__embedding_only__seed42 [('file', 1.0), ('window', 0.9953)] 17.4
+460800_to_115200__new_contact4__embedding_only__seed73 [('file', 1.0), ('window', 0.9953)] 17.9
+460800_to_115200__new_contact4__full__seed17 [('file', 1.0), ('window', 0.9906)] 18.4
+460800_to_115200__new_contact4__full__seed42 [('file', 1.0), ('window', 0.9953)] 19.0
+460800_to_115200__new_contact4__full__seed73 [('file', 1.0), ('window', 0.9906)] 19.5
+        head         method                   subset   unit  accuracy_mean  accuracy_std  macro_f1_mean  n_models  mse_standardized  cosine_standardized
+    native15        ce_only all_four_provisional_roi   file       1.000000      0.000000       1.000000         6          6.816620            -0.008258
+    native15        ce_only all_four_provisional_roi window       0.988994      0.013562       0.988887         6               NaN                  NaN
+    native15        ce_only    geometry_valid_subset   file       1.000000      0.000000       1.000000         6          5.724456            -0.155528
+    native15        ce_only    geometry_valid_subset window       0.985597      0.017748       0.988959         6               NaN                  NaN
+    native15 embedding_only all_four_provisional_roi   file       0.250000      0.000000       0.100000         6          0.201688             0.635024
+    native15 embedding_only all_four_provisional_roi window       0.263868      0.026146       0.104248         6               NaN                  NaN
+    native15 embedding_only    geometry_valid_subset   file       0.333333      0.000000       0.166667         6          0.248318             0.548631
+    native15 embedding_only    geometry_valid_subset window       0.348272      0.030970       0.171989         6               NaN                  NaN
+    native15           full all_four_provisional_roi   file       0.250000      0.000000       0.100000         6          0.626505             0.467492
+    native15           full all_four_provisional_roi window       0.268035      0.023433       0.112156         6               NaN                  NaN
+    native15           full    geometry_valid_subset   file       0.333333      0.000000       0.166667         6          0.617705             0.374583
+    native15           full    geometry_valid_subset window       0.348272      0.030970       0.171989         6               NaN                  NaN
+new_contact4        ce_only all_four_provisional_roi   file       1.000000      0.000000       1.000000         6          0.547838             0.493702
+new_contact4        ce_only all_four_provisional_roi window       0.995236      0.005168       0.995333         6               NaN                  NaN
+new_contact4        ce_only    geometry_valid_subset   file       1.000000      0.000000       1.000000         6          0.603368             0.446958
+new_contact4        ce_only    geometry_valid_subset window       0.994856      0.007216       0.995428         6               NaN                  NaN
+new_contact4 embedding_only all_four_provisional_roi   file       1.000000      0.000000       1.000000         6          0.201688             0.635024
+new_contact4 embedding_only all_four_provisional_roi window       0.996022      0.003565       0.996167         6               NaN                  NaN
+new_contact4 embedding_only    geometry_valid_subset   file       1.000000      0.000000       1.000000         6          0.248318             0.548631
+new_contact4 embedding_only    geometry_valid_subset window       0.995885      0.005040       0.995989         6               NaN                  NaN
+new_contact4           full all_four_provisional_roi   file       1.000000      0.000000       1.000000         6          0.200683             0.635267
+new_contact4           full all_four_provisional_roi window       0.996069      0.004638       0.996167         6               NaN                  NaN
+new_contact4           full    geometry_valid_subset   file       1.000000      0.000000       1.000000         6          0.247416             0.549421
+new_contact4           full    geometry_valid_subset window       0.994856      0.006069       0.994889         6               NaN                  NaN

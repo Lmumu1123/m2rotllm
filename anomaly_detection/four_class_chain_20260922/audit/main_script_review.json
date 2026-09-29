@@ -1,0 +1,45 @@
+{
+  "script": "/home/huangyating/anomaly_detection/four_class_chain_20260922/scripts/run_chain.py",
+  "reviewed_sha256": "36b279ccd7ce8bc5b186631409c0df9def95fe50d7513a17ad994062b8509863",
+  "status": "no_target_leakage_found_in_read_only_code_review",
+  "review_scope": [
+    "training-only scaler and head fit",
+    "sample-level LayerNorm",
+    "fixed teacher gradients",
+    "bag probability aggregation",
+    "16 plus 8 held-out folds and external all_known fits",
+    "original head inference and saved checkpoint interface"
+  ],
+  "observations": [
+    {
+      "severity": "material_artifact_interface",
+      "issue": "original_head inference uses original FCN linear2 but saved checkpoint stores only adapted head coef/intercept",
+      "recommendation": "Save output head type, original linear2 tensors and provenance; predict helper must branch correctly."
+    },
+    {
+      "severity": "material_baseline_interpretation",
+      "issue": "Original teacher baseline averages softmax probabilities across references and XYZ, while original_head applies original linear2 to averaged hidden coordinates. These operations differ.",
+      "recommendation": "Add contact_original_mean_hidden baseline so regression can be compared using the same original linear2 interface."
+    },
+    {
+      "severity": "naming",
+      "issue": "no_radar_labels removes CE but same-class contrast positives in all_known use class labels.",
+      "recommendation": "Report as no_radar_CE ablation, not entirely radar-label-free training."
+    },
+    {
+      "severity": "control_definition",
+      "issue": "roll-by-one teacher permutation in all_known gives some same-class incorrect bags, unlike all wrong-class teachers in one-bag-per-class folds.",
+      "recommendation": "State distinction or cyclically permute by class for consistent wrong-class control."
+    },
+    {
+      "severity": "documentation",
+      "issue": "all_known runs only seed42; held-out folds use seeds17,42,73.",
+      "recommendation": "Document this protocol exception."
+    },
+    {
+      "severity": "interpretation",
+      "issue": "Three-class original head excludes outer probability then renormalizes.",
+      "recommendation": "Describe as restricted candidate-class evaluation, not improved four-class teacher."
+    }
+  ]
+}

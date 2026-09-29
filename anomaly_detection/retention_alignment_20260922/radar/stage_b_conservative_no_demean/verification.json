@@ -1,0 +1,14 @@
+{
+  "group_probability_max_error": 8.940696716308594e-08,
+  "models": [
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_conservative_no_demean/models/four_class_provisional_roi/all_known/ce_feat_1_kd.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    }
+  ],
+  "head_sha256": "885d03d3be3e6aef0966d1d74b305ca94f3cef1814467413af270bb02e9c3340",
+  "script_sha256": "ce324df89033696d50b0556e3a4d5155454233e4e934edcdfe0bc330c95d3cf4",
+  "wall_seconds": 1.2111456394195557
+}

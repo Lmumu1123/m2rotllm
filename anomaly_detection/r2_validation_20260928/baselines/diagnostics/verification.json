@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "metric_rows_recomputed": 174,
+  "recording_aggregates_recomputed": 540,
+  "window_predictions": 8097,
+  "protocol_fold_count": 4,
+  "no_radar_recording_overlap": true,
+  "contact_ids_shared_but_contact_data_unused": true
+}

@@ -1,0 +1,13 @@
+stage,variant,method,n,unique_recordings,raw_accuracy,classifier_accuracy,raw_fidelity,geometry_valid_count
+A,query_no_demean,ce_feat_1,8,8,1.0,1.0,1.0,6
+A,query_no_demean,ce_only,8,8,1.0,1.0,1.0,6
+A,query_no_demean,embedding_only,8,8,0.25,0.125,0.5,6
+A,v0,ce_feat_1,8,8,0.75,1.0,0.75,6
+A,v0,ce_only,8,8,1.0,1.0,1.0,6
+A,v0,embedding_only,8,8,0.25,0.25,1.0,6
+B,query_no_demean,ce_feat_1_kd,8,8,1.0,1.0,1.0,6
+B,query_no_demean,ce_only,8,8,1.0,1.0,1.0,6
+B,query_no_demean,embedding_only,8,8,0.75,1.0,0.75,6
+B,v0,ce_feat_1_kd,8,8,1.0,1.0,1.0,6
+B,v0,ce_only,8,8,1.0,1.0,1.0,6
+B,v0,embedding_only,8,8,0.875,1.0,0.875,6

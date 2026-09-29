@@ -1,0 +1,14 @@
+[
+  {
+    "path": "m2rotllm/research_proposals/contact_radar_alignment_20260919/雷达原始配置.cfg",
+    "sha256": "5db86ab2364401b646d82028180898b244015b110d5085eebaaf6f7502174429"
+  },
+  {
+    "path": "m2rotllm/anomaly_detection/environment_validation_20260919/scripts/radar_environment.py",
+    "sha256": "ba5e8437c77f843ca840a85038a9c81adcf5c095ad6ca0a69b915a517169283a"
+  },
+  {
+    "path": "m2rotllm/anomaly_detection/contact_validation_20260919/scripts/contact_pipeline.py",
+    "sha256": "77644917257949bfc81f426b76e6b6e715a14c4ce46142d2a15a88bc6a4cdb0f"
+  }
+]

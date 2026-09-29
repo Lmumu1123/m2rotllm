@@ -1,0 +1,249 @@
+Designing and Interpreting Probes with Control Tasks - ACL Anthology
+Designing and Interpreting Probes with Control Tasks
+John Hewitt
+,
+Percy Liang
+Correct Metadata for
+Use this form to create a GitHub issue with structured data describing the correction. You will need a GitHub account.
+Once you create that issue, the correction will be reviewed by a staff member.
+⚠️ Mobile Users: Submitting this form to create a new issue will only work with github.com, not the GitHub Mobile app.
+Important
+: The Anthology treat PDFs as authoritative. Please use this form only to correct data
+that is out of line with the PDF. See
+our corrections
+guidelines
+if you need to change the PDF.
+Title
+Adjust the title. Retain tags such as
+<fixed-case>.
+Authors
+Adjust author names and order to match the
+PDF.
+Add Author
+Abstract
+Correct abstract if needed. Retain XML formatting tags such as <tex-math>. You may use <b>...</b> for
+bold
+, <i>...</i> for
+italic
+, <u>...</u> for
+underline
+, <sc>...</sc> for
+small-caps
+, <tt>...<tt> for
+typewriter text
+, <url>...</url> for URLs, <a href=...> for hyperlinks, and <par/> for paragraph breaks.
+Verification against PDF
+Ensure that the new title/authors match the snapshot below. (If there
+is no snapshot or it is too small, consult
+the PDF
+.)
+Authors concatenated from the text boxes above:
+ALL author names match the snapshot above—including
+middle initials, hyphens, and accents.
+Create GitHub issue for staff review
+Abstract
+Probes, supervised models trained to predict properties (like parts-of-speech) from representations (like ELMo), have achieved high accuracy on a range of linguistic tasks. But does this mean that the representations encode linguistic structure or just that the probe has learned the linguistic task? In this paper, we propose control tasks, which associate word types with random outputs, to complement linguistic tasks. By construction, these tasks can only be learned by the probe itself. So a good probe, (one that reflects the representation), should be selective, achieving high linguistic task accuracy and low control task accuracy. The selectivity of a probe puts linguistic task accuracy in context with the probe’s capacity to memorize from word types. We construct control tasks for English part-of-speech tagging and dependency edge prediction, and show that popular probes on ELMo representations are not selective. We also find that dropout, commonly used to control probe complexity, is ineffective for improving selectivity of MLPs, but that other forms of regularization are effective. Finally, we find that while probes on the first layer of ELMo yield slightly better part-of-speech tagging accuracy than the second, probes on the second layer are substantially more selective, which raises the question of which layer better represents parts-of-speech.
+Anthology ID:
+D19-1275
+Volume:
+Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)
+Month:
+November
+Year:
+2019
+Address:
+Hong Kong, China
+Editors:
+Kentaro Inui
+,
+Jing Jiang
+,
+Vincent Ng
+,
+Xiaojun Wan
+Venues:
+EMNLP
+|
+IJCNLP
+SIG:
+SIGDAT
+Publisher:
+Association for Computational Linguistics
+Note:
+Pages:
+2733–2743
+Language:
+URL:
+https://aclanthology.org/D19-1275/
+DOI:
+10.18653/v1/D19-1275
+Award:
+Best Paper Runner-Up
+Bibkey:
+hewitt-liang-2019-designing
+Cite (ACL):
+John Hewitt and Percy Liang. 2019.
+Designing and Interpreting Probes with Control Tasks
+. In
+Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)
+, pages 2733–2743, Hong Kong, China. Association for Computational Linguistics.
+Cite (Informal):
+Designing and Interpreting Probes with Control Tasks
+(Hewitt & Liang, EMNLP-IJCNLP 2019)
+Copy Citation:
+BibTeX
+Markdown
+MODS XML
+Endnote
+More
+options…
+PDF:
+https://aclanthology.org/D19-1275.pdf
+PDF
+Cite
+Search
+Fix data
+Export citation
+BibTeX
+MODS XML
+Endnote
+Preformatted
+@inproceedings{hewitt-liang-2019-designing,
+title = "Designing and Interpreting Probes with Control Tasks",
+author = "Hewitt, John  and
+Liang, Percy",
+editor = "Inui, Kentaro  and
+Jiang, Jing  and
+Ng, Vincent  and
+Wan, Xiaojun",
+booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+month = nov,
+year = "2019",
+address = "Hong Kong, China",
+publisher = "Association for Computational Linguistics",
+url = "https://aclanthology.org/D19-1275/",
+doi = "10.18653/v1/D19-1275",
+pages = "2733--2743",
+abstract = "Probes, supervised models trained to predict properties (like parts-of-speech) from representations (like ELMo), have achieved high accuracy on a range of linguistic tasks. But does this mean that the representations encode linguistic structure or just that the probe has learned the linguistic task? In this paper, we propose control tasks, which associate word types with random outputs, to complement linguistic tasks. By construction, these tasks can only be learned by the probe itself. So a good probe, (one that reflects the representation), should be selective, achieving high linguistic task accuracy and low control task accuracy. The selectivity of a probe puts linguistic task accuracy in context with the probe{'}s capacity to memorize from word types. We construct control tasks for English part-of-speech tagging and dependency edge prediction, and show that popular probes on ELMo representations are not selective. We also find that dropout, commonly used to control probe complexity, is ineffective for improving selectivity of MLPs, but that other forms of regularization are effective. Finally, we find that while probes on the first layer of ELMo yield slightly better part-of-speech tagging accuracy than the second, probes on the second layer are substantially more selective, which raises the question of which layer better represents parts-of-speech."
+}
+Download as
+File
+Copy to Clipboard
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<mods ID="hewitt-liang-2019-designing">
+<titleInfo>
+<title>Designing and Interpreting Probes with Control Tasks</title>
+</titleInfo>
+<name type="personal">
+<namePart type="given">John</namePart>
+<namePart type="family">Hewitt</namePart>
+<role>
+<roleTerm authority="marcrelator" type="text">author</roleTerm>
+</role>
+</name>
+<name type="personal">
+<namePart type="given">Percy</namePart>
+<namePart type="family">Liang</namePart>
+<role>
+<roleTerm authority="marcrelator" type="text">author</roleTerm>
+</role>
+</name>
+<originInfo>
+<dateIssued>2019-11</dateIssued>
+</originInfo>
+<typeOfResource>text</typeOfResource>
+<relatedItem type="host">
+<titleInfo>
+<title>Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)</title>
+</titleInfo>
+<name type="personal">
+<namePart type="given">Kentaro</namePart>
+<namePart type="family">Inui</namePart>
+<role>
+<roleTerm authority="marcrelator" type="text">editor</roleTerm>
+</role>
+</name>
+<name type="personal">
+<namePart type="given">Jing</namePart>
+<namePart type="family">Jiang</namePart>
+<role>
+<roleTerm authority="marcrelator" type="text">editor</roleTerm>
+</role>
+</name>
+<name type="personal">
+<namePart type="given">Vincent</namePart>
+<namePart type="family">Ng</namePart>
+<role>
+<roleTerm authority="marcrelator" type="text">editor</roleTerm>
+</role>
+</name>
+<name type="personal">
+<namePart type="given">Xiaojun</namePart>
+<namePart type="family">Wan</namePart>
+<role>
+<roleTerm authority="marcrelator" type="text">editor</roleTerm>
+</role>
+</name>
+<originInfo>
+<publisher>Association for Computational Linguistics</publisher>
+<place>
+<placeTerm type="text">Hong Kong, China</placeTerm>
+</place>
+</originInfo>
+<genre authority="marcgt">conference publication</genre>
+</relatedItem>
+<abstract>Probes, supervised models trained to predict properties (like parts-of-speech) from representations (like ELMo), have achieved high accuracy on a range of linguistic tasks. But does this mean that the representations encode linguistic structure or just that the probe has learned the linguistic task? In this paper, we propose control tasks, which associate word types with random outputs, to complement linguistic tasks. By construction, these tasks can only be learned by the probe itself. So a good probe, (one that reflects the representation), should be selective, achieving high linguistic task accuracy and low control task accuracy. The selectivity of a probe puts linguistic task accuracy in context with the probe’s capacity to memorize from word types. We construct control tasks for English part-of-speech tagging and dependency edge prediction, and show that popular probes on ELMo representations are not selective. We also find that dropout, commonly used to control probe complexity, is ineffective for improving selectivity of MLPs, but that other forms of regularization are effective. Finally, we find that while probes on the first layer of ELMo yield slightly better part-of-speech tagging accuracy than the second, probes on the second layer are substantially more selective, which raises the question of which layer better represents parts-of-speech.</abstract>
+<identifier type="citekey">hewitt-liang-2019-designing</identifier>
+<identifier type="doi">10.18653/v1/D19-1275</identifier>
+<location>
+<url>https://aclanthology.org/D19-1275/</url>
+</location>
+<part>
+<date>2019-11</date>
+<extent unit="page">
+<start>2733</start>
+<end>2743</end>
+</extent>
+</part>
+</mods>
+</modsCollection>
+Download as
+File
+Copy to Clipboard
+%0 Conference Proceedings
+%T Designing and Interpreting Probes with Control Tasks
+%A Hewitt, John
+%A Liang, Percy
+%Y Inui, Kentaro
+%Y Jiang, Jing
+%Y Ng, Vincent
+%Y Wan, Xiaojun
+%S Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)
+%D 2019
+%8 November
+%I Association for Computational Linguistics
+%C Hong Kong, China
+%F hewitt-liang-2019-designing
+%X Probes, supervised models trained to predict properties (like parts-of-speech) from representations (like ELMo), have achieved high accuracy on a range of linguistic tasks. But does this mean that the representations encode linguistic structure or just that the probe has learned the linguistic task? In this paper, we propose control tasks, which associate word types with random outputs, to complement linguistic tasks. By construction, these tasks can only be learned by the probe itself. So a good probe, (one that reflects the representation), should be selective, achieving high linguistic task accuracy and low control task accuracy. The selectivity of a probe puts linguistic task accuracy in context with the probe’s capacity to memorize from word types. We construct control tasks for English part-of-speech tagging and dependency edge prediction, and show that popular probes on ELMo representations are not selective. We also find that dropout, commonly used to control probe complexity, is ineffective for improving selectivity of MLPs, but that other forms of regularization are effective. Finally, we find that while probes on the first layer of ELMo yield slightly better part-of-speech tagging accuracy than the second, probes on the second layer are substantially more selective, which raises the question of which layer better represents parts-of-speech.
+%R 10.18653/v1/D19-1275
+%U https://aclanthology.org/D19-1275/
+%U https://doi.org/10.18653/v1/D19-1275
+%P 2733-2743
+Download as
+File
+Copy to Clipboard
+Markdown (Informal)
+[Designing and Interpreting Probes with Control Tasks](https://aclanthology.org/D19-1275/) (Hewitt & Liang, EMNLP-IJCNLP 2019)
+Designing and Interpreting Probes with Control Tasks
+(Hewitt & Liang, EMNLP-IJCNLP 2019)
+ACL
+John Hewitt and Percy Liang. 2019.
+Designing and Interpreting Probes with Control Tasks
+. In
+Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)
+, pages 2733–2743, Hong Kong, China. Association for Computational Linguistics.
+Copy Markdown to
+Clipboard
+Copy ACL to
+Clipboard

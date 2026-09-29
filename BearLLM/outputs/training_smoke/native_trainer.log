@@ -1,0 +1,12 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/conv.py:186: UserWarning: Initializing zero-element tensors is a no-op
+  init.kaiming_uniform_(self.weight, a=math.sqrt(5))
+{"event": "ram_preload", "shape": [20, 24000], "bytes": 1920000, "seconds": 0.0011754008010029793}
+trainable params: 4,672,080 || all params: 1,549,445,922 || trainable%: 0.3015
+No label_names provided for model class `PeftModelForCausalLM`. Since `PeftModel` hides base models input arguments, if label_names is not given, label_names can't be set automatically within `Trainer`. Note that empty label_names list will be used instead.
+{'loss': 1.5697, 'grad_norm': 1.9654736518859863, 'learning_rate': 5e-05, 'epoch': 1.0}
+{"stage": "finetune", "epoch": 1, "global_step": 1, "train_loss": 1.5697, "loss_source": "native Trainer step-weighted logged loss", "corpus_rows": 4, "unique_corpus_ids": 4, "lr": 5e-05, "seconds": 0.6380544090643525}
+{'loss': 1.494, 'grad_norm': 1.7098649740219116, 'learning_rate': 0.0, 'epoch': 2.0}
+{"stage": "finetune", "epoch": 2, "global_step": 2, "train_loss": 1.494, "loss_source": "native Trainer step-weighted logged loss", "corpus_rows": 4, "unique_corpus_ids": 4, "lr": 0.0, "seconds": 0.35874344501644373}
+{'train_runtime': 1.177, 'train_samples_per_second': 6.797, 'train_steps_per_second': 1.699, 'train_loss': 1.531870722770691, 'epoch': 2.0}
+{"event": "finetune_complete", "results": "/home/huangyating/BearLLM/outputs/training_smoke/native_trainer/results.json"}

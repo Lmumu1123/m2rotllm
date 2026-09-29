@@ -1,0 +1,74 @@
+{
+  "ok": true,
+  "primary_packets": 343,
+  "primary_sessions": 12,
+  "primary_head_float64_recompute_max_error": 8.45431228468918e-07,
+  "all_frozen_metric_rows_recomputed": true,
+  "source_weights_still_unchanged": true,
+  "diagnostic_fold_reload": [
+    {
+      "heldout_rpm": 1000,
+      "raw_head_float32_reload_probability_max_error": 3.0291749408828395e-07,
+      "train_sessions": [
+        "inBroken_2000r_session",
+        "inBroken_3000r_session",
+        "normal_2000r_session",
+        "normal_3000r_session",
+        "outBroken_2000r_session",
+        "outBroken_3000r_session",
+        "roll_2000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_1000r_session",
+        "normal_1000r_session",
+        "outBroken_1000r_session",
+        "roll_1000r_session"
+      ]
+    },
+    {
+      "heldout_rpm": 2000,
+      "raw_head_float32_reload_probability_max_error": 6.608992039747186e-07,
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_3000r_session",
+        "normal_1000r_session",
+        "normal_3000r_session",
+        "outBroken_1000r_session",
+        "outBroken_3000r_session",
+        "roll_1000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_2000r_session",
+        "normal_2000r_session",
+        "outBroken_2000r_session",
+        "roll_2000r_session"
+      ]
+    },
+    {
+      "heldout_rpm": 3000,
+      "raw_head_float32_reload_probability_max_error": 4.710486194992036e-07,
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_2000r_session",
+        "normal_1000r_session",
+        "normal_2000r_session",
+        "outBroken_1000r_session",
+        "outBroken_2000r_session",
+        "roll_1000r_session",
+        "roll_2000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_3000r_session",
+        "normal_3000r_session",
+        "outBroken_3000r_session",
+        "roll_3000r_session"
+      ]
+    }
+  ],
+  "physical_targets_finite": true,
+  "primary_feature_sha256": "87cebaff91249d90f07c1de819612a2adc516120e945fd78345d354280abf66f",
+  "script_sha256": "b726ffec3e8f01218da00bdbf13f27dd5f291c4f781c0d7c72b62a058015bc6d",
+  "within_session_time_order_and_metric_checks": true
+}

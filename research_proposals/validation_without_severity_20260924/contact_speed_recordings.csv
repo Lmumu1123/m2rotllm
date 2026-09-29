@@ -1,0 +1,4 @@
+file,raw_path,raw_currently_exists,rpm,state,max_contiguous_samples,sampling_rate_hz,max_contiguous_seconds,strict_1s_windows,paired_radar,environment,independent_recordings_per_rpm
+SAVE2026_9_19_21-05-41-1000r.DAT,/home/huangyating/anomaly_detection/接触式/SAVE2026_9_19_21-05-41-1000r.DAT,True,1000,normal_per_previous_report,1641,4000,0.41025,0,not_established,not_recorded,1
+SAVE2026_9_19_21-09-12-2000r.DAT,/home/huangyating/anomaly_detection/接触式/SAVE2026_9_19_21-09-12-2000r.DAT,True,2000,normal_per_previous_report,2119,4000,0.52975,0,not_established,not_recorded,1
+SAVE2026_9_19_21-12-32-3000r.DAT,/home/huangyating/anomaly_detection/接触式/SAVE2026_9_19_21-12-32-3000r.DAT,True,3000,normal_per_previous_report,2018,4000,0.5045,0,not_established,not_recorded,1

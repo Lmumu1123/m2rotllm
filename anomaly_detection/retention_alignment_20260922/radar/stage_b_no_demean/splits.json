@@ -1,0 +1,109 @@
+[
+  {
+    "task": "four_class_provisional_roi",
+    "fold": "115200_to_460800",
+    "classes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "train_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-190512-outBroken-115200",
+      "20260920-192216-inBroken-115200",
+      "20260920-193718-roll-115200"
+    ],
+    "test_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-190913-outBroken-460800",
+      "20260920-192610-inBroken-460800",
+      "20260920-194108-roll-460800"
+    ],
+    "shared_head": "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_v1/models/query_no_demean/115200_to_460800/retained_head.npz",
+    "shared_head_sha256": "844aea565553ad85231bda0dc0f1ae02e229ac066e4f83b9536f812d1b2927a5",
+    "source_retention": {
+      "variant": "query_no_demean",
+      "fold": "115200_to_460800",
+      "source_test_acc10": 0.987865461356788,
+      "source_test_acc4": 0.9897385780601026,
+      "delta_acc10_pp": -0.08143985666585474,
+      "delta_acc4_pp": -0.08143985666585474,
+      "meets_user_global_retention": true,
+      "status": "passes_global_regression_gate",
+      "per_source_declines_must_be_reviewed": true,
+      "encoder_and_linear1_unchanged": true
+    }
+  },
+  {
+    "task": "four_class_provisional_roi",
+    "fold": "460800_to_115200",
+    "classes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "train_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-190913-outBroken-460800",
+      "20260920-192610-inBroken-460800",
+      "20260920-194108-roll-460800"
+    ],
+    "test_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-190512-outBroken-115200",
+      "20260920-192216-inBroken-115200",
+      "20260920-193718-roll-115200"
+    ],
+    "shared_head": "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_v1/models/query_no_demean/460800_to_115200/retained_head.npz",
+    "shared_head_sha256": "9a4b2e127e825ffa78b697e3c61a7ad50b1e099e602222ed827c74700e4fcd15",
+    "source_retention": {
+      "variant": "query_no_demean",
+      "fold": "460800_to_115200",
+      "source_test_acc10": 0.9880283410701197,
+      "source_test_acc4": 0.990064337486766,
+      "delta_acc10_pp": -0.06515188533268157,
+      "delta_acc4_pp": -0.0488639139995084,
+      "meets_user_global_retention": true,
+      "status": "passes_global_regression_gate",
+      "per_source_declines_must_be_reviewed": true,
+      "encoder_and_linear1_unchanged": true
+    }
+  },
+  {
+    "task": "four_class_provisional_roi",
+    "fold": "all_known",
+    "classes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "train_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-184857-normal-460800",
+      "20260920-190512-outBroken-115200",
+      "20260920-190913-outBroken-460800",
+      "20260920-192216-inBroken-115200",
+      "20260920-192610-inBroken-460800",
+      "20260920-193718-roll-115200",
+      "20260920-194108-roll-460800"
+    ],
+    "test_bags": [],
+    "shared_head": "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_v1/models/query_no_demean/all_known/retained_head.npz",
+    "shared_head_sha256": "7cf413f24e6f8d35c330271a97d216be77828c49e1b1f4576cd8213b50732110",
+    "source_retention": {
+      "variant": "query_no_demean",
+      "fold": "all_known",
+      "source_test_acc10": 0.984037788093493,
+      "source_test_acc4": 0.986236664223471,
+      "delta_acc10_pp": -0.46420718299535757,
+      "delta_acc4_pp": -0.43163124032901123,
+      "meets_user_global_retention": true,
+      "status": "passes_global_regression_gate",
+      "per_source_declines_must_be_reviewed": true,
+      "encoder_and_linear1_unchanged": true
+    }
+  }
+]

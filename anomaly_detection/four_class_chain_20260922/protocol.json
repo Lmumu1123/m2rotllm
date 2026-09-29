@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-09-22",
+  "purpose": "Measured contact adaptation and radar-to-contact encoder chain; file-held-out exploration, not independent-bearing generalization",
+  "user_confirmed": {
+    "contact_sample_rate_hz": 4000,
+    "radar_distance_description": "all around forty-something cm",
+    "radar_cfg_same": true,
+    "baud_is_transport_setting_only": true,
+    "contact_radar_recording_simultaneous": true,
+    "keep": "support/base fault outside current four classes",
+    "bigNormal": "another motor, healthy, same radar configuration"
+  },
+  "unconfirmed": ["precise per-packet sample timestamps", "rpm and load for each recording", "independent restart identity", "multiple bearing entities"],
+  "geometry_status": "outer and keep exported ROI around 0.884m disagrees with user geometry; original raw bin unavailable at protocol creation",
+  "tasks": {
+    "four_class_provisional_roi": [0, 1, 2, 3],
+    "three_class_geometry_compatible": [0, 1, 3]
+  },
+  "split": "For each class select one of its two entire paired recordings as training and the other as test; exhaust 16 four-class and 8 three-class combinations. Also fit all known recordings for separate external-only cases.",
+  "selection": "No target selection, no target scaling, no random within-recording train/test split; fixed hyperparameters and final optimization step",
+  "teacher": "retrained_fcn_fixed_external; 9 fixed MBHM train healthy references; external references are not operating-condition matched",
+  "contact_adaptation": "Freeze original FCN; source-only weighted StandardScaler and L2 logistic four-class head, C=1; original classifier and independent spectral baseline reported",
+  "main_radar_input": "128-band per-frame IQ spectral shape",
+  "radar_encoder": "Linear(input,128), LayerNorm, GELU, Dropout(0.1), Linear(128,64), GELU, Linear(64,128)",
+  "seeds": [17, 42, 73],
+  "external_model_seed": 42,
+  "original_head_scope": "Original ten-class probabilities collapse to four broad types; on the three-type task outer predictions remain out-of-scope errors, never renormalized away. Mean-probability and mean-hidden original-head baselines are distinct.",
+  "optimizer": {"name": "AdamW", "lr": 0.001, "weight_decay": 0.01, "steps": 200, "windows_per_bag_per_step": 16, "gradient_clip": 5.0},
+  "loss": {"CE": 1.0, "bag_feature_MSE": 1.0, "bag_KL": 0.5, "bag_contrast": 0.1, "KD_temperature": 2.0, "contrast_temperature": 0.2},
+  "contrast": "Bag means against contact bag means; all same-class bags are positives when more than one training bag per class. Does not establish time alignment.",
+  "ablations": ["supervised_own_head", "fixed_contact_head_CE_only", "full_distillation", "no_contrast", "no_radar_CE", "cyclic_wrong_teacher_bag", "phase_augmented_input", "feature_regression_original_head"],
+  "external": "keep and bigNormal never enter supervised training, scalers, model selection or threshold fitting; bigNormal evaluated only as healthy transfer cases; keep uncertainty scores descriptive, no calibrated rejection claim",
+  "statistics": "File probability mean before macro-F1 and balanced accuracy; overlapping folds and optimization seeds are not independent physical experiments; no window bootstrap confidence intervals",
+  "LLM_bridge": "Explicit four-type probabilities to ten-type probabilities by uniform within-type severity expansion, frozen final BearLLM linear3 and Qwen/LoRA. Report coarse type only; no severity evidence."
+}

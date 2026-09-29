@@ -1,0 +1,9 @@
+{
+  "variant": "v0",
+  "all_known": true,
+  "passes_global_and_every_source_test": true,
+  "source_test_is_reused_regression_not_new_blind_test": true,
+  "local_train_accuracy": 1.0,
+  "status": "passes_stronger_source_regression",
+  "original_encoder_unchanged": true
+}

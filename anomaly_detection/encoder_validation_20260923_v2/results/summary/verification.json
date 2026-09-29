@@ -1,0 +1,26 @@
+{
+  "input_sha256": {
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/controls/results/metrics.csv": "59c528f6655c5bc6bfeee8230ee94b1682f03f9bc5ed162f47478bbc8297d516",
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/rotllm_radar/metrics.csv": "94f5e6e9a31d874e3c3351f81567467f65919a64bc412b4556bb07ca32bdf9db",
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/results/contact_only_stitch/metrics.csv": "97f36a5916a7c7212239df874b4c010d48ed4a932312bb1bfec37118a0a7ca12",
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/unifault_radar/metrics.csv": "b48d62a79b315fa71e15319ced2a3104416a41bc49ff6df2ef4196b33ab2e230",
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/results/physical_readouts/recording_predictions.csv": "a8b2eccd84129f62b69ff23b0a80dfdf887757625d030febf246fca06c951293",
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/results/physical_readouts/summary.csv": "448b0f4adfd610ebef55051353953eefbce5d4877b3ad822a724c7436ed61fe6",
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/results/physical_readouts/contact_validity_gates.csv": "728f770fc832d4e56d977d8d3d6ee15b57e0ec6755b6f0a757d2bf6430fda72f",
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/heldout_radar_class/results/summary.csv": "53b6db974e5b5967d2d66e4d0c15fcf332cb7e076af6950405fa94a69b345970"
+  },
+  "aggregation": "Within each seed pool the two complementary test folds; then mean seeds. Since per-seed denominator identical, pooled repeated counts equivalent.",
+  "physical_primary": "Train-std-normalized absolute error, equal recording weights; contact validity gate fixed before evaluation",
+  "physical_secondary": "SSE skill added after inspecting primary results as a complete descriptive table; not used for selection",
+  "unique_main_recordings": 8,
+  "unique_contact_windows": 58,
+  "unique_radar_windows": 412,
+  "training_runs": {
+    "Bear_controls": 36,
+    "Rot_radar": 36,
+    "UniFault_signed_and_relu": 36,
+    "radar_heldout_class": 96
+  },
+  "model_training_runs_total": 204,
+  "no_bearing_severity_labels_available": true
+}

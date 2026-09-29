@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "window_prediction_rows": 15106,
+  "recording_prediction_rows": 1152,
+  "independently_recomputed_metric_rows": 240,
+  "recording_aggregation_checks": 1008,
+  "train_test_contact_disjoint_folds": 3,
+  "record_equal_weight_scaler_test": true,
+  "feature_and_code_hashes_match": true,
+  "svm_window_score_argmax_differs_from_standard_predict": 240
+}

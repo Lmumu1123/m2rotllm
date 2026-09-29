@@ -1,0 +1,29 @@
+{
+  "stage": "developmental_diagnostic_added_after_primary_RPM_holdout_results",
+  "purpose": "separate within-condition discriminability and distance transfer from RPM transfer",
+  "protocols": {
+    "recording_rep4": "rep1/2/3 train, rep4 test; same speed/distance/session conditions remain in train",
+    "leave_one_distance": "train other two distances; test one distance; all RPM values occur in train"
+  },
+  "no_merging_with_primary_LOSO": true,
+  "methods": [
+    [
+      "complex_shape",
+      "rbf_svc"
+    ],
+    [
+      "complex_shape",
+      "random_forest"
+    ],
+    [
+      "nuisance",
+      "rbf_svc"
+    ]
+  ],
+  "hyperparameter_search": "none; identical classifiers/scaler/record-aggregation as main baselines",
+  "contact_data_usage": "none; shared contact IDs retained only as provenance, not a model input",
+  "interpretation_limit": "pure radar condition-transfer diagnostics, not independent bearing/environment/campaign generalization; repeat numbers are timestamp rank",
+  "weights": "each training recording equal total weight; normalized mean sample weight 1",
+  "window_predictions": "standard classifier.predict",
+  "recording_predictions": "argmax arithmetic average of window scores; SVC softmax OVR decisions are uncalibrated"
+}

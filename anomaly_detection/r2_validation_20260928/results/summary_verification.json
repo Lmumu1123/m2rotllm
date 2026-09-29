@@ -1,0 +1,13 @@
+{
+  "contact_sessions": 12,
+  "contact_packets": 343,
+  "radar_recordings": 144,
+  "radar_windows": 2158,
+  "primary_head": "archived frozen retained Bear classifier",
+  "main_feature": "complex_shape",
+  "neural_models": 171,
+  "per_seed_oof_predictions_exactly_once": true,
+  "seed_spread_not_physical_confidence_interval": true,
+  "source_models_not_modified": true,
+  "language_model_generation_rerun": false
+}

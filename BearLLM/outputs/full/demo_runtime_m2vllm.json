@@ -1,0 +1,6 @@
+{
+  "command": "CUDA_VISIBLE_DEVICES=1 ./scripts/run_demo.sh --seed 42 --output outputs/full/demo_response_m2vllm.txt",
+  "elapsed_seconds": 12.34953298093751,
+  "returncode": 0,
+  "response_path": "/home/huangyating/BearLLM/outputs/full/demo_response_m2vllm.txt"
+}

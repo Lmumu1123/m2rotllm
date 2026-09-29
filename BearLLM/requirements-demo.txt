@@ -1,0 +1,9 @@
+# Keep the installed CUDA-enabled torch build (this host uses Blackwell/sm_120).
+# Install into a venv created with --system-site-packages.
+transformers==4.49.0
+peft==0.15.2
+accelerate==1.4.0
+numpy==1.26.0
+scipy==1.15.2
+python-dotenv==1.0.1
+h5pickle==0.4.2

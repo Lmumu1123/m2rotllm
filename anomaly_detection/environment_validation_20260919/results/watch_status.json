@@ -1,0 +1,13 @@
+{
+  "timestamp_utc": "2026-09-19T01:47:33.996938+00:00",
+  "status": "complete",
+  "execution_mode": "foreground",
+  "conda_environment": "m2vllm",
+  "active_background_monitor": false,
+  "files": 42,
+  "GB": 10.555690448,
+  "windows": 652,
+  "completion_signal_received": true,
+  "previous_report_stale": false,
+  "report": "/home/huangyating/anomaly_detection/environment_validation_20260919/实验结论.md"
+}

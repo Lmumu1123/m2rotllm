@@ -1,0 +1,38 @@
+{
+  "status": "pass",
+  "raw_DAT_SHA_match_count": 12,
+  "raw_DAT_count": 12,
+  "complete_contact_packets": 88,
+  "four_class_contact_packets": 58,
+  "old_raw_xyz_bitwise_equal_count": 12,
+  "additional_contiguous_4000_sample_candidates": 1,
+  "radar_windows_old": 614,
+  "radar_windows_new": 614,
+  "changed_range_recordings": [
+    "20260920-190512-outBroken-115200.bin",
+    "20260920-190913-outBroken-460800.bin",
+    "20260920-195424-keep-115200.bin",
+    "20260920-195753-keep-460800.bin"
+  ],
+  "bitwise_unchanged_feature_recordings": [],
+  "numerically_close_feature_recordings_at_absolute_tolerance_1e_5": [
+    "20260920-184058-normal-11520.bin",
+    "20260920-184857-normal-460800.bin",
+    "20260920-192216-inBroken-115200.bin",
+    "20260920-192610-inBroken-460800.bin",
+    "20260920-193718-roll-115200.bin",
+    "20260920-194108-roll-460800.bin",
+    "20260920-201757-bigNormal-115200.bin",
+    "20260920-202115-bigNormal-460800.bin"
+  ],
+  "previous_export_numpy": "2.0.2 on macOS Python3.9.6",
+  "current_export_numpy": "1.26.0",
+  "all_ranges_in_shared_ROI": true,
+  "no_model_accuracy_based_quality_filter": true,
+  "caveats": [
+    "ADC packing assumes archived 2I2Q conjugated headerless framing; raw identity does not independently verify firmware layout.",
+    "No DCA packet-loss log, no per-packet absolute contact timestamps, no one-to-one window alignment inferred.",
+    "Amplitude clipping flags count near int16 limits; ADC bit alignment and analog gain must be checked before physical saturation claims.",
+    "All recordings previously inspected; this is development reprocessing, not a new blind test."
+  ]
+}

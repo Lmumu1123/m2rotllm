@@ -1,0 +1,329 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>预处理与对齐逐项解释</title><style>body{font-family:system-ui,"Noto Sans CJK SC","Microsoft YaHei",sans-serif;color:#243746;line-height:1.75;max-width:1080px;margin:40px auto;padding:0 28px}h1,h2,h3{color:#173d56;line-height:1.4}h1{font-size:28px}h2{margin-top:36px;border-bottom:2px solid #dcebf1;padding-bottom:8px}h3{margin-top:26px}table{border-collapse:collapse;width:100%;font-size:14px;margin:18px 0}th,td{border:1px solid #d6e0e6;padding:8px 10px;vertical-align:top}th{background:#edf4f8}tr:nth-child(even){background:#f8fafb}pre{background:#f1f5f8;padding:16px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px}code{font-family:Consolas,monospace}a{color:#226c92;text-decoration:none}img{max-width:100%;height:auto}strong{color:#183d55}blockquote{border-left:4px solid #ca8a35;padding-left:18px}@media print{body{margin:0;padding:0;font-size:10pt;line-height:1.55}h1{font-size:20pt}h2{font-size:15pt;break-after:avoid}h3{font-size:12pt;break-after:avoid}table{font-size:8pt}tr,img,pre{break-inside:avoid}thead{display:table-header-group}a{color:inherit}@page{size:A4;margin:16mm}}</style><body><h1>从传感器到模型：预处理、对齐与结果口径的逐项解释</h1>
+<p>2026-09-23。本文解释当前实际代码，不把后续计划中的 IQ 时序网络、时频图网络或精细时间对齐当作已经实现。</p>
+<h2>1. 先看清楚模型到底吃什么</h2>
+<pre><code class="language-text">雷达原始 ADC/IQ bin
+  → 距离 FFT：判断反射来自哪个距离
+  → 选电机附近距离门，保留 3 个 bin × 4 RX
+  → 得到随 chirp 变化的复 IQ
+  → 归一化、每帧去均值
+  → 每帧沿慢时间做 FFT：计算振动相关的频率分布
+  → 多帧/多单元功率汇聚
+  → 5–800 Hz 汇聚成 128 个频带，取 log 并减去谱均值
+  → StandardScaler：128 个数仍然是 128 个数
+  → 雷达 encoder：输出 128 维学习表示
+  → 与接触式同一个诊断头 → 四类概率
+</code></pre>
+<p><strong>当前 encoder 输入是一维的 128 维谱特征向量，既不是原始 IQ，也不是时频图片。</strong> 批量接口为 <code>[batch,128]</code>。128 个输入数对应固定频带；128 个输出数是网络学习的隐藏特征，已没有“一维对应一个 Hz”的含义。两边碰巧都为 128，不意味着它们可以直接互换。</p>
+<p>接触式路径不同：<code>XYZ 原始加速度→每轴一秒 DCT/DCN→query/reference 配对→BearLLM FCN→128 维 hidden→同一个头</code>。</p>
+<p>“IQ 是预处理起点”和“encoder 直接吃 IQ”不是一回事。当前已保存的 <code>iq_frames</code> 也不是原始 ADC：它已经完成了距离选择、单元幅值归一化和帧内去均值。外圈原始正确距离附近的 IQ 没保存下来，不能在这个数组上重新选到正确电机。</p>
+<h2>2. IQ、两个 FFT、ROI 分别是什么</h2>
+<p>IQ 指复数观测 <code>z=I+jQ</code>：I、Q 是同一雷达信号的两个正交分量，不是加速度 X/Y 轴。<code>sqrt(I²+Q²)</code> 是复信号幅度，<code>atan2(Q,I)</code> 是相角。在单一、稳定散射体等假设下，相位变化可与沿视线位移相关；多径/多散射体下，不能把任意 IQ 相角直接叫真实电机位移。</p>
+<p>这里有两种方向不同的 FFT：</p>
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>在哪里做</th>
+<th>得到什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>快时间/距离 FFT</td>
+<td>同一个 chirp 内的 256 个 ADC 点</td>
+<td>不同距离的反射强度和复数值</td>
+</tr>
+<tr>
+<td>慢时间频谱</td>
+<td>固定距离单元，沿连续 chirp 的 IQ 变化</td>
+<td>振动、转动等造成的周期变化频率</td>
+</tr>
+</tbody>
+</table>
+<p>ROI 是 Region of Interest，即“感兴趣区域”，这里主要指电机的距离范围。可理解为先从雷达中选出“我们要看的电机所在位置”。选错 ROI，就可能在分析其他反射体；后面的网络即使输出很高概率，也不证明电机故障被正确感知。</p>
+<p>当前候选单窗数据形状：<code>[20帧,192 chirp,12空间单元,2个IQ分量]</code>。12 个单元来自 3 个相邻距离 bin×4 RX，彼此相关，不是 12 次独立测量，也不是已经分离的 12 通道 TDM-MIMO。</p>
+<h2>3. 雷达预处理每一步的意义和实际限制</h2>
+<h3>第一步：降低固定幅度和静态偏置的影响</h3>
+<p>每个单元用该两秒窗口的幅度中位数做尺度归一化，再减去每帧的复均值。这能减弱整体增益差异和固定复偏置，但不能自动消除动态多径、频率相关结构响应或已经削顶的波形。</p>
+<h3>第二步：一帧一帧计算频谱</h3>
+<p>原配置 chirp 间隔 0.5 ms，帧内采样率 2000 Hz；一帧 192 个 chirp，约 96 ms。帧周期 100 ms，因此有约 4 ms 缺口。</p>
+<p>当前主分支对每个完整帧分别加 Hann 窗并 FFT，合并正负频率功率，随后在时间帧上平均、空间单元上取中位数。这样不要求相邻帧的绝对相位连贯，也不会把两帧之间的缺口直接拼成连续波形。</p>
+<p>它付出的代价是丢掉大部分帧间时间顺序，频率分辨能力主要受 96 ms 限制，约为 10.42 Hz。两秒包含更多用于平均的帧，但并没有得到两秒连续相干 FFT 的分辨率。补零求得 0.5 Hz 网格只是更密的求值点。</p>
+<h3>第三步：把谱汇总为 128 个数</h3>
+<p>5–800 Hz 被预先分成 128 个不等宽频带。每个频带求平均功率，然后取 log10，再减去当前窗口全部频带 log 值的平均数。</p>
+<p>这样保留“谱形状”，弱化整体谱同时升高/降低。例子：如果两个信号所有频带都只差统一增益，中心化后可能很接近；如果某个结构只压低 100–150 Hz，中心化并不能消除这种局部改变。</p>
+<p>128 维是<strong>频带汇聚这一步</strong>得到的，不是 StandardScaler 降维得到的。没有在当前主流程中使用 PCA、PHI-S、二维时频图 CNN 或原始 IQ encoder。</p>
+<h2>4. StandardScaler 到底是什么</h2>
+<p>它是逐个特征做标准化的工具，名字不代表神经网络。对第 b 个频带：</p>
+<pre><code class="language-text">标准化后的数值 z_b = (当前频带数值 x_b − 训练集均值 μ_b) / 训练集标准差 σ_b
+</code></pre>
+<p>例如某频带的训练均值为 3、标准差为 2，当前值为 7，则变为 <code>(7−3)/2=2</code>。这个例子只是解释运算，不是本数据的实际取值。demo 可以查看真实某一频带的 x、μ、σ、z。</p>
+<p><code>fit</code> 指只根据训练录制估计 128 个均值和标准差；<code>transform</code> 指把这组固定参数用于新样本。当前训练还采用录制等权，以免窗口多的文件占更大权重。测试/部署时不重新拟合，不能用整个测试环境的均值偷偷适配。</p>
+<p>它的作用是改善各维数值尺度和优化条件，不会让不同电机自动变成同一结构。前后的向量维度都为 128。<a href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html">scikit-learn 官方定义</a></p>
+<p>要区分两个“减均值”：谱中心化是在<strong>当前一个窗口的 128 个频带之间</strong>减均值；StandardScaler 是对<strong>训练集同一个频带在不同窗口之间</strong>估计统计量，两者不是同一操作。</p>
+<h2>5. 为什么雷达两秒，接触式一秒</h2>
+<table>
+<thead>
+<tr>
+<th>模态</th>
+<th>当前窗口</th>
+<th>原因</th>
+<th>没有证明的事</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>接触式</td>
+<td>4000 点＝1 s</td>
+<td>匹配 BearLLM 固定一秒 DCT 的物理频率索引</td>
+<td>一秒一定有足够可辨认故障证据</td>
+</tr>
+<tr>
+<td>雷达</td>
+<td>20 帧＝名义 2 s</td>
+<td>沿用早期环境实验窗口，汇总更多帧以稳定谱统计</td>
+<td>两秒最优、必须两秒、与一个接触窗精确对应</td>
+</tr>
+</tbody>
+</table>
+<p>两秒雷达有 3840 个有效 chirp 位置，对应约 1.92 s 的帧内观测；中间有缺口，不能等同于连续 3840 点信号直接 FFT。接触一秒来自某个完整包，包间还可能有发送等待。</p>
+<p><strong>当前袋级方法不要求两个模态窗口数相同或持续时间相同；代价是不能声称逐窗时间对齐，也不能把两种窗口成绩当严格等时长比较。</strong> 未来至少做雷达 1 s/2 s/4 s 汇聚对照，并按相同支持时段比较。接触式多个包有间隙时只能做多块统计融合，不能拼成假连续四秒。</p>
+<h2>6. DCT、DC、DCN、BN、query 的词典</h2>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>中文含义</th>
+<th>在这里具体做什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DCT</td>
+<td>Discrete Cosine Transform，离散余弦变换</td>
+<td>把一秒波形写成不同余弦基函数的系数，用于 BearLLM 输入；不是分类算法</td>
+</tr>
+<tr>
+<td>DC</td>
+<td>直流/零频分量</td>
+<td>波形平均值对应的分量；可能来自偏置、重力等，来源需设备信息确认</td>
+</tr>
+<tr>
+<td>DCN</td>
+<td>本项目沿用的 DCT 系数归一化表示</td>
+<td>DCT 后补齐/截断系数并归一化能量；不是另一个故障分类网络</td>
+</tr>
+<tr>
+<td>BN</td>
+<td>Batch Normalization，批归一化</td>
+<td>神经网络内部层的统计归一化；训练会维护统计，eval 时使用保存统计，当前教师冻结</td>
+</tr>
+<tr>
+<td>LayerNorm</td>
+<td>层归一化</td>
+<td>当前雷达 MLP 中的归一化层；与教师 BN、外部 StandardScaler 不同</td>
+</tr>
+<tr>
+<td>query</td>
+<td>待诊断样本</td>
+<td>“这段信号是什么故障？”中的这段信号；这里不是注意力机制 Q/K/V 的 Q</td>
+</tr>
+<tr>
+<td>reference</td>
+<td>健康参考</td>
+<td>与 query 一起输入的已知正常信号，理想应工况匹配</td>
+</tr>
+<tr>
+<td>query–reference pair</td>
+<td>待测—参考配对</td>
+<td><code>[2,24000]</code>，两通道不是两根加速度轴</td>
+</tr>
+<tr>
+<td>encoder / hidden / embedding</td>
+<td>编码器/隐藏表示/嵌入</td>
+<td>把输入变成学习特征；当前对齐位置为分类头前的 128 维 hidden</td>
+</tr>
+<tr>
+<td>bag</td>
+<td>一份录制对应的一组窗口</td>
+<td>当前跨模态训练的监督单位，不是某种文件扩展名</td>
+</tr>
+</tbody>
+</table>
+<p>一秒 4000 点 DCT-II 的第 k 项约对应 <code>k/2 Hz</code>，所以第 200 项对应约 100 Hz。DCT 有正负号，与只保留强度的 FFT 功率谱不同，不能随意取绝对值再交给原权重。<a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.fft.dct.html">SciPy DCT 定义</a></p>
+<p>BN 的统计属于模型状态。即使权重未更新，若推理时误用训练模式，也可能改变统计或输出，所以此前比较过 BN 导出状态；它不是再次采样或改变故障频率。<a href="https://docs.pytorch.org/docs/stable/generated/torch.nn.BatchNorm1d.html">PyTorch BatchNorm</a></p>
+<h2>7. 六种 DC 是什么</h2>
+<p>准确说是“六种 DC/参考带宽预处理组合”，不是六种 DCT 变换，也不是六种模型。</p>
+<table>
+<thead>
+<tr>
+<th>组合</th>
+<th>待测 query</th>
+<th>健康 reference</th>
+<th>所排查的问题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1，主 v0</td>
+<td>去均值</td>
+<td>已发布全频带，保留发布 DC</td>
+<td>复核原本流程</td>
+</tr>
+<tr>
+<td>2</td>
+<td>去均值</td>
+<td>只保留 2 kHz 以下</td>
+<td>参考高频超出传感器支持是否造成残差</td>
+</tr>
+<tr>
+<td>3</td>
+<td>保留均值</td>
+<td>已发布全频带</td>
+<td>是否需要与官方 demo 的 DC 处理相同</td>
+</tr>
+<tr>
+<td>4</td>
+<td>保留均值</td>
+<td>只保留 2 kHz 以下</td>
+<td>DC 与参考带宽联合检查</td>
+</tr>
+<tr>
+<td>5</td>
+<td>去均值</td>
+<td>DCT 第 0 项清零</td>
+<td>两边是否应该一致去 DC</td>
+</tr>
+<tr>
+<td>6</td>
+<td>去均值</td>
+<td>去 DC 并仅保留 2 kHz 以下</td>
+<td>同时统一 DC 与可测频带</td>
+</tr>
+</tbody>
+</table>
+<p>参考修改后重新做能量归一化。每种组合都用三套冻结权重运行，共 18 组；复训 FCN 在八个文件上均为 25% Acc。概率和逐轴情况有变化，但未恢复可靠分类，所以不能把后面的改善都归因于一个去 DC 开关。</p>
+<h2>8. 到底是频域对齐，还是时域对齐</h2>
+<p>当前是<strong>以频域表示为输入的、学习隐藏空间中的集合对齐</strong>。有三层区别：</p>
+<ol>
+<li>加速度先转为带符号 DCT；雷达先转为 IQ 变化功率谱特征，原始表示并不相同。</li>
+<li>两个 encoder 把这些表示变为 128 维 hidden；隐藏维度不是频率坐标。</li>
+<li>训练约束同一录制两侧的 hidden 均值、概率和类别结构接近；没有逐频点或逐时刻强制相等。</li>
+</ol>
+<p>你的担心是对的：不同测点的点加速度与雷达散射响应通常不应直接逐点 MSE。但“不能直接波形相减”不等于“不能在时间域学习可比特征”；以后若动态任务需要，可以在工况/包络轨迹或学习描述子上做时间匹配。</p>
+<p>频域也不天然解决一切。结构传递函数的频率相关增益仍会改变谱形状；雷达多径也可能形成凹陷。当前的共享 hidden 只是训练目标，不是已经证明的结构不变物理量。</p>
+<h2>9. bag 为什么可以不按窗口一一对应</h2>
+<p>假设同一次稳态录制中，加速度保留 7 个有效一秒窗，雷达有 61 个两秒窗。虽然不知道哪个窗与哪个窗精确同时，仍知道这两组来自同一台设备、同一次故障状态。</p>
+<pre><code class="language-text">接触式 bag = {h_c,1, h_c,2, …, h_c,7}
+雷达 bag   = {h_r,1, h_r,2, …, h_r,61}
+对齐目标   = 两个集合在标准化 hidden 空间的均值接近
+</code></pre>
+<p>训练实际每步从每个雷达袋抽 16 窗，接触目标来自训练袋的完整有效窗口；另加概率蒸馏、同类对比，以及每个雷达窗的真实标签 CE。只有训练录制参与建立原型。</p>
+<p>合理性的条件是：片段内状态/速度/负载稳定，两侧采样有代表性，统计量包含分类信息。这类似从同一个状态取得两组样本，比较它们的统计规律，而不是要求每次机械冲击都一一相等。缺测若偏向某个状态、录制内有变速或故障切换，这个前提就可能失效。</p>
+<p>数学上，求和对排列不敏感，所以打乱袋内窗口顺序，均值损失不变；实际两模型各 50 次排列，损失变化仅约 8.33×10⁻¹⁶。<strong>它可以作为稳态分类基线，但它不能证明事件级同步。</strong> <a href="https://papers.nips.cc/paper_files/paper/2017/file/f22e4747da1aa27e363d86d40ff442fe-Paper.pdf">Deep Sets</a> 提供集合建模依据，不保证当前均值一定足够。</p>
+<p>目前每类训练只有一个袋，录制原型和类别原型几乎重合。因此还要加入“同类同工况但错误录制配对”实验，判断是否真正需要录制内的对应关系。直接说“精细跨模态对齐已经完成”是不准确的。</p>
+<h2>10. 49.8% 怎么变成了约 99%：事实上不是同一个实验恢复了</h2>
+<p><strong>没有完成“把原公开数据全部变成 4 kHz 输入，再恢复到约 99%”这个实验。</strong> 前面的描述将不同结果放得太近，容易让人产生这个误解，需要明确纠正。</p>
+<p>4000 Hz 是采样率，最高可测频率理论上低于 2000 Hz。早期实验并不是把真实硬件重新设为 4000 Hz 采集，而是把已有公开 DCT 的高频系数清零、重新归一化，模拟“只保留共同低频证据”的一部分影响；没有模拟实际抗混叠滤波、传感器噪声和传播路径。</p>
+<table>
+<thead>
+<tr>
+<th>数字</th>
+<th>哪份数据</th>
+<th>哪个模型/处理</th>
+<th>指标与正确解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>94.9%→49.8%</td>
+<td>426 条公开测试 query</td>
+<td>冻结旧 FCN；原带宽→仅保留 2 kHz 以下</td>
+<td>macro-F1；原权重带限后明显退化</td>
+</tr>
+<tr>
+<td>99.0553%→99.0472%</td>
+<td>12279 条公开 test query</td>
+<td>原完整发布输入；原头→保守适配头</td>
+<td>合并四类 Acc；旧协议能力回归，不是限带恢复</td>
+</tr>
+<tr>
+<td>25%→录制级 100%</td>
+<td>本地主台架八份录制</td>
+<td>原头→适配头；实际 4 kHz 接触数据</td>
+<td>录制平均后的结果；窗口错误被聚合掩盖</td>
+</tr>
+<tr>
+<td><strong>79.31%</strong></td>
+<td>本地 58 个接触式一秒窗</td>
+<td>4 kHz 数据＋两个录制留出适配头</td>
+<td>单窗 Acc；仍明显低于目标</td>
+</tr>
+<tr>
+<td>99.76%</td>
+<td>本地 412 个雷达两秒窗</td>
+<td>雷达 encoder＋对应共享头</td>
+<td>雷达 Acc；含外圈错误 ROI，仍属探索性</td>
+</tr>
+<tr>
+<td>91.38%</td>
+<td>同一批 58 个接触窗</td>
+<td>全八份训练后的保守头</td>
+<td><strong>训练拟合</strong>，不是新的留出成绩</td>
+</tr>
+</tbody>
+</table>
+<p>因此，现阶段所谓“兼容”有两个层次：输入长度/频率坐标兼容已经实现；4 kHz 接触式的高精度、跨结构知识兼容尚未解决。原头在完整带宽旧数据保持约 99%，并不意味着对缺失高频的新设备也保持约 99%。公开旧协议还有重复和跨集合参考问题，不能当严格独立泛化。</p>
+<h2>11. ROI 幅度统计和环境表格怎么读</h2>
+<p>环境表格使用的是 room/narrow 那批<strong>正常轴承</strong>数据，识别的标签是转速或运行状态，不是正常/内圈/外圈/滚动体。</p>
+<p>“ROI 原始幅度统计”基线具体是：在三个距离单元×四 RX 上，计算各单元平均复数幅度平方，并取 log，形成 12 个数。它问的是“反射有多强”，没有提取完整振动频谱。不同距离、朝向和环境散射会影响幅度，因此用于对照这种容易受环境影响的输入。</p>
+<table>
+<thead>
+<tr>
+<th>表格列名</th>
+<th>训练</th>
+<th>测试</th>
+<th>预测类别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>三转速 room→narrow</td>
+<td>room</td>
+<td>narrow</td>
+<td>1000、2000、3000 rpm</td>
+</tr>
+<tr>
+<td>三转速 narrow→room</td>
+<td>narrow</td>
+<td>room</td>
+<td>1000、2000、3000 rpm</td>
+</tr>
+<tr>
+<td>四状态 room→narrow</td>
+<td>room</td>
+<td>narrow</td>
+<td>off、1000、2000、3000 rpm</td>
+</tr>
+<tr>
+<td>四状态 narrow→room</td>
+<td>narrow</td>
+<td>room</td>
+<td>off、1000、2000、3000 rpm</td>
+</tr>
+</tbody>
+</table>
+<p>每一行是不同的前端特征，接同类逻辑回归分类器；表内数字是先汇总每份文件窗口概率后的文件级 macro-F1。超参数只在源环境选择，目标标签用于最后评价。</p>
+<p>例如多单元 IQ 谱形状的三转速两方向 100%/93.3%，意思是转速分类跨这两个地方的表现；不是跨环境故障准确率。只找 10–60 Hz 主转频的基线两个方向都是 100%，说明这个任务很容易利用轴速线索完成。未见距离还有 50.0%/55.6% 的失败单元，不能说环境和距离影响都已消除。</p>
+<p>主表训练域已经包含 20/40/80 cm；它本身也不是未见距离测试。真实目标仍是“同转速、不同故障、未见环境”的区分，需要新故障实验。</p>
+<h2>12. 本次输入输出 demo 怎么展示</h2>
+<p>打开 <a href="/home/huangyating/research_proposals/contact_radar_explainer_demo_20260923/replay/模型输入输出演示.html">模型输入输出演示</a>。页面可切换 12 份录制，每份固定展示第一个有效窗口，包含：</p>
+<ul>
+<li>实际输入形状、接触 XYZ 和一帧一个单元的 IQ 曲线。</li>
+<li>128 维雷达谱特征及 StandardScaler 前后切换，逐频带查看计算。</li>
+<li>两侧实际 128 维 hidden、同一个头给出的四类概率、真实标签。</li>
+<li>对应模型与数据路径、录制留出/外部角色、ROI 有效性。</li>
+</ul>
+<p>示例：<code>20260920-184857-normal-460800</code> 第一窗，接触式正常概率约 72.47%，雷达正常概率约 90.17%，两侧都预测正常。<code>20260920-193718-roll-115200</code> 第一窗，接触式预测正常约 76.63%，雷达预测滚动体约 74.13%；保留这一误判，而不是只挑成功演示。</p>
+<p>这些是模型输出概率，不是新估计的“准确率”。本次实际从保存的距门 IQ 重算谱特征、从 raw_xyz 重算 DCT，再运行冻结 FCN/雷达 encoder/共享头；没有更新任何参数。CPU 重算与旧缓存有小数值差，12 个样例的分类均一致，接触概率最大差约 0.000378，雷达约 0.00000173，完整记录见 <code>replay/verification.json</code>。</p>
+<p>前八份主录制使用对应留出折；外部 keep/bigNormal 使用保守 all_known 模型。它们不是一个模型在同一个新测试集上的统一准确率。HTML 回放实际推理结果，不在浏览器运行 PyTorch；CLI 可真正重跑，见 README。</p></body></html>

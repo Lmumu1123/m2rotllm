@@ -1,0 +1,176 @@
+{
+  "preprocessing_primary": "v0",
+  "query": "4000 Hz; [48:4048] from each complete 4096 XYZ packet; demean each axis; signed DCT-II backward; zero-pad 4000 coefficients to 24000; RMS=0.01",
+  "reference": "same fixed nine public-source training healthy references selected by old pipeline seed42; not same-rig reference",
+  "references": [
+    {
+      "file_id": 4,
+      "condition_id": 0,
+      "label": 0,
+      "source": "CWRU",
+      "source_training_query": true
+    },
+    {
+      "file_id": 4718,
+      "condition_id": 116,
+      "label": 0,
+      "source": "DIRG",
+      "source_training_query": true
+    },
+    {
+      "file_id": 17033,
+      "condition_id": 766,
+      "label": 0,
+      "source": "HIT",
+      "source_training_query": true
+    },
+    {
+      "file_id": 42276,
+      "condition_id": 804,
+      "label": 0,
+      "source": "IMS",
+      "source_training_query": true
+    },
+    {
+      "file_id": 86343,
+      "condition_id": 823,
+      "label": 0,
+      "source": "JUST",
+      "source_training_query": true
+    },
+    {
+      "file_id": 111202,
+      "condition_id": 844,
+      "label": 0,
+      "source": "MFPT",
+      "source_training_query": true
+    },
+    {
+      "file_id": 114039,
+      "condition_id": 991,
+      "label": 0,
+      "source": "NCEPU",
+      "source_training_query": true
+    },
+    {
+      "file_id": 118897,
+      "condition_id": 1035,
+      "label": 0,
+      "source": "PU",
+      "source_training_query": true
+    },
+    {
+      "file_id": 125569,
+      "condition_id": 1040,
+      "label": 0,
+      "source": "XJTU",
+      "source_training_query": true
+    }
+  ],
+  "primary_teacher": "retrained_fcn",
+  "embedding": "ReLU(classifier.linear1(encoder(query,reference))); mean over 9 references then XYZ; raw unstandardized nonnegative 128D",
+  "head_primary": "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_v1/models/v0/all_known/retained_head.npz",
+  "head_training": "only old 2026-09-20 data and public replay; no new R2 labels used",
+  "evaluation": "all 343 complete packets; 12 sessions; 4 labels; 3 RPM; pooled packets, per-RPM, per-session and session mean probabilities",
+  "adapted_head_pooling": "apply head after pooling hidden; not mean of per-view probabilities",
+  "original_native_pooling": "report both source head applied to pooled hidden and original mean-of-probabilities",
+  "sensitivity_predeclared": true,
+  "axis_sensitivity": "XYZ primary; XY-only averaging applies uniformly to every class, motivated before inference by independent audit of possible Z-axis clipping; never choose best axis by new-data accuracy",
+  "no_new_training": true,
+  "no_model_selection": true,
+  "no_wrong_prediction_filtering": true,
+  "four_class_groups": [
+    [
+      0
+    ],
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      7,
+      8,
+      9
+    ],
+    [
+      4,
+      5,
+      6
+    ]
+  ],
+  "targets": [
+    "log_band_rms",
+    "log_crest_factor",
+    "log_pearson_kurtosis",
+    "power_20_200",
+    "power_200_400",
+    "power_400_800"
+  ],
+  "physical_target_definition": "legacy six raw-signal descriptors; 20-800 Hz zero-phase Butterworth; trim 0.1s each end; same frozen descriptor code; not severity labels",
+  "inputs": [
+    {
+      "path": "/media/nas_users/huangyating/data/upload/contacts/inBroken_1000r_session/contact.h5",
+      "sha256": "d61b75cb1e1cac789e0679d86fd024ccae8641b0523b393b3b3bae7b46ff4699",
+      "source_sha256": "d75d31c7f6a4dc7a686749d3a5feebb766cc5fe941d8b8b9c241399a9977ad4f"
+    },
+    {
+      "path": "/media/nas_users/huangyating/data/upload/contacts/inBroken_2000r_session/contact.h5",
+      "sha256": "a9017b9023d363fe0dab78cbaa0b0cb50c160d5790490eb99592e6942cd8a9e0",
+      "source_sha256": "eeba8637ff727d4560094321d57a8fc637f52b90d6ac1c697bbb88d91c9bcb28"
+    },
+    {
+      "path": "/media/nas_users/huangyating/data/upload/contacts/inBroken_3000r_session/contact.h5",
+      "sha256": "9d6ff36e1d04e2c181dee69f5882740c5df935e137cfbc7a248d9d85d7558de8",
+      "source_sha256": "fb129747c054988a8d36989439d637ddbe9e11fce881d93d2bc2d15c34746c6b"
+    },
+    {
+      "path": "/media/nas_users/huangyating/data/upload/contacts/normal_1000r_session/contact.h5",
+      "sha256": "b1bd83151458f8b7311b32e1d6e2ed2f0d5ca15837defcdd7a3430777318e5f8",
+      "source_sha256": "9535fc78ce0ddcedb0fd0787e88b5382d96214c70b2f079e4830d1fccf895c28"
+    },
+    {
+      "path": "/media/nas_users/huangyating/data/upload/contacts/normal_2000r_session/contact.h5",
+      "sha256": "404da5bd089c9b04ec0f7d44b6cf5aac5f24928ac289486bc7cefe45a1234322",
+      "source_sha256": "02a443f7a5f38daa81f5bb0076b2bf2c6c833ce1c46a0103478c06f572f50279"
+    },
+    {
+      "path": "/media/nas_users/huangyating/data/upload/contacts/normal_3000r_session/contact.h5",
+      "sha256": "aeff1f4340e641dd8d14306130a6f81fabce27cce92c767e5c43b82813d9c464",
+      "source_sha256": "779304a21c866c4fbb5feae3330e0ba58b6b2f730b84d9ba05507f9864f823d7"
+    },
+    {
+      "path": "/media/nas_users/huangyating/data/upload/contacts/outBroken_1000r_session/contact.h5",
+      "sha256": "a039113615641f884518b1adc76c471fbcfe46fa3ebe0c0f70543a4c24f8e7ab",
+      "source_sha256": "dfcdd72936fbd18bba0a2f285961b2a14fde1563e2869c522372f14eff0fb7a1"
+    },
+    {
+      "path": "/media/nas_users/huangyating/data/upload/contacts/outBroken_2000r_session/contact.h5",
+      "sha256": "377c03ed8af493993688771ab494fc038b5e5b13663cfee03b089313c6b6cdfd",
+      "source_sha256": "f9620838486693406928b11a2eabed9238d6f75f05c7987199c812736b505693"
+    },
+    {
+      "path": "/media/nas_users/huangyating/data/upload/contacts/outBroken_3000r_session/contact.h5",
+      "sha256": "b158e8bfdae69736c10f1fe1a385c949f565a457a48ceddf1757e6bf17d4fd2d",
+      "source_sha256": "7b52bddf761a6c5aa3dd6f9b205e4b5373a0d527ad09d5f38f05a5a2d1a06757"
+    },
+    {
+      "path": "/media/nas_users/huangyating/data/upload/contacts/roll_1000r_session/contact.h5",
+      "sha256": "258eb9c5ef0687fe505f27030a039a245c20849dce516b1602ab58c02b28fcb9",
+      "source_sha256": "497b9a615e207d7b1ed2467e96bb3f6b196951f43b538989c6b78db5b651b57a"
+    },
+    {
+      "path": "/media/nas_users/huangyating/data/upload/contacts/roll_2000r_session/contact.h5",
+      "sha256": "5b1c1503cb6021f89aabd86f657ab6ed207255b22c3f1083800a17dfa151d616",
+      "source_sha256": "f20fe21e7e2922f6381390e4ffae91a87c7c84a77d8d7d7d64d29e1811eddcdd"
+    },
+    {
+      "path": "/media/nas_users/huangyating/data/upload/contacts/roll_3000r_session/contact.h5",
+      "sha256": "db88d62f043749b8945a3afd1d397483bb0927e14d13d17ec1db177353d9e664",
+      "source_sha256": "c461ef0458bfe10d810af449b5eadef96ed5c58ddb1558b21ca7423b76c89114"
+    }
+  ],
+  "source_sha256": "47af118939da2205874250b6dca911565c97a512edbcba2b41f56cc097e813a6",
+  "reference_api_sha256": "41fc28b5bc8409b982c3e1fdc261fa9eed27e7e8631ad13c30364e8561c29347",
+  "physical_script_sha256": "f02d5817ea49e77e9804e76d0bd612b667826b466e419c97a55ce45724d922ab"
+}

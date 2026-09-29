@@ -1,0 +1,121 @@
+115200_to_460800__heldout0__ce_only__seed17 seen 1.0 unseen 0.0
+115200_to_460800__heldout0__ce_only__seed42 seen 1.0 unseen 0.0
+115200_to_460800__heldout0__ce_only__seed73 seen 1.0 unseen 0.0
+115200_to_460800__heldout0__matched_bag_mse__seed17 seen 1.0 unseen 0.0
+115200_to_460800__heldout0__matched_bag_mse__seed42 seen 1.0 unseen 0.0
+115200_to_460800__heldout0__matched_bag_mse__seed73 seen 1.0 unseen 0.0
+115200_to_460800__heldout0__full__seed17 seen 1.0 unseen 0.0
+115200_to_460800__heldout0__full__seed42 seen 1.0 unseen 0.0
+115200_to_460800__heldout0__full__seed73 seen 1.0 unseen 0.0
+115200_to_460800__heldout0__label_code_mse__seed17 seen 1.0 unseen 0.0
+115200_to_460800__heldout0__label_code_mse__seed42 seen 1.0 unseen 0.0
+115200_to_460800__heldout0__label_code_mse__seed73 seen 1.0 unseen 0.0
+115200_to_460800__heldout1__ce_only__seed17 seen 1.0 unseen 0.0
+115200_to_460800__heldout1__ce_only__seed42 seen 1.0 unseen 0.0
+115200_to_460800__heldout1__ce_only__seed73 seen 1.0 unseen 0.0
+115200_to_460800__heldout1__matched_bag_mse__seed17 seen 1.0 unseen 0.0
+115200_to_460800__heldout1__matched_bag_mse__seed42 seen 1.0 unseen 0.0
+115200_to_460800__heldout1__matched_bag_mse__seed73 seen 1.0 unseen 0.0
+115200_to_460800__heldout1__full__seed17 seen 1.0 unseen 0.0
+115200_to_460800__heldout1__full__seed42 seen 1.0 unseen 0.0
+115200_to_460800__heldout1__full__seed73 seen 1.0 unseen 0.0
+115200_to_460800__heldout1__label_code_mse__seed17 seen 1.0 unseen 0.0
+115200_to_460800__heldout1__label_code_mse__seed42 seen 1.0 unseen 0.0
+115200_to_460800__heldout1__label_code_mse__seed73 seen 1.0 unseen 0.0
+115200_to_460800__heldout2__ce_only__seed17 seen 1.0 unseen 0.0
+115200_to_460800__heldout2__ce_only__seed42 seen 1.0 unseen 0.0
+115200_to_460800__heldout2__ce_only__seed73 seen 1.0 unseen 0.0
+115200_to_460800__heldout2__matched_bag_mse__seed17 seen 1.0 unseen 0.0
+115200_to_460800__heldout2__matched_bag_mse__seed42 seen 1.0 unseen 0.0
+115200_to_460800__heldout2__matched_bag_mse__seed73 seen 1.0 unseen 0.0
+115200_to_460800__heldout2__full__seed17 seen 1.0 unseen 0.0
+115200_to_460800__heldout2__full__seed42 seen 1.0 unseen 0.0
+115200_to_460800__heldout2__full__seed73 seen 1.0 unseen 0.0
+115200_to_460800__heldout2__label_code_mse__seed17 seen 1.0 unseen 0.0
+115200_to_460800__heldout2__label_code_mse__seed42 seen 1.0 unseen 0.0
+115200_to_460800__heldout2__label_code_mse__seed73 seen 1.0 unseen 0.0
+115200_to_460800__heldout3__ce_only__seed17 seen 1.0 unseen 0.0
+115200_to_460800__heldout3__ce_only__seed42 seen 1.0 unseen 0.0
+115200_to_460800__heldout3__ce_only__seed73 seen 1.0 unseen 0.0
+115200_to_460800__heldout3__matched_bag_mse__seed17 seen 1.0 unseen 0.0
+115200_to_460800__heldout3__matched_bag_mse__seed42 seen 1.0 unseen 0.0
+115200_to_460800__heldout3__matched_bag_mse__seed73 seen 1.0 unseen 0.0
+115200_to_460800__heldout3__full__seed17 seen 1.0 unseen 0.0
+115200_to_460800__heldout3__full__seed42 seen 1.0 unseen 0.0
+115200_to_460800__heldout3__full__seed73 seen 1.0 unseen 0.0
+115200_to_460800__heldout3__label_code_mse__seed17 seen 1.0 unseen 0.0
+115200_to_460800__heldout3__label_code_mse__seed42 seen 1.0 unseen 0.0
+115200_to_460800__heldout3__label_code_mse__seed73 seen 1.0 unseen 0.0
+460800_to_115200__heldout0__ce_only__seed17 seen 1.0 unseen 0.0
+460800_to_115200__heldout0__ce_only__seed42 seen 1.0 unseen 0.0
+460800_to_115200__heldout0__ce_only__seed73 seen 1.0 unseen 0.0
+460800_to_115200__heldout0__matched_bag_mse__seed17 seen 1.0 unseen 0.0
+460800_to_115200__heldout0__matched_bag_mse__seed42 seen 1.0 unseen 0.0
+460800_to_115200__heldout0__matched_bag_mse__seed73 seen 1.0 unseen 0.0
+460800_to_115200__heldout0__full__seed17 seen 1.0 unseen 0.0
+460800_to_115200__heldout0__full__seed42 seen 1.0 unseen 0.0
+460800_to_115200__heldout0__full__seed73 seen 1.0 unseen 0.0
+460800_to_115200__heldout0__label_code_mse__seed17 seen 1.0 unseen 0.0
+460800_to_115200__heldout0__label_code_mse__seed42 seen 1.0 unseen 0.0
+460800_to_115200__heldout0__label_code_mse__seed73 seen 1.0 unseen 0.0
+460800_to_115200__heldout1__ce_only__seed17 seen 1.0 unseen 0.0
+460800_to_115200__heldout1__ce_only__seed42 seen 1.0 unseen 0.0
+460800_to_115200__heldout1__ce_only__seed73 seen 1.0 unseen 0.0
+460800_to_115200__heldout1__matched_bag_mse__seed17 seen 1.0 unseen 0.0
+460800_to_115200__heldout1__matched_bag_mse__seed42 seen 1.0 unseen 0.0
+460800_to_115200__heldout1__matched_bag_mse__seed73 seen 1.0 unseen 0.0
+460800_to_115200__heldout1__full__seed17 seen 1.0 unseen 0.0
+460800_to_115200__heldout1__full__seed42 seen 1.0 unseen 0.0
+460800_to_115200__heldout1__full__seed73 seen 1.0 unseen 0.0
+460800_to_115200__heldout1__label_code_mse__seed17 seen 1.0 unseen 0.0
+460800_to_115200__heldout1__label_code_mse__seed42 seen 1.0 unseen 0.0
+460800_to_115200__heldout1__label_code_mse__seed73 seen 1.0 unseen 0.0
+460800_to_115200__heldout2__ce_only__seed17 seen 1.0 unseen 0.0
+460800_to_115200__heldout2__ce_only__seed42 seen 1.0 unseen 0.0
+460800_to_115200__heldout2__ce_only__seed73 seen 1.0 unseen 0.0
+460800_to_115200__heldout2__matched_bag_mse__seed17 seen 1.0 unseen 0.0
+460800_to_115200__heldout2__matched_bag_mse__seed42 seen 1.0 unseen 0.0
+460800_to_115200__heldout2__matched_bag_mse__seed73 seen 1.0 unseen 0.0
+460800_to_115200__heldout2__full__seed17 seen 1.0 unseen 0.0
+460800_to_115200__heldout2__full__seed42 seen 1.0 unseen 0.0
+460800_to_115200__heldout2__full__seed73 seen 1.0 unseen 0.0
+460800_to_115200__heldout2__label_code_mse__seed17 seen 1.0 unseen 0.0
+460800_to_115200__heldout2__label_code_mse__seed42 seen 1.0 unseen 0.0
+460800_to_115200__heldout2__label_code_mse__seed73 seen 1.0 unseen 0.0
+460800_to_115200__heldout3__ce_only__seed17 seen 1.0 unseen 0.0
+460800_to_115200__heldout3__ce_only__seed42 seen 1.0 unseen 0.0
+460800_to_115200__heldout3__ce_only__seed73 seen 1.0 unseen 0.0
+460800_to_115200__heldout3__matched_bag_mse__seed17 seen 1.0 unseen 0.0
+460800_to_115200__heldout3__matched_bag_mse__seed42 seen 1.0 unseen 0.0
+460800_to_115200__heldout3__matched_bag_mse__seed73 seen 1.0 unseen 0.0
+460800_to_115200__heldout3__full__seed17 seen 1.0 unseen 0.0
+460800_to_115200__heldout3__full__seed42 seen 1.0 unseen 0.0
+460800_to_115200__heldout3__full__seed73 seen 1.0 unseen 0.0
+460800_to_115200__heldout3__label_code_mse__seed17 seen 1.0 unseen 0.0
+460800_to_115200__heldout3__label_code_mse__seed42 seen 1.0 unseen 0.0
+460800_to_115200__heldout3__label_code_mse__seed73 seen 1.0 unseen 0.0
+         method      scope      unit    n  correct  predicted_heldout  mean_accuracy  mean_macro_f1  pooled_accuracy  pooled_predicted_heldout_rate
+        ce_only   all_four recording   96       72                  0       0.750000       0.666667         0.750000                            0.0
+        ce_only   all_four    window 4944     3701                  0       0.748624       0.663477         0.748584                            0.0
+        ce_only seen_three recording   72       72                  0       1.000000       1.000000         1.000000                            0.0
+        ce_only seen_three    window 3708     3701                  0       0.998200       0.998241         0.998112                            0.0
+        ce_only unseen_one recording   24        0                  0       0.000000       0.000000         0.000000                            0.0
+        ce_only unseen_one    window 1236        0                  0       0.000000       0.000000         0.000000                            0.0
+           full   all_four recording   96       72                  0       0.750000       0.666667         0.750000                            0.0
+           full   all_four    window 4944     3703                  0       0.749017       0.664014         0.748989                            0.0
+           full seen_three recording   72       72                  0       1.000000       1.000000         1.000000                            0.0
+           full seen_three    window 3708     3703                  0       0.998714       0.998747         0.998652                            0.0
+           full unseen_one recording   24        0                  0       0.000000       0.000000         0.000000                            0.0
+           full unseen_one    window 1236        0                  0       0.000000       0.000000         0.000000                            0.0
+ label_code_mse   all_four recording   96       72                  0       0.750000       0.666667         0.750000                            0.0
+ label_code_mse   all_four    window 4944     3701                  0       0.748624       0.663170         0.748584                            0.0
+ label_code_mse seen_three recording   72       72                  0       1.000000       1.000000         1.000000                            0.0
+ label_code_mse seen_three    window 3708     3701                  0       0.998200       0.998243         0.998112                            0.0
+ label_code_mse unseen_one recording   24        0                  0       0.000000       0.000000         0.000000                            0.0
+ label_code_mse unseen_one    window 1236        0                  0       0.000000       0.000000         0.000000                            0.0
+matched_bag_mse   all_four recording   96       72                  0       0.750000       0.666667         0.750000                            0.0
+matched_bag_mse   all_four    window 4944     3700                  0       0.748428       0.664055         0.748382                            0.0
+matched_bag_mse seen_three recording   72       72                  0       1.000000       1.000000         1.000000                            0.0
+matched_bag_mse seen_three    window 3708     3700                  0       0.997942       0.997990         0.997843                            0.0
+matched_bag_mse unseen_one recording   24        0                  0       0.000000       0.000000         0.000000                            0.0
+matched_bag_mse unseen_one    window 1236        0                  0       0.000000       0.000000         0.000000                            0.0

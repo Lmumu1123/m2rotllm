@@ -1,0 +1,289 @@
+{
+  "timestamp_utc": "2026-09-23T13:08:38.851707+00:00",
+  "mode": "dry_run",
+  "raw_dir": "/home/huangyating/anomaly_detection/raw_four_class",
+  "raw_dir_exists": true,
+  "output": "/home/huangyating/anomaly_detection/encoder_validation_20260923/geometry_corrected_r0_045m",
+  "report": "/home/huangyating/anomaly_detection/encoder_validation_20260923/data_audit/upload_readiness.json",
+  "fixed_distance_m": 0.45,
+  "fixed_candidate_roi_m": [
+    0.29,
+    0.61
+  ],
+  "required_bin_count": 12,
+  "required_bin_accepted": 0,
+  "optional_DAT_required_for_ROI_reprocessing": false,
+  "optional_DAT_warning_count": 0,
+  "stability_seconds": 2.0,
+  "dry_run_full_hash_requested": false,
+  "existing_script_always_checks_all_raw_SHA256_before_export": true,
+  "archive_manifest_sha256": "7ded5b7d333892b895a99cb5e5f19d285efda51cb5b06ae839ae5964090ec8f3",
+  "existing_script_sha256": "dd72a9f1a5aeb42d202cab2f5420065141f38ab1c63b6c93220eed86ba84a383",
+  "entry_script_sha256": "800714b2822fc43e3f30651d6b10186a4b6ad81fc4f75b414ba0b9ea77828608",
+  "inputs": [
+    {
+      "file": "20260920-184058-normal-11520.bin",
+      "required": true,
+      "expected_bytes": 965763072,
+      "expected_sha256": "a43a79d2db7d384cf01e9cb4052859dd265291a143ab225aa506b18b30fd0c82",
+      "paths": [],
+      "status": "missing"
+    },
+    {
+      "file": "20260920-184857-normal-460800.bin",
+      "required": true,
+      "expected_bytes": 757899264,
+      "expected_sha256": "9cb27412b4692c7253ff0823a86acdd8d22ea645184552784a2b3bbdbaceae17",
+      "paths": [],
+      "status": "missing"
+    },
+    {
+      "file": "20260920-190512-outBroken-115200.bin",
+      "required": true,
+      "expected_bytes": 794804224,
+      "expected_sha256": "9f9df9c3a38c97690da0cbc000bac0d4caae208bfc7642f81a3515396d24ab85",
+      "paths": [],
+      "status": "missing"
+    },
+    {
+      "file": "20260920-190913-outBroken-460800.bin",
+      "required": true,
+      "expected_bytes": 799698944,
+      "expected_sha256": "c6f62b84863bf7a6d3cd5683247d81aa9302b56433335a2f21ac1b4b58c9e181",
+      "paths": [],
+      "status": "missing"
+    },
+    {
+      "file": "20260920-192216-inBroken-115200.bin",
+      "required": true,
+      "expected_bytes": 801173504,
+      "expected_sha256": "2d45cc0053fa2d9098e7008d8b60ad6aebba5b7eb0b8fa1d9fb4fad480f96969",
+      "paths": [],
+      "status": "missing"
+    },
+    {
+      "file": "20260920-192610-inBroken-460800.bin",
+      "required": true,
+      "expected_bytes": 816369664,
+      "expected_sha256": "99aa72d17ca084dd68738ef5c8c34cd01be1fa1c80b93bbb8b7c37866a679e22",
+      "paths": [],
+      "status": "missing"
+    },
+    {
+      "file": "20260920-193718-roll-115200.bin",
+      "required": true,
+      "expected_bytes": 806105088,
+      "expected_sha256": "82f2c8820fe5931a8de485d8794f5f43ea496a4650bd589c6cf88245c11a479e",
+      "paths": [],
+      "status": "missing"
+    },
+    {
+      "file": "20260920-194108-roll-460800.bin",
+      "required": true,
+      "expected_bytes": 810876928,
+      "expected_sha256": "1b4d2e70e860a1d2274acd3273e80936051a4790e93303757e091c164115b7d2",
+      "paths": [],
+      "status": "missing"
+    },
+    {
+      "file": "20260920-195424-keep-115200.bin",
+      "required": true,
+      "expected_bytes": 803594240,
+      "expected_sha256": "3f83497b0339c3ffc44cb64962d74c7cd43f0ffe26fe9c99ac1de7758c134cb0",
+      "paths": [],
+      "status": "missing"
+    },
+    {
+      "file": "20260920-195753-keep-460800.bin",
+      "required": true,
+      "expected_bytes": 808497152,
+      "expected_sha256": "21d47be5fd49f40807b3094d98109ef8ca21ae62a73414979df71d02f25645d9",
+      "paths": [],
+      "status": "missing"
+    },
+    {
+      "file": "20260920-201757-bigNormal-115200.bin",
+      "required": true,
+      "expected_bytes": 796082176,
+      "expected_sha256": "5e642c63900c006a6e59edab1c74ef8a582a084ddbe0e3817f3fb7387e23fbe4",
+      "paths": [],
+      "status": "missing"
+    },
+    {
+      "file": "20260920-202115-bigNormal-460800.bin",
+      "required": true,
+      "expected_bytes": 798068736,
+      "expected_sha256": "13537aa1bd73cb7e364f31bb6579fe77c101b7688c88f6de7274870dc001d165",
+      "paths": [],
+      "status": "missing"
+    },
+    {
+      "file": "2026_9_20_18-41-41-normal-115200.DAT",
+      "required": false,
+      "expected_bytes": 1116792,
+      "expected_sha256": "921eee110fdad4c43c270c1c78e89bd72c4840bdcd6c4d0bd7b829f73f50a17f",
+      "paths": [],
+      "status": "optional_absent"
+    },
+    {
+      "file": "2026_9_20_18-48-45-normal-460800.DAT",
+      "required": false,
+      "expected_bytes": 4708951,
+      "expected_sha256": "75c7f4c84a0f59b5e179b34019784a9e2d8ef171283f964466abd7b04235b01d",
+      "paths": [],
+      "status": "optional_absent"
+    },
+    {
+      "file": "2026_9_20_19-05-05-outBroken-115200.DAT",
+      "required": false,
+      "expected_bytes": 1337378,
+      "expected_sha256": "0b55d74ca2ec1db79c3c6d83f439a18547c8058a205762bc702124fa2ca30a62",
+      "paths": [],
+      "status": "optional_absent"
+    },
+    {
+      "file": "2026_9_20_19-09-18-outBroken-460800.DAT",
+      "required": false,
+      "expected_bytes": 5673616,
+      "expected_sha256": "9ae298ed325fdba4e99418c0f246e14a8de8084dd5295664ee45834410fb95cd",
+      "paths": [],
+      "status": "optional_absent"
+    },
+    {
+      "file": "2026_9_20_19-22-20-inBroken-115200.DAT",
+      "required": false,
+      "expected_bytes": 1310827,
+      "expected_sha256": "662efe28c2cc10f54b23989d4868b72ad3ce0eae116f744a2f6bb2e78b35d17c",
+      "paths": [],
+      "status": "optional_absent"
+    },
+    {
+      "file": "2026_9_20_19-26-17-inBroken-460800.DAT",
+      "required": false,
+      "expected_bytes": 4978076,
+      "expected_sha256": "a5b062625daccc8a347f0abd2657b8764d1363544c24e782cfd2939fced4c2cd",
+      "paths": [],
+      "status": "optional_absent"
+    },
+    {
+      "file": "2026_9_20_19-37-24-roll-115200.DAT",
+      "required": false,
+      "expected_bytes": 1372229,
+      "expected_sha256": "d49966e63c4d0fe6bbba455eaabdb3a64ddebb2c6342b154fbdb7bcaacb4849a",
+      "paths": [],
+      "status": "optional_absent"
+    },
+    {
+      "file": "2026_9_20_19-41-02-roll-460800.DAT",
+      "required": false,
+      "expected_bytes": 5555032,
+      "expected_sha256": "17ba82b7fec65a609fbe452518ae6e8d16c2d5af50f56da3db7b324154a322d4",
+      "paths": [],
+      "status": "optional_absent"
+    },
+    {
+      "file": "2026_9_20_19-54-31-keep-115200.DAT",
+      "required": false,
+      "expected_bytes": 1253889,
+      "expected_sha256": "943a2bf9d010ebfd874e9dffc46383c6076f4c98c3e5b295d0429fea54ee2719",
+      "paths": [],
+      "status": "optional_absent"
+    },
+    {
+      "file": "2026_9_20_19-58-01-keep-460800.DAT",
+      "required": false,
+      "expected_bytes": 4906991,
+      "expected_sha256": "2bb5c2c65660ffb9a135a522e66d2ab00f5f0f2b4ec829b66fe2a05edc23d4c1",
+      "paths": [],
+      "status": "optional_absent"
+    },
+    {
+      "file": "2026_9_20_20-17-49-bigNormal-115200.DAT",
+      "required": false,
+      "expected_bytes": 1273320,
+      "expected_sha256": "e74e3bec53be9e1a8f6780ff00d3f15f8e115c5820664bf4f897557cc6141866",
+      "paths": [],
+      "status": "optional_absent"
+    },
+    {
+      "file": "2026_9_20_20-21-22-bigNormal-460800.DAT",
+      "required": false,
+      "expected_bytes": 4586884,
+      "expected_sha256": "b7b092eba5e954bbdf60f68fc435c735c583949bab3ee7fe6c034047f3a350de",
+      "paths": [],
+      "status": "optional_absent"
+    }
+  ],
+  "unknown_capture_names": [],
+  "blockers": [
+    "20260920-184058-normal-11520.bin: missing",
+    "20260920-184857-normal-460800.bin: missing",
+    "20260920-190512-outBroken-115200.bin: missing",
+    "20260920-190913-outBroken-460800.bin: missing",
+    "20260920-192216-inBroken-115200.bin: missing",
+    "20260920-192610-inBroken-460800.bin: missing",
+    "20260920-193718-roll-115200.bin: missing",
+    "20260920-194108-roll-460800.bin: missing",
+    "20260920-195424-keep-115200.bin: missing",
+    "20260920-195753-keep-460800.bin: missing",
+    "20260920-201757-bigNormal-115200.bin: missing",
+    "20260920-202115-bigNormal-460800.bin: missing"
+  ],
+  "existing_check": {
+    "returncode": 2,
+    "result": {
+      "status": "blocked_missing_or_invalid_inputs",
+      "check_only": true,
+      "raw_dir": "/home/huangyating/anomaly_detection/raw_four_class",
+      "raw_dir_exists": true,
+      "output": "/home/huangyating/anomaly_detection/encoder_validation_20260923/geometry_corrected_r0_045m",
+      "existing_results": "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results",
+      "required_radar_files": 12,
+      "found_unique_radar_files": 0,
+      "missing_raw_files": [
+        "20260920-184058-normal-11520.bin",
+        "20260920-184857-normal-460800.bin",
+        "20260920-190512-outBroken-115200.bin",
+        "20260920-190913-outBroken-460800.bin",
+        "20260920-192216-inBroken-115200.bin",
+        "20260920-192610-inBroken-460800.bin",
+        "20260920-193718-roll-115200.bin",
+        "20260920-194108-roll-460800.bin",
+        "20260920-195424-keep-115200.bin",
+        "20260920-195753-keep-460800.bin",
+        "20260920-201757-bigNormal-115200.bin",
+        "20260920-202115-bigNormal-460800.bin"
+      ],
+      "duplicate_raw_files": {},
+      "size_mismatches": [],
+      "missing_archived_raw_manifest": [],
+      "missing_contact_exports": [],
+      "contact_exports_reused": 12,
+      "radar_config_checked": "exact supported R0 fields",
+      "config": "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/雷达原始配置.cfg",
+      "shared_distance_m": 0.45,
+      "shared_roi_m": [
+        0.29000000000000004,
+        0.61
+      ],
+      "sha256_policy": "Full raw SHA256 checked against archived manifest before any output is created",
+      "synchronized_window_pairs": false
+    }
+  },
+  "reprocessing_command": [
+    "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+    "/home/huangyating/anomaly_detection/four_class_chain_20260922/scripts/reprocess_geometry.py",
+    "--raw-dir",
+    "/home/huangyating/anomaly_detection/raw_four_class",
+    "--output",
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923/geometry_corrected_r0_045m",
+    "--distance-m",
+    ".45",
+    "--config",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/雷达原始配置.cfg",
+    "--existing-results",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results"
+  ],
+  "status": "blocked",
+  "reprocessing_executed": false
+}

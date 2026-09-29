@@ -1,0 +1,88 @@
+{
+  "timestamp_utc": "2026-09-23T13:05:43.996681+00:00",
+  "python": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "cpu_threads": 2,
+  "search_roots": [
+    "/home/huangyating/anomaly_detection",
+    "/media/nas_users/huangyating"
+  ],
+  "search_includes_hidden_and_ignored": true,
+  "search_follows_directory_symlinks": false,
+  "search_file_extensions": [
+    ".bin",
+    ".DAT",
+    ".dat",
+    ".npz",
+    ".zip"
+  ],
+  "matched_files_count": 264,
+  "original_radar_found": 0,
+  "original_contact_found": 0,
+  "other_contact_raw_files": [
+    "/home/huangyating/anomaly_detection/接触式/SAVE2026_9_19_21-09-12-2000r.DAT",
+    "/home/huangyating/anomaly_detection/接触式/SAVE2026_9_19_21-12-32-3000r.DAT",
+    "/home/huangyating/anomaly_detection/接触式/SAVE2026_9_19_21-05-41-1000r.DAT"
+  ],
+  "other_possible_capture_files": [],
+  "original_captures_in_local_archives": [
+    {
+      "archive": "/home/huangyating/anomaly_detection/retention_alignment_20260922_bundle.zip",
+      "original_capture_members": []
+    },
+    {
+      "archive": "/home/huangyating/anomaly_detection/contact_validation_20260919/contact_validation_bundle.zip",
+      "original_capture_members": []
+    },
+    {
+      "archive": "/home/huangyating/anomaly_detection/environment_validation_20260919/environment_validation_results.zip",
+      "original_capture_members": []
+    },
+    {
+      "archive": "/home/huangyating/anomaly_detection/four_class_chain_20260922_bundle.zip",
+      "original_capture_members": []
+    }
+  ],
+  "main_paired_recordings": 8,
+  "main_contact_windows": 58,
+  "main_radar_windows": 412,
+  "new_four_class_recordings_identified": 0,
+  "roi_correction_status": "not_executed_missing_original_ADC_bins",
+  "cannot_recover_target_range_from_saved_outer_ring_IQ": true,
+  "geometry_guard_exit_code": 2,
+  "geometry_guard_output_created": false,
+  "meaningful_training_only_same_class_shuffle_on_existing_heldout_folds": false,
+  "novel_diagnostic_task_with_sufficient_train_test_recordings_available": false,
+  "known_unseen_fault_type_keep_has_two_recordings": true,
+  "severity_labels_available": false,
+  "timing_offset_drift_ground_truth_available": false,
+  "static_earlier_speed_contact_records_are_not_paired_new_four_class_tests": true,
+  "source_files_unchanged": true,
+  "provenance": [
+    {
+      "path": "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/input_manifest.json",
+      "sha256": "7ded5b7d333892b895a99cb5e5f19d285efda51cb5b06ae839ae5964090ec8f3"
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/recording_bags.json",
+      "sha256": "cac524b555c7d5b950681b04dba12f3a93c847fb4296b0dd50126e4a329b96e1"
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/summary.json",
+      "sha256": "1f1470ed3869f6fc4cc9568dd6630e43d2819f28116a47a6b992b392a7dca05f"
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/four_class_chain_20260922/scripts/reprocess_geometry.py",
+      "sha256": "dd72a9f1a5aeb42d202cab2f5420065141f38ab1c63b6c93220eed86ba84a383"
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/four_class_chain_20260922/radar/check_geometry_reprocessing.py",
+      "sha256": "146e02134c9d52e74e8fbdc3eeb9a4a768cf3d088ab893e6d073eb8a5f59f276"
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_v0/splits.json",
+      "sha256": "fa74e5d50f8f46782993a3665029463760042ab885a061cbca2f0f5cdd97f773"
+    }
+  ],
+  "script_sha256": "9287a03f39857986c816c88514d47286edb6c0a223a1616259639cf5d306327e",
+  "audit_limits": "Capture search only within stated roots, filename/path identities. No claim that missing files do not exist elsewhere. Existing archived NPZ are derivatives, not new recordings."
+}

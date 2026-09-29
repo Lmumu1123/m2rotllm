@@ -1,0 +1,13 @@
+{
+  "feature_file": "/home/huangyating/anomaly_detection/r2_validation_20260928/radar/features.npz",
+  "feature_sha256": "bcd9b6ad40794a4afcde7786fa94e3bfbe4f1c51dfbd71fa76063f4b6735e6f1",
+  "audit_qc_sha256": "6922e64e36eeea276efa925d379544efd1070aea48b8fc4b67db6dc584537009",
+  "script_sha256": "b0297ca62deaa35fca31e155fd9c8875dc542b70f754e1237353b17c1d0aadc4",
+  "protocol_sha256": "466ff1cfc4379826fbe60e151c708a4f73b811a0046cfc9066c5e936945e0679",
+  "n_windows": 2158,
+  "n_recordings": 144,
+  "no_train_test_contact_overlap": true,
+  "no_train_test_recording_overlap": true,
+  "fit_only_train_scales": true,
+  "all_windows_retained": true
+}

@@ -1,0 +1,2306 @@
+[
+  {
+    "recording_id": "inBroken_1000r_20cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_1000r_20cm_rep1/radar.h5": [
+        22020672,
+        1790582440170771396
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_1000r_20cm_rep1.h5": [
+        49076366,
+        1790583377456986837
+      ]
+    },
+    "recording_json_sha256": "26ed86f9b17a76c7221281508b7287df29628ff258ddbce0f0b3a1efa027886c",
+    "source_adc_sha256": "82f85f8ff03fcc7cb9245e5e4efab8e348cca3a46e920fa9dd0b7933940bad9d",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_1000r_20cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_1000r_20cm_rep2/radar.h5": [
+        21645001,
+        1790582431904596159
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_1000r_20cm_rep2.h5": [
+        48147634,
+        1790583353492619978
+      ]
+    },
+    "recording_json_sha256": "b49b556974793bc46763a8661da1da0db75fbe277a4a807cc55ba2a921e73de0",
+    "source_adc_sha256": "189a121a1e66af1535a8654ccce0379328246d2eee38a23ceec46d54ae75d915",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_1000r_20cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_1000r_20cm_rep3/radar.h5": [
+        22633642,
+        1790582443610220347
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_1000r_20cm_rep3.h5": [
+        48732036,
+        1790583361870363435
+      ]
+    },
+    "recording_json_sha256": "0a48d4d3c770f4080c8a2c5cf7879cd42299ec9f549c32a797ffc23ea0fd282c",
+    "source_adc_sha256": "dc7e0d94c011e122e4925a8b1c0f5790bc87977a7dba8241a227f9947f2bbf91",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_1000r_20cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_1000r_20cm_rep4/radar.h5": [
+        22065006,
+        1790582440145361151
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_1000r_20cm_rep4.h5": [
+        49337585,
+        1790583381738894136
+      ]
+    },
+    "recording_json_sha256": "a17cfb7bed8d534ff92cd944440f144d27f6537211bd2311bd3c745fcef32681",
+    "source_adc_sha256": "7926f2f6dff65c3bec11c7a602a75fc1b4ede1bed28ae6aad6d7fc5ec68d0044",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_1000r_40cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_1000r_40cm_rep1/radar.h5": [
+        24634914,
+        1790582445403055960
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_1000r_40cm_rep1.h5": [
+        52553220,
+        1790583399169286547
+      ]
+    },
+    "recording_json_sha256": "07a300e94b695f2d7e61b7da873725ab6f5075f35caba294aad69902f737f025",
+    "source_adc_sha256": "45ba32dccce572505bfb25fec3956173ffc42be64f09049157a51ec53c775c97",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_1000r_40cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_1000r_40cm_rep2/radar.h5": [
+        23759305,
+        1790582445120314714
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_1000r_40cm_rep2.h5": [
+        50511206,
+        1790583392971748167
+      ]
+    },
+    "recording_json_sha256": "a9a254fae34cb111aede92673f4c871612e00febb2ba9f03383a2a677250e441",
+    "source_adc_sha256": "f0246509d651335acb57ba80ae9100080bbbe28a9ea3ad89d47065be4bf1201f",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_1000r_40cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_1000r_40cm_rep3/radar.h5": [
+        20294229,
+        1790582406362748240
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_1000r_40cm_rep3.h5": [
+        48638971,
+        1790583361990206204
+      ]
+    },
+    "recording_json_sha256": "859131ac1474ef7ae7a2ccb5403c0b34d7e95599e166d8122ea3f95abc25f075",
+    "source_adc_sha256": "38664455fd7f5a3b76457ca4b788be7411dde4257dd7453ff7b23bb9cbe1a7aa",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_1000r_40cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_1000r_40cm_rep4/radar.h5": [
+        20232384,
+        1790582406415566634
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_1000r_40cm_rep4.h5": [
+        48469465,
+        1790583358386504698
+      ]
+    },
+    "recording_json_sha256": "26ae43f625aedc7a8eee1d10907d7f1821d853f3817281d9348f40850a445e6b",
+    "source_adc_sha256": "b0d8cc5d025213459d2af5b84ba0a8eb7552681917f7a888976ce3ae67e3fad0",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_1000r_80cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_1000r_80cm_rep1/radar.h5": [
+        20867587,
+        1790582414441690036
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_1000r_80cm_rep1.h5": [
+        48295178,
+        1790583358422198238
+      ]
+    },
+    "recording_json_sha256": "06de2a9a1f14d99fbaf87041daeff896e487cc35a18aef30c8542df6ffbdb020",
+    "source_adc_sha256": "e81c42762eb055f02077d544d3372e35e1341d89ee6dcfd7cf294772510e53d0",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_1000r_80cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_1000r_80cm_rep2/radar.h5": [
+        21126857,
+        1790582421723877791
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_1000r_80cm_rep2.h5": [
+        49149057,
+        1790583377764993811
+      ]
+    },
+    "recording_json_sha256": "ff78c091291c86a1dff61792f13c037759edea2e8fec5b966af0e4cb813ba67f",
+    "source_adc_sha256": "16ee87f8be417cc6bea379b662790f82421bc2ec6ed5fe948db7a88005086d35",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_1000r_80cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_1000r_80cm_rep3/radar.h5": [
+        21168611,
+        1790582421791691665
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_1000r_80cm_rep3.h5": [
+        49624906,
+        1790583384870618520
+      ]
+    },
+    "recording_json_sha256": "ad343d0ca751df989cfe6c1a797d8b89cd2099a74551643d01b0ab92d4e27f02",
+    "source_adc_sha256": "0e0cd3904659c93e90e4b99630235366a073163bb4d4cb69d297e61e3609040e",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_1000r_80cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_1000r_80cm_rep4/radar.h5": [
+        20967049,
+        1790582414553167207
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_1000r_80cm_rep4.h5": [
+        49115331,
+        1790583377804939641
+      ]
+    },
+    "recording_json_sha256": "2b3e710cba163c7206574c384aa648e89264d63c311628b650b1a05c2969cfc4",
+    "source_adc_sha256": "50eaabc81c9dc2fe43ec1aa4a10df50d64dd198dd464ec988bf7811cd4e3209c",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_2000r_20cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_2000r_20cm_rep1/radar.h5": [
+        22678329,
+        1790582443702646999
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_2000r_20cm_rep1.h5": [
+        50670067,
+        1790583394643950996
+      ]
+    },
+    "recording_json_sha256": "3fe293ea162267d102ee8f155b592848747ac6d588314861530b78912ded700e",
+    "source_adc_sha256": "1c8788c05be7e47239f0bd18d3b92d61e5a0efa647376e0a69c2edd4d170cf7b",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_2000r_20cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_2000r_20cm_rep2/radar.h5": [
+        21312750,
+        1790582427248144716
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_2000r_20cm_rep2.h5": [
+        47560790,
+        1790583341509777149
+      ]
+    },
+    "recording_json_sha256": "6f52c00f28c36a52ce8ee810bd451b6f58f7f5c1766044954fdbd35389d9401c",
+    "source_adc_sha256": "fb3fb8e6da91f94218e177df051d8a6bdf28d35e55ab106ba45cb27993103eea",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_2000r_20cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_2000r_20cm_rep3/radar.h5": [
+        21046973,
+        1790582421988827706
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_2000r_20cm_rep3.h5": [
+        46934525,
+        1790583330722833162
+      ]
+    },
+    "recording_json_sha256": "b0f787086238c84f62ea9cd0258ceaadb6ba7e0806ce5f6b28e50f6eaac6279f",
+    "source_adc_sha256": "4a98059a28641f0cae6b390c0ccf3d010d97aefd7dad441d3eeab08e85b6144d",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_2000r_20cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_2000r_20cm_rep4/radar.h5": [
+        22117593,
+        1790582440340893512
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_2000r_20cm_rep4.h5": [
+        49435686,
+        1790583381958595602
+      ]
+    },
+    "recording_json_sha256": "6c3c6044837abd4134ba925152ddb969d5a029bb8235933cf8c1fdfb0662cfba",
+    "source_adc_sha256": "598d9592c6d41dcacbd46e1f2a79011b4c503363d077da4e6bf317fbea93184a",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_2000r_40cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_2000r_40cm_rep1/radar.h5": [
+        21977623,
+        1790582436538550426
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_2000r_40cm_rep1.h5": [
+        50081550,
+        1790583389916920083
+      ]
+    },
+    "recording_json_sha256": "c0e77af9c82b744c2a8d1896b64b4a9f42c0e926d682571a948b58df858a0606",
+    "source_adc_sha256": "4ca78e1d03b4cec8ffcf12ad4f300c5353bd6bf48c0b9b7e8068a8c0ef5e36d2",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_2000r_40cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_2000r_40cm_rep2/radar.h5": [
+        22351590,
+        1790582442569663000
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_2000r_40cm_rep2.h5": [
+        50742788,
+        1790583394674288663
+      ]
+    },
+    "recording_json_sha256": "787cecb3329464bf4d4c64f3b4946cbd857f3c6b0336bb524653de84e9735f38",
+    "source_adc_sha256": "48244f9b26c207dc8a13d8e4cf415e9c845caf41d72e6a137f9270c33988669a",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_2000r_40cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_2000r_40cm_rep3/radar.h5": [
+        23312254,
+        1790582444670941649
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_2000r_40cm_rep3.h5": [
+        52887067,
+        1790583399517951544
+      ]
+    },
+    "recording_json_sha256": "52433805d24db9b73625a60ce610d273ca9934431b599890d7c89191923f336a",
+    "source_adc_sha256": "7171a39189d9e58a1526a9a2ddbc160cab4db1ab1471334d7db195f2e6c99936",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_2000r_40cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_2000r_40cm_rep4/radar.h5": [
+        22297929,
+        1790582442604509322
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_2000r_40cm_rep4.h5": [
+        50624149,
+        1790583394803430336
+      ]
+    },
+    "recording_json_sha256": "1f58b789a8f9b7cd0416e61a7925380dea17b95ae5eb8982cd7b640982c8d86c",
+    "source_adc_sha256": "843e765d1974cfca25bf4e96c2f0bc07a6681f5a02ad81a9d5e62f972797cef0",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_2000r_80cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_2000r_80cm_rep1/radar.h5": [
+        21107071,
+        1790582422242224471
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_2000r_80cm_rep1.h5": [
+        48769166,
+        1790583371139507433
+      ]
+    },
+    "recording_json_sha256": "d3c4fb34a8301e3df2a5de6de54083cb29880a46dec9ae47c09d968ab4a6925d",
+    "source_adc_sha256": "e94a1dff697af3fee32c8bccc6c8b50347eefb3e42835ef7d4112f5234b78637",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_2000r_80cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_2000r_80cm_rep2/radar.h5": [
+        20782171,
+        1790582415003847312
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_2000r_80cm_rep2.h5": [
+        48632262,
+        1790583362290265523
+      ]
+    },
+    "recording_json_sha256": "1feb1fe9234df10af4d062eb478febb57a2194a16db8524e2cff9be3a622c154",
+    "source_adc_sha256": "f24c0549c296f75b6114613d90580760788b27b81cfb1d8d93f3d527f8f725c1",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_2000r_80cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_2000r_80cm_rep3/radar.h5": [
+        21123714,
+        1790582422305742075
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_2000r_80cm_rep3.h5": [
+        48948983,
+        1790583371254461510
+      ]
+    },
+    "recording_json_sha256": "40b648ad118025e8ec4c43e342e8636b667cbcf1cc039660f1a01cac9fa6d41c",
+    "source_adc_sha256": "41d007253bce671557b87e66eef8a00d807660caeaead7d63c07e832ebdb411b",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_2000r_80cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_2000r_80cm_rep4/radar.h5": [
+        21331223,
+        1790582427520474656
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_2000r_80cm_rep4.h5": [
+        48965324,
+        1790583371375557787
+      ]
+    },
+    "recording_json_sha256": "6027128ae0ccd4cf43b1130191bde9f2000b9822baaa9ffcca0b5a6a911ba0e8",
+    "source_adc_sha256": "bc27379e7997e8f9267cfcb4dcc72937aa6fe23293c327c19c32fbae9658ff7e",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_3000r_20cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_3000r_20cm_rep1/radar.h5": [
+        22206592,
+        1790582440578802481
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_3000r_20cm_rep1.h5": [
+        50152830,
+        1790583390050849543
+      ]
+    },
+    "recording_json_sha256": "e54608d4728fbff0efdde858496541390d489ade90f62c6e5f1db9042e67d9e6",
+    "source_adc_sha256": "0ce003d27448cdf03efe058c975c93f294e8ff95b57f9e2a41b6fd387a82d808",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_3000r_20cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_3000r_20cm_rep2/radar.h5": [
+        21666273,
+        1790582432471801630
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_3000r_20cm_rep2.h5": [
+        48845333,
+        1790583371678951805
+      ]
+    },
+    "recording_json_sha256": "36f15dc8c6c701d8009ab906fe81348207e6135e892ac0f4fcb321c6270c4358",
+    "source_adc_sha256": "1bf1e674fb3485386d33b2ac0745d3ce679567f05d5fffa3774937476fddf3eb",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_3000r_20cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_3000r_20cm_rep3/radar.h5": [
+        22127322,
+        1790582440615753336
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_3000r_20cm_rep3.h5": [
+        50107432,
+        1790583390582291470
+      ]
+    },
+    "recording_json_sha256": "437e0408bd74978b1a90d9dae7ea3a90912196ee01b73be527037f2e7eeda824",
+    "source_adc_sha256": "6f3b732762a0f0d3e21a514e0a53d09180b6a1a0fdb3108c469e8af6a69562fb",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_3000r_20cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_3000r_20cm_rep4/radar.h5": [
+        22044505,
+        1790582440587477218
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_3000r_20cm_rep4.h5": [
+        49911275,
+        1790583387474971822
+      ]
+    },
+    "recording_json_sha256": "517d99a70596a2a58cd94a934e07abefe20285b058a50871c8ca94f995b33408",
+    "source_adc_sha256": "2849e212262193ffe96225cf975975e64a5327a1fe27ad69c81560fa8de2c51e",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_3000r_40cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_3000r_40cm_rep1/radar.h5": [
+        22294215,
+        1790582442676828430
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_3000r_40cm_rep1.h5": [
+        50864661,
+        1790583396256630971
+      ]
+    },
+    "recording_json_sha256": "7ea9ed62d40e9e2d22191d02c19f3c723196ee72dd677bf32c215a5c52168e88",
+    "source_adc_sha256": "422c73a056654db3bf26773226c9ed4efc54a17eaf0c7b0d16149c5645eadaa8",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_3000r_40cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_3000r_40cm_rep2/radar.h5": [
+        22299807,
+        1790582442647941856
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_3000r_40cm_rep2.h5": [
+        50789228,
+        1790583394877922743
+      ]
+    },
+    "recording_json_sha256": "4437877818d5f03eda80cbd2e169ac1202788703559371f25115ab2ded235903",
+    "source_adc_sha256": "5f9339d3fbf53a11a8176f7c58dd741d2f520cb35ad1de6bd1d01a1a3103a19f",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_3000r_40cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_3000r_40cm_rep3/radar.h5": [
+        22185998,
+        1790582440727308104
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_3000r_40cm_rep3.h5": [
+        50382716,
+        1790583393291428277
+      ]
+    },
+    "recording_json_sha256": "17ca449fed643ebb198741a43a23ca7aaae1e9e885af08efa49a2f2ef990d59e",
+    "source_adc_sha256": "3eaeaa925e41906bd6d382827cf8d0b9654eb3939fc93666df90d587d419a07e",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_3000r_40cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_3000r_40cm_rep4/radar.h5": [
+        22291774,
+        1790582442697570607
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_3000r_40cm_rep4.h5": [
+        50633775,
+        1790583394905059994
+      ]
+    },
+    "recording_json_sha256": "3ac69e2ee86617e9ac77e317cb338308bbc65e893dc5e6faeb3fd395d04b7734",
+    "source_adc_sha256": "fcc1b171a3dc009ed70758a92c921a7dc74a3af013b8c8534044ca470050bf22",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_3000r_80cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_3000r_80cm_rep1/radar.h5": [
+        21279148,
+        1790582427960879678
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_3000r_80cm_rep1.h5": [
+        50455253,
+        1790583393399881648
+      ]
+    },
+    "recording_json_sha256": "8fc9bf50f7c012fb35da569efdb360e0cc0c1c440a83a0f602c74132c52d2087",
+    "source_adc_sha256": "4ab788171108d1eaaaf35dafee20b9716bacaa817349f98c88ab4aa70fe9a2db",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_3000r_80cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_3000r_80cm_rep2/radar.h5": [
+        21304611,
+        1790582427993930870
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_3000r_80cm_rep2.h5": [
+        50115136,
+        1790583391124630417
+      ]
+    },
+    "recording_json_sha256": "51375453a7bbf20296b5819c5d9d5ba04436a9d24f433f2db995c13103eabbbc",
+    "source_adc_sha256": "7ddc751c38f5afc92b5f5c33adec9a3ba7ce1c39eb0fadbd70a5640a24bc516f",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_3000r_80cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_3000r_80cm_rep3/radar.h5": [
+        21154635,
+        1790582422849049777
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_3000r_80cm_rep3.h5": [
+        49970103,
+        1790583387695818034
+      ]
+    },
+    "recording_json_sha256": "1d885051e1d56b52d8b12e679dcc5b7994a20c28e59aaa5bf296b77a9caeab88",
+    "source_adc_sha256": "37a763989509cda183aa12954d0579d91c3abc4e487589b40529824f2d922541",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "inBroken_3000r_80cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/inBroken_3000r_80cm_rep4/radar.h5": [
+        21819450,
+        1790582437215246367
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/inBroken_3000r_80cm_rep4.h5": [
+        50028694,
+        1790583387584412712
+      ]
+    },
+    "recording_json_sha256": "5157c8802a28857dcbd369ee82c15a972e5f5da0e78b5b4bb446f3d5030c83c9",
+    "source_adc_sha256": "69df0b354847fdd9f55adbd721270947add23effc8dceedc3d1985b8cd62209f",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_1000r_20cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_1000r_20cm_rep1/radar.h5": [
+        21670792,
+        1790582432910029075
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_1000r_20cm_rep1.h5": [
+        48091803,
+        1790583354758258121
+      ]
+    },
+    "recording_json_sha256": "3e47977df897022289a7aa6c8956eb91f6e783506cea24434ffb0142f819046f",
+    "source_adc_sha256": "e309635180ef882d4132b2acc937cf0685da00796f47a870e9c24fa88494612f",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_1000r_20cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_1000r_20cm_rep2/radar.h5": [
+        22661565,
+        1790582443752539652
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_1000r_20cm_rep2.h5": [
+        49706931,
+        1790583385418502154
+      ]
+    },
+    "recording_json_sha256": "e5c53e2f9131ba1b9210627315c1f1c5ac8aa8286a2739e564c1bb734908e8ab",
+    "source_adc_sha256": "31d5cb0470ab77947b99907156c7541a6421b33c90b5c6dfb61a9e16a80e92d0",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_1000r_20cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_1000r_20cm_rep3/radar.h5": [
+        19880658,
+        1790582398438156189
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_1000r_20cm_rep3.h5": [
+        44498462,
+        1790583288780034629
+      ]
+    },
+    "recording_json_sha256": "9bc8d0a18c849920bbfcefad41e036cd5d03ca778e46ca88c868872dd22f1e6e",
+    "source_adc_sha256": "80a76f8035396ac9be37009e0dd18563d040fd46ba49904a2a31f6a69376a7d1",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_1000r_20cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_1000r_20cm_rep4/radar.h5": [
+        22518935,
+        1790582442751893502
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_1000r_20cm_rep4.h5": [
+        49961103,
+        1790583387730969048
+      ]
+    },
+    "recording_json_sha256": "3dc2312bf2d894b94b9e0de3eac46a0c7611cd071603c3d487ad9d7da819f1a5",
+    "source_adc_sha256": "f33a7d673ed219d3b30b8b411dfab1fa75ae8b98323318ad452aabe3bfe86af9",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_1000r_40cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_1000r_40cm_rep1/radar.h5": [
+        21401770,
+        1790582428276794539
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_1000r_40cm_rep1.h5": [
+        48236311,
+        1790583359248507419
+      ]
+    },
+    "recording_json_sha256": "dd72eb2e523c63792c4d939c950db3702ac6b19c60360992d6a6d8816845795d",
+    "source_adc_sha256": "64d3f3d7c5e7572514dd99e59df0319b399985d23841f6c816c61a4a0f87d1c2",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_1000r_40cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_1000r_40cm_rep2/radar.h5": [
+        21986622,
+        1790582437270626566
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_1000r_40cm_rep2.h5": [
+        50055279,
+        1790583387759858596
+      ]
+    },
+    "recording_json_sha256": "0af76b4ea689fabfe6b49bc722f14399c9942ad9892d5277bda3a58b74f87221",
+    "source_adc_sha256": "47fc36230f0e46d4f86db222b4457a261b7fe298732b3346043007a5f4ae710e",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_1000r_40cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_1000r_40cm_rep3/radar.h5": [
+        21799589,
+        1790582437295465752
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_1000r_40cm_rep3.h5": [
+        49046918,
+        1790583378781455362
+      ]
+    },
+    "recording_json_sha256": "551402be7917c46267bd520518687ff61af82ee31ac1a569e5ddc810652ac367",
+    "source_adc_sha256": "a33ffec92a9814ab869f38f19ab1ac4495ba3ecb5d5ec1e4ef6e765082b241cd",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_1000r_40cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_1000r_40cm_rep4/radar.h5": [
+        23636907,
+        1790582445142995705
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_1000r_40cm_rep4.h5": [
+        53482115,
+        1790583400948822660
+      ]
+    },
+    "recording_json_sha256": "2ed22756e30a433059ff4b4abb3733abacd26396e8811fb00e77f0c71dac90d2",
+    "source_adc_sha256": "cdf50d3d653fd710e7f70af6497161a9194ee3b244dc6bdae1aade589db77e7e",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_1000r_80cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_1000r_80cm_rep1/radar.h5": [
+        20379131,
+        1790582407348927750
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_1000r_80cm_rep1.h5": [
+        47306007,
+        1790583335294446108
+      ]
+    },
+    "recording_json_sha256": "f7a5e4a177a790199f59d81e9c8279c186ef5a131a86c7982d1c6d1388a76ab8",
+    "source_adc_sha256": "635fb7b22feff1edd637664df17900c8ffaad62d7bef2c376ba75e6cc00590c5",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_1000r_80cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_1000r_80cm_rep2/radar.h5": [
+        21576153,
+        1790582433874287012
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_1000r_80cm_rep2.h5": [
+        50420933,
+        1790583393492030339
+      ]
+    },
+    "recording_json_sha256": "8018cf9cad70f6751757cfd92e37ef13779692bc909e24903724f0abd970f1c1",
+    "source_adc_sha256": "b827763a2214bdab2059c9653e1b9a2a752faf90a4021ce2c37d45897ec29f3b",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_1000r_80cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_1000r_80cm_rep3/radar.h5": [
+        21318522,
+        1790582428250006373
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_1000r_80cm_rep3.h5": [
+        49306910,
+        1790583382635699591
+      ]
+    },
+    "recording_json_sha256": "6f09b922a5577e44bb5487ccc7f4924bd8df75a69184534086a916756fca3d16",
+    "source_adc_sha256": "f1d8570f320a28e72afd0ce152f40b88b455d0d00c10be7eae5135b4770a896f",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_1000r_80cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_1000r_80cm_rep4/radar.h5": [
+        21980848,
+        1790582437332507154
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_1000r_80cm_rep4.h5": [
+        50736547,
+        1790583395017156559
+      ]
+    },
+    "recording_json_sha256": "46917fb4358e04b079cf763eeff616ea6b3ac6591e9a9a40a058f7112af9086d",
+    "source_adc_sha256": "dbec9d032954dd28fc47a91281b2be1468fb2442119f749fa07aec9c06fb3c80",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_2000r_20cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_2000r_20cm_rep1/radar.h5": [
+        21800067,
+        1790582437358105016
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_2000r_20cm_rep1.h5": [
+        48368846,
+        1790583359462390116
+      ]
+    },
+    "recording_json_sha256": "17f0466af7a687d32357b55bf6cfb16e83c5c91d913e68d135b9b0100d68d739",
+    "source_adc_sha256": "6b365093d713fda764038ab342ed945465d86e017a505dab7b563d077c6d5375",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_2000r_20cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_2000r_20cm_rep2/radar.h5": [
+        21930027,
+        1790582437410200473
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_2000r_20cm_rep2.h5": [
+        48968014,
+        1790583372959605636
+      ]
+    },
+    "recording_json_sha256": "131e1372097f61c962cd6972491e6ff60011f87aa6f9c987e25675c1c2a13d7f",
+    "source_adc_sha256": "0f280f648396f9664ce24a4f4b760e7645c1347aa6469baaf1591713897868bf",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_2000r_20cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_2000r_20cm_rep3/radar.h5": [
+        22804165,
+        1790582443822359904
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_2000r_20cm_rep3.h5": [
+        48991624,
+        1790583373019662496
+      ]
+    },
+    "recording_json_sha256": "f436d246b8b9550b483022552d424201c52dca945a303e5d482f17004ee1bb02",
+    "source_adc_sha256": "5248a1d8c1a0a6b65f52da805fd894f64ede0cb3ddd18e94dea741635d5f45a3",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_2000r_20cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_2000r_20cm_rep4/radar.h5": [
+        23023917,
+        1790582444272346014
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_2000r_20cm_rep4.h5": [
+        50200754,
+        1790583391420311581
+      ]
+    },
+    "recording_json_sha256": "778a545ad46899d49f22c5b6f160db0d0829f8ba26b5a26eb965202c92229040",
+    "source_adc_sha256": "929ddf65305bce4565ea729a6fcd38df8b43cec4e106968a3659732db3018de8",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_2000r_40cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_2000r_40cm_rep1/radar.h5": [
+        21735865,
+        1790582434023116125
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_2000r_40cm_rep1.h5": [
+        50829301,
+        1790583395060464897
+      ]
+    },
+    "recording_json_sha256": "9d02f3b60dcd3d98351f8df965d9bcfa5c70cd426d9fb02771698fef34f18903",
+    "source_adc_sha256": "bab30596389caab25be84e96cfd7f157d3f8738178b956fb84bbfc525eb73b5f",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_2000r_40cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_2000r_40cm_rep2/radar.h5": [
+        21194224,
+        1790582423959746010
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_2000r_40cm_rep2.h5": [
+        48868166,
+        1790583373276846992
+      ]
+    },
+    "recording_json_sha256": "1704f643dc83d3334fe10325c6d2715549a1da357d2c87c9c2f283c6508aed57",
+    "source_adc_sha256": "a334fcc8107b96631d25e996f718efdb0aa936241c07c8b904f8a7d4babe9bb3",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_2000r_40cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_2000r_40cm_rep3/radar.h5": [
+        21936895,
+        1790582437483490507
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_2000r_40cm_rep3.h5": [
+        50981061,
+        1790583396344307606
+      ]
+    },
+    "recording_json_sha256": "3e75d5524c4bd9e8a9c7f3b61c8ee6a5c72d364fe92789e07c9a42003b6e9257",
+    "source_adc_sha256": "f9cf5b89fa6761d822443c5fac526c6fa5479d8dcdb6d699e377989b43bd8afc",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_2000r_40cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_2000r_40cm_rep4/radar.h5": [
+        21462259,
+        1790582428630962163
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_2000r_40cm_rep4.h5": [
+        49184818,
+        1790583379176688635
+      ]
+    },
+    "recording_json_sha256": "8d99cc2354cbf96e6cb8e4c7f969070e6d403fb99876b5272414041b1eda51ff",
+    "source_adc_sha256": "7aa043b86d07a1ef7187c06adf70666005de35e0300b3d16320b239063dd6522",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_2000r_80cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_2000r_80cm_rep1/radar.h5": [
+        21371884,
+        1790582428590384200
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_2000r_80cm_rep1.h5": [
+        50058819,
+        1790583387982271131
+      ]
+    },
+    "recording_json_sha256": "d389ba2ae0af79ad3a62fd763ad628a8a98693857b88b1134ceedecceb022e2d",
+    "source_adc_sha256": "b7a70154afe742df1c6a8f720a971765d5b499d029233610fedefc3a0958d5a4",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_2000r_80cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_2000r_80cm_rep2/radar.h5": [
+        21525857,
+        1790582434121016155
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_2000r_80cm_rep2.h5": [
+        50897492,
+        1790583396437987189
+      ]
+    },
+    "recording_json_sha256": "61671423fbc4ab665b6f1c99ef2413f0f59e918f41af0aad42ccde7b6e0b1617",
+    "source_adc_sha256": "18c73657741333861e6771ffedc528e88a0b8151550258297a8c54aa6371075e",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_2000r_80cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_2000r_80cm_rep3/radar.h5": [
+        21636106,
+        1790582434143607887
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_2000r_80cm_rep3.h5": [
+        51265552,
+        1790583397283945116
+      ]
+    },
+    "recording_json_sha256": "e03b98380022d2d2d50870dac13f318d3b969150eca8cb8bcbd6d9f49127cdb4",
+    "source_adc_sha256": "27c8af751684f022efaa20af54b31da82784189e6144c9aae647ccf36da2ca47",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_2000r_80cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_2000r_80cm_rep4/radar.h5": [
+        20918388,
+        1790582415991151615
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_2000r_80cm_rep4.h5": [
+        48921591,
+        1790583373691673207
+      ]
+    },
+    "recording_json_sha256": "d560585e97959345f8a25291898d8b4caca089e6d1ab79ca430f6fa455f88cc0",
+    "source_adc_sha256": "8f8b264d1ac5494dee7c833a15d74a49836e29f09392373a448a855543d22ec4",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_3000r_20cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_3000r_20cm_rep1/radar.h5": [
+        23556711,
+        1790582444970328564
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_3000r_20cm_rep1.h5": [
+        53750326,
+        1790583401553950043
+      ]
+    },
+    "recording_json_sha256": "a6ae82e7b6153d225983cce4c3fcfccda869a19fe25bed0803a959cc5ccfbfe1",
+    "source_adc_sha256": "8e3a6592927af4e1a8b11bfb4525a13ef7a82f3fee01294a69dc528b5a27c0bf",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_3000r_20cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_3000r_20cm_rep2/radar.h5": [
+        22367413,
+        1790582442924727129
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_3000r_20cm_rep2.h5": [
+        51008884,
+        1790583396493354078
+      ]
+    },
+    "recording_json_sha256": "7be8e501d1e9f0d4dda1a6220b2133b27dbd1864dd95a28d99b39e99e061d441",
+    "source_adc_sha256": "d8022cb10db1d95b14fa4f513597f41afa68c1306d57b54c7ab872b1ef574a55",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_3000r_20cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_3000r_20cm_rep3/radar.h5": [
+        23099936,
+        1790582444735197478
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_3000r_20cm_rep3.h5": [
+        50399337,
+        1790583393854682770
+      ]
+    },
+    "recording_json_sha256": "b2c8c5a08669c9e9e0b057a709f8dc85b1fd3cadc7d66efd75a967d9839dab30",
+    "source_adc_sha256": "532a68bfd853b7558dd877357c17c0059a2fbcee746d3634a74daf543776936e",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_3000r_20cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_3000r_20cm_rep4/radar.h5": [
+        23008882,
+        1790582444328672762
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_3000r_20cm_rep4.h5": [
+        52338115,
+        1790583399022810135
+      ]
+    },
+    "recording_json_sha256": "0e737baec6c6b2eaaf57a0bd1131aceadf7487f4a4f6a6545640ccce2af75c21",
+    "source_adc_sha256": "5b0faa722809a5c990459819b03df457ac32c3813e671c2a10d086d75ac51921",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_3000r_40cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_3000r_40cm_rep1/radar.h5": [
+        21550233,
+        1790582434484443288
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_3000r_40cm_rep1.h5": [
+        50013554,
+        1790583388203122240
+      ]
+    },
+    "recording_json_sha256": "e200dec07b4427e29d6e421d97c20537d72988c6199cdaea838eb970f3e343b3",
+    "source_adc_sha256": "c7361776e69d482f83c7086121e58e0cab836d7b5940304cbffe989a0cd7d721",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_3000r_40cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_3000r_40cm_rep2/radar.h5": [
+        22162772,
+        1790582441220368448
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_3000r_40cm_rep2.h5": [
+        51582345,
+        1790583397887885087
+      ]
+    },
+    "recording_json_sha256": "d8a25f3ba4abe2de77f548ccd25c06fc731d837018e73c51aa64925f2271e0c6",
+    "source_adc_sha256": "bce36ba68ba7da07684bdb348ab3f6a592c8b48b55acb5a50a8f0bc87bad927f",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_3000r_40cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_3000r_40cm_rep3/radar.h5": [
+        21592756,
+        1790582434391789836
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_3000r_40cm_rep3.h5": [
+        50206068,
+        1790583391801563026
+      ]
+    },
+    "recording_json_sha256": "a1b18470327552f0d45b75ff83e5a7288f0f5125b3ee9380f92d82dd23fbbd37",
+    "source_adc_sha256": "8bffbd117288df20ff1284f585a757f462880fbe96834453e86f8a122814a43b",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_3000r_40cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_3000r_40cm_rep4/radar.h5": [
+        20746137,
+        1790582416392045115
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_3000r_40cm_rep4.h5": [
+        48211429,
+        1790583355788584805
+      ]
+    },
+    "recording_json_sha256": "eaeb7e817f1eeb7b6ae83323bbd3a9f866a6cd5c792b18ef14ad1ee52438d03a",
+    "source_adc_sha256": "53bd71f1dd1776e13e3a2300242c840e0ffe978136083367b9be0fd6c9e77def",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_3000r_80cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_3000r_80cm_rep1/radar.h5": [
+        24265682,
+        1790582445377121444
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_3000r_80cm_rep1.h5": [
+        55349475,
+        1790583402365156691
+      ]
+    },
+    "recording_json_sha256": "114e7d89217ec3933b0bde1fe67daf44bdcc56d63ce47c121b0432b30d2559ec",
+    "source_adc_sha256": "90a92954dc45a923d3da5b86feefede2e70d50ef59ad6229e14c7e4c0ab64e52",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_3000r_80cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_3000r_80cm_rep2/radar.h5": [
+        21553475,
+        1790582434501018958
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_3000r_80cm_rep2.h5": [
+        49774114,
+        1790583385936757485
+      ]
+    },
+    "recording_json_sha256": "ebdeb98700788ef48f697198c87ed9f550308ecfeadddb4fcee57f8896ce399c",
+    "source_adc_sha256": "41aab5ad45270661cd8da88cb0e128a167684b549f995031f20488806cc49702",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_3000r_80cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_3000r_80cm_rep3/radar.h5": [
+        20712204,
+        1790582416497348929
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_3000r_80cm_rep3.h5": [
+        47728652,
+        1790583350656030761
+      ]
+    },
+    "recording_json_sha256": "9a5325629f8ce970c7b769d6c2a0adc1cf44702d435f27f7f9487ca37a52cc7c",
+    "source_adc_sha256": "5bf6cca15c5728c075240e75c986bae3613c41018d0c47166dbe602fbfac40c1",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "normal_3000r_80cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/normal_3000r_80cm_rep4/radar.h5": [
+        21086983,
+        1790582424328916284
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/normal_3000r_80cm_rep4.h5": [
+        48973628,
+        1790583374308469550
+      ]
+    },
+    "recording_json_sha256": "7553e33c4bba8ffa19ed0a3e2726f6c13002ca49c7929e511744aa7174b7c5f8",
+    "source_adc_sha256": "1d85cf54fe9607fd61b7231f4f5eac2301dbbe5720fce1007b5733f2ddd498f6",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_1000r_20cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_1000r_20cm_rep1/radar.h5": [
+        22023689,
+        1790582441376415218
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_1000r_20cm_rep1.h5": [
+        50247209,
+        1790583391950349918
+      ]
+    },
+    "recording_json_sha256": "faacfba56cc68c93427c9f03109763bf99995521d1d0ade391db11bddc25494a",
+    "source_adc_sha256": "3e1d36aa9259ec945dff7de568184705db0ed140038a469f1e01957fb80cb8ac",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_1000r_20cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_1000r_20cm_rep2/radar.h5": [
+        22040384,
+        1790582441415742301
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_1000r_20cm_rep2.h5": [
+        49369445,
+        1790583383204311074
+      ]
+    },
+    "recording_json_sha256": "b6abdaf15cb759b3fbf6823f00e5947035acc81936803b753151a79083fa45c5",
+    "source_adc_sha256": "e1f9c5ecf4963e67a5e79debb6b46c6af1b1e0891532c25b1082f60546ae6c28",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_1000r_20cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_1000r_20cm_rep3/radar.h5": [
+        23250792,
+        1790582444801721026
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_1000r_20cm_rep3.h5": [
+        52869640,
+        1790583399764938009
+      ]
+    },
+    "recording_json_sha256": "e3940c03584a271c987841dd6c4f475708b08e4d8d4fb8fcd288addee4e5da2d",
+    "source_adc_sha256": "61f5ffbd483f7360c775e394baea5ab695130106e6e07b98bedc0068851822a7",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_1000r_20cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_1000r_20cm_rep4/radar.h5": [
+        21371951,
+        1790582429294706282
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_1000r_20cm_rep4.h5": [
+        48923223,
+        1790583374355569571
+      ]
+    },
+    "recording_json_sha256": "8bee80aca66357d13b39a169c8595afade9343cf78c68e33294c0d50802d826e",
+    "source_adc_sha256": "667b96827953721b386c484647c2819ac78f429a688d895808cbd71e720db2e4",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_1000r_40cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_1000r_40cm_rep1/radar.h5": [
+        21286021,
+        1790582429248711063
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_1000r_40cm_rep1.h5": [
+        50311423,
+        1790583391880272741
+      ]
+    },
+    "recording_json_sha256": "356e81213b00e05ad1b0d9ae0ba5a70d2f2692fef3c6ef6b75baa319088d7733",
+    "source_adc_sha256": "064e46188ba445b2d40785f96ac43d14825802fe8f074ff368e9ce7e0a24e697",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_1000r_40cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_1000r_40cm_rep2/radar.h5": [
+        21001458,
+        1790582424576984959
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_1000r_40cm_rep2.h5": [
+        50003561,
+        1790583388413461962
+      ]
+    },
+    "recording_json_sha256": "20940c4d1524f7b0d559aa8d2d97acffdbccd761384abab01f7ad6ec13ed143b",
+    "source_adc_sha256": "20669e15fc831dc9ca9569483736d8b4d8d91c40c656f9b63c3c4da8c016c3f7",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_1000r_40cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_1000r_40cm_rep3/radar.h5": [
+        21370110,
+        1790582429340214977
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_1000r_40cm_rep3.h5": [
+        51071802,
+        1790583396838211027
+      ]
+    },
+    "recording_json_sha256": "c9252fc73e4e70d9b44aafd5dd583826d6d5c162858c1047b9139d4ca2db0e54",
+    "source_adc_sha256": "ee36ca12384f75f16a5daec02c1a12833300009427a0a85b0303456cbc78f760",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_1000r_40cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_1000r_40cm_rep4/radar.h5": [
+        21093837,
+        1790582424617299656
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_1000r_40cm_rep4.h5": [
+        50019547,
+        1790583388515003140
+      ]
+    },
+    "recording_json_sha256": "837b59fb1b41ab5e5b74c3be556bf679a45297ad2d05f1fa87a329390651ea94",
+    "source_adc_sha256": "9325e4adb935b87c52e3d49fd82d1667d6280e586461df7a545a28d07e39c17a",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_1000r_80cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_1000r_80cm_rep1/radar.h5": [
+        20998683,
+        1790582424725335957
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_1000r_80cm_rep1.h5": [
+        48497323,
+        1790583363799873656
+      ]
+    },
+    "recording_json_sha256": "6e6c6ce6d59d7448d1a2123c1a1b3e8908f607b803edb498e57f4686eef463c7",
+    "source_adc_sha256": "cd60606c693897a4c7a784df6117b8626544a0fd0e203c833474bd182eefeecb",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_1000r_80cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_1000r_80cm_rep2/radar.h5": [
+        20983576,
+        1790582424698274588
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_1000r_80cm_rep2.h5": [
+        49435924,
+        1790583383423659500
+      ]
+    },
+    "recording_json_sha256": "d082ba4af8433a1d58c791a70a5c76e53d70f9469be50a58dddc0c5370a58446",
+    "source_adc_sha256": "2908cb4a370074e0730c702166cdcca55597186257b0bc5b83d3687c1848452a",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_1000r_80cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_1000r_80cm_rep3/radar.h5": [
+        20499931,
+        1790582412358758372
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_1000r_80cm_rep3.h5": [
+        47942346,
+        1790583351068164921
+      ]
+    },
+    "recording_json_sha256": "1758bbbd035ba4895e4953e15f425902ba5c62cfe62efc06de76fd63d57b7d55",
+    "source_adc_sha256": "bd4bdf08c1a17205a65bdd6c317f5ae5f778d14a47107fb128f02434256f21e5",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_1000r_80cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_1000r_80cm_rep4/radar.h5": [
+        20749837,
+        1790582417267899045
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_1000r_80cm_rep4.h5": [
+        49078034,
+        1790583379986293231
+      ]
+    },
+    "recording_json_sha256": "efbe58b1c99f43118b1e8a741c39df98354039b9c17e6b08f9a3984befda0a17",
+    "source_adc_sha256": "f52cc8b8a7e9081ed996aa867a8fb3f184aebae4f0f059073d2d9a48c37baa69",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_2000r_20cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_2000r_20cm_rep1/radar.h5": [
+        22267145,
+        1790582441537903713
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_2000r_20cm_rep1.h5": [
+        49629606,
+        1790583386160833805
+      ]
+    },
+    "recording_json_sha256": "603041ed00dc139ee5a2ea2420eeb96440d46f9d77a519ef311e2512c5a3d39e",
+    "source_adc_sha256": "e9cdd6c3e5f8cc703a28effaea6319e9bd17f1f5ee3e59d307ed2c4a22638c18",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_2000r_20cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_2000r_20cm_rep2/radar.h5": [
+        22720019,
+        1790582444056090952
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_2000r_20cm_rep2.h5": [
+        50737163,
+        1790583395557971917
+      ]
+    },
+    "recording_json_sha256": "4bec53c716a8989240cdac3cf0cf0d6897fc9da7f1767cf9e6bedbd7e8b3d98d",
+    "source_adc_sha256": "16a2c2055f1e3f20774bd195b3449c489428fa1930a2207f98990b28fcc049b2",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_2000r_20cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_2000r_20cm_rep3/radar.h5": [
+        22352475,
+        1790582443133644654
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_2000r_20cm_rep3.h5": [
+        50529304,
+        1790583394042981013
+      ]
+    },
+    "recording_json_sha256": "0b4c8c64b9592944877d1181b5039b6087508b5bb6806a90a45bb52e519a17d4",
+    "source_adc_sha256": "845a9609a406a49f1ff4d0efbb456418f7295c78cc7c8bd6408df0925107d8a7",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_2000r_20cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_2000r_20cm_rep4/radar.h5": [
+        22369704,
+        1790582443143341761
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_2000r_20cm_rep4.h5": [
+        50179878,
+        1790583392090800222
+      ]
+    },
+    "recording_json_sha256": "4fee12f5da8eaf9832c9d9a4122588f93604876ef1e154fbb9f711af6ecb671b",
+    "source_adc_sha256": "d61968214df2d7971f3181d8630135f4a76cd14084c362d75538e12f65382db0",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_2000r_40cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_2000r_40cm_rep1/radar.h5": [
+        21612876,
+        1790582434743096287
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_2000r_40cm_rep1.h5": [
+        50776795,
+        1790583395606030926
+      ]
+    },
+    "recording_json_sha256": "254812e71d469c20278b4f04fdb6837c1fe9d9235604e02a21b7dc7d42b3b97f",
+    "source_adc_sha256": "b0d4699375f97d153c98dde937e822812c6887aa961ac6e53dad3e0ac77c8ec3",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_2000r_40cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_2000r_40cm_rep2/radar.h5": [
+        21223620,
+        1790582424921155647
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_2000r_40cm_rep2.h5": [
+        49237377,
+        1790583380193150561
+      ]
+    },
+    "recording_json_sha256": "1517fea657fb121174df2261008a837cd7093b520f7b65ded8f98cd2a2476ec9",
+    "source_adc_sha256": "adc41b90e221ae9a1363fd7bd469ce55caa8d5c3dce756af2bfae6bac8433ee4",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_2000r_40cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_2000r_40cm_rep3/radar.h5": [
+        21471080,
+        1790582429673291019
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_2000r_40cm_rep3.h5": [
+        49722759,
+        1790583386294155242
+      ]
+    },
+    "recording_json_sha256": "b0a6e9783e3f84179bc6c2f4ee101e1b46a9f62aef45639a1ab89fe0cec1245d",
+    "source_adc_sha256": "6c8773b83fa6d19b621e67586a5957514445149c3028052536de31bcbf7d41f6",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_2000r_40cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_2000r_40cm_rep4/radar.h5": [
+        21240035,
+        1790582429694680744
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_2000r_40cm_rep4.h5": [
+        49528573,
+        1790583383678575184
+      ]
+    },
+    "recording_json_sha256": "08c8bb4f178d9924069f5bcce1b4eb40bd55b51c603931817e771c4b98759278",
+    "source_adc_sha256": "30ddfb7ff0b945072b1b59a0e5a3bf113a9f34212008a330f93e1fa04748a143",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_2000r_80cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_2000r_80cm_rep1/radar.h5": [
+        21167956,
+        1790582425071911072
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_2000r_80cm_rep1.h5": [
+        49504173,
+        1790583383682897372
+      ]
+    },
+    "recording_json_sha256": "93edf5961c250784360fb23004e3b3aa63c4d00180167410170cc2d135dc2916",
+    "source_adc_sha256": "e5d922d63e88c1cec39daf0be45abfebdef90c87db9fa54d27334f736cda8512",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_2000r_80cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_2000r_80cm_rep2/radar.h5": [
+        20926734,
+        1790582417791215347
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_2000r_80cm_rep2.h5": [
+        49126587,
+        1790583380392786562
+      ]
+    },
+    "recording_json_sha256": "386c91e14e0444415802727c4980e197ae615c75a4600fa3b3182be87863523b",
+    "source_adc_sha256": "d3202df1199dca57c7bb647c24ebc599bc2af35d6fb093d5d071eb44a4b887ba",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_2000r_80cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_2000r_80cm_rep3/radar.h5": [
+        20856996,
+        1790582417918398807
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_2000r_80cm_rep3.h5": [
+        49312748,
+        1790583383697988496
+      ]
+    },
+    "recording_json_sha256": "1140679aa807943978976d195413fe9080d21c6b8f60d12a708eb9e6861df9f6",
+    "source_adc_sha256": "62f77c4c064c8fe7221362abb6bbe0119ee0f6aa407d419f4073f334706679c7",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_2000r_80cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_2000r_80cm_rep4/radar.h5": [
+        20836401,
+        1790582418269028106
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_2000r_80cm_rep4.h5": [
+        48973286,
+        1790583375647632788
+      ]
+    },
+    "recording_json_sha256": "e2275ee4b2c7c0fcea7dfed96434b2b648aa23418c5944565c991b4aae275a00",
+    "source_adc_sha256": "139e27ba777b5b0e0e5792b39dfe5b4b83005601030b60ba148faa67b49ab10d",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_3000r_20cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_3000r_20cm_rep1/radar.h5": [
+        21948777,
+        1790582438971874613
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_3000r_20cm_rep1.h5": [
+        48895586,
+        1790583375821914083
+      ]
+    },
+    "recording_json_sha256": "defce64ee2c587934a57a6426eaf850cf210e69e548e262af422091e41ae3b7c",
+    "source_adc_sha256": "98033b7f0d928008c4e34cdb8828ddee7108a451bfab70e68ea318b881bbc1ba",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_3000r_20cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_3000r_20cm_rep2/radar.h5": [
+        22538318,
+        1790582443211231940
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_3000r_20cm_rep2.h5": [
+        49898048,
+        1790583388703601318
+      ]
+    },
+    "recording_json_sha256": "ede6788e8cd3edad7df0e30fa567312c2fcd99543783b4c055e1c2cbaf47423c",
+    "source_adc_sha256": "3a63c3dde45a20a701b92ad293e3ab177f8093aacec405e08d908a6fe6bca360",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_3000r_20cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_3000r_20cm_rep3/radar.h5": [
+        23208374,
+        1790582444815908369
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_3000r_20cm_rep3.h5": [
+        51979432,
+        1790583398607764059
+      ]
+    },
+    "recording_json_sha256": "5b84727243ff531a720a67067eb0c2d136e0fa98df1147e38e1dfae063480990",
+    "source_adc_sha256": "9024ed5fa7f6bdd1bcb10f63aa996739b42467916033fb9ab5d6e09a4e41614c",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_3000r_20cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_3000r_20cm_rep4/radar.h5": [
+        22468917,
+        1790582443234286290
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_3000r_20cm_rep4.h5": [
+        49822035,
+        1790583388762226232
+      ]
+    },
+    "recording_json_sha256": "ba8cee66d011198c0209aecad93f37de7263cfcfb33e70346a6ba78643e1ecd7",
+    "source_adc_sha256": "56b908f1e936cb6af02865d620c216c233d34fa979a030ae142ccb3e1b6459a4",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_3000r_40cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_3000r_40cm_rep1/radar.h5": [
+        22063410,
+        1790582441773684621
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_3000r_40cm_rep1.h5": [
+        50038638,
+        1790583388806022861
+      ]
+    },
+    "recording_json_sha256": "291241083fa247e685396fcfe959f4e2d59ac6db70aae20cf1d854907aa0f48a",
+    "source_adc_sha256": "aa0893ccd1b8ee02bd96bda5e222f5d8b30ef9eff1d068a7c2544e848d11af3a",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_3000r_40cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_3000r_40cm_rep2/radar.h5": [
+        21603633,
+        1790582435261715012
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_3000r_40cm_rep2.h5": [
+        49185147,
+        1790583380709980968
+      ]
+    },
+    "recording_json_sha256": "577552d20189f7cf185924699548ac0bfc9e5b8dcbcb023e6d4cec3fb609c5a9",
+    "source_adc_sha256": "f15c0e8659e726ba045069d5ed9397763954847d2e4fcd3e47f7590862728dc1",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_3000r_40cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_3000r_40cm_rep3/radar.h5": [
+        21962707,
+        1790582439251792299
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_3000r_40cm_rep3.h5": [
+        49607319,
+        1790583386408502909
+      ]
+    },
+    "recording_json_sha256": "842d78db130bc83b8b1dcc923e75f479ee010d6a22e1a3ba858d06a2067b77db",
+    "source_adc_sha256": "1678a18927948bf532b040f2f0ee134c241a3fdf7c49689ad8c1383b13ea8caa",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_3000r_40cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_3000r_40cm_rep4/radar.h5": [
+        21932098,
+        1790582439153598210
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_3000r_40cm_rep4.h5": [
+        49473271,
+        1790583383869054389
+      ]
+    },
+    "recording_json_sha256": "93d92b877908b9e9af46e5685746f2bd770493509cd3aa8cf7de18497519051d",
+    "source_adc_sha256": "dc2906b240e0e0e3e76c629ad12b92716bc83435b8bd0eb53e49bbac467e5825",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_3000r_80cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_3000r_80cm_rep1/radar.h5": [
+        21743590,
+        1790582435147504456
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_3000r_80cm_rep1.h5": [
+        49326599,
+        1790583383896896608
+      ]
+    },
+    "recording_json_sha256": "4cb9af50a4869425dda2e3bdc61df0d4bcb56ce7a4d7a7be69e6415bdfe04b59",
+    "source_adc_sha256": "f77c5b5a57ed5d167d0245cb401ce56a41bf72a59762396bed733a4729c87ff2",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_3000r_80cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_3000r_80cm_rep2/radar.h5": [
+        21490937,
+        1790582430082601884
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_3000r_80cm_rep2.h5": [
+        48757101,
+        1790583366006505650
+      ]
+    },
+    "recording_json_sha256": "6eed987252eaa88bb2ca7c2b1599d801fe870c2afc233c4dbb5f8780f004483d",
+    "source_adc_sha256": "6ad843a397fd66fbe27e805be9e2fcfdc455460043997663d44d6300712d542d",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_3000r_80cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_3000r_80cm_rep3/radar.h5": [
+        21071855,
+        1790582425573857394
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_3000r_80cm_rep3.h5": [
+        48836015,
+        1790583376187598798
+      ]
+    },
+    "recording_json_sha256": "9903eec4ed2f0ac65ee4d2fbbeb427538b38a88eb15314113f1f0f8da2f7adf2",
+    "source_adc_sha256": "302297ea7d6b38fad202e2f03e55355a53c6ef549a7968c0b8be80bbfc117db3",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "outBroken_3000r_80cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/outBroken_3000r_80cm_rep4/radar.h5": [
+        22301254,
+        1790582443250434857
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/outBroken_3000r_80cm_rep4.h5": [
+        50910346,
+        1790583396915301991
+      ]
+    },
+    "recording_json_sha256": "03cd6cd4ee3714747ef5e2fa4636f1623082d6e305d2e6c0dddc5f5ea05f05e9",
+    "source_adc_sha256": "84a7f37c89d3da66be50b7d487ccc6b273b4edc576710f9bccb03e75ba88704d",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_1000r_20cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_1000r_20cm_rep1/radar.h5": [
+        22313670,
+        1790582443277179240
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_1000r_20cm_rep1.h5": [
+        49998905,
+        1790583388931460547
+      ]
+    },
+    "recording_json_sha256": "1919fc1657dc16c5f0f467d1540c58dcd9931804e63433d0fe987de07df77f98",
+    "source_adc_sha256": "d2632d0cc8f02339eebb00ec550b214b7e136f6242ce11af54c7e45ed7cfa71a",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_1000r_20cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_1000r_20cm_rep2/radar.h5": [
+        22133807,
+        1790582441845869484
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_1000r_20cm_rep2.h5": [
+        49431344,
+        1790583383947045134
+      ]
+    },
+    "recording_json_sha256": "d3811e6bda5bbe5cea72ad9c6c4646ff8da5b9d3d5e7234810f2f6eba8d318c8",
+    "source_adc_sha256": "36a10b0d77fed3196b50f0c5c1c2a9caa03c8266bcfa21ec04b6ed4c474f283d",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_1000r_20cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_1000r_20cm_rep3/radar.h5": [
+        21858033,
+        1790582439370224430
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_1000r_20cm_rep3.h5": [
+        48779361,
+        1790583376345452596
+      ]
+    },
+    "recording_json_sha256": "c9ba065939db677bfc01a87a91d8c47dcbaad2c048add65cbc6862446dce75ee",
+    "source_adc_sha256": "860966305715a8e1a357823f01008c869aeaeba3f01eb45f0478705ab961910c",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_1000r_20cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_1000r_20cm_rep4/radar.h5": [
+        22541926,
+        1790582443309739574
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_1000r_20cm_rep4.h5": [
+        50716294,
+        1790583395672642381
+      ]
+    },
+    "recording_json_sha256": "031e04943a0ad9f69360ec7a64ed25473bfdc34d0b7fc851e679d837855b61bc",
+    "source_adc_sha256": "761d05fedb7a1f90ae7a3d91349de7dbdf76ba9a546262b8e5aa9b9fd1be763f",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_1000r_40cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_1000r_40cm_rep1/radar.h5": [
+        21136500,
+        1790582425835025760
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_1000r_40cm_rep1.h5": [
+        49982251,
+        1790583388863707030
+      ]
+    },
+    "recording_json_sha256": "23f8c7e78ac8a9b08a290548905ed88108a831eafc11877144997a21b3985645",
+    "source_adc_sha256": "d92b49b1efb13a0bab1ae98d56ace964b89ead02e08be435f2316eb22d2cb47a",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_1000r_40cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_1000r_40cm_rep2/radar.h5": [
+        21102057,
+        1790582425814556727
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_1000r_40cm_rep2.h5": [
+        50000797,
+        1790583388903896527
+      ]
+    },
+    "recording_json_sha256": "5eddbe621a08025b6ef7a6d8cd5608239b10f3b7002d132bd9f8538f29e6316a",
+    "source_adc_sha256": "45fb45280b990779047340c8d787232d3e6575606a1668ca2dce32683f4becf5",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_1000r_40cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_1000r_40cm_rep3/radar.h5": [
+        21018187,
+        1790582425898397628
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_1000r_40cm_rep3.h5": [
+        50098314,
+        1790583392309625735
+      ]
+    },
+    "recording_json_sha256": "d1ffcb29d75fdc722aeb6c3240a9fb907e52ee10f0f761f686e37e73991a79e8",
+    "source_adc_sha256": "252b41f5a2c1159663d81c08b4f35c4eca41ac9e99400af534e6cdae8ca39851",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_1000r_40cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_1000r_40cm_rep4/radar.h5": [
+        21087601,
+        1790582425950885503
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_1000r_40cm_rep4.h5": [
+        50035961,
+        1790583389065447724
+      ]
+    },
+    "recording_json_sha256": "d5e24117a1445db1746629ec5bde20f759525bd0c79733ff275a90dcf266c7de",
+    "source_adc_sha256": "5a445f988318d78fd355749de95cf36627e4c306b76da580a01703ced4a05407",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_1000r_80cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_1000r_80cm_rep1/radar.h5": [
+        20730751,
+        1790582419765410606
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_1000r_80cm_rep1.h5": [
+        48279304,
+        1790583361128715042
+      ]
+    },
+    "recording_json_sha256": "f01f81856a14bfe59c9195a2e3371bd8b565bb4952754c19a17f9beb0b39768a",
+    "source_adc_sha256": "22da7b8c33b63c5c8059be80ef9a1ec5befd5386697c71e63eb42db7c138d3f4",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_1000r_80cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_1000r_80cm_rep2/radar.h5": [
+        20984269,
+        1790582426026257918
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_1000r_80cm_rep2.h5": [
+        48725005,
+        1790583367561127450
+      ]
+    },
+    "recording_json_sha256": "77a74e787d8982600bf14aa72a0006d7249b9461818f58757c2f57b896833092",
+    "source_adc_sha256": "e9f129b699713b2ad07c224d3674428a9e020fe6094ec479ea63aee1edb72f15",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_1000r_80cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_1000r_80cm_rep3/radar.h5": [
+        21224957,
+        1790582426055991653
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_1000r_80cm_rep3.h5": [
+        49250271,
+        1790583380994932700
+      ]
+    },
+    "recording_json_sha256": "7dff68aeb2dc4c66ae53e6485bc3a8214b36c495249f776b55b57ee82c6aaa02",
+    "source_adc_sha256": "eb1352555406538418c7e4422bb2496b626136614ba67be74abf8215001f8404",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_1000r_80cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_1000r_80cm_rep4/radar.h5": [
+        21997474,
+        1790582439470959648
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_1000r_80cm_rep4.h5": [
+        50973912,
+        1790583396948164808
+      ]
+    },
+    "recording_json_sha256": "0fe9ae3c90785dd87bc6447c0f06ea97e81fb1f5c05469bdd4426c7f23d621e7",
+    "source_adc_sha256": "2ea5dab479db2555af8d8873bf50e3e9340902c928a896cf6ee806d1c89a3c9a",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_2000r_20cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_2000r_20cm_rep1/radar.h5": [
+        22081581,
+        1790582442048469329
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_2000r_20cm_rep1.h5": [
+        49549402,
+        1790583386715448422
+      ]
+    },
+    "recording_json_sha256": "ac080ac7c1f4696576079507bd0eabcbfb842941a51368d3de9f412e65734051",
+    "source_adc_sha256": "522342bfb653dd0e9a7038373e4bf1c9e8bb98a4d1c213f18cf0b31b89ad747e",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_2000r_20cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_2000r_20cm_rep2/radar.h5": [
+        22089687,
+        1790582442105933803
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_2000r_20cm_rep2.h5": [
+        49391870,
+        1790583384240973776
+      ]
+    },
+    "recording_json_sha256": "2f291a250a1bc1074a20f818fb5298e17f4eb4c54dab6387c94d6bc22169f0bc",
+    "source_adc_sha256": "bc7118dc3ee0ab9ceebeffc79914480a096be4172531aa784f130094646463de",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_2000r_20cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_2000r_20cm_rep3/radar.h5": [
+        23584019,
+        1790582445057269782
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_2000r_20cm_rep3.h5": [
+        50620617,
+        1790583395785468491
+      ]
+    },
+    "recording_json_sha256": "0f01e9f514e75d9e90e0d5b14119f3da8a31f6196d2fd684407d01f742f962f4",
+    "source_adc_sha256": "119fdfe4f0aa2400a63873fe9a9c4e2c0b839f2739f9c6d9458fd93e33b06fcc",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_2000r_20cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_2000r_20cm_rep4/radar.h5": [
+        22428909,
+        1790582443327434731
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_2000r_20cm_rep4.h5": [
+        49571218,
+        1790583386779181692
+      ]
+    },
+    "recording_json_sha256": "92d3d126303bba2a2a8a2dcc2edf60538ba96e4738c3c369531e640d917ae734",
+    "source_adc_sha256": "f0876438c4afcdbc098ca097526744e5ef15e3cdca86a007641c371f40cdb1fc",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_2000r_40cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_2000r_40cm_rep1/radar.h5": [
+        22131363,
+        1790582442188259608
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_2000r_40cm_rep1.h5": [
+        49908358,
+        1790583389227620330
+      ]
+    },
+    "recording_json_sha256": "750462b02deab28933a540eec2041df64a52479468312613f4020f0e06e6fb56",
+    "source_adc_sha256": "0f7315aee5481a73fc35c87832bfdfb89e118e964b026d84e3dd7c334cec3622",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_2000r_40cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_2000r_40cm_rep2/radar.h5": [
+        22428701,
+        1790582443411009770
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_2000r_40cm_rep2.h5": [
+        51549888,
+        1790583397996050722
+      ]
+    },
+    "recording_json_sha256": "8d96b459cf96de29655a163a724cb2ec773af9fa449020262c804fdbeaea774f",
+    "source_adc_sha256": "e8a2de554d7a1dd652fab058ff53179e3336d048763fe8587aabbd8c3cd232bb",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_2000r_40cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_2000r_40cm_rep3/radar.h5": [
+        21943247,
+        1790582439714416537
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_2000r_40cm_rep3.h5": [
+        50208099,
+        1790583392452704424
+      ]
+    },
+    "recording_json_sha256": "a6c8ea873530954c026b3c447d3de59a7ec43744f46a2d0e3d063433de3e14b9",
+    "source_adc_sha256": "70812a3b928afc51cf080fa51897822fb2018faf8e600a9bc5d0c03913da7709",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_2000r_40cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_2000r_40cm_rep4/radar.h5": [
+        21650706,
+        1790582435655652818
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_2000r_40cm_rep4.h5": [
+        49469134,
+        1790583384406312203
+      ]
+    },
+    "recording_json_sha256": "aea26d625acc10d0f905f151ee72b32c78d2a7302b186ede81fb075790c11f3f",
+    "source_adc_sha256": "a8af8a7fddce7bb276df8c6de8bbbd7efec88a4ba604d2d277eb99b74c67978f",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_2000r_80cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_2000r_80cm_rep1/radar.h5": [
+        21102567,
+        1790582426516711308
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_2000r_80cm_rep1.h5": [
+        49596509,
+        1790583386878453688
+      ]
+    },
+    "recording_json_sha256": "db96c82beaae25f07fae2bb4ead5d1edd633b6f18fd034b49a86b26a778da89b",
+    "source_adc_sha256": "fd57ff81675a38a3c278e455d3ffce49ff911a52789046c0c510acaddae92d88",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_2000r_80cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_2000r_80cm_rep2/radar.h5": [
+        21054973,
+        1790582426523926216
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_2000r_80cm_rep2.h5": [
+        49483846,
+        1790583384478587526
+      ]
+    },
+    "recording_json_sha256": "e45a3c6aa82a6993e17c4bed63403f6a0e1831317f0e84b4b62c821639fc72cf",
+    "source_adc_sha256": "e58db4965b6143b18230824282306a1787bce4ce61af17bcee535d197470783f",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_2000r_80cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_2000r_80cm_rep3/radar.h5": [
+        20976622,
+        1790582426563015384
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_2000r_80cm_rep3.h5": [
+        49156912,
+        1790583381393265681
+      ]
+    },
+    "recording_json_sha256": "b800a969f53918eaf57f66bf31f42137c7a5f872e5daa42d8b91c40e7160238b",
+    "source_adc_sha256": "3a294fc37e9a5c6cdc7f9c1005e3a16def9ec06427117fa67c1fb150a1129e7a",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_2000r_80cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_2000r_80cm_rep4/radar.h5": [
+        20881276,
+        1790582420710445557
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_2000r_80cm_rep4.h5": [
+        49163015,
+        1790583381490089881
+      ]
+    },
+    "recording_json_sha256": "963bf48306d88c9656ca91ccb3e855c37e0916116b54564688c57d3d48a6c0bb",
+    "source_adc_sha256": "2577ee140e1862b3280beafa153649ef74e37dd0ec120267fedb19b337d70786",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_3000r_20cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_3000r_20cm_rep1/radar.h5": [
+        22406264,
+        1790582443464234515
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_3000r_20cm_rep1.h5": [
+        50074868,
+        1790583392474665363
+      ]
+    },
+    "recording_json_sha256": "d094d87dbaff81d09385f6d699b626bec94e46370d48c0e86d30a1a420611e07",
+    "source_adc_sha256": "595579ddfbf4badf52100f9b227fe885075ae95a3958b613b8aba7069fe3cd04",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_3000r_20cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_3000r_20cm_rep2/radar.h5": [
+        22417717,
+        1790582443438398066
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_3000r_20cm_rep2.h5": [
+        49971991,
+        1790583389340249968
+      ]
+    },
+    "recording_json_sha256": "c5e521f907732d6daab85af2cde3b67c914c84526fd4e1b69c1246e6329b28ce",
+    "source_adc_sha256": "ab5ae9b8221ab128632f91d2b2baf9a8322207d11c9cc4dbf9a27818b5812f88",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_3000r_20cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_3000r_20cm_rep3/radar.h5": [
+        22540481,
+        1790582443583576411
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_3000r_20cm_rep3.h5": [
+        50875942,
+        1790583397041678168
+      ]
+    },
+    "recording_json_sha256": "6700fbb866ae75f8c5f2ecd3b0a68ec5d4f333990f590524c75e9adc8873fd8e",
+    "source_adc_sha256": "65cdee4bbb420ad107de14189a7e7a8fd762632c51f81b3ef0329636c4b53dc1",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_3000r_20cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_3000r_20cm_rep4/radar.h5": [
+        22384788,
+        1790582443499085750
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_3000r_20cm_rep4.h5": [
+        50362935,
+        1790583394365351568
+      ]
+    },
+    "recording_json_sha256": "bd5332f97898e425a72f1921efa4d14510ad7a808f12400a8bc61ecb5469788b",
+    "source_adc_sha256": "4025ca12cce3e9b220883df0697a3949f22437681937b4787670969337340676",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_3000r_40cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_3000r_40cm_rep1/radar.h5": [
+        21869608,
+        1790582439992824435
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_3000r_40cm_rep1.h5": [
+        50439119,
+        1790583394380194535
+      ]
+    },
+    "recording_json_sha256": "c2b4f8182e4d90135842b69572d7fa8e1e6b290b05d17a2ed699eef5b92b4093",
+    "source_adc_sha256": "8e0cd534db06e0c3459793ceb0e32d2b1f2316ca047fefa3649f5f39edf84cd4",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_3000r_40cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_3000r_40cm_rep2/radar.h5": [
+        21882462,
+        1790582439977360594
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_3000r_40cm_rep2.h5": [
+        50297598,
+        1790583392849243278
+      ]
+    },
+    "recording_json_sha256": "855b51db91473cba2a344c62e441cce454386cfee4554e2ff9f97ae1875ab071",
+    "source_adc_sha256": "6bd977d8cbe281f7a83b3888b1accd272a60c17e79b4ed951ad21972e426f357",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_3000r_40cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_3000r_40cm_rep3/radar.h5": [
+        23480366,
+        1790582445086174145
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_3000r_40cm_rep3.h5": [
+        53906966,
+        1790583401681777080
+      ]
+    },
+    "recording_json_sha256": "448521ad9154f0a001e022968b777b22c6cdb8cae10e07761561b64b33afa4e2",
+    "source_adc_sha256": "422938e4a57bf1c9bdff299e8af73d5e57d7210966b98fb647a056c58ae53460",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_3000r_40cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_3000r_40cm_rep4/radar.h5": [
+        21874323,
+        1790582440034741257
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_3000r_40cm_rep4.h5": [
+        50568552,
+        1790583394512346205
+      ]
+    },
+    "recording_json_sha256": "eed52b5bdcd6fb83a9c973d916399539435ebef6248617e64d96b77fca215872",
+    "source_adc_sha256": "6624bbe169656f4cd3773bfab89f9cce59ec26a55793b4bfa19d703ddf5313df",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_3000r_80cm_rep1",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_3000r_80cm_rep1/radar.h5": [
+        22046408,
+        1790582442375300190
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_3000r_80cm_rep1.h5": [
+        48248760,
+        1790583361789129953
+      ]
+    },
+    "recording_json_sha256": "b21f293a7133567f7950a924d98df79d3d2016cca08a7d5ff68f4bc37b739160",
+    "source_adc_sha256": "d259fe2ae51eefd06a0d512db1691b4c4fa76824f45dae1c49f1a38950be4450",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_3000r_80cm_rep2",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_3000r_80cm_rep2/radar.h5": [
+        21307482,
+        1790582431293821680
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_3000r_80cm_rep2.h5": [
+        49643198,
+        1790583387249506703
+      ]
+    },
+    "recording_json_sha256": "b66a0df40f7fda44f0e059087530b5976a608bbc365370669a6a4c2524f37af7",
+    "source_adc_sha256": "d9d7a5a85fad5a45bc6b447895b4dbc9ecd42876dd07c1983066d986d8226de9",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_3000r_80cm_rep3",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_3000r_80cm_rep3/radar.h5": [
+        20136240,
+        1790582406191817311
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_3000r_80cm_rep3.h5": [
+        46575303,
+        1790583326949868860
+      ]
+    },
+    "recording_json_sha256": "dda5b5391dfbc0bb5cac34dd1d99ad1c00440f76a7f13654ae105a9f0da556d2",
+    "source_adc_sha256": "8356a047e02145add04b59f251471a7f976de68fb2680741c51a4b97e704a1a7",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  },
+  {
+    "recording_id": "roll_3000r_80cm_rep4",
+    "sources": {
+      "/media/nas_users/huangyating/data/upload/radar/roll_3000r_80cm_rep4/radar.h5": [
+        21742548,
+        1790582436059578158
+      ],
+      "/media/nas_users/huangyating/data/wide_cache_local/roll_3000r_80cm_rep4.h5": [
+        50879618,
+        1790583397156254471
+      ]
+    },
+    "recording_json_sha256": "d3904593b46b735798389f743053499595988c2cb828692a6f580e8f3df5ad94",
+    "source_adc_sha256": "a0570f9b795d590f9f7f2e78695436a7d380f472deeb20cad575c973dae69c32",
+    "cfg_sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+  }
+]

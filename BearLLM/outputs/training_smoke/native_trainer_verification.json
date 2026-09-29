@@ -1,0 +1,10 @@
+{
+  "native_trainer_two_epochs_passed": true,
+  "actual_model_accepts_loss_kwargs": true,
+  "resume_checkpoint_epoch": 1,
+  "resume_completed_epoch": 2,
+  "four_distinct_corpus_ids_per_epoch_verified": true,
+  "resume_lora_max_difference": 8.460614481009543e-05,
+  "resume_vibration_base_max_difference": 0.0,
+  "note": "GPU kernels are not forced deterministic, matching upstream; resume retains native Trainer state and BatchNorm buffers."
+}

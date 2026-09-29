@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "stage": "heldout-generation",
+  "seed": 42,
+  "references": 3,
+  "reference_policy": "same-condition",
+  "split": "test",
+  "signal_storage": "memory",
+  "vibration_batch_size": 128,
+  "corpus_batch_size": 32,
+  "max_new_tokens": 64,
+  "limit": null,
+  "dataset": "/media/nas_users/huangyating/bearllm-assets/mbhm_dataset",
+  "checkpoint": "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/finetune/weights",
+  "qwen": "/media/nas_users/huangyating/bearllm-assets/qwen_weights",
+  "metadata_sha256": "87134ccb87c93646b8613251bca712b4afb8910baf32d049c263dc8ab9e96ef0",
+  "corpus_sha256": "eb19e542138758ade543ba99d2269ae6e8247470d4a8ddf4961a525a7719469a",
+  "vibration_adapter_sha256": "37b85cb6cf0fae3c9a945e52a6c941b40997431c8d6f60ee6e507dbddc21031e",
+  "lora_sha256": "b2ea0a1d53bb74d8a33371c061b10ff20c61890ad1ecaeadd69c53e73902425e"
+}

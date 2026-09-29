@@ -1,0 +1,42 @@
+{
+  "2026_9_20_18-41-41-normal-115200.npz": {
+    "condition_id": null,
+    "independent_run_id": null,
+    "split": null
+  },
+  "2026_9_20_18-48-45-normal-460800.npz": {
+    "condition_id": null,
+    "independent_run_id": null,
+    "split": null
+  },
+  "2026_9_20_19-05-05-outBroken-115200.npz": {
+    "condition_id": null,
+    "independent_run_id": null,
+    "split": null
+  },
+  "2026_9_20_19-09-18-outBroken-460800.npz": {
+    "condition_id": null,
+    "independent_run_id": null,
+    "split": null
+  },
+  "2026_9_20_19-22-20-inBroken-115200.npz": {
+    "condition_id": null,
+    "independent_run_id": null,
+    "split": null
+  },
+  "2026_9_20_19-26-17-inBroken-460800.npz": {
+    "condition_id": null,
+    "independent_run_id": null,
+    "split": null
+  },
+  "2026_9_20_19-37-24-roll-115200.npz": {
+    "condition_id": null,
+    "independent_run_id": null,
+    "split": null
+  },
+  "2026_9_20_19-41-02-roll-460800.npz": {
+    "condition_id": null,
+    "independent_run_id": null,
+    "split": null
+  }
+}

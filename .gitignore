@@ -1,0 +1,16 @@
+# Local credentials and runtime state
+.env
+.env.local
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+# External acquisition datasets and fresh reruns
+/datasets/r2/
+/datasets/mbhm_dataset/data.hdf5
+/runs/
+# Reconstructed large files are present as verified compressed parts in Git
+/external/bearllm-assets/qwen_weights/model.safetensors
+/external/bearllm-runs/**/vibration_predictions.jsonl
+*.restoring

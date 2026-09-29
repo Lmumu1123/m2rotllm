@@ -1,0 +1,14 @@
+{
+  "python": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "numpy": "1.26.0",
+  "elapsed_seconds": 0.6818961189128458,
+  "protocol_sha256": "2b47cfff7731763cb37225098c121017e6d963df3b77d7a3f2aee17bee3f910a",
+  "script_sha256": "0916ed33804863ec617fda5ea8a1610090e28fb949d5b254a8ac16e453889a9d",
+  "posthoc": true,
+  "original_main_protocol_modified": false,
+  "no_external_label_used_in_fit": true,
+  "models_per_fold": 6,
+  "folds": 3,
+  "raw_inputs_modified": false,
+  "final_change": "Added observed-results discussion only, no feature/model parameter changes"
+}

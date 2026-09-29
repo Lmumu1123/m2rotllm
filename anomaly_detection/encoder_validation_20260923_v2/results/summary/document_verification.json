@@ -1,0 +1,23 @@
+{
+  "main_report": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/第二轮验证汇报_故障知识与多教师复用.md",
+  "report_sha256": "c2ab162c6a7ce71e776cd6d6b7c1b20884b4a154b8ed7d8743a75db2d6fa57b0",
+  "local_links_checked": 16,
+  "missing_local_links": [],
+  "model_checkpoints": {
+    "Bear": 36,
+    "Rot": 36,
+    "Uni": 36,
+    "heldout": 96
+  },
+  "total_completed_models": 204,
+  "teacher_readouts": 6,
+  "raw_reprocessing_status": {
+    "status": "complete",
+    "radar_recordings": 12,
+    "contact_recordings_reused": 12,
+    "raw_inputs_unmodified": true,
+    "radar_features": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/radar/features.npz",
+    "next_step": "Review selected range, saturation and plots before retraining; models were not rerun"
+  },
+  "physical_audit_status": "pass"
+}

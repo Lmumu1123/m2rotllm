@@ -1,0 +1,27 @@
+{
+  "diagnostic": "原仓库保存方式对照（恢复初始BN）",
+  "gpu": 0,
+  "status": "complete",
+  "started_at_utc": "2026-09-18T18:55:48.855886+00:00",
+  "command": [
+    "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+    "-u",
+    "scripts/evaluate_mbhm.py",
+    "--checkpoint",
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/source_export_weights",
+    "--stage",
+    "heldout-generation",
+    "--split",
+    "test",
+    "--corpus-batch-size",
+    "32",
+    "--max-new-tokens",
+    "64",
+    "--output",
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/source_export_heldout"
+  ],
+  "log": "/home/huangyating/BearLLM/outputs/full/source_export_heldout.log",
+  "exit_code": 0,
+  "elapsed_seconds": 167.34492459520698,
+  "finished_at_utc": "2026-09-18T18:58:36.200955+00:00"
+}

@@ -1,0 +1,45 @@
+{
+  "device": "cuda:0",
+  "torch": "2.11.0+cu128",
+  "python": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "seed": 20260919,
+  "source_protocol_seed": 42,
+  "query_count": 426,
+  "per_label": {
+    "0": 50,
+    "1": 50,
+    "2": 50,
+    "3": 23,
+    "4": 3,
+    "5": 50,
+    "6": 50,
+    "7": 50,
+    "8": 50,
+    "9": 50
+  },
+  "self_reference_pairs": 0,
+  "query_role_split": "Test under reproduced split; original official checkpoint training membership is unknown",
+  "reference_pool": "Original protocol: all healthy same-condition records; can cross split boundaries",
+  "band_mapping": "Assumes original 1-second DCN, f[k]=k/2 Hz; retained band re-normalized to RMS 0.01",
+  "is_hardware_simulation": false,
+  "is_current_contact_dataset": false,
+  "hyperparameter_tuning": false,
+  "frozen_batchnorm_buffers_verified": true,
+  "checkpoints": {
+    "retrained_fcn": {
+      "classifier.pth": "885d03d3be3e6aef0966d1d74b305ca94f3cef1814467413af270bb02e9c3340",
+      "feature_encoder.pth": "e7322e179238ab5edf779830c2be562e2a0d613ac1285c4ccdb35080cc97f84e"
+    },
+    "official_final_adapter": {
+      "adapter_config.json": "c5f3caa5bac314392d499542859dfeb0c7dbc32270f91f875f7a81faef830a2f",
+      "adapter_model.safetensors": "867fb65139f581e7cf36f35d988b172d79c3c140ed9c2cdf3b6a8a5aefe9b10b",
+      "vibration_adapter.pth": "c2dcd2ff546804dfa0baf37cb0df30ec7fc67afe442a4c99ad0a15d0aae46190"
+    },
+    "retrained_final_adapter": {
+      "adapter_config.json": "83f23c8ef7ff1a2ebd70029676d4f3cd8d892263936fe57a7bc50ddecef7049b",
+      "adapter_model.safetensors": "b2ea0a1d53bb74d8a33371c061b10ff20c61890ad1ecaeadd69c53e73902425e",
+      "vibration_adapter.pth": "37b85cb6cf0fae3c9a945e52a6c941b40997431c8d6f60ee6e507dbddc21031e"
+    }
+  },
+  "wall_seconds": 1.4401196581311524
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "R1",
+    "title": "Deep Sets",
+    "authors": "Zaheer et al.",
+    "venue": "NeurIPS 2017",
+    "url": "https://papers.nips.cc/paper_files/paper/2017/file/f22e4747da1aa27e363d86d40ff442fe-Paper.pdf",
+    "supports": "Permutation-invariant set functions; Theorem 2 countable-universe restriction. Does not prove simple averaging sufficient for bearing diagnosis."
+  },
+  {
+    "id": "R2",
+    "title": "Attention-based Deep Multiple Instance Learning",
+    "authors": "Ilse et al.",
+    "venue": "ICML 2018",
+    "url": "https://proceedings.mlr.press/v80/ilse18a.html",
+    "supports": "Bag-level supervision and permutation-invariant aggregation; not proof of cross-modal time alignment."
+  },
+  {
+    "id": "R3",
+    "title": "A Kernel Two-Sample Test",
+    "authors": "Gretton et al.",
+    "venue": "JMLR 2012",
+    "url": "https://www.jmlr.org/papers/v13/gretton12a.html",
+    "supports": "Population MMD with characteristic kernels distinguishes distributions; simple finite-dimensional means need not. Distribution equality does not identify temporal coupling."
+  },
+  {
+    "id": "R4",
+    "title": "Soft-DTW: a Differentiable Loss Function for Time-Series",
+    "authors": "Cuturi and Blondel",
+    "venue": "ICML 2017",
+    "url": "https://proceedings.mlr.press/v70/cuturi17a.html",
+    "supports": "Differentiable monotonic sequence alignment robust to time shifts/dilations; does not solve sensor transfer functions or establish true mechanical correspondences."
+  },
+  {
+    "id": "R5",
+    "title": "Lecture 9: Fourier Transform Properties",
+    "authors": "Alan V. Oppenheim",
+    "venue": "MIT OpenCourseWare",
+    "url": "https://ocw.mit.edu/courses/res-6-007-signals-and-systems-spring-2011/resources/lecture-9-fourier-transform-properties/",
+    "supports": "Time shift multiplies Fourier transform by unit-modulus linear phase. Finite cropping/gaps and signed DCT are not covered by a blanket magnitude-invariance claim."
+  },
+  {
+    "id": "R6",
+    "title": "envspectrum: Envelope spectrum for machinery diagnosis",
+    "authors": "MathWorks",
+    "venue": "Official documentation",
+    "url": "https://www.mathworks.com/help/signal/ref/envspectrum.html",
+    "supports": "Bearing BPFO repetition versus high-frequency impact resonance; modulated envelope and spectrum examples."
+  },
+  {
+    "id": "R7",
+    "title": "Rolling Element Bearing Fault Diagnosis",
+    "authors": "MathWorks",
+    "venue": "Official documentation",
+    "url": "https://www.mathworks.com/help/predmaint/ug/Rolling-Element-Bearing-Fault-Diagnosis.html",
+    "supports": "Envelope and bearing fault frequencies; constant shaft speed does not need order tracking in that specific example."
+  },
+  {
+    "id": "R8",
+    "title": "SelectiveNet: A Deep Neural Network with an Integrated Reject Option",
+    "authors": "Geifman and El-Yaniv",
+    "venue": "ICML 2019",
+    "url": "https://proceedings.mlr.press/v97/geifman19a.html",
+    "supports": "Accuracy/risk must be reported alongside coverage when rejecting examples."
+  },
+  {
+    "id": "R9",
+    "title": "Leakage and the Reproducibility Crisis in ML-based Science",
+    "authors": "Kapoor and Narayanan",
+    "venue": "2022 preprint",
+    "url": "https://arxiv.org/abs/2207.07048",
+    "supports": "Taxonomy and methodological implications of leakage; does not diagnose this dataset without source-code audit."
+  },
+  {
+    "id": "R10",
+    "title": "Linear Prediction for Time Series",
+    "authors": "Cosma Shalizi",
+    "venue": "Carnegie Mellon course, 2020",
+    "url": "https://stat.cmu.edu/~cshalizi/dst/20/lectures/08/lecture-08.html",
+    "supports": "Weak stationarity and autocovariance definition; finite-mean-variance derivation in report is our own."
+  }
+]

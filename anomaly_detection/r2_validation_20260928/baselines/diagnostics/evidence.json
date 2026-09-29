@@ -1,0 +1,7 @@
+{
+  "feature_sha256": "bcd9b6ad40794a4afcde7786fa94e3bfbe4f1c51dfbd71fa76063f4b6735e6f1",
+  "script_sha256": "92bef03ef63aa5fc90fd42620df7023c1722828e4706e05b666ae3aef2e73083",
+  "protocol_sha256": "3ebadd5d3e89132c50836a00e24f40037f812eea85cecead9d1de88c83d28544",
+  "training_radar_ids_disjoint_from_test": true,
+  "contact_data_never_loaded": true
+}

@@ -1,0 +1,52 @@
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/conv.py:186: UserWarning: Initializing zero-element tensors is a no-op
+  init.kaiming_uniform_(self.weight, a=math.sqrt(5))
+{
+  "status": "passed",
+  "python": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "frequency_mapping_125Hz": "DCT index 250 at 0.5 Hz spacing",
+  "matches_released_dataset_preprocessing": true,
+  "unit_scale_and_offset_invariance": true,
+  "rejects_short_constant_nonfinite_and_self_reference": true,
+  "synthetic_shapes": {
+    "feature_map": [
+      3,
+      128,
+      47
+    ],
+    "hidden": [
+      3,
+      128
+    ],
+    "logits": [
+      3,
+      10
+    ]
+  },
+  "synthetic_is_not_real_contact_diagnosis": true,
+  "actual_recording_strict_windows": 0,
+  "frozen_batchnorm_verified": true,
+  "dat_txt_payload_match": true,
+  "input_hashes_unchanged": true,
+  "recordings": [
+    {
+      "file": "SAVE2026_9_19_21-05-41-1000r.DAT",
+      "sha256": "bfc380617cff20b0acaf8f3654f74d090c101494f4b44d361a71a85fca89eb36"
+    },
+    {
+      "file": "SAVE2026_9_19_21-09-12-2000r.DAT",
+      "sha256": "95255526620203ecececca5b5e178cea2f243ea8c4f921889082f4238488f551"
+    },
+    {
+      "file": "SAVE2026_9_19_21-12-32-3000r.DAT",
+      "sha256": "4fd4596ba6c65bc3aa8631c68d22e769f8f376799c9966856f8b2b5934a50374"
+    }
+  ],
+  "script_hashes": {
+    "bandwidth_audit.py": "3d275ceac27088999b4cc415a8225bde09c0cac878207b40371c235b3ee6c8bd",
+    "contact_pipeline.py": "77644917257949bfc81f426b76e6b6e715a14c4ce46142d2a15a88bc6a4cdb0f",
+    "encode_contact_pair.py": "641053cc636ae8290fa85526a1c2ad86978c118936ab9e28f584f53e12b8f832",
+    "teacher_bridge.py": "b5b0913aabe0d45fad2c928435b29c0828eac15eca6ad4735a1071210a2c0fe3",
+    "verify_pipeline.py": "08701420f150138dd8965ea4ea16e647a5e4365fde3bb5b2f48d56875715d6d7"
+  }
+}
+

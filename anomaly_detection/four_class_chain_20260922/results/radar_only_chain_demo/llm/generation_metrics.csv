@@ -1,0 +1,2 @@
+task,fold,direction,method,seed,evaluation_scope,n,labelled_n,probability_fidelity,unparseable,truncated,accuracy,macro_f1,balanced_accuracy,macro_f1_class_ids,external_normal_false_alarm_rate,unknown_detection_metric
+interface_control,inference_no_labels,no_evaluation,radar_only_saved_model,42,interface_control,12,0,1.0,0,0,,,,"0,1,2,3",,

@@ -1,0 +1,7 @@
+model,reference,file_n,file_accuracy,file_macro_f1,file_balanced_accuracy,window_n,window_accuracy,window_macro_f1,window_balanced_accuracy
+retrained_fcn,fixed_external,8,0.25,0.1,0.25,58,0.3103448275862069,0.11842105263157894,0.25
+retrained_fcn,zero_reference,8,0.25,0.1,0.25,58,0.3103448275862069,0.11842105263157894,0.25
+retrained_final,fixed_external,8,0.25,0.1,0.25,58,0.3103448275862069,0.11842105263157894,0.25
+retrained_final,zero_reference,8,0.25,0.1,0.25,58,0.3103448275862069,0.11842105263157894,0.25
+official_final,fixed_external,8,0.0,0.0,0.0,58,0.10344827586206896,0.0858000858000858,0.09561965811965811
+official_final,zero_reference,8,0.25,0.1,0.25,58,0.22413793103448276,0.09285714285714286,0.25

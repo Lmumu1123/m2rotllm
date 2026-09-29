@@ -1,0 +1,18 @@
+{
+  "selected_models_checked": 11,
+  "selected_parameters_match_declared_rule": true,
+  "local_inputs_match_previous_manifest": 24,
+  "completed_training_code_matches_current": [
+    {
+      "script": "/home/huangyating/anomaly_detection/retention_alignment_20260922/scripts/train_retained_head.py",
+      "sha256": "3cd06205a7c6f997198471bdb1805fd8118a2d5cc8cdc73f97460ea00efccc24",
+      "matches_completed_training_record": true
+    },
+    {
+      "script": "/home/huangyating/anomaly_detection/retention_alignment_20260922/scripts/refine_retention.py",
+      "sha256": "baee7fca20a93c4be5ad8b8d65d2dacf85384c64f02bf4c404d467c0975b36ae",
+      "matches_completed_training_record": true
+    }
+  ],
+  "scope": "This verifies within-run candidate selection. It does not undo protocol redesign after previous test results or inherited cross-split references."
+}

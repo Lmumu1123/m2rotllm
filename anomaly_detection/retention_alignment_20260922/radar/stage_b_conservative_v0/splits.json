@@ -1,0 +1,34 @@
+[
+  {
+    "task": "four_class_provisional_roi",
+    "fold": "all_known",
+    "classes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "train_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-184857-normal-460800",
+      "20260920-190512-outBroken-115200",
+      "20260920-190913-outBroken-460800",
+      "20260920-192216-inBroken-115200",
+      "20260920-192610-inBroken-460800",
+      "20260920-193718-roll-115200",
+      "20260920-194108-roll-460800"
+    ],
+    "test_bags": [],
+    "shared_head": "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_conservative/models/v0/all_known/retained_head.npz",
+    "shared_head_sha256": "4ba0bb522c516c3104c3b3d9e9c0d9a0eeaf5a0fc3fc5dc7364b7152e852ad72",
+    "source_retention": {
+      "variant": "v0",
+      "all_known": true,
+      "passes_global_and_every_source_test": true,
+      "source_test_is_reused_regression_not_new_blind_test": true,
+      "local_train_accuracy": 1.0,
+      "status": "passes_stronger_source_regression",
+      "original_encoder_unchanged": true
+    }
+  }
+]

@@ -1,0 +1,2617 @@
+UniFault: A Fault Diagnosis Foundation Model from Bearing Data
+Title:
+Content selection saved. Describe the issue below:
+Description:
+arXiv is now an independent nonprofit!
+Learn more
+×
+License: CC BY 4.0
+arXiv:2504.01373v2 [cs.LG] 05 Nov 2025
+[orcid=0000-0002-9282-0991]
+UniFault: A Fault Diagnosis Foundation Model from Bearing Data
+Emadeldeen Eldele
+emad0002@ntu.edu.sg
+Mohamed Ragab
+mohamedr002@e.ntu.edu.sg
+Xu Qing
+xu_qing@i2r.a-star.edu.sg
+Edward
+edward.mononym@proton.me
+Zhenghua Chen
+chen0832@e.ntu.edu.sg
+Min Wu
+wumin@i2r.a-star.edu.sg
+Xiaoli Li
+xlli@i2r.a-star.edu.sg
+Jay Lee
+leejay@umd.edu
+organization=Department of Computer Science, Khalifa University,
+city=Abu Dhabi,
+postcode=127788,
+country=UAE
+organization=Institute for Infocomm Research, A*STAR,
+city=Singapore,
+postcode=138632,
+country=Singapore
+organization=Centre for Frontier AI Research, A*STAR,
+city=Singapore,
+postcode=138632,
+country=Singapore
+organization=Propulsion and Space Research Center, Technology Innovation Institute,
+city=Abu Dhabi,
+postcode=9639,
+country=UAE
+organization=College of Computing and Data Science, Nanyang Technological University,
+city=Singapore,
+postcode=639798,
+country=Singapore
+organization=Center for Industrial Artificial Intelligence, Department of Mechanical Engineering, A. James Clark School of Engineering, University of Maryland,
+city=Maryland,
+postcode=20742,
+country=United States of America
+Abstract
+Machine fault diagnosis (FD) is a critical task for predictive maintenance, enabling early fault detection and preventing unexpected failures.
+Despite its importance, existing FD models are operation-specific with limited generalization across diverse datasets.
+Foundation models (FM) have demonstrated remarkable potential in both visual and language domains, achieving impressive generalization capabilities even with minimal data through few-shot or zero-shot learning.
+However, translating these advances to FD presents unique hurdles. Unlike the large-scale, cohesive datasets available for images and text, FD datasets are typically smaller and more heterogeneous, with significant variations in sampling frequencies and the number of channels across different systems and applications. This heterogeneity complicates the design of a universal architecture capable of effectively processing such diverse data while maintaining robust feature extraction and learning capabilities.
+In this paper, we introduce
+UniFault
+\xspace
+, a foundation model for fault diagnosis that systematically addresses these issues. Specifically, the model incorporates a comprehensive data harmonization pipeline featuring two key innovations. First, a unification scheme transforms multivariate inputs into standardized univariate sequences. Second, a novel cross-domain temporal fusion strategy mitigates distribution shifts and enriches sample diversity and count, improving the model generalization across varying conditions.
+UniFault
+\xspace
+is pretrained on over 6.9 million samples spanning diverse FD datasets, enabling superior few-shot performance. Extensive experiments on real-world FD datasets demonstrate that
+UniFault
+\xspace
+achieves state-of-the-art performance, setting a new benchmark for fault diagnosis models and paving the way for more scalable and robust predictive maintenance solutions.
+keywords
+Fault Diagnosis ,Foundation Model ,Time Series ,Few-shot Learning ,Contrastive Learning ,Transformer
+†
+†
+corresponding:
+Corresponding author
+Figure 1
+:
+The overall design of
+UniFault
+\xspace
+. (1) We collect datasets from multiple heterogeneous sources with different sequence lengths, sampling rates, and channel counts. (2) Our preprocessing pipeline includes data normalization, sequence length standardization, unifying the channel dimension, and generating new samples via cross-domain temporal fusion. (3) We perform contrastive-based self-supervised pretraining to our Transformer-based backbone. (4) The pretrained model can be fine-tuned with few-shot samples.
+1
+Introduction
+Machine Fault Diagnosis (FD) plays a crucial role in predictive maintenance by ensuring the reliability and efficiency of industrial systems
+Yan et al. (2023)
+. As industries increasingly adopt automation and cost-effective operations, the demand for scalable and robust FD solutions has grown
+Gao et al. (2015)
+. Recent advances in deep learning have revolutionized FD by enabling the automated extraction of complex patterns from sensor data, thereby detecting subtle fault signatures that often elude traditional statistical and rule-based methods
+Hoang and Kang (2019a)
+;
+Kim et al. (2023)
+;
+Principi et al. (2019)
+.
+For instance,
+Sinitsin et al. (2022b)
+combined convolutional neural networks (CNN) and multi-layer perceptrons (MLP), while
+Xu et al. (2023)
+;
+Li et al. (2025)
+used convolutional graph neural networks to process sensory bearing data and rotating machines.
+Despite these achievements, significant challenges remain. Many deep learning models are highly operation-specific, struggling to generalize across diverse datasets. For instance, slight variations in sensor calibration or changes in operating conditions can lead to considerable performance degradation
+Chen et al. (2023)
+;
+Guo et al. (2024)
+;
+Zhao et al. (2021)
+;
+Zhao et al. (2024)
+. Furthermore, these methods typically depend on large annotated datasets—a critical limitation in real-world FD where faults are rare and manual annotation is both time-consuming and costly
+Fink et al. (2020)
+;
+Rombach (2023)
+. Such challenges underscore the need for models that can generalize effectively even with limited labeled data.
+In response to these challenges, foundation models (FMs) have emerged as a transformative technology in computer vision and natural language processing. By pretraining on large-scale, heterogeneous datasets, FMs learn powerful and flexible representations that transfer effectively to downstream tasks—even when labeled data is scarce
+Schneider et al. (2024)
+;
+Yuan (2023)
+. This remarkable generalization capability makes them promising candidates for addressing the data scarcity and domain variability issues in FD.
+Nonetheless, applying FMs to FD is not straightforward. Two major barriers must be overcome: (1) data scale—FD datasets are typically small and fragmented, lacking the volume required for conventional FM training
+Su and Lee (2024)
+; and (2) data heterogeneity—variations in sensor configurations, data structures, sampling rates, and other system-specific factors pose additional challenges
+Pacella and Papadia (2020)
+;
+Huang et al. (2021)
+.
+Another critical obstacle is the presence of
+distribution shifts
+across datasets. Vibration signals collected from different machines, sensors, or operating conditions often follow distinct statistical distributions, even when they represent the same fault type. For example, the spectral profile of an outer-race defect may vary significantly between datasets due to differences in sensor placement, load levels, or sampling hardware. Such distributional mismatches hinder the transferability of features learned on one dataset to another, limiting the robustness of existing FD models.
+Our work aims to tackle these obstacles by exploring novel approaches for adapting FMs to the unique demands of fault diagnosis.
+In this paper, we systematically address the aforementioned challenges by proposing a
+Uni
+fied foundation model for bearing
+Fault
+diagnosis (
+UniFault
+\xspace
+), which introduces three key contributions. First, to overcome the scarcity of large annotated datasets, we have constructed a large-scale, diverse FD database comprising over
+6.9 million
+samples collected from heterogeneous sources.
+UniFault
+\xspace
+leverages this extensive dataset for pretraining, allowing the model to learn generalized representations across varied operating conditions. Second, to tackle the issue of data heterogeneity, we develop a comprehensive data harmonization pipeline. This pipeline features a channel unification scheme that converts diverse multivariate sensor inputs into univariate sequences while retaining local inter‐channel relationships. Moreover, a cross-dataset temporal fusion strategy is integrated to mitigate distribution shifts and enrich sample diversity, thereby enhancing both robustness and generalization.
+Unlike existing FD models that are typically narrow in scope or require manual adaptation across datasets,
+UniFault
+\xspace
+addresses the core challenges of data scarcity, heterogeneity, and the absence of a general-purpose architecture in FD, laying the groundwork for a scalable, robust, and universal solution.
+We further validate
+UniFault
+\xspace
+through extensive fine-tuning experiments, demonstrating its remarkable ability to achieve high performance with limited labeled data—even with as few as 100 samples. This strong few-shot learning capability positions
+UniFault
+\xspace
+as an effective foundation model for real-world FD applications, particularly in scenarios where labeled data is limited.
+In summary, the key contributions of this work are as follows:
+•
+We introduce
+UniFault
+\xspace
+, a general-purpose foundation model for fault diagnosis pretrained on over 6.9 million samples, significantly surpassing the scale of any prior FD models, to enable generalization across datasets, domains, and machine types.
+•
+We present a systematic preprocessing pipeline that standardizes heterogeneous datasets via a normalization scheme and enhances robustness with a cross-domain temporal fusion strategy.
+•
+We conduct extensive fine-tuning experiments on real-world FD datasets, demonstrating that
+UniFault
+\xspace
+exhibits remarkable few-shot learning performance and benefits significantly from our preprocessing pipeline.
+The remainder of this paper is organized as follows: Section
+2
+provides an overview of related work in fault diagnosis and foundation models. Section
+3
+details the data preprocessing pipeline, our model architecture, and the self-supervised training strategy. Section
+4
+presents the details of the datasets, the experimental setup, and baselines. Section
+5
+shows the evaluation results and some key experiments. Finally, Section
+6
+concludes the paper.
+2
+Related Works
+2.1
+Deep Learning for Fault Diagnosis
+Deep learning has significantly advanced fault diagnosis (FD) by enabling automated feature extraction and capturing complex temporal patterns. Convolutional Neural Networks (CNNs) have been widely used to extract discriminative features from sensor data
+Jiao et al. (2020)
+;
+Hoang and Kang (2019b)
+;
+Hu et al. (2025)
+, while Long Short-Term Memory networks (LSTMs) effectively model sequential dependencies
+Kumar et al. (2024)
+;
+Fan et al. (2024)
+. More recent approaches have adapted Transformer architectures
+Wang et al. (2024b)
+;
+Wang et al. (2024a)
+;
+Xiao et al. (2024)
+and Temporal Convolutional Networks (TCNs)
+Zhang and Zhang (2024)
+to further improve pattern recognition and robustness under varying conditions.
+However, many of these methods are tailored to specific domains or tasks, often assuming that training and testing data come from the same distribution. In practice, variations in sensor configurations, sampling rates, and operating conditions limit their generalizability. Moreover, the reliance on large, labeled datasets—which are frequently unavailable in industrial settings—further impedes their scalability and practical deployment.
+2.2
+Foundation Models for Time Series
+Recently, large-scale foundation models such as GPT-4.5
+Achiam et al. (2023)
+, Gemini
+Team et al. (2024)
+, and DeepSeek
+Liu et al. (2024a)
+have transformed domains like natural language processing and computer vision through advancements in self-supervised learning and zero-shot generalization capabilities. Similar methodologies have begun to be adapted for time series analysis
+Liang et al. (2024)
+, with frameworks such as Time-LLM
+Jin et al. ()
+and UniTime
+Liu et al. (2024b)
+tackling forecasting tasks through prompt-based strategies and domain-specific adaptations. Additionally, specialized transformer-based models like MOMENT
+Goswami et al. (2024)
+leverage diverse public time series datasets to deliver versatile performance across analytical tasks, while GPT4TS
+Zhou et al. (2023)
+extends pretrained GPT-2 models to time series domains by fine-tuning only task-specific linear layers. Convolutional approaches, exemplified by TSLANet
+Eldele et al. (2024b)
+, incorporate adaptive spectral and interactive convolutional blocks, enhancing representation learning specifically for time series.
+Nevertheless, these models generally assume access to extensive labeled data and often do not adequately address the inherent heterogeneity and diverse analytical requirements encountered in real-world time series datasets, particularly in fault diagnosis applications.
+2.3
+Foundation Models for Fault Diagnosis
+Very recently, a few studies have begun applying foundation model concepts directly to fault diagnosis. For example, one study on electrical motor fault diagnosis employs self-supervised learning to build a robust backbone that demonstrates promising performance across different machines and operating conditions
+Anbalagan et al. (2023)
+. Similarly, another work in bearing fault diagnosis introduces a cloud-edge-end semi-supervised framework that, through tailored data augmentation and contrastive learning strategies, achieves high accuracy using only a small fraction of labeled data
+Lai et al. (2024)
+.
+Despite these encouraging results, both studies are constrained by their reliance on relatively small, single-source datasets for pretraining and tend to overlook the challenges posed by heterogeneous sensor configurations and distribution shifts in real-world industrial environments. In contrast, our proposed Fault Diagnosis Foundation Model (
+UniFault
+\xspace
+) addresses these limitations by leveraging a massive, heterogeneous FD dataset comprising over 6.9 million samples for pretraining. Moreover,
+UniFault
+\xspace
+employs a unified preprocessing pipeline, including a novel cross-dataset temporal fusion strategy that generates intermediate-domain samples to expose the model to smoother distribution transitions and mitigate distribution shifts. This paradigm is akin to the domain adaptation techniques
+Ganin et al. (2016)
+;
+Tzeng et al. (2017)
+), which aim to align a labeled source with an unlabeled target. Detailed discussions of our methodology and contributions are provided in Section
+3
+.
+3
+Methods
+3.1
+Problem Formulation
+Let
+𝒳
+=
+{
+X
+i
+}
+i
+=
+1
+N
+\mathcal{X}=\{X_{i}\}_{i=1}^{N}
+denote a collection of heterogeneous fault diagnosis datasets, where each
+X
+i
+∈
+ℝ
+C
+i
+×
+L
+i
+X_{i}\in\mathbb{R}^{C_{i}\times L_{i}}
+represents a multivariate time series sequence. Here,
+C
+i
+C_{i}
+denotes the number of channels (e.g., different sensors), and
+L
+i
+L_{i}
+is the sequence length. Due to variations in sensor configurations, sampling rates, and operational conditions, both
+C
+i
+C_{i}
+and
+L
+i
+L_{i}
+differ across datasets, leading to heterogeneous data structures and domain shifts.
+The objective is to develop a foundation model
+f
+θ
+f_{\theta}
+, parameterized by
+θ
+\theta
+, that: (i) Processes heterogeneous inputs by unifying
+X
+i
+X_{i}
+into a standardized representation space; (ii) Extracts robust, domain-invariant features
+𝐳
+i
+=
+f
+θ
+​
+(
+X
+i
+)
+\mathbf{z}_{i}=f_{\theta}(X_{i})
+that effectively capture the underlying patterns in diverse datasets; and (iii) Adapts to new tasks with minimal labeled data via few-shot fine-tuning.
+The overall learning process involves two stages:
+1.
+Pretraining
+: Given unlabeled or sparsely labeled datasets
+𝒳
+\mathcal{X}
+, optimize
+θ
+\theta
+to minimize:
+θ
+∗
+=
+arg
+⁡
+min
+θ
+​
+𝔼
+X
+i
+∼
+𝒳
+​
+[
+ℒ
+pretrain
+​
+(
+f
+θ
+​
+(
+X
+i
+)
+)
+]
+,
+\theta^{*}=\arg\min_{\theta}\mathbb{E}_{X_{i}\sim\mathcal{X}}[\mathcal{L}_{\text{pretrain}}(f_{\theta}(X_{i}))],
+where
+ℒ
+pretrain
+\mathcal{L}_{\text{pretrain}}
+is a pretraining loss designed to learn generalized representations from diverse, potentially unlabeled datasets.
+2.
+Few-Shot Fine-Tuning
+: For a target task with
+m
+≪
+N
+m\ll N
+labeled samples
+{
+(
+X
+j
+,
+y
+j
+)
+}
+j
+=
+1
+m
+\{(X_{j},y_{j})\}_{j=1}^{m}
+, adapt
+f
+θ
+∗
+f_{\theta^{*}}
+by a minimal fine-tuning of
+θ
+∗
+\theta^{*}
+, with training a lightweight adapter
+g
+ϕ
+g_{\phi}
+to predict labels:
+ϕ
+∗
+=
+arg
+⁡
+min
+ϕ
+​
+𝔼
+(
+X
+j
+,
+y
+j
+)
+​
+[
+ℒ
+CE
+​
+(
+y
+j
+,
+g
+ϕ
+​
+(
+f
+θ
+∗
+​
+(
+X
+j
+)
+)
+)
+]
+,
+\phi^{*}=\arg\min_{\phi}\mathbb{E}_{(X_{j},y_{j})}\left[\mathcal{L}_{\text{CE}}\left(y_{j},\,g_{\phi}\left(f_{\theta^{*}}(X_{j})\right)\right)\right],
+such that
+ℒ
+CE
+\mathcal{L}_{\text{CE}}
+is the cross-entropy loss.
+3.2
+Overview
+The proposed
+UniFault
+\xspace
+framework addresses the heterogeneity of fault diagnosis data through: (1) a universal data preprocessing pipeline to unify diverse FD datasets into a standardized format; and (2) the Transformer model, which processes harmonized data with a temporal self-attention mechanism optimized for machinery signals. The overall framework is illustrated in Fig.
+1
+.
+3.3
+Data Preprocessing Pipeline
+For effective pretraining, the preprocessing pipeline addresses five major inconsistencies in fault diagnosis (FD) data: variable sampling rates, unequal sequence lengths, differing numbers of channels, mismatched feature scales, and distribution mismatches across datasets. The first four are handled through dataset splitting, resampling, length standardization, channel unification, and normalization. The final issue is addressed through a cross-domain temporal fusion strategy, which creates intermediate representation spaces among heterogeneous datasets.
+3.3.1
+Train–Validation–Test Splitting
+Each dataset is first partitioned into training, validation, and test splits. This ensures that preprocessing transformations such as resampling, downsampling, and normalization are performed in a manner consistent with the training distribution, preventing information leakage into the validation and test sets.
+3.3.2
+Resampling
+Raw FD datasets are collected under different acquisition rates, leading to inconsistent temporal resolutions. To resolve this, we resample all signals to a fixed temporal resolution of 0.1 seconds. This value is chosen empirically based on dataset statistics: most datasets yield sequences exceeding 1024 timesteps under this setting, ensuring sufficient temporal granularity while maintaining computational efficiency.
+3.3.3
+Sequence Length Standardization
+Even after resampling, datasets produce windows of varying lengths. To unify input dimensions across datasets, we downsample each sequence to a fixed length of 1024 timesteps. This guarantees consistency for model training, while still preserving the temporal dynamics necessary for detecting faults.
+3.3.4
+Channel-Invariant Unification
+Datasets often contain different numbers of sensor channels due to variations in hardware and setup. To avoid dataset-specific bias, we convert multivariate sequences into a univariate form by treating each channel independently
+Nie et al. (2023)
+. This channel-invariant representation allows the model to learn generic temporal dynamics without relying on a fixed channel configuration. During fine-tuning, the original channel structure of the target dataset is preserved.
+3.3.5
+Data Normalization
+Finally, signals are normalized using statistics computed only from the training split. Each channel is scaled via min–max normalization into a fixed numerical range, ensuring stability during optimization and promoting comparability across datasets. By restricting normalization parameters to the training set, we avoid distributional bias in the validation and test sets.
+3.3.6
+Cross-Domain Temporal Fusion
+To mitigate distribution shifts and enhance sample diversity across heterogeneous fault diagnosis datasets, we propose a Cross-Domain Temporal Fusion strategy inspired by
+Eldele et al. (2024a)
+but adapted for foundation model pretraining. While the original method focused on pairwise domain adaptation, our approach generalizes to arbitrary cross-dataset interactions, enabling synthetic sample generation from any pair of pretraining datasets while learning their temporal relationships. This fosters robustness to unseen operational conditions and sensor configurations.
+Given two univariate time series samples
+X
+a
+∈
+ℝ
+L
+X_{a}\in\mathbb{R}^{L}
+(from dataset
+a
+a
+) and
+X
+b
+∈
+ℝ
+L
+X_{b}\in\mathbb{R}^{L}
+(from dataset
+b
+b
+), we generate fused samples
+X
+fused
+X_{\text{fused}}
+by choosing a dominant dataset (e.g.,
+a
+a
+). Then, for each timestep
+i
+i
+in the fused sample, we combine
+X
+a
+i
+X_{a}^{i}
+with a temporal neighborhood of
+X
+b
+X_{b}
+as follows:
+X
+fused
+i
+=
+λ
+X
+a
+i
++
+(
+1
+−
+λ
+)
+⋅
+1
+T
+∑
+j
+=
+i
+−
+T
+/
+2
+i
++
+T
+/
+2
+X
+b
+j
+,
+0.5
+<
+λ
+<
+1
+,
+X_{\text{fused}}^{i}=\lambda X_{a}^{i}+(1-\lambda)\cdot\frac{1}{T}\sum_{j=i-T/2}^{i+T/2}X_{b}^{j},\quad 0.5<\lambda<1,
+where
+T
+T
+is the temporal window size, and
+λ
+\lambda
+is kept
+>
+0.5
+>0.5
+to control the dominance of
+X
+a
+X_{a}
+.
+To ensure balanced augmentation, this process is done in a bidirectional manner. Specifically, we generate both
+a
+a
+-dominant and
+b
+b
+-dominant samples:
+X
+fused
+,
+a
+i
+\displaystyle X_{\text{fused},a}^{i}
+=
+λ
+​
+X
+a
+i
++
+(
+1
+−
+λ
+)
+⋅
+MA
+​
+(
+X
+b
+,
+i
+,
+T
+)
+,
+\displaystyle=\lambda X_{a}^{i}+(1-\lambda)\cdot\text{MA}(X_{b},i,T),
+X
+fused
+,
+b
+i
+\displaystyle X_{\text{fused},b}^{i}
+=
+λ
+​
+X
+b
+i
++
+(
+1
+−
+λ
+)
+⋅
+MA
+​
+(
+X
+a
+,
+i
+,
+T
+)
+,
+\displaystyle=\lambda X_{b}^{i}+(1-\lambda)\cdot\text{MA}(X_{a},i,T),
+where
+MA
+​
+(
+⋅
+)
+\text{MA}(\cdot)
+denotes a moving average over
+T
+T
+timesteps centered at
+i
+i
+—a process to learn the temporal information in the less dominant domain.
+During pretraining, fused samples are treated as additional training data. By exposing the model to interpolated domains,
+UniFault
+\xspace
+learns to disentangle fault-related patterns from domain-specific variations
+3.4
+Model Architecture
+At its core,
+UniFault
+\xspace
+builds upon the Transformer architecture
+Dosovitskiy et al. (2021)
+.
+While Transformers were originally developed for natural language processing, their self-attention mechanism is particularly well-suited for vibration and machinery signals.
+Fault signatures often manifest as periodic or cyclostationary transients that recur with variable spacing due to load fluctuations or machine variability.
+Unlike CNNs, which rely on fixed receptive fields
+Eldele et al. (2024b)
+, or RNNs, which struggle with long memory
+Zhao et al. (2020)
+, Transformers can flexibly capture such long-range temporal dependencies.
+Moreover, the ability of self-attention to assign different weights to different time positions allows the model to focus on fault-induced bursts even when they are sparse or masked by noise.
+To handle long sequences efficiently,
+UniFault
+\xspace
+employs patch embeddings and dimensionality reduction, ensuring the architecture remains scalable without an explosion in parameters.
+Next, we briefly discuss its architectural components.
+Input Embedding:
+After preprocessing, the input univariate data to the transformer (
+X
+∈
+ℝ
+1
+×
+L
+X\in\mathbb{R}^{1\times L}
+, where
+L
+L
+is the sequence length) are projected into a
+d
+d
+-dimensional space via a linear layer, producing token embeddings
+𝐄
+∈
+ℝ
+L
+×
+d
+\mathbf{E}\in\mathbb{R}^{L\times d}
+.
+Positional Encoding:
+Learnable positional encodings
+𝐏
+∈
+ℝ
+L
+×
+d
+\mathbf{P}\in\mathbb{R}^{L\times d}
+are added to
+𝐄
+\mathbf{E}
+to retain temporal order:
+𝐙
+0
+=
+𝐄
++
+𝐏
+.
+\mathbf{Z}_{0}=\mathbf{E}+\mathbf{P}.
+Transformer Layers:
+The model stacks
+N
+N
+identical layers, each comprising:
+•
+Multi-Head Self-Attention
+: Captures global temporal dependencies.
+𝐐
+,
+𝐊
+,
+𝐕
+=
+𝐙
+l
+−
+1
+​
+𝐖
+Q
+,
+𝐙
+l
+−
+1
+​
+𝐖
+K
+,
+𝐙
+l
+−
+1
+​
+𝐖
+V
+,
+\mathbf{Q},\mathbf{K},\mathbf{V}=\mathbf{Z}_{l-1}\mathbf{W}_{Q},\mathbf{Z}_{l-1}\mathbf{W}_{K},\mathbf{Z}_{l-1}\mathbf{W}_{V},
+Attention
+​
+(
+𝐐
+,
+𝐊
+,
+𝐕
+)
+=
+softmax
+​
+(
+𝐐𝐊
+T
+d
+)
+​
+𝐕
+.
+\text{Attention}(\mathbf{Q},\mathbf{K},\mathbf{V})=\text{softmax}\left(\frac{\mathbf{Q}\mathbf{K}^{T}}{\sqrt{d}}\right)\mathbf{V}.
+•
+Feed-Forward Network
+: A two-layer MLP with GELU activation.
+•
+Layer Normalization
+: Applied pre-attention and pre-MLP.
+3.5
+Self-Supervised Learning
+Labeled fault diagnosis datasets are typically scarce, as annotating real machinery faults is expensive and sometimes impossible. In contrast, large volumes of unlabeled vibration signals are readily available. To exploit this data,
+UniFault
+\xspace
+is pretrained with a contrastive self-supervised learning (SSL) strategy.
+With contrastive SSL, we apply augmentations to signals, e.g., add noise or shift the signal, and the model is trained to recognize that the different augmented views of the same signal should have similar representations, while signals from different machines or conditions should remain distinguishable. This way, the model learns to capture intrinsic fault-related patterns before any supervised fine-tuning.
+3.5.1
+Augmentation Strategies
+We design augmentations to mimic variations commonly encountered in industrial settings:
+Temporal Shifting
+: Fault signatures (e.g., repetitive impacts from a crack) may appear at different phases depending on load or speed. By cyclically shifting the sequence, we enforce invariance to such phase differences:
+X
+shift
+′
+​
+(
+t
+)
+=
+X
+⁡
+(
+(
+t
+−
+s
+​
+L
+)
+mod
+L
+)
+,
+X^{\prime}_{\text{shift}}(t)=X\!\big((t-sL)\bmod L\big),
+where
+s
+s
+is a random shift ratio and
+L
+L
+is the sequence length.
+Scaling with Sensor Jitter
+: Sensor gain, calibration, and background noise vary across machines. We simulate this with multiplicative scaling and additive noise:
+X
+scale
+′
+=
+X
+⊙
+𝐅
++
+𝐉
+,
+𝐅
+∼
+𝒟
+F
+,
+𝐉
+∼
+𝒟
+J
+,
+X^{\prime}_{\text{scale}}=X\odot\mathbf{F}+\mathbf{J},\quad\mathbf{F}\!\sim\!\mathcal{D}_{F},\;\mathbf{J}\!\sim\!\mathcal{D}_{J},
+ensuring robustness to amplitude changes and high-frequency disturbances.
+These augmentations directly address FD challenges by promoting invariance to operating condition shifts and sensor variability.
+3.5.2
+Contrastive Loss
+For each sample
+X
+i
+X_{i}
+, two augmented views
+(
+X
+i
+′
+,
+X
+i
+′′
+)
+(X^{\prime}_{i},X^{\prime\prime}_{i})
+are encoded into embeddings
+(
+𝐳
+i
+′
+,
+𝐳
+i
+′′
+)
+(\mathbf{z}^{\prime}_{i},\mathbf{z}^{\prime\prime}_{i})
+. We maximize their similarity while contrasting them against other signals in the batch:
+ℒ
+cont
+=
+−
+1
+N
+∑
+i
+=
+1
+N
+log
+A
+i
+​
+i
+∑
+k
+=
+1
+N
+(
+A
+i
+​
+k
++
+B
+i
+​
+k
+)
+,
+\mathcal{L}_{\mathrm{cont}}=-\tfrac{1}{N}\sum_{i=1}^{N}\log\frac{A_{ii}}{\sum_{k=1}^{N}(A_{ik}+B_{ik})},
+with
+A
+i
+​
+k
+=
+exp
+⁡
+(
+sim
+⁡
+(
+𝐳
+i
+′
+,
+𝐳
+k
+′′
+)
+τ
+)
+,
+B
+i
+​
+k
+=
+exp
+⁡
+(
+sim
+⁡
+(
+𝐳
+i
+′
+,
+𝐳
+k
+′
+)
+τ
+)
+.
+A_{ik}=\exp\!\left(\tfrac{\mathrm{sim}(\mathbf{z}^{\prime}_{i},\mathbf{z}^{\prime\prime}_{k})}{\tau}\right),\quad B_{ik}=\exp\!\left(\tfrac{\mathrm{sim}(\mathbf{z}^{\prime}_{i},\mathbf{z}^{\prime}_{k})}{\tau}\right).
+Here,
+sim
+⁡
+(
+⋅
+)
+\mathrm{sim}(\cdot)
+denotes cosine similarity and
+τ
+\tau
+is the
+temperature
+hyperparameter. In the FD context,
+τ
+\tau
+controls how tightly the model clusters fault signatures, such that a smaller
+τ
+\tau
+emphasizes fine-grained distinctions (useful for early fault detection), while a larger
+τ
+\tau
+encourages broader invariance across operating conditions. By balancing these effects,
+UniFault
+\xspace
+learns representations that are both sensitive to subtle fault patterns and robust across machines and environments.
+4
+Experimental Settings
+This section describes the datasets, model variants, our experimental setup, and the baselines. These details are essential for replicating the experiments and validating the generalizability of the proposed model.
+4.1
+Datasets
+Table 1
+:
+Summary of bearing fault diagnosis datasets used in this study.
+Dataset
+Fault Generation
+Operating Conditions
+NOConditions
+SRate (Hz)
+IMS
+Naturally degrading over time
+Constant speed of 2000 RPM with a 6000 lbs radial load
+1
+20,000
+UO
+Artificial faults induced by EDM
+Various operating conditions, including different load levels and rotational speeds
+Multiple
+42,000
+CWRU
+Artificially induced
+Motor loads (0–3 HP, 1797–1720 RPM) with faults in inner raceway, rolling element, and outer raceway at 6, 3, and 12 o’clock
+Multiple
+12,000 or 48,000
+PU
+Artificial and real damages
+Four different operating conditions: varying rotational speed, load torque, and radial force
+4
+64,000
+Torino
+Artificially induced (0–450 µm)
+Speeds (0–500 Hz), loads (0–1800 N)
+Multiple
+25,600
+XJTU-SY
+Natural degradation via accelerated life testing
+Three conditions: 2100 rpm (12 kN), 2250 rpm (11 kN), 2400 rpm (10 kN)
+3
+25,600
+MFPT
+Artificially induced faults
+Various operating conditions, including different load levels and rotational speeds
+Multiple
+97,656
+FEMTO
+Natural degradation via accelerated life testing
+Variable speeds and loads
+3
+25,600
+KAIST
+Natural degradation via accelerated life testing
+Constant 1770–1780 RPM with axial load (2.94 kN) and vertical load (5.88 kN)
+1
+25,600
+HIT-SM
+Artificially induced faults using EDM
+Three speeds (600, 900, and 1200 RPM) with different radial loads
+3
+51,200
+CNC
+Naturally occurring and operational faults
+Three brownfield milling machines under varying tool operations and production loads
+Multiple
+2,000
+To develop a robust foundation model for fault diagnosis, we pretrain
+UniFault
+\xspace
+on a large and diverse collection of ten bearing datasets, ensuring coverage of a wide range of fault types, machine configurations, and operating conditions. This extensive dataset collection enables the model to learn generalizable representations across different fault domains. For fine-tuning and evaluation, we select a subset of three representative datasets—IMS, UO, and PU—that exhibit distinct characteristics in terms of data distribution, sensor setup, and operational environments. The fine-tuning samples are excluded from the pretraining data. A summary of each dataset is described next.
+The
+Center for Intelligent Maintenance Systems (IMS)
+dataset
+Lee et al. (2007)
+is widely used for benchmarking fault diagnosis models. This dataset comprises run-to-failure experiments conducted under consistent operating conditions, capturing the natural progression of bearing defects over time. It contains three types of faults developed naturally over extended operational periods. Since IMS is normally designed for remaining useful life prediction, we utilized it for fault diagnosis by segmenting the vibration data into predefined health states based on timestamps
+1
+1
+1
+Check
+https://github.com/Miltos-90/Failure_Classification_of_Bearings
+.
+.
+The
+Case Western Reserve University (CWRU)
+dataset
+Loparo (2015)
+is another widely used dataset that features artificially induced bearing faults. It provides precise control over fault locations and sizes (inner race, outer race, and rolling element defects), allowing for a structured evaluation of model performance across known fault types.
+The
+Paderborn University (PU)
+dataset
+Lessmeier et al. (2016)
+includes both artificially damaged and naturally degraded bearings operating under different load conditions, making it particularly useful for assessing the robustness against domain shifts. PU provides a more diverse representation of fault progression, enhancing the adaptability of the foundation model to real-world degradation patterns.
+The
+IEEE PHM 2012 (FEMTO)
+dataset
+Nectoux et al. (2012)
+, developed for a prognostics competition, includes highly detailed vibration data from progressively degraded bearings. This dataset is instrumental in training
+UniFault
+\xspace
+to recognize subtle fault progression and predict potential failures before they become critical.
+The
+Xi’an Jiaotong University, Changxing Sumyoung Technology (XJTU-SY)
+dataset
+Wang et al. (2018)
+similarly captures fault progression under diverse load conditions, offering additional variability in machine operating states. The dataset contains long-term recordings of bearing degradation, which enables the study of remaining useful life estimation and the transition from healthy to faulty states.
+The
+MFPT bearing
+dataset
+Sinitsin et al. (2022a)
+, provided by the Machinery Failure Prevention Technology Society, includes vibration data from multiple fault modes recorded with high-resolution accelerometers. This dataset is valuable for studying different fault types under controlled conditions, making it an important component in the pretraining phase.
+The
+KAIST ball bearing
+vibration dataset
+Jung et al. (2024)
+was collected at the Korea Advanced Institute of Science and Technology (KAIST). This dataset focuses on high-speed bearings operating under different load and lubrication conditions, providing an additional challenge for the model to generalize across different machine settings.
+The
+HIT-SM bearing
+dataset
+Wang et al. (2022)
+, provided by the Sensing and Measurement Laboratory at Harbin Institute of Technology, includes both healthy and faulty bearings operating at variable speeds. The dataset’s diversity in speed and load conditions further enhances the ability of our model to generalize across a wide range of machinery setups.
+The
+Bosch CNC Machining
+dataset
+Tnani et al. (2022)
+provides vibration data collected from three brownfield milling machines operating in an actual industrial environment over a two-year period. Those are named as M01, M02, and M03. The dataset captures real-world machining variability across different machines, time intervals, and tool operations, reflecting realistic challenges such as tool wear, misalignment, and chip clogging. Data were gathered using low-cost triaxial accelerometers mounted on the spindle housing, offering non-intrusive monitoring of 15 distinct tool operations.
+Lastly, the Politecnico di Torino (
+Torino
+) dataset
+Daga et al. (2019)
+consists of vibration signals collected from a high-speed spindle test rig equipped with roller bearings under controlled operating conditions. It includes both stationary measurements across varying speeds (0–500 Hz) and loads (0–1800 N), as well as endurance tests capturing the progression of faults over time. The dataset features artificially induced faults (indentations on rollers and inner rings) with different severities (0–450 µm), making it valuable for fault detection, classification, and progression analysis.
+4.2
+Model Variants
+To accommodate different resource constraints and application needs, we train two variants of our
+UniFault
+\xspace
+model, i.e., Lite and Base. These variants have different hidden dimensions, different numbers of Transformer layers, and different numbers of attention heads, as described in Table
+2
+.
+Table 2
+:
+Description of the three variants of our model.
+Model
+Hidden Dim.
+Layers
+Heads
+Parameters
+UniFault
+\xspace
+-Lite
+128
+4
+4
+823K
+UniFault
+\xspace
+-Base
+256
+8
+8
+6.4M
+4.3
+Training Protocol
+Both training and pretraining were performed with AdamW optimizer (
+β
+1
+=
+0.9
+,
+β
+2
+=
+0.95
+\beta_{1}=0.9,\beta_{2}=0.95
+), learning rate
+1
+×
+10
+−
+3
+1\times 10^{-3}
+, weight decay of
+1
+×
+10
+−
+5
+1\times 10^{-5}
+. A cosine learning rate scheduler with warm restarts is employed to control the learning rate during training.
+For pretraining, we used a batch size of 512 and trained the model for 5 epochs. For fine-tuning, we used a smaller batch size of 64 and trained the model for 200 epochs.
+The experiments were conducted on NVIDIA L40 GPU using mixed-precision training. All experiments were repeated 3 times, where we report the mean ± std.
+For the
+Few-Shot protocol
+, we fine-tuned with
+randomly selected
+100 samples in the IMS dataset, and 1% of data in PU and CNC datasets. Notably, we did not include any samples from these three datasets in the pretraining.
+4.4
+Baselines
+We compare
+UniFault
+\xspace
+against the following three categories of state-of-the-art baselines in our experiments.
+Fault Diagnosis Models.
+This category includes
+C-Trans
+Lu et al. (2023)
+,
+WDCNN
+Zhang et al. (2017)
+,
+QCNN
+Liao et al. (2023)
+and
+EverAdapt
+Edward et al. (2025)
+. C-Trans
+Lu et al. (2023)
+integrates CNNs with transformers to improve fault diagnosis in rotating machinery across various operating conditions. WDCNN
+Zhang et al. (2017)
+is a deep CNN utilizing wide first-layer kernels to process raw vibration data for fault diagnosis. QCNN
+Liao et al. (2023)
+is a CNN utilizing quadratic neurons to enhance feature representation and interpretability in bearing fault diagnosis. EverAdapt
+Edward et al. (2025)
+features continual batch normalization and class-conditional domain alignment to enable continuous model adaptation in dynamic environments.
+Time Series Representation Learning Methods.
+This category includes
+TS2VEC
+Yue et al. (2022)
+,
+TS-TCC
+Eldele et al. (2021)
+and
+ROCKET
+Dempster et al. (2020)
+. TS2VEC
+Yue et al. (2022)
+employs hierarchical contrastive learning over augmented context views to derive robust, multi-scale representations for time series data. TS-TCC
+Eldele et al. (2021)
+utilizes weak and strong augmentations alongside novel temporal and contextual contrasting modules to learn robust and discriminative representations from unlabeled time-series data. ROCKET
+Dempster et al. (2020)
+transforms time series data using a large number of random convolutional kernels and employs the resulting features to train a linear classifier.
+Time Series Foundation Models.
+This category includes
+MOMENT
+Goswami et al. (2024)
+,
+GPT4TS
+Zhou et al. (2023)
+and
+TSLANet
+Eldele et al. (2024b)
+. MOMENT
+Goswami et al. (2024)
+is a transformer-based model designed for versatile time series analysis tasks and is pretrained on a diverse collection of public time series data to enhance performance across various applications. We included the base variant of MOMENT since it achieved the best performance over the other variants. GPT4TS
+Zhou et al. (2023)
+leverages the frozen pretrained GPT2 model for time series analysis and fine-tunes a linear layer for different tasks. We kept the default settings of using 6 GPT layers. TSLANet
+Eldele et al. (2024b)
+is a convolutional model leveraging adaptive spectral and interactive convolution blocks to improve time series representation learning across multiple tasks.
+Notably, the ‘Fault Diagnosis Models’ were trained in a fully supervised manner on the few-shot datasets, without pretraining. The ‘Time Series Representation Learning Methods’ were pretrained and then fine-tuned with the few-shot samples. Last, the ‘Time Series Foundation Models’ are already pretrained, so we just fine-tune them directly with the few-shot samples. We follow the same training protocol for the three categories.
+Table 3
+:
+Few-shot supervised fine-tuning results for IMS, PU, and M0x datasets. Baselines are categorized into Time Series Representation Learning methods (TS RL), Fault Diagnosis Models (FD), and Time Series Foundation Models (TS FM). The superscript
+T
+indicates trainable parameters, while
+N
+indicates non-trainable parameters (parameters are trainable by default).
+Method
+#Parameters
+IMS
+PU
+M01
+M02
+M03
+ACC
+F1
+ACC
+F1
+ACC
+F1
+ACC
+F1
+ACC
+F1
+FD
+C-Trans
+865 K
+55.8 ± 9.1
+44.3 ± 9.4
+41.2 ± 4.8
+39.2 ± 4.7
+96.5 ± 0.2
+74.0 ± 2.5
+95.4 ± 2.6
+63.5 ± 4.2
+99.0 ± 0.1
+49.6 ± 0.1
+WDCNN
+76.8 K
+71.0 ± 4.6
+62.0 ± 8.4
+29.4 ± 1.2
+28.3 ± 2.1
+95.6 ± 0.5
+62.4 ± 8.9
+96.8 ± 0.3
+54.4 ± 0.7
+99.0 ± 0.0
+49.7 ± 0.0
+QCNN
+171 K
+53.8 ± 5.8
+52.3 ± 5.6
+35.6 ± 11.6
+33.6 ± 13.2
+96.5 ± 0.5
+73.6 ± 6.1
+97.4 ± 0.1
+70.6 ± 2.0
+98.9 ± 0.2
+57.9 ± 3.7
+EverAdapt
+200.1K
+81.2 ± 1.4
+78.5 ± 2.9
+72.0 ± 0.7
+71.0 ± 1.0
+96.8 ± 0.4
+76.5 ± 2.8
+97.2 ± 0.2
+68.5 ± 1.5
+99.1 ± 0.1
+58.5 ± 5.2
+TS RL
+TS2VEC
+637.3 K
+88.9 ± 0.2
+87.6 ± 1.4
+68.4 ± 1.1
+68.4 ± 0.9
+95.9 ± 0.1
+49.2 ± 0.0
+96.8 ± 0.2
+49.6 ± 0.0
+98.8 ± 0.1
+49.9 ± 0.0
+TS-TCC
+256 K
+78.5 ± 1.8
+70.2 ± 2.5
+72.8 ± 2.1
+72.5 ± 2.3
+96.2 ± 0.3
+65.8 ± 4.2
+96.9 ± 0.2
+62.3 ± 2.1
+99.0 ± 0.1
+52.4 ± 2.8
+ROCKET
+0
+T
+, 100.1K
+N
+77.1 ± 0.9
+66.0 ± 0.4
+80.1 ± 0.2
+80.3 ± 0.2
+97.3 ± 0.1
+81.4 ± 0.6
+98.0 ± 0.0
+77.7 ± 0.3
+99.0 ± 0.0
+49.7 ± 0.0
+TS FM
+MOMENT-Base
+3.1K
+T
+, 109.6M
+N
+82.4 ± 1.5
+74.6 ± 1.8
+54.2 ± 1.2
+53.8 ± 1.4
+96.4 ± 0.3
+68.2 ± 3.5
+96.7 ± 0.3
+60.8 ± 2.2
+99.0 ± 0.1
+50.5 ± 1.5
+GPT4TS
+1.3M
+T
+, 81.1M
+N
+36.2 ± 1.1
+20.4 ± 0.9
+38.5 ± 1.5
+36.2 ± 1.8
+95.2 ± 0.8
+58.4 ± 5.6
+95.8 ± 0.5
+55.2 ± 3.4
+98.9 ± 0.1
+49.8 ± 0.5
+TSLANet
+531 K
+91.3 ± 0.5
+83.1 ± 0.9
+69.8 ± 2.4
+69.6 ± 2.8
+54.1 ± 7.1
+42.0 ± 7.8
+95.4 ± 2.0
+71.0 ± 2.9
+99.0 ± 0.0
+49.7 ± 0.0
+Ours
+UniFault
+\xspace
+-Lite
+823 K
+95.5 ± 1.6
+96.2 ± 1.3
+76.4 ± 1.8
+76.1 ± 2.1
+97.5 ± 0.1
+82.9 ± 1.2
+97.6 ± 0.0
+70.1 ± 0.7
+99.2 ± 0.1
+63.8 ± 7.7
+UniFault
+\xspace
+-Base
+6.4 M
+98.1 ± 1.0
+98.3 ± 0.8
+79.3 ± 0.5
+79.4 ± 0.4
+97.6 ± 0.2
+84.0 ± 1.4
+97.7 ± 0.0
+71.2 ± 0.5
+99.2 ± 0.1
+64.8 ± 8.7
+5
+Results
+Table
+3
+presents the fine-tuning results on the IMS, UO, and CNC datasets, comparing our proposed
+UniFault
+\xspace
+model variants (Lite and Base) against baseline methods from the three categories described in Section
+4.4
+.
+The results show that the proposed
+UniFault
+\xspace
+models demonstrate strong and consistent few-shot fine-tuning performance across all datasets. On the challenging IMS dataset,
+UniFault
+\xspace
+-Base achieves the highest accuracy and F1-score (98.1% / 98.3%), outperforming all Time-Series Representation Learning and Fault Diagnosis baselines. The smaller
+UniFault
+\xspace
+-Lite variant also delivers competitive results (95.5% / 96.2%), confirming that efficient fine-tuning can be achieved without compromising representational robustness. These findings underscore the effectiveness of hierarchical Transformer-based pretraining in modeling complex, evolving fault dynamics.
+Across the PU and CNC datasets,
+UniFault
+\xspace
+-Base remains among the top-performing methods, matching or narrowly trailing ROCKET on specific subsets while surpassing all FD and TS FM baselines in overall stability. The
+UniFault
+\xspace
+variants maintain high accuracy and superior F1-scores, particularly on complex component datasets (M01, M03), highlighting their adaptability to both naturally evolving and synthetic fault domains. Overall, large-scale time-series pretraining enables
+UniFault
+\xspace
+to generalize effectively under few-shot supervision, outperforming traditional models that depend on handcrafted or shallow representations.
+5.1
+Ablation Study
+5.1.1
+Effect of Cross-dataset Temporal Fusion
+Figure 2
+:
+Effect of Cross-dataset Temporal Fusion on IMS and PU datasets for both Unifault models.
+Figure
+2
+shows the effect of Temporal Fusion on fine-tuning performance for the IMS and PU datasets, evaluated using
+Unifault-Lite
+and
+Unifault-Base
+. Temporal Fusion consistently enhances accuracy across both models and datasets, but the magnitude of improvement varies according to dataset characteristics and model capacity.
+On the IMS dataset,
+Unifault-Lite
+improves from 94.5% to 95.5%, while
+Unifault-Base
+rises from 94.9% to 98.1%. This steady gain indicates that both models benefit from the additional temporal diversity, which helps them better capture slowly evolving fault dynamics typical of gradual bearing degradation.
+For the more heterogeneous PU dataset, which includes both artificially induced and naturally degraded faults, the effect is even stronger. Accuracy increases from 67.9% to 76.4% for
+Unifault-Lite
+and from 68.1% to 79.3% for
+Unifault-Base
+. These results suggest that Temporal Fusion provides critical robustness to domain shifts and fault-type variability.
+Overall, Temporal Fusion proves especially beneficial for complex datasets with non-stationary fault behaviors, improving generalization and stability during fine-tuning. The larger
+Unifault-Base
+model capitalizes most on this effect, reflecting its stronger capacity to learn from temporally enriched pretraining data.
+5.1.2
+Impact of Model Depth
+Figure 3
+:
+Effect of model depth on the Base model performance across IMS, PU, and M01 datasets (mean
+±
+\pm
+stdev over three seeds).
+Figure
+3
+illustrates the effect of model depth on fine-tuning accuracy for the IMS, PU, and M01 datasets using the
+Unifault-Base
+architecture. Deeper models consistently improve accuracy on IMS and M01, while PU exhibits only moderate gains before a slight drop at higher depth.
+For IMS, accuracy rises from 94.7% at 2 layers to 98.1% at 8 layers, confirming that additional depth enhances the model’s ability to capture long-term degradation patterns typical of naturally evolving faults. PU shows a smaller improvement, increasing from 76.8% to 79.3% at 8 layers before decreasing slightly to 77.1% at 16 layers, indicating a saturation effect caused by limited data variability. The M01 dataset remains largely stable across depths, with accuracy consistently near 97.5%, reflecting its simpler operational domain and weaker dependence on hierarchical depth.
+Overall, the results suggest that moderate depth (around 8 layers) offers the best trade-off between performance and efficiency. While deeper architectures can capture complex temporal and frequency interactions, their added capacity yields diminishing returns on datasets with less temporal diversity. Thus, selecting the appropriate depth depends on the intrinsic complexity of the data, as well as the fault evolution dynamics.
+5.2
+Model Analysis
+5.2.1
+Representation Geometry Before vs. After UniFault
+Figure
+4
+visualizes penultimate-layer embeddings with t
+-
+SNE for two datasets (CWRU and MFPT), comparing the
+same
+model (
+Unifault-Base
+)
+before
+and
+after
+applying UniFault. On CWRU (top row), the pre-UniFault features are fractured and partially overlapped (mixed color islands), indicating weak class separation. After UniFault, the embedding collapses into two compact, well-separated manifolds with a clear margin. We observe the same pattern on MFPT (bottom row): diffuse and interwoven clusters prior to UniFault, followed by a tight, bimodal structure afterward. Qualitatively, UniFault reduces intra-class spread while increasing inter-class separation, suggesting a cleaner decision boundary that transfers across datasets. As always with t
+-
+SNE, we fixed perplexity and optimization settings across all plots so differences reflect representational changes rather than visualization artifacts.
+(a)
+(b)
+(c)
+(d)
+Figure 4
+:
+t
+-
+SNE of penultimate-layer features for CWRU and MFPT using
+Unifault-Base
+before vs. after UniFault. Each point is a sample; color denotes class. UniFault tightens intra-class clusters and increases inter-class margins across both datasets.
+5.2.2
+K-shot Experiment
+Figure 5
+:
+K-shot experiment on IMS with Unifault-Lite and Unifault-Base (mean
+±
+\pm
+std over three seeds).
+Figure
+5
+reports the few-shot fine-tuning results on IMS for
+Unifault-Lite
+and
+Unifault-Base
+using
+K
+∈
+{
+1
+,
+5
+,
+10
+}
+K\in\{1,5,10\}
+labeled examples per class. Performance improves monotonically with
+K
+K
+for both models, and the variance decreases, indicating more stable adaptation.
+At
+K
+=
+1
+K=1
+,
+Lite
+attains 77.69% while
+Base
+reaches 72.44%, suggesting the lighter model adapts slightly better in the extremely low-data setting. By
+K
+=
+5
+K=5
+, accuracies rise sharply to 91.99% for
+Lite
+and 90.09% for
+Base
+. With
+K
+=
+10
+K=10
+,
+Base
+overtakes, achieving 96.73% versus 93.88% for
+Lite
+.
+These results show complementary strengths:
+Lite
+delivers stronger one-shot adaptation, whereas
+Base
+capitalizes more on additional labeled examples, ultimately yielding the highest accuracy as
+K
+K
+increases. In practice, the choice between the two depends on the labeling budget and latency constraints: when labels are extremely scarce,
+Lite
+is competitive; as
+K
+K
+grows,
+Base
+provides superior headroom.
+5.2.3
+Training Efficiency Across Model Variants
+Table 4
+:
+Training Time and GPU Memory Usage Across Model Sizes. Peak GPU Memory is in GB.
+Model
+Training Time (s)
+GPU Hours
+Peak GPU Memory
+Lite
+2374
+0.66
+0.82
+Base
+3491
+0.97
+2.06
+To evaluate the scalability and computational demands of our proposed model, we compare the training time, GPU hours, and peak memory consumption of the three variants, as presented in Table
+4
+.
+The
+UniFault
+\xspace
+-Lite variant serves as a lightweight model, requiring only 0.66 GPU hours and 0.82 GB of peak memory, making it well-suited for deployment on edge devices with constrained computational resources. The
+UniFault
+\xspace
+-Base model offers a balance between efficiency and performance, with 0.97 GPU hours and a 2.06 GB memory footprint, making it ideal for standard industrial FD applications.
+This analysis highlights the trade-offs between model complexity and resource requirements, offering flexible deployment options depending on the target application.
+6
+Conclusion and Future Work
+In this paper, we introduce
+UniFault
+\xspace
+, a transformer-based foundation model for few-shot fault diagnosis in bearing data.
+UniFault
+\xspace
+is pretrained on over 6.9 million samples from diverse, heterogeneous datasets spanning multiple applications. To address data heterogeneity, we develop a data standardization pipeline and enhance generalization by incorporating new distributions through cross-dataset temporal fusion.
+Extensive evaluations across multiple datasets demonstrate that
+UniFault
+\xspace
+consistently outperforms state-of-the-art baselines across various categories. Moreover, by pretraining different model variants, we show that
+UniFault
+\xspace
+effectively balances performance and computational efficiency—an essential advantage for real-world deployment. Beyond achieving superior accuracy, our findings underscore the significance of scalable transformer architectures in fault diagnosis.
+Overall,
+UniFault
+\xspace
+marks a significant advancement in predictive maintenance and fault detection, offering a powerful combination of high accuracy, adaptability, and scalability, making it a strong candidate for deployment in real-world industrial applications.
+Moving forward, we identify several key directions for expanding the scope and impact of our foundation model for predictive health maintenance. First, the integration of Stream-of-Quality (SoQ) methodologies will enable real-time, dynamic fault diagnosis by continuously incorporating multi-modal sensor data such as vibration and temperature
+Lee et al. (2022)
+. Embedding our foundation model into SoQ frameworks can transform static detection into adaptive, data-driven fault analytics across multi-stage manufacturing. Second, to extend beyond detection toward fault progression forecasting, we propose incorporating architectures like TimesNet
+Wu et al. (2023)
+, which are well-suited for modeling long-term, multi-scale temporal dependencies. This would enable condition-aware maintenance scheduling, allowing our model not only to detect but to anticipate future degradations. Finally, we envision our model evolving into a knowledge-driven system through integration with Industrial Large Knowledge Models (ILKM)
+Lee and Su (2024)
+. ILKMs can serve as a contextual backbone, linking real-time sensor streams, historical fault data, fine-tuning logs, and maintenance records. This will support automated model adaptation, systematic documentation, and interactive decision-making, enabling a fully closed-loop, intelligent diagnostic ecosystem for rotating machinery.
+References
+[1]
+W. Yan, J. Wang, S. Lu, M. Zhou, and X. Peng
+(2023)
+A review of real-time fault diagnosis methods for industrial smart manufacturing
+.
+Processes
+11
+.
+External Links:
+Link
+,
+ISSN 2227-9717
+,
+Document
+Cited by:
+§1
+.
+[2]
+Z. Gao, C. Cecati, and S. X. Ding
+(2015)
+A survey of fault diagnosis and fault-tolerant techniques—part i: fault diagnosis with model-based and signal-based approaches
+.
+IEEE transactions on industrial electronics
+62
+(
+6
+),
+pp. 3757–3767
+.
+Cited by:
+§1
+.
+[3]
+D. Hoang and H. Kang
+(2019)
+A survey on deep learning based bearing fault diagnosis
+.
+Neurocomputing
+335
+,
+pp. 327–335
+.
+Cited by:
+§1
+.
+[4]
+H. Kim, H. Lee, S. Kim, and S. W. Kim
+(2023)
+Attention recurrent neural network-based severity estimation method for early-stage fault diagnosis in robot harness cable
+.
+Sensors
+23
+.
+External Links:
+Link
+,
+ISSN 1424-8220
+,
+Document
+Cited by:
+§1
+.
+[5]
+E. Principi, D. Rossetti, S. Squartini, and F. Piazza
+(2019)
+Unsupervised electric motor fault detection by using deep autoencoders
+.
+IEEE/CAA Journal of Automatica Sinica
+6
+,
+pp. 441–451
+.
+External Links:
+Document
+Cited by:
+§1
+.
+[6]
+V. Sinitsin, O. Ibryaeva, V. Sakovskaya, and V. Eremeeva
+(2022)
+Intelligent bearing fault diagnosis method combining mixed input and hybrid cnn-mlp model
+.
+Mechanical Systems and Signal Processing
+180
+,
+pp. 109454
+.
+External Links:
+ISSN 0888-3270
+,
+Document
+,
+Link
+Cited by:
+§1
+.
+[7]
+Y. Xu, J.C. Ji, Q. Ni, K. Feng, M. Beer, and H. Chen
+(2023)
+A graph-guided collaborative convolutional neural network for fault diagnosis of electromechanical systems
+.
+Mechanical Systems and Signal Processing
+200
+,
+pp. 110609
+.
+External Links:
+ISSN 0888-3270
+,
+Document
+,
+Link
+Cited by:
+§1
+.
+[8]
+C. Li, L. Mo, C. K. Kwoh, X. Li, Z. Chen, M. Wu, and R. Yan
+(2025)
+Noise-robust multi-view graph neural network for fault diagnosis of rotating machinery
+.
+Mechanical Systems and Signal Processing
+224
+,
+pp. 112025
+.
+External Links:
+ISSN 0888-3270
+,
+Document
+,
+Link
+Cited by:
+§1
+.
+[9]
+X. Chen, R. Yang, Y. Xue, M. Huang, R. Ferrero, and Z. Wang
+(2023)
+Deep transfer learning for bearing fault diagnosis: a systematic review since 2016
+.
+IEEE Transactions on Instrumentation and Measurement
+72
+,
+pp. 1–21
+.
+Cited by:
+§1
+.
+[10]
+Y. Guo, G. Ju, and J. Zhang
+(2024)
+A domain generalization network for imbalanced machinery fault diagnosis
+.
+Scientific Reports
+14
+(
+1
+),
+pp. 25447
+.
+Cited by:
+§1
+.
+[11]
+Z. Zhao, Q. Zhang, X. Yu, C. Sun, S. Wang, R. Yan, and X. Chen
+(2021)
+Applications of unsupervised deep transfer learning to intelligent fault diagnosis: a survey and comparative study
+.
+IEEE Transactions on Instrumentation and Measurement
+70
+,
+pp. 1–28
+.
+Cited by:
+§1
+.
+[12]
+C. Zhao, E. Zio, and W. Shen
+(2024)
+Domain generalization for cross-domain fault diagnosis: an application-oriented perspective and a benchmark study
+.
+Reliability Engineering & System Safety
+,
+pp. 109964
+.
+Cited by:
+§1
+.
+[13]
+O. Fink, Q. Wang, M. Svensen, P. Dersin, W. Lee, and M. Ducoffe
+(2020)
+Potential, challenges and future directions for deep learning in prognostics and health management applications
+.
+Engineering Applications of Artificial Intelligence
+92
+,
+pp. 103678
+.
+Cited by:
+§1
+.
+[14]
+K. Rombach
+(2023)
+Fault diagnostics under label and data scarcity
+.
+Ph.D. Thesis
+,
+ETH Zurich
+.
+Cited by:
+§1
+.
+[15]
+J. Schneider, C. Meske, and P. Kuss
+(2024)
+Foundation models: a new paradigm for artificial intelligence
+.
+Business & Information Systems Engineering
+,
+pp. 1–11
+.
+Cited by:
+§1
+.
+[16]
+Y. Yuan
+(2023)
+On the power of foundation models
+.
+In
+International Conference on Machine Learning
+,
+pp. 40519–40530
+.
+Cited by:
+§1
+.
+[17]
+H. Su and J. Lee
+(2024)
+Machine learning approaches for diagnostics and prognostics of industrial systems using open source data from phm data challenges: a review
+.
+International Journal of Prognostics and Health Management
+15
+(
+2
+).
+Cited by:
+§1
+.
+[18]
+M. Pacella and G. Papadia
+(2020)
+Fault diagnosis by multisensor data: a data-driven approach based on spectral clustering and pairwise constraints
+.
+Sensors
+20
+.
+External Links:
+Link
+,
+ISSN 1424-8220
+,
+Document
+Cited by:
+§1
+.
+[19]
+K. Huang, S. Wu, Y. Li, C. Yang, and W. Gui
+(2021)
+A multi-rate sampling data fusion method for fault diagnosis and its industrial applications
+.
+Journal of Process Control
+104
+,
+pp. 54–61
+.
+External Links:
+ISSN 0959-1524
+,
+Document
+,
+Link
+Cited by:
+§1
+.
+[20]
+J. Jiao, M. Zhao, J. Lin, and K. Liang
+(2020)
+A comprehensive review on convolutional neural network in machine fault diagnosis
+.
+Neurocomputing
+417
+,
+pp. 36–63
+.
+Cited by:
+§2.1
+.
+[21]
+D. Hoang and H. Kang
+(2019)
+Rolling element bearing fault diagnosis using convolutional neural network and vibration image
+.
+Cognitive Systems Research
+53
+,
+pp. 42–50
+.
+Cited by:
+§2.1
+.
+[22]
+B. Hu, J. Liu, and Y. Xu
+(2025)
+A novel multi-scale convolutional neural network incorporating multiple attention mechanisms for bearing fault diagnosis
+.
+Measurement
+242
+,
+pp. 115927
+.
+Cited by:
+§2.1
+.
+[23]
+A. Kumar, A. Parey, and P. K. Kankar
+(2024)
+A new hybrid lstm-gru model for fault diagnosis of polymer gears using vibration signals
+.
+Journal of Vibration Engineering & Technologies
+12
+(
+2
+),
+pp. 2729–2741
+.
+Cited by:
+§2.1
+.
+[24]
+W. Fan, J. Yao, S. Cui, Y. Wang, S. Xu, Y. Tan, F. Yang, and W. Wu
+(2024)
+Bi-lstm/gru-based anomaly diagnosis for virtual network function instance
+.
+Computer Networks
+249
+,
+pp. 110515
+.
+Cited by:
+§2.1
+.
+[25]
+R. Wang, E. Dong, Z. Cheng, Z. Liu, and X. Jia
+(2024)
+Transformer-based intelligent fault diagnosis methods of mechanical equipment: a survey
+.
+Open Physics
+22
+(
+1
+),
+pp. 20240015
+.
+Cited by:
+§2.1
+.
+[26]
+C. Wang, B. Tian, J. Yang, H. Jie, Y. Chang, and Z. Zhao
+(2024)
+Neural-transformer: a brain-inspired lightweight mechanical fault diagnosis method under noise
+.
+Reliability Engineering & System Safety
+251
+,
+pp. 110409
+.
+Cited by:
+§2.1
+.
+[27]
+Y. Xiao, H. Shao, J. Wang, S. Yan, and B. Liu
+(2024)
+Bayesian variational transformer: a generalizable model for rotating machinery fault diagnosis
+.
+Mechanical Systems and Signal Processing
+207
+,
+pp. 110936
+.
+Cited by:
+§2.1
+.
+[28]
+C. Zhang and L. Zhang
+(2024)
+Wind turbine pitch bearing fault detection with bayesian augmented temporal convolutional networks
+.
+Structural Health Monitoring
+23
+(
+2
+),
+pp. 1089–1106
+.
+Cited by:
+§2.1
+.
+[29]
+J. Achiam, S. Adler, S. Agarwal, L. Ahmad, I. Akkaya, F. L. Aleman, D. Almeida, J. Altenschmidt, S. Altman, S. Anadkat,
+et al.
+(2023)
+Gpt-4 technical report
+.
+arXiv preprint arXiv:2303.08774
+.
+Cited by:
+§2.2
+.
+[30]
+G. Team, R. Anil, S. Borgeaud, Y. Wu, J. Alayrac, J. Yu, R. Soricut, J. Schalkwyk, A. Dai, A. Hauth,
+et al.
+(2024)
+Gemini: a family of highly capable multimodal models, 2024
+.
+arXiv preprint arXiv:2312.11805
+.
+Cited by:
+§2.2
+.
+[31]
+A. Liu, B. Feng, B. Xue, B. Wang, B. Wu, C. Lu, C. Zhao, C. Deng, C. Zhang, C. Ruan,
+et al.
+(2024)
+Deepseek-v3 technical report
+.
+arXiv preprint arXiv:2412.19437
+.
+Cited by:
+§2.2
+.
+[32]
+Y. Liang, H. Wen, Y. Nie, Y. Jiang, M. Jin, D. Song, S. Pan, and Q. Wen
+(2024)
+Foundation models for time series analysis: a tutorial and survey
+.
+In
+Proceedings of the 30th ACM SIGKDD conference on knowledge discovery and data mining
+,
+pp. 6555–6565
+.
+Cited by:
+§2.2
+.
+[33]
+M. Jin, S. Wang, L. Ma, Z. Chu, J. Y. Zhang, X. Shi, P. Chen, Y. Liang, Y. Li, S. Pan,
+et al.
+Time-llm: time series forecasting by reprogramming large language models
+.
+In
+The Twelfth International Conference on Learning Representations
+,
+Cited by:
+§2.2
+.
+[34]
+X. Liu, J. Hu, Y. Li, S. Diao, Y. Liang, B. Hooi, and R. Zimmermann
+(2024)
+Unitime: a language-empowered unified model for cross-domain time series forecasting
+.
+In
+Proceedings of the ACM on Web Conference 2024
+,
+pp. 4095–4106
+.
+Cited by:
+§2.2
+.
+[35]
+M. Goswami, K. Szafer, A. Choudhry, Y. Cai, S. Li, and A. Dubrawski
+(2024)
+MOMENT: a family of open time-series foundation models
+.
+In
+International Conference on Machine Learning
+,
+Cited by:
+§2.2
+,
+§4.4
+.
+[36]
+T. Zhou, P. Niu, X. Wang, L. Sun, and R. Jin
+(2023)
+One fits all: power general time series analysis by pretrained LM
+.
+In
+NeurIPS
+,
+Cited by:
+§2.2
+,
+§4.4
+.
+[37]
+E. Eldele, M. Ragab, Z. Chen, M. Wu, and X. Li
+(2024)
+TSLANet: rethinking transformers for time series representation learning
+.
+In
+International Conference on Machine Learning
+,
+Cited by:
+§2.2
+,
+§3.4
+,
+§4.4
+.
+[38]
+S. Anbalagan, D. Agarwal, B. Natarajan, and B. Srinivasan
+(2023)
+Foundational models for fault diagnosis of electrical motors
+.
+In
+2023 IEEE International Conference on Power Electronics, Smart Grid, and Renewable Energy (PESGRE)
+,
+pp. 1–6
+.
+Cited by:
+§2.3
+.
+[39]
+Z. Lai, C. Yang, S. Lan, L. Wang, W. Shen, and L. Zhu
+(2024)
+BearingFM: towards a foundation model for bearing fault diagnosis by domain knowledge and contrastive learning
+.
+International Journal of Production Economics
+275
+,
+pp. 109319
+.
+Cited by:
+§2.3
+.
+[40]
+Y. Ganin, E. Ustinova, H. Ajakan, P. Germain, H. Larochelle, F. Laviolette, M. March, and V. Lempitsky
+(2016)
+Domain-adversarial training of neural networks
+.
+Journal of Machine Learning Research
+17
+(
+59
+),
+pp. 1–35
+.
+External Links:
+Link
+Cited by:
+§2.3
+.
+[41]
+E. Tzeng, J. Hoffman, K. Saenko, and T. Darrell
+(2017)
+Adversarial discriminative domain adaptation
+.
+In
+Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)
+,
+Cited by:
+§2.3
+.
+[42]
+Y. Nie, N. H. Nguyen, P. Sinthong, and J. Kalagnanam
+(2023)
+A time series is worth 64 words: long-term forecasting with transformers
+.
+In
+International Conference on Learning Representations
+,
+Cited by:
+§3.3.4
+.
+[43]
+E. Eldele, M. Ragab, Z. Chen, M. Wu, C. Kwoh, and X. Li
+(2024)
+Contrastive domain adaptation for time-series via temporal mixup
+.
+IEEE Transactions on Artificial Intelligence
+5
+(
+4
+),
+pp. 1185–1194
+.
+External Links:
+Document
+Cited by:
+§3.3.6
+.
+[44]
+A. Dosovitskiy, L. Beyer, A. Kolesnikov, D. Weissenborn, X. Zhai, T. Unterthiner, M. Dehghani, M. Minderer, G. Heigold, S. Gelly, J. Uszkoreit, and N. Houlsby
+(2021)
+An image is worth 16x16 words: transformers for image recognition at scale
+.
+In
+International Conference on Learning Representations
+,
+External Links:
+Link
+Cited by:
+§3.4
+.
+[45]
+J. Zhao, F. Huang, J. Lv, Y. Duan, Z. Qin, G. Li, and G. Tian
+(2020)
+Do RNN and LSTM have long memory?
+.
+In
+Proceedings of the 37th International Conference on Machine Learning
+,
+H. D. III and A. Singh (Eds.)
+,
+Proceedings of Machine Learning Research
+, Vol.
+119
+,
+pp. 11365–11375
+.
+Cited by:
+§3.4
+.
+[46]
+J. Lee, H. Qiu, G. Yu, J. Lin,
+et al.
+(2007)
+Rexnord technical services: bearing data set
+.
+Moffett Field, CA: IMS, Univ. Cincinnati. NASA Ames Prognostics Data Repository, NASA Ames
+12
+,
+pp. 174102
+.
+Cited by:
+§4.1
+.
+[47]
+K. Loparo
+(2015)
+Bearings vibration dataset. case western reserve university, 2011
+.
+Cited by:
+§4.1
+.
+[48]
+C. Lessmeier, J. K. Kimotho, D. Zimmer, and W. Sextro
+(2016)
+Condition monitoring of bearing damage in electromechanical drive systems by using motor current signals of electric motors: a benchmark data set for data-driven classification
+.
+In
+PHM Society European Conference
+,
+Vol.
+3
+.
+Cited by:
+§4.1
+.
+[49]
+P. Nectoux, R. Gouriveau, K. Medjaher, E. Ramasso, B. Chebel-Morello, N. Zerhouni, and C. Varnier
+(2012)
+PRONOSTIA: an experimental platform for bearings accelerated degradation tests.
+.
+In
+IEEE International Conference on Prognostics and Health Management, PHM’12.
+,
+pp. 1–8
+.
+Cited by:
+§4.1
+.
+[50]
+B. Wang, Y. Lei, N. Li, and N. Li
+(2018)
+A hybrid prognostics approach for estimating remaining useful life of rolling element bearings
+.
+IEEE Transactions on Reliability
+69
+(
+1
+),
+pp. 401–412
+.
+Cited by:
+§4.1
+.
+[51]
+V. Sinitsin, O. Ibryaeva, V. Sakovskaya, and V. Eremeeva
+(2022)
+Intelligent bearing fault diagnosis method combining mixed input and hybrid cnn-mlp model
+.
+Mechanical Systems and Signal Processing
+180
+,
+pp. 109454
+.
+External Links:
+ISSN 0888-3270
+,
+Document
+,
+Link
+Cited by:
+§4.1
+.
+[52]
+W. Jung, S. Yun, and Y. Park
+(2024)
+Vibration, and temperature run-to-failure dataset of ball bearing for prognostics
+.
+Data in Brief
+54
+,
+pp. 110403
+.
+External Links:
+Document
+,
+Link
+Cited by:
+§4.1
+.
+[53]
+Z. Wang, W. Huang, Y. Chen, Y. Jiang, and G. Peng
+(2022)
+Multisource cross-domain fault diagnosis of rolling bearing based on subdomain adaptation network
+.
+Measurement Science and Technology
+33
+(
+10
+),
+pp. 105109
+.
+External Links:
+Document
+,
+Link
+Cited by:
+§4.1
+.
+[54]
+M. Tnani, M. Feil, and K. Diepold
+(2022)
+Smart data collection system for brownfield cnc milling machines: a new benchmark dataset for data-driven machine monitoring
+.
+Procedia CIRP
+107
+,
+pp. 131–136
+.
+Note:
+Leading manufacturing systems transformation – Proceedings of the 55th CIRP Conference on Manufacturing Systems 2022
+External Links:
+ISSN 2212-8271
+,
+Document
+,
+Link
+Cited by:
+§4.1
+.
+[55]
+A. P. Daga, A. Fasana, S. Marchesiello, and L. Garibaldi
+(2019)
+The politecnico di torino rolling bearing test rig: description and analysis of open access data
+.
+Mechanical Systems and Signal Processing
+120
+,
+pp. 252–273
+.
+External Links:
+ISSN 0888-3270
+,
+Document
+,
+Link
+Cited by:
+§4.1
+.
+[56]
+Z. Lu, L. Liang, J. Zhu, W. Zou, and L. Mao
+(2023)
+Rotating machinery fault diagnosis under multiple working conditions via a time-series transformer enhanced by convolutional neural network
+.
+IEEE Transactions on Instrumentation and Measurement
+72
+(
+),
+pp. 1–11
+.
+External Links:
+Document
+Cited by:
+§4.4
+.
+[57]
+W. Zhang, G. Peng, C. Li, Y. Chen, and Z. Zhang
+(2017)
+A new deep learning model for fault diagnosis with good anti-noise and domain adaptation ability on raw vibration signals
+.
+Sensors
+17
+(
+2
+).
+External Links:
+Link
+,
+ISSN 1424-8220
+,
+Document
+Cited by:
+§4.4
+.
+[58]
+J. Liao, H. Dong, Z. Sun, J. Sun, S. Zhang, and F. Fan
+(2023)
+Attention-embedded quadratic network (qttention) for effective and interpretable bearing fault diagnosis
+.
+IEEE Transactions on Instrumentation and Measurement
+72
+(
+),
+pp. 1–13
+.
+External Links:
+Document
+Cited by:
+§4.4
+.
+[59]
+Edward, M. Ragab, M. Wu, Y. Xu, Z. Chen, A. Alseiari, and X. Li
+(2025)
+EverAdapt: continuous adaptation for dynamic machine fault diagnosis environments
+.
+Mechanical Systems and Signal Processing
+226
+,
+pp. 112317
+.
+External Links:
+ISSN 0888-3270
+,
+Document
+,
+Link
+Cited by:
+§4.4
+.
+[60]
+Z. Yue, Y. Wang, J. Duan, T. Yang, C. Huang, Y. Tong, and B. Xu
+(2022)
+Ts2vec: towards universal representation of time series
+.
+In
+Proceedings of the AAAI Conference on Artificial Intelligence
+,
+Vol.
+36
+,
+pp. 8980–8987
+.
+Cited by:
+§4.4
+.
+[61]
+E. Eldele, M. Ragab, Z. Chen, M. Wu, C. K. Kwoh, X. Li, and C. Guan
+(2021)
+Time-series representation learning via temporal and contextual contrasting
+.
+In
+Proceedings of the Thirtieth International Joint Conference on Artificial Intelligence, IJCAI-21
+,
+pp. 2352–2359
+.
+Cited by:
+§4.4
+.
+[62]
+A. Dempster, F. Petitjean, and G. I. Webb
+(2020)
+ROCKET: exceptionally fast and accurate time series classification using random convolutional kernels
+.
+Data Mining and Knowledge Discovery
+34
+(
+5
+),
+pp. 1454–1495
+.
+Cited by:
+§4.4
+.
+[63]
+J. Lee, P. Gore, X. Jia, S. Siahpour, P. Kundu, and K. Sun
+(2022)
+Stream-of-quality methodology for industrial internet-based manufacturing system
+.
+Manufacturing Letters
+34
+,
+pp. 58–61
+.
+External Links:
+ISSN 2213-8463
+,
+Document
+,
+Link
+Cited by:
+§6
+.
+[64]
+H. Wu, T. Hu, Y. Liu, H. Zhou, J. Wang, and M. Long
+(2023)
+TimesNet: temporal 2d-variation modeling for general time series analysis
+.
+In
+International Conference on Learning Representations
+,
+Cited by:
+§6
+.
+[65]
+J. Lee and H. Su
+(2024)
+A unified industrial large knowledge model framework in industry 4.0 and smart manufacturing
+.
+International Journal of AI for Materials and Design
+1
+,
+pp. 41–47
+.
+External Links:
+ISSN 3041-0746
+,
+Document
+,
+Link
+Cited by:
+§6
+.

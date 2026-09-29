@@ -1,0 +1,1 @@
+{"python": "3.12.14 (main, Sep  2 2026, 23:27:36) [GCC 15.3.0]", "platform": "Linux-5.10.134-013.8.2.kangaroo.al8.x86_64-x86_64-with-glibc2.39", "torch": "2.11.0+cu128", "cuda": "12.8", "cuda_available": true, "numpy": "1.26.0"}

@@ -1,0 +1,45 @@
+{
+  "main": {
+    "pair_count": 368376,
+    "unique_queries": 122792,
+    "prediction_sha256": "23373a08b5f042dfe7aed07d94bd327d28bf0ce064f752662cf95fa97922c004",
+    "all_metadata_labels_match": true,
+    "all_reference_labels_healthy": true,
+    "all_reference_conditions_match": true,
+    "all_reference_sources_match": true,
+    "probabilities_and_argmax_valid": true
+  },
+  "fallback": {
+    "pair_count": 38172,
+    "unique_queries": 12724,
+    "prediction_sha256": "9dfc1426559afee57931ed1ac687f6f16289f95a5ea61f0e14357ba6c2d64846",
+    "all_metadata_labels_match": true,
+    "all_reference_labels_healthy": true,
+    "all_reference_conditions_match": false,
+    "all_reference_sources_match": true,
+    "probabilities_and_argmax_valid": true
+  },
+  "dataset_rows": 135516,
+  "union_unique_queries": 135516,
+  "overlap_queries": 0,
+  "complete_135516_query_coverage": true,
+  "interpretation": "Full query coverage is the union of the main same-condition experiment and separately reported auxiliary same-source fallback; their metrics must not be merged into an official-protocol score.",
+  "corpus": {
+    "count": 600,
+    "all_ids_present_once": true,
+    "source_fields_unchanged": true,
+    "all_reference_nll_finite": true,
+    "parsing_consistent": true,
+    "truncated_outputs": 0,
+    "prediction_sha256": "ba65d9851f8498f822fde4b62aa3f4ed35b8b3e2402040193174e05375ab7816"
+  },
+  "reconstructed_test_generation": {
+    "unique_queries": 12279,
+    "all_expected_ids_present_once": true,
+    "metadata_and_same_condition_healthy_references_valid": true,
+    "parsing_consistent": true,
+    "truncated_outputs": 0,
+    "prediction_sha256": "66bcca905f91343efbc47f9d97b2483f83d3593968e759007be018ab28c2b2fb",
+    "caveat": "Released checkpoint training membership is unknown; reconstructed test split does not prove independent held-out evaluation."
+  }
+}

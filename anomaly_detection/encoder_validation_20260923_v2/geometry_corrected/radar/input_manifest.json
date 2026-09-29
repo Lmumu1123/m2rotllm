@@ -1,0 +1,86 @@
+[
+  {
+    "path": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/results/20260920-184058-normal-11520.npz",
+    "bytes": 31043142,
+    "mtime_ns": 1790173714851932372,
+    "sha256": "e898b5ae5343c4911fe11990879db8cafb92878b9d7154cda33fc81eea2fa51a",
+    "sidecar_sha256": "fef72d3f6e05fe64dbf7f4112255fb9e853fb7be028297849e1367cff2c5e80d"
+  },
+  {
+    "path": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/results/20260920-184857-normal-460800.npz",
+    "bytes": 24392196,
+    "mtime_ns": 1790173720235337613,
+    "sha256": "b883c3bc83b2ccc1a04ecc4d8cbda3f03d50abcf73188f01bc3f930860acb4ea",
+    "sidecar_sha256": "ada24c91011afb937e5a6d3560e2f5ccecfd74be10391fac2e362a0d89e7a4e9"
+  },
+  {
+    "path": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/results/20260920-190512-outBroken-115200.npz",
+    "bytes": 25639689,
+    "mtime_ns": 1790173725781724850,
+    "sha256": "d91e812f7ef0fa804b8103a3d161b998b43548e6dc795badf4594893a70a42f7",
+    "sidecar_sha256": "d28b828bc9b311a9a2400f5edcd0132653502fbd3d16f466ed16d67cbdf2d77f"
+  },
+  {
+    "path": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/results/20260920-190913-outBroken-460800.npz",
+    "bytes": 25627888,
+    "mtime_ns": 1790173731356108994,
+    "sha256": "2a285e8c9d5f3a55fd7de2de4d1b6ab1235a8c0c5271ee6344f66223580e90f5",
+    "sidecar_sha256": "3c3aaba826ff0681772901bde5e9c9fcac262dee2ea7b6cadd05e0eedc5df7a9"
+  },
+  {
+    "path": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/results/20260920-192216-inBroken-115200.npz",
+    "bytes": 25297442,
+    "mtime_ns": 1790173737037481318,
+    "sha256": "d335da7a0521a4ec7dee1d71d3b7b0039509b0637a501b6e8d63ae43ae34d0b4",
+    "sidecar_sha256": "a8271d1d2a388a3ea1a755a5f77578ac1bb79bb92e2fe2a911b4af05a649f9e6"
+  },
+  {
+    "path": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/results/20260920-192610-inBroken-460800.npz",
+    "bytes": 25871530,
+    "mtime_ns": 1790173742784846351,
+    "sha256": "25466f137bec5f28c72fbcbde98b1d43c05420100723c94dba377d9eaf84363e",
+    "sidecar_sha256": "17065efb72be92c5bd6aca8d5638dc3c556f25f6c0c0d347da4755dbf1c8232f"
+  },
+  {
+    "path": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/results/20260920-193718-roll-115200.npz",
+    "bytes": 26147204,
+    "mtime_ns": 1790173748456219778,
+    "sha256": "eeafc972ab29df310de1726afe54652f7ee70e8d47f9ee8115e068f84909f391",
+    "sidecar_sha256": "3cd1054314ba01c4e99fef3036c17bd691ff991c12e5e2b477c3b8490a8259b9"
+  },
+  {
+    "path": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/results/20260920-194108-roll-460800.npz",
+    "bytes": 26141621,
+    "mtime_ns": 1790173754092597073,
+    "sha256": "b9fadfa7346c906ae2ad5f0bf2c30bc7946b33ee6bf0d11a5206b362b0d7739b",
+    "sidecar_sha256": "af2f53061ec684cd0ffdfa481897908e59cf035400c0eb727bbe1c615507bbd9"
+  },
+  {
+    "path": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/results/20260920-195424-keep-115200.npz",
+    "bytes": 26220285,
+    "mtime_ns": 1790173759714975913,
+    "sha256": "ac56ec3033e67dec891b923069f5cad22016c3a140400da03bf3b6e93b9fc1e7",
+    "sidecar_sha256": "7e80a81792343a0e3d8dcdc69e2540d5b6f0e03b76c80439007b79ce853bb477"
+  },
+  {
+    "path": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/results/20260920-195753-keep-460800.npz",
+    "bytes": 26210471,
+    "mtime_ns": 1790173765335354976,
+    "sha256": "8fa326e7dc64e1e7598eeb65af0a2124b9be01c870a571480b7e884f49cd3486",
+    "sidecar_sha256": "489729c32bec0d7d42a9f314bb675eedd31f6fe952b6e0d70c38032c1b8e9c3c"
+  },
+  {
+    "path": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/results/20260920-201757-bigNormal-115200.npz",
+    "bytes": 25876416,
+    "mtime_ns": 1790173770750756684,
+    "sha256": "e8ca7f2d322cc1df56175743627c4995b38ae2056918e91f06945bac3750b444",
+    "sidecar_sha256": "83058b12e688d19ca17f65e2ee0e532011c388a5f8d1127c610c87b6a669c987"
+  },
+  {
+    "path": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/results/20260920-202115-bigNormal-460800.npz",
+    "bytes": 25946067,
+    "mtime_ns": 1790173776109164688,
+    "sha256": "7b2f9c8219102d68f45f6fe892947200925a7fa6945b365564b42cecf2f6a549",
+    "sidecar_sha256": "81fe4f9fcf8a2c4e81da35feb76c6ada6f1427ce4531e64def17fc849372b1fe"
+  }
+]

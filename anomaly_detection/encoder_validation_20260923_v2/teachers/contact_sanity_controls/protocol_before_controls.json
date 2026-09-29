@@ -1,0 +1,12 @@
+{
+  "timing": "Declared after UniFault 58/58 observed; diagnostic only, no input/model selection",
+  "purpose": "Check whether simple sensor offset, RMS or spectrum already separates this development set",
+  "methods": [
+    "raw_dc3",
+    "ac_rms3",
+    "ac_stats12",
+    "ac_spectral_shape64"
+  ],
+  "readout": "same fixed train-only StandardScaler + balanced LogisticRegression C=1",
+  "confounds": "raw_dc includes gravity, orientation and sensor bias; not a fault-specific label"
+}

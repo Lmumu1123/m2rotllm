@@ -1,0 +1,10 @@
+test_2i2q_layout_range_peak (test_preprocess.PreprocessingTests.test_2i2q_layout_range_peak) ... ok
+test_dcn_physical_frequency_and_normalization (test_preprocess.PreprocessingTests.test_dcn_physical_frequency_and_normalization) ... ok
+test_masked_sinusoid_uses_actual_times (test_preprocess.PreprocessingTests.test_masked_sinusoid_uses_actual_times) ... ok
+test_packet_gaps_corruption_and_unterminated_tail (test_preprocess.PreprocessingTests.test_packet_gaps_corruption_and_unterminated_tail) ... ok
+test_reference_isolation_and_coverage (test_preprocess.PreprocessingTests.test_reference_isolation_and_coverage) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.031s
+
+OK

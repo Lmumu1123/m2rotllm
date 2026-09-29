@@ -1,0 +1,45 @@
+                               method             fold  n_train_bags  n_test_bags  file_accuracy  file_macro_f1  file_balanced_accuracy  window_accuracy_secondary  ignored_source_absent_features
+                     contact_spectral 115200_to_460800             4            4           1.00       1.000000                    1.00                   1.000000                               0
+            contact_period_normalized 115200_to_460800             4            4           1.00       1.000000                    1.00                   1.000000                               0
+                       contact_hidden 115200_to_460800             4            4           1.00       1.000000                    1.00                   1.000000                               0
+contact_hidden_plus_period_normalized 115200_to_460800             4            4           1.00       1.000000                    1.00                   1.000000                               0
+                    radar_frame_shape 115200_to_460800             4            4           1.00       1.000000                    1.00                   1.000000                               0
+              radar_period_normalized 115200_to_460800             4            4           0.75       0.666667                    0.75                   0.845000                               0
+                     contact_spectral 460800_to_115200             4            4           1.00       1.000000                    1.00                   0.968750                               0
+            contact_period_normalized 460800_to_115200             4            4           1.00       1.000000                    1.00                   0.968750                               0
+                       contact_hidden 460800_to_115200             4            4           1.00       1.000000                    1.00                   0.843750                               0
+contact_hidden_plus_period_normalized 460800_to_115200             4            4           1.00       1.000000                    1.00                   0.843750                               0
+                    radar_frame_shape 460800_to_115200             4            4           1.00       1.000000                    1.00                   0.995283                               0
+              radar_period_normalized 460800_to_115200             4            4           0.50       0.333333                    0.50                   0.594340                               0
+                               method  external_healthy_files  healthy_accepted  healthy_acceptance  mean_healthy_probability  unknown_base_fault_files     unknown_rejection_metric
+                     contact_spectral                       2                 0                 0.0              5.691432e-04                         2 not calibrated, not measured
+            contact_period_normalized                       2                 0                 0.0              1.038249e-02                         2 not calibrated, not measured
+                       contact_hidden                       2                 0                 0.0              6.227130e-37                         2 not calibrated, not measured
+contact_hidden_plus_period_normalized                       2                 0                 0.0              1.603761e-22                         2 not calibrated, not measured
+                    radar_frame_shape                       2                 0                 0.0              1.222324e-07                         2 not calibrated, not measured
+              radar_period_normalized                       2                 0                 0.0              5.003707e-19                         2 not calibrated, not measured
+modality     state   baud  f0_hz
+ contact    normal 115200   33.0
+ contact    normal 460800   33.0
+ contact outBroken 115200   33.0
+ contact outBroken 460800   33.0
+ contact  inBroken 115200   33.0
+ contact  inBroken 460800   33.0
+ contact      roll 115200   33.0
+ contact      roll 460800   33.0
+ contact      keep 115200   66.0
+ contact      keep 460800   66.0
+ contact bigNormal 115200  100.0
+ contact bigNormal 460800  100.0
+   radar    normal 115200   33.0
+   radar    normal 460800   32.5
+   radar outBroken 115200   34.5
+   radar outBroken 460800   36.0
+   radar  inBroken 115200   34.5
+   radar  inBroken 460800   33.0
+   radar      roll 115200   33.0
+   radar      roll 460800   33.5
+   radar      keep 115200   34.0
+   radar      keep 460800   33.0
+   radar bigNormal 115200   10.0
+   radar bigNormal 460800   10.0

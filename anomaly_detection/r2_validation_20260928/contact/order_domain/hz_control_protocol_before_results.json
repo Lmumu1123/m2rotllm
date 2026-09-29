@@ -1,0 +1,13 @@
+{
+  "status": "development_after_primary_and_order_results_not_blind_test",
+  "purpose": "two controlled configurations: original+envelope concatenation with XYZ and XY, RBF SVC C1 gamma scale",
+  "change": "constant reference RPM2000 for every packet solely to define frequency-bin edges: 128 fixed Hz bands spanning16.6666667..666.6666667Hz; actual RPM still used to define held-out folds",
+  "everything_else": "identical axiswise per-window RMS, periodogram,500-1800Hz envelope filter,Hilbert,0.1s edge trim,128 bin-energy integration,log-centering,scaler,session weights,classifier,folds",
+  "comparison_caveat": "order-dependent physical frequency coverage varies with trueRPM; fixed-Hz coverage cannot be identical at all RPM, and this is part of the tested coordinate normalization",
+  "source_retention_certified": false,
+  "input_sha256": {
+    "/home/huangyating/anomaly_detection/r2_validation_20260928/contact/raw_contact_windows.npz": "ec78a877c51693e5e3934e9a35ba8ced8a4d6b3c84f127f256c738f3e9b1535b",
+    "/home/huangyating/anomaly_detection/r2_validation_20260928/contact/contact_features.npz": "87cebaff91249d90f07c1de819612a2adc516120e945fd78345d354280abf66f"
+  },
+  "script_sha256": "ce93562f1afdba4c2f6ccb97a021d8c06bcbd525610279b5ba86e23baecb8473"
+}

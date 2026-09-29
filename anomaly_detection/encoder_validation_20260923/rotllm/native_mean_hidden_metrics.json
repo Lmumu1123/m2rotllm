@@ -1,0 +1,20 @@
+[
+  {
+    "unit": "window",
+    "n": 58,
+    "correct": 13,
+    "accuracy": 0.22413793103448276,
+    "macro_f1": 0.09285714285714286,
+    "gear_mass_mean": 4.964729305356741e-05,
+    "pred15_other_rate": 0.0
+  },
+  {
+    "unit": "file",
+    "n": 8,
+    "correct": 2,
+    "accuracy": 0.25,
+    "macro_f1": 0.1,
+    "gear_mass_mean": 4.5313150621950626e-05,
+    "pred15_other_rate": 0.0
+  }
+]

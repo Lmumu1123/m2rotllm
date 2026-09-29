@@ -1,0 +1,41 @@
+{
+  "status": "complete",
+  "experiment": "read-only saved-model evaluation; no training or selection",
+  "targets": {
+    "contact_accuracy_strictly_greater_than": 0.98,
+    "radar_accuracy_strictly_greater_than": 0.95,
+    "original_accuracy_maximum_decline_percentage_points": 0.5
+  },
+  "primary_unit": "held-out recording, not individual correlated windows",
+  "original_models": [
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_v1/models/v0/115200_to_460800/retained_head.npz",
+      "sha256": "252f3395d039be7db7c5cde018141ac8beaa1b20330c5c6ba93d289dabd09d5e"
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_v0/models/four_class_provisional_roi/115200_to_460800/ce_feat_1_kd.pt",
+      "sha256": "bfe6ee4f34b6f47da9bbcb8fec1a405264931ad0ab05ceb684252e58f5e9fa43"
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_v1/models/v0/460800_to_115200/retained_head.npz",
+      "sha256": "61c257101c9a03bf4e53a5ca27fae603e49a4442f83bd1e7920172c4a7f28549"
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_v0/models/four_class_provisional_roi/460800_to_115200/ce_feat_1_kd.pt",
+      "sha256": "e37e2ba246cedc37e4b9d989bb944f41759387c91d2e99b375d47fc5c528e53a"
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_conservative/models/v0/all_known/retained_head.npz",
+      "sha256": "4ba0bb522c516c3104c3b3d9e9c0d9a0eeaf5a0fc3fc5dc7364b7152e852ad72"
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_conservative_v0/models/four_class_provisional_roi/all_known/ce_feat_1_kd.pt",
+      "sha256": "373d47ca7b81af7da62d14a557bc13afa3fd854b669c3477dae45c719a5c4359"
+    }
+  ],
+  "conservative_all_known_scores_are_training": true,
+  "four_class_radar_acceptance": false,
+  "reason": "Outer-class wrong ROI invalidates full physical four-class acceptance",
+  "external_bigNormal_previous_result": "Both contact and radar classify 0/2 as normal; separate unseen-motor test fails",
+  "small_sample_limitation": "Eight recordings from one rig are not evidence of stable >98%/>95% performance on future recordings"
+}

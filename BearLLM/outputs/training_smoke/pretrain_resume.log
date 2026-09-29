@@ -1,0 +1,4 @@
+{"event": "ram_preload", "shape": [20, 24000], "bytes": 1920000, "seconds": 0.0012579606845974922}
+/usr/local/lib/python3.12/dist-packages/torch/nn/init.py:567: UserWarning: Initializing zero-element tensors is a no-op
+  warnings.warn("Initializing zero-element tensors is a no-op")
+{"event": "pretrain_complete", "results": "/home/huangyating/BearLLM/outputs/training_smoke/pretrain/results.json"}

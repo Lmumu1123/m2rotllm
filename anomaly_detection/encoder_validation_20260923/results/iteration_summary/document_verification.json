@@ -1,0 +1,10 @@
+{
+  "main_report": "/home/huangyating/anomaly_detection/encoder_validation_20260923/第一轮迭代验证结果_通俗汇报.md",
+  "local_links_checked": 14,
+  "missing_links": [],
+  "controls_checkpoints": 36,
+  "rot_radar_model_subdirs": 36,
+  "raw_bin_files_available": 0,
+  "report_bytes": 23001,
+  "report_sha256": "1a6a6cab77ff4ac85d845ddbd7465917a806056bad801a4a25692e173108e714"
+}

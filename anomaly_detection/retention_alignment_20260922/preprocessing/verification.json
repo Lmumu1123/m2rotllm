@@ -1,0 +1,160 @@
+{
+  "exports": [
+    {
+      "variant": "v0",
+      "model": "retrained_fcn",
+      "rows": 88,
+      "metadata_order_identical": true,
+      "weights_hashes_unchanged": true
+    },
+    {
+      "variant": "v0",
+      "model": "retrained_final",
+      "rows": 88,
+      "metadata_order_identical": true,
+      "weights_hashes_unchanged": true
+    },
+    {
+      "variant": "v0",
+      "model": "official_final",
+      "rows": 88,
+      "metadata_order_identical": true,
+      "weights_hashes_unchanged": true
+    },
+    {
+      "variant": "reference_bandlimited2k",
+      "model": "retrained_fcn",
+      "rows": 88,
+      "metadata_order_identical": true,
+      "weights_hashes_unchanged": true
+    },
+    {
+      "variant": "reference_bandlimited2k",
+      "model": "retrained_final",
+      "rows": 88,
+      "metadata_order_identical": true,
+      "weights_hashes_unchanged": true
+    },
+    {
+      "variant": "reference_bandlimited2k",
+      "model": "official_final",
+      "rows": 88,
+      "metadata_order_identical": true,
+      "weights_hashes_unchanged": true
+    },
+    {
+      "variant": "query_no_demean",
+      "model": "retrained_fcn",
+      "rows": 88,
+      "metadata_order_identical": true,
+      "weights_hashes_unchanged": true
+    },
+    {
+      "variant": "query_no_demean",
+      "model": "retrained_final",
+      "rows": 88,
+      "metadata_order_identical": true,
+      "weights_hashes_unchanged": true
+    },
+    {
+      "variant": "query_no_demean",
+      "model": "official_final",
+      "rows": 88,
+      "metadata_order_identical": true,
+      "weights_hashes_unchanged": true
+    },
+    {
+      "variant": "query_no_demean_ref2k",
+      "model": "retrained_fcn",
+      "rows": 88,
+      "metadata_order_identical": true,
+      "weights_hashes_unchanged": true
+    },
+    {
+      "variant": "query_no_demean_ref2k",
+      "model": "retrained_final",
+      "rows": 88,
+      "metadata_order_identical": true,
+      "weights_hashes_unchanged": true
+    },
+    {
+      "variant": "query_no_demean_ref2k",
+      "model": "official_final",
+      "rows": 88,
+      "metadata_order_identical": true,
+      "weights_hashes_unchanged": true
+    },
+    {
+      "variant": "query_ref_demean",
+      "model": "retrained_fcn",
+      "rows": 88,
+      "metadata_order_identical": true,
+      "weights_hashes_unchanged": true
+    },
+    {
+      "variant": "query_ref_demean",
+      "model": "retrained_final",
+      "rows": 88,
+      "metadata_order_identical": true,
+      "weights_hashes_unchanged": true
+    },
+    {
+      "variant": "query_ref_demean",
+      "model": "official_final",
+      "rows": 88,
+      "metadata_order_identical": true,
+      "weights_hashes_unchanged": true
+    },
+    {
+      "variant": "query_ref_demean_ref2k",
+      "model": "retrained_fcn",
+      "rows": 88,
+      "metadata_order_identical": true,
+      "weights_hashes_unchanged": true
+    },
+    {
+      "variant": "query_ref_demean_ref2k",
+      "model": "retrained_final",
+      "rows": 88,
+      "metadata_order_identical": true,
+      "weights_hashes_unchanged": true
+    },
+    {
+      "variant": "query_ref_demean_ref2k",
+      "model": "official_final",
+      "rows": 88,
+      "metadata_order_identical": true,
+      "weights_hashes_unchanged": true
+    }
+  ],
+  "input_hashes_unchanged": true,
+  "v0_hidden_max_difference_from_previous": 0.00017410516738891602,
+  "v0_p4_max_difference_from_previous": 2.8014183044433594e-06,
+  "v0_window_predictions_identical": true,
+  "signed_dct_and_time_contract_verified": true,
+  "synthetic_fixed_duration": [
+    {
+      "fs_hz": 4000,
+      "duration_s": 1,
+      "n_samples": 4000,
+      "dct_peak_index": 274,
+      "peak_physical_hz": 137.0
+    },
+    {
+      "fs_hz": 12000,
+      "duration_s": 1,
+      "n_samples": 12000,
+      "dct_peak_index": 274,
+      "peak_physical_hz": 137.0
+    },
+    {
+      "fs_hz": 48000,
+      "duration_s": 1,
+      "n_samples": 48000,
+      "dct_peak_index": 274,
+      "peak_physical_hz": 137.0
+    }
+  ],
+  "synthetic_4096_full_packet_peak_physical_hz": 133.7890625,
+  "note": "Synthetic tests establish coordinate/implementation facts, not diagnosis or learned invariance."
+}

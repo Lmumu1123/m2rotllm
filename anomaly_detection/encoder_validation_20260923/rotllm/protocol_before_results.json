@@ -1,0 +1,14 @@
+{
+  "created_before_any_local_rotllm_forward": true,
+  "purpose": "Evaluate released RotLLM SFN on contact recordings, then test fixed encoder with a newly fitted contact-only four-class head",
+  "primary_variant": "raw_rms001",
+  "variants_reported_without_test_selection": ["raw_rms001", "demean_rms001", "raw_rms1", "demean_rms1"],
+  "preprocessing": "1 second at measured 4000 Hz, per-axis DCT-II, pad to 24000, RMS normalization; XYZ predictions and hidden vectors averaged",
+  "scale_ambiguity": "Official process_single_data normalizes RMS to 1; current __main__ calls multipy_data to divide a saved dataset by 100. No released runtime record resolves which scaling produced the weights. RMS0.01 is designated primary before inference, both scales are reported.",
+  "native_mapping": {"normal": [0], "inner": [1,2,3], "outer": [7,8,9], "ball": [4,5,6], "gear_out_of_scope": [10,11,12,13,14]},
+  "native_metrics": "Report bearing-conditional grouped probabilities and full 15-head grouped-with-gear-error separately, including raw gear mass. No four-class ground truth used to change native weights.",
+  "new_head": {"kind": "sklearn multinomial LogisticRegression on 128-d mean hidden features", "C": 1.0, "max_iter": 2000, "solver": "lbfgs", "class_weight": "balanced", "random_state": 42, "scaler": "StandardScaler fit contact TRAIN only", "selection": "fixed before results; no held-out model selection"},
+  "split": ["115200_to_460800", "460800_to_115200"],
+  "external": "keep and bigNormal never train or select; bigNormal known normal but excluded from main four-class score, keep unknown",
+  "limitations": "Only 8 main recordings from the same physical fault bearings; no independent new acquisition; no original public test used; no claim of full RotLLM LLM performance or original-task statistical retention"
+}

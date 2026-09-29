@@ -1,0 +1,31 @@
+{
+  "rows": 110,
+  "raw_llm_probability_fidelity_count": 109,
+  "raw_llm_probability_fidelity": 0.990909090909091,
+  "fallback_count": 1,
+  "conflict_ids": [
+    "three_class_geometry_compatible_all_known_no_radar_CE_42_20260920-202115-bigNormal-460800"
+  ],
+  "guarded_rule_consistency_count": 110,
+  "guarded_rule_consistency": 1.0,
+  "rule": "if parsed_coarse_label differs from probability argmax, retain classifier probabilities and argmax; replace only language with fixed class phrase",
+  "interpretation": "Guarded consistency is guaranteed by a deterministic rule, not improved LLM learned accuracy. Original generations and raw LLM metrics remain unchanged.",
+  "ground_truth_and_state_used_for_fallback": false,
+  "truth_state_perturbation_invariance_passed": true,
+  "unknown_detection_supported": false,
+  "unknown_note": "All rows remain closed-set candidates; high confidence does not prove unknown detection. keep is not credited as a correct unknown classification.",
+  "roi_source": "/home/huangyating/anomaly_detection/four_class_chain_20260922/radar/recording_quality.csv",
+  "roi_rule": "For radar rows join actual recording_id by bag_id, use geometry_roi_mismatch; missing quality is unverified. Contact rows have no radar ROI gate.",
+  "invalid_or_unverified_radar_rows": 24,
+  "diagnosis_status_counts": {
+    "experimental_known_class_candidate": 86,
+    "invalid_target_roi": 24
+  },
+  "original_inputs_sha256": {
+    "/home/huangyating/anomaly_detection/four_class_chain_20260922/contact/llm_bridge_chain_v1/generation_predictions.csv": "ba1110047a156f16086e7262e1845bbddc5222e5e6ff07bd8580b1a9d10d7d4a",
+    "/home/huangyating/anomaly_detection/four_class_chain_20260922/contact/llm_bridge_chain_v1/generation_predictions.jsonl": "bc107c9cfed3a58654449ab4efe200ceb48ca5c8f352de47cba3b5055b512704",
+    "/home/huangyating/anomaly_detection/four_class_chain_20260922/radar/recording_quality.csv": "7b129138fdeb5ac8546479fb564b3659583fcbe1f95c5e6043dc5e00c62dea7d"
+  },
+  "original_inputs_unchanged": true,
+  "script_sha256": "e6c207246cf26271e328f59375afd8ec1cb9c875e78aa21c942187330f1e6dd9"
+}

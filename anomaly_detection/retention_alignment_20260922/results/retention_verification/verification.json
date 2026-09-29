@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "head_models_reloaded": 11,
+  "query_reference_aggregation": "softmax per reference, then average",
+  "local_metadata_training_bags_verified": true,
+  "external_excluded_from_training": true,
+  "archived_script_hash_matches": true,
+  "source_test_queries": 12279,
+  "note": "Per-condition results are disclosed; passing global/per-dataset gate is not a guarantee for every small condition or unseen speed/geometry."
+}

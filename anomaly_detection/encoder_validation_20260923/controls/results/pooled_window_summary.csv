@@ -1,0 +1,7 @@
+method,correct_seed_window_predictions,total_seed_window_predictions,pooled_window_accuracy
+ce_only,1230,1236,0.9951456310679612
+full,1232,1236,0.9967637540453075
+label_code_ce_mse,1228,1236,0.9935275080906149
+label_code_mse,1230,1236,0.9951456310679612
+matched_bag_mse,1225,1236,0.9911003236245954
+wrong_class_mse,0,1236,0.0

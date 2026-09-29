@@ -1,0 +1,34 @@
+[
+  {
+    "fold": "115200_to_460800",
+    "feature_file": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/teachers/unifault/paper_100ms/115200_to_460800/teacher_features.npz",
+    "metadata_file": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/teachers/unifault/paper_100ms/115200_to_460800/metadata.csv",
+    "head_file": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/teachers/unifault/heads/115200_to_460800/head.npz",
+    "feature_field": "hidden_mean",
+    "signed_output": true,
+    "n_rows": 88,
+    "n_features": 128,
+    "minmax_fit": "this fold contact train only",
+    "window_identity": [
+      "bag_id",
+      "window_row"
+    ],
+    "native_head_evaluation": false
+  },
+  {
+    "fold": "460800_to_115200",
+    "feature_file": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/teachers/unifault/paper_100ms/460800_to_115200/teacher_features.npz",
+    "metadata_file": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/teachers/unifault/paper_100ms/460800_to_115200/metadata.csv",
+    "head_file": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/teachers/unifault/heads/460800_to_115200/head.npz",
+    "feature_field": "hidden_mean",
+    "signed_output": true,
+    "n_rows": 88,
+    "n_features": 128,
+    "minmax_fit": "this fold contact train only",
+    "window_identity": [
+      "bag_id",
+      "window_row"
+    ],
+    "native_head_evaluation": false
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "python": "3.12.14 (main, Sep  2 2026, 23:27:36) [GCC 15.3.0]",
+  "executable": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "numpy": "1.26.0",
+  "seconds": 6.460047721862793,
+  "script_sha256": "c3d41d3db73de7f28a119756252cb8312d9093fd9345c36153f5ee67e57ffc27",
+  "source": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/results",
+  "output": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/radar",
+  "distance_m": 0.45,
+  "threads": 2,
+  "window_count": 614
+}

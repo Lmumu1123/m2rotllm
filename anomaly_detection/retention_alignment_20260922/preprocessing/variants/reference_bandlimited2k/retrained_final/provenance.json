@@ -1,0 +1,17 @@
+{
+  "kind": "retrained_final",
+  "weights": {
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/finetune/weights/vibration_adapter.pth": "37b85cb6cf0fae3c9a945e52a6c941b40997431c8d6f60ee6e507dbddc21031e",
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/finetune/weights/adapter_model.safetensors": "b2ea0a1d53bb74d8a33371c061b10ff20c61890ad1ecaeadd69c53e73902425e",
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/finetune/weights/adapter_config.json": "83f23c8ef7ff1a2ebd70029676d4f3cd8d892263936fe57a7bc50ddecef7049b"
+  },
+  "lora_merged": true,
+  "lora_scale": 8.0,
+  "query_demean": true,
+  "reference_demean": false,
+  "reference_bandlimit": true,
+  "source_script_sha256": "4f72ae97e30be9d3f7d499b93acb8759bc70265dfc86276470042cd54a77bcbf",
+  "elapsed_s": 0.18819135520607233,
+  "model_weights_and_bn_frozen": true,
+  "no_label_used_for_prediction": true
+}

@@ -1,0 +1,10 @@
+file_id,condition_id,label,source,source_training_query,independently_verified_query_split,independently_verified_healthy
+4,0,0,CWRU,True,train,True
+4718,116,0,DIRG,True,train,True
+17033,766,0,HIT,True,train,True
+42276,804,0,IMS,True,train,True
+86343,823,0,JUST,True,train,True
+111202,844,0,MFPT,True,train,True
+114039,991,0,NCEPU,True,train,True
+118897,1035,0,PU,True,train,True
+125569,1040,0,XJTU,True,train,True

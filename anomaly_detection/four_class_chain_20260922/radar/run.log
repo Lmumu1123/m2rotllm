@@ -1,0 +1,30 @@
+20260920-184058-normal-11520.npz: 61 windows, range 0.462 m
+20260920-184857-normal-460800.npz: 48 windows, range 0.462 m
+20260920-190512-outBroken-115200.npz: 50 windows, range 0.884 m
+20260920-190913-outBroken-460800.npz: 50 windows, range 0.884 m
+20260920-192216-inBroken-115200.npz: 50 windows, range 0.462 m
+20260920-192610-inBroken-460800.npz: 51 windows, range 0.462 m
+20260920-193718-roll-115200.npz: 51 windows, range 0.482 m
+20260920-194108-roll-460800.npz: 51 windows, range 0.482 m
+20260920-195424-keep-115200.npz: 51 windows, range 0.884 m
+20260920-195753-keep-460800.npz: 51 windows, range 0.884 m
+20260920-201757-bigNormal-115200.npz: 50 windows, range 0.522 m
+20260920-202115-bigNormal-460800.npz: 50 windows, range 0.522 m
+ source_baud  target_baud            method  n_train_recordings  n_test_recordings  n_train_windows  n_test_windows  file_accuracy  file_macro_f1  window_accuracy_secondary
+      115200       460800 confound_distance                   4                  4              212             200           0.75       0.666667                   0.760000
+      115200       460800  confound_raw_amp                   4                  4              212             200           1.00       1.000000                   1.000000
+      115200       460800         frame_abs                   4                  4              212             200           1.00       1.000000                   1.000000
+      115200       460800       frame_shape                   4                  4              212             200           1.00       1.000000                   1.000000
+      115200       460800       phase_shape                   4                  4              212             200           1.00       1.000000                   0.995000
+      115200       460800       shape_phase                   4                  4              212             200           1.00       1.000000                   1.000000
+      115200       460800    coherent_shape                   4                  4              212             200           0.50       0.416667                   0.535000
+      115200       460800        time_stats                   4                  4              212             200           0.75       0.666667                   0.800000
+      460800       115200 confound_distance                   4                  4              200             212           0.75       0.666667                   0.764151
+      460800       115200  confound_raw_amp                   4                  4              200             212           1.00       1.000000                   1.000000
+      460800       115200         frame_abs                   4                  4              200             212           1.00       1.000000                   0.990566
+      460800       115200       frame_shape                   4                  4              200             212           1.00       1.000000                   0.995283
+      460800       115200       phase_shape                   4                  4              200             212           1.00       1.000000                   1.000000
+      460800       115200       shape_phase                   4                  4              200             212           1.00       1.000000                   1.000000
+      460800       115200    coherent_shape                   4                  4              200             212           0.75       0.666667                   0.764151
+      460800       115200        time_stats                   4                  4              200             212           0.75       0.666667                   0.778302
+Complete.

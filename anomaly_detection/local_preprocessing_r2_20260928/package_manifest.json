@@ -1,0 +1,62 @@
+{
+  "schema": "local-r2-toolkit-package-v1",
+  "python_verified": "3.12.14 (main, Sep  2 2026, 23:27:36) [GCC 15.3.0]",
+  "numpy_verified": "1.26.0",
+  "h5py_verified": "3.16.0",
+  "tests_passed": 16,
+  "new_mac_data_processed": false,
+  "files": {
+    "R2_reference.cfg": {
+      "bytes": 282,
+      "sha256": "cafb8578aa2d3301b0f952814730129d25eb41489b1634005e3c09013e8f6b7b"
+    },
+    "README_本地预处理.md": {
+      "bytes": 18925,
+      "sha256": "fe60bef934ed7d375ed56f57e3aaf22d7f54f5ad1a6043870ff356931219ef1a"
+    },
+    "build_manifest.py": {
+      "bytes": 13438,
+      "sha256": "2d80f22fb54e4061c42a2acbadedd837e7ecac12baeb069501883c15419163f1"
+    },
+    "contact_packets.py": {
+      "bytes": 13474,
+      "sha256": "3a23d38eeb34c3db73307a16b75b5d3aa077b744cfb8a4f5bc6f4aa00263af19"
+    },
+    "make_qc_report.py": {
+      "bytes": 5247,
+      "sha256": "7351a4ee3c5cd3d4bba3f64eede8f0d6aa5573a75bd0a3b4ac36006a13d96ca3"
+    },
+    "manifest_template_144.csv": {
+      "bytes": 15964,
+      "sha256": "16c6aff75c3e7633d953ff997d671054660a861b3bfcee1cb5c89f2092d429eb"
+    },
+    "preprocess_local.py": {
+      "bytes": 22848,
+      "sha256": "9b5f003cc775ed17252d5d58d0758db6eebdb9f6ac382e552a1fdbd56944d018"
+    },
+    "radar_r2.py": {
+      "bytes": 27346,
+      "sha256": "6ca4b8aaa9b03d241496af2f42d0742c312724effeb276abc14e62c388544749"
+    },
+    "requirements.txt": {
+      "bytes": 28,
+      "sha256": "208ea34853ebcd98c2678c1d0e529e9b542cff737aee063a165cc74b2f201f64"
+    },
+    "test_contact.py": {
+      "bytes": 6362,
+      "sha256": "e7239be1c4c3b5f59244a96efe1228faa201ff56e3857d205eb929ebc2141148"
+    },
+    "test_pipeline.py": {
+      "bytes": 8095,
+      "sha256": "3a36377d8bafcb77a41ca23449b2e9b412fbc9b5ea4098eaf1f94cea814177c5"
+    },
+    "test_radar.py": {
+      "bytes": 7426,
+      "sha256": "ef6b66f21dbb823076bdc7a078faab0c39410c1658695f3b5f46c37ad9c120b3"
+    },
+    "验证记录.md": {
+      "bytes": 1761,
+      "sha256": "e7c4445c3fb6f634ac05dcffc49394003606173ba50dde949102b08bc748e1e1"
+    }
+  }
+}

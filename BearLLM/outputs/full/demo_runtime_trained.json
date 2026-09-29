@@ -1,0 +1,15 @@
+{
+  "stage": "demo",
+  "command": [
+    "./scripts/run_demo.sh",
+    "--checkpoint",
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/finetune/weights",
+    "--seed",
+    "42",
+    "--output",
+    "outputs/full/demo_response_trained.txt"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 10.485526544041932,
+  "log": "outputs/full/demo_trained.log"
+}

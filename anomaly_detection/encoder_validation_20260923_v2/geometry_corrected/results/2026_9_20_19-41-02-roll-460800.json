@@ -1,0 +1,1052 @@
+{
+  "metadata": {
+    "file": "2026_9_20_19-41-02-roll-460800.DAT",
+    "recording_id": "2026_9_20_19-41-02-roll-460800",
+    "state": "roll",
+    "label": 3,
+    "baud_raw": "460800",
+    "baud_candidate": 460800,
+    "filename_start_local": "2026-09-20T19:41:02",
+    "timezone": "Asia/Shanghai",
+    "timestamp_semantics": "file start only; not packet sample time",
+    "condition_id": null,
+    "bearing_entity_id": null,
+    "independent_run_id": null,
+    "split": "unassigned",
+    "four_class_eligible": true
+  },
+  "windows": [
+    {
+      "file": "2026_9_20_19-41-02-roll-460800.DAT",
+      "recording_id": "2026_9_20_19-41-02-roll-460800",
+      "state": "roll",
+      "label": 3,
+      "baud_raw": "460800",
+      "baud_candidate": 460800,
+      "filename_start_local": "2026-09-20T19:41:02",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 1,
+      "byte_start": 44009,
+      "row": 0,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.5339500800775552,
+        0.27059152967537026,
+        0.43528123346664715
+      ],
+      "value_min": [
+        -1.211582,
+        -0.871202,
+        -1.972252
+      ],
+      "value_max": [
+        0.96624,
+        0.706075,
+        0.028609
+      ]
+    },
+    {
+      "file": "2026_9_20_19-41-02-roll-460800.DAT",
+      "recording_id": "2026_9_20_19-41-02-roll-460800",
+      "state": "roll",
+      "label": 3,
+      "baud_raw": "460800",
+      "baud_candidate": 460800,
+      "filename_start_local": "2026-09-20T19:41:02",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 2,
+      "byte_start": 182571,
+      "row": 1,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.5332064481081596,
+        0.2639863067198465,
+        0.43183571476677446
+      ],
+      "value_min": [
+        -1.153998,
+        -0.759938,
+        -1.926502
+      ],
+      "value_max": [
+        0.92049,
+        0.639524,
+        0.093208
+      ]
+    },
+    {
+      "file": "2026_9_20_19-41-02-roll-460800.DAT",
+      "recording_id": "2026_9_20_19-41-02-roll-460800",
+      "state": "roll",
+      "label": 3,
+      "baud_raw": "460800",
+      "baud_candidate": 460800,
+      "filename_start_local": "2026-09-20T19:41:02",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 3,
+      "byte_start": 321167,
+      "row": 2,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.5274713464852618,
+        0.2667220114033249,
+        0.4253835625183867
+      ],
+      "value_min": [
+        -1.091534,
+        -0.810751,
+        -1.966335
+      ],
+      "value_max": [
+        0.946171,
+        0.66917,
+        -0.005856
+      ]
+    }
+  ],
+  "quality": {
+    "valid_syntax_rows": 164076,
+    "packet_starts_observed": 41,
+    "complete_packets": 3,
+    "issue_count": 179,
+    "issues": [
+      {
+        "byte": 0,
+        "reason": "invalid_record",
+        "token": "97518,0.013542,-0.931592"
+      },
+      {
+        "byte": 473060,
+        "reason": "counter_discontinuity",
+        "expected": 406,
+        "observed": 2441
+      },
+      {
+        "byte": 509442,
+        "reason": "invalid_record",
+        "token": "3508,-0.722362,-0.190320,80,-0.597556"
+      },
+      {
+        "byte": 588539,
+        "reason": "invalid_record",
+        "token": "1764,0.497028,0.1295643810,-0.638060,-0.519720,-0.262666"
+      },
+      {
+        "byte": 620982,
+        "reason": "counter_discontinuity",
+        "expected": 688,
+        "observed": 2715
+      },
+      {
+        "byte": 674570,
+        "reason": "invalid_record",
+        "token": "200,-0.545279,-0.237534,-0.34046,0.364414,-1.370792"
+      },
+      {
+        "byte": 689771,
+        "reason": "invalid_record",
+        "token": "2714,-0.2054484,-0.294874"
+      },
+      {
+        "byte": 793134,
+        "reason": "invalid_record",
+        "token": "1682,0.4453-0.529846,-0.406382,-0.289323"
+      },
+      {
+        "byte": 809124,
+        "reason": "counter_discontinuity",
+        "expected": 78,
+        "observed": 2151
+      },
+      {
+        "byte": 824271,
+        "reason": "invalid_record",
+        "token": "2595,0.387106,68640,-0.362462,-0.780983"
+      },
+      {
+        "byte": 859887,
+        "reason": "invalid_record",
+        "token": "1595,0.582367,0.066917,-1.5343640,-0.934764,-0.274195,-0.497272"
+      },
+      {
+        "byte": 875082,
+        "reason": "invalid_record",
+        "token": "4085,-0.214842,0.2381452,0.284382,-1.270386"
+      },
+      {
+        "byte": 939681,
+        "reason": "invalid_record",
+        "token": "3935,0.6384917,-0.214598,-0.191540,-1.197796"
+      },
+      {
+        "byte": 943917,
+        "reason": "invalid_record",
+        "token": "2041,0.5.079483,-0.948306"
+      },
+      {
+        "byte": 970943,
+        "reason": "counter_discontinuity",
+        "expected": 783,
+        "observed": 2834
+      },
+      {
+        "byte": 975141,
+        "reason": "invalid_record",
+        "token": "2957,0.621590,0.494039,-8,-0.611586"
+      },
+      {
+        "byte": 1036541,
+        "reason": "invalid_record",
+        "token": "2713,-0.135298,-0.02537"
+      },
+      {
+        "byte": 1040762,
+        "reason": "invalid_record",
+        "token": "8138335"
+      },
+      {
+        "byte": 1073576,
+        "reason": "invalid_record",
+        "token": "1781,-1.035414,-0.3510.113643,-0.598959"
+      },
+      {
+        "byte": 1120186,
+        "reason": "invalid_record",
+        "token": "1103,-0.580720,-0.419131,-0.3380692,-0.859856"
+      },
+      {
+        "byte": 1124421,
+        "reason": "invalid_record",
+        "token": "3272,0.615490,0.367098,-1.58063246,0.732122,0.239242,-1.289906"
+      },
+      {
+        "byte": 1147728,
+        "reason": "invalid_record",
+        "token": "3928,-0.630862,-0.31,-0.374052,-0.213744,-0.527284"
+      },
+      {
+        "byte": 1218364,
+        "reason": "invalid_record",
+        "token": "3981,0.436699,0.0530732753,0.003233,-0.045811"
+      },
+      {
+        "byte": 1274748,
+        "reason": "invalid_record",
+        "token": "1571,-0.048556,-0.043.911035,-0.020923,-0.508740"
+      },
+      {
+        "byte": 1313635,
+        "reason": "invalid_record",
+        "token": "6392"
+      },
+      {
+        "byte": 1343586,
+        "reason": "invalid_record",
+        "token": "3589,-0.202764,-1.296738"
+      },
+      {
+        "byte": 1350161,
+        "reason": "invalid_record",
+        "token": "1736,0.438468,-0.1,-0.855098,-0.566690,-0.608231"
+      },
+      {
+        "byte": 1380111,
+        "reason": "invalid_record",
+        "token": "584,-0.990518,-0.339709,-0.248636,-0.455731"
+      },
+      {
+        "byte": 1477096,
+        "reason": "invalid_record",
+        "token": "3439,0.623786,0.587061394,-0.731695,-0.315980,-0.413458"
+      },
+      {
+        "byte": 1499230,
+        "reason": "invalid_record",
+        "token": "2042,0.066002,-0.247111,--0.768112"
+      },
+      {
+        "byte": 1529196,
+        "reason": "counter_discontinuity",
+        "expected": 900,
+        "observed": 2920
+      },
+      {
+        "byte": 1582819,
+        "reason": "invalid_record",
+        "token": "411382,-1.760643"
+      },
+      {
+        "byte": 1597987,
+        "reason": "invalid_record",
+        "token": "2919,0.499407,0.263115"
+      },
+      {
+        "byte": 1618549,
+        "reason": "invalid_record",
+        "token": "1477,-0.625616,-276,0.429074,-1.349930"
+      },
+      {
+        "byte": 1633748,
+        "reason": "invalid_record",
+        "token": "3.433344"
+      },
+      {
+        "byte": 1685206,
+        "reason": "invalid_record",
+        "token": "3431,-0.963800,1"
+      },
+      {
+        "byte": 1700398,
+        "reason": "invalid_record",
+        "token": "1859,0.45"
+      },
+      {
+        "byte": 1713484,
+        "reason": "invalid_record",
+        "token": "173,-0.702476,-0.143,0.612013,0.305854,-1.522804"
+      },
+      {
+        "byte": 1728657,
+        "reason": "invalid_record",
+        "token": "2687,0.258030,0.035807,-1.500.595970,-0.308782,-0.935191"
+      },
+      {
+        "byte": 1769922,
+        "reason": "invalid_record",
+        "token": "1852,-0.110410,0.040382,-1.1,0.163114,0.091988,-1.365180"
+      },
+      {
+        "byte": 1785128,
+        "reason": "invalid_record",
+        "token": "258,-02"
+      },
+      {
+        "byte": 1849513,
+        "reason": "invalid_record",
+        "token": "97,-022032"
+      },
+      {
+        "byte": 1853925,
+        "reason": "invalid_record",
+        "token": "2297,-0.580354,-0.043127,-0.642454186,-0.235460"
+      },
+      {
+        "byte": 1892337,
+        "reason": "invalid_record",
+        "token": "3424,0.667889,0.577480498,-0.149206,-0.663802"
+      },
+      {
+        "byte": 1957118,
+        "reason": "invalid_record",
+        "token": "3279,0.418765,0..113189"
+      },
+      {
+        "byte": 1987620,
+        "reason": "invalid_record",
+        "token": "83,-0.830881,-0.459574,-0.53,-1.243790"
+      },
+      {
+        "byte": 1991688,
+        "reason": "invalid_record",
+        "token": "2274,0.194752,-0.628666"
+      },
+      {
+        "byte": 2055034,
+        "reason": "invalid_record",
+        "token": "39,-0.157075,-0.0367220.248880,0.056791,-0.847900"
+      },
+      {
+        "byte": 2073809,
+        "reason": "invalid_record",
+        "token": "582031964,-0.995276"
+      },
+      {
+        "byte": 2160355,
+        "reason": "invalid_record",
+        "token": "1114,150548,-0.656482"
+      },
+      {
+        "byte": 2260169,
+        "reason": "invalid_record",
+        "token": "4043920,-0.068808,-0.535092"
+      },
+      {
+        "byte": 2274718,
+        "reason": "invalid_record",
+        "token": "2424855,-1.556476"
+      },
+      {
+        "byte": 2318456,
+        "reason": "invalid_record",
+        "token": "1690,0.383385,-0.0738.229482,0.423279,-1.045296"
+      },
+      {
+        "byte": 2363400,
+        "reason": "invalid_record",
+        "token": "963,0.093818,026,0.422486,-1.058777"
+      },
+      {
+        "byte": 2387294,
+        "reason": "invalid_record",
+        "token": "3710,-054452,-1.543788"
+      },
+      {
+        "byte": 2399796,
+        "reason": "invalid_record",
+        "token": "2031,-0.223687,-0.103456,-0.458232-0.358070,-0.712907"
+      },
+      {
+        "byte": 2423717,
+        "reason": "invalid_record",
+        "token": ",-0.539545"
+      },
+      {
+        "byte": 2468351,
+        "reason": "invalid_record",
+        "token": "4042,0.666486,0.172874,8,-0.660874"
+      },
+      {
+        "byte": 2492248,
+        "reason": "invalid_record",
+        "token": "2724,-0.157560"
+      },
+      {
+        "byte": 2500832,
+        "reason": "invalid_record",
+        "token": "929,-0.062342,0.07714,-0.472750,-0.540948"
+      },
+      {
+        "byte": 2524733,
+        "reason": "invalid_record",
+        "token": "3677,272182"
+      },
+      {
+        "byte": 2593534,
+        "reason": "invalid_record",
+        "token": "1631,-0.522709,-0.057523,-0.366122,-0.179218,-0.486048"
+      },
+      {
+        "byte": 2606193,
+        "reason": "invalid_record",
+        "token": "4020,-0.724070,-0.183610,-0.1916621.132038"
+      },
+      {
+        "byte": 2627531,
+        "reason": "invalid_record",
+        "token": "2627,0.599203,030"
+      },
+      {
+        "byte": 2671194,
+        "reason": "invalid_record",
+        "token": "1862,-0.519659,0.002562,-0.761.507188"
+      },
+      {
+        "byte": 2692536,
+        "reason": "invalid_record",
+        "token": "454,0.371429"
+      },
+      {
+        "byte": 2710007,
+        "reason": "invalid_record",
+        "token": "-0.160552,0.094916,-1.116605"
+      },
+      {
+        "byte": 2731310,
+        "reason": "invalid_record",
+        "token": "1607,-0.758352,-.133590,-0.025376,-1.036817"
+      },
+      {
+        "byte": 2772102,
+        "reason": "invalid_record",
+        "token": "750,-0.162998399"
+      },
+      {
+        "byte": 2793422,
+        "reason": "invalid_record",
+        "token": "3428,-0.806.678259,0.275964,-1.305400"
+      },
+      {
+        "byte": 2805712,
+        "reason": "invalid_record",
+        "token": "17090524,-0.667401"
+      },
+      {
+        "byte": 2827019,
+        "reason": "invalid_record",
+        "token": "330,0.679418,02324,-0.121756,-1.048956"
+      },
+      {
+        "byte": 2863330,
+        "reason": "invalid_record",
+        "token": "3432,0.670024,0.8"
+      },
+      {
+        "byte": 2884659,
+        "reason": "invalid_record",
+        "token": "2039,-.192794"
+      },
+      {
+        "byte": 2949928,
+        "reason": "invalid_record",
+        "token": "1908,0.201.146739"
+      },
+      {
+        "byte": 2953462,
+        "reason": "invalid_record",
+        "token": "4057,-0.012932,-0.156404,-1.382958,-0.680028"
+      },
+      {
+        "byte": 2982836,
+        "reason": "invalid_record",
+        "token": "2873,-0.091622,-0.336110,-0.81.114958"
+      },
+      {
+        "byte": 2986388,
+        "reason": "invalid_record",
+        "token": "958,0.618418,0.215696,-1.25220.898408,-0.159698,-0.325740"
+      },
+      {
+        "byte": 3041921,
+        "reason": "invalid_record",
+        "token": "529,-0.810995,-0.7288"
+      },
+      {
+        "byte": 3045489,
+        "reason": "invalid_record",
+        "token": "2692,710"
+      },
+      {
+        "byte": 3082298,
+        "reason": "invalid_record",
+        "token": "1727,0.070638,0.433588,-1.030.165798,-0.973316"
+      },
+      {
+        "byte": 3085861,
+        "reason": "invalid_record",
+        "token": "3876,0.215208,0.594"
+      },
+      {
+        "byte": 3139159,
+        "reason": "invalid_record",
+        "token": "3395,0.659044,0.271023,-1.555377,-0.112545,0.208254,-1.413858"
+      },
+      {
+        "byte": 3153909,
+        "reason": "invalid_record",
+        "token": "178201662"
+      },
+      {
+        "byte": 3250668,
+        "reason": "invalid_record",
+        "token": "263446,-0.408944"
+      },
+      {
+        "byte": 3257510,
+        "reason": "invalid_record",
+        "token": "7,-1.123498"
+      },
+      {
+        "byte": 3401112,
+        "reason": "invalid_record",
+        "token": "295122,-0.354532,-0.516853"
+      },
+      {
+        "byte": 3430562,
+        "reason": "invalid_record",
+        "token": "1770,0.227286,0.3945"
+      },
+      {
+        "byte": 3469960,
+        "reason": "counter_discontinuity",
+        "expected": 904,
+        "observed": 2925
+      },
+      {
+        "byte": 3471797,
+        "reason": "invalid_record",
+        "token": "2979,-0.532469,-0.419558,-0.652024,0.218929,-1.434476"
+      },
+      {
+        "byte": 3511160,
+        "reason": "invalid_record",
+        "token": "2115,-0.250710,-0.884988,-0.272,-0.635742"
+      },
+      {
+        "byte": 3532929,
+        "reason": "invalid_record",
+        "token": "699,0.326350,-0.695522"
+      },
+      {
+        "byte": 3601322,
+        "reason": "invalid_record",
+        "token": "686,-0.287615,-0.151890,-07168,-1.120265"
+      },
+      {
+        "byte": 3616091,
+        "reason": "invalid_record",
+        "token": "3147,0.58394386,-1.292712"
+      },
+      {
+        "byte": 3655426,
+        "reason": "invalid_record",
+        "token": "2282,-0.900726,-0.712114,-0.164273,-1.036268"
+      },
+      {
+        "byte": 3724263,
+        "reason": "invalid_record",
+        "token": "214,0.743041,0.1903200.069723,-1.016626"
+      },
+      {
+        "byte": 3740054,
+        "reason": "invalid_record",
+        "token": "2719,-0.834358,-0.601582,-0.4692,-0.378444,-0.331718,-0.319640"
+      },
+      {
+        "byte": 3760230,
+        "reason": "invalid_record",
+        "token": "1292,-0.432795,-0.2931.038552,-0.311466"
+      },
+      {
+        "byte": 3808134,
+        "reason": "invalid_record",
+        "token": "642,-0.719068,-0.4162640.968192"
+      },
+      {
+        "byte": 3828279,
+        "reason": "invalid_record",
+        "token": "3288,-0.26315403"
+      },
+      {
+        "byte": 3845337,
+        "reason": "invalid_record",
+        "token": "1744277245,-1.455460"
+      },
+      {
+        "byte": 3865492,
+        "reason": "invalid_record",
+        "token": "295,-0.840580,-0.-0.259860,0.143472,-0.728706"
+      },
+      {
+        "byte": 3914423,
+        "reason": "invalid_record",
+        "token": "3771,-8"
+      },
+      {
+        "byte": 3934328,
+        "reason": "invalid_record",
+        "token": "2336,70,-0.756644,-0.423584,-0.427549"
+      },
+      {
+        "byte": 3944088,
+        "reason": "invalid_record",
+        "token": "565,0.6630003,-0.322324"
+      },
+      {
+        "byte": 3963991,
+        "reason": "invalid_record",
+        "token": "3206,0.23027.575108,-0.381372,-0.421998"
+      },
+      {
+        "byte": 4004833,
+        "reason": "invalid_record",
+        "token": "230.364231"
+      },
+      {
+        "byte": 4024718,
+        "reason": "invalid_record",
+        "token": "922,-0.841495,-0.43512944,0.854854,0.053192,-1.206824"
+      },
+      {
+        "byte": 4092167,
+        "reason": "counter_discontinuity",
+        "expected": 854,
+        "observed": 2903
+      },
+      {
+        "byte": 4093563,
+        "reason": "invalid_record",
+        "token": ",-0.019093,-0.654042"
+      },
+      {
+        "byte": 4131696,
+        "reason": "invalid_record",
+        "token": "-0.327082,-0.648552"
+      },
+      {
+        "byte": 4133092,
+        "reason": "invalid_record",
+        "token": "8,-0.449692,0.036478,-03678,-0.235033"
+      },
+      {
+        "byte": 4192465,
+        "reason": "invalid_record",
+        "token": "3801,0.294386,-0.140788,-1.5892034,-0.102053,-0.520269"
+      },
+      {
+        "byte": 4193880,
+        "reason": "invalid_record",
+        "token": "18224,-0.453108"
+      },
+      {
+        "byte": 4212872,
+        "reason": "invalid_record",
+        "token": "316,0.755546,0.220027,-1.3.129442,0.163297,-0.896822"
+      },
+      {
+        "byte": 4254883,
+        "reason": "invalid_record",
+        "token": "1569,0.419741,0.127856,-1.517310.620126,-0.338062,-0.355508"
+      },
+      {
+        "byte": 4256308,
+        "reason": "invalid_record",
+        "token": "3655,-0.075396,0.097844,--0.505446"
+      },
+      {
+        "byte": 4311273,
+        "reason": "invalid_record",
+        "token": "12040.725168,0.155977,-1.590270"
+      },
+      {
+        "byte": 4358127,
+        "reason": "counter_discontinuity",
+        "expected": 522,
+        "observed": 2579
+      },
+      {
+        "byte": 4359491,
+        "reason": "invalid_record",
+        "token": "2619,0.347212,0.057828,-1.3978774170,-0.509350,-0.127246"
+      },
+      {
+        "byte": 4405999,
+        "reason": "invalid_record",
+        "token": "1942,-0.55,-1.286978"
+      },
+      {
+        "byte": 4407416,
+        "reason": "invalid_record",
+        "token": "4026,-0.93984,0.150792,-0.112179,-0.771772"
+      },
+      {
+        "byte": 4425763,
+        "reason": "invalid_record",
+        "token": "2522,-0.005246,0.015.130574"
+      },
+      {
+        "byte": 4427182,
+        "reason": "invalid_record",
+        "token": "529,-0.530456,-0.256185,-0.028060,-0.729072"
+      },
+      {
+        "byte": 4458286,
+        "reason": "invalid_record",
+        "token": "3476,0.22-0.452986"
+      },
+      {
+        "byte": 4459702,
+        "reason": "invalid_record",
+        "token": "1498,0.6557518,-0.333060,-0.350323,-0.303597"
+      },
+      {
+        "byte": 4496373,
+        "reason": "invalid_record",
+        "token": "517,-0.6178697629"
+      },
+      {
+        "byte": 4513955,
+        "reason": "invalid_record",
+        "token": "1047,-0.725412,-0.250588,-0.38091,0.683444,0.279624,-1.330532"
+      },
+      {
+        "byte": 4515380,
+        "reason": "invalid_record",
+        "token": "3132,-0.371612,-0.444568,62,-1.323212"
+      },
+      {
+        "byte": 4539968,
+        "reason": "invalid_record",
+        "token": "1810,-0.161650,-0.227530,-0.5414970,-1.325591"
+      },
+      {
+        "byte": 4541411,
+        "reason": "invalid_record",
+        "token": "3896,-0.47300,-0.869128"
+      },
+      {
+        "byte": 4572055,
+        "reason": "invalid_record",
+        "token": "2751,-0.2168,-0.926468"
+      },
+      {
+        "byte": 4573462,
+        "reason": "invalid_record",
+        "token": "767,-0.612074,0.131150,93,0.406504,0.053375,-0.777994"
+      },
+      {
+        "byte": 4617929,
+        "reason": "invalid_record",
+        "token": "!705743"
+      },
+      {
+        "byte": 4619333,
+        "reason": "invalid_record",
+        "token": "2119,-0.380762,--1.642242"
+      },
+      {
+        "byte": 4639178,
+        "reason": "invalid_record",
+        "token": "2701,-0.834"
+      },
+      {
+        "byte": 4667273,
+        "reason": "invalid_record",
+        "token": "15038,0.213012,-1.123010"
+      },
+      {
+        "byte": 4668689,
+        "reason": "invalid_record",
+        "token": "3567091,-1.876360"
+      },
+      {
+        "byte": 4704565,
+        "reason": "invalid_record",
+        "token": "2577,-0.230031,0.1051.220332,0.079056,-1.413492"
+      },
+      {
+        "byte": 4706003,
+        "reason": "invalid_record",
+        "token": "58"
+      },
+      {
+        "byte": 4756384,
+        "reason": "invalid_record",
+        "token": "!0.432368,0.371490,-1.428376"
+      },
+      {
+        "byte": 4757777,
+        "reason": "invalid_record",
+        "token": "2119,-0.313967,-0.483852,-063,-0.634461"
+      },
+      {
+        "byte": 4776772,
+        "reason": "invalid_record",
+        "token": "2676,-0.0,-1.044198"
+      },
+      {
+        "byte": 4807283,
+        "reason": "invalid_record",
+        "token": "3571,-0.485194,-0.216306,9,-0.464698,-0.188063,0.061000"
+      },
+      {
+        "byte": 4852561,
+        "reason": "invalid_record",
+        "token": "832,-0.402234,-0.055510,-0.452315,-0.114558"
+      },
+      {
+        "byte": 4871352,
+        "reason": "invalid_record",
+        "token": "3408,0.4596"
+      },
+      {
+        "byte": 4894854,
+        "reason": "invalid_record",
+        "token": "!610"
+      },
+      {
+        "byte": 4927827,
+        "reason": "invalid_record",
+        "token": "1001,-0.278770,0.0372,0.163724,-1.168272"
+      },
+      {
+        "byte": 4929264,
+        "reason": "invalid_record",
+        "token": "300.028975,-0.818132"
+      },
+      {
+        "byte": 4982029,
+        "reason": "invalid_record",
+        "token": "559,0.630008"
+      },
+      {
+        "byte": 5002109,
+        "reason": "invalid_record",
+        "token": "3181,-0.43776,-1.331996"
+      },
+      {
+        "byte": 5003526,
+        "reason": "invalid_record",
+        "token": "1203,-0.689186248"
+      },
+      {
+        "byte": 5033272,
+        "reason": "invalid_record",
+        "token": "4095,0.659288,0003538,-0.364048,-1.117642"
+      },
+      {
+        "byte": 5072166,
+        "reason": "invalid_record",
+        "token": "1172,0.453413,0.1045551928"
+      },
+      {
+        "byte": 5093265,
+        "reason": "invalid_record",
+        "token": "3836,-0.743346,-0.3121.121607"
+      },
+      {
+        "byte": 5118125,
+        "reason": "invalid_record",
+        "token": "2520,-0.6004841.344623"
+      },
+      {
+        "byte": 5119541,
+        "reason": "invalid_record",
+        "token": "529,-0.486353,-0.0.519964,0.238754,-1.274656"
+      },
+      {
+        "byte": 5152057,
+        "reason": "invalid_record",
+        "token": "358,-1.422398"
+      },
+      {
+        "byte": 5153464,
+        "reason": "invalid_record",
+        "token": "1538,-0.0509960.547231"
+      },
+      {
+        "byte": 5196002,
+        "reason": "invalid_record",
+        "token": "733,-0.742004,-06,-0.613050,-0.493978,-0.554368"
+      },
+      {
+        "byte": 5197414,
+        "reason": "invalid_record",
+        "token": "2827,0.675148,0.421754,.196359,-1.479128"
+      },
+      {
+        "byte": 5215984,
+        "reason": "invalid_record",
+        "token": "13.094184,-1.126060"
+      },
+      {
+        "byte": 5243840,
+        "reason": "invalid_record",
+        "token": "2144,-0.772870,-0.87,-0.044347,-1.497306"
+      },
+      {
+        "byte": 5245274,
+        "reason": "invalid_record",
+        "token": "1424"
+      },
+      {
+        "byte": 5280326,
+        "reason": "invalid_record",
+        "token": "3214,0.54857197186"
+      },
+      {
+        "byte": 5281740,
+        "reason": "invalid_record",
+        "token": "1237,-0.086559,-03691"
+      },
+      {
+        "byte": 5327539,
+        "reason": "invalid_record",
+        "token": "522,0.541070,0.301462,-1.7173581,-0.654530,-0.302438,-0.775920"
+      },
+      {
+        "byte": 5348495,
+        "reason": "invalid_record",
+        "token": "10.642269"
+      },
+      {
+        "byte": 5349904,
+        "reason": "invalid_record",
+        "token": "3236,0.5729.255346"
+      },
+      {
+        "byte": 5378865,
+        "reason": "invalid_record",
+        "token": "4086,-0.530.367769,-1.570506"
+      },
+      {
+        "byte": 5415393,
+        "reason": "invalid_record",
+        "token": "3115,0.228201,01095,-0.839909,-0.324337,-0.429684"
+      },
+      {
+        "byte": 5416809,
+        "reason": "invalid_record",
+        "token": "1136,0.184098,0.1204085,-0.241682,-0.694302"
+      },
+      {
+        "byte": 5464776,
+        "reason": "invalid_record",
+        "token": "486,0.547658"
+      },
+      {
+        "byte": 5466172,
+        "reason": "invalid_record",
+        "token": "2585,-0.084790,0.207766,-1.9258,-0.309148,-0.206546"
+      },
+      {
+        "byte": 5487276,
+        "reason": "invalid_record",
+        "token": "3205,-0.2143906"
+      },
+      {
+        "byte": 5515403,
+        "reason": "invalid_record",
+        "token": "1979380,-0.602375"
+      },
+      {
+        "byte": 5516817,
+        "reason": "invalid_record",
+        "token": "4072,0.70,-0.835212"
+      },
+      {
+        "byte": 5553612,
+        "reason": "invalid_record",
+        "token": "390991,-0.718214"
+      },
+      {
+        "byte": 5555020,
+        "reason": "unterminated_tail",
+        "token": "1130,-0.1165"
+      }
+    ]
+  },
+  "rejected_complete_packets": [],
+  "units": "unconfirmed original sensor units",
+  "timing": "packet-relative only; packet gaps unknown",
+  "ready_for_reference_pairing": true
+}

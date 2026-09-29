@@ -1,0 +1,125 @@
+{
+  "encoder_and_native_classifier_parameters_and_buffers_unchanged": true,
+  "vendor_weights_unchanged": true,
+  "old_task_regression_measured": false,
+  "old_task_input_pipeline_not_overwritten": true,
+  "all_features_finite": true,
+  "strict_loading_coverage": 1.0,
+  "all_checks": [
+    {
+      "variant": "raw_rms001",
+      "probability_pooling": "native mean of three axis softmax; separate mean-hidden path also exported",
+      "native_mean_probability_vs_probability_of_mean_hidden_max_abs": 0.5292990803718567,
+      "main_four_class_argmax_disagreements": 0
+    },
+    {
+      "variant": "raw_rms001",
+      "fold": "115200_to_460800",
+      "head_foldback_max_probability_error": 2.3169330065631044e-08,
+      "fitting_warnings": [],
+      "iterations": [
+        29
+      ],
+      "training_samples": 32,
+      "test_samples": 26
+    },
+    {
+      "variant": "raw_rms001",
+      "fold": "460800_to_115200",
+      "head_foldback_max_probability_error": 2.2451595360628573e-08,
+      "fitting_warnings": [],
+      "iterations": [
+        27
+      ],
+      "training_samples": 26,
+      "test_samples": 32
+    },
+    {
+      "variant": "demean_rms001",
+      "probability_pooling": "native mean of three axis softmax; separate mean-hidden path also exported",
+      "native_mean_probability_vs_probability_of_mean_hidden_max_abs": 0.45696789026260376,
+      "main_four_class_argmax_disagreements": 6
+    },
+    {
+      "variant": "demean_rms001",
+      "fold": "115200_to_460800",
+      "head_foldback_max_probability_error": 1.1021058288207541e-07,
+      "fitting_warnings": [],
+      "iterations": [
+        24
+      ],
+      "training_samples": 32,
+      "test_samples": 26
+    },
+    {
+      "variant": "demean_rms001",
+      "fold": "460800_to_115200",
+      "head_foldback_max_probability_error": 2.6270898789704233e-08,
+      "fitting_warnings": [],
+      "iterations": [
+        24
+      ],
+      "training_samples": 26,
+      "test_samples": 32
+    },
+    {
+      "variant": "raw_rms1",
+      "probability_pooling": "native mean of three axis softmax; separate mean-hidden path also exported",
+      "native_mean_probability_vs_probability_of_mean_hidden_max_abs": 0.6666666865348816,
+      "main_four_class_argmax_disagreements": 0
+    },
+    {
+      "variant": "raw_rms1",
+      "fold": "115200_to_460800",
+      "head_foldback_max_probability_error": 3.016975075320616e-08,
+      "fitting_warnings": [],
+      "iterations": [
+        26
+      ],
+      "training_samples": 32,
+      "test_samples": 26
+    },
+    {
+      "variant": "raw_rms1",
+      "fold": "460800_to_115200",
+      "head_foldback_max_probability_error": 2.297593731936942e-08,
+      "fitting_warnings": [],
+      "iterations": [
+        17
+      ],
+      "training_samples": 26,
+      "test_samples": 32
+    },
+    {
+      "variant": "demean_rms1",
+      "probability_pooling": "native mean of three axis softmax; separate mean-hidden path also exported",
+      "native_mean_probability_vs_probability_of_mean_hidden_max_abs": 0.3333333432674408,
+      "main_four_class_argmax_disagreements": 0
+    },
+    {
+      "variant": "demean_rms1",
+      "fold": "115200_to_460800",
+      "head_foldback_max_probability_error": 9.921228327769427e-08,
+      "fitting_warnings": [],
+      "iterations": [
+        27
+      ],
+      "training_samples": 32,
+      "test_samples": 26
+    },
+    {
+      "variant": "demean_rms1",
+      "fold": "460800_to_115200",
+      "head_foldback_max_probability_error": 6.168990906996186e-08,
+      "fitting_warnings": [],
+      "iterations": [
+        23
+      ],
+      "training_samples": 26,
+      "test_samples": 32
+    }
+  ],
+  "elapsed_seconds": 1.1680836719460785,
+  "no_heldout_labels_used_for_scaler_or_head_fit": true,
+  "all_predeclared_variants_reported": true
+}

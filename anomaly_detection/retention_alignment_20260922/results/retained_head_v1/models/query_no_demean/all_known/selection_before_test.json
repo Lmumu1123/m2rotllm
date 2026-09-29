@@ -1,0 +1,16 @@
+{
+  "variant": "query_no_demean",
+  "fold": "all_known",
+  "source_weight": 1,
+  "step": 400,
+  "val_acc10": 0.9846485870184869,
+  "val_acc4": 0.9867253033634661,
+  "val_macro_f1_10": 0.9480559002329331,
+  "val_macro_f1_4": 0.9796321241584312,
+  "train_file_macro_f1": 1.0,
+  "train_ce": 0.3312161862850189,
+  "retention_gate": true,
+  "selection_used_local_test": false,
+  "selection_used_source_test": false,
+  "selection_status": "trained_candidate"
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "variant": "paper_100ms",
+    "fold": "115200_to_460800",
+    "train_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-190512-outBroken-115200",
+      "20260920-192216-inBroken-115200",
+      "20260920-193718-roll-115200"
+    ],
+    "test_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-190913-outBroken-460800",
+      "20260920-192610-inBroken-460800",
+      "20260920-194108-roll-460800"
+    ],
+    "features": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/teachers/unifault/paper_100ms/115200_to_460800/teacher_features.npz",
+    "head": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/teachers/unifault/paper_100ms/115200_to_460800/head.npz"
+  },
+  {
+    "variant": "paper_100ms",
+    "fold": "460800_to_115200",
+    "train_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-190913-outBroken-460800",
+      "20260920-192610-inBroken-460800",
+      "20260920-194108-roll-460800"
+    ],
+    "test_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-190512-outBroken-115200",
+      "20260920-192216-inBroken-115200",
+      "20260920-193718-roll-115200"
+    ],
+    "features": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/teachers/unifault/paper_100ms/460800_to_115200/teacher_features.npz",
+    "head": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/teachers/unifault/paper_100ms/460800_to_115200/head.npz"
+  },
+  {
+    "variant": "code_native1024",
+    "fold": "115200_to_460800",
+    "train_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-190512-outBroken-115200",
+      "20260920-192216-inBroken-115200",
+      "20260920-193718-roll-115200"
+    ],
+    "test_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-190913-outBroken-460800",
+      "20260920-192610-inBroken-460800",
+      "20260920-194108-roll-460800"
+    ],
+    "features": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/teachers/unifault/code_native1024/115200_to_460800/teacher_features.npz",
+    "head": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/teachers/unifault/code_native1024/115200_to_460800/head.npz"
+  },
+  {
+    "variant": "code_native1024",
+    "fold": "460800_to_115200",
+    "train_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-190913-outBroken-460800",
+      "20260920-192610-inBroken-460800",
+      "20260920-194108-roll-460800"
+    ],
+    "test_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-190512-outBroken-115200",
+      "20260920-192216-inBroken-115200",
+      "20260920-193718-roll-115200"
+    ],
+    "features": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/teachers/unifault/code_native1024/460800_to_115200/teacher_features.npz",
+    "head": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/teachers/unifault/code_native1024/460800_to_115200/head.npz"
+  }
+]

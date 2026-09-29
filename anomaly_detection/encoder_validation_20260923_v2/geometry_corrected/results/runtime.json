@@ -1,0 +1,30 @@
+{
+  "python": "3.12.14 (main, Sep  2 2026, 23:27:36) [GCC 15.3.0]",
+  "executable": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "command": [
+    "/home/huangyating/anomaly_detection/four_class_chain_20260922/scripts/reprocess_geometry.py",
+    "--raw-dir",
+    "/media/nas_users/huangyating/data",
+    "--output",
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected",
+    "--distance-m",
+    ".45",
+    "--config",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/雷达原始配置.cfg",
+    "--existing-results",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results"
+  ],
+  "distance_m": 0.45,
+  "shared_roi_m": [
+    0.29000000000000004,
+    0.61
+  ],
+  "preprocessing_sha256": "4978c28eac430c1ed1dd95357b4e92bebc125c4f6d8746abdf50b4f82b2e857c",
+  "config_sha256": "5db86ab2364401b646d82028180898b244015b110d5085eebaaf6f7502174429",
+  "wrapper_sha256": "dd72a9f1a5aeb42d202cab2f5420065141f38ab1c63b6c93220eed86ba84a383",
+  "feature_script_sha256": "c3d41d3db73de7f28a119756252cb8312d9093fd9345c36153f5ee67e57ffc27",
+  "contacts": "byte-identical copied NPZ/JSON; raw DAT not required",
+  "pairing": "original candidate recording bags preserved; no window alignment inferred",
+  "raw_radar_sha256": "all 12 match original manifest before export",
+  "threads": 2
+}

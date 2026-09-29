@@ -1,0 +1,21 @@
+{
+  "seed": 42,
+  "reference_draws_per_query": 3,
+  "reference_policy": "AUXILIARY: random.Random(seed).choice from all healthy rows in the SAME SOURCE DATASET, with replacement; condition/channel/rpm/load are not matched",
+  "split_policy": "only queries excluded by upstream due to absent same-condition healthy reference; no train/val/test claim",
+  "interpretation": "AUXILIARY fallback experiment, NOT the upstream protocol and NOT comparable with paper/main evaluation",
+  "metadata_rows": 135516,
+  "selected_unique_queries": 12724,
+  "same_condition_eligible_unique_queries": 122792,
+  "excluded_from_upstream_unique_queries": 12724,
+  "total_pairs": 38172,
+  "excluded_by_source": {
+    "CWRU": 3862,
+    "DIRG": 6120,
+    "MFPT": 42,
+    "NCEPU": 2700
+  },
+  "split_unique_queries": {
+    "excluded_from_upstream": 12724
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "fold": "115200_to_460800",
+    "negative_element_fraction": 0.4921875,
+    "raw_bag_mean_nonnegative_output_mse_floor": 0.3620600402355194,
+    "train_std_bag_mean_nonnegative_output_mse_floor": 39.00330352783203
+  },
+  {
+    "fold": "460800_to_115200",
+    "negative_element_fraction": 0.47407670454545453,
+    "raw_bag_mean_nonnegative_output_mse_floor": 0.3844273090362549,
+    "train_std_bag_mean_nonnegative_output_mse_floor": 15.64069938659668
+  }
+]

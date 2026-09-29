@@ -1,0 +1,259 @@
+{
+  "status": "passed",
+  "python": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "model_reload_count": 48,
+  "trained_student_instances": 592,
+  "metric_rows": 888,
+  "folds_including_external": 26,
+  "split_isolation": true,
+  "external_cases_absent_from_training": true,
+  "all_saved_models_match": [
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/0000/distill_phase_seed42.pt",
+      "max_probability_error": 1.8729254014360208e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/0000/distill_seed42.pt",
+      "max_probability_error": 1.5334808489697593e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/0000/head_only_seed42.pt",
+      "max_probability_error": 2.832531037499919e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/0000/no_contrast_seed42.pt",
+      "max_probability_error": 1.6632469113098125e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/0000/no_radar_CE_seed42.pt",
+      "max_probability_error": 1.738823047769955e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/0000/original_head_seed42.pt",
+      "max_probability_error": 5.8707165129234795e-08,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/0000/shuffled_seed42.pt",
+      "max_probability_error": 2.5156940042236897e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/0000/supervised_seed42.pt",
+      "max_probability_error": 2.980232238769531e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/1111/distill_phase_seed42.pt",
+      "max_probability_error": 1.761844306003013e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/1111/distill_seed42.pt",
+      "max_probability_error": 2.0459895389013383e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/1111/head_only_seed42.pt",
+      "max_probability_error": 1.6849276751607078e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/1111/no_contrast_seed42.pt",
+      "max_probability_error": 1.6532610924713254e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/1111/no_radar_CE_seed42.pt",
+      "max_probability_error": 2.1727434795781875e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/1111/original_head_seed42.pt",
+      "max_probability_error": 6.54102371155929e-08,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/1111/shuffled_seed42.pt",
+      "max_probability_error": 2.038173698704071e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/1111/supervised_seed42.pt",
+      "max_probability_error": 5.364418029785156e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/all_known/distill_phase_seed42.pt",
+      "max_probability_error": 2.989841841882779e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/all_known/distill_seed42.pt",
+      "max_probability_error": 2.502220751710027e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/all_known/head_only_seed42.pt",
+      "max_probability_error": 4.1529216221469767e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/all_known/no_contrast_seed42.pt",
+      "max_probability_error": 3.778263435449958e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/all_known/no_radar_CE_seed42.pt",
+      "max_probability_error": 3.7773782723959926e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/all_known/original_head_seed42.pt",
+      "max_probability_error": 1.024837720242644e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/all_known/shuffled_seed42.pt",
+      "max_probability_error": 3.0547079138409927e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/four_class_provisional_roi/all_known/supervised_seed42.pt",
+      "max_probability_error": 6.258487701416016e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/000/distill_phase_seed42.pt",
+      "max_probability_error": 1.442868817758125e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/000/distill_seed42.pt",
+      "max_probability_error": 1.7937187779537567e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/000/head_only_seed42.pt",
+      "max_probability_error": 1.9286315888766836e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/000/no_contrast_seed42.pt",
+      "max_probability_error": 1.9147240537531474e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/000/no_radar_CE_seed42.pt",
+      "max_probability_error": 2.133985127494853e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/000/original_head_seed42.pt",
+      "max_probability_error": 1.3276741928081037e-08,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/000/shuffled_seed42.pt",
+      "max_probability_error": 1.594092451373541e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/000/supervised_seed42.pt",
+      "max_probability_error": 2.384185791015625e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/111/distill_phase_seed42.pt",
+      "max_probability_error": 2.06918180867266e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/111/distill_seed42.pt",
+      "max_probability_error": 2.327386960931932e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/111/head_only_seed42.pt",
+      "max_probability_error": 2.2640575048082923e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/111/no_contrast_seed42.pt",
+      "max_probability_error": 1.849326976000043e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/111/no_radar_CE_seed42.pt",
+      "max_probability_error": 1.8034988291670828e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/111/original_head_seed42.pt",
+      "max_probability_error": 5.4703186203042264e-08,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/111/shuffled_seed42.pt",
+      "max_probability_error": 1.3776109164531647e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/111/supervised_seed42.pt",
+      "max_probability_error": 2.980232238769531e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/all_known/distill_phase_seed42.pt",
+      "max_probability_error": 1.9313199406401083e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/all_known/distill_seed42.pt",
+      "max_probability_error": 2.812571139321207e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/all_known/head_only_seed42.pt",
+      "max_probability_error": 2.7424596860115e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/all_known/no_contrast_seed42.pt",
+      "max_probability_error": 2.1383761661386558e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/all_known/no_radar_CE_seed42.pt",
+      "max_probability_error": 1.8912745514132467e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/all_known/original_head_seed42.pt",
+      "max_probability_error": 9.855668603453438e-08,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/all_known/shuffled_seed42.pt",
+      "max_probability_error": 1.8562578596448276e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    },
+    {
+      "model": "results/chain_v1/models/three_class_geometry_compatible/all_known/supervised_seed42.pt",
+      "max_probability_error": 2.980232238769531e-07,
+      "labels_or_contact_samples_required_at_inference": false
+    }
+  ],
+  "parameter_gradients_only_student": "Original FCN frozen during export; adapted contact heads fitted only on source then constants in student loss",
+  "limitations": [
+    "known wrong ROI outside primary three-type subset",
+    "repeated file partitions not independent experiments",
+    "bag alignment is not synchronized window alignment",
+    "no calibrated unknown-fault detector"
+  ]
+}

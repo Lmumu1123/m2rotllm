@@ -1,0 +1,17 @@
+method,fold,unit,n,correct,accuracy,macro_f1
+raw_dc3,115200_to_460800,window,26,13,0.5,0.479978354978355
+raw_dc3,115200_to_460800,recording,4,3,0.75,0.6666666666666666
+raw_dc3,460800_to_115200,window,32,16,0.5,0.47977941176470584
+raw_dc3,460800_to_115200,recording,4,2,0.5,0.5
+ac_rms3,115200_to_460800,window,26,26,1.0,1.0
+ac_rms3,115200_to_460800,recording,4,4,1.0,1.0
+ac_rms3,460800_to_115200,window,32,30,0.9375,0.9330357142857143
+ac_rms3,460800_to_115200,recording,4,4,1.0,1.0
+ac_stats12,115200_to_460800,window,26,26,1.0,1.0
+ac_stats12,115200_to_460800,recording,4,4,1.0,1.0
+ac_stats12,460800_to_115200,window,32,31,0.96875,0.9705882352941178
+ac_stats12,460800_to_115200,recording,4,4,1.0,1.0
+ac_spectral_shape64,115200_to_460800,window,26,26,1.0,1.0
+ac_spectral_shape64,115200_to_460800,recording,4,4,1.0,1.0
+ac_spectral_shape64,460800_to_115200,window,32,31,0.96875,0.9705882352941178
+ac_spectral_shape64,460800_to_115200,recording,4,4,1.0,1.0

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "environment": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "device": "cuda:0",
+  "contact_DCN_windows": 88,
+  "axes": 3,
+  "healthy_references": 9,
+  "FCN_query_reference_pairs": 2376,
+  "hidden_max_error_from_archived_cache": 0.0,
+  "contact_predictions_identical_to_cache": true,
+  "radar_predictions_identical_to_checkpoint": true,
+  "same_head_weight_and_bias_for_both_modalities": true,
+  "same_shared_module_used_for_all_predictions": true,
+  "conclusion": "Reported window scores are the adapted BearLLM diagnostic-head argmax, not Qwen text generation accuracy",
+  "interface": "Contact DCN -> original FCN+linear1 -> adapted linear2; radar features -> learned radar encoder -> identical adapted linear2",
+  "no_training": true
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "fold": "115200_to_460800",
+    "seed": 17,
+    "hidden_max_abs_error": 0.0,
+    "exact_equal": true
+  },
+  {
+    "fold": "115200_to_460800",
+    "seed": 42,
+    "hidden_max_abs_error": 0.0,
+    "exact_equal": true
+  },
+  {
+    "fold": "115200_to_460800",
+    "seed": 73,
+    "hidden_max_abs_error": 0.0,
+    "exact_equal": true
+  },
+  {
+    "fold": "460800_to_115200",
+    "seed": 17,
+    "hidden_max_abs_error": 0.0,
+    "exact_equal": true
+  },
+  {
+    "fold": "460800_to_115200",
+    "seed": 42,
+    "hidden_max_abs_error": 0.0,
+    "exact_equal": true
+  },
+  {
+    "fold": "460800_to_115200",
+    "seed": 73,
+    "hidden_max_abs_error": 0.0,
+    "exact_equal": true
+  }
+]

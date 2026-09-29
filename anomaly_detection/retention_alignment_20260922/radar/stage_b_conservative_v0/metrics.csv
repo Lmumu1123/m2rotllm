@@ -1,0 +1,2 @@
+task,fold,method,seed,role,n_files,accuracy,macro_f1,mse_standardized,cos_standardized,cos_raw,mean_margin
+four_class_provisional_roi,all_known,ce_feat_1_kd,42,train,8,1.0,1.0,0.005424719536677003,0.9925424829125404,0.9999000281095505,2.915101706981659

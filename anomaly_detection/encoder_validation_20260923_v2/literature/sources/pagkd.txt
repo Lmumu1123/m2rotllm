@@ -1,0 +1,3680 @@
+Pairing-free Group-level Knowledge Distillation for Robust Gastrointestinal Lesion Classification in White-Light Endoscopy
+Title:
+Content selection saved. Describe the issue below:
+Description:
+arXiv is now an independent nonprofit!
+Learn more
+×
+License: arXiv.org perpetual non-exclusive license
+arXiv:2601.09209v1 [cs.CV] 14 Jan 2026
+Pairing-free Group-level Knowledge Distillation for Robust Gastrointestinal Lesion Classification in White-Light Endoscopy
+Qiang Hu
+Qimei Wang
+Yingjie Guo
+Qiang Li
+Zhiwei Wang
+Thanks:
+Corresponding author. (
+zwwang@hust.edu.cn
+)
+Abstract
+White-Light Imaging (WLI) is the standard for endoscopic cancer screening, but Narrow-Band Imaging (NBI) offers superior diagnostic details. A key challenge is transferring knowledge from NBI to enhance WLI-only models, yet existing methods are critically hampered by their reliance on paired NBI-WLI images of the same lesion, a costly and often impractical requirement that leaves vast amounts of clinical data untapped.
+In this paper, we break this paradigm by introducing PaGKD, a novel Pairing-free Group-level Knowledge Distillation framework that that enables effective cross-modal learning using unpaired WLI and NBI data. Instead of forcing alignment between individual, often semantically mismatched image instances, PaGKD operates at the
+group level
+to distill more complete and compatible knowledge across modalities.
+Central to PaGKD are two complementary modules: (1) Group-level Prototype Distillation (GKD-Pro) distills compact group representations by extracting modality-invariant semantic prototypes via shared lesion-aware queries; (2) Group-level Dense Distillation (GKD-Den) performs dense cross-modal alignment by guiding group-aware attention with activation-derived relation maps.
+Together, these modules enforce global semantic consistency and local structural coherence without requiring image-level correspondence.
+Extensive experiments on four clinical datasets demonstrate that PaGKD consistently and significantly outperforms state-of-the-art methods, achieving relative AUC improvements of
+3.3
+%
+3.3\%
+,
+1.1
+%
+1.1\%
+,
+2.8
+%
+2.8\%
+, and
+3.2
+%
+3.2\%
+, respectively, establishing a new direction for cross-modal learning from unpaired data.
+Code
+—
+https://github.com/Huster-Hq/PaGKD
+1
+Introduction
+Endoscopy is a key tool for early detection of gastrointestinal (GI) cancers
+(
+20
+)
+. Accurate lesion classification from endoscopic images is critical for timely diagnosis and treatment planning; however, manual evaluation is inherently subjective and labor-extensive, driving the development of automated diagnostic systems.
+Modern endoscopy relies on two imaging modalities: White-Light Imaging (WLI) and Narrow-Band Imaging (NBI). Among them, NBI enjoys enhanced vascular and mucosal details via spectral filtering, yielding superior lesion visibility and thereby improving classification performance
+(
+23
+;
+29
+)
+. However, WLI remains the dominant modality in real-world clinical practice due to its universal availability and default configuration in most endoscopic systems
+(
+22
+;
+2
+)
+, whereas NBI functionality is either absent or underutilized in routine deployments.
+This discrepancy raises a pivotal research question:
+How can we transfer the rich visual knowledge embedded in NBI to enhance lesion recognition in WLI, particularly when only WLI data is accessible during clinical deployment?
+This challenge falls under the broader umbrella of cross-modal knowledge transfer. Emerging studies have initiated investigations into this direction by leveraging NBI as a privileged modality during training to augment WLI-only test-time classification. Representative approaches, such as PolypsAlign
+(
+14
+)
+and CPC-Trans
+(
+27
+)
+, align modality-specific features using CNN or Transformer architectures guided by lesion priors. More recently, ADD
+(
+8
+)
+relaxes the requirement for spatial alignment priors and performs holistic image-level alignment on paired yet unregistered images, achieving notable advancements in WLI-only classification performance.
+Despite their efficacy, existing cross-modal distillation methods are limited by their reliance on paired NBI-WLI images of the same lesion. This
+instance-specific distillation
+paradigm assumes that knowledge can be directly transferred between different modality views of the same physical object. While such paired data is informative, collecting it at scale is costly and impractical. More importantly, most real-world clinical datasets are composed of unpaired NBI and WLI images acquired independently from different lesions and patients, leaving a vast amount of data untapped and severely limiting the scalability of current approaches.
+In this work, we address a critical yet underexplored challenge:
+cross-instance knowledge distillation
+for improving lesion classification in WLI endoscopy. Our goal is to leverage abundant
+unpaired
+clinical data to transfer NBI-derived knowledge into WLI-only classification model. This is both feasible and clinically meaningful, as many modality-specific patterns in NBI, such as vascular and mucosal structures, exhibit high recurrence across patients and lesions. However, a major bottleneck arises when applying traditional instance-level distillation to unpaired data: individual lesion images often provide only partial and case-specific manifestations of disease. This leads to semantic mismatches and feature incompatibility between the source (NBI) and target (WLI) models, ultimately undermining the effectiveness of cross-modal distillation.
+To effectively bridge the modality gap between WLI and NBI images without requiring one-to-one pairing, we propose PaGKD, a
+Pa
+iring-free
+G
+roup-level
+K
+nowledge
+D
+istillation framework. Unlike prior methods like ADD
+(
+8
+)
+, which align features between individual images, PaGKD operates at the group level by aggregating images with the same lesion class into semantically coherent feature sets. This group-level formulation mitigates sample-level noise and enhances the stability and completeness of cross-modal knowledge transfer.
+Specifically, PaGKD is built upon two complementary modules: Group-level Prototype Distillation (GKD-Pro) and Group-level Dense Distillation (GKD-Den). GKD-Pro distills high-level, modality-invariant semantics by extracting class-specific prototypes through shared lesion-aware queries. These prototypes act as global semantic anchors and are aligned across modalities via a contrastive objective, enabling the model to abstract consistent concepts from unpaired groups.
+GKD-Den, in contrast, distills local structural knowledge by generating relation maps from refined activation cues, which capture spatial correspondences between modality-specific groups. These maps supervise a group-aware cross-attention mechanism that restructures features across modalities, enforcing alignment at a dense, region-wise level.
+Together, GKD-Pro and GKD-Den form a mutually reinforcing mechanism, where GKD-Pro ensures semantic consistency and GKD-Den enforces spatial coherence. This dual-level alignment enables robust knowledge distillation across modalities, even in the absence of image-level pairing.
+In summary, our major contributions are as follows.
+∙
+\bullet
+We propose PaGKD, a novel pairing-free group-level knowledge distillation framework that enables effective cross-modal learning between WLI and NBI images without requiring one-to-one correspondence.
+∙
+\bullet
+We design two complementary modules: GKD-Pro for modality-invariant semantic prototype learning, and GKD-Den for fine-grained spatial alignment. Together, they achieve coherent, class-consistent feature alignment across WLI and NBI modalities.
+∙
+\bullet
+We conduct extensive experiments on three colorectal polyp classification datasets and one gastric cancer dataset. PaGKD consistently outperforms state-of-the-art methods, achieving
+3.3
+%
+3.3\%
+,
+1.1
+%
+1.1\%
+,
+2.8
+%
+2.8\%
+, and
+3.2
+%
+3.2\%
+relative improvements in AUC, respectively.
+2
+Related Work
+2.1
+Cross-modality Independent Classification (CIC) for GI Diseases
+Significant progress has been made in gastrointestinal (GI) disease classification. Most existing methods treat multi-modal inputs (e.g., WLI and NBI) as modality-agnostic, ignoring potential inter-modal knowledge interaction. Some works focus on architectural improvements, such as integrating multi-level features to enhance classification
+(
+30
+)
+, employing Fourier transforms to mitigate illumination-related noise
+(
+25
+)
+. Other studies emphasize feature learning via self-supervised strategies: SSL-CPCD
+(
+28
+)
+introduces an additive angular margin within cosine similarity to guide patch–image clustering, and SSL-WCE
+(
+6
+)
+adopts adaptive aggregated attention to extract discriminative features. Additionally, some methods focus on learning local lesion-aware features,such as employing attention mechanisms to integrate local and global representations for classification
+(
+26
+)
+.
+However, these approaches often perform suboptimally on WLI images, primarily due to the lack of effective utilization of the richer diagnostic information in NBI, which limits their classification performance in modality-limited scenarios.
+2.2
+Cross-modal Distillation Classification (CDC) for GI Diseases
+Cross-modal knowledge distillation is an effective strategy for transferring knowledge from an informative source modality (NBI) to a less informative target modality (WLI) to improve disease classification.
+Existing CDC methods typically relying on paired images for image-level knowledge transfer. For example, Polypsalign
+(
+27
+)
+adopted discriminator and contrastive loss for global feature alignment; CPC-Trans
+(
+14
+)
+employed a Transformer-based architecture with cross-attention to align patch-level and global features; and ADD
+(
+8
+)
+further performed pixel-wise image-to-image distillation guided by semantic correspondences.
+However, NBI functionality is either absent or underutilized in routine deployments, leading to large-scale unpaired data.
+These paired-dependent CDC methods exhibit limited generalizability in such settings and fail to fully exploit the unpaired information.
+To bridge the modality gap between WLI and NBI without requiring one-to-one pairing, we propose group-level local spatial feature distillation and global prototype distillation, enabling effective and stable unpaired knowledge transfer in challenging GI scenarios.
+3
+Methodology
+Figure 1:
+Overview of the proposed PaGKD. It consists of a pre-trained and frozen NBI classifier, a trainable WLI classifier, and two group-level knowledge distillation modules: Group-level Prototype knowledge distillation (GKD-Pro) and Group-level Dense Knowledge Distillation (GKD-Den). During training, given two unpaired image groups from the same class, GKD-Pro collaborates with GKD-Den to achieve robust and multi-granularity cross-modal knowledge distillation between them.
+3.1
+Overview
+As illustrated in Figure
+1
+, our framework PaGKD consists of a trainable WLI classifier and a frozen, pretrained NBI classifier. Both classifiers share the same architecture, following ADD
+(
+8
+)
+.
+To facilitate knowledge transfer between
+unpaired
+WLI and NBI images, we introduce a group-level feature distillation strategy, instead of regular image-level approaches.
+In each training iteration, we construct
+1
+1
+1
+Grouping details are provided in Appendix
+A.1
+.
+image groups
+{
+𝒢
+c
+mod
+}
+\{\mathcal{G}_{c}^{\texttt{mod}}\}
+,
+where
+𝒢
+c
+mod
+\mathcal{G}_{c}^{\texttt{mod}}
+contains
+N
+c
+N_{c}
+images from class
+c
+c
+in modality
+mod
+∈
+{
+WLI
+,
+NBI
+}
+\texttt{mod}\in\{\texttt{WLI},\texttt{NBI}\}
+, and
+H
+H
+,
+W
+W
+denote the input dimensions. Each image within a group is fed independently into its corresponding classifier to extract feature maps:
+𝒢
+c
+mod
+→
+ℱ
+c
+mod
+∈
+ℝ
+N
+c
+×
+d
+×
+h
+×
+w
+,
+\mathcal{G}_{c}^{\texttt{mod}}\rightarrow\mathcal{F}_{c}^{\texttt{mod}}\in\mathbb{R}^{N_{c}\times d\times h\times w},
+(1)
+where
+d
+d
+,
+h
+h
+, and
+w
+w
+are the channel, height, and width of the feature maps, respectively.
+For group-level operations, we flatten and aggregate all spatial features across the group into a unified representation:
+ℱ
+c
+mod
+=
+{
+𝐟
+i
+,
+c
+mod
+∈
+ℝ
+d
+}
+i
+=
+1
+L
+c
+,
+with
+L
+c
+=
+N
+c
+⋅
+h
+⋅
+w
+.
+\mathcal{F}_{c}^{\texttt{mod}}=\left\{\mathbf{f}_{i,c}^{\texttt{mod}}\in\mathbb{R}^{d}\right\}_{i=1}^{L_{c}},\quad\text{with }L_{c}=N_{c}\cdot h\cdot w.
+(2)
+We then apply two complementary modules for multi-granularity distillation:
+Group-level Prototype Knowledge Distillation (GKD-Pro) performs alignment of global class-level distributions, while Group-level Dense Knowledge Distillation (GKD-Den) aligns local feature.
+3.2
+Group-level Prototype Knowledge Distillation
+To facilitate effective cross-modal knowledge transfer from unpaired data, we first group features that share similar lesion traits. While these group-level features offer richer semantics than individual samples, they may still contain redundant or irrelevant patterns. To distill core lesion representations, we extract feature prototypes that summarize the underlying disease characteristics shared across each group.
+Lesion-related Query Transformer for Prototype Representation.
+We propose a learnable prototype extraction mechanism based on the Lesion-Related Query Transformer (LR-QFormer). It uses a set of shared trainable lesion queries
+𝒬
+∈
+ℝ
+N
+q
+×
+d
+\mathcal{Q}\in\mathbb{R}^{N_{q}\times d}
+to actively attend to discriminative group features, where
+N
+q
+≪
+L
+c
+N_{q}\ll L_{c}
+. Unlike static clustering, this query-based approach enables adaptive and interpretable abstraction of disease semantics.
+The queries
+𝒬
+\mathcal{Q}
+are shared across all groups and modalities, and are designed to be class- and modality-agnostic. They act as latent anchors representing modality-invariant lesion concepts. During inference, their interaction with modality-specific group features reveals how these lesion attributes are expressed in different imaging conditions.
+The LR-QFormer is composed of
+T
+T
+stacked Transformer blocks. At each layer, the queries are first refined via self-attention
+SA
+, then updated by cross-attending
+CA
+to the group feature map
+ℱ
+c
+mod
+∈
+ℝ
+L
+c
+×
+d
+\mathcal{F}_{c}^{\texttt{mod}}\in\mathbb{R}^{L_{c}\times d}
+with absolute positional encoding
+𝐄
+pos
+\mathbf{E}_{\texttt{pos}}
+(
+4
+)
+. Formally:
+𝒬
+t
+,
+c
+mod
+=
+CA
+​
+(
+SA
+​
+(
+𝒬
+t
+−
+1
+,
+c
+mod
+)
+,
+ℱ
+c
+mod
++
+𝐄
+pos
+)
+,
+𝒬
+0
+,
+c
+mod
+=
+𝒬
+.
+\mathcal{Q}_{t,c}^{\texttt{mod}}=\texttt{CA}\left(\texttt{SA}\left(\mathcal{Q}_{t-1,c}^{\texttt{mod}}\right),\ \mathcal{F}_{c}^{\texttt{mod}}+\mathbf{E}_{\texttt{pos}}\right),~\mathcal{Q}_{0,c}^{\texttt{mod}}=\mathcal{Q}.
+(3)
+Through this iterative process, each query accumulates modality-specific evidence of its corresponding disease attribute. After
+T
+T
+layers, we obtain the refined set
+𝒬
+c
+mod
+=
+{
+𝐪
+i
+,
+c
+mod
+∈
+ℝ
+d
+}
+i
+=
+1
+N
+q
+\mathcal{Q}_{c}^{\texttt{mod}}=\{\mathbf{q}_{i,c}^{\texttt{mod}}\in\mathbb{R}^{d}\}_{i=1}^{N_{q}}
+which serves as the prototype representation of the group in modality
+mod
+. These prototypes are both compact and interpretable, enabling robust cross-modal alignment in subsequent distillation.
+Group-level Contrastive Loss for Knowledge Distillation.
+To facilitate cross-modal knowledge distillation, we introduce a group-level contrastive objective over the refined lesion query sets
+{
+𝒬
+c
+mod
+}
+\{\mathcal{Q}_{c}^{\texttt{mod}}\}
+generated for each class
+c
+c
+and modality
+mod
+∈
+{
+WLI
+,
+NBI
+}
+\texttt{mod}\in\{\texttt{WLI},\texttt{NBI}\}
+. The core motivation is that the same set of lesion queries
+𝒬
+\mathcal{Q}
+, shared across groups, captures modality-invariant disease semantics. When interacting with group features from different classes and modalities, these queries produce class-specific prototype representations, which reflect how a disease manifests under a particular imaging modality.
+Our goal is to align these group-level representations across modalities for the same class, while separating them across different classes. This encourages the WLI classifier to focus on pathology-relevant patterns distilled from NBI, avoiding modality-specific confounders like color or illumination variations.
+To this end, we define the similarity between two query sets
+𝒬
+c
+mod
+\mathcal{Q}_{c}^{\texttt{mod}}
+and
+𝒬
+c
+′
+mod
+′
+\mathcal{Q}_{c^{\prime}}^{\texttt{mod}^{\prime}}
+as the average cosine similarity between queries at the same index:
+S
+𝒬
+c
+mod
+,
+𝒬
+c
+′
+mod
+′
+=
+1
+N
+q
+​
+∑
+i
+=
+1
+N
+q
+(
+q
+i
+,
+c
+mod
+)
+⊤
+​
+q
+i
+,
+c
+′
+mod
+′
+‖
+q
+i
+,
+c
+mod
+‖
+​
+‖
+q
+i
+,
+c
+′
+mod
+′
+‖
+.
+S_{\mathcal{Q}_{c}^{\texttt{mod}},\mathcal{Q}_{c^{\prime}}^{\texttt{mod}^{\prime}}}=\frac{1}{N_{q}}\sum\limits_{i=1}^{N_{q}}\frac{(\textbf{q}_{i,c}^{\texttt{mod}})^{\top}\textbf{q}_{i,c^{\prime}}^{\texttt{mod}^{\prime}}}{\|\textbf{q}_{i,c}^{\texttt{mod}}\|\|\textbf{q}_{i,c^{\prime}}^{\texttt{mod}^{\prime}}\|}.
+(4)
+This formulation assumes each query captures a specific semantic aspect of disease (
+e.g.
+, boundary irregularity, vascular pattern), enabling a fine-grained alignment across groups.
+We then construct a symmetric contrastive loss that encourages high similarity between WLI-NBI pairs of the same class and low similarity between different classes:
+ℒ
+p
+​
+r
+​
+o
+=
+−
+1
+2
+​
+C
+∑
+c
+=
+1
+C
+(
+log
+exp
+⁡
+(
+S
+𝒬
+c
+WLI
+,
+𝒬
+c
+NBI
+)
+∑
+𝒬
+c
+′
+mod
+≠
+𝒬
+c
+WLI
+exp
+⁡
+(
+S
+𝒬
+c
+WLI
+,
+𝒬
+c
+′
+mod
+)
+OPEN
++
+log
+​
+exp
+⁡
+(
+S
+𝒬
+c
+NBI
+,
+𝒬
+c
+WLI
+)
+∑
+𝒬
+c
+′
+mod
+≠
+𝒬
+c
+NBI
+exp
+⁡
+(
+S
+𝒬
+c
+NBI
+,
+𝒬
+c
+′
+mod
+)
+)
+.
+\begin{split}\mathcal{L}_{pro}=-\frac{1}{2C}\sum\limits_{c=1}^{C}\big(\texttt{log}\frac{\mathrm{exp}({S}_{\mathcal{Q}_{c}^{\texttt{WLI}},\mathcal{Q}_{c}^{\texttt{NBI}}})}{\sum_{\mathcal{Q}_{c^{\prime}}^{\texttt{mod}}\neq\mathcal{Q}_{c}^{\texttt{WLI}}}\mathrm{exp}({S}_{\mathcal{Q}_{c}^{\texttt{WLI}},\mathcal{Q}_{c^{\prime}}^{\texttt{mod}}})}\\
++\texttt{log}\frac{\mathrm{exp}({S}_{\mathcal{Q}_{c}^{\texttt{NBI}},\mathcal{Q}_{c}^{\texttt{WLI}}})}{\sum_{\mathcal{Q}_{c^{\prime}}^{\texttt{mod}}\neq\mathcal{Q}_{c}^{\texttt{NBI}}}\mathrm{exp}({S}_{\mathcal{Q}_{c}^{\texttt{NBI}},\mathcal{Q}_{c^{\prime}}^{\texttt{mod}}})}\big).\end{split}
+(5)
+This loss term guides the lesion queries to distill disease-centric semantics shared across modalities, thus enabling group-level alignment and effective cross-modal transfer, even under unpaired supervision.
+3.3
+Group-level Dense Knowledge Distillation
+While the above-introduced lesion-related queries capture high-level, modality-invariant attributes, they may overlook fine spatial details critical for accurate diagnosis. To complement this, we perform dense alignment between unpaired cross-modal feature groups. In medical imaging, subtle local patterns such as vascular distortion or mucosal texture are often decisive and require pixel-level modeling.
+Our approach draws inspiration from ADD
+(
+8
+)
+, which aligns images based on Class Activation Maps (CAMs)
+(
+31
+)
+. While ADD operates on individual images, we extend this idea to the group level by aligning all WLI and NBI features within the same class. This enables more stable and comprehensive cross-modal supervision.
+Semantic Relation Generation for Inter-class Dense Connection.
+For each group
+𝒢
+c
+mod
+\mathcal{G}_{c}^{\texttt{mod}}
+in class
+c
+c
+, we first compute CAMs from the extracted features, then apply pixel-adaptive refinement
+(
+18
+)
+to enhance spatial coherence. The refined CAMs are flattened into a sequence
+ℳ
+c
+mod
+=
+{
+𝐦
+i
+,
+c
+mod
+}
+i
+=
+1
+L
+c
+\mathcal{M}_{c}^{\texttt{mod}}=\{\mathbf{m}_{i,c}^{\texttt{mod}}\}_{i=1}^{L_{c}}
+, and discretized using a tri-thresholding scheme with thresholds
+τ
+1
+\tau_{1}
+and
+τ
+2
+\tau_{2}
+. Each element
+𝐦
+i
+,
+c
+mod
+∈
+{
+0
+,
+1
+,
+∅
+}
+\mathbf{m}_{i,c}^{\texttt{mod}}\in\{0,1,\varnothing\}
+indicates background, lesion, or ambiguity.
+To construct a semantic relation matrix
+𝐑
+c
+∈
+{
+0
+,
+1
+}
+L
+c
+×
+L
+c
+\mathbf{R}_{c}\in\{0,1\}^{L_{c}\times L_{c}}
+between WLI and NBI groups, we mark a pair of positions
+(
+p
+,
+q
+)
+(p,q)
+as semantically aligned (
+i.e.
+,
+r
+(
+p
+,
+q
+)
+,
+c
+=
+1
+r_{(p,q),c}=1
+) if both are confidently labeled (non-ambiguous) and share the same semantic label in their respective binarized CAMs:
+𝐑
+c
+​
+(
+p
+,
+q
+)
+=
+{
+0
+if
+𝐦
+p
+,
+c
+WLI
+=
+𝐦
+q
+,
+c
+NBI
+and
+𝐦
+p
+,
+c
+WLI
+,
+𝐦
+q
+,
+c
+NBI
+≠
+∅
+,
+−
+∞
+otherwise
+.
+\mathbf{R}_{c}(p,q)=\begin{cases}0&\text{ if }~\mathbf{m}_{p,c}^{\texttt{WLI}}=\mathbf{m}_{q,c}^{\texttt{NBI}}~\text{and}~\mathbf{m}_{p,c}^{\texttt{WLI}},\mathbf{m}_{q,c}^{\texttt{NBI}}\neq\varnothing,\\
+-\infty&\text{ otherwise }.\end{cases}
+(6)
+This relation matrix serves as dense supervision for pixel-level cross-modal distillation. It enables the model to transfer lesion-related knowledge from NBI to WLI at a finer granularity, even in the presence of spatial misalignment or modality-specific artifacts.
+Semantic Relation-guided Cross-Attention (SRCA) for Dense Distillation.
+Given the semantic relation matrix
+𝐑
+c
+\mathbf{R}_{c}
+, we introduce a Semantic Relation-guided Cross-Attention (SRCA) module to align dense local features across unpaired cross-modal groups. This module uses relation-aware attention to reshape spatial structures and enhance semantic consistency during feature interaction.
+Formally, given group features
+ℱ
+c
+WLI
+\mathcal{F}_{c}^{\texttt{WLI}}
+and
+ℱ
+c
+NBI
+\mathcal{F}_{c}^{\texttt{NBI}}
+, we reconstruct a spatially ‘aligned’ version of NBI in the WLI coordinate space via:
+ℱ
+c
+NBI
+→
+WLI
+=
+𝐀
+⁡
+(
+ℱ
+c
+NBI
+​
+W
+v
+)
+∈
+ℝ
+L
+c
+×
+d
+,
+\displaystyle\mathcal{F}_{c}^{\texttt{NBI}\xrightarrow{}\texttt{WLI}}=\mathbf{A}(\mathcal{F}_{c}^{\texttt{NBI}}W_{v})\in\mathbb{R}^{L_{c}\times d},
+(7)
+𝐀
+=
+Softmax
+​
+(
+𝐑
+c
++
+(
+ℱ
+c
+WLI
+​
+W
+q
+)
+​
+(
+ℱ
+c
+NBI
+​
+W
+k
+)
+⊤
+d
+/
+4
+)
+,
+\displaystyle\mathbf{A}=\texttt{Softmax}\bigg(\mathbf{R}_{c}+\frac{{(\mathcal{F}_{c}^{\texttt{WLI}}W_{q})}(\mathcal{F}_{c}^{\texttt{NBI}}W_{k})^{\top}}{\sqrt{{d}/4}}\bigg),
+where
+W
+q
+,
+W
+k
+∈
+ℝ
+d
+×
+d
+4
+W_{q},W_{k}\in\mathbb{R}^{d\times\frac{d}{4}}
+and
+W
+v
+∈
+ℝ
+d
+×
+d
+W_{v}\in\mathbb{R}^{d\times d}
+are linear projections. The attention matrix
+𝐀
+∈
+ℝ
+L
+c
+×
+L
+c
+\mathbf{A}\in\mathbb{R}^{L_{c}\times L_{c}}
+guides the spatial reconstruction by aggregating semantically matched positions from NBI features, reshaping them to better align with WLI semantics.
+A symmetric operation is performed to reconstruct WLI features in the NBI space,
+i.e.
+,
+ℱ
+c
+WLI
+→
+NBI
+\mathcal{F}_{c}^{\texttt{WLI}\rightarrow\texttt{NBI}}
+, using the transposed relation matrix
+𝐑
+c
+⊤
+\mathbf{R}_{c}^{\top}
+. This bidirectional mapping supports dense cross-modal feature fusion under weakly supervised and unpaired conditions.
+Compared with ADD
+(
+8
+)
+, which aligns single images using CAM-derived correspondences, our method performs attention-guided alignment at the group level, allowing the model to query from richer spatial and semantic contexts. Importantly, our spatial reshaping aggregates evidence across groups, enabling more reliable reconstruction even when individual samples lack complete lesion information.
+With the two sets of group-level ‘reconstructed’ features
+ℱ
+c
+NBI
+→
+WLI
+=
+{
+𝐟
+i
+,
+c
+NBI
+→
+WLI
+}
+i
+=
+1
+L
+c
+\mathcal{F}_{c}^{\texttt{NBI}\rightarrow\texttt{WLI}}=\{\mathbf{f}_{i,c}^{\texttt{NBI}\rightarrow\texttt{WLI}}\}_{i=1}^{L_{c}}
+and
+ℱ
+c
+WLI
+→
+NBI
+=
+{
+𝐟
+i
+,
+c
+WLI
+→
+NBI
+}
+i
+=
+1
+L
+c
+\mathcal{F}_{c}^{\texttt{WLI}\rightarrow\texttt{NBI}}=\{\mathbf{f}_{i,c}^{\texttt{WLI}\rightarrow\texttt{NBI}}\}_{i=1}^{L_{c}}
+obtained, we define a bidirectional consistency loss to supervise this alignment as formulated in Eq. (
+8
+).
+This loss supervises dense distillation at the group level in both directions and encourages fine-grained cross-modal consistency.
+ℒ
+d
+​
+e
+​
+n
+=
+1
+C
+​
+(
+L
+c
+)
+2
+​
+∑
+c
+=
+1
+C
+(
+∑
+p
+=
+1
+L
+c
+‖
+𝐟
+p
+,
+c
+WLI
+−
+𝐟
+p
+,
+c
+NBI
+→
+WLI
+‖
+2
+CLOSE
++
+∑
+q
+=
+1
+L
+c
+‖
+𝐟
+q
+,
+c
+NBI
+−
+𝐟
+q
+,
+c
+WLI
+→
+NBI
+‖
+2
+)
+.
+\begin{split}\mathcal{L}_{den}=\frac{1}{C(L_{c})^{2}}\sum\limits_{c=1}^{C}\bigg(\sum\limits_{p=1}^{L_{c}}\left\|\mathbf{f}_{p,c}^{\texttt{WLI}}-\mathbf{f}_{p,c}^{\texttt{NBI}\rightarrow\texttt{WLI}}\right\|_{2}\\
++\sum\limits_{q=1}^{L_{c}}\left\|\mathbf{f}_{q,c}^{\texttt{NBI}}-\mathbf{f}_{q,c}^{\texttt{WLI}\rightarrow\texttt{NBI}}\right\|_{2}\bigg).\end{split}
+(8)
+3.4
+Network Training and Inference
+In the training stage, in addition to GKD-Pro and GKD-Den distillations,
+i.e.
+,
+ℒ
+p
+​
+r
+​
+o
+\mathcal{L}_{pro}
+and
+ℒ
+d
+​
+e
+​
+n
+\mathcal{L}_{den}
+, our overall training objective also includes a cross-entropy loss term
+ℒ
+c
+​
+l
+​
+s
+\mathcal{L}_{cls}
+for the classification results of the WLI classifier for the ground truth class labels.
+The total training loss
+ℒ
+t
+​
+o
+​
+t
+​
+a
+​
+l
+\mathcal{L}_{total}
+is formulated as:
+ℒ
+t
+​
+o
+​
+t
+​
+a
+​
+l
+=
+ℒ
+p
+​
+r
+​
+o
++
+ℒ
+d
+​
+e
+​
+n
++
+ℒ
+c
+​
+l
+​
+s
+,
+\mathcal{L}_{total}=\mathcal{L}_{pro}+\mathcal{L}_{den}+\mathcal{L}_{cls},
+(9)
+where
+ℒ
+c
+​
+l
+​
+s
+=
+1
+C
+​
+∑
+c
+=
+1
+C
+(
+1
+N
+c
+​
+∑
+i
+=
+1
+N
+c
+CE
+​
+(
+P
+i
+,
+c
+WLI
+,
+Y
+c
+)
+)
+\mathcal{L}_{cls}=\frac{1}{C}\sum_{c=1}^{C}\big(\frac{1}{N_{c}}\sum_{i=1}^{N_{c}}\texttt{CE}(P_{i,c}^{\texttt{WLI}},Y_{c})\big)
+.
+Here,
+CE
+​
+(
+⋅
+,
+⋅
+)
+\texttt{CE}(\cdot,\cdot)
+is the cross-entropy loss function,
+P
+i
+,
+c
+WLI
+P_{i,c}^{\texttt{WLI}}
+is the classification result of the WLI classifier for the
+i
+i
+-th image in the WLI image group of class
+c
+c
+, and
+Y
+c
+Y_{c}
+is the one-hot label corresponding to the class
+c
+c
+.
+In the inference stage, we only keep the WLI classifier, allowing it to receive a single WLI image and output the classification result.
+4
+Experiment
+4.1
+Datasets and Evaluation Metrics
+Type
+Dataset
+Class
+WLI-NBI
+Pairs
+Unpaired
+WLI
+NBI
+Colorectal Polyp
+PolypSet
+Hyperplasia
+63
+63
+200
+200
+200
+200
+Adenoma
+102
+102
+250
+250
+250
+250
+PICCOLO
+Hyperplasia
+249
+249
+155
+155
+35
+35
+Adenoma
+620
+620
+834
+834
+162
+162
+Adenocarcinoma
+186
+186
+76
+76
+17
+17
+IH-Polyp
+Hyperplasia
+257
+257
+1,250
+1,250
+427
+427
+Adenoma
+299
+299
+2,480
+2,480
+494
+494
+GC
+IH-GC
+Gastric Inflammation
+120
+120
+215
+215
+159
+159
+Gastric Cancer
+144
+144
+254
+254
+144
+144
+Table 1:
+Statistics of experimental datasets.
+Datasets.
+We conduct experiments on four gastrointestinal (GI) cancer datasets independently, including three colorectal polyp datasets: PICCOLO
+(
+19
+)
+, PolypSet
+(
+12
+)
+, and an in-house dataset, denoted IH-Polyp, and an in-house gastric cancer (GC) dataset, denoted IH-GC.
+Detailed statistics are summarized in Table
+1
+.
+Evaluation Metrics.
+To fairly compare the performance of the NBI and WLI classifiers, we perform
+5
+5
+-fold cross-validation on the paired data in all datasets, while the unpaired data are only used as the train set.
+We ensure that the patient-level separation between the train and test sets.
+To evaluate performance, we use four metrics: Accuracy (Acc), Precision (Pre), Recall (Rec), F
+1
+1
+-score (F
+1
+1
+), and Area Under the Curve (AUC).
+Unless otherwise specified, all evaluations are conducted on the WLI test set.
+4.2
+Implementation Details
+PaGKD is implemented using PyTorch
+(
+17
+)
+and trained on a single NVIDIA
+4090
+4090
+GPU with
+24
+24
+GB memory.
+Weights of ResNet-50
+(
+7
+)
+pre-trained on ImageNet
+(
+3
+)
+are loaded as initialization of the WLI classifier.
+NBI classifier is pretrained on NBI train set and frozen during distillation.
+The input size is set to
+448
+×
+448
+448\times 448
+, and the batch size is set to
+24
+24
+.
+We define the group size for each class within a batch based on the class distribution in the dataset.
+The number of epochs is set to
+100
+100
+and the initial learning rate is set to
+1
+​
+e
+−
+4
+1e^{-4}
+.
+The optimizer is set to Adam
+(
+10
+)
+with
+1
+​
+e
+−
+8
+1e^{-8}
+weight decay.
+We set the number of lesion queries in LR-QFormer
+N
+N
+as
+12
+12
+, and set
+τ
+1
+\tau_{1}
+and
+τ
+2
+\tau_{2}
+as
+0.3
+0.3
+and
+0.7
+0.7
+, respectively, according to the parameter search experiments.
+Note that PaGKD can also be seamlessly extended to paired data and leverage the inherent prior pairing relationships by simply transforming the input features of GKD-Pro and GKD-Den from group-level to image-level.
+4.3
+Comparison with State-of-the-arts (SOTAs)
+Methods
+Train Data
+PICCOLO (
+3
+3
+Classes)
+PolypSet (
+2
+2
+Classes)
+IH-Polyp (
+2
+2
+Classes)
+IH-GC (
+2
+2
+Classes)
+Acc
+Pre
+Rec
+F
+1
+1
+AUC
+Acc
+Pre
+Rec
+F
+1
+1
+AUC
+Acc
+Rec
+Pre
+F
+1
+1
+AUC
+Acc
+Rec
+Pre
+F
+1
+1
+AUC
+NBI Classifier
+80.7
+80.7
+79.1
+79.1
+79.6
+79.6
+79.1
+79.1
+86.9
+86.9
+94.8
+94.8
+96.0
+96.0
+95.1
+95.1
+95.5
+95.5
+97.6
+97.6
+83.8
+83.8
+84.3
+84.3
+89.4
+89.4
+86.8
+86.8
+87.0
+87.0
+81.9
+81.9
+76.7
+76.7
+89.7
+89.7
+83.5
+83.5
+86.3
+86.3
+▶
+\blacktriangleright
+Cross-modal Independent Classification (CIC) methods:
+SSL-CPCD
+𝒟
+p
++
+𝒟
+u
+​
+n
+​
+p
+\mathcal{D}_{p}+\mathcal{D}_{unp}
+64.1
+64.1
+65.4
+65.4
+51.4
+51.4
+54.0
+54.0
+72.5
+72.5
+76.7
+76.7
+77.7
+77.7
+85.3
+85.3
+81.3
+81.3
+80.2
+80.2
+64.9
+64.9
+70.1
+70.1
+71.2
+71.2
+70.6
+70.6
+68.9
+68.9
+66.7
+66.7
+74.1
+74.1
+75.5
+75.5
+74.8
+74.8
+70.4
+70.4
+SSL-WCE
+𝒟
+p
++
+𝒟
+u
+​
+n
+​
+p
+\mathcal{D}_{p}+\mathcal{D}_{unp}
+66.0
+66.0
+67.8
+67.8
+57.5
+57.5
+59.4
+59.4
+73.9
+73.9
+76.2
+76.2
+76.5
+76.5
+86.3
+86.3
+81.1
+81.1
+81.2
+81.2
+56.8
+56.8
+57.1
+57.1
+90.3
+90.3
+70.0
+70.0
+57.5
+57.5
+64.9
+64.9
+73.9
+73.9
+70.8
+70.8
+72.3
+72.3
+69.6
+69.6
+FFCNet
+𝒟
+p
++
+𝒟
+u
+​
+n
+​
+p
+\mathcal{D}_{p}+\mathcal{D}_{unp}
+76.8
+76.8
+80.2
+80.2
+68.3
+68.3
+72.1
+72.1
+80.1
+80.1
+87.2
+87.2
+90.8
+90.8
+87.3
+87.3
+89.0
+89.0
+91.4
+91.4
+64.0
+64.0
+66.7
+66.7
+78.8
+78.8
+72.2
+72.2
+62.9
+62.9
+70.4
+70.4
+89.2
+¯
+\underline{89.2}
+62.3
+62.3
+73.4
+73.4
+70.8
+70.8
+DLGNet
+†
+𝒟
+p
++
+𝒟
+u
+​
+n
+​
+p
+\mathcal{D}_{p}+\mathcal{D}_{unp}
+68.2
+68.2
+67.8
+67.8
+57.5
+57.5
+59.4
+59.4
+74.5
+74.5
+80.8
+80.8
+80.5
+80.5
+89.2
+89.2
+84.6
+84.6
+83.4
+83.4
+67.6
+67.6
+74.2
+74.2
+69.7
+69.7
+71.9
+71.9
+63.3
+63.3
+70.4
+70.4
+78.4
+78.4
+75.5
+75.5
+76.9
+76.9
+66.0
+66.0
+▶
+\blacktriangleright
+Cross-modal Distillation Classification (CDC) methods:
+CPC-Trans
+†
+𝒟
+p
+\mathcal{D}_{p}
+78.6
+78.6
+76.7
+76.7
+76.2
+76.2
+76.4
+76.4
+86.6
+86.6
+90.1
+90.1
+89.0
+89.0
+95.1
+95.1
+91.9
+91.9
+87.2
+87.2
+69.4
+69.4
+67.4
+67.4
+93.9
+\mathbf{93.9}
+78.5
+78.5
+75.6
+75.6
+75.6
+75.6
+73.2
+73.2
+90.6
+\mathbf{90.6}
+79.4
+79.4
+75.5
+75.5
+CPC-Trans
+†
+𝒟
+p
++
+𝒟
+u
+​
+n
+​
+p
+\mathcal{D}_{p}+\mathcal{D}_{unp}
+78.2
+78.2
+76.7
+76.7
+76.5
+76.5
+76.6
+76.6
+87.2
+¯
+\underline{87.2}
+89.9
+89.9
+88.3
+88.3
+94.7
+94.7
+91.0
+91.0
+86.5
+86.5
+62.2
+62.2
+72.2
+72.2
+59.1
+59.1
+65.0
+65.0
+69.6
+69.6
+67.9
+67.9
+73.3
+73.3
+68.8
+68.8
+71.0
+71.0
+69.8
+69.8
+SAMD
+𝒟
+p
+\mathcal{D}_{p}
+75.3
+75.3
+77.0
+77.0
+70.0
+70.0
+72.8
+72.8
+83.1
+83.1
+89.0
+89.0
+89.5
+89.5
+92.2
+92.2
+90.8
+90.8
+90.0
+90.0
+70.3
+70.3
+70.0
+70.0
+74.6
+74.6
+75.8
+75.8
+75.2
+75.2
+73.6
+73.6
+76.7
+76.7
+71.9
+71.9
+74.2
+74.2
+76.6
+76.6
+SAMD
+𝒟
+p
++
+𝒟
+u
+​
+n
+​
+p
+\mathcal{D}_{p}+\mathcal{D}_{unp}
+74.3
+74.3
+74.7
+74.7
+67.9
+67.9
+70.1
+70.1
+79.3
+79.3
+87.2
+87.2
+89.2
+89.2
+89.2
+89.2
+89.2
+89.2
+90.1
+90.1
+62.2
+62.2
+76.1
+76.1
+53.0
+53.0
+62.5
+62.5
+70.8
+70.8
+69.6
+69.6
+89.5
+\mathbf{89.5}
+53.1
+53.1
+66.7
+66.7
+77.3
+77.3
+PolypsAlign
+†
+𝒟
+p
+\mathcal{D}_{p}
+79.4
+79.4
+80.4
+80.4
+74.1
+74.1
+76.3
+76.3
+84.7
+84.7
+91.3
+91.3
+93.1
+93.1
+92.2
+92.2
+92.6
+92.6
+90.6
+90.6
+70.3
+70.3
+71.4
+71.4
+83.3
+83.3
+76.9
+76.9
+74.3
+74.3
+73.2
+73.2
+79.3
+79.3
+71.9
+71.9
+75.4
+75.4
+81.4
+81.4
+PolypsAlign
+†
+𝒟
+p
++
+𝒟
+u
+​
+n
+​
+p
+\mathcal{D}_{p}+\mathcal{D}_{unp}
+76.2
+76.2
+88.8
+\mathbf{88.8}
+58.8
+58.8
+63.9
+63.9
+81.5
+81.5
+86.0
+86.0
+91.5
+91.5
+84.3
+84.3
+87.8
+87.8
+85.7
+85.7
+60.4
+60.4
+67.2
+67.2
+65.2
+65.2
+66.2
+66.2
+60.6
+60.6
+71.4
+71.4
+75.0
+75.0
+75.0
+75.0
+75.0
+75.0
+73.4
+73.4
+ADD
+𝒟
+p
+\mathcal{D}_{p}
+78.1
+78.1
+79.1
+79.1
+74.4
+74.4
+76.4
+76.4
+83.8
+83.8
+93.4
+93.4
+96.1
+\mathbf{96.1}
+92.8
+92.8
+94.0
+94.0
+93.7
+93.7
+80.2
+80.2
+76.8
+76.8
+90.5
+¯
+\underline{90.5}
+84.1
+¯
+\underline{84.1}
+82.8
+¯
+\underline{82.8}
+75.0
+75.0
+82.1
+82.1
+71.9
+71.9
+79.2
+79.2
+77.3
+77.3
+ADD
+𝒟
+p
++
+𝒟
+u
+​
+n
+​
+p
+\mathcal{D}_{p}+\mathcal{D}_{unp}
+76.8
+76.8
+77.9
+77.9
+71.7
+71.7
+74.2
+74.2
+84.2
+84.2
+91.9
+91.9
+90.7
+90.7
+96.1
+96.1
+93.3
+93.3
+93.6
+93.6
+74.8
+74.8
+78.8
+78.8
+78.8
+78.8
+78.8
+78.8
+75.7
+75.7
+75.0
+75.0
+76.5
+76.5
+81.2
+81.2
+78.8
+78.8
+77.8
+77.8
+PaGKD (Ours)
+𝒟
+u
+​
+n
+​
+p
+\mathcal{D}_{unp}
+80.8
+¯
+\underline{80.8}
+80.8
+80.8
+77.2
+¯
+\underline{77.2}
+78.8
+¯
+\underline{78.8}
+86.6
+86.6
+94.2
+¯
+\underline{94.2}
+91.8
+91.8
+99.0
+\mathbf{99.0}
+95.3
+¯
+\underline{95.3}
+94.0
+94.0
+79.3
+79.3
+77.9
+77.9
+83.9
+83.9
+83.9
+83.9
+82.4
+82.4
+79.4
+¯
+\underline{79.4}
+82.5
+82.5
+88.0
+¯
+\underline{88.0}
+80.5
+¯
+\underline{80.5}
+82.2
+¯
+\underline{82.2}
+PaGKD (Ours)
+𝒟
+p
+\mathcal{D}_{p}
+78.6
+78.6
+79.2
+79.2
+73.3
+73.3
+75.3
+75.3
+84.4
+84.4
+93.6
+93.6
+93.3
+93.3
+96.1
+96.1
+94.7
+94.7
+94.2
+¯
+\underline{94.2}
+81.1
+¯
+\underline{81.1}
+83.6
+¯
+\underline{83.6}
+83.0
+83.0
+83.2
+83.2
+81.1
+81.1
+76.8
+76.8
+82.8
+82.8
+75.0
+75.0
+78.7
+78.7
+81.0
+81.0
+PaGKD (Ours)
+𝒟
+p
++
+𝒟
+u
+​
+n
+​
+p
+\mathcal{D}_{p}+\mathcal{D}_{unp}
+81.9
+\mathbf{81.9}
+81.9
+¯
+\underline{81.9}
+80.6
+\mathbf{80.6}
+81.1
+\mathbf{81.1}
+90.1
+\mathbf{90.1}
+94.8
+\mathbf{94.8}
+94.3
+¯
+\underline{94.3}
+97.1
+¯
+\underline{97.1}
+95.7
+\mathbf{95.7}
+94.7
+\mathbf{94.7}
+82.0
+\mathbf{82.0}
+84.8
+\mathbf{84.8}
+84.8
+84.8
+84.8
+\mathbf{84.8}
+85.1
+\mathbf{85.1}
+81.5
+\mathbf{81.5}
+86.5
+86.5
+84.9
+84.9
+85.7
+\mathbf{85.7}
+84.0
+\mathbf{84.0}
+Table 2:
+Comparisons on three polyp classicication datasets: PICCOLO, PolypSet, and IH-Polyp, and a gastric cancer dataset IH-GC. ‘NBI Classifier’ denotes the performance of the pre-trained NBI classifier on the NBI test set. The gray lines indicate that the methods originally designed for paired data receive additional unpaired train data. ‘
+†
+’ represents that the method requires additional prior information about the location of polyps during training and inference.
+Bold
+and
+underlined
+values indicate the best and second-best results, respectively.
+We compare our PaGKD with eight SOTA methods on four GI cancer datasets, including four cross-modal independent classification (CIC) methods: SSL-CPCD
+(
+28
+)
+, SSL-WCE
+(
+6
+)
+, FFCNet
+(
+25
+)
+, and DLGNet
+(
+26
+)
+, and four cross-modal distillation classification (CDC) methods: CPC-Trans
+(
+14
+)
+, SAMD
+(
+21
+)
+, PolypsAlign
+(
+27
+)
+, and ADD
+(
+8
+)
+.
+For fairness, all methods adopt ResNet-50
+(
+7
+)
+as backbone, except CPC-Trans using ViT-S
+(
+4
+)
+, which relies on the Transformer architecture.
+Since all CIC methods supervise each image independently without relying on paired data, they are trained with paired and unpaired data to maximize the train data.
+The CDC methods are inherently designed for paired data.
+For comprehensive comparison, we train them in two settings: only paired data and a combination of paired and unpaired data.
+The results are presented in Table
+2
+, from which we derive three key observations:
+(1) The CDC methods outperform CIC methods in terms of overall trends on four datasets, which proves the efficacy of cross-modal knowledge distillation from the NBI modality to the WLI modality in enhancing WLI GI cancer classification.
+(2) The introduction of additional unpaired data not only fails to enhance the performance of existing CDC methods but also leads to performance degradation.
+This confirms that applying these methods, which are originally designed for paired images of the same lesion instance, to unpaired images from different lesions will introduce noise and hinder effective feature learning.
+(3) When trained on the combination of paired and unpaired data, PaGKD significantly outperforms other SOTAs across all four datasets, achieving relative AUC improvements of at least
+3.3
+%
+3.3\%
+,
+1.1
+%
+1.1\%
+,
+2.8
+%
+2.8\%
+, and
+3.2
+%
+3.2\%
+, respectively, and achieves performance closest to the NBI classifier.
+Furthermore, even when using only unpaired data, PaGKD achieves performance that is competitive with or even better than the best competing methods.
+These results demonstrate the effectiveness of PaGKD in utilizing unpaired data.
+4.4
+Ablation Studies
+Effectiveness of Key Components.
+Components
+PICCOLO
+IH-GC
+GKD-Pro
+GKD-Den
+Acc
+F
+1
+1
+AUC
+Acc
+F
+1
+1
+AUC
+✗
+✗
+62.8
+62.8
+52.4
+52.4
+71.2
+71.2
+62.5
+62.5
+61.8
+61.8
+66.9
+66.9
+✓
+✗
+77.7
+77.7
+75.3
+75.3
+83.5
+83.5
+75.0
+75.0
+80.5
+80.5
+75.5
+75.5
+✗
+✓
+77.3
+77.3
+75.2
+75.2
+85.0
+85.0
+75.0
+75.0
+75.0
+75.0
+77.3
+77.3
+✓
+✓
+81.9
+\mathbf{81.9}
+81.1
+\mathbf{81.1}
+90.1
+\mathbf{90.1}
+81.5
+\mathbf{81.5}
+85.7
+\mathbf{85.7}
+84.0
+\mathbf{84.0}
+Table 3:
+Ablation study on the effectiveness of the two key components: GKD-Pro and GKD-Den.
+To verify the effectiveness of the two key components of PAGKD: Group-level Prototype Knowledge Distillation (GKD-Pro) and Group-level Dense Knowledge Distillation (GKD-Den), we train three variants of PaGKD by disabling GKD-Pro or/and GKD-Den on the combination of paired and unpaired data of both PICCOLO and IH-GC.
+When both GKD-Pro and GKD-Den are disabled, we actually directly train a ResNet-
+50
+50
+classifier in a cross-modal independent manner.
+As shown in Table
+3
+, introducing GKD-Pro or GKD-Den individually produces notable performance improvements, demonstrating the effectiveness of each component in isolation.
+When both components are employed jointly, the model achieves further performance gains.
+This suggests that their contributions are complementary rather than redundant, enabling effective cross-modal knowledge distillation at both global-level and local-level.
+Effectiveness of Key Sub-components.
+Methods
+PICCOLO
+IH-GC
+ACC
+F
+1
+1
+AUC
+ACC
+F
+1
+1
+AUC
+PaGKD
+81.9
+\mathbf{81.9}
+81.1
+\mathbf{81.1}
+90.1
+\mathbf{90.1}
+81.5
+\mathbf{81.5}
+85.7
+\mathbf{85.7}
+84.0
+\mathbf{84.0}
+▶
+\blacktriangleright
+GKD-Pro:
+w/o
+LR-QFormer
+77.0
+77.0
+74.8
+74.8
+85.7
+85.7
+76.8
+76.8
+76.3
+76.3
+78.3
+78.3
+▶
+\blacktriangleright
+GKD-Den:
+w/o
+SRCA
+76.6
+76.6
+74.7
+74.7
+83.2
+83.2
+75.6
+75.6
+80.0
+80.0
+76.8
+76.8
+w/o
+Bidirectional
+78.8
+78.8
+78.0
+78.0
+87.8
+87.8
+79.4
+79.4
+83.8
+83.8
+81.9
+81.9
+Table 4:
+Ablation study on the effectiveness of a key sub-component in GKD-Pro: LR-QFormer, and two key sub-components in GKD-Den: SRCA and bidirectional consistency loss (denoted as ‘Bidirectional’).
+To evaluate the effectiveness of the key sub-components in GKD-Pro and GKD-Den, including LR-QFormer, SRCA and bidirectional consistency loss, we conduct ablation studies by individually disabling each component.
+Specifically, we ablate LR-QFormer by directly applying the group-level contrastive loss between image feature vectors obtained via average pooling, instead of between prototypes extracted by LR-QFormer.
+For SRCA, we replace it with the standard cross-attention mechanism
+(
+24
+)
+without leveraging the semantic relation map.
+To assess the effectiveness of the bidirectional consistency loss, we retain only the consistency loss term between
+𝐟
+p
+,
+c
+WLI
+\mathbf{f}_{p,c}^{\mathrm{WLI}}
+and
+𝐟
+p
+,
+c
+NBI
+→
+WLI
+\mathbf{f}_{p,c}^{\mathrm{NBI}\rightarrow\mathrm{WLI}}
+in Eq. (
+8
+).
+As shown in Table
+4
+, for GKD-Pro, removing LR-QFormer leads to a performance degradation.
+This is attributed to the fact that directly pooled features lack sufficient pathology-specific information, thereby weakening the effectiveness of contrastive learning for the model’s feature learning in lesion classification.
+For GKD-Den, ablating either SRCA or the bidirectional consistency loss results in varying degrees of performance degradation.
+The is because that removing SRCA compromises semantic consistency in the reconstruction of the spatially aligned feature, which undermines the reliability of the reconstructed features and weakens the subsequent dense distillation process.
+Similarly, using only the unidirectional consistency loss limits the completeness of knowledge transfer from NBI domain to WLI domain, thus reducing the effectiveness of dense knowledge distillation.
+Group-level
+vs.
+Image-level Knowledge Distillation.
+Level
+PICCOLO
+IH-GC
+ACC
+F
+1
+1
+AUC
+ACC
+F
+1
+1
+AUC
+▶
+\blacktriangleright
+GKD-Pro:
+Group-level
+77.7
+77.7
+75.3
+75.3
+83.5
+83.5
+75.0
+75.0
+80.5
+80.5
+75.5
+75.5
+Image-level
+64.0
+64.0
+64.9
+64.9
+78.6
+78.6
+67.9
+67.9
+71.9
+71.9
+69.0
+69.0
+▶
+\blacktriangleright
+GKD-Den:
+Group-level
+77.3
+77.3
+75.2
+75.2
+85.0
+85.0
+75.0
+75.0
+75.0
+75.0
+77.3
+77.3
+Image-level
+73.9
+73.9
+69.7
+69.7
+79.9
+79.9
+69.6
+69.6
+75.4
+75.4
+71.9
+71.9
+▶
+\blacktriangleright
+Jointly (GKD-Pro
++
++
+GKD-Den):
+Group-level
+81.9
+\mathbf{81.9}
+81.1
+\mathbf{81.1}
+90.1
+\mathbf{90.1}
+81.5
+\mathbf{81.5}
+85.7
+\mathbf{85.7}
+84.0
+\mathbf{84.0}
+Image-level
+75.3
+75.3
+72.1
+72.1
+84.3
+84.3
+73.2
+73.2
+75.4
+75.4
+75.7
+75.7
+Table 5:
+Comparisons between our proposed group-level distillation components and their image-level variants.
+To verify the core idea of PaGKD,
+i.e.
+, group-level knowledge distillation, we modify GKD-Pro and GKD-Den into image-level variants by replacing the original group inputs with randomly sampled NBI-WLI pairs,
+and evaluate their performance both individually and jointly.
+The quantitative results are shown in Table
+5
+. Image-level distillation leads to significant performance drops for both modules when used individually.
+Specifically, it hinders GKD-Pro from extracting comprehensive pathological-relevant features via LR-QFormer, and reduces key-value diversity in SRCA, impairing the construction of spatially aligned feature in GKD-Den.
+More notably, their joint application under image-level causes more performance degradation.
+Figure 2:
+t-SNE visualization of the features on PICCOLO. HP (Hyperplasia)
+→
+\rightarrow
+AD (Adenoma)
+→
+\rightarrow
+ADC (Adenocarcinoma): the severity of the disease increases progressively.
+To clearly show the effect of group-level and image-level distillation on the WLI classifier, we visualize the feature distributions using t-SNE
+(
+15
+)
+. As shown in Figure.
+2
+, group-level distillation better preserves inter-class separability and spatial structure aligned with the pre-trained NBI features, whereas image-level distillation yields entangled and inconsistent distributions, demonstrating the superiority of group-level distillation under unpaired settings.
+Hyperparameters Configuration.
+Figure
+3
+presents the results under different hyperparameter settings: the number of lesion queries in LR-QFormer
+N
+N
+and training batch size
+s
+s
+, where the batch size
+s
+s
+is positively correlated with the group size of each class.
+PaGKD using
+N
+N
+=
+12
+12
+and
+s
+s
+=
+24
+24
+shows the best performance, respectively, and we adopt this configuration as the default setting of PaGKD.
+4.5
+Comparison with an Alternative Solution
+Methods
+PICCOLO
+IH-GC
+ACC
+F
+1
+1
+AUC
+ACC
+F
+1
+1
+AUC
+▶
+\blacktriangleright
+PolypsAlign
++
++
+CycleGAN
+70.2
+70.2
+66.6
+66.6
+78.8
+78.8
+62.5
+62.5
+66.6
+66.6
+59.6
+59.6
++
++
+SynDiff
+73.1
+73.1
+69.0
+69.0
+80.4
+80.4
+69.6
+69.6
+73.3
+73.3
+67.7
+67.7
+▶
+\blacktriangleright
+ADD
++
++
+CycleGAN
+74.3
+74.3
+71.3
+71.3
+80.5
+80.5
+66.1
+66.1
+64.1
+64.1
+71.5
+71.5
++
++
+SynDiff
+74.5
+74.5
+72.2
+72.2
+81.7
+81.7
+70.2
+70.2
+66.9
+66.9
+72.4
+72.4
+PaGKD
+81.9
+\mathbf{81.9}
+81.1
+\mathbf{81.1}
+90.1
+\mathbf{90.1}
+81.5
+\mathbf{81.5}
+85.7
+\mathbf{85.7}
+84.0
+\mathbf{84.0}
+Table 6:
+Comparisons with an alternative solution via the unpaired I2I translation method.
+Figure 3:
+Ablation on two hyperparameters:
+N
+N
+and
+s
+s
+.
+Existing CDC methods like those in Table
+2
+are designed for paired images, one possible workaround for unpaired data is to synthesize missing modalities via unpaired image-to-image (I2I) translation, enabling CDC methods to be effectively applied.
+To evaluate this alternative, we combine two representative I2I methods, CycleGAN
+(
+32
+)
+and SynDiff
+(
+16
+)
+, with the two best CDC methods excluding PaGKD in Table
+2
+,
+i.e.
+, PolypsAlign and ADD.
+As shown in Table
+6
+, our PaGKD remains superior to this alternative I2I-based solution.
+These methods have not yet effectively enabled ADD and PolypsAlign to benefit from additional unpaired data, and in some metrics, even lag behind their counterparts trained solely on paired data.
+The primary reason is that existing I2I methods focus on translating global imaging styles, such as imaging color, while neglecting modality translation of pathology-relevant content, such as vascular structure.
+As a result, the synthesized images often lack pathological realism, reducing their utility for downstream classification.
+5
+Conclusion and Future Work
+In this paper, we propose PaGKD, which addresses the limitations of existing CDC methods that rely on paired data. Motivated by the semantic inconsistencies in unpaired data, we design two group-level distillation modules: GKD-Pro for learning modality-invariant semantic prototypes, and GKD-Den for capturing fine-grained structural features via group-level dense alignment. Our method can be applied to multi-modal learning scenarios without requiring instance-wise correspondence. Extensive experiments on four clinical datasets demonstrate the effectiveness and robustness of PaGKD in real-world GI classification, showcasing its strong clinical applicability. Nonetheless, PaGKD currently adopts a random group formation strategy; future work will explore an adaptive or data-driven grouping strategy.
+6
+Acknowledgments
+This work was supported in part by National Natural Science Foundation of China (Grant No.62202189), research grants from Wuhan United Imaging Healthcare Surgical Technology Co., Ltd. Thanks to Professor Mei Liu’s team for providing the in-house dataset used in this work at the Department of Gastroenterology, Tongji Medical College, Huazhong University of Science and Technology.
+References
+Alberb
+et al.
+(2024)
+M. Alberb, M. Elbatel, A. Elgebaly, R. Montoya-del-Angel, X. Li, and R. Martí
+CoMoTo: unpaired cross-modal lesion distillation improves breast lesion detection in tomosynthesis
+.
+arXiv preprint arXiv:2407.17620
+.
+Cited by:
+§A.5
+.
+Beg
+et al.
+(2020)
+S. Beg, T. Card, S. Warburton, I. Rahman, E. Wilkes, J. White, and K. Ragunath
+Diagnosis of barrett’s esophagus and esophageal varices using a magnetically assisted capsule endoscopy system
+.
+Gastrointestinal Endoscopy
+91
+(
+4
+),
+pp. 773–781
+.
+Cited by:
+§1
+.
+Deng
+et al.
+(2009)
+J. Deng, W. Dong, R. Socher, L. Li, K. Li, and L. Fei-Fei
+Imagenet: a large-scale hierarchical image database
+.
+In
+2009 IEEE conference on computer vision and pattern recognition
+,
+pp. 248–255
+.
+Cited by:
+§4.2
+.
+Dosovitskiy
+et al.
+(2020)
+A. Dosovitskiy, L. Beyer, A. Kolesnikov, D. Weissenborn, X. Zhai, T. Unterthiner, M. Dehghani, M. Minderer, G. Heigold, S. Gelly,
+et al.
+An image is worth 16x16 words: transformers for image recognition at scale
+.
+arXiv preprint arXiv:2010.11929
+.
+Cited by:
+§3.2
+,
+§4.3
+.
+Dou
+et al.
+(2020)
+Q. Dou, Q. Liu, P. A. Heng, and B. Glocker
+Unpaired multi-modal segmentation via knowledge distillation
+.
+IEEE transactions on medical imaging
+39
+(
+7
+),
+pp. 2415–2425
+.
+Cited by:
+§A.5
+.
+Guo and Yuan (2020)
+X. Guo and Y. Yuan
+Semi-supervised wce image classification with adaptive aggregated attention
+.
+Medical Image Analysis
+64
+,
+pp. 101733
+.
+Cited by:
+§A.2
+,
+§2.1
+,
+§4.3
+.
+He
+et al.
+(2016)
+K. He, X. Zhang, S. Ren, and J. Sun
+Deep residual learning for image recognition
+.
+In
+Proceedings of the IEEE conference on computer vision and pattern recognition
+,
+pp. 770–778
+.
+Cited by:
+§4.2
+,
+§4.3
+.
+Hu
+et al.
+(2025)
+Q. Hu, Q. Wang, J. Chen, X. Ji, Q. Li, and Z. Wang
+Holistic white-light polyp classification via alignment-free dense distillation of auxiliary optical chromoendoscopy
+.
+arXiv preprint arXiv:2505.19319
+.
+Cited by:
+§A.2
+,
+§1
+,
+§1
+,
+§2.2
+,
+§3.1
+,
+§3.3
+,
+§3.3
+,
+§4.3
+.
+Jiang
+et al.
+(2021)
+J. Jiang, A. Rimner, J. O. Deasy, and H. Veeraraghavan
+Unpaired cross-modality educed distillation (cmedl) for medical image segmentation
+.
+IEEE transactions on medical imaging
+41
+(
+5
+),
+pp. 1057–1068
+.
+Cited by:
+§A.5
+.
+Kingma and Ba (2014)
+D. P. Kingma and J. Ba
+Adam: a method for stochastic optimization
+.
+arXiv preprint arXiv:1412.6980
+.
+Cited by:
+§4.2
+.
+Li
+et al.
+(2025)
+C. Li, H. Zhu, R. I. Sultan, H. B. Ebadian, P. Khanduri, C. Indrin, K. Thind, and D. Zhu
+Mulmodseg: enhancing unpaired multi-modal medical image segmentation with modality-conditioned text embedding and alternating training
+.
+In
+2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)
+,
+pp. 3581–3591
+.
+Cited by:
+§A.5
+.
+Li
+et al.
+(2021)
+K. Li, M. I. Fathan, K. Patel, T. Zhang, C. Zhong, A. Bansal, A. Rastogi, J. S. Wang, and G. Wang
+Colonoscopy polyp detection and classification: dataset creation and comparative evaluations
+.
+Plos one
+16
+(
+8
+),
+pp. e0255809
+.
+Cited by:
+§4.1
+.
+Li
+et al.
+(2020)
+K. Li, L. Yu, S. Wang, and P. Heng
+Towards cross-modality medical image segmentation with online mutual knowledge distillation
+.
+In
+Proceedings of the AAAI conference on artificial intelligence
+,
+Vol.
+34
+,
+pp. 775–783
+.
+Cited by:
+§A.5
+.
+Ma
+et al.
+(2022)
+W. Ma, Y. Zhu, R. Zhang, J. Yang, Y. Hu, Z. Li, and L. Xiang
+Toward clinically assisted colorectal polyp recognition via structured cross-modal representation consistency
+.
+In
+International Conference on Medical Image Computing and Computer-Assisted Intervention
+,
+pp. 141–150
+.
+Cited by:
+§A.2
+,
+§1
+,
+§2.2
+,
+§4.3
+.
+Maaten and Hinton (2008)
+L. v. d. Maaten and G. Hinton
+Visualizing data using t-sne
+.
+Journal of machine learning research
+9
+(
+Nov
+),
+pp. 2579–2605
+.
+Cited by:
+§4.4
+.
+Özbey
+et al.
+(2023)
+M. Özbey, O. Dalmaz, S. U. Dar, H. A. Bedel, Ş. Özturk, A. Güngör, and T. Cukur
+Unsupervised medical image translation with adversarial diffusion models
+.
+IEEE Transactions on Medical Imaging
+42
+(
+12
+),
+pp. 3524–3539
+.
+Cited by:
+§4.5
+.
+Paszke
+et al.
+(2019)
+A. Paszke, S. Gross, F. Massa, A. Lerer, J. Bradbury, G. Chanan, T. Killeen, Z. Lin, N. Gimelshein, L. Antiga,
+et al.
+Pytorch: an imperative style, high-performance deep learning library
+.
+Advances in neural information processing systems
+32
+.
+Cited by:
+§4.2
+.
+Ru
+et al.
+(2022)
+L. Ru, Y. Zhan, B. Yu, and B. Du
+Learning affinity from attention: end-to-end weakly-supervised semantic segmentation with transformers
+.
+In
+Proceedings of the IEEE/CVF conference on computer vision and pattern recognition
+,
+pp. 16846–16855
+.
+Cited by:
+§3.3
+.
+Sánchez-Peralta
+et al.
+(2020)
+L. F. Sánchez-Peralta, J. B. Pagador, A. Picón, Á. J. Calderón, F. Polo, N. Andraka, R. Bilbao, B. Glover, C. L. Saratxaga, and F. M. Sánchez-Margallo
+Piccolo white-light and narrow-band imaging colonoscopic dataset: a performance comparative of models and datasets
+.
+Applied Sciences
+10
+(
+23
+),
+pp. 8501
+.
+Cited by:
+§A.2
+,
+§4.1
+.
+Schmitz
+et al.
+(2022)
+R. Schmitz, R. Werner, A. Repici, R. Bisschops, A. Meining, M. Zornow, H. Messmann, C. Hassan, P. Sharma, and T. Rösch
+Artificial intelligence in gi endoscopy: stumbling blocks, gold standards and the role of endoscopy societies
+.
+Gut
+71
+(
+3
+),
+pp. 451–454
+.
+Cited by:
+§1
+.
+Shen
+et al.
+(2023)
+Y. Shen, X. Wang, P. Gao, and M. Lin
+Auxiliary modality learning with generalized curriculum distillation
+.
+In
+International Conference on Machine Learning
+,
+pp. 31057–31076
+.
+Cited by:
+§A.2
+,
+§4.3
+.
+Soffer
+et al.
+(2020)
+S. Soffer, E. Klang, O. Shimon, N. Nachmias, R. Eliakim, S. Ben-Horin, U. Kopylov, and Y. Barash
+Deep learning for wireless capsule endoscopy: a systematic review and meta-analysis
+.
+Gastrointestinal endoscopy
+92
+(
+4
+),
+pp. 831–839
+.
+Cited by:
+§1
+.
+Tamura
+et al.
+(2022)
+N. Tamura, Y. Sakaguchi, W. Furutani, M. Matsui, S. Nagao, N. Sakuma, K. Fukagawa, Y. Miura, H. Mizutani, D. Ohki,
+et al.
+Magnifying endoscopy with narrow-band imaging is useful in differentiating gastric cancer from matched adenoma in white light imaging
+.
+Scientific Reports
+12
+(
+1
+),
+pp. 8349
+.
+Cited by:
+§1
+.
+Vaswani
+et al.
+(2017)
+A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, Ł. Kaiser, and I. Polosukhin
+Attention is all you need
+.
+Advances in neural information processing systems
+30
+.
+Cited by:
+§4.4
+.
+Wang
+et al.
+(2022)
+K. Wang, Y. He, S. Zhuang, J. Miao, X. He, P. Zhou, G. Yang, G. Zhou, and S. Li
+Ffcnet: fourier transform-based frequency learning and complex convolutional network for colon disease classification
+.
+In
+International Conference on Medical Image Computing and Computer-Assisted Intervention
+,
+pp. 78–87
+.
+Cited by:
+§A.2
+,
+§2.1
+,
+§4.3
+.
+Wang
+et al.
+(2023)
+K. Wang, S. Zhuang, Q. Ran, P. Zhou, J. Hua, G. Zhou, and X. He
+Dlgnet: a dual-branch lesion-aware network with the supervised gaussian mixture model for colon lesions classification in colonoscopy images
+.
+Medical Image Analysis
+87
+,
+pp. 102832
+.
+Cited by:
+§A.2
+,
+§2.1
+,
+§4.3
+.
+Wang
+et al.
+(2021)
+Q. Wang, H. Che, W. Ding, L. Xiang, G. Li, Z. Li, and S. Cui
+Colorectal polyp classification from white-light colonoscopy images via domain alignment
+.
+In
+Medical Image Computing and Computer Assisted Intervention–MICCAI 2021: 24th International Conference, Strasbourg, France, September 27–October 1, 2021, Proceedings, Part VII 24
+,
+pp. 24–32
+.
+Cited by:
+§A.2
+,
+§1
+,
+§2.2
+,
+§4.3
+.
+Xu
+et al.
+(2024)
+Z. Xu, J. Rittscher, and S. Ali
+SSL-cpcd: self-supervised learning with composite pretext-class discrimination for improved generalisability in endoscopic image analysis
+.
+IEEE Transactions on Medical Imaging
+43
+(
+12
+),
+pp. 4105–4119
+.
+Cited by:
+§A.2
+,
+§2.1
+,
+§4.3
+.
+Yue
+et al.
+(2023)
+G. Yue, G. Zhuo, S. Li, T. Zhou, J. Du, W. Yan, J. Hou, W. Liu, and T. Wang
+Benchmarking polyp segmentation methods in narrow-band imaging colonoscopy images
+.
+IEEE Journal of Biomedical and Health Informatics
+27
+(
+7
+),
+pp. 3360–3371
+.
+Cited by:
+§1
+.
+Zhang
+et al.
+(2016)
+R. Zhang, Y. Zheng, T. W. C. Mak, R. Yu, S. H. Wong, J. Y. Lau, and C. C. Poon
+Automatic detection and classification of colorectal polyps by transferring low-level cnn features from nonmedical domain
+.
+IEEE journal of biomedical and health informatics
+21
+(
+1
+),
+pp. 41–47
+.
+Cited by:
+§2.1
+.
+Zhou
+et al.
+(2016)
+B. Zhou, A. Khosla, A. Lapedriza, A. Oliva, and A. Torralba
+Learning deep features for discriminative localization
+.
+In
+Proceedings of the IEEE conference on computer vision and pattern recognition
+,
+pp. 2921–2929
+.
+Cited by:
+§3.3
+.
+Zhu
+et al.
+(2017)
+J. Zhu, T. Park, P. Isola, and A. A. Efros
+Unpaired image-to-image translation using cycle-consistent adversarial networks
+.
+In
+Proceedings of the IEEE international conference on computer vision
+,
+pp. 2223–2232
+.
+Cited by:
+§A.5
+,
+§4.5
+.
+Appendix A
+Appendix
+A.1
+Grouping Details
+In the training, each batch includes all WLI/NBI groups per class, sized by class distribution. Groups are randomly reformed every 5 epochs (100 total) for diversity and stability, mitigating overfitting and unpaired cross-modal issues.
+A.2
+Analysis of Receiver Operating Characteristic (ROC) curves
+In Table 2 of manuscript, we conducted a quantitative comparison of our PaGKD with eight methods, including four cross-modal independent classification (CIC) methods: SSL-CPCD
+(
+28
+)
+, SSL-WCE
+(
+6
+)
+, FFCNet
+(
+25
+)
+, and DLGNet
+(
+26
+)
+, and four cross-modal distillation classification (CDC) methods: CPC-Trans
+(
+14
+)
+, SAMD
+(
+21
+)
+, PolypsAlign
+(
+27
+)
+, and ADD
+(
+8
+)
+.
+Furthermore, to more clearly demonstrate the performance differences among all comparison methods, we visualized the ROC curves of all methods on PICCOLO
+(
+19
+)
+and IH-GC.
+Among them, all the CDC methods except PaGKD are trained only on paired data because unpaired data can compromise their performance.
+The ROC curve illustrates the trade-off between the true positive rate (TPR) and false positive rate (FPR), where a curve closer to the upper-left corner indicates better classification performance. As shown in Figure
+A1
+, compared with other SOTA methods, our PaGKD consistently outperforms all baselines in this critical region, reflecting its ability to achieve high sensitivity while maintaining a low false alarm rate. Such performance is particularly important in clinical practice, where high TPR minimizes the risk of missed diagnoses, and low FPR reduces unnecessary treatments and additional diagnostic procedures. This highlights the clinical reliability and robustness of our approach under various operating conditions.
+Figure A1:
+Receiver operating characteristic (ROC) curves on four datasets: (a) PICCOLO, (b) PolypSet (c) IH-Polyp (d) IH-GC.
+A.3
+Hyperparameters Configuration
+To evaluate the impact of two hyperparameters
+τ
+1
+\tau_{1}
+and
+τ
+2
+\tau_{2}
+adopted in the semantic relation generation module, we conduct ablation studies on two datasets PICCOLO and IH-GC.
+Specifically, we fix
+τ
+2
+=
+0.7
+\tau_{2}=0.7
+and adjust
+τ
+1
+∈
+{
+0.1
+,
+0.2
+,
+0.3
+,
+0.4
+,
+0.5
+}
+\tau_{1}\in\{0.1,0.2,0.3,0.4,0.5\}
+, and then fix
+τ
+1
+=
+0.3
+\tau_{1}=0.3
+and vary
+τ
+2
+∈
+{
+0.5
+,
+0.6
+,
+0.7
+,
+0.8
+,
+0.9
+}
+\tau_{2}\in\{0.5,0.6,0.7,0.8,0.9\}
+.
+τ
+1
+\tau_{1}
+ACC
+F
+1
+1
+AUC
+τ
+2
+\tau_{2}
+ACC
+F
+1
+1
+AUC
+0.1
+0.1
+0.787
+0.787
+0.778
+0.778
+0.863
+0.863
+0.5
+0.5
+0.788
+0.788
+0.765
+0.765
+0.855
+0.855
+0.2
+0.2
+0.788
+0.788
+0.784
+0.784
+0.878
+0.878
+0.6
+0.6
+0.796
+0.796
+0.783
+0.783
+0.889
+0.889
+0.3
+\mathbf{0.3}
+0.819
+\mathbf{0.819}
+0.811
+\mathbf{0.811}
+0.901
+\mathbf{0.901}
+0.7
+\mathbf{0.7}
+0.819
+\mathbf{0.819}
+0.811
+\mathbf{0.811}
+0.901
+\mathbf{0.901}
+0.4
+0.4
+0.809
+0.809
+0.801
+0.801
+0.892
+0.892
+0.8
+0.8
+0.788
+0.788
+0.771
+0.771
+0.879
+0.879
+0.5
+0.5
+0.789
+0.789
+0.773
+0.773
+0.864
+0.864
+0.9
+0.9
+0.787
+0.787
+0.764
+0.764
+0.849
+0.849
+Table A1:
+Ablation on two hyperparameters
+τ
+1
+\tau_{1}
+and
+τ
+2
+\tau_{2}
+on PICCOLO dataset.
+τ
+1
+\tau_{1}
+ACC
+F
+1
+1
+AUC
+τ
+2
+\tau_{2}
+ACC
+F
+1
+1
+AUC
+0.1
+0.1
+0.774
+0.774
+0.793
+0.793
+0.798
+0.798
+0.5
+0.5
+0.786
+0.786
+0.800
+0.800
+0.808
+0.808
+0.2
+0.2
+0.788
+0.788
+0.821
+0.821
+0.823
+0.823
+0.6
+0.6
+0.786
+0.786
+0.828
+0.828
+0.825
+0.825
+0.3
+\mathbf{0.3}
+0.815
+\mathbf{0.815}
+0.857
+\mathbf{0.857}
+0.840
+\mathbf{0.840}
+0.7
+\mathbf{0.7}
+0.815
+\mathbf{0.815}
+0.857
+\mathbf{0.857}
+0.840
+\mathbf{0.840}
+0.4
+0.4
+0.786
+0.786
+0.815
+0.815
+0.816
+0.816
+0.8
+0.8
+0.788
+0.788
+0.813
+0.813
+0.817
+0.817
+0.5
+0.5
+0.776
+0.776
+0.795
+0.795
+0.804
+0.804
+0.9
+0.9
+0.764
+0.764
+0.782
+0.782
+0.793
+0.793
+Table A2:
+Ablation on two hyperparameters
+τ
+1
+\tau_{1}
+and
+τ
+2
+\tau_{2}
+on IH-GC dataset.
+As shown in Table
+A1
+and Table
+A2
+, the setting of
+τ
+1
+=
+0.3
+\tau_{1}=0.3
+and
+τ
+2
+=
+0.7
+\tau_{2}=0.7
+yields the best performance on both datasets, thus we employ this setting as the default setting.
+This is attributed to the following: when
+τ
+2
+\tau_{2}
+is too large, the activated regions become overly restricted, leading to insufficient foreground coverage in semantic relations and hindering effective learning of lesion features. On the contrary, a small
+τ
+2
+\tau_{2}
+results in overly broad foreground regions, introducing noise and reducing the focus on critical lesions.
+Similarly, an excessively large
+τ
+1
+\tau_{1}
+may cause potentially relevant lesion regions to be treated as background during distillation, thus confusing background and foreground semantics. In contrast, a very small
+τ
+1
+\tau_{1}
+limits the background to a small area, restricting the distillation of comprehensive background information and degrading background feature learning.
+A.4
+Computational Complexity
+As shown in Table
+A3
+, both the PaGKD-Pro and PaGKD-Den modules introduce only minimal computational overhead and a small number of additional parameters.
+Component
+Training Time (ms/iteration)
+Parameters (M)
+PaGKD-Pro
+15.6
+0.07
+PaGKD-Den
+271.6
+0.16
+Table A3:
+Training time and number of parameters introduced by each component. The experiment is conducted on a single NVIDIA 4090 GPU with a batch size of
+24
+24
+.
+A.5
+Extended Related Unpaired Multi-modal Works in Medical Image Analysis
+Cross-modal Knowledge Transfer.
+The paradigm of enhancing model performance on a weaker modality by establishing
+knowledge transfer
+from a dominant modality to a weaker one has been applied not only to the gastrointestinal endoscopy discussed in this paper (where NBI serves as the dominant modality and WLI as the weaker modality), but also to other medical scenarios:
+(1) Several studies
+(
+13
+;
+9
+)
+have improved segmentation performance on CT by transferring knowledge from MRI. These methods typically employ CycleGAN
+(
+32
+)
+to address the unpaired cross-modality issues. We also attempted to adopt this strategy in our study, as shown in Table
+6
+, but the results were unsatisfactory. We attribute this to the fact that segmentation tasks only rely on image translators to achieve macroscopic-level transformations of organs or lesions, whereas gastrointestinal lesion classification depends on microscopic-level transformations involving vascular and mucosal structures. The naive existing image translation methods are insufficient to capture such fine-grained modality differences.
+(2) Similarly, CoMoTo
+(
+1
+)
+achieves knowledge transfer from mammography to digital breast tomosynthesis (DBT) to enhance breast cancer detection performance in DBT.
+Since these approaches primarily focus on segmentation or detection tasks and depend on mask or bounding-box annotations during training, we do not directly compare our PaGKD with them in this work.
+Cross-modal Generalizability.
+There are also studies aimed at addressing how to enable models to achieve excellent multi-modal generalization performance on unpaired data.
+(
+5
+)
+achieves outstanding performance with a highly compact architecture by constraining the divergence of prediction distributions across modalities.
+MulModSeg
+(
+11
+)
+effectively integrates essential features from unpaired CT and MR images by introducing a modality-conditioned text embedding framework and an alternating training strategy.

@@ -1,0 +1,10 @@
+{
+  "python": "3.12.14 (main, Sep  2 2026, 23:27:36) [GCC 15.3.0]",
+  "torch": "2.11.0+cu128",
+  "numpy": "1.26.0",
+  "cpu_threads": 2,
+  "model_instances": 21,
+  "original_head_untouched": true,
+  "shared_head_frozen_during_radar_training": true,
+  "contact_encoder_unchanged": true
+}

@@ -1,0 +1,9 @@
+method,unit,n,correct,accuracy,macro_f1
+ac_rms3,recording,8,8,1.0,1.0
+ac_rms3,window,58,56,0.9655172413793104,0.9642857142857143
+ac_spectral_shape64,recording,8,8,1.0,1.0
+ac_spectral_shape64,window,58,57,0.9827586206896551,0.9823736780258518
+ac_stats12,recording,8,8,1.0,1.0
+ac_stats12,window,58,57,0.9827586206896551,0.9823736780258518
+raw_dc3,recording,8,5,0.625,0.575
+raw_dc3,window,58,29,0.5,0.479389400921659

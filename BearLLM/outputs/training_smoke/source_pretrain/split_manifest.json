@@ -1,0 +1,21 @@
+{
+  "seed": 42,
+  "total_queries": 20,
+  "eligible_queries": 20,
+  "excluded_queries_without_reference": {},
+  "pair_counts": {
+    "train": 42,
+    "val": 12,
+    "test": 6
+  },
+  "query_counts": {
+    "train": 14,
+    "val": 4,
+    "test": 2
+  },
+  "reference_policy": "all healthy rows of the same condition, across splits",
+  "split_policy": "released SQL order; eligible index modulo 10: train 0..6, val 7..8, test 9",
+  "train_references_outside_training_queries": 0,
+  "val_references_outside_training_queries": 0,
+  "test_references_outside_training_queries": 0
+}

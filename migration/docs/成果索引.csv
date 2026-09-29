@@ -1,0 +1,44 @@
+﻿阶段,仓库相对路径或外部来源,内容,用途与证据边界,本机存在
+当前入口,anomaly_detection/r2_validation_20260928/本轮实验汇报.md,最新R2完整汇报,144雷达/12接触会话；未达接触98%/雷达95%跨条件要求,是
+R2数据审计,anomaly_detection/r2_validation_20260928/audit,输入哈希、截顶、断包、ROI质量、图,468上传文件和12 DAT压缩档校验；没有重算Mac原BIN哈希,是
+R2接触,anomaly_detection/r2_validation_20260928/contact,教师表示、冻结推理、诊断头、逐包预测,主头v1与保守头不同；新头未经源保持认证,是
+R2雷达,anomaly_detection/r2_validation_20260928/radar,复数/相位/几何128维特征、代码和测试,5–2000Hz新接口；不可复用旧5–800Hz scaler,是
+R2主训练,anomaly_detection/r2_validation_20260928/experiments,171个模型、预测、划分和协议,整转速留出；六类目标及输入/头对照,是
+R2传统基线,anomaly_detection/r2_validation_20260928/baselines,SVM、KNN、RF结果和复核,纯雷达分类；不是通过接触模型的结果,是
+R2汇总,anomaly_detection/r2_validation_20260928/results,神经汇总、特征误差、六项读取器、图,三折先拼接再按种子汇总；全部物理指标报告,是
+R2独立复核,anomaly_detection/r2_validation_20260928/independent_check,171checkpoint前向与855指标重算,不等于新数据源能力回归已执行,是
+R2物理前端开发,anomaly_detection/r2_validation_20260928/contact/order_domain,阶次频带积分、包络、匹配Hz对照,看过主结果后追加的开发实验；未蒸馏到雷达,是
+无效开发归档,anomaly_detection/r2_validation_20260928/contact/order_domain_point_sample_failedcheck,早期点插值阶次实验,合成峰测试未通过；81.34%不得引用为有效改进,是
+中止归档,anomaly_detection/r2_validation_20260928/contact/diagnostic_heads_failed_foldprecision,首次过严数值断言中止记录,不作为最终模型或指标；保留以追踪开发过程,是
+待Mac执行,anomaly_detection/r2_validation_20260928/local_reexport_20cm,48条20cm补导清单和命令,需要Mac原BIN；尚未执行,是
+本地工具,anomaly_detection/local_preprocessing_r2_20260928,R2 ADC/XYZ流式预处理、cfg、16测试,Mac可独立运行；需要原始文件,是
+Mac交付来源,anomaly_detection/处理结果说明.md,原交付数据规模、质量与人工更正,写于上传前；之后服务器已收到两个数据子目录,是
+环境验证,anomaly_detection/environment_validation_20260919,room/narrow IQ处理、模型、预测和报告,正常运转/停机与转速；不能代表四类故障跨环境泛化,是
+接触接口初验,anomaly_detection/contact_validation_20260919,4kHz预处理、三轴embedding、带宽消融,首批无完整可信一秒窗；未宣称故障准确率,是
+旧四类解析,anomaly_detection/four_class_preprocessing_20260921,旧DAT/BIN处理、NPZ/JSON、哈希,初始外圈ROI错误；后续v2修正版本另存,是
+首轮全链路,anomaly_detection/four_class_chain_20260922,接触、雷达学生、真实LLM演示、基线、审计,8条开发录制；外圈ROI与跨电机失败均报告,是
+原能力保持,anomaly_detection/retention_alignment_20260922,公开源回归、共享头、蒸馏、原生LLM接口,源回归与本地留出不是同一协议,是
+源数据回归,anomaly_detection/retention_alignment_20260922/source,原能力基线与回放缓存,同版本数据与query/reference协议必须保留,是
+旧v1共享头,anomaly_detection/retention_alignment_20260922/results/retained_head_v1,v1模型、各折结果和回归,R2主链使用v0/all_known；十类源下降0.3502pp,是
+旧保守共享头,anomaly_detection/retention_alignment_20260922/results/retained_head_conservative,保守头和严格逐来源约束,原测试总体下降0.0081pp；细工况仍有失败,是
+旧雷达共享头对齐,anomaly_detection/retention_alignment_20260922/radar,阶段A/B学生、消融、仅雷达重载,旧小样本高分不继承给R2,是
+旧目标验收审计,anomaly_detection/acceptance_contact98_radar95,接触/雷达指标与学生高于教师解释,旧条件的数字不等于新跨条件达标,是
+质量及时间理论,anomaly_detection/contact_quality_alignment_audit_20260922,质量、泄露审计、时序对齐条件论证,条件性论证不是普遍免同步证明,是
+第一轮表示验证,anomaly_detection/encoder_validation_20260923,72雷达训练、Rot接入、接触转换,外圈旧ROI尚未修复；开发数据,是
+第一轮Rot路径,anomaly_detection/encoder_validation_20260923/rotllm,官方SFN、预处理分支和本地接触头,与Bear FCN接口不同，不可直接互换embedding,是
+第二轮表示验证,anomaly_detection/encoder_validation_20260923_v2,原始校验、ROI修正、204学生和独立重算,仍为旧8条开发录制，不是新物理留出,是
+旧距离修正,anomaly_detection/encoder_validation_20260923_v2/geometry_corrected,固定0.29–0.61m导出和614窗口,与新R2选区问题是不同批数据,是
+第三教师,anomaly_detection/encoder_validation_20260923_v2/teachers,UniFault权重、三教师接口、接触实验,Uni输出有符号；本地四类头与官方16类语义不同,是
+留一雷达类,anomaly_detection/encoder_validation_20260923_v2/heldout_radar_class,96训练及留类结果,泛化单位和教师可见类别需按协议解释,是
+物理信息读出,anomaly_detection/encoder_validation_20260923_v2/results/physical_readouts,6统计读取与真类均值对照,不是严重程度真值或因果知识证明,是
+冻结雷达跨教师,anomaly_detection/frozen_bear_to_unifault_20260924,接触拟合转换、冻结Bear雷达→Uni实验,转换不使用雷达；仍有小样本/原型解释限制,是
+初始研究设计,research_proposals/contact_radar_alignment_20260919,SenSys/14天计划、R0–R3 cfg、前沿核查,计划和候选参数不等于已实机或实验证实,是
+导师汇报旧版,research_proposals/sensys_progress_report_20260923,汇报文档、图、10分钟提纲,日期较早；应结合最新R2失败结果使用,是
+演示与接口解释,research_proposals/contact_radar_explainer_demo_20260923,预处理释义、浏览器演示和真实重放,重放旧保存预测；不是新推理性能验证,是
+表示研究调研,research_proposals/encoder_transfer_study_20260923,多模型、知识检验、负对照、文献,区分类别可分与恢复额外接触信息,是
+无严重度验证设计,research_proposals/validation_without_severity_20260924,无严重度数据的知识与工况验证方案,计划项按各实验归档确认是否已执行,是
+采集与统一框架设计,research_proposals/alignment_and_collection_20260924,链路说明、物理采集模板、cfg小试,后续用户已完成新R2采集；模板不是全部已执行实验,是
+Bearer上游代码,BearLLM,原项目结构、配置、接触FCN和LLM训练推理入口,权重/数据可能原为NAS软链接，按迁移模型清单恢复,是
+新原始数据,EXTERNAL: /Users/anthea/Desktop/C2RLLM/data大量测试,156原始BIN/DAT，87.633GB,未入Git；20cm补导和ADC级重处理必需,外部需恢复
+新紧凑数据,EXTERNAL: /media/nas_users/huangyating/data/upload,144雷达HDF5和12接触HDF5/DAT.gz,未入普通Git；需独立复制或重新生成,外部需恢复
+新宽ROI,EXTERNAL: /media/nas_users/huangyating/data/wide_cache_local,宽距离复数缓存,未入普通Git；当前20cm峰顶仍可能在外,外部需恢复

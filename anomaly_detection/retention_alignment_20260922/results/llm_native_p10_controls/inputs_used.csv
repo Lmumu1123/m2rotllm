@@ -1,0 +1,5 @@
+id,task,stage,variant,fold,method,state,bag_id,true_label,geometry_valid,p10_0,p10_1,p10_2,p10_3,p10_4,p10_5,p10_6,p10_7,p10_8,p10_9
+native_p10_onehot_0,interface_control,control,native_onehot,control,native_p10_onehot,control,synthetic_0,0,True,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+native_p10_onehot_1,interface_control,control,native_onehot,control,native_p10_onehot,control,synthetic_1,1,True,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+native_p10_onehot_7,interface_control,control,native_onehot,control,native_p10_onehot,control,synthetic_7,2,True,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0
+native_p10_onehot_4,interface_control,control,native_onehot,control,native_p10_onehot,control,synthetic_4,3,True,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0

@@ -1,0 +1,11 @@
+{
+  "core48": 48,
+  "recommended_extension32": 32,
+  "main80": 80,
+  "optional_combined8": 8,
+  "optional_keep12": 12,
+  "background24": 24,
+  "measured_fields_blank": true,
+  "no_capture_or_training_performed": true,
+  "split_notice": "For held-out-rpm experiments, override all local fitting masks: exclude target rpm from teacher adaptation, references, scaling, mapping, student training and validation selection."
+}

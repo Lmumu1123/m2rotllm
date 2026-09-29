@@ -1,0 +1,5 @@
+holdout_rpm,method,level,n,correct,accuracy,macro_f1,balanced_accuracy,confusion_matrix
+pooled_oof,xyz_concat_fixed_hz_RBF_SVM_C1,packet,343,154,0.4489795918367347,0.42246407110754813,0.4908139917816838,"[[48, 110, 4, 11], [19, 29, 0, 0], [0, 0, 73, 0], [15, 19, 11, 4]]"
+pooled_oof,xyz_concat_fixed_hz_RBF_SVM_C1,session,12,7,0.5833333333333334,0.5,0.5833333333333333,"[[2, 1, 0, 0], [1, 2, 0, 0], [0, 0, 3, 0], [1, 1, 1, 0]]"
+pooled_oof,xy_concat_fixed_hz_RBF_SVM_C1,packet,343,158,0.4606413994169096,0.4325922628444655,0.496594338602493,"[[52, 110, 2, 9], [19, 29, 0, 0], [0, 0, 73, 0], [15, 19, 11, 4]]"
+pooled_oof,xy_concat_fixed_hz_RBF_SVM_C1,session,12,7,0.5833333333333334,0.5,0.5833333333333333,"[[2, 1, 0, 0], [1, 2, 0, 0], [0, 0, 3, 0], [1, 1, 1, 0]]"

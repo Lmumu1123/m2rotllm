@@ -1,0 +1,5 @@
+modality,method,correct,n,accuracy
+contact,shared_contact_head,46,58,0.7931034482758621
+radar,ce_feat_1_kd,411,412,0.9975728155339806
+radar,ce_only,409,412,0.9927184466019418
+radar,embedding_only,408,412,0.9902912621359223

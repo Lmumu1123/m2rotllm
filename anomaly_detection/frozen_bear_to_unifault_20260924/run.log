@@ -1,0 +1,20 @@
+115200_to_460800 contact map train/test MSE 0.009256746746890894 0.28223357110126
+460800_to_115200 contact map train/test MSE 0.0063286777254958244 0.8988256185427638
+                                  path            method      unit  correct_repeated  n_repeated  accuracy  macro_f1_seed_mean  accuracy_seed_std  seeds  unique_main_recordings  unique_main_windows
+     Bear_contact_mapped_to_Uni_local4              none recording                 8           8  1.000000            1.000000           0.000000      1                       8                   58
+     Bear_contact_mapped_to_Uni_local4              none    window                55          58  0.948276            0.939401           0.000000      1                       8                   58
+             direct_Uni_contact_local4              none recording                 8           8  1.000000            1.000000           0.000000      1                       8                   58
+             direct_Uni_contact_local4              none    window                58          58  1.000000            1.000000           0.000000      1                       8                   58
+frozen_Bear_radar_mapped_to_Uni_local4           ce_only recording                22          24  0.916667            0.911111           0.058926      3                       8                  412
+frozen_Bear_radar_mapped_to_Uni_local4           ce_only    window              1161        1236  0.939320            0.939687           0.029990      3                       8                  412
+frozen_Bear_radar_mapped_to_Uni_local4              full recording                24          24  1.000000            1.000000           0.000000      3                       8                  412
+frozen_Bear_radar_mapped_to_Uni_local4              full    window              1235        1236  0.999191            0.999209           0.001144      3                       8                  412
+frozen_Bear_radar_mapped_to_Uni_local4 label_code_ce_mse recording                24          24  1.000000            1.000000           0.000000      3                       8                  412
+frozen_Bear_radar_mapped_to_Uni_local4 label_code_ce_mse    window              1190        1236  0.962783            0.962990           0.006960      3                       8                  412
+frozen_Bear_radar_mapped_to_Uni_local4    label_code_mse recording                24          24  1.000000            1.000000           0.000000      3                       8                  412
+frozen_Bear_radar_mapped_to_Uni_local4    label_code_mse    window              1175        1236  0.950647            0.951178           0.008009      3                       8                  412
+frozen_Bear_radar_mapped_to_Uni_local4   matched_bag_mse recording                24          24  1.000000            1.000000           0.000000      3                       8                  412
+frozen_Bear_radar_mapped_to_Uni_local4   matched_bag_mse    window              1234        1236  0.998382            0.998418           0.001144      3                       8                  412
+frozen_Bear_radar_mapped_to_Uni_local4   wrong_class_mse recording                 0          24  0.000000            0.000000           0.000000      3                       8                  412
+frozen_Bear_radar_mapped_to_Uni_local4   wrong_class_mse    window                 3        1236  0.002427            0.002451           0.003433      3                       8                  412
+COMPLETE /home/huangyating/anomaly_detection/frozen_bear_to_unifault_20260924/results

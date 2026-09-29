@@ -1,0 +1,20 @@
+{
+  "model": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_conservative_v0/models/four_class_provisional_roi/all_known/ce_feat_1_kd.pt",
+  "features": "/home/huangyating/anomaly_detection/four_class_chain_20260922/results/radar_only_demo_inputs/features.npz",
+  "metadata": "/home/huangyating/anomaly_detection/four_class_chain_20260922/results/radar_only_demo_inputs/metadata.csv",
+  "labels_read": false,
+  "contact_data_read": false,
+  "head": "source_retained_shared_10class",
+  "shared_head_path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_conservative/models/v0/all_known/retained_head.npz",
+  "source_retention_acceptance": {
+    "variant": "v0",
+    "all_known": true,
+    "passes_global_and_every_source_test": true,
+    "source_test_is_reused_regression_not_new_blind_test": true,
+    "local_train_accuracy": 1.0,
+    "status": "passes_stronger_source_regression",
+    "original_encoder_unchanged": true
+  },
+  "language_interface": "mean p10 per bag may be passed directly to the original linear3; p4 is exact sum over groups",
+  "severity_validation": false
+}

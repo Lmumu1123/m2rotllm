@@ -1,0 +1,20 @@
+    teacher               target  contact_readout_mae  class_only_mae  passes_contact_predictivity_gate  improvement_vs_class_oracle  gate_is_descriptive_not_statistical
+    Bear128         log_band_rms             0.275833        0.289556                              True                     0.013724                                 True
+    Bear128     log_crest_factor             0.202702        0.219836                              True                     0.017135                                 True
+    Bear128 log_pearson_kurtosis             0.140770        0.204164                              True                     0.063394                                 True
+    Bear128         power_20_200             0.204654        0.139924                             False                    -0.064730                                 True
+    Bear128        power_200_400             0.110551        0.219462                              True                     0.108911                                 True
+    Bear128        power_400_800             0.124036        0.328352                              True                     0.204316                                 True
+     Rot128         log_band_rms             0.598941        0.289556                             False                    -0.309385                                 True
+     Rot128     log_crest_factor             0.246345        0.219836                             False                    -0.026509                                 True
+     Rot128 log_pearson_kurtosis             0.225920        0.204164                             False                    -0.021756                                 True
+     Rot128         power_20_200             0.384567        0.139924                             False                    -0.244643                                 True
+     Rot128        power_200_400             0.269575        0.219462                             False                    -0.050113                                 True
+     Rot128        power_400_800             0.255443        0.328352                              True                     0.072909                                 True
+UniFault128         log_band_rms             0.115937        0.289556                              True                     0.173619                                 True
+UniFault128     log_crest_factor             0.326098        0.219836                             False                    -0.106262                                 True
+UniFault128 log_pearson_kurtosis             0.135643        0.204164                              True                     0.068521                                 True
+UniFault128         power_20_200             0.157970        0.139924                             False                    -0.018046                                 True
+UniFault128        power_200_400             0.250564        0.219462                             False                    -0.031102                                 True
+UniFault128        power_400_800             0.309776        0.328352                              True                     0.018576                                 True
+/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/results/physical_readouts

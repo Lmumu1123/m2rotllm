@@ -1,0 +1,9 @@
+path,method,mse_standardized,cos_standardized
+Bear_contact_mapped_to_Uni_local4,none,0.3691632366341969,0.8877892857825415
+direct_Uni_contact_local4,none,0.0,1.0
+frozen_Bear_radar_mapped_to_Uni_local4,ce_only,1.4777030055355187,0.5394856569729664
+frozen_Bear_radar_mapped_to_Uni_local4,full,0.4082337671469996,0.8332214413643496
+frozen_Bear_radar_mapped_to_Uni_local4,label_code_ce_mse,1.054296929706126,0.5466003824578413
+frozen_Bear_radar_mapped_to_Uni_local4,label_code_mse,1.073131141820779,0.5454648753610526
+frozen_Bear_radar_mapped_to_Uni_local4,matched_bag_mse,0.38459971515626784,0.8617390502225447
+frozen_Bear_radar_mapped_to_Uni_local4,wrong_class_mse,2.7345508355778505,-0.3620726371488428

@@ -1,0 +1,7 @@
+fold,version,modality,scope,n,correct,accuracy,identical_head_weights,head_probability_recompute_max_error
+115200_to_460800,retained_head_v1,contact,heldout,26,24,0.9230769230769231,True,0.0
+115200_to_460800,retained_head_v1,radar,heldout,200,200,1.0,True,6.556510925292969e-07
+460800_to_115200,retained_head_v1,contact,heldout,32,22,0.6875,True,0.0
+460800_to_115200,retained_head_v1,radar,heldout,212,211,0.9952830188679245,True,4.172325134277344e-07
+all_known,retained_head_conservative,contact,training,58,53,0.9137931034482759,True,0.0
+all_known,retained_head_conservative,radar,training,412,412,1.0,True,6.556510925292969e-07

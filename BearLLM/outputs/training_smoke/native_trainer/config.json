@@ -1,0 +1,48 @@
+{
+  "stage": "finetune",
+  "data_dir": "outputs/training_smoke/fixture",
+  "qwen_dir": "/media/nas_users/huangyating/bearllm-assets/qwen_weights",
+  "output_dir": "/home/huangyating/BearLLM/outputs/training_smoke/native_trainer",
+  "fcn_dir": "outputs/training_smoke/source_pretrain/fcn",
+  "device": "cuda:0",
+  "seed": 42,
+  "epochs": 2,
+  "batch_size": 1,
+  "workers": 10,
+  "learning_rate": 0.0001,
+  "accumulation_steps": 4,
+  "preload": true,
+  "scheduler": "source-batch-loss",
+  "disable_early_stop": false,
+  "gradient_checkpointing": false,
+  "log_steps": 1,
+  "resume": false,
+  "torch_threads": 8,
+  "finetune_engine": "transformers.Trainer",
+  "model_accepts_loss_kwargs": true,
+  "loss_normalization": "native Trainer model loss kwargs",
+  "torch_version": "2.11.0+cu128",
+  "python_version": "3.12.14 (main, Sep  2 2026, 23:27:36) [GCC 15.3.0]",
+  "cuda_version": "12.8",
+  "trainer_sha256": "b01a0b272dd4b4c045f0d30c4ea6bf49f44528dd59943eaf0ed5b9bd155da4f1",
+  "metadata_sha256": "6d18d62cc631517ed5e85381625f3b3feb5e147c02ce0d67e11b6260e45d216e",
+  "corpus_sha256": "dc062de2429a243bddb4301fc1fcde00b007619685622a248959b428bffd5cce",
+  "effective_batch_size": 4,
+  "loader_protocol": {
+    "engine": "transformers.Trainer",
+    "dataloader_num_workers": 0,
+    "loss_normalization": "native Trainer model loss kwargs"
+  },
+  "package_versions": {
+    "transformers": "4.49.0",
+    "peft": "0.15.2",
+    "numpy": "1.26.0",
+    "h5py": "3.16.0",
+    "scipy": "1.15.2"
+  },
+  "initial_fcn_sha256": {
+    "feature_encoder.pth": "7e9cb0596a79a3d541ddae09344941b04bf3a8e27bdcca8ae79361655b0e5d00",
+    "classifier.pth": "1c5b536a881f59053017290624762b377310b22ffef5ffa06aa65b73b50dd8bc"
+  },
+  "gpu": "NVIDIA RTX PRO 5000 72GB Blackwell"
+}

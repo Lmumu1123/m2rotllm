@@ -1,0 +1,10 @@
+{
+  "C": 1.0,
+  "C_selected_on_target": false,
+  "model": "source-standardized logistic regression",
+  "train_sample_weight": "equal recording total weight",
+  "decision": "mean window probability per recording",
+  "excluded_from_training": "all target windows",
+  "validation": "no independent validation recordings; fixed C and methods, exploratory only",
+  "caveat": "baud_candidate is serial-baud group, not environment; external records label -1 excluded"
+}

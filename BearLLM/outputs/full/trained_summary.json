@@ -1,0 +1,93 @@
+{
+  "status": "complete",
+  "checkpoint_gate": {
+    "status": "passed",
+    "epochs_completed": 50,
+    "global_step": 7500,
+    "weights": "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/finetune/weights",
+    "sha256": {
+      "vibration_adapter.pth": "37b85cb6cf0fae3c9a945e52a6c941b40997431c8d6f60ee6e507dbddc21031e",
+      "adapter_model.safetensors": "b2ea0a1d53bb74d8a33371c061b10ff20c61890ad1ecaeadd69c53e73902425e",
+      "adapter_config.json": "83f23c8ef7ff1a2ebd70029676d4f3cd8d892263936fe57a7bc50ddecef7049b"
+    },
+    "results_sha256": "ab4692eba8e1558e6631bcb15a8cf48688c9349260ce372b009b9fe5180d0c67"
+  },
+  "export_semantics": "Full end-of-training adapter state including final BatchNorm buffers; original source-export initial-BN comparison is separate.",
+  "dataset_rows": 135516,
+  "main_unique_queries": 122792,
+  "main_pairs": 368376,
+  "fallback_unique_queries": 12724,
+  "fallback_pairs": 38172,
+  "main_and_fallback_union_unique_queries": 135516,
+  "reference_protocols_reported_separately": true,
+  "main_internal_adapter_accuracy": {
+    "pre_lora_adapter": {
+      "all": 0.9903441049362608,
+      "split/train": 0.9952533302309348,
+      "split/val": 0.9787034774818796,
+      "split/test": 0.9792599831690962
+    },
+    "final_lora_adapter": {
+      "all": 0.9517639585640758,
+      "split/train": 0.9567215403408761,
+      "split/val": 0.9399109590900453,
+      "split/test": 0.9407660775850368
+    }
+  },
+  "fallback_internal_adapter_accuracy": {
+    "pre_lora_adapter": 0.041889342973907576,
+    "final_lora_adapter": 0.05815781200880226
+  },
+  "training_corpus_replay": {
+    "fault_detection": {
+      "count": 150,
+      "correct": 150,
+      "accuracy": 1.0,
+      "rouge_l_f1": 1.0,
+      "reference_token_nll": 6.249640200015467e-05
+    },
+    "fault_classification": {
+      "count": 150,
+      "correct": 148,
+      "accuracy": 0.9866666666666667,
+      "rouge_l_f1": 0.9942857142857142,
+      "reference_token_nll": 0.04110502203826768
+    },
+    "maintenance": {
+      "count": 150,
+      "correct": 147,
+      "accuracy": 0.98,
+      "rouge_l_f1": 0.9937722624088802,
+      "reference_token_nll": 0.0007436326481471859
+    },
+    "risk_analysis": {
+      "count": 150,
+      "correct": 146,
+      "accuracy": 0.9733333333333334,
+      "rouge_l_f1": 0.9853857850281046,
+      "reference_token_nll": 0.0011321132508014806
+    }
+  },
+  "test_query_generation": {
+    "count": 12279,
+    "accuracy": 0.9377799495072888,
+    "macro_f1_fixed_classes": 0.8149801811102447,
+    "invalid_predictions": 0
+  },
+  "corpus_truncated_outputs": 0,
+  "test_generation_truncated_outputs": 0,
+  "limitations": [
+    "All 600 corpus examples belong to reconstructed training queries; scores measure training-corpus replay.",
+    "Training and evaluation use the released-code pool of all healthy references; test queries are held out as queries, but healthy reference waveforms can appear during training.",
+    "Same-source fallback deliberately changes the required reference condition and is not an official/paper-comparable score.",
+    "CWRU, DIRG and NCEPU main eligible queries are all healthy; high source accuracy there does not validate fault recognition.",
+    "pre_lora_adapter means this same exported checkpoint with LoRA deltas disabled, including final BatchNorm buffers.",
+    "Reference texts394/505 lack substantive diagnosis. Other generated wrong classes are retained and audited separately.",
+    "Main export preserves final BN state; the upstream file-export convention starts from initial BN and is assessed in a separate source_export comparison."
+  ],
+  "artifact_directories": {
+    "main_and_corpus": "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/trained_evaluation",
+    "fallback": "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/trained_fallback",
+    "test_generation": "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/trained_heldout"
+  }
+}

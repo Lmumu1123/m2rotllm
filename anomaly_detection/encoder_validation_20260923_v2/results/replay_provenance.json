@@ -1,0 +1,16 @@
+{
+  "original_sources": {
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923/controls/run_controls.py": "f2e0a3e4f9c5302f9d205b4642e2ab7dbc7f67123d84b0e253bb4d901ee1a3ff",
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923/rotllm/run_radar_transfer.py": "c2b4c5e4c8f6f8478281f0cf560d0f184d26e15d5428a2b5d1d4d1b201e3d917",
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923/scripts/contact_only_stitch.py": "036ac37ad3c382134a84f1e2a9fbbb18d1a281fc733365da92a0ecade261d7bf",
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/protocol.json": "82ab69348f58d42e28626f539942f038f8398794466ad1f415dd1c18e15eb1c1"
+  },
+  "original_files_unchanged": true,
+  "changes": "Only radar source paths and new output paths; architecture, head checkpoints, preprocessing target variant, losses, steps and seeds unchanged.",
+  "generated_script_sha": {
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/scripts/run_corrected_rotllm.py": "24aa91c4590792afdef0bb70c4c097769703c3f8eb3e766ee8e0d2155b30179a",
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/scripts/run_corrected_stitch.py": "2f0e14f636ee6496d72e361fec5f72b01790737e8030fc0c3d11d9dd5557ea97"
+  },
+  "controls_invocation": "import old module, override ROOT output and RADAR input, run unchanged main()",
+  "caveat": "Old imported protocol text about invalid outer ROI is historical; see v2 protocol and actual corrected metadata for current inputs."
+}

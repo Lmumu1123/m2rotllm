@@ -1,0 +1,17 @@
+id,method,fold,bag_id,true_label,p0,p1,p2,p3,state
+oracle_normal,oracle_coarse_onehot,control,oracle,0,1.0,0.0,0.0,0.0,
+oracle_inner,oracle_coarse_onehot,control,oracle,1,0.0,1.0,0.0,0.0,
+oracle_outer,oracle_coarse_onehot,control,oracle,2,0.0,0.0,1.0,0.0,
+oracle_ball,oracle_coarse_onehot,control,oracle,3,0.0,0.0,0.0,1.0,
+original_contact_2026_9_20_18-41-41-normal-115200.npz,original_contact_fcn_bridge,control,20260920-184058-normal-11520,0,0.017362487,0.034234215,0.7772192,0.17118414,normal
+original_contact_2026_9_20_18-48-45-normal-460800.npz,original_contact_fcn_bridge,control,20260920-184857-normal-460800,0,0.012332183,0.08672317,0.8107416,0.0902031,normal
+original_contact_2026_9_20_19-05-05-outBroken-115200.npz,original_contact_fcn_bridge,control,20260920-190512-outBroken-115200,2,0.0030590438,0.13592824,0.66063046,0.2003822,outBroken
+original_contact_2026_9_20_19-09-18-outBroken-460800.npz,original_contact_fcn_bridge,control,20260920-190913-outBroken-460800,2,0.001003614,0.15729803,0.65849125,0.18320706,outBroken
+original_contact_2026_9_20_19-22-20-inBroken-115200.npz,original_contact_fcn_bridge,control,20260920-192216-inBroken-115200,1,0.00097021833,0.06122804,0.9225759,0.015225855,inBroken
+original_contact_2026_9_20_19-26-17-inBroken-460800.npz,original_contact_fcn_bridge,control,20260920-192610-inBroken-460800,1,7.311032e-05,0.10570169,0.88567865,0.008546591,inBroken
+original_contact_2026_9_20_19-37-24-roll-115200.npz,original_contact_fcn_bridge,control,20260920-193718-roll-115200,3,0.006577568,0.087603495,0.76873195,0.137087,roll
+original_contact_2026_9_20_19-41-02-roll-460800.npz,original_contact_fcn_bridge,control,20260920-194108-roll-460800,3,0.00039004782,0.1885634,0.6605891,0.15045744,roll
+original_contact_2026_9_20_19-54-31-keep-115200.npz,original_contact_fcn_bridge,control,20260920-195424-keep-115200,-1,0.00010690442,0.35613292,0.6390873,0.004672896,keep
+original_contact_2026_9_20_19-58-01-keep-460800.npz,original_contact_fcn_bridge,control,20260920-195753-keep-460800,-1,0.00020226324,0.3181094,0.6726333,0.009054998,keep
+original_contact_2026_9_20_20-17-49-bigNormal-115200.npz,original_contact_fcn_bridge,control,20260920-201757-bigNormal-115200,-1,1.225831e-07,0.073089264,0.92691046,1.9010115e-07,bigNormal
+original_contact_2026_9_20_20-21-22-bigNormal-460800.npz,original_contact_fcn_bridge,control,20260920-202115-bigNormal-460800,-1,1.359707e-08,0.00397989,0.9960201,1.21475665e-08,bigNormal

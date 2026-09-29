@@ -1,0 +1,10 @@
+{
+  "variant": "v0",
+  "lambda_source": 10,
+  "step": 800,
+  "all_source_val_gate": true,
+  "val_acc10": 0.9881505008551185,
+  "val_acc4": 0.9899828976301002,
+  "local_train_macro_f1": 1.0,
+  "delta_norm": 0.10584983974695206
+}

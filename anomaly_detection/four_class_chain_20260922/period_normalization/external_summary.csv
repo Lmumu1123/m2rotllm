@@ -1,0 +1,7 @@
+method,external_healthy_files,healthy_accepted,healthy_acceptance,mean_healthy_probability,unknown_base_fault_files,unknown_rejection_metric
+contact_spectral,2,0,0.0,0.0005691431577457893,2,"not calibrated, not measured"
+contact_period_normalized,2,0,0.0,0.010382489818747443,2,"not calibrated, not measured"
+contact_hidden,2,0,0.0,6.227130484651868e-37,2,"not calibrated, not measured"
+contact_hidden_plus_period_normalized,2,0,0.0,1.6037608587429812e-22,2,"not calibrated, not measured"
+radar_frame_shape,2,0,0.0,1.2223239675068333e-07,2,"not calibrated, not measured"
+radar_period_normalized,2,0,0.0,5.003707042759866e-19,2,"not calibrated, not measured"

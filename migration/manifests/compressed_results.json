@@ -1,0 +1,16 @@
+[
+  {
+    "target": "external/bearllm-runs/released-code-seed42/official_evaluation/vibration_predictions.jsonl",
+    "archive": "external/bearllm-runs/released-code-seed42/official_evaluation/vibration_predictions.jsonl.gz",
+    "bytes": 266591955,
+    "sha256": "23373a08b5f042dfe7aed07d94bd327d28bf0ce064f752662cf95fa97922c004",
+    "archive_sha256": "c46918c64ee92a17da59cfeeb981382c0c79ff9a3e141d6421b5b4c636318d7d"
+  },
+  {
+    "target": "external/bearllm-runs/released-code-seed42/trained_evaluation/vibration_predictions.jsonl",
+    "archive": "external/bearllm-runs/released-code-seed42/trained_evaluation/vibration_predictions.jsonl.gz",
+    "bytes": 266288605,
+    "sha256": "9b06aa189e775b319d82319d7b91c07f5e8d1c4bab0c91466a796f28a41d335c",
+    "archive_sha256": "817fe6930927f2829a11c9d22ae406be349c9f23fa67e0619fb9d90bdf4a70cf"
+  }
+]

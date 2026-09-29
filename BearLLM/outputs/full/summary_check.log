@@ -1,0 +1,19 @@
+{
+  "complete": false,
+  "checks": {
+    "complete_data_audit": true,
+    "independent_conda_environment": true,
+    "full_pretraining": true,
+    "full_finetuning": true,
+    "official_checkpoint_and_protocol_provenance": true,
+    "official_all_supported_pairs": true,
+    "official_all_fallback_pairs": true,
+    "official_all_corpus_rows": true,
+    "official_all_test_queries_generated": true,
+    "trained_checkpoint_and_protocol_provenance": true,
+    "trained_all_supported_pairs": true,
+    "trained_all_fallback_pairs": true,
+    "trained_all_corpus_rows": false,
+    "trained_all_test_queries_generated": true
+  }
+}

@@ -1,0 +1,13 @@
+head,method,unit,correct_repeated,n_repeated,accuracy
+native15,ce_only,file,24,24,1.0
+native15,ce_only,window,1230,1236,0.9951456310679612
+native15,embedding_only,file,6,24,0.25
+native15,embedding_only,window,327,1236,0.2645631067961165
+native15,full,file,6,24,0.25
+native15,full,window,339,1236,0.27427184466019416
+new_contact4,ce_only,file,24,24,1.0
+new_contact4,ce_only,window,1235,1236,0.9991909385113269
+new_contact4,embedding_only,file,24,24,1.0
+new_contact4,embedding_only,window,1233,1236,0.9975728155339806
+new_contact4,full,file,24,24,1.0
+new_contact4,full,window,1234,1236,0.9983818770226537

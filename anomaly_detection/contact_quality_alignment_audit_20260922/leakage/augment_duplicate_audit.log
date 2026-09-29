@@ -1,0 +1,20 @@
+     version         variant             fold                                       scope     n  correct10    acc10  correct4     acc4  delta_acc10_pp  delta_acc4_pp  not_a_clean_protocol
+    original        original         original                          same_original_test 12279      12140 0.988680     12163 0.990553        0.000000       0.000000                  True
+    original        original         original remove_31_exact_train_query_duplicates_only 12248      12109 0.988651     12132 0.990529        0.000000       0.000000                  True
+          v1              v0 115200_to_460800                          same_original_test 12279      12133 0.988110     12157 0.990064       -0.057008      -0.048864                  True
+          v1              v0 115200_to_460800 remove_31_exact_train_query_duplicates_only 12248      12102 0.988080     12126 0.990039       -0.057152      -0.048988                  True
+          v1              v0 460800_to_115200                          same_original_test 12279      12136 0.988354     12158 0.990146       -0.032576      -0.040720                  True
+          v1              v0 460800_to_115200 remove_31_exact_train_query_duplicates_only 12248      12105 0.988325     12127 0.990121       -0.032658      -0.040823                  True
+          v1              v0        all_known                          same_original_test 12279      12097 0.985178     12122 0.987214       -0.350191      -0.333903                  True
+          v1              v0        all_known remove_31_exact_train_query_duplicates_only 12248      12066 0.985140     12091 0.987182       -0.351078      -0.334749                  True
+          v1 query_no_demean 115200_to_460800                          same_original_test 12279      12130 0.987865     12153 0.989739       -0.081440      -0.081440                  True
+          v1 query_no_demean 115200_to_460800 remove_31_exact_train_query_duplicates_only 12248      12099 0.987835     12122 0.989713       -0.081646      -0.081646                  True
+          v1 query_no_demean 460800_to_115200                          same_original_test 12279      12132 0.988028     12157 0.990064       -0.065152      -0.048864                  True
+          v1 query_no_demean 460800_to_115200 remove_31_exact_train_query_duplicates_only 12248      12101 0.987998     12126 0.990039       -0.065317      -0.048988                  True
+          v1 query_no_demean        all_known                          same_original_test 12279      12083 0.984038     12110 0.986237       -0.464207      -0.431631                  True
+          v1 query_no_demean        all_known remove_31_exact_train_query_duplicates_only 12248      12052 0.983997     12079 0.986202       -0.465382      -0.432724                  True
+conservative              v0        all_known                          same_original_test 12279      12139 0.988598     12162 0.990472       -0.008144      -0.008144                  True
+conservative              v0        all_known remove_31_exact_train_query_duplicates_only 12248      12108 0.988570     12131 0.990447       -0.008165      -0.008165                  True
+conservative query_no_demean        all_known                          same_original_test 12279      12131 0.987947     12156 0.989983       -0.073296      -0.057008                  True
+conservative query_no_demean        all_known remove_31_exact_train_query_duplicates_only 12248      12100 0.987916     12125 0.989958       -0.073481      -0.057152                  True
+{'current_replay_training_queries_with_test_DCN_duplicate_test_queries': [12991, 14081], 'n_local_contact_axis_DCN_compared_to_full_source': 264, 'n_exact_source_local_DCN_matches': 0, 'matches': [], 'sensitivity_limit': 'Removing 31 query duplicates leaves cross-split healthy references, shared conditions, unknown original recordings/entities and reused test; not a clean test.'}

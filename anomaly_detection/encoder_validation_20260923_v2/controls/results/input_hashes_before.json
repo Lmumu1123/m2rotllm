@@ -1,0 +1,9 @@
+{
+  "/home/huangyating/anomaly_detection/retention_alignment_20260922/preprocessing/variants/v0/retrained_fcn/metadata.csv": "011e16034ac35cb2b7f4b77abda9fcc0a621b55d54fbf80c7e1e2594d797717d",
+  "/home/huangyating/anomaly_detection/retention_alignment_20260922/preprocessing/variants/v0/retrained_fcn/contact_features.npz": "4d7712e408857e74ed8fec02e423d76bf8e240fb3cc131ca9a4c1da0ca8c1ab4",
+  "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/radar/metadata.csv": "138ca6861fe0d006d2335dc4241e468bb874f85fa00f2a2b461ce5353cd2f378",
+  "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/radar/features.npz": "f9b7755f20cb7396a7044bf999531f1ee03bab216b564e8d0a011bfba894aa41",
+  "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_v0/splits.json": "fa74e5d50f8f46782993a3665029463760042ab885a061cbca2f0f5cdd97f773",
+  "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_v1/models/v0/115200_to_460800/retained_head.npz": "252f3395d039be7db7c5cde018141ac8beaa1b20330c5c6ba93d289dabd09d5e",
+  "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_v1/models/v0/460800_to_115200/retained_head.npz": "61c257101c9a03bf4e53a5ca27fae603e49a4442f83bd1e7920172c4a7f28549"
+}

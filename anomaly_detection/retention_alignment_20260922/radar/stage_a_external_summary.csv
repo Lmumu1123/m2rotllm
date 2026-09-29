@@ -1,0 +1,17 @@
+task,method,n,correct,normal_probability_mean
+four_class_provisional_roi,ce_feat_0p1,2,0,1.8449240997142624e-06
+four_class_provisional_roi,ce_feat_1,2,0,3.1416175261256285e-06
+four_class_provisional_roi,ce_feat_10,2,0,5.893954721614136e-06
+four_class_provisional_roi,ce_feat_1_kd,2,0,6.0838303852506215e-06
+four_class_provisional_roi,ce_only,2,0,1.9878513413118526e-07
+four_class_provisional_roi,embedding_only,2,0,4.616192200046498e-06
+four_class_provisional_roi,phase_ce_feat_1,2,0,2.80433232546784e-06
+four_class_provisional_roi,smooth_ce_feat_1,2,0,3.6538172025757376e-06
+three_class_geometry_compatible,ce_feat_0p1,2,0,3.418253342601929e-07
+three_class_geometry_compatible,ce_feat_1,2,0,3.355803883664521e-07
+three_class_geometry_compatible,ce_feat_10,2,0,1.0454541552462615e-06
+three_class_geometry_compatible,ce_feat_1_kd,2,0,5.329080039473411e-07
+three_class_geometry_compatible,ce_only,2,0,1.9799433175649028e-05
+three_class_geometry_compatible,embedding_only,2,0,4.4594914072604297e-07
+three_class_geometry_compatible,phase_ce_feat_1,2,0,9.2754884661872e-08
+three_class_geometry_compatible,smooth_ce_feat_1,2,0,4.4705237201014825e-07

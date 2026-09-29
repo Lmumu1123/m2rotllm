@@ -1,0 +1,37 @@
+archived__complex_shape holdout_1000 verified
+archived__complex_shape holdout_2000 verified
+archived__complex_shape holdout_3000 verified
+archived__geometry_complex_shape holdout_1000 verified
+archived__geometry_complex_shape holdout_2000 verified
+archived__geometry_complex_shape holdout_3000 verified
+archived__phase_shape holdout_1000 verified
+archived__phase_shape holdout_2000 verified
+archived__phase_shape holdout_3000 verified
+diagnostic__complex_shape holdout_1000 verified
+diagnostic__complex_shape holdout_2000 verified
+diagnostic__complex_shape holdout_3000 verified
+{
+  "status": "passed",
+  "completed_experiments": [
+    "archived__complex_shape",
+    "archived__geometry_complex_shape",
+    "archived__phase_shape",
+    "diagnostic__complex_shape"
+  ],
+  "skipped_incomplete": [],
+  "checkpoint_forward_checks": 171,
+  "recomputed_metric_rows": 855,
+  "folds_with_independently_reconstructed_train_only_fits": 12,
+  "max_probability_abs_error": 3.337860107421875e-06,
+  "max_recording_probability_abs_error": 5.364418029785156e-07,
+  "every_saved_prediction_contains_only_expected_heldout_rpm_rows": true,
+  "recorded_train_predictions_are_explicitly_separate_from_test": true,
+  "no_shared_contact_sessions_between_train_and_test": true,
+  "archived_actual_ten_class_weights_match_source": true,
+  "diagnostic_heads_reconstructed_from_training_contact_only": true,
+  "diagnostic_source_retention_certified": false,
+  "optimizer_head_freezing_evidence": "training code optimizes model.parameters() only; w,b created from arrays with requires_grad=False; saved target heads match immutable source arrays",
+  "loss_interpretation": "full is predeclared CE + mean-feature MSE + 0.1 class-positive contrast + 0.5 temperature-2 KD; this audit verifies execution, not novelty or superiority",
+  "scope": "No stronger independent-bearing/motor/environment or severity claim; only 12 shared contact sessions; 3 seeds do not multiply physical samples",
+  "auditor_sha256": "3fbdd639f77500f94b921a3a01a745b3859549c5be1994571aa118a165938424"
+}

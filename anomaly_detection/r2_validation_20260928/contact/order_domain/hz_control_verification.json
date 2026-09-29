@@ -1,0 +1,137 @@
+{
+  "ok": true,
+  "inputs_unchanged": true,
+  "checks": [
+    {
+      "holdout_rpm": 1000,
+      "method": "xyz_concat_fixed_hz_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_2000r_session",
+        "inBroken_3000r_session",
+        "normal_2000r_session",
+        "normal_3000r_session",
+        "outBroken_2000r_session",
+        "outBroken_3000r_session",
+        "roll_2000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_1000r_session",
+        "normal_1000r_session",
+        "outBroken_1000r_session",
+        "roll_1000r_session"
+      ],
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 1000,
+      "method": "xy_concat_fixed_hz_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_2000r_session",
+        "inBroken_3000r_session",
+        "normal_2000r_session",
+        "normal_3000r_session",
+        "outBroken_2000r_session",
+        "outBroken_3000r_session",
+        "roll_2000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_1000r_session",
+        "normal_1000r_session",
+        "outBroken_1000r_session",
+        "roll_1000r_session"
+      ],
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 2000,
+      "method": "xyz_concat_fixed_hz_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_3000r_session",
+        "normal_1000r_session",
+        "normal_3000r_session",
+        "outBroken_1000r_session",
+        "outBroken_3000r_session",
+        "roll_1000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_2000r_session",
+        "normal_2000r_session",
+        "outBroken_2000r_session",
+        "roll_2000r_session"
+      ],
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 2000,
+      "method": "xy_concat_fixed_hz_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_3000r_session",
+        "normal_1000r_session",
+        "normal_3000r_session",
+        "outBroken_1000r_session",
+        "outBroken_3000r_session",
+        "roll_1000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_2000r_session",
+        "normal_2000r_session",
+        "outBroken_2000r_session",
+        "roll_2000r_session"
+      ],
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 3000,
+      "method": "xyz_concat_fixed_hz_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_2000r_session",
+        "normal_1000r_session",
+        "normal_2000r_session",
+        "outBroken_1000r_session",
+        "outBroken_2000r_session",
+        "roll_1000r_session",
+        "roll_2000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_3000r_session",
+        "normal_3000r_session",
+        "outBroken_3000r_session",
+        "roll_3000r_session"
+      ],
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 3000,
+      "method": "xy_concat_fixed_hz_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_2000r_session",
+        "normal_1000r_session",
+        "normal_2000r_session",
+        "outBroken_1000r_session",
+        "outBroken_2000r_session",
+        "roll_1000r_session",
+        "roll_2000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_3000r_session",
+        "normal_3000r_session",
+        "outBroken_3000r_session",
+        "roll_3000r_session"
+      ],
+      "source_retention_certified": false
+    }
+  ],
+  "total_seconds": 0.4309780409676023,
+  "configurations": 2,
+  "model_fits": 6,
+  "fixed_hyperparameters": true,
+  "no_test_tuning": true
+}

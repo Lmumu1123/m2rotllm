@@ -1,0 +1,13 @@
+constraint,method,unit,correct_repeated,n_repeated,accuracy
+legacy_nonnegative_relu,ce_only,recording,24,24,1.0
+legacy_nonnegative_relu,ce_only,window,1233,1236,0.9975728155339806
+legacy_nonnegative_relu,embedding_only,recording,12,24,0.5
+legacy_nonnegative_relu,embedding_only,window,584,1236,0.47249190938511326
+legacy_nonnegative_relu,full,recording,24,24,1.0
+legacy_nonnegative_relu,full,window,1232,1236,0.9967637540453075
+signed_linear,ce_only,recording,24,24,1.0
+signed_linear,ce_only,window,1234,1236,0.9983818770226537
+signed_linear,embedding_only,recording,24,24,1.0
+signed_linear,embedding_only,window,1234,1236,0.9983818770226537
+signed_linear,full,recording,24,24,1.0
+signed_linear,full,window,1234,1236,0.9983818770226537

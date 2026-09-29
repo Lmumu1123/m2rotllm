@@ -1,0 +1,42 @@
+{
+  "diagnostic": "原仓库保存方式对照（恢复初始BN）",
+  "created_at_utc": "2026-09-18T18:55:31.763201+00:00",
+  "source_initial_vibration_adapter": "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/finetune/initial_vibration_adapter.pth",
+  "source_final_weights": "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/finetune/weights",
+  "diagnostic_weights": "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/source_export_weights",
+  "main_weights_sha256": {
+    "vibration_adapter.pth": "37b85cb6cf0fae3c9a945e52a6c941b40997431c8d6f60ee6e507dbddc21031e",
+    "adapter_model.safetensors": "b2ea0a1d53bb74d8a33371c061b10ff20c61890ad1ecaeadd69c53e73902425e",
+    "adapter_config.json": "83f23c8ef7ff1a2ebd70029676d4f3cd8d892263936fe57a7bc50ddecef7049b"
+  },
+  "diagnostic_weights_sha256": {
+    "vibration_adapter.pth": "13f7889f1871a3de49065a63d45b6b3efbb1916ba172cb632bb6daae8e10d8ab",
+    "adapter_model.safetensors": "b2ea0a1d53bb74d8a33371c061b10ff20c61890ad1ecaeadd69c53e73902425e",
+    "adapter_config.json": "83f23c8ef7ff1a2ebd70029676d4f3cd8d892263936fe57a7bc50ddecef7049b"
+  },
+  "lora_and_config_byte_identical_to_final": true,
+  "all_72_non_bn_base_tensors_identical": true,
+  "only_different_tensors": [
+    "feature_encoder.conv_query.norm.running_mean",
+    "feature_encoder.conv_query.norm.running_var",
+    "feature_encoder.conv_query.norm.num_batches_tracked",
+    "feature_encoder.conv_ref.norm.running_mean",
+    "feature_encoder.conv_ref.norm.running_var",
+    "feature_encoder.conv_ref.norm.num_batches_tracked",
+    "feature_encoder.conv_res.norm.running_mean",
+    "feature_encoder.conv_res.norm.running_var",
+    "feature_encoder.conv_res.norm.num_batches_tracked",
+    "feature_encoder.conv.0.norm.running_mean",
+    "feature_encoder.conv.0.norm.running_var",
+    "feature_encoder.conv.0.norm.num_batches_tracked",
+    "feature_encoder.conv.1.norm.running_mean",
+    "feature_encoder.conv.1.norm.running_var",
+    "feature_encoder.conv.1.norm.num_batches_tracked",
+    "feature_encoder.conv.2.norm.running_mean",
+    "feature_encoder.conv.2.norm.running_var",
+    "feature_encoder.conv.2.norm.num_batches_tracked"
+  ],
+  "main_weights_unchanged": true,
+  "no_retraining_or_hyperparameter_selection": true,
+  "scope": "Full 12279 test queries; same prompt/seed42/reference draw/batch32/greedy generation/max64 as trained_heldout. Diagnostic only; never replace main metrics with preferred result."
+}

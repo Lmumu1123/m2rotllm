@@ -1,0 +1,370 @@
+[
+  {
+    "split_id": "0000",
+    "class_order": [
+      "normal",
+      "inBroken",
+      "outBroken",
+      "roll"
+    ],
+    "train_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-192216-inBroken-115200",
+      "20260920-190512-outBroken-115200",
+      "20260920-193718-roll-115200"
+    ],
+    "test_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-192610-inBroken-460800",
+      "20260920-190913-outBroken-460800",
+      "20260920-194108-roll-460800"
+    ],
+    "complement_split_id": "1111",
+    "interpretation": "overlapping exploratory partition; not an independent experiment"
+  },
+  {
+    "split_id": "0001",
+    "class_order": [
+      "normal",
+      "inBroken",
+      "outBroken",
+      "roll"
+    ],
+    "train_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-192216-inBroken-115200",
+      "20260920-190512-outBroken-115200",
+      "20260920-194108-roll-460800"
+    ],
+    "test_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-192610-inBroken-460800",
+      "20260920-190913-outBroken-460800",
+      "20260920-193718-roll-115200"
+    ],
+    "complement_split_id": "1110",
+    "interpretation": "overlapping exploratory partition; not an independent experiment"
+  },
+  {
+    "split_id": "0010",
+    "class_order": [
+      "normal",
+      "inBroken",
+      "outBroken",
+      "roll"
+    ],
+    "train_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-192216-inBroken-115200",
+      "20260920-190913-outBroken-460800",
+      "20260920-193718-roll-115200"
+    ],
+    "test_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-192610-inBroken-460800",
+      "20260920-190512-outBroken-115200",
+      "20260920-194108-roll-460800"
+    ],
+    "complement_split_id": "1101",
+    "interpretation": "overlapping exploratory partition; not an independent experiment"
+  },
+  {
+    "split_id": "0011",
+    "class_order": [
+      "normal",
+      "inBroken",
+      "outBroken",
+      "roll"
+    ],
+    "train_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-192216-inBroken-115200",
+      "20260920-190913-outBroken-460800",
+      "20260920-194108-roll-460800"
+    ],
+    "test_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-192610-inBroken-460800",
+      "20260920-190512-outBroken-115200",
+      "20260920-193718-roll-115200"
+    ],
+    "complement_split_id": "1100",
+    "interpretation": "overlapping exploratory partition; not an independent experiment"
+  },
+  {
+    "split_id": "0100",
+    "class_order": [
+      "normal",
+      "inBroken",
+      "outBroken",
+      "roll"
+    ],
+    "train_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-192610-inBroken-460800",
+      "20260920-190512-outBroken-115200",
+      "20260920-193718-roll-115200"
+    ],
+    "test_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-192216-inBroken-115200",
+      "20260920-190913-outBroken-460800",
+      "20260920-194108-roll-460800"
+    ],
+    "complement_split_id": "1011",
+    "interpretation": "overlapping exploratory partition; not an independent experiment"
+  },
+  {
+    "split_id": "0101",
+    "class_order": [
+      "normal",
+      "inBroken",
+      "outBroken",
+      "roll"
+    ],
+    "train_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-192610-inBroken-460800",
+      "20260920-190512-outBroken-115200",
+      "20260920-194108-roll-460800"
+    ],
+    "test_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-192216-inBroken-115200",
+      "20260920-190913-outBroken-460800",
+      "20260920-193718-roll-115200"
+    ],
+    "complement_split_id": "1010",
+    "interpretation": "overlapping exploratory partition; not an independent experiment"
+  },
+  {
+    "split_id": "0110",
+    "class_order": [
+      "normal",
+      "inBroken",
+      "outBroken",
+      "roll"
+    ],
+    "train_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-192610-inBroken-460800",
+      "20260920-190913-outBroken-460800",
+      "20260920-193718-roll-115200"
+    ],
+    "test_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-192216-inBroken-115200",
+      "20260920-190512-outBroken-115200",
+      "20260920-194108-roll-460800"
+    ],
+    "complement_split_id": "1001",
+    "interpretation": "overlapping exploratory partition; not an independent experiment"
+  },
+  {
+    "split_id": "0111",
+    "class_order": [
+      "normal",
+      "inBroken",
+      "outBroken",
+      "roll"
+    ],
+    "train_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-192610-inBroken-460800",
+      "20260920-190913-outBroken-460800",
+      "20260920-194108-roll-460800"
+    ],
+    "test_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-192216-inBroken-115200",
+      "20260920-190512-outBroken-115200",
+      "20260920-193718-roll-115200"
+    ],
+    "complement_split_id": "1000",
+    "interpretation": "overlapping exploratory partition; not an independent experiment"
+  },
+  {
+    "split_id": "1000",
+    "class_order": [
+      "normal",
+      "inBroken",
+      "outBroken",
+      "roll"
+    ],
+    "train_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-192216-inBroken-115200",
+      "20260920-190512-outBroken-115200",
+      "20260920-193718-roll-115200"
+    ],
+    "test_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-192610-inBroken-460800",
+      "20260920-190913-outBroken-460800",
+      "20260920-194108-roll-460800"
+    ],
+    "complement_split_id": "0111",
+    "interpretation": "overlapping exploratory partition; not an independent experiment"
+  },
+  {
+    "split_id": "1001",
+    "class_order": [
+      "normal",
+      "inBroken",
+      "outBroken",
+      "roll"
+    ],
+    "train_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-192216-inBroken-115200",
+      "20260920-190512-outBroken-115200",
+      "20260920-194108-roll-460800"
+    ],
+    "test_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-192610-inBroken-460800",
+      "20260920-190913-outBroken-460800",
+      "20260920-193718-roll-115200"
+    ],
+    "complement_split_id": "0110",
+    "interpretation": "overlapping exploratory partition; not an independent experiment"
+  },
+  {
+    "split_id": "1010",
+    "class_order": [
+      "normal",
+      "inBroken",
+      "outBroken",
+      "roll"
+    ],
+    "train_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-192216-inBroken-115200",
+      "20260920-190913-outBroken-460800",
+      "20260920-193718-roll-115200"
+    ],
+    "test_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-192610-inBroken-460800",
+      "20260920-190512-outBroken-115200",
+      "20260920-194108-roll-460800"
+    ],
+    "complement_split_id": "0101",
+    "interpretation": "overlapping exploratory partition; not an independent experiment"
+  },
+  {
+    "split_id": "1011",
+    "class_order": [
+      "normal",
+      "inBroken",
+      "outBroken",
+      "roll"
+    ],
+    "train_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-192216-inBroken-115200",
+      "20260920-190913-outBroken-460800",
+      "20260920-194108-roll-460800"
+    ],
+    "test_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-192610-inBroken-460800",
+      "20260920-190512-outBroken-115200",
+      "20260920-193718-roll-115200"
+    ],
+    "complement_split_id": "0100",
+    "interpretation": "overlapping exploratory partition; not an independent experiment"
+  },
+  {
+    "split_id": "1100",
+    "class_order": [
+      "normal",
+      "inBroken",
+      "outBroken",
+      "roll"
+    ],
+    "train_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-192610-inBroken-460800",
+      "20260920-190512-outBroken-115200",
+      "20260920-193718-roll-115200"
+    ],
+    "test_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-192216-inBroken-115200",
+      "20260920-190913-outBroken-460800",
+      "20260920-194108-roll-460800"
+    ],
+    "complement_split_id": "0011",
+    "interpretation": "overlapping exploratory partition; not an independent experiment"
+  },
+  {
+    "split_id": "1101",
+    "class_order": [
+      "normal",
+      "inBroken",
+      "outBroken",
+      "roll"
+    ],
+    "train_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-192610-inBroken-460800",
+      "20260920-190512-outBroken-115200",
+      "20260920-194108-roll-460800"
+    ],
+    "test_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-192216-inBroken-115200",
+      "20260920-190913-outBroken-460800",
+      "20260920-193718-roll-115200"
+    ],
+    "complement_split_id": "0010",
+    "interpretation": "overlapping exploratory partition; not an independent experiment"
+  },
+  {
+    "split_id": "1110",
+    "class_order": [
+      "normal",
+      "inBroken",
+      "outBroken",
+      "roll"
+    ],
+    "train_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-192610-inBroken-460800",
+      "20260920-190913-outBroken-460800",
+      "20260920-193718-roll-115200"
+    ],
+    "test_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-192216-inBroken-115200",
+      "20260920-190512-outBroken-115200",
+      "20260920-194108-roll-460800"
+    ],
+    "complement_split_id": "0001",
+    "interpretation": "overlapping exploratory partition; not an independent experiment"
+  },
+  {
+    "split_id": "1111",
+    "class_order": [
+      "normal",
+      "inBroken",
+      "outBroken",
+      "roll"
+    ],
+    "train_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-192610-inBroken-460800",
+      "20260920-190913-outBroken-460800",
+      "20260920-194108-roll-460800"
+    ],
+    "test_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-192216-inBroken-115200",
+      "20260920-190512-outBroken-115200",
+      "20260920-193718-roll-115200"
+    ],
+    "complement_split_id": "0000",
+    "interpretation": "overlapping exploratory partition; not an independent experiment"
+  }
+]

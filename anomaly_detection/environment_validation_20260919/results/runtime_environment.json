@@ -1,0 +1,36 @@
+{
+  "python": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "python_version": "3.12.14 (main, Sep  2 2026, 23:27:36) [GCC 15.3.0]",
+  "conda_environment": "m2vllm",
+  "packages": {
+    "numpy": "1.26.0",
+    "scipy": "1.15.2",
+    "pandas": "2.2.3",
+    "sklearn": "1.6.1",
+    "matplotlib": "3.10.1"
+  },
+  "time_utc": "2026-09-19T01:27:52.181784+00:00",
+  "source_hashes": {
+    "evaluate_environment.py": "02e8b3a8d4e9747d65f64694fa810fcbd043d130b7488277f567a37f770d16b8",
+    "radar_environment.py": "ba5e8437c77f843ca840a85038a9c81adcf5c095ad6ca0a69b915a517169283a",
+    "watch_upload.py": "851b58d6c53934c1c4423bf8ca51fcdd5c10ade2f159b4bd049caf67ca8431e5"
+  },
+  "final_verification_time_utc": "2026-09-19T01:47:33.996938+00:00",
+  "final_source_hashes": {
+    "evaluate_environment.py": "29645689dda3a45b36abe58e42ff134ce480dbd28c65797039fecece6ac2407c",
+    "finalize_artifacts.py": "c2240a2ae8703d942f931f9500f7f44c55d8b3e097358a49ee0b0f154ce47b77",
+    "predict_features.py": "dca9682530613bc534b8333e170439378a55e532bfed40afc5d5289a6ff4b1ff",
+    "radar_environment.py": "ba5e8437c77f843ca840a85038a9c81adcf5c095ad6ca0a69b915a517169283a",
+    "supplementary_checks.py": "eec6d31c7689fbcad81fff833f2c059273039ac89a2bd4f158d76b765edeb3cf",
+    "watch_upload.py": "851b58d6c53934c1c4423bf8ca51fcdd5c10ade2f159b4bd049caf67ca8431e5"
+  },
+  "final_python": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "execution": "CPU, OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2",
+  "final_packages": {
+    "numpy": "1.26.0",
+    "scipy": "1.15.2",
+    "pandas": "2.2.3",
+    "sklearn": "1.6.1",
+    "matplotlib": "3.10.1"
+  }
+}

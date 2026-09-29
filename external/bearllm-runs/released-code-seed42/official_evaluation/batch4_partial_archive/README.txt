@@ -1,0 +1,1 @@
+Partial preliminary batch4 corpus run stopped for throughput optimization. Not part of final corpus metrics. Final corpus regenerated from scratch at batch16; complete vibration results reused because their batch size and all other inputs are unchanged.

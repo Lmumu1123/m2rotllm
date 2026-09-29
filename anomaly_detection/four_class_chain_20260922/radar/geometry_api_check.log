@@ -1,0 +1,32 @@
+{
+  "real_missing_check_only": {
+    "exit_code": 2,
+    "missing_files": [
+      "20260920-184058-normal-11520.bin",
+      "20260920-184857-normal-460800.bin",
+      "20260920-190512-outBroken-115200.bin",
+      "20260920-190913-outBroken-460800.bin",
+      "20260920-192216-inBroken-115200.bin",
+      "20260920-192610-inBroken-460800.bin",
+      "20260920-193718-roll-115200.bin",
+      "20260920-194108-roll-460800.bin",
+      "20260920-195424-keep-115200.bin",
+      "20260920-195753-keep-460800.bin",
+      "20260920-201757-bigNormal-115200.bin",
+      "20260920-202115-bigNormal-460800.bin"
+    ],
+    "output_created": false
+  },
+  "real_missing_run": {
+    "exit_code": 2,
+    "output_created": false
+  },
+  "existing_feature_output_refused": true,
+  "new_source_output_api": {
+    "status": "pass",
+    "all_feature_arrays_identical": true,
+    "old_output_untouched": true
+  },
+  "status": "passed",
+  "raw_reprocessing_execution": "not executed: all 12 original ADC bin are absent; no substitute/fabricated signals used"
+}

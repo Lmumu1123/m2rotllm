@@ -1,0 +1,10 @@
+query_split,reference_query_split,pair_count,unique_reference_count
+test,test,3758,2719
+test,train,25632,18596
+test,val,7447,5399
+train,test,25789,6690
+train,train,180429,46984
+train,val,51647,13425
+val,test,7150,4064
+val,train,51876,29318
+val,val,14648,8349

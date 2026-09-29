@@ -1,0 +1,14 @@
+{
+  "task": "diagnostic_only_not_source_accuracy_retention_accepted",
+  "train_test": "leave one entire RPM out; 8 contact sessions train and 4 unseen sessions test in each fold; no random window split",
+  "head": "StandardScaler weighted by session, LogisticRegression C=1 max_iter=3000, all fixed before results",
+  "physical_baseline": "same train-session-weighted StandardScaler then RBF SVC C=1 gamma=scale; fixed before results",
+  "signal_baseline": "Welch fs4000, Hann1024, overlap512, demean, mean XYZ axis PSD; log integrated PSD in 128 equal-width bands 20-1800Hz; subtract per-window mean logpower",
+  "axis_sensitivity": "XY removes Z in every class and fold, motivated by pre-inference clipping audit",
+  "source_acc_retention": "unknown for these new diagnostic heads; they must not replace the previously validated retained head",
+  "no_hyperparameter_selection_on_test": true,
+  "existing_checkpoints_modified": false,
+  "feature_input_sha256": "87cebaff91249d90f07c1de819612a2adc516120e945fd78345d354280abf66f",
+  "raw_input_sha256": "ec78a877c51693e5e3934e9a35ba8ced8a4d6b3c84f127f256c738f3e9b1535b",
+  "script_sha256": "2f714bd62252a5d855c8a8550b87a45bc073fc61b80f040de941022f4c25c3de"
+}

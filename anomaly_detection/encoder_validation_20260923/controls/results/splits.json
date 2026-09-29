@@ -1,0 +1,74 @@
+[
+  {
+    "task": "four_class_provisional_roi",
+    "fold": "115200_to_460800",
+    "classes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "train_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-190512-outBroken-115200",
+      "20260920-192216-inBroken-115200",
+      "20260920-193718-roll-115200"
+    ],
+    "test_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-190913-outBroken-460800",
+      "20260920-192610-inBroken-460800",
+      "20260920-194108-roll-460800"
+    ],
+    "shared_head": "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_v1/models/v0/115200_to_460800/retained_head.npz",
+    "shared_head_sha256": "252f3395d039be7db7c5cde018141ac8beaa1b20330c5c6ba93d289dabd09d5e",
+    "source_retention": {
+      "variant": "v0",
+      "fold": "115200_to_460800",
+      "source_test_acc10": 0.9881097809267856,
+      "source_test_acc4": 0.990064337486766,
+      "delta_acc10_pp": -0.057007899666094985,
+      "delta_acc4_pp": -0.0488639139995084,
+      "meets_user_global_retention": true,
+      "status": "passes_global_regression_gate",
+      "per_source_declines_must_be_reviewed": true,
+      "encoder_and_linear1_unchanged": true
+    }
+  },
+  {
+    "task": "four_class_provisional_roi",
+    "fold": "460800_to_115200",
+    "classes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "train_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-190913-outBroken-460800",
+      "20260920-192610-inBroken-460800",
+      "20260920-194108-roll-460800"
+    ],
+    "test_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-190512-outBroken-115200",
+      "20260920-192216-inBroken-115200",
+      "20260920-193718-roll-115200"
+    ],
+    "shared_head": "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_v1/models/v0/460800_to_115200/retained_head.npz",
+    "shared_head_sha256": "61c257101c9a03bf4e53a5ca27fae603e49a4442f83bd1e7920172c4a7f28549",
+    "source_retention": {
+      "variant": "v0",
+      "fold": "460800_to_115200",
+      "source_test_acc10": 0.9883541004967831,
+      "source_test_acc4": 0.9901457773434319,
+      "delta_acc10_pp": -0.032575942666346336,
+      "delta_acc4_pp": -0.04071992833292182,
+      "meets_user_global_retention": true,
+      "status": "passes_global_regression_gate",
+      "per_source_declines_must_be_reviewed": true,
+      "encoder_and_linear1_unchanged": true
+    }
+  }
+]

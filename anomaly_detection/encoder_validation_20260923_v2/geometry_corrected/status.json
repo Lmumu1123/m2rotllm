@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "radar_recordings": 12,
+  "contact_recordings_reused": 12,
+  "raw_inputs_unmodified": true,
+  "radar_features": "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/radar/features.npz",
+  "next_step": "Review selected range, saturation and plots before retraining; models were not rerun"
+}

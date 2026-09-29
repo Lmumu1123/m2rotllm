@@ -1,0 +1,51 @@
+{
+  "stage": "finetune",
+  "data_dir": "/media/nas_users/huangyating/bearllm-assets/mbhm_dataset",
+  "qwen_dir": "/media/nas_users/huangyating/bearllm-assets/qwen_weights",
+  "output_dir": "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/finetune",
+  "fcn_dir": "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/pretrain/fcn",
+  "device": "cuda:0",
+  "seed": 42,
+  "epochs": 50,
+  "batch_size": 1,
+  "workers": 10,
+  "learning_rate": 0.0001,
+  "accumulation_steps": 4,
+  "preload": true,
+  "scheduler": "source-batch-loss",
+  "disable_early_stop": false,
+  "gradient_checkpointing": false,
+  "log_steps": 10,
+  "resume": false,
+  "torch_threads": 8,
+  "finetune_engine": "transformers.Trainer",
+  "model_accepts_loss_kwargs": true,
+  "loss_normalization": "native Trainer model loss kwargs",
+  "torch_version": "2.11.0+cu128",
+  "python_version": "3.12.14 (main, Sep  2 2026, 23:27:36) [GCC 15.3.0]",
+  "cuda_version": "12.8",
+  "trainer_sha256": "b01a0b272dd4b4c045f0d30c4ea6bf49f44528dd59943eaf0ed5b9bd155da4f1",
+  "metadata_sha256": "87134ccb87c93646b8613251bca712b4afb8910baf32d049c263dc8ab9e96ef0",
+  "corpus_sha256": "eb19e542138758ade543ba99d2269ae6e8247470d4a8ddf4961a525a7719469a",
+  "effective_batch_size": 4,
+  "loader_protocol": {
+    "engine": "transformers.Trainer",
+    "dataloader_num_workers": 0,
+    "loss_normalization": "native Trainer model loss kwargs"
+  },
+  "package_versions": {
+    "transformers": "4.49.0",
+    "peft": "0.15.2",
+    "numpy": "1.26.0",
+    "h5py": "3.16.0",
+    "scipy": "1.15.2"
+  },
+  "dataset_revision": "78cd9b8b6b65cd43eebf4879b060d783d5f7dcfe",
+  "dataset_download_verified": true,
+  "dataset_expected_sha256": "ba5e5c9da0538e8d0dfd22d683b95098cb1abee14c6c6e2bbc478ee6339040b8",
+  "initial_fcn_sha256": {
+    "feature_encoder.pth": "e7322e179238ab5edf779830c2be562e2a0d613ac1285c4ccdb35080cc97f84e",
+    "classifier.pth": "885d03d3be3e6aef0966d1d74b305ca94f3cef1814467413af270bb02e9c3340"
+  },
+  "gpu": "NVIDIA RTX PRO 5000 72GB Blackwell"
+}

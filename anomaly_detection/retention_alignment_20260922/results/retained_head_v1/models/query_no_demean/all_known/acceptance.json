@@ -1,0 +1,12 @@
+{
+  "variant": "query_no_demean",
+  "fold": "all_known",
+  "source_test_acc10": 0.984037788093493,
+  "source_test_acc4": 0.986236664223471,
+  "delta_acc10_pp": -0.46420718299535757,
+  "delta_acc4_pp": -0.43163124032901123,
+  "meets_user_global_retention": true,
+  "status": "passes_global_regression_gate",
+  "per_source_declines_must_be_reviewed": true,
+  "encoder_and_linear1_unchanged": true
+}

@@ -1,0 +1,18 @@
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/conv.py:186: UserWarning: Initializing zero-element tensors is a no-op
+  init.kaiming_uniform_(self.weight, a=math.sqrt(5))
+{"signal_storage": "memory", "bytes": 13009536000, "load_seconds": 47.783256952185184}
+{"stage": "vibration", "complete_pairs": 128, "total_pairs": 38172, "elapsed_seconds_this_session": 49.50229204073548, "pairs_per_second": 2.5857388561860666}
+{"stage": "vibration", "complete_pairs": 2688, "total_pairs": 38172, "elapsed_seconds_this_session": 49.698408133815974, "pairs_per_second": 54.08623939749533}
+{"stage": "vibration", "complete_pairs": 5248, "total_pairs": 38172, "elapsed_seconds_this_session": 49.888234640005976, "pairs_per_second": 105.19514346157212}
+{"stage": "vibration", "complete_pairs": 7808, "total_pairs": 38172, "elapsed_seconds_this_session": 50.21019889367744, "pairs_per_second": 155.50625514417544}
+{"stage": "vibration", "complete_pairs": 10368, "total_pairs": 38172, "elapsed_seconds_this_session": 50.403615722898394, "pairs_per_second": 205.69952872031382}
+{"stage": "vibration", "complete_pairs": 12928, "total_pairs": 38172, "elapsed_seconds_this_session": 50.59768707770854, "pairs_per_second": 255.5057502953647}
+{"stage": "vibration", "complete_pairs": 15488, "total_pairs": 38172, "elapsed_seconds_this_session": 50.793783500790596, "pairs_per_second": 304.9192033461916}
+{"stage": "vibration", "complete_pairs": 18048, "total_pairs": 38172, "elapsed_seconds_this_session": 50.98925372771919, "pairs_per_second": 353.9569356393346}
+{"stage": "vibration", "complete_pairs": 20608, "total_pairs": 38172, "elapsed_seconds_this_session": 51.19672122457996, "pairs_per_second": 402.5257771801592}
+{"stage": "vibration", "complete_pairs": 23168, "total_pairs": 38172, "elapsed_seconds_this_session": 51.39371114689857, "pairs_per_second": 450.7944548658675}
+{"stage": "vibration", "complete_pairs": 25728, "total_pairs": 38172, "elapsed_seconds_this_session": 51.58989308075979, "pairs_per_second": 498.7023322518793}
+{"stage": "vibration", "complete_pairs": 28288, "total_pairs": 38172, "elapsed_seconds_this_session": 51.91295034484938, "pairs_per_second": 544.9122003678729}
+{"stage": "vibration", "complete_pairs": 30848, "total_pairs": 38172, "elapsed_seconds_this_session": 52.108901276718825, "pairs_per_second": 591.9909889518674}
+{"stage": "vibration", "complete_pairs": 33408, "total_pairs": 38172, "elapsed_seconds_this_session": 52.31163485068828, "pairs_per_second": 638.6342177099908}
+{"stage": "vibration", "complete_pairs": 35968, "total_pairs": 38172, "elapsed_seconds_this_session": 52.50744454097003, "pairs_per_second": 685.0076272886452}

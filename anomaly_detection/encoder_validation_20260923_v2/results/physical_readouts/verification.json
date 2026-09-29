@@ -1,0 +1,75 @@
+{
+  "input_contact_hashes": {
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_18-41-41-normal-115200.npz": "7b5599a6e3ef3114dec30f777b63209742eb14ffd658420bd780ca583f9056eb",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_18-48-45-normal-460800.npz": "719de0cb39eb281468019109db584eb4ddfc255432c487b3c81db7e4cf68d44c",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_19-05-05-outBroken-115200.npz": "768d03813fcc5bfaa87c8778e026137887419674d13576b714f56f6c083d5213",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_19-09-18-outBroken-460800.npz": "865bbdb4bdb03f66a7a28ce6fe59f2613271a61bbe158d37e02ea8a15d7d9eac",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_19-22-20-inBroken-115200.npz": "8ff5b708e40e5e19f2a1ba6f406e00db047d21c9ed418f006a65d6f7983fca2d",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_19-26-17-inBroken-460800.npz": "70ebc315498e820f7c8163ebc9516af11610c701b627494d7bb61e8e6869703a",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_19-37-24-roll-115200.npz": "5315b9d76de84e99defe2850b3952175e3e45a9797e5caf2b48baac543ffc31a",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_19-41-02-roll-460800.npz": "49c5a3b3a85e0d57eca014a1aaacc1ea4a3d63a8134494585a3a379fb7ee5b2c",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_19-54-31-keep-115200.npz": "3f2af7f1050fd2d376ae489589d5d24f06250a34d226b0b36a4c51147b08774a",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_19-58-01-keep-460800.npz": "3acab1e560acbbe33d1ecd6e9d6a1eac8c9a53cc7eb94ff2059ec4cbb5e7385a",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_20-17-49-bigNormal-115200.npz": "a11e9a2bcb5942f1c7f379ef72c3aa082023293bf23f507629fc916726b25c13",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_20-21-22-bigNormal-460800.npz": "e51c4c126906b06e7eb470af419244a8469945c9cc734d1040768b9d72012bee"
+  },
+  "input_files_unchanged": true,
+  "fit_checks": [
+    {
+      "teacher": "Bear128",
+      "fold": "115200_to_460800",
+      "train_windows": 32,
+      "test_windows": 26,
+      "alpha": 10.0,
+      "train_only": true
+    },
+    {
+      "teacher": "Bear128",
+      "fold": "460800_to_115200",
+      "train_windows": 26,
+      "test_windows": 32,
+      "alpha": 10.0,
+      "train_only": true
+    },
+    {
+      "teacher": "Rot128",
+      "fold": "115200_to_460800",
+      "train_windows": 32,
+      "test_windows": 26,
+      "alpha": 10.0,
+      "train_only": true
+    },
+    {
+      "teacher": "Rot128",
+      "fold": "460800_to_115200",
+      "train_windows": 26,
+      "test_windows": 32,
+      "alpha": 10.0,
+      "train_only": true
+    },
+    {
+      "teacher": "UniFault128",
+      "fold": "115200_to_460800",
+      "train_windows": 32,
+      "test_windows": 26,
+      "alpha": 10.0,
+      "train_only": true
+    },
+    {
+      "teacher": "UniFault128",
+      "fold": "460800_to_115200",
+      "train_windows": 26,
+      "test_windows": 32,
+      "alpha": 10.0,
+      "train_only": true
+    }
+  ],
+  "target_readouts_receive_no_radar_or_heldout_contact_during_fit": true,
+  "oracle_true_class_is_explicit": true,
+  "main_records": 8,
+  "contact_windows": 58,
+  "unique_target_dimensions": 6,
+  "band_fractions_are_dependent": true,
+  "script_sha256": "f02d5817ea49e77e9804e76d0bd612b667826b466e419c97a55ce45724d922ab",
+  "root_protocol_sha256": "82ab69348f58d42e28626f539942f038f8398794466ad1f415dd1c18e15eb1c1"
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "fold": "115200_to_460800",
+    "contact_train_windows": 32,
+    "contact_test_windows": 26,
+    "radar_train_windows": 212,
+    "radar_test_windows": 200,
+    "train_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-190512-outBroken-115200",
+      "20260920-192216-inBroken-115200",
+      "20260920-193718-roll-115200"
+    ],
+    "test_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-190913-outBroken-460800",
+      "20260920-192610-inBroken-460800",
+      "20260920-194108-roll-460800"
+    ],
+    "train_test_bag_intersection": [],
+    "known_same_bearing_entity_cross_split": true,
+    "known_same_main_motor_rig_cross_split": true,
+    "external_training_rows": 0
+  },
+  {
+    "fold": "460800_to_115200",
+    "contact_train_windows": 26,
+    "contact_test_windows": 32,
+    "radar_train_windows": 200,
+    "radar_test_windows": 212,
+    "train_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-190913-outBroken-460800",
+      "20260920-192610-inBroken-460800",
+      "20260920-194108-roll-460800"
+    ],
+    "test_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-190512-outBroken-115200",
+      "20260920-192216-inBroken-115200",
+      "20260920-193718-roll-115200"
+    ],
+    "train_test_bag_intersection": [],
+    "known_same_bearing_entity_cross_split": true,
+    "known_same_main_motor_rig_cross_split": true,
+    "external_training_rows": 0
+  }
+]

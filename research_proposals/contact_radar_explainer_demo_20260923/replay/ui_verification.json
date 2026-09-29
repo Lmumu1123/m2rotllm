@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "recordings": 12,
+  "all_predictions_and_invalid_ROI_labels_rendered": true,
+  "previous_next": true,
+  "scaler_toggle_changes_plot": true,
+  "band_inspector": true,
+  "uncaught_js_errors": [],
+  "scope": "DOM execution and interactions using jsdom; not a browser screenshot or full layout check"
+}

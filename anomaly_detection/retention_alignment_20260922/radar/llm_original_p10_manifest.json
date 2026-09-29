@@ -1,0 +1,16 @@
+{
+  "n_rows": 144,
+  "n_models": 36,
+  "checkpoint_reload_max_error": 1.7881393432617188e-07,
+  "contact_data_read": false,
+  "ground_truth_used_for_inference": false,
+  "language_projector_input": "p10_0 through p10_9 in original ten-class order; do not uniformly redistribute p4",
+  "coarse_class_order": [
+    "normal",
+    "inner",
+    "outer",
+    "ball"
+  ],
+  "fault_severity_evaluation": false,
+  "geometry_invalid_outputs": "research comparison only; do not issue diagnostic statements"
+}

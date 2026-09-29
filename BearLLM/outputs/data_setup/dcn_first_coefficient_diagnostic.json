@@ -1,0 +1,53 @@
+{
+  "note": "Diagnostic only: current published src/dcn.py subtracts the raw signal mean, but some released DCN vectors have nonzero first coefficients. Published values are kept unchanged.",
+  "max_abs_first_coefficient": 1.5446267127990723,
+  "max_abs_row_id": 7032,
+  "rows_abs_first_coefficient_gt_1e_3": 134525,
+  "by_source": {
+    "CWRU": {
+      "count": 3932,
+      "first_coefficient_abs_gt_1e_3": 3931,
+      "max_abs": 1.5174251794815063
+    },
+    "DIRG": {
+      "count": 7140,
+      "first_coefficient_abs_gt_1e_3": 7055,
+      "max_abs": 1.5446267127990723
+    },
+    "HIT": {
+      "count": 9648,
+      "first_coefficient_abs_gt_1e_3": 9646,
+      "max_abs": 1.54150390625
+    },
+    "IMS": {
+      "count": 46480,
+      "first_coefficient_abs_gt_1e_3": 46477,
+      "max_abs": 1.5218031406402588
+    },
+    "JUST": {
+      "count": 43986,
+      "first_coefficient_abs_gt_1e_3": 43610,
+      "max_abs": 1.0331501960754395
+    },
+    "MFPT": {
+      "count": 78,
+      "first_coefficient_abs_gt_1e_3": 78,
+      "max_abs": 0.5368469953536987
+    },
+    "NCEPU": {
+      "count": 3600,
+      "first_coefficient_abs_gt_1e_3": 3437,
+      "max_abs": 0.5653285980224609
+    },
+    "PU": {
+      "count": 7316,
+      "first_coefficient_abs_gt_1e_3": 7316,
+      "max_abs": 1.0305426120758057
+    },
+    "XJTU": {
+      "count": 13336,
+      "first_coefficient_abs_gt_1e_3": 12975,
+      "max_abs": 0.7799213528633118
+    }
+  }
+}

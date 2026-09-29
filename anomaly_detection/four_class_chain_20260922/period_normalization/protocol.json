@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-09-22",
+  "status": "posthoc diagnostic preregistered before this additional computation; motivated by failed external healthy cases",
+  "hypothesis": "Dominant periodicity differences may contribute to failed external healthy acceptance; dominant peak is not verified shaft rotation frequency.",
+  "f0_selection": "Per recording only: select largest power peak within fixed inclusive 10..100 Hz. Contact power is median across XYZ axes then median across windows; radar uses median across windows of reconstructed frame power. No labels or external healthy outcomes used to select peaks.",
+  "relative_frequency_axis": {"minimum": 0.5, "maximum": 20.0, "points": 128, "spacing": "linear"},
+  "interpolation": "Interpolate log10 power at relative_frequency*f0 only inside original measured 5..800 Hz support. Mark outside bins missing, never extrapolate. Center each window over observed relative-frequency bins.",
+  "missing_data": "Retain validity mask in feature export. Classifier uses training-only recording-weighted per-column means and variances; unavailable values map to standardized zero. Columns entirely absent in training are ignored. Masks are not additional classifier features.",
+  "models": ["contact_spectral", "contact_period_normalized", "contact_hidden", "contact_hidden_plus_period_normalized", "radar_frame_shape", "radar_period_normalized"],
+  "classifier": {"name": "L2 multinomial logistic regression", "C": 1.0, "max_iter": 3000, "random_state": 42, "weighting": "equal total contribution per recording"},
+  "splits": "Two fixed whole-recording baud-group directions 115200->460800 and reverse; plus all eight known recordings fit for external-only predictions. Corresponding contact/radar are kept in the same fold.",
+  "external_policy": "keep and bigNormal excluded from all fitting, scaling, model selection and threshold calibration. Report every model and both external records per state, including failures.",
+  "offline_preprocessing": "f0 uses all unlabeled windows within that individual recording, including held-out recordings; this is recording-level offline self-normalization, not online first-window inference.",
+  "geometry": "Retained outer and keep ROI around 0.884 m conflicts with forty-something-cm physical target; normalization cannot repair selected scatterer.",
+  "reporting": "File mean probability before macro-F1; healthy acceptance for bigNormal only. No unknown-fault rejection accuracy without threshold calibration. No bandwidth/model selection based on these external labels. No claim of independent external generalization from this posthoc analysis.",
+  "original_main_protocol_modified": false
+}

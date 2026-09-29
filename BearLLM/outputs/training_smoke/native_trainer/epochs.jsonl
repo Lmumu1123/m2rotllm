@@ -1,0 +1,2 @@
+{"stage": "finetune", "epoch": 1, "global_step": 1, "train_loss": 1.5697, "loss_source": "native Trainer step-weighted logged loss", "corpus_rows": 4, "unique_corpus_ids": 4, "lr": 5e-05, "seconds": 0.6380544090643525}
+{"stage": "finetune", "epoch": 2, "global_step": 2, "train_loss": 1.494, "loss_source": "native Trainer step-weighted logged loss", "corpus_rows": 4, "unique_corpus_ids": 4, "lr": 0.0, "seconds": 0.35874344501644373}

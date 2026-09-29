@@ -1,0 +1,15 @@
+{
+  "layout": "2i2q",
+  "conjugate": true,
+  "fs_slow_hz": 2000.0,
+  "chirps_per_frame": 192,
+  "grid_slots_per_frame": 200,
+  "frame_s": 0.1,
+  "adc_samples": 256,
+  "rx": 4,
+  "window_s": 2,
+  "mask_method": "harmonic least squares with intercept; frame-centred IQ",
+  "roi": "known distance +/- 0.16 m; maximum mean range power; adjacent 3 bins",
+  "source": "TI SWRA581B, section 9.2, assumed applicable to this DCA payload",
+  "wall_seconds": 71.9205276328139
+}

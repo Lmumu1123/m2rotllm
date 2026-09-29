@@ -1,0 +1,10 @@
+{
+  "actual_command_exit_code": 2,
+  "report_status": "blocked",
+  "mode": "dry_run",
+  "required_bin_accepted": 0,
+  "missing_bins": 12,
+  "reprocessing_executed": false,
+  "proposed_output_created": false,
+  "optional_DAT_count": 12
+}

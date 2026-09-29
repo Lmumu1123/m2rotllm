@@ -1,0 +1,11 @@
+{
+  "evaluation_scope": "Within the same 12 contact sessions; explicitly not independent-recording or unseen-RPM generalization",
+  "splitting": "Sort complete packets by packet_index independently within each session; first floor(2*N/3) train and remaining tail test; no random shuffle; no overlapping raw samples",
+  "caveat": "Packet gaps and wall-clock times unknown; early/late means observed complete-packet order, not equal wall-time fractions",
+  "algorithms": "Fixed C=1 train-session-weighted StandardScaler+LogisticRegression for Bear128 and PSD128, XYZ and XY; fixed C=1 gamma=scale RBF SVC for physical6",
+  "inputs_sha256": "87cebaff91249d90f07c1de819612a2adc516120e945fd78345d354280abf66f",
+  "no_model_or_hyperparameter_selection": true,
+  "training_packets": 224,
+  "test_packets": 119,
+  "script_sha256": "7a075e7ed80593b42e0d2d00565cc796775d5c807df278bceedb0f12f5d40f6b"
+}

@@ -1,0 +1,299 @@
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/conv.py:186: UserWarning: Initializing zero-element tensors is a no-op
+  init.kaiming_uniform_(self.weight, a=math.sqrt(5))
+{"signal_storage": "memory", "bytes": 13009536000, "load_seconds": 48.326698957011104}
+{"stage": "vibration", "complete_pairs": 128, "total_pairs": 368376, "elapsed_seconds_this_session": 49.56890448462218, "pairs_per_second": 2.582264049021087}
+{"stage": "vibration", "complete_pairs": 2688, "total_pairs": 368376, "elapsed_seconds_this_session": 49.77917364379391, "pairs_per_second": 53.99848577709605}
+{"stage": "vibration", "complete_pairs": 5248, "total_pairs": 368376, "elapsed_seconds_this_session": 49.97678719786927, "pairs_per_second": 105.00875094715462}
+{"stage": "vibration", "complete_pairs": 7808, "total_pairs": 368376, "elapsed_seconds_this_session": 50.30916315596551, "pairs_per_second": 155.20035536655814}
+{"stage": "vibration", "complete_pairs": 10368, "total_pairs": 368376, "elapsed_seconds_this_session": 50.5070501617156, "pairs_per_second": 205.27827237590202}
+{"stage": "vibration", "complete_pairs": 12928, "total_pairs": 368376, "elapsed_seconds_this_session": 50.70548740401864, "pairs_per_second": 254.96254275184026}
+{"stage": "vibration", "complete_pairs": 15488, "total_pairs": 368376, "elapsed_seconds_this_session": 50.90596724394709, "pairs_per_second": 304.2472393418982}
+{"stage": "vibration", "complete_pairs": 18048, "total_pairs": 368376, "elapsed_seconds_this_session": 51.10801962763071, "pairs_per_second": 353.1344030055636}
+{"stage": "vibration", "complete_pairs": 20608, "total_pairs": 368376, "elapsed_seconds_this_session": 51.32174387900159, "pairs_per_second": 401.5452017489182}
+{"stage": "vibration", "complete_pairs": 23168, "total_pairs": 368376, "elapsed_seconds_this_session": 51.52779054874554, "pairs_per_second": 449.6214519053162}
+{"stage": "vibration", "complete_pairs": 25728, "total_pairs": 368376, "elapsed_seconds_this_session": 51.73213221505284, "pairs_per_second": 497.3311344107667}
+{"stage": "vibration", "complete_pairs": 28288, "total_pairs": 368376, "elapsed_seconds_this_session": 52.09067269973457, "pairs_per_second": 543.053075222508}
+{"stage": "vibration", "complete_pairs": 30848, "total_pairs": 368376, "elapsed_seconds_this_session": 52.30051262490451, "pairs_per_second": 589.8221346555362}
+{"stage": "vibration", "complete_pairs": 33408, "total_pairs": 368376, "elapsed_seconds_this_session": 52.49999165581539, "pairs_per_second": 636.3429582812022}
+{"stage": "vibration", "complete_pairs": 35968, "total_pairs": 368376, "elapsed_seconds_this_session": 52.70283346762881, "pairs_per_second": 682.4680502632236}
+{"stage": "vibration", "complete_pairs": 38528, "total_pairs": 368376, "elapsed_seconds_this_session": 52.90605975268409, "pairs_per_second": 728.2341603231066}
+{"stage": "vibration", "complete_pairs": 41088, "total_pairs": 368376, "elapsed_seconds_this_session": 53.11008072504774, "pairs_per_second": 773.6384399924684}
+{"stage": "vibration", "complete_pairs": 43648, "total_pairs": 368376, "elapsed_seconds_this_session": 53.34015657380223, "pairs_per_second": 818.295310768501}
+{"stage": "vibration", "complete_pairs": 46208, "total_pairs": 368376, "elapsed_seconds_this_session": 53.55014204001054, "pairs_per_second": 862.8922023302051}
+{"stage": "vibration", "complete_pairs": 48768, "total_pairs": 368376, "elapsed_seconds_this_session": 53.762889141682535, "pairs_per_second": 907.094108567726}
+{"stage": "vibration", "complete_pairs": 51328, "total_pairs": 368376, "elapsed_seconds_this_session": 54.1675597759895, "pairs_per_second": 947.5782223210251}
+{"stage": "vibration", "complete_pairs": 53888, "total_pairs": 368376, "elapsed_seconds_this_session": 54.39190646260977, "pairs_per_second": 990.7356352188875}
+{"stage": "vibration", "complete_pairs": 56448, "total_pairs": 368376, "elapsed_seconds_this_session": 54.59670735197142, "pairs_per_second": 1033.9085036043248}
+{"stage": "vibration", "complete_pairs": 59008, "total_pairs": 368376, "elapsed_seconds_this_session": 54.801344180013984, "pairs_per_second": 1076.7619094555016}
+{"stage": "vibration", "complete_pairs": 61568, "total_pairs": 368376, "elapsed_seconds_this_session": 55.026617584750056, "pairs_per_second": 1118.876694631923}
+{"stage": "vibration", "complete_pairs": 64128, "total_pairs": 368376, "elapsed_seconds_this_session": 55.25991798285395, "pairs_per_second": 1160.479463974189}
+{"stage": "vibration", "complete_pairs": 66688, "total_pairs": 368376, "elapsed_seconds_this_session": 55.493403042666614, "pairs_per_second": 1201.728427948928}
+{"stage": "vibration", "complete_pairs": 69248, "total_pairs": 368376, "elapsed_seconds_this_session": 55.7195880766958, "pairs_per_second": 1242.7945430013388}
+{"stage": "vibration", "complete_pairs": 71808, "total_pairs": 368376, "elapsed_seconds_this_session": 55.96308579668403, "pairs_per_second": 1283.1315317543629}
+{"stage": "vibration", "complete_pairs": 74368, "total_pairs": 368376, "elapsed_seconds_this_session": 56.18588515976444, "pairs_per_second": 1323.6064500636548}
+{"stage": "vibration", "complete_pairs": 76928, "total_pairs": 368376, "elapsed_seconds_this_session": 56.40705692768097, "pairs_per_second": 1363.80098856476}
+{"stage": "vibration", "complete_pairs": 79488, "total_pairs": 368376, "elapsed_seconds_this_session": 56.63124775281176, "pairs_per_second": 1403.6067216275205}
+{"stage": "vibration", "complete_pairs": 82048, "total_pairs": 368376, "elapsed_seconds_this_session": 57.143390672747046, "pairs_per_second": 1435.826594012919}
+{"stage": "vibration", "complete_pairs": 84608, "total_pairs": 368376, "elapsed_seconds_this_session": 57.37438754970208, "pairs_per_second": 1474.664978806198}
+{"stage": "vibration", "complete_pairs": 87168, "total_pairs": 368376, "elapsed_seconds_this_session": 57.60194126702845, "pairs_per_second": 1513.2823318559797}
+{"stage": "vibration", "complete_pairs": 89728, "total_pairs": 368376, "elapsed_seconds_this_session": 57.8139159809798, "pairs_per_second": 1552.0138789685102}
+{"stage": "vibration", "complete_pairs": 92288, "total_pairs": 368376, "elapsed_seconds_this_session": 58.02329592173919, "pairs_per_second": 1590.5335699039993}
+{"stage": "vibration", "complete_pairs": 94848, "total_pairs": 368376, "elapsed_seconds_this_session": 58.24230445967987, "pairs_per_second": 1628.5069912654574}
+{"stage": "vibration", "complete_pairs": 97408, "total_pairs": 368376, "elapsed_seconds_this_session": 58.45006408682093, "pairs_per_second": 1666.5165645551986}
+{"stage": "vibration", "complete_pairs": 99968, "total_pairs": 368376, "elapsed_seconds_this_session": 58.67952169990167, "pairs_per_second": 1703.6267015136136}
+{"stage": "vibration", "complete_pairs": 102528, "total_pairs": 368376, "elapsed_seconds_this_session": 58.90376897575334, "pairs_per_second": 1740.6016929443647}
+{"stage": "vibration", "complete_pairs": 105088, "total_pairs": 368376, "elapsed_seconds_this_session": 59.128513355739415, "pairs_per_second": 1777.281281667797}
+{"stage": "vibration", "complete_pairs": 107648, "total_pairs": 368376, "elapsed_seconds_this_session": 59.34715288085863, "pairs_per_second": 1813.8696596971874}
+{"stage": "vibration", "complete_pairs": 110208, "total_pairs": 368376, "elapsed_seconds_this_session": 59.569714521989226, "pairs_per_second": 1850.0676205073712}
+{"stage": "vibration", "complete_pairs": 112768, "total_pairs": 368376, "elapsed_seconds_this_session": 59.793802975676954, "pairs_per_second": 1885.9479475803203}
+{"stage": "vibration", "complete_pairs": 115328, "total_pairs": 368376, "elapsed_seconds_this_session": 60.01968328701332, "pairs_per_second": 1921.502975090739}
+{"stage": "vibration", "complete_pairs": 117888, "total_pairs": 368376, "elapsed_seconds_this_session": 60.253341699019074, "pairs_per_second": 1956.5387856640525}
+{"stage": "vibration", "complete_pairs": 120448, "total_pairs": 368376, "elapsed_seconds_this_session": 60.47709184978157, "pairs_per_second": 1991.6301580634788}
+{"stage": "vibration", "complete_pairs": 123008, "total_pairs": 368376, "elapsed_seconds_this_session": 60.96975964261219, "pairs_per_second": 2017.5247650808985}
+{"stage": "vibration", "complete_pairs": 125568, "total_pairs": 368376, "elapsed_seconds_this_session": 61.19752656063065, "pairs_per_second": 2051.847632691415}
+{"stage": "vibration", "complete_pairs": 128128, "total_pairs": 368376, "elapsed_seconds_this_session": 61.43556619202718, "pairs_per_second": 2085.5671712947906}
+{"stage": "vibration", "complete_pairs": 130688, "total_pairs": 368376, "elapsed_seconds_this_session": 61.659061471000314, "pairs_per_second": 2119.5262607340464}
+{"stage": "vibration", "complete_pairs": 133248, "total_pairs": 368376, "elapsed_seconds_this_session": 61.882538749836385, "pairs_per_second": 2153.240682943899}
+{"stage": "vibration", "complete_pairs": 135808, "total_pairs": 368376, "elapsed_seconds_this_session": 62.10970904165879, "pairs_per_second": 2186.582453782059}
+{"stage": "vibration", "complete_pairs": 138368, "total_pairs": 368376, "elapsed_seconds_this_session": 62.35322336293757, "pairs_per_second": 2219.0993911350092}
+{"stage": "vibration", "complete_pairs": 140928, "total_pairs": 368376, "elapsed_seconds_this_session": 62.56873591989279, "pairs_per_second": 2252.3708994286085}
+{"stage": "vibration", "complete_pairs": 143488, "total_pairs": 368376, "elapsed_seconds_this_session": 62.77271120203659, "pairs_per_second": 2285.8340392241125}
+{"stage": "vibration", "complete_pairs": 146048, "total_pairs": 368376, "elapsed_seconds_this_session": 62.97612993884832, "pairs_per_second": 2319.1009060387946}
+{"stage": "vibration", "complete_pairs": 148608, "total_pairs": 368376, "elapsed_seconds_this_session": 63.18001408968121, "pairs_per_second": 2352.1362275902247}
+{"stage": "vibration", "complete_pairs": 151168, "total_pairs": 368376, "elapsed_seconds_this_session": 63.39553196588531, "pairs_per_second": 2384.5213584034154}
+{"stage": "vibration", "complete_pairs": 153728, "total_pairs": 368376, "elapsed_seconds_this_session": 63.59973677992821, "pairs_per_second": 2417.1169219133603}
+{"stage": "vibration", "complete_pairs": 156288, "total_pairs": 368376, "elapsed_seconds_this_session": 63.80300377588719, "pairs_per_second": 2449.539845317836}
+{"stage": "vibration", "complete_pairs": 158848, "total_pairs": 368376, "elapsed_seconds_this_session": 64.01271307980642, "pairs_per_second": 2481.5070687905354}
+{"stage": "vibration", "complete_pairs": 161408, "total_pairs": 368376, "elapsed_seconds_this_session": 64.21525390772149, "pairs_per_second": 2513.546084111826}
+{"stage": "vibration", "complete_pairs": 163968, "total_pairs": 368376, "elapsed_seconds_this_session": 64.43087643571198, "pairs_per_second": 2544.866825823865}
+{"stage": "vibration", "complete_pairs": 166528, "total_pairs": 368376, "elapsed_seconds_this_session": 64.6334585850127, "pairs_per_second": 2576.498359297374}
+{"stage": "vibration", "complete_pairs": 169088, "total_pairs": 368376, "elapsed_seconds_this_session": 65.10901441285387, "pairs_per_second": 2596.998303918705}
+{"stage": "vibration", "complete_pairs": 171648, "total_pairs": 368376, "elapsed_seconds_this_session": 65.3138645128347, "pairs_per_second": 2628.0484439298457}
+{"stage": "vibration", "complete_pairs": 174208, "total_pairs": 368376, "elapsed_seconds_this_session": 65.53183924173936, "pairs_per_second": 2658.3719000677957}
+{"stage": "vibration", "complete_pairs": 176768, "total_pairs": 368376, "elapsed_seconds_this_session": 65.73340440168977, "pairs_per_second": 2689.165449575527}
+{"stage": "vibration", "complete_pairs": 179328, "total_pairs": 368376, "elapsed_seconds_this_session": 65.9337223698385, "pairs_per_second": 2719.822172242984}
+{"stage": "vibration", "complete_pairs": 181888, "total_pairs": 368376, "elapsed_seconds_this_session": 66.13693064497784, "pairs_per_second": 2750.1729854439777}
+{"stage": "vibration", "complete_pairs": 184448, "total_pairs": 368376, "elapsed_seconds_this_session": 66.34205482760444, "pairs_per_second": 2780.257567832411}
+{"stage": "vibration", "complete_pairs": 187008, "total_pairs": 368376, "elapsed_seconds_this_session": 66.56019165785983, "pairs_per_second": 2809.6072944212588}
+{"stage": "vibration", "complete_pairs": 189568, "total_pairs": 368376, "elapsed_seconds_this_session": 66.76293797884136, "pairs_per_second": 2839.4196801236976}
+{"stage": "vibration", "complete_pairs": 192128, "total_pairs": 368376, "elapsed_seconds_this_session": 66.96715238271281, "pairs_per_second": 2868.988648374972}
+{"stage": "vibration", "complete_pairs": 194688, "total_pairs": 368376, "elapsed_seconds_this_session": 67.17136369692162, "pairs_per_second": 2898.37795877475}
+{"stage": "vibration", "complete_pairs": 197248, "total_pairs": 368376, "elapsed_seconds_this_session": 67.37610420584679, "pairs_per_second": 2927.566120435962}
+{"stage": "vibration", "complete_pairs": 199808, "total_pairs": 368376, "elapsed_seconds_this_session": 67.5976231568493, "pairs_per_second": 2955.8435736176407}
+{"stage": "vibration", "complete_pairs": 202368, "total_pairs": 368376, "elapsed_seconds_this_session": 67.80134525662288, "pairs_per_second": 2984.7195396205293}
+{"stage": "vibration", "complete_pairs": 204928, "total_pairs": 368376, "elapsed_seconds_this_session": 68.00448453100398, "pairs_per_second": 3013.4483249640853}
+{"stage": "vibration", "complete_pairs": 207488, "total_pairs": 368376, "elapsed_seconds_this_session": 68.20703866984695, "pairs_per_second": 3042.032084171491}
+{"stage": "vibration", "complete_pairs": 210048, "total_pairs": 368376, "elapsed_seconds_this_session": 68.41030041500926, "pairs_per_second": 3070.4148165663564}
+{"stage": "vibration", "complete_pairs": 212608, "total_pairs": 368376, "elapsed_seconds_this_session": 68.62903675064445, "pairs_per_second": 3097.930702021744}
+{"stage": "vibration", "complete_pairs": 215168, "total_pairs": 368376, "elapsed_seconds_this_session": 68.83025455800816, "pairs_per_second": 3126.0671834165973}
+{"stage": "vibration", "complete_pairs": 217728, "total_pairs": 368376, "elapsed_seconds_this_session": 69.03261059476063, "pairs_per_second": 3153.9876317023554}
+{"stage": "vibration", "complete_pairs": 220288, "total_pairs": 368376, "elapsed_seconds_this_session": 69.23562072776258, "pairs_per_second": 3181.714812180017}
+{"stage": "vibration", "complete_pairs": 222848, "total_pairs": 368376, "elapsed_seconds_this_session": 69.44001172389835, "pairs_per_second": 3209.2160480339467}
+{"stage": "vibration", "complete_pairs": 225408, "total_pairs": 368376, "elapsed_seconds_this_session": 69.65742768766358, "pairs_per_second": 3235.9506729232844}
+{"stage": "vibration", "complete_pairs": 227968, "total_pairs": 368376, "elapsed_seconds_this_session": 69.85990451602265, "pairs_per_second": 3263.2165986959603}
+{"stage": "vibration", "complete_pairs": 230528, "total_pairs": 368376, "elapsed_seconds_this_session": 70.37504644272849, "pairs_per_second": 3275.7065416305572}
+{"stage": "vibration", "complete_pairs": 233088, "total_pairs": 368376, "elapsed_seconds_this_session": 70.58066192967817, "pairs_per_second": 3302.4343159636733}
+{"stage": "vibration", "complete_pairs": 235648, "total_pairs": 368376, "elapsed_seconds_this_session": 70.78257229272276, "pairs_per_second": 3329.181073350555}
+{"stage": "vibration", "complete_pairs": 238208, "total_pairs": 368376, "elapsed_seconds_this_session": 70.98396914172918, "pairs_per_second": 3355.7999486388994}
+{"stage": "vibration", "complete_pairs": 240768, "total_pairs": 368376, "elapsed_seconds_this_session": 71.18874450074509, "pairs_per_second": 3382.1076869459334}
+{"stage": "vibration", "complete_pairs": 243328, "total_pairs": 368376, "elapsed_seconds_this_session": 71.39635639591143, "pairs_per_second": 3408.129101864565}
+{"stage": "vibration", "complete_pairs": 245888, "total_pairs": 368376, "elapsed_seconds_this_session": 71.61813024897128, "pairs_per_second": 3433.3205732291776}
+{"stage": "vibration", "complete_pairs": 248448, "total_pairs": 368376, "elapsed_seconds_this_session": 71.82171315699816, "pairs_per_second": 3459.23243931688}
+{"stage": "vibration", "complete_pairs": 251008, "total_pairs": 368376, "elapsed_seconds_this_session": 72.02639796584845, "pairs_per_second": 3484.944507693086}
+{"stage": "vibration", "complete_pairs": 253568, "total_pairs": 368376, "elapsed_seconds_this_session": 72.22868100181222, "pairs_per_second": 3510.627585648947}
+{"stage": "vibration", "complete_pairs": 256128, "total_pairs": 368376, "elapsed_seconds_this_session": 72.43033152259886, "pairs_per_second": 3536.1980901617985}
+{"stage": "vibration", "complete_pairs": 258688, "total_pairs": 368376, "elapsed_seconds_this_session": 72.64746684394777, "pairs_per_second": 3560.8674498682976}
+{"stage": "vibration", "complete_pairs": 261248, "total_pairs": 368376, "elapsed_seconds_this_session": 72.84895636374131, "pairs_per_second": 3586.1598166975177}
+{"stage": "vibration", "complete_pairs": 263808, "total_pairs": 368376, "elapsed_seconds_this_session": 73.04946215404198, "pairs_per_second": 3611.3612916642533}
+{"stage": "vibration", "complete_pairs": 266368, "total_pairs": 368376, "elapsed_seconds_this_session": 73.25025636702776, "pairs_per_second": 3636.4104811502148}
+{"stage": "vibration", "complete_pairs": 268928, "total_pairs": 368376, "elapsed_seconds_this_session": 73.4525213628076, "pairs_per_second": 3661.2494031575975}
+{"stage": "vibration", "complete_pairs": 271488, "total_pairs": 368376, "elapsed_seconds_this_session": 73.67034672060981, "pairs_per_second": 3685.1733714461975}
+{"stage": "vibration", "complete_pairs": 274048, "total_pairs": 368376, "elapsed_seconds_this_session": 73.87030153675005, "pairs_per_second": 3709.8535446435494}
+{"stage": "vibration", "complete_pairs": 276608, "total_pairs": 368376, "elapsed_seconds_this_session": 74.07114980975166, "pairs_per_second": 3734.355423271475}
+{"stage": "vibration", "complete_pairs": 279168, "total_pairs": 368376, "elapsed_seconds_this_session": 74.27175810094923, "pairs_per_second": 3758.736929595209}
+{"stage": "vibration", "complete_pairs": 281728, "total_pairs": 368376, "elapsed_seconds_this_session": 74.47263745497912, "pairs_per_second": 3782.9733124506674}
+{"stage": "vibration", "complete_pairs": 284288, "total_pairs": 368376, "elapsed_seconds_this_session": 74.68503954261541, "pairs_per_second": 3806.4919258399104}
+{"stage": "vibration", "complete_pairs": 286848, "total_pairs": 368376, "elapsed_seconds_this_session": 74.88628470059484, "pairs_per_second": 3830.447740155034}
+{"stage": "vibration", "complete_pairs": 289408, "total_pairs": 368376, "elapsed_seconds_this_session": 75.08728658594191, "pairs_per_second": 3854.287631884995}
+{"stage": "vibration", "complete_pairs": 291968, "total_pairs": 368376, "elapsed_seconds_this_session": 75.28971894271672, "pairs_per_second": 3877.9265496015514}
+{"stage": "vibration", "complete_pairs": 294528, "total_pairs": 368376, "elapsed_seconds_this_session": 75.49100266071036, "pairs_per_second": 3901.4980543275847}
+{"stage": "vibration", "complete_pairs": 297088, "total_pairs": 368376, "elapsed_seconds_this_session": 75.7108177668415, "pairs_per_second": 3923.9835041131123}
+{"stage": "vibration", "complete_pairs": 299648, "total_pairs": 368376, "elapsed_seconds_this_session": 75.91096600377932, "pairs_per_second": 3947.361175526098}
+{"stage": "vibration", "complete_pairs": 302208, "total_pairs": 368376, "elapsed_seconds_this_session": 76.47536513768137, "pairs_per_second": 3951.703917410842}
+{"stage": "vibration", "complete_pairs": 304768, "total_pairs": 368376, "elapsed_seconds_this_session": 76.69912165869027, "pairs_per_second": 3973.5526745170846}
+{"stage": "vibration", "complete_pairs": 307328, "total_pairs": 368376, "elapsed_seconds_this_session": 76.88900257274508, "pairs_per_second": 3997.034552623249}
+{"stage": "vibration", "complete_pairs": 309888, "total_pairs": 368376, "elapsed_seconds_this_session": 77.08857103483751, "pairs_per_second": 4019.8955025376827}
+{"stage": "vibration", "complete_pairs": 312448, "total_pairs": 368376, "elapsed_seconds_this_session": 77.28530423063785, "pairs_per_second": 4042.786699364997}
+{"stage": "vibration", "complete_pairs": 315008, "total_pairs": 368376, "elapsed_seconds_this_session": 77.48227980965748, "pairs_per_second": 4065.54893291533}
+{"stage": "vibration", "complete_pairs": 317568, "total_pairs": 368376, "elapsed_seconds_this_session": 77.69077105168253, "pairs_per_second": 4087.5897574596474}
+{"stage": "vibration", "complete_pairs": 320128, "total_pairs": 368376, "elapsed_seconds_this_session": 77.88731536688283, "pairs_per_second": 4110.142948079018}
+{"stage": "vibration", "complete_pairs": 322688, "total_pairs": 368376, "elapsed_seconds_this_session": 78.0845062667504, "pairs_per_second": 4132.548381591107}
+{"stage": "vibration", "complete_pairs": 325248, "total_pairs": 368376, "elapsed_seconds_this_session": 78.2816630168818, "pairs_per_second": 4154.842749442597}
+{"stage": "vibration", "complete_pairs": 327808, "total_pairs": 368376, "elapsed_seconds_this_session": 78.48098678700626, "pairs_per_second": 4176.909764012724}
+{"stage": "vibration", "complete_pairs": 330368, "total_pairs": 368376, "elapsed_seconds_this_session": 78.68365913676098, "pairs_per_second": 4198.686279012311}
+{"stage": "vibration", "complete_pairs": 332928, "total_pairs": 368376, "elapsed_seconds_this_session": 78.88038868270814, "pairs_per_second": 4220.66885774592}
+{"stage": "vibration", "complete_pairs": 335488, "total_pairs": 368376, "elapsed_seconds_this_session": 79.08021281659603, "pairs_per_second": 4242.376038846388}
+{"stage": "vibration", "complete_pairs": 338048, "total_pairs": 368376, "elapsed_seconds_this_session": 79.28123092185706, "pairs_per_second": 4263.90957947152}
+{"stage": "vibration", "complete_pairs": 340608, "total_pairs": 368376, "elapsed_seconds_this_session": 79.48337209690362, "pairs_per_second": 4285.273649245046}
+{"stage": "vibration", "complete_pairs": 343168, "total_pairs": 368376, "elapsed_seconds_this_session": 79.70248662680387, "pairs_per_second": 4305.61221517263}
+{"stage": "vibration", "complete_pairs": 345728, "total_pairs": 368376, "elapsed_seconds_this_session": 79.90534122893587, "pairs_per_second": 4326.7195244115}
+{"stage": "vibration", "complete_pairs": 348288, "total_pairs": 368376, "elapsed_seconds_this_session": 80.10595985967666, "pairs_per_second": 4347.84129183526}
+{"stage": "vibration", "complete_pairs": 350848, "total_pairs": 368376, "elapsed_seconds_this_session": 80.30979240965098, "pairs_per_second": 4368.682690777792}
+{"stage": "vibration", "complete_pairs": 353408, "total_pairs": 368376, "elapsed_seconds_this_session": 80.51122330874205, "pairs_per_second": 4389.549499760567}
+{"stage": "vibration", "complete_pairs": 355968, "total_pairs": 368376, "elapsed_seconds_this_session": 80.72894384572282, "pairs_per_second": 4409.4222349827}
+{"stage": "vibration", "complete_pairs": 358528, "total_pairs": 368376, "elapsed_seconds_this_session": 80.9300450719893, "pairs_per_second": 4430.0976192597}
+{"stage": "vibration", "complete_pairs": 361088, "total_pairs": 368376, "elapsed_seconds_this_session": 81.13162676198408, "pairs_per_second": 4450.644149652319}
+{"stage": "vibration", "complete_pairs": 363648, "total_pairs": 368376, "elapsed_seconds_this_session": 81.33314019069076, "pairs_per_second": 4471.09258473734}
+{"stage": "vibration", "complete_pairs": 366208, "total_pairs": 368376, "elapsed_seconds_this_session": 81.53558677900583, "pairs_per_second": 4491.3885392469265}
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+{"signal_storage": "memory", "bytes": 13009536000, "load_seconds": 47.601376089733094}
+{"stage": "corpus", "complete": 4, "total": 600, "elapsed_seconds_this_session": 48.453425026033074}
+{"stage": "corpus", "complete": 8, "total": 600, "elapsed_seconds_this_session": 48.54103507194668}
+{"stage": "corpus", "complete": 12, "total": 600, "elapsed_seconds_this_session": 48.63015436101705}
+{"stage": "corpus", "complete": 16, "total": 600, "elapsed_seconds_this_session": 48.717724275775254}
+{"stage": "corpus", "complete": 20, "total": 600, "elapsed_seconds_this_session": 48.80556463310495}
+{"stage": "corpus", "complete": 24, "total": 600, "elapsed_seconds_this_session": 48.89627321669832}
+{"stage": "corpus", "complete": 28, "total": 600, "elapsed_seconds_this_session": 48.98642951576039}
+{"stage": "corpus", "complete": 32, "total": 600, "elapsed_seconds_this_session": 49.074461484793574}
+{"stage": "corpus", "complete": 36, "total": 600, "elapsed_seconds_this_session": 49.16339507186785}
+{"stage": "corpus", "complete": 40, "total": 600, "elapsed_seconds_this_session": 49.25131001975387}
+{"stage": "corpus", "complete": 44, "total": 600, "elapsed_seconds_this_session": 49.33805474778637}
+{"stage": "corpus", "complete": 48, "total": 600, "elapsed_seconds_this_session": 49.426476020831615}
+{"stage": "corpus", "complete": 52, "total": 600, "elapsed_seconds_this_session": 49.512985705863684}
+{"stage": "corpus", "complete": 56, "total": 600, "elapsed_seconds_this_session": 49.602649309672415}
+{"stage": "corpus", "complete": 60, "total": 600, "elapsed_seconds_this_session": 49.69156925799325}
+{"stage": "corpus", "complete": 64, "total": 600, "elapsed_seconds_this_session": 49.783067577984184}
+{"stage": "corpus", "complete": 68, "total": 600, "elapsed_seconds_this_session": 49.870302859693766}
+{"stage": "corpus", "complete": 72, "total": 600, "elapsed_seconds_this_session": 49.96118619479239}
+{"stage": "corpus", "complete": 76, "total": 600, "elapsed_seconds_this_session": 50.0501458728686}
+{"stage": "corpus", "complete": 80, "total": 600, "elapsed_seconds_this_session": 50.13881061784923}
+{"stage": "corpus", "complete": 84, "total": 600, "elapsed_seconds_this_session": 50.232170436065644}
+{"stage": "corpus", "complete": 88, "total": 600, "elapsed_seconds_this_session": 50.3213560548611}
+{"stage": "corpus", "complete": 92, "total": 600, "elapsed_seconds_this_session": 50.40975228790194}
+{"stage": "corpus", "complete": 96, "total": 600, "elapsed_seconds_this_session": 50.498739565722644}
+{"stage": "corpus", "complete": 100, "total": 600, "elapsed_seconds_this_session": 50.58872635290027}
+{"stage": "corpus", "complete": 104, "total": 600, "elapsed_seconds_this_session": 50.67611091583967}
+{"stage": "corpus", "complete": 108, "total": 600, "elapsed_seconds_this_session": 50.76455267891288}
+{"stage": "corpus", "complete": 112, "total": 600, "elapsed_seconds_this_session": 50.85432070400566}
+{"stage": "corpus", "complete": 116, "total": 600, "elapsed_seconds_this_session": 50.94447064306587}
+{"stage": "corpus", "complete": 120, "total": 600, "elapsed_seconds_this_session": 51.0312886107713}
+{"stage": "corpus", "complete": 124, "total": 600, "elapsed_seconds_this_session": 51.1360709220171}
+{"stage": "corpus", "complete": 128, "total": 600, "elapsed_seconds_this_session": 51.22818402806297}
+{"stage": "corpus", "complete": 132, "total": 600, "elapsed_seconds_this_session": 51.316100107040256}
+{"stage": "corpus", "complete": 136, "total": 600, "elapsed_seconds_this_session": 51.40649252664298}
+{"stage": "corpus", "complete": 140, "total": 600, "elapsed_seconds_this_session": 51.495674076955765}
+{"stage": "corpus", "complete": 144, "total": 600, "elapsed_seconds_this_session": 51.582042580936104}
+{"stage": "corpus", "complete": 148, "total": 600, "elapsed_seconds_this_session": 51.66970038693398}
+{"stage": "corpus", "complete": 152, "total": 600, "elapsed_seconds_this_session": 51.80734315607697}
+{"stage": "corpus", "complete": 156, "total": 600, "elapsed_seconds_this_session": 51.961593796964735}
+{"stage": "corpus", "complete": 160, "total": 600, "elapsed_seconds_this_session": 52.11965472204611}
+{"stage": "corpus", "complete": 164, "total": 600, "elapsed_seconds_this_session": 52.27345232805237}
+{"stage": "corpus", "complete": 168, "total": 600, "elapsed_seconds_this_session": 52.41408073483035}
+{"stage": "corpus", "complete": 172, "total": 600, "elapsed_seconds_this_session": 52.572744885925204}
+{"stage": "corpus", "complete": 176, "total": 600, "elapsed_seconds_this_session": 52.73254077602178}
+{"stage": "corpus", "complete": 180, "total": 600, "elapsed_seconds_this_session": 52.89058089070022}
+{"stage": "corpus", "complete": 184, "total": 600, "elapsed_seconds_this_session": 53.045370656996965}
+{"stage": "corpus", "complete": 188, "total": 600, "elapsed_seconds_this_session": 53.18491036305204}
+{"stage": "corpus", "complete": 192, "total": 600, "elapsed_seconds_this_session": 53.34022279409692}
+{"stage": "corpus", "complete": 196, "total": 600, "elapsed_seconds_this_session": 53.50358232669532}
+{"stage": "corpus", "complete": 200, "total": 600, "elapsed_seconds_this_session": 53.65852990280837}
+{"stage": "corpus", "complete": 204, "total": 600, "elapsed_seconds_this_session": 53.817121132742614}
+{"stage": "corpus", "complete": 208, "total": 600, "elapsed_seconds_this_session": 53.9601257420145}
+{"stage": "corpus", "complete": 212, "total": 600, "elapsed_seconds_this_session": 54.11872708192095}
+{"stage": "corpus", "complete": 216, "total": 600, "elapsed_seconds_this_session": 54.27731639100239}
+{"stage": "corpus", "complete": 220, "total": 600, "elapsed_seconds_this_session": 54.435717759653926}
+{"stage": "corpus", "complete": 224, "total": 600, "elapsed_seconds_this_session": 54.590346802957356}
+{"stage": "corpus", "complete": 228, "total": 600, "elapsed_seconds_this_session": 54.73410049872473}
+{"stage": "corpus", "complete": 232, "total": 600, "elapsed_seconds_this_session": 54.892341784667224}
+{"stage": "corpus", "complete": 236, "total": 600, "elapsed_seconds_this_session": 55.05079680401832}
+{"stage": "corpus", "complete": 240, "total": 600, "elapsed_seconds_this_session": 55.21401288593188}
+{"stage": "corpus", "complete": 244, "total": 600, "elapsed_seconds_this_session": 55.36770914075896}
+{"stage": "corpus", "complete": 248, "total": 600, "elapsed_seconds_this_session": 55.510201815050095}
+{"stage": "corpus", "complete": 252, "total": 600, "elapsed_seconds_this_session": 55.66437045391649}
+{"stage": "corpus", "complete": 256, "total": 600, "elapsed_seconds_this_session": 55.819133799988776}
+{"stage": "corpus", "complete": 260, "total": 600, "elapsed_seconds_this_session": 55.97782434988767}
+{"stage": "corpus", "complete": 264, "total": 600, "elapsed_seconds_this_session": 56.13719062693417}
+{"stage": "corpus", "complete": 268, "total": 600, "elapsed_seconds_this_session": 56.29423714289442}
+{"stage": "corpus", "complete": 272, "total": 600, "elapsed_seconds_this_session": 56.45324188703671}
+{"stage": "corpus", "complete": 276, "total": 600, "elapsed_seconds_this_session": 56.616105714812875}
+{"stage": "corpus", "complete": 280, "total": 600, "elapsed_seconds_this_session": 56.770257025025785}
+{"stage": "corpus", "complete": 284, "total": 600, "elapsed_seconds_this_session": 56.92394982976839}
+{"stage": "corpus", "complete": 288, "total": 600, "elapsed_seconds_this_session": 57.06659379508346}
+{"stage": "corpus", "complete": 292, "total": 600, "elapsed_seconds_this_session": 57.22465991973877}
+{"stage": "corpus", "complete": 296, "total": 600, "elapsed_seconds_this_session": 57.38308098772541}
+{"stage": "corpus", "complete": 300, "total": 600, "elapsed_seconds_this_session": 57.53869368089363}
+{"stage": "corpus", "complete": 304, "total": 600, "elapsed_seconds_this_session": 74.64882369386032}
+{"stage": "corpus", "complete": 308, "total": 600, "elapsed_seconds_this_session": 89.43790272297338}
+{"stage": "corpus", "complete": 312, "total": 600, "elapsed_seconds_this_session": 104.16084350273013}
+{"stage": "corpus", "complete": 316, "total": 600, "elapsed_seconds_this_session": 119.04885688098148}
+{"stage": "corpus", "complete": 320, "total": 600, "elapsed_seconds_this_session": 132.01198301184922}
+{"stage": "corpus", "complete": 324, "total": 600, "elapsed_seconds_this_session": 141.63059778977185}
+Traceback (most recent call last):
+  File "/home/huangyating/BearLLM/scripts/evaluate_mbhm.py", line 621, in <module>
+    main()
+  File "/home/huangyating/BearLLM/scripts/evaluate_mbhm.py", line 611, in main
+    run_corpus(args, dataset, checkpoint, qwen, args.output, rows)
+  File "/home/huangyating/BearLLM/scripts/evaluate_mbhm.py", line 459, in run_corpus
+    generated = model.generate(input_ids=ids, inputs_embeds=embeddings, attention_mask=attention,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/peft/peft_model.py", line 1875, in generate
+    outputs = self.base_model.generate(*args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/transformers/generation/utils.py", line 2223, in generate
+    result = self._sample(
+             ^^^^^^^^^^^^^
+  File "/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/transformers/generation/utils.py", line 3214, in _sample
+    outputs = model_forward(**model_inputs, return_dict=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 856, in forward
+    outputs = self.model(
+              ^^^^^^^^^^^
+  File "/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 579, in forward
+    layer_outputs = decoder_layer(
+                    ^^^^^^^^^^^^^^
+  File "/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 260, in forward
+    hidden_states, self_attn_weights = self.self_attn(
+                                       ^^^^^^^^^^^^^^^
+  File "/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 205, in forward
+    attn_output = self.o_proj(attn_output)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/peft/tuners/lora/layer.py", line 727, in forward
+    result = result + lora_B(lora_A(dropout(x))) * scaling
+    ^^^^^^
+KeyboardInterrupt

@@ -1,0 +1,64 @@
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/conv.py:186: UserWarning: Initializing zero-element tensors is a no-op
+  init.kaiming_uniform_(self.weight, a=math.sqrt(5))
+{
+  "status": "passed",
+  "created_at_utc": "2026-09-18T17:28:37.285187+00:00",
+  "executable": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "prefix": "/home/huangyating/miniconda3/envs/m2vllm",
+  "python": "3.12.14 (main, Sep  2 2026, 23:27:36) [GCC 15.3.0]",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "transformers": "4.49.0",
+    "peft": "0.15.2",
+    "accelerate": "1.4.0",
+    "numpy": "1.26.0",
+    "scipy": "1.15.2",
+    "python-dotenv": "1.0.1",
+    "h5pickle": "0.4.2",
+    "h5py": "3.16.0",
+    "huggingface-hub": "0.36.2",
+    "tokenizers": "0.21.4",
+    "safetensors": "0.6.2",
+    "pandas": "2.2.3",
+    "pyarrow": "19.0.1",
+    "scikit-learn": "1.6.1",
+    "matplotlib": "3.10.1",
+    "rouge-score": "0.1.2",
+    "nltk": "3.9.1",
+    "tqdm": "4.67.1"
+  },
+  "cuda": "12.8",
+  "cuda_architectures": [
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA RTX PRO 5000 72GB Blackwell",
+      "capability": [
+        12,
+        0
+      ],
+      "bf16_matmul": "passed"
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA RTX PRO 5000 72GB Blackwell",
+      "capability": [
+        12,
+        0
+      ],
+      "bf16_matmul": "passed"
+    }
+  ],
+  "pip_check": "No broken requirements found.",
+  "trainer_import": "passed",
+  "official_lora_config": "passed",
+  "synthetic_fcn_forward_backward_optimizer_step": "passed (not a dataset accuracy result)",
+  "apex_available": false
+}

@@ -1,0 +1,82 @@
+{
+  "read_only": true,
+  "training": false,
+  "encoder_reimplemented_independently": true,
+  "probability_grouping_independent": true,
+  "six_student_heads_equal_their_contact_head": true,
+  "earlier_threshold_window_predictions_exactly_reproduced": true,
+  "checks": [
+    {
+      "fold": "115200_to_460800",
+      "method": "embedding_only",
+      "radar_checkpoint": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_v0/models/four_class_provisional_roi/115200_to_460800/embedding_only.pt",
+      "radar_checkpoint_sha256": "79ea05d5a112435784af69b31d7acf57a33967737d6a1dad0b749c402e956707",
+      "contact_head": "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_v1/models/v0/115200_to_460800/retained_head.npz",
+      "contact_head_sha256": "252f3395d039be7db7c5cde018141ac8beaa1b20330c5c6ba93d289dabd09d5e",
+      "head_weights_bitwise_equal": true,
+      "head_bias_bitwise_equal": true,
+      "train_bag_sets_equal": true,
+      "heldout_bags_disjoint": true
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "ce_only",
+      "radar_checkpoint": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_v0/models/four_class_provisional_roi/115200_to_460800/ce_only.pt",
+      "radar_checkpoint_sha256": "183fb9189d6862e2b095be43a2b1ed228f832f12c11b7875bc02acaf76177e99",
+      "contact_head": "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_v1/models/v0/115200_to_460800/retained_head.npz",
+      "contact_head_sha256": "252f3395d039be7db7c5cde018141ac8beaa1b20330c5c6ba93d289dabd09d5e",
+      "head_weights_bitwise_equal": true,
+      "head_bias_bitwise_equal": true,
+      "train_bag_sets_equal": true,
+      "heldout_bags_disjoint": true
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "ce_feat_1_kd",
+      "radar_checkpoint": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_v0/models/four_class_provisional_roi/115200_to_460800/ce_feat_1_kd.pt",
+      "radar_checkpoint_sha256": "bfe6ee4f34b6f47da9bbcb8fec1a405264931ad0ab05ceb684252e58f5e9fa43",
+      "contact_head": "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_v1/models/v0/115200_to_460800/retained_head.npz",
+      "contact_head_sha256": "252f3395d039be7db7c5cde018141ac8beaa1b20330c5c6ba93d289dabd09d5e",
+      "head_weights_bitwise_equal": true,
+      "head_bias_bitwise_equal": true,
+      "train_bag_sets_equal": true,
+      "heldout_bags_disjoint": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "embedding_only",
+      "radar_checkpoint": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_v0/models/four_class_provisional_roi/460800_to_115200/embedding_only.pt",
+      "radar_checkpoint_sha256": "176d0707cc7454f028b20eb380d26997fe8d91c0f5ca5835b942d34998f882d8",
+      "contact_head": "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_v1/models/v0/460800_to_115200/retained_head.npz",
+      "contact_head_sha256": "61c257101c9a03bf4e53a5ca27fae603e49a4442f83bd1e7920172c4a7f28549",
+      "head_weights_bitwise_equal": true,
+      "head_bias_bitwise_equal": true,
+      "train_bag_sets_equal": true,
+      "heldout_bags_disjoint": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "ce_only",
+      "radar_checkpoint": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_v0/models/four_class_provisional_roi/460800_to_115200/ce_only.pt",
+      "radar_checkpoint_sha256": "a4605b4e78dfb9a94766346c922dffdacc44a5959ae0f7a525a7ef9aa993c4ef",
+      "contact_head": "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_v1/models/v0/460800_to_115200/retained_head.npz",
+      "contact_head_sha256": "61c257101c9a03bf4e53a5ca27fae603e49a4442f83bd1e7920172c4a7f28549",
+      "head_weights_bitwise_equal": true,
+      "head_bias_bitwise_equal": true,
+      "train_bag_sets_equal": true,
+      "heldout_bags_disjoint": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "ce_feat_1_kd",
+      "radar_checkpoint": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_v0/models/four_class_provisional_roi/460800_to_115200/ce_feat_1_kd.pt",
+      "radar_checkpoint_sha256": "e37e2ba246cedc37e4b9d989bb944f41759387c91d2e99b375d47fc5c528e53a",
+      "contact_head": "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_v1/models/v0/460800_to_115200/retained_head.npz",
+      "contact_head_sha256": "61c257101c9a03bf4e53a5ca27fae603e49a4442f83bd1e7920172c4a7f28549",
+      "head_weights_bitwise_equal": true,
+      "head_bias_bitwise_equal": true,
+      "train_bag_sets_equal": true,
+      "heldout_bags_disjoint": true
+    }
+  ]
+}

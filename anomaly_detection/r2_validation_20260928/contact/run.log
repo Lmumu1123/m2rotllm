@@ -1,0 +1,348 @@
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/conv.py:186: UserWarning: Initializing zero-element tensors is a no-op
+  init.kaiming_uniform_(self.weight, a=math.sqrt(5))
+completed reference 1/9
+completed reference 2/9
+completed reference 3/9
+completed reference 4/9
+completed reference 5/9
+completed reference 6/9
+completed reference 7/9
+completed reference 8/9
+completed reference 9/9
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:407: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:407: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:407: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:407: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:407: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:407: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:407: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:407: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+retrained_fcn v0:  [{'variant': 'v0', 'model': 'retrained_fcn_original_hidden_pool_xy_sensitivity', 'level': 'packet', 'scope': 'all', 'n': 343, 'correct': 52, 'accuracy': 0.15160349854227406, 'macro_f1': 0.13117815381954526, 'balanced_accuracy': 0.1576833624613041, 'confusion_matrix': [[29, 4, 87, 53], [7, 1, 39, 1], [16, 2, 1, 54], [13, 1, 14, 21]]}, {'variant': 'v0', 'model': 'retrained_fcn_original_hidden_pool_xy_sensitivity', 'level': 'session', 'scope': 'all', 'n': 12, 'correct': 2, 'accuracy': 0.16666666666666666, 'macro_f1': 0.125, 'balanced_accuracy': 0.16666666666666666, 'confusion_matrix': [[0, 0, 2, 1], [0, 0, 3, 0], [1, 0, 0, 2], [1, 0, 0, 2]]}, {'variant': 'v0', 'model': 'existing_retained_head_hidden_pool', 'level': 'packet', 'scope': 'all', 'n': 343, 'correct': 105, 'accuracy': 0.30612244897959184, 'macro_f1': 0.18114925014034805, 'balanced_accuracy': 0.2942632037374297, 'confusion_matrix': [[33, 1, 110, 29], [15, 0, 33, 0], [1, 0, 72, 0], [0, 0, 49, 0]]}, {'variant': 'v0', 'model': 'existing_retained_head_hidden_pool', 'level': 'session', 'scope': 'all', 'n': 12, 'correct': 4, 'accuracy': 0.3333333333333333, 'macro_f1': 0.21969696969696967, 'balanced_accuracy': 0.3333333333333333, 'confusion_matrix': [[1, 0, 1, 1], [2, 0, 1, 0], [0, 0, 3, 0], [0, 0, 3, 0]]}, {'variant': 'v0', 'model': 'existing_retained_head_hidden_pool_xy_sensitivity', 'level': 'packet', 'scope': 'all', 'n': 343, 'correct': 112, 'accuracy': 0.32653061224489793, 'macro_f1': 0.202692908117752, 'balanced_accuracy': 0.3063583815028902, 'confusion_matrix': [[39, 0, 85, 49], [24, 0, 24, 0], [0, 0, 73, 0], [0, 0, 49, 0]]}, {'variant': 'v0', 'model': 'existing_retained_head_hidden_pool_xy_sensitivity', 'level': 'session', 'scope': 'all', 'n': 12, 'correct': 3, 'accuracy': 0.25, 'macro_f1': 0.125, 'balanced_accuracy': 0.25, 'confusion_matrix': [[0, 0, 2, 1], [2, 0, 1, 0], [0, 0, 3, 0], [0, 0, 3, 0]]}]
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/conv.py:186: UserWarning: Initializing zero-element tensors is a no-op
+  init.kaiming_uniform_(self.weight, a=math.sqrt(5))
+completed reference 1/9
+completed reference 2/9
+completed reference 3/9
+completed reference 4/9
+completed reference 5/9
+completed reference 6/9
+completed reference 7/9
+completed reference 8/9
+completed reference 9/9
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:407: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:407: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:407: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:407: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+retrained_fcn query_no_demean_ref2k:  [{'variant': 'query_no_demean_ref2k', 'model': 'retrained_fcn_original_hidden_pool_xy_sensitivity', 'level': 'packet', 'scope': 'all', 'n': 343, 'correct': 124, 'accuracy': 0.36151603498542273, 'macro_f1': 0.16353138778081042, 'balanced_accuracy': 0.20113247611183202, 'confusion_matrix': [[118, 11, 2, 42], [44, 0, 3, 1], [58, 3, 0, 12], [40, 3, 0, 6]]}, {'variant': 'query_no_demean_ref2k', 'model': 'retrained_fcn_original_hidden_pool_xy_sensitivity', 'level': 'session', 'scope': 'all', 'n': 12, 'correct': 1, 'accuracy': 0.08333333333333333, 'macro_f1': 0.041666666666666664, 'balanced_accuracy': 0.08333333333333333, 'confusion_matrix': [[1, 1, 0, 1], [3, 0, 0, 0], [2, 0, 0, 1], [3, 0, 0, 0]]}, {'variant': 'query_no_demean_ref2k', 'model': 'existing_retained_head_hidden_pool', 'level': 'packet', 'scope': 'all', 'n': 343, 'correct': 152, 'accuracy': 0.44314868804664725, 'macro_f1': 0.18750755939524838, 'balanced_accuracy': 0.23548974582310556, 'confusion_matrix': [[144, 1, 28, 0], [42, 0, 6, 0], [65, 0, 8, 0], [39, 0, 10, 0]]}, {'variant': 'query_no_demean_ref2k', 'model': 'existing_retained_head_hidden_pool', 'level': 'session', 'scope': 'all', 'n': 12, 'correct': 3, 'accuracy': 0.25, 'macro_f1': 0.1, 'balanced_accuracy': 0.25, 'confusion_matrix': [[3, 0, 0, 0], [3, 0, 0, 0], [3, 0, 0, 0], [3, 0, 0, 0]]}, {'variant': 'query_no_demean_ref2k', 'model': 'existing_retained_head_hidden_pool_xy_sensitivity', 'level': 'packet', 'scope': 'all', 'n': 343, 'correct': 141, 'accuracy': 0.4110787172011662, 'macro_f1': 0.2253494623655914, 'balanced_accuracy': 0.26512392113389815, 'confusion_matrix': [[110, 1, 46, 16], [28, 0, 20, 0], [42, 0, 31, 0], [19, 0, 30, 0]]}, {'variant': 'query_no_demean_ref2k', 'model': 'existing_retained_head_hidden_pool_xy_sensitivity', 'level': 'session', 'scope': 'all', 'n': 12, 'correct': 3, 'accuracy': 0.25, 'macro_f1': 0.1625, 'balanced_accuracy': 0.25, 'confusion_matrix': [[2, 0, 1, 0], [2, 0, 1, 0], [2, 0, 1, 0], [1, 0, 2, 0]]}]
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/conv.py:186: UserWarning: Initializing zero-element tensors is a no-op
+  init.kaiming_uniform_(self.weight, a=math.sqrt(5))
+completed reference 1/9
+completed reference 2/9
+completed reference 3/9
+completed reference 4/9
+completed reference 5/9
+completed reference 6/9
+completed reference 7/9
+completed reference 8/9
+completed reference 9/9
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:407: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:407: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:407: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:407: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:407: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:407: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/sklearn/metrics/_classification.py:2524: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+official_final v0:  [{'variant': 'v0', 'model': 'official_final_original_probability_pool', 'level': 'packet', 'scope': 'all', 'n': 343, 'correct': 73, 'accuracy': 0.21282798833819241, 'macro_f1': 0.08795180722891566, 'balanced_accuracy': 0.25, 'confusion_matrix': [[0, 0, 172, 1], [0, 0, 48, 0], [0, 0, 73, 0], [0, 0, 49, 0]]}, {'variant': 'v0', 'model': 'official_final_original_probability_pool', 'level': 'session', 'scope': 'all', 'n': 12, 'correct': 3, 'accuracy': 0.25, 'macro_f1': 0.1, 'balanced_accuracy': 0.25, 'confusion_matrix': [[0, 0, 3, 0], [0, 0, 3, 0], [0, 0, 3, 0], [0, 0, 3, 0]]}, {'variant': 'v0', 'model': 'official_final_original_hidden_pool', 'level': 'packet', 'scope': 'all', 'n': 343, 'correct': 75, 'accuracy': 0.21865889212827988, 'macro_f1': 0.13847780126849896, 'balanced_accuracy': 0.27530053117137265, 'confusion_matrix': [[0, 0, 121, 52], [0, 0, 48, 0], [0, 0, 64, 9], [0, 0, 38, 11]]}, {'variant': 'v0', 'model': 'official_final_original_hidden_pool', 'level': 'session', 'scope': 'all', 'n': 12, 'correct': 4, 'accuracy': 0.3333333333333333, 'macro_f1': 0.2153846153846154, 'balanced_accuracy': 0.3333333333333333, 'confusion_matrix': [[0, 0, 2, 1], [0, 0, 3, 0], [0, 0, 3, 0], [0, 0, 2, 1]]}, {'variant': 'v0', 'model': 'official_final_original_hidden_pool_xy_sensitivity', 'level': 'packet', 'scope': 'all', 'n': 343, 'correct': 49, 'accuracy': 0.14285714285714285, 'macro_f1': 0.11069693406372788, 'balanced_accuracy': 0.201053697272717, 'confusion_matrix': [[1, 0, 117, 55], [0, 0, 48, 0], [1, 0, 27, 45], [0, 0, 28, 21]]}, {'variant': 'v0', 'model': 'official_final_original_hidden_pool_xy_sensitivity', 'level': 'session', 'scope': 'all', 'n': 12, 'correct': 3, 'accuracy': 0.25, 'macro_f1': 0.175, 'balanced_accuracy': 0.25, 'confusion_matrix': [[0, 0, 2, 1], [0, 0, 3, 0], [0, 0, 1, 2], [0, 0, 1, 2]]}]

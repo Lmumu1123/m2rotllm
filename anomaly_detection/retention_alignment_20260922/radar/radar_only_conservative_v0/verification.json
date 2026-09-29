@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "strict_geometry_cases": 10,
+  "n_files": 12,
+  "input_metadata_columns": [
+    "bag_id",
+    "range_center_m",
+    "intended_distance_m",
+    "geometry_roi_mismatch"
+  ],
+  "labels_state_contact_absent": true,
+  "all_file_p4_error_vs_training": 1.7881393432617188e-07,
+  "all_file_p10_error_vs_full_feature_inference": 9.71445146547012e-17,
+  "geometry_invalid_files": 4,
+  "contact_data_required": false
+}

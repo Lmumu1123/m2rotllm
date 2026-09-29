@@ -1,0 +1,43 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/conv.py:186: UserWarning: Initializing zero-element tensors is a no-op
+  init.kaiming_uniform_(self.weight, a=math.sqrt(5))
+{"signal_storage": "memory", "bytes": 13009536000, "load_seconds": 50.044661281164736}
+{"stage": "heldout-generation", "split": "test", "complete": 32, "total": 12279, "elapsed_seconds_this_session": 51.21251877071336}
+{"stage": "heldout-generation", "split": "test", "complete": 352, "total": 12279, "elapsed_seconds_this_session": 54.26347477082163}
+{"stage": "heldout-generation", "split": "test", "complete": 672, "total": 12279, "elapsed_seconds_this_session": 57.35820834990591}
+{"stage": "heldout-generation", "split": "test", "complete": 992, "total": 12279, "elapsed_seconds_this_session": 60.47238702699542}
+{"stage": "heldout-generation", "split": "test", "complete": 1312, "total": 12279, "elapsed_seconds_this_session": 63.259106300771236}
+{"stage": "heldout-generation", "split": "test", "complete": 1632, "total": 12279, "elapsed_seconds_this_session": 65.89777073962614}
+{"stage": "heldout-generation", "split": "test", "complete": 1952, "total": 12279, "elapsed_seconds_this_session": 68.56595623865724}
+{"stage": "heldout-generation", "split": "test", "complete": 2272, "total": 12279, "elapsed_seconds_this_session": 71.31095360964537}
+{"stage": "heldout-generation", "split": "test", "complete": 2592, "total": 12279, "elapsed_seconds_this_session": 74.11969855474308}
+{"stage": "heldout-generation", "split": "test", "complete": 2912, "total": 12279, "elapsed_seconds_this_session": 77.00546510284767}
+{"stage": "heldout-generation", "split": "test", "complete": 3232, "total": 12279, "elapsed_seconds_this_session": 79.75454653194174}
+{"stage": "heldout-generation", "split": "test", "complete": 3552, "total": 12279, "elapsed_seconds_this_session": 82.39324876200408}
+{"stage": "heldout-generation", "split": "test", "complete": 3872, "total": 12279, "elapsed_seconds_this_session": 85.10796822607517}
+{"stage": "heldout-generation", "split": "test", "complete": 4192, "total": 12279, "elapsed_seconds_this_session": 87.7476302748546}
+{"stage": "heldout-generation", "split": "test", "complete": 4512, "total": 12279, "elapsed_seconds_this_session": 90.46672456897795}
+{"stage": "heldout-generation", "split": "test", "complete": 4832, "total": 12279, "elapsed_seconds_this_session": 93.10741807706654}
+{"stage": "heldout-generation", "split": "test", "complete": 5152, "total": 12279, "elapsed_seconds_this_session": 95.84177154069766}
+{"stage": "heldout-generation", "split": "test", "complete": 5472, "total": 12279, "elapsed_seconds_this_session": 98.4866940160282}
+{"stage": "heldout-generation", "split": "test", "complete": 5792, "total": 12279, "elapsed_seconds_this_session": 101.2717070528306}
+{"stage": "heldout-generation", "split": "test", "complete": 6112, "total": 12279, "elapsed_seconds_this_session": 104.38331735692918}
+{"stage": "heldout-generation", "split": "test", "complete": 6432, "total": 12279, "elapsed_seconds_this_session": 107.49592849984765}
+{"stage": "heldout-generation", "split": "test", "complete": 6752, "total": 12279, "elapsed_seconds_this_session": 110.61256755003706}
+{"stage": "heldout-generation", "split": "test", "complete": 7072, "total": 12279, "elapsed_seconds_this_session": 113.73899583891034}
+{"stage": "heldout-generation", "split": "test", "complete": 7392, "total": 12279, "elapsed_seconds_this_session": 116.87163090473041}
+{"stage": "heldout-generation", "split": "test", "complete": 7712, "total": 12279, "elapsed_seconds_this_session": 120.00093135097995}
+{"stage": "heldout-generation", "split": "test", "complete": 8032, "total": 12279, "elapsed_seconds_this_session": 123.11359241371974}
+{"stage": "heldout-generation", "split": "test", "complete": 8352, "total": 12279, "elapsed_seconds_this_session": 126.2275389698334}
+{"stage": "heldout-generation", "split": "test", "complete": 8672, "total": 12279, "elapsed_seconds_this_session": 129.3436651546508}
+{"stage": "heldout-generation", "split": "test", "complete": 8992, "total": 12279, "elapsed_seconds_this_session": 132.46195698995143}
+{"stage": "heldout-generation", "split": "test", "complete": 9312, "total": 12279, "elapsed_seconds_this_session": 135.57915806490928}
+{"stage": "heldout-generation", "split": "test", "complete": 9632, "total": 12279, "elapsed_seconds_this_session": 138.7057342659682}
+{"stage": "heldout-generation", "split": "test", "complete": 9952, "total": 12279, "elapsed_seconds_this_session": 141.8349112397991}
+{"stage": "heldout-generation", "split": "test", "complete": 10272, "total": 12279, "elapsed_seconds_this_session": 144.90941847488284}
+{"stage": "heldout-generation", "split": "test", "complete": 10592, "total": 12279, "elapsed_seconds_this_session": 147.99688383797184}
+{"stage": "heldout-generation", "split": "test", "complete": 10912, "total": 12279, "elapsed_seconds_this_session": 151.11787314806134}
+{"stage": "heldout-generation", "split": "test", "complete": 11232, "total": 12279, "elapsed_seconds_this_session": 154.21106937387958}
+{"stage": "heldout-generation", "split": "test", "complete": 11552, "total": 12279, "elapsed_seconds_this_session": 157.14096069568768}
+{"stage": "heldout-generation", "split": "test", "complete": 11872, "total": 12279, "elapsed_seconds_this_session": 159.98021647986025}
+{"stage": "heldout-generation", "split": "test", "complete": 12192, "total": 12279, "elapsed_seconds_this_session": 162.86861512204632}

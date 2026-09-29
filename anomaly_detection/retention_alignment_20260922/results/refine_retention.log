@@ -1,0 +1,2 @@
+{"selection": {"variant": "v0", "lambda_source": 10, "step": 800, "all_source_val_gate": true, "val_acc10": 0.9881505008551185, "val_acc4": 0.9899828976301002, "local_train_macro_f1": 1.0, "delta_norm": 0.10584983974695206}, "passes_every_test_source": true}
+{"selection": {"variant": "query_no_demean", "lambda_source": 10, "step": 400, "all_source_val_gate": true, "val_acc10": 0.9881912207834515, "val_acc4": 0.990064337486766, "local_train_macro_f1": 1.0, "delta_norm": 0.038855910301208496}, "passes_every_test_source": true}

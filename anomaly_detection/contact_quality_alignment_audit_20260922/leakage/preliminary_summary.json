@@ -1,0 +1,21 @@
+{
+  "read_only": true,
+  "source_schema": [
+    "CREATE TABLE condition (condition_id INTEGER PRIMARY KEY, dataset TEXT, code TEXT, channel INTEGER, rpm TEXT, load TEXT)",
+    "CREATE TABLE file_info (file_id INTEGER PRIMARY KEY, condition_id INTEGER, label INTEGER, FOREIGN KEY (condition_id) REFERENCES condition(condition_id))",
+    "CREATE TABLE label_note (label INTEGER PRIMARY KEY, note TEXT)"
+  ],
+  "source_self_reference_pairs": {
+    "test": 78,
+    "train": 549,
+    "val": 166
+  },
+  "replay_queries": 1174,
+  "replay_self_reference_pairs": 14,
+  "local_npz_duplicate_groups": [],
+  "local_window_or_iq_frame_duplicate_groups": 0,
+  "local_within_file_overlapping_frame_occurrences": 0,
+  "all_source_query_ids_disjoint_between_splits": true,
+  "scalers_reconstructed_train_only": true,
+  "elapsed_seconds": 2.1281592599116266
+}

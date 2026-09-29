@@ -1,0 +1,73 @@
+{
+  "windows": 2158,
+  "recordings": 144,
+  "contact_sessions": 12,
+  "n_complete_frame_fraction_below_1": 0,
+  "n_unavailable_windows": 0,
+  "n_nonfinite_frames": 0,
+  "rows_exactly_match_metadata": true,
+  "feature_shapes": {
+    "complex_shape": [
+      2158,
+      128
+    ],
+    "phase_shape": [
+      2158,
+      128
+    ],
+    "nuisance": [
+      2158,
+      12
+    ],
+    "geometry_complex_shape": [
+      2158,
+      128
+    ],
+    "geometry_phase_shape": [
+      2158,
+      128
+    ],
+    "rpm": [
+      2158
+    ],
+    "distance_cm": [
+      2158
+    ],
+    "repeat": [
+      2158
+    ],
+    "recording_id": [
+      2158
+    ],
+    "contact_id": [
+      2158
+    ],
+    "window_first_frame": [
+      2158
+    ],
+    "labels": [
+      2158
+    ],
+    "band_edges_hz": [
+      129
+    ],
+    "quality_spectral_available": [
+      2158
+    ]
+  },
+  "finite_all_numeric": true,
+  "near_zero_amplitude_fraction_quantiles": {
+    "0.0": 0.0,
+    "0.5": 0.0,
+    "0.95": 0.00039296875000000144,
+    "1.0": 0.01046875
+  },
+  "near_pi_increment_fraction_quantiles": {
+    "0.0": 0.0,
+    "0.5": 0.0,
+    "0.95": 0.0017316753926700824,
+    "1.0": 0.0361465968586387
+  },
+  "n_usable_spatial_fraction_below_1": 0,
+  "feature_npz_sha256": "bcd9b6ad40794a4afcde7786fa94e3bfbe4f1c51dfbd71fa76063f4b6735e6f1"
+}

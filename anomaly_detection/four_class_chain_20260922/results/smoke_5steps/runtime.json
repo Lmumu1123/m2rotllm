@@ -1,0 +1,13 @@
+{
+  "python": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "torch": "2.11.0+cu128",
+  "device": "cuda:1",
+  "seeds": [
+    42
+  ],
+  "steps": 5,
+  "quick": true,
+  "protocol_sha256": "983794b902dd22ed33094291232236188693ea13579e46ea567c593501c4e449",
+  "script_sha256": "36b279ccd7ce8bc5b186631409c0df9def95fe50d7513a17ad994062b8509863",
+  "note": "No outcome-based tuning; candidate ROI four-class outputs remain confounded"
+}

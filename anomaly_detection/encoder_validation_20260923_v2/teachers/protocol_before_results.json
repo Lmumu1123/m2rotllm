@@ -1,0 +1,17 @@
+{
+  "teacher": "UniFault Tiny official public checkpoint pretrain-epoch=1.ckpt",
+  "primary_variant": "paper_100ms",
+  "all_variants_reported": ["paper_100ms", "code_native1024"],
+  "paper_100ms": "Split each 4000 Hz, one-second XYZ packet into ten nonoverlapping 400-sample chunks. Polyphase resample each chunk 64/25 to 1024 points. This matches paper duration/length but is upsampling because local bandwidth is lower; it creates no new physical bandwidth.",
+  "code_native1024": "Sensitivity to code example: three nonoverlapping 1024-sample chunks per second, 0.256 seconds per chunk, last 928 samples omitted. No resampling.",
+  "normalization": "Per-axis train-recording-only min-max, applied after resampling/chunking; no clipping, no per-test fitting, no demeaning. Match official normalization formula denominator max-min+1e-6. Numerical bfloat16->float32 roundtrip matches public data loader.",
+  "features": "Official 128-dimensional Transformer token outputs averaged over tokens, three axes and chunks to one vector per existing one-second contact window. Separate axis/chunk outputs retained.",
+  "pretrained_backbone": "Frozen, eval mode; no local gradient training. Full checkpoint strict load including 16-way head; semantic mapping of 16 classes not published and therefore no native four-class accuracy asserted.",
+  "contact_readout": "Per-fold StandardScaler + LogisticRegression(C=1,max_iter=2000,solver=lbfgs,class_weight=balanced,random_state=42). Same readout recipe as prior RotLLM experiment. No hyperparameter or variant selection on held-out recordings.",
+  "folds": ["115200_to_460800", "460800_to_115200"],
+  "scope": "Previously inspected development data; 8 recordings, one physical specimen per fault category. Only 58 main contact windows. Not blind evaluation or statistical proof of universality.",
+  "third_teacher_principle": "Architecture/source diversity check, not a claim of rich fault knowledge by itself.",
+  "expected_output_sign": "Unconstrained signed LayerNorm features; radar output must not be forced through ReLU when targeting this teacher.",
+  "legacy_weights": "No writes to old BearLLM or RotLLM weights, features, inputs or reports. All new outputs under teachers/.",
+  "run_environment": "m2vllm, torch inference, CPU threads 2, GPU0"
+}

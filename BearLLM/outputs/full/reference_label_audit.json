@@ -1,0 +1,3669 @@
+{
+  "count": 600,
+  "corpus_sha256": "eb19e542138758ade543ba99d2269ae6e8247470d4a8ddf4961a525a7719469a",
+  "method": "Apply the same fixed response parser used by evaluation to every one of 600 official reference responses; group by task. No examples are filtered or scores adjusted.",
+  "by_task": {
+    "fault_detection": {
+      "count": 150,
+      "parser_agrees_count": 150,
+      "records": [
+        {
+          "id": 0,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 1,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 2,
+          "label_id": 2,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 3,
+          "label_id": 3,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 4,
+          "label_id": 4,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 5,
+          "label_id": 5,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 6,
+          "label_id": 6,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 7,
+          "label_id": 7,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 8,
+          "label_id": 8,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 9,
+          "label_id": 9,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 10,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 11,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 12,
+          "label_id": 2,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 13,
+          "label_id": 3,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 14,
+          "label_id": 4,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 15,
+          "label_id": 5,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 16,
+          "label_id": 6,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 17,
+          "label_id": 7,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 18,
+          "label_id": 8,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 19,
+          "label_id": 9,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 20,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 21,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 22,
+          "label_id": 2,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 23,
+          "label_id": 3,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 24,
+          "label_id": 4,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 25,
+          "label_id": 5,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 26,
+          "label_id": 6,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 27,
+          "label_id": 7,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 28,
+          "label_id": 8,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 29,
+          "label_id": 9,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 30,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 31,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 32,
+          "label_id": 2,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 33,
+          "label_id": 3,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 34,
+          "label_id": 4,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 35,
+          "label_id": 5,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 36,
+          "label_id": 6,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 37,
+          "label_id": 7,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 38,
+          "label_id": 8,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 39,
+          "label_id": 9,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 40,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 41,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 42,
+          "label_id": 2,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 43,
+          "label_id": 3,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 44,
+          "label_id": 4,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 45,
+          "label_id": 5,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 46,
+          "label_id": 6,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 47,
+          "label_id": 7,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 48,
+          "label_id": 8,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 49,
+          "label_id": 9,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 50,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 51,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 52,
+          "label_id": 2,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 53,
+          "label_id": 3,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 54,
+          "label_id": 4,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 55,
+          "label_id": 5,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 56,
+          "label_id": 6,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 57,
+          "label_id": 7,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 58,
+          "label_id": 8,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 59,
+          "label_id": 9,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 60,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 61,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 62,
+          "label_id": 2,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 63,
+          "label_id": 3,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 64,
+          "label_id": 4,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 65,
+          "label_id": 5,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 66,
+          "label_id": 6,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 67,
+          "label_id": 7,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 68,
+          "label_id": 8,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 69,
+          "label_id": 9,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 70,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 71,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 72,
+          "label_id": 2,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 73,
+          "label_id": 3,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 74,
+          "label_id": 4,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 75,
+          "label_id": 5,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 76,
+          "label_id": 6,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 77,
+          "label_id": 7,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 78,
+          "label_id": 8,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 79,
+          "label_id": 9,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 80,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 81,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 82,
+          "label_id": 2,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 83,
+          "label_id": 3,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 84,
+          "label_id": 4,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 85,
+          "label_id": 5,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 86,
+          "label_id": 6,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 87,
+          "label_id": 7,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 88,
+          "label_id": 8,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 89,
+          "label_id": 9,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 90,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 91,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 92,
+          "label_id": 2,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 93,
+          "label_id": 3,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 94,
+          "label_id": 4,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 95,
+          "label_id": 5,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 96,
+          "label_id": 6,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 97,
+          "label_id": 7,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 98,
+          "label_id": 8,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 99,
+          "label_id": 9,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 100,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 101,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 102,
+          "label_id": 2,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 103,
+          "label_id": 3,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 104,
+          "label_id": 4,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 105,
+          "label_id": 5,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 106,
+          "label_id": 6,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 107,
+          "label_id": 7,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 108,
+          "label_id": 8,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 109,
+          "label_id": 9,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 110,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 111,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 112,
+          "label_id": 2,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 113,
+          "label_id": 3,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 114,
+          "label_id": 4,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 115,
+          "label_id": 5,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 116,
+          "label_id": 6,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 117,
+          "label_id": 7,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 118,
+          "label_id": 8,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 119,
+          "label_id": 9,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 120,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 121,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 122,
+          "label_id": 2,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 123,
+          "label_id": 3,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 124,
+          "label_id": 4,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 125,
+          "label_id": 5,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 126,
+          "label_id": 6,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 127,
+          "label_id": 7,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 128,
+          "label_id": 8,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 129,
+          "label_id": 9,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 130,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 131,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 132,
+          "label_id": 2,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 133,
+          "label_id": 3,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 134,
+          "label_id": 4,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 135,
+          "label_id": 5,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 136,
+          "label_id": 6,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 137,
+          "label_id": 7,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 138,
+          "label_id": 8,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 139,
+          "label_id": 9,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 140,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 141,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 142,
+          "label_id": 2,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 143,
+          "label_id": 3,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 144,
+          "label_id": 4,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 145,
+          "label_id": 5,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 146,
+          "label_id": 6,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 147,
+          "label_id": 7,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 148,
+          "label_id": 8,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 149,
+          "label_id": 9,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        }
+      ]
+    },
+    "fault_classification": {
+      "count": 150,
+      "parser_agrees_count": 150,
+      "records": [
+        {
+          "id": 150,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 151,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 152,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 153,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 154,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 155,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 156,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 157,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 158,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 159,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 160,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 161,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 162,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 163,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 164,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 165,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 166,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 167,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 168,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 169,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 170,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 171,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 172,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 173,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 174,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 175,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 176,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 177,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 178,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 179,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 180,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 181,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 182,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 183,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 184,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 185,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 186,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 187,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 188,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 189,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 190,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 191,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 192,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 193,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 194,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 195,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 196,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 197,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 198,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 199,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 200,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 201,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 202,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 203,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 204,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 205,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 206,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 207,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 208,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 209,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 210,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 211,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 212,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 213,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 214,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 215,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 216,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 217,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 218,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 219,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 220,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 221,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 222,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 223,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 224,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 225,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 226,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 227,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 228,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 229,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 230,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 231,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 232,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 233,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 234,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 235,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 236,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 237,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 238,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 239,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 240,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 241,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 242,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 243,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 244,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 245,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 246,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 247,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 248,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 249,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 250,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 251,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 252,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 253,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 254,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 255,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 256,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 257,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 258,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 259,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 260,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 261,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 262,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 263,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 264,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 265,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 266,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 267,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 268,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 269,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 270,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 271,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 272,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 273,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 274,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 275,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 276,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 277,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 278,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 279,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 280,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 281,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 282,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 283,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 284,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 285,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 286,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 287,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 288,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 289,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 290,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 291,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 292,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 293,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 294,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 295,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 296,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 297,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 298,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 299,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        }
+      ]
+    },
+    "maintenance": {
+      "count": 150,
+      "parser_agrees_count": 149,
+      "records": [
+        {
+          "id": 300,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 301,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 302,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 303,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 304,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 305,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 306,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 307,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 308,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 309,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 310,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 311,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 312,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 313,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 314,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 315,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 316,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 317,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 318,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 319,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 320,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 321,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 322,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 323,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 324,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 325,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 326,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 327,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 328,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 329,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 330,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 331,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 332,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 333,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 334,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 335,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 336,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 337,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 338,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 339,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 340,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 341,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 342,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 343,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 344,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 345,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 346,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 347,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 348,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 349,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 350,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 351,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 352,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 353,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 354,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 355,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 356,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 357,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 358,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 359,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 360,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 361,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 362,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 363,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 364,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 365,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 366,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 367,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 368,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 369,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 370,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 371,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 372,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 373,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 374,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 375,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 376,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 377,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 378,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 379,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 380,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 381,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 382,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 383,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 384,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 385,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 386,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 387,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 388,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 389,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 390,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 391,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 392,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 393,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 394,
+          "label_id": 4,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": false
+        },
+        {
+          "id": 395,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 396,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 397,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 398,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 399,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 400,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 401,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 402,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 403,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 404,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 405,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 406,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 407,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 408,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 409,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 410,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 411,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 412,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 413,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 414,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 415,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 416,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 417,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 418,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 419,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 420,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 421,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 422,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 423,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 424,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 425,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 426,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 427,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 428,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 429,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 430,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 431,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 432,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 433,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 434,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 435,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 436,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 437,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 438,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 439,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 440,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 441,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 442,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 443,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 444,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 445,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 446,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 447,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 448,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 449,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        }
+      ]
+    },
+    "risk_analysis": {
+      "count": 150,
+      "parser_agrees_count": 149,
+      "records": [
+        {
+          "id": 450,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 451,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 452,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 453,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 454,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 455,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 456,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 457,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 458,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 459,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 460,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 461,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 462,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 463,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 464,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 465,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 466,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 467,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 468,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 469,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 470,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 471,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 472,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 473,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 474,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 475,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 476,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 477,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 478,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 479,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 480,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 481,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 482,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 483,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 484,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 485,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 486,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 487,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 488,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 489,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 490,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 491,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 492,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 493,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 494,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 495,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 496,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 497,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 498,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 499,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 500,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 501,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 502,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 503,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 504,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 505,
+          "label_id": 5,
+          "parsed_reference": -1,
+          "parser_agrees_with_label": false
+        },
+        {
+          "id": 506,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 507,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 508,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 509,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 510,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 511,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 512,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 513,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 514,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 515,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 516,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 517,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 518,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 519,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 520,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 521,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 522,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 523,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 524,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 525,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 526,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 527,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 528,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 529,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 530,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 531,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 532,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 533,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 534,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 535,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 536,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 537,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 538,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 539,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 540,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 541,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 542,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 543,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 544,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 545,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 546,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 547,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 548,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 549,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 550,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 551,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 552,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 553,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 554,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 555,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 556,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 557,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 558,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 559,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 560,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 561,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 562,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 563,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 564,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 565,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 566,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 567,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 568,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 569,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 570,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 571,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 572,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 573,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 574,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 575,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 576,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 577,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 578,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 579,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 580,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 581,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 582,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 583,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 584,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 585,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 586,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 587,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 588,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 589,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 590,
+          "label_id": 0,
+          "parsed_reference": 0,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 591,
+          "label_id": 1,
+          "parsed_reference": 1,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 592,
+          "label_id": 2,
+          "parsed_reference": 2,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 593,
+          "label_id": 3,
+          "parsed_reference": 3,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 594,
+          "label_id": 4,
+          "parsed_reference": 4,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 595,
+          "label_id": 5,
+          "parsed_reference": 5,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 596,
+          "label_id": 6,
+          "parsed_reference": 6,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 597,
+          "label_id": 7,
+          "parsed_reference": 7,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 598,
+          "label_id": 8,
+          "parsed_reference": 8,
+          "parser_agrees_with_label": true
+        },
+        {
+          "id": 599,
+          "label_id": 9,
+          "parsed_reference": 9,
+          "parser_agrees_with_label": true
+        }
+      ]
+    }
+  },
+  "manual_review_of_parser_mismatches": [
+    {
+      "id": 394,
+      "task_id": 2,
+      "task_name": "maintenance",
+      "label_id": 4,
+      "issue": "Reference asks the user to supply a bearing description rather than diagnosing the provided signal. A generic fault-free mention is parsed as class0. This is an incomplete maintenance answer, not evidence of an incorrect signal label.",
+      "model_response": "Generated text exactly matches the normalized reference, demonstrating that high ROUGE can reproduce an unhelpful reference."
+    },
+    {
+      "id": 505,
+      "task_id": 3,
+      "task_name": "risk_analysis",
+      "label_id": 5,
+      "issue": "Reference asks for a bearing description and does not diagnose a state; parser returns -1. This is an incomplete risk-analysis answer, not evidence of an incorrect signal label.",
+      "model_response": "Generated text exactly matches the normalized reference, demonstrating that high ROUGE can reproduce an unhelpful reference."
+    }
+  ],
+  "scope_caveat": "The 150-example standard classification task is distinct from these maintenance/risk text issues. Lexical overlap and parser consistency do not establish factual correctness or maintenance safety.",
+  "separate_observed_generation_errors": [
+    {
+      "id": 487,
+      "task_id": 3,
+      "label_id": 7,
+      "reference_class": "Minor Outer Ring Fault",
+      "generated_class": "Minor Inner Ring Fault",
+      "note": "An actual generated wrong class; the official reference gives the expected class. Original accuracy scoring is retained."
+    },
+    {
+      "id": 568,
+      "task_id": 3,
+      "label_id": 8,
+      "reference_class": "Moderate Outer Ring Fault",
+      "generated_class": "Moderate Inner Ring Fault",
+      "adapter_prediction": 8,
+      "note": "Actual generated wrong class although the adapter argmax and official reference are class8; original accuracy scoring is retained."
+    }
+  ]
+}

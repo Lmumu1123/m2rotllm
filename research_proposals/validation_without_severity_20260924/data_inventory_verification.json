@@ -1,0 +1,21 @@
+{
+  "audit": "2026-09-24 read-only raw stat and existing manifests",
+  "environment_expected_raw_directory_exists": false,
+  "environment_archived_recordings": 42,
+  "environment_rotating_normal": 36,
+  "environment_off": 6,
+  "environment_windows": 652,
+  "environment_derived_available": true,
+  "paired_recordings": 12,
+  "paired_raw_files_present": 24,
+  "paired_contact_windows": 88,
+  "paired_radar_windows": 614,
+  "standalone_contact_speed_files": 3,
+  "standalone_contact_speed_strict_1s_windows": 0,
+  "limitations": [
+    "No raw large-bin reads or retraining performed.",
+    "Missing expected raw directory is not a global absence claim.",
+    "Archived duplication checks do not establish independent physical repeats.",
+    "No cross-fault, multi-speed paired matrix is documented in the inspected project files."
+  ]
+}

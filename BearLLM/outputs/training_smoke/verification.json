@@ -1,0 +1,23 @@
+{
+  "scope": "Synthetic functional verification only; not MBHM scientific results",
+  "fixture_signals": 20,
+  "fixture_corpus_rows": 4,
+  "checks": {
+    "pretrain_one_epoch_completed": true,
+    "finetune_one_epoch_completed": true,
+    "pretrain_resume_completed": true,
+    "finetune_resume_completed": true,
+    "lora_export_keys_equal": true,
+    "vibration_adapter_export_keys_equal": true,
+    "lora_export_max_absolute_difference": 0.0,
+    "vibration_adapter_export_max_absolute_difference": 0.0
+  },
+  "synthetic_gpu_benchmark": {
+    "torch": "2.10.0a0+b558c986e8.nv25.11",
+    "device": "NVIDIA RTX PRO 5000 72GB Blackwell",
+    "fcn_batch_size": 1024,
+    "three_step_average_seconds": 0.13806844859694442,
+    "peak_allocated_bytes": 10659481088,
+    "note": "Includes random input. Throughput estimates are not a full-data timing guarantee."
+  }
+}

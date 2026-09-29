@@ -1,0 +1,29 @@
+{
+  "rows": 12,
+  "raw_llm_probability_fidelity_count": 12,
+  "raw_llm_probability_fidelity": 1.0,
+  "fallback_count": 0,
+  "conflict_ids": [],
+  "guarded_rule_consistency_count": 12,
+  "guarded_rule_consistency": 1.0,
+  "rule": "if parsed_coarse_label differs from probability argmax, retain classifier probabilities and argmax; replace only language with fixed class phrase",
+  "interpretation": "Guarded consistency is guaranteed by a deterministic rule, not improved LLM learned accuracy. Original generations and raw LLM metrics remain unchanged.",
+  "ground_truth_and_state_used_for_fallback": false,
+  "truth_state_perturbation_invariance_passed": true,
+  "unknown_detection_supported": false,
+  "unknown_note": "All rows remain closed-set candidates; high confidence does not prove unknown detection. keep is not credited as a correct unknown classification.",
+  "roi_source": "/home/huangyating/anomaly_detection/four_class_chain_20260922/results/radar_only_chain_demo/actual_radar_geometry.csv",
+  "roi_rule": "For radar rows join actual recording_id by bag_id, use geometry_roi_mismatch; missing quality is unverified. Contact rows have no radar ROI gate.",
+  "invalid_or_unverified_radar_rows": 4,
+  "diagnosis_status_counts": {
+    "experimental_known_class_candidate": 8,
+    "invalid_target_roi": 4
+  },
+  "original_inputs_sha256": {
+    "/home/huangyating/anomaly_detection/four_class_chain_20260922/results/radar_only_chain_demo/llm/generation_predictions.csv": "4dce241e4bf48cdc058a9bceefd007226dbe43549239e596060edd45d580e97d",
+    "/home/huangyating/anomaly_detection/four_class_chain_20260922/results/radar_only_chain_demo/llm/generation_predictions.jsonl": "433b3c0e3848f5789430ebf2ee1de580e807602bde1e2083898e3349c11d5f25",
+    "/home/huangyating/anomaly_detection/four_class_chain_20260922/results/radar_only_chain_demo/actual_radar_geometry.csv": "fb258d1952e3c1d3e65814340c03081492588ca2a80a66f75bffab2d49033446"
+  },
+  "original_inputs_unchanged": true,
+  "script_sha256": "e6c207246cf26271e328f59375afd8ec1cb9c875e78aa21c942187330f1e6dd9"
+}

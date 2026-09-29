@@ -1,0 +1,17 @@
+modality,scope,truth,correct,n,geometry_valid_n
+contact,heldout_recordings,ball,2,2,2
+contact,heldout_recordings,inner,2,2,2
+contact,heldout_recordings,normal,2,2,2
+contact,heldout_recordings,outer,2,2,2
+contact,training_recordings,ball,2,2,2
+contact,training_recordings,inner,2,2,2
+contact,training_recordings,normal,2,2,2
+contact,training_recordings,outer,2,2,2
+radar,heldout_recordings,ball,2,2,2
+radar,heldout_recordings,inner,2,2,2
+radar,heldout_recordings,normal,2,2,2
+radar,heldout_recordings,outer,2,2,0
+radar,training_recordings,ball,2,2,2
+radar,training_recordings,inner,2,2,2
+radar,training_recordings,normal,2,2,2
+radar,training_recordings,outer,2,2,0

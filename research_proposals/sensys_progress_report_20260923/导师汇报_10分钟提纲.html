@@ -1,0 +1,63 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>导师汇报_10分钟提纲</title><style>body{font-family:system-ui,"Noto Sans CJK SC","Microsoft YaHei",sans-serif;color:#243746;line-height:1.75;max-width:1080px;margin:40px auto;padding:0 28px}h1,h2,h3{color:#173d56;line-height:1.4}h1{font-size:28px}h2{margin-top:36px;border-bottom:2px solid #dcebf1;padding-bottom:8px}h3{margin-top:26px}table{border-collapse:collapse;width:100%;font-size:14px;margin:18px 0}th,td{border:1px solid #d6e0e6;padding:8px 10px;vertical-align:top}th{background:#edf4f8}tr:nth-child(even){background:#f8fafb}pre{background:#f1f5f8;padding:16px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px}code{font-family:Consolas,monospace}a{color:#226c92;text-decoration:none}img{max-width:100%;height:auto}strong{color:#183d55}blockquote{border-left:4px solid #ca8a35;padding-left:18px}@media print{body{margin:0;padding:0;font-size:10pt;line-height:1.55}h1{font-size:20pt}h2{font-size:15pt;break-after:avoid}h3{font-size:12pt;break-after:avoid}table{font-size:8pt}tr,img,pre{break-inside:avoid}thead{display:table-header-group}a{color:inherit}@page{size:A4;margin:16mm}}</style><body><h1>导师汇报：10 分钟提纲</h1>
+<p>2026-09-23。对应 <a href="/home/huangyating/research_proposals/sensys_progress_report_20260923/导师汇报_接触式知识迁移到毫米波诊断与SenSys计划.md">完整汇报文档</a>。以下可直接组织为 8 页 PPT；本文件是讲述提纲，不是新的实验结果。</p>
+<h2>第 1 页：研究问题（1 分钟）</h2>
+<p><strong>想把已有接触式诊断模型迁移到非接触式毫米波，训练时用双模态，部署时仅用雷达。</strong></p>
+<p>场景比直接测轴承更难：故障振动传到旁边电机壳体，雷达受多径和测点影响，接触式与雷达还有带宽和采样缺口差异。研究价值在于减少接触安装，并复用已有诊断知识。</p>
+<h2>第 2 页：现在实际跑通了什么（1 分钟）</h2>
+<p>展示流程图：加速度 XYZ→一秒 DCN→冻结 BearLLM encoder→128 维 hidden；雷达 IQ→帧内谱特征→小型 encoder→同一个诊断头→可选 Qwen 文本。</p>
+<p>强调两点：共享头已核验是同一组权重；训练用了录制集合蒸馏和故障标签，尚未实现事件级时间对齐。</p>
+<h2>第 3 页：最重要的结果（1.5 分钟）</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th style="text-align: right;">接触式</th>
+<th style="text-align: right;">雷达</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>两折录制留出，逐窗口</td>
+<td style="text-align: right;">46/58＝79.31%</td>
+<td style="text-align: right;">411/412＝99.76%</td>
+</tr>
+<tr>
+<td>平均窗口概率，逐录制</td>
+<td style="text-align: right;">8/8</td>
+<td style="text-align: right;">8/8</td>
+</tr>
+<tr>
+<td>另一正常电机，保守最终版本</td>
+<td style="text-align: right;">0/2</td>
+<td style="text-align: right;">0/2</td>
+</tr>
+</tbody>
+</table>
+<p>必须同步说明：接触式窗 1 s、雷达窗 2 s；八份录制来自每类同一轴承的两次采集；外圈雷达 ROI 错误。因此雷达高分目前只是探索性软件结果，接触式 &gt;98% 明确未达标。</p>
+<h2>第 4 页：为什么不能只看满分（1 分钟）</h2>
+<ul>
+<li>雷达仅 CE 409/412，完整迁移 411/412；录制级均 8/8，尚无独立迁移收益证据。</li>
+<li>教师用于监督的是录制平均特征，这些袋目标全对；学生另有标签监督，因此学生高于教师单窗口不矛盾。</li>
+<li>环境正常数据的转速分类很高，但简单主频也 100%；这不证明故障泛化。</li>
+</ul>
+<h2>第 5 页：保留旧能力与实际审计（1 分钟）</h2>
+<p>旧四类准确率：99.0553%→99.0472%，下降 0.0081 个百分点，总体和逐来源通过 ≤0.5 pp。早期仅本地训练四类头在旧数据只有约 17%，因此改为残差头＋回放/KD。</p>
+<p>公开数据确有 31 个 test 输入与 train 精确相同，正常参考跨集合；旧测试也已反复查看。当前旧结果用于相对回归，不能当严格新域泛化。后续需要干净参考协议和独立新数据。</p>
+<h2>第 6 页：最优先的缺口——接触式本身能否跨电机（1.5 分钟）</h2>
+<p>固定一秒 DCN 统一频率索引和长度，<strong>不保证不同速度、轴承尺寸、壳体传递路径都不变</strong>。bigNormal 还存在明显固定端点堆积，需先核实量程，不能全归因于结构。</p>
+<p>计划先在多个电机验证接触式，再验证雷达：分别做零目标校准、独立正常参考校准、少量标注适配。只有健康数据就只报正常误报；不同“好/坏电机”的标签若与电机身份绑定，不能作为可信四类泛化。</p>
+<p>需要的资源是可控外部系统、独立轴承实体、原始 IQ/串口日志和可靠型号/工况记录，而不是增加更多同文件切片。</p>
+<h2>第 7 页：拟投 SenSys 的核心与补实验（1.5 分钟）</h2>
+<p>拟主张：真实采样限制下的可观察知识迁移、部署变化下的可靠性，以及原模型能力保持和仅雷达系统成本。</p>
+<p>必补四项：</p>
+<ol>
+<li>修 ROI/量程，建立可靠短窗口接触式 teacher。</li>
+<li>新录制、轴承/转速/环境留出；有资源再完整跨电机。</li>
+<li>同标签预算的雷达 LR/MLP、共享头 CE、KD/MSE/CRD 与当前集合蒸馏。</li>
+<li>动态时间对应、配置/距离机制干预和端到端延迟；用消融决定哪些模块值得保留。</li>
+</ol>
+<p>接触教师指导雷达已有 R2E-Net 和心电迁移等先例，创新不能只是更换应用或拼接 BearLLM。</p>
+<h2>第 8 页：时间与请导师讨论的决策（0.5 分钟）</h2>
+<p>目标 SenSys 2027 第二轮：10 月 29 日摘要、11 月 5 日全文，均 AoE。来源：<a href="https://sensys.acm.org/2027/cfp.html">官方 CFP</a>。</p>
+<p>前两周先完成可信新数据闭环和迁移收益判断，10 月中旬完成主实验并冻结方案，10 月下旬新盲测与写作。</p>
+<p>希望讨论：能否取得更多可控电机和独立轴承；论文优先聚焦跨环境还是跨结构；若 teacher 或迁移收益没有通过，是否及时收窄主张。当前结论是“值得继续验证的系统方向”，而不是已经完成通用故障诊断。</p></body></html>

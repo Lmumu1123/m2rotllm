@@ -1,0 +1,915 @@
+{
+  "ok": true,
+  "inputs_unchanged": true,
+  "bear_model_unchanged": true,
+  "no_test_hyperparameter_selection": true,
+  "development_after_primary_disclosed": true,
+  "model_checks": [
+    {
+      "holdout_rpm": 1000,
+      "method": "xyz_raw_order_LogReg_C1",
+      "train_sessions": [
+        "inBroken_2000r_session",
+        "inBroken_3000r_session",
+        "normal_2000r_session",
+        "normal_3000r_session",
+        "outBroken_2000r_session",
+        "outBroken_3000r_session",
+        "roll_2000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_1000r_session",
+        "normal_1000r_session",
+        "outBroken_1000r_session",
+        "roll_1000r_session"
+      ],
+      "training_n": 224,
+      "test_n": 119,
+      "fit_predict_seconds": 0.0037080820184201,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 1000,
+      "method": "xyz_raw_order_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_2000r_session",
+        "inBroken_3000r_session",
+        "normal_2000r_session",
+        "normal_3000r_session",
+        "outBroken_2000r_session",
+        "outBroken_3000r_session",
+        "roll_2000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_1000r_session",
+        "normal_1000r_session",
+        "outBroken_1000r_session",
+        "roll_1000r_session"
+      ],
+      "training_n": 224,
+      "test_n": 119,
+      "fit_predict_seconds": 0.002300533000379801,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 1000,
+      "method": "xyz_envelope_order_LogReg_C1",
+      "train_sessions": [
+        "inBroken_2000r_session",
+        "inBroken_3000r_session",
+        "normal_2000r_session",
+        "normal_3000r_session",
+        "outBroken_2000r_session",
+        "outBroken_3000r_session",
+        "roll_2000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_1000r_session",
+        "normal_1000r_session",
+        "outBroken_1000r_session",
+        "roll_1000r_session"
+      ],
+      "training_n": 224,
+      "test_n": 119,
+      "fit_predict_seconds": 0.002544085029512644,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 1000,
+      "method": "xyz_envelope_order_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_2000r_session",
+        "inBroken_3000r_session",
+        "normal_2000r_session",
+        "normal_3000r_session",
+        "outBroken_2000r_session",
+        "outBroken_3000r_session",
+        "roll_2000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_1000r_session",
+        "normal_1000r_session",
+        "outBroken_1000r_session",
+        "roll_1000r_session"
+      ],
+      "training_n": 224,
+      "test_n": 119,
+      "fit_predict_seconds": 0.0024131140089593828,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 1000,
+      "method": "xyz_concat_order_LogReg_C1",
+      "train_sessions": [
+        "inBroken_2000r_session",
+        "inBroken_3000r_session",
+        "normal_2000r_session",
+        "normal_3000r_session",
+        "outBroken_2000r_session",
+        "outBroken_3000r_session",
+        "roll_2000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_1000r_session",
+        "normal_1000r_session",
+        "outBroken_1000r_session",
+        "roll_1000r_session"
+      ],
+      "training_n": 224,
+      "test_n": 119,
+      "fit_predict_seconds": 0.001863220997620374,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 1000,
+      "method": "xyz_concat_order_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_2000r_session",
+        "inBroken_3000r_session",
+        "normal_2000r_session",
+        "normal_3000r_session",
+        "outBroken_2000r_session",
+        "outBroken_3000r_session",
+        "roll_2000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_1000r_session",
+        "normal_1000r_session",
+        "outBroken_1000r_session",
+        "roll_1000r_session"
+      ],
+      "training_n": 224,
+      "test_n": 119,
+      "fit_predict_seconds": 0.003489110036753118,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 1000,
+      "method": "xy_raw_order_LogReg_C1",
+      "train_sessions": [
+        "inBroken_2000r_session",
+        "inBroken_3000r_session",
+        "normal_2000r_session",
+        "normal_3000r_session",
+        "outBroken_2000r_session",
+        "outBroken_3000r_session",
+        "roll_2000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_1000r_session",
+        "normal_1000r_session",
+        "outBroken_1000r_session",
+        "roll_1000r_session"
+      ],
+      "training_n": 224,
+      "test_n": 119,
+      "fit_predict_seconds": 0.0021965029882267118,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 1000,
+      "method": "xy_raw_order_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_2000r_session",
+        "inBroken_3000r_session",
+        "normal_2000r_session",
+        "normal_3000r_session",
+        "outBroken_2000r_session",
+        "outBroken_3000r_session",
+        "roll_2000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_1000r_session",
+        "normal_1000r_session",
+        "outBroken_1000r_session",
+        "roll_1000r_session"
+      ],
+      "training_n": 224,
+      "test_n": 119,
+      "fit_predict_seconds": 0.0018777610384859145,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 1000,
+      "method": "xy_envelope_order_LogReg_C1",
+      "train_sessions": [
+        "inBroken_2000r_session",
+        "inBroken_3000r_session",
+        "normal_2000r_session",
+        "normal_3000r_session",
+        "outBroken_2000r_session",
+        "outBroken_3000r_session",
+        "roll_2000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_1000r_session",
+        "normal_1000r_session",
+        "outBroken_1000r_session",
+        "roll_1000r_session"
+      ],
+      "training_n": 224,
+      "test_n": 119,
+      "fit_predict_seconds": 0.0019119610078632832,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 1000,
+      "method": "xy_envelope_order_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_2000r_session",
+        "inBroken_3000r_session",
+        "normal_2000r_session",
+        "normal_3000r_session",
+        "outBroken_2000r_session",
+        "outBroken_3000r_session",
+        "roll_2000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_1000r_session",
+        "normal_1000r_session",
+        "outBroken_1000r_session",
+        "roll_1000r_session"
+      ],
+      "training_n": 224,
+      "test_n": 119,
+      "fit_predict_seconds": 0.0023428630083799362,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 1000,
+      "method": "xy_concat_order_LogReg_C1",
+      "train_sessions": [
+        "inBroken_2000r_session",
+        "inBroken_3000r_session",
+        "normal_2000r_session",
+        "normal_3000r_session",
+        "outBroken_2000r_session",
+        "outBroken_3000r_session",
+        "roll_2000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_1000r_session",
+        "normal_1000r_session",
+        "outBroken_1000r_session",
+        "roll_1000r_session"
+      ],
+      "training_n": 224,
+      "test_n": 119,
+      "fit_predict_seconds": 0.0017401010263711214,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 1000,
+      "method": "xy_concat_order_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_2000r_session",
+        "inBroken_3000r_session",
+        "normal_2000r_session",
+        "normal_3000r_session",
+        "outBroken_2000r_session",
+        "outBroken_3000r_session",
+        "roll_2000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_1000r_session",
+        "normal_1000r_session",
+        "outBroken_1000r_session",
+        "roll_1000r_session"
+      ],
+      "training_n": 224,
+      "test_n": 119,
+      "fit_predict_seconds": 0.0035251210210844874,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 2000,
+      "method": "xyz_raw_order_LogReg_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_3000r_session",
+        "normal_1000r_session",
+        "normal_3000r_session",
+        "outBroken_1000r_session",
+        "outBroken_3000r_session",
+        "roll_1000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_2000r_session",
+        "normal_2000r_session",
+        "outBroken_2000r_session",
+        "roll_2000r_session"
+      ],
+      "training_n": 289,
+      "test_n": 54,
+      "fit_predict_seconds": 0.0019638020312413573,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 2000,
+      "method": "xyz_raw_order_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_3000r_session",
+        "normal_1000r_session",
+        "normal_3000r_session",
+        "outBroken_1000r_session",
+        "outBroken_3000r_session",
+        "roll_1000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_2000r_session",
+        "normal_2000r_session",
+        "outBroken_2000r_session",
+        "roll_2000r_session"
+      ],
+      "training_n": 289,
+      "test_n": 54,
+      "fit_predict_seconds": 0.0021986529463902116,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 2000,
+      "method": "xyz_envelope_order_LogReg_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_3000r_session",
+        "normal_1000r_session",
+        "normal_3000r_session",
+        "outBroken_1000r_session",
+        "outBroken_3000r_session",
+        "roll_1000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_2000r_session",
+        "normal_2000r_session",
+        "outBroken_2000r_session",
+        "roll_2000r_session"
+      ],
+      "training_n": 289,
+      "test_n": 54,
+      "fit_predict_seconds": 0.002923357009422034,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 2000,
+      "method": "xyz_envelope_order_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_3000r_session",
+        "normal_1000r_session",
+        "normal_3000r_session",
+        "outBroken_1000r_session",
+        "outBroken_3000r_session",
+        "roll_1000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_2000r_session",
+        "normal_2000r_session",
+        "outBroken_2000r_session",
+        "roll_2000r_session"
+      ],
+      "training_n": 289,
+      "test_n": 54,
+      "fit_predict_seconds": 0.0025706749875098467,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 2000,
+      "method": "xyz_concat_order_LogReg_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_3000r_session",
+        "normal_1000r_session",
+        "normal_3000r_session",
+        "outBroken_1000r_session",
+        "outBroken_3000r_session",
+        "roll_1000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_2000r_session",
+        "normal_2000r_session",
+        "outBroken_2000r_session",
+        "roll_2000r_session"
+      ],
+      "training_n": 289,
+      "test_n": 54,
+      "fit_predict_seconds": 0.002584615023806691,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 2000,
+      "method": "xyz_concat_order_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_3000r_session",
+        "normal_1000r_session",
+        "normal_3000r_session",
+        "outBroken_1000r_session",
+        "outBroken_3000r_session",
+        "roll_1000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_2000r_session",
+        "normal_2000r_session",
+        "outBroken_2000r_session",
+        "roll_2000r_session"
+      ],
+      "training_n": 289,
+      "test_n": 54,
+      "fit_predict_seconds": 0.0034669599845074117,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 2000,
+      "method": "xy_raw_order_LogReg_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_3000r_session",
+        "normal_1000r_session",
+        "normal_3000r_session",
+        "outBroken_1000r_session",
+        "outBroken_3000r_session",
+        "roll_1000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_2000r_session",
+        "normal_2000r_session",
+        "outBroken_2000r_session",
+        "roll_2000r_session"
+      ],
+      "training_n": 289,
+      "test_n": 54,
+      "fit_predict_seconds": 0.002044341992586851,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 2000,
+      "method": "xy_raw_order_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_3000r_session",
+        "normal_1000r_session",
+        "normal_3000r_session",
+        "outBroken_1000r_session",
+        "outBroken_3000r_session",
+        "roll_1000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_2000r_session",
+        "normal_2000r_session",
+        "outBroken_2000r_session",
+        "roll_2000r_session"
+      ],
+      "training_n": 289,
+      "test_n": 54,
+      "fit_predict_seconds": 0.0021329320152290165,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 2000,
+      "method": "xy_envelope_order_LogReg_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_3000r_session",
+        "normal_1000r_session",
+        "normal_3000r_session",
+        "outBroken_1000r_session",
+        "outBroken_3000r_session",
+        "roll_1000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_2000r_session",
+        "normal_2000r_session",
+        "outBroken_2000r_session",
+        "roll_2000r_session"
+      ],
+      "training_n": 289,
+      "test_n": 54,
+      "fit_predict_seconds": 0.002969637978821993,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 2000,
+      "method": "xy_envelope_order_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_3000r_session",
+        "normal_1000r_session",
+        "normal_3000r_session",
+        "outBroken_1000r_session",
+        "outBroken_3000r_session",
+        "roll_1000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_2000r_session",
+        "normal_2000r_session",
+        "outBroken_2000r_session",
+        "roll_2000r_session"
+      ],
+      "training_n": 289,
+      "test_n": 54,
+      "fit_predict_seconds": 0.0023849839926697314,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 2000,
+      "method": "xy_concat_order_LogReg_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_3000r_session",
+        "normal_1000r_session",
+        "normal_3000r_session",
+        "outBroken_1000r_session",
+        "outBroken_3000r_session",
+        "roll_1000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_2000r_session",
+        "normal_2000r_session",
+        "outBroken_2000r_session",
+        "roll_2000r_session"
+      ],
+      "training_n": 289,
+      "test_n": 54,
+      "fit_predict_seconds": 0.0027712860028259456,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 2000,
+      "method": "xy_concat_order_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_3000r_session",
+        "normal_1000r_session",
+        "normal_3000r_session",
+        "outBroken_1000r_session",
+        "outBroken_3000r_session",
+        "roll_1000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_2000r_session",
+        "normal_2000r_session",
+        "outBroken_2000r_session",
+        "roll_2000r_session"
+      ],
+      "training_n": 289,
+      "test_n": 54,
+      "fit_predict_seconds": 0.0035581709817051888,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 3000,
+      "method": "xyz_raw_order_LogReg_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_2000r_session",
+        "normal_1000r_session",
+        "normal_2000r_session",
+        "outBroken_1000r_session",
+        "outBroken_2000r_session",
+        "roll_1000r_session",
+        "roll_2000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_3000r_session",
+        "normal_3000r_session",
+        "outBroken_3000r_session",
+        "roll_3000r_session"
+      ],
+      "training_n": 173,
+      "test_n": 170,
+      "fit_predict_seconds": 0.0018185809603892267,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 3000,
+      "method": "xyz_raw_order_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_2000r_session",
+        "normal_1000r_session",
+        "normal_2000r_session",
+        "outBroken_1000r_session",
+        "outBroken_2000r_session",
+        "roll_1000r_session",
+        "roll_2000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_3000r_session",
+        "normal_3000r_session",
+        "outBroken_3000r_session",
+        "roll_3000r_session"
+      ],
+      "training_n": 173,
+      "test_n": 170,
+      "fit_predict_seconds": 0.002390124020166695,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 3000,
+      "method": "xyz_envelope_order_LogReg_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_2000r_session",
+        "normal_1000r_session",
+        "normal_2000r_session",
+        "outBroken_1000r_session",
+        "outBroken_2000r_session",
+        "roll_1000r_session",
+        "roll_2000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_3000r_session",
+        "normal_3000r_session",
+        "outBroken_3000r_session",
+        "roll_3000r_session"
+      ],
+      "training_n": 173,
+      "test_n": 170,
+      "fit_predict_seconds": 0.0021581919863820076,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 3000,
+      "method": "xyz_envelope_order_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_2000r_session",
+        "normal_1000r_session",
+        "normal_2000r_session",
+        "outBroken_1000r_session",
+        "outBroken_2000r_session",
+        "roll_1000r_session",
+        "roll_2000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_3000r_session",
+        "normal_3000r_session",
+        "outBroken_3000r_session",
+        "roll_3000r_session"
+      ],
+      "training_n": 173,
+      "test_n": 170,
+      "fit_predict_seconds": 0.0025448050000704825,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 3000,
+      "method": "xyz_concat_order_LogReg_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_2000r_session",
+        "normal_1000r_session",
+        "normal_2000r_session",
+        "outBroken_1000r_session",
+        "outBroken_2000r_session",
+        "roll_1000r_session",
+        "roll_2000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_3000r_session",
+        "normal_3000r_session",
+        "outBroken_3000r_session",
+        "roll_3000r_session"
+      ],
+      "training_n": 173,
+      "test_n": 170,
+      "fit_predict_seconds": 0.0025401149760000408,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 3000,
+      "method": "xyz_concat_order_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_2000r_session",
+        "normal_1000r_session",
+        "normal_2000r_session",
+        "outBroken_1000r_session",
+        "outBroken_2000r_session",
+        "roll_1000r_session",
+        "roll_2000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_3000r_session",
+        "normal_3000r_session",
+        "outBroken_3000r_session",
+        "roll_3000r_session"
+      ],
+      "training_n": 173,
+      "test_n": 170,
+      "fit_predict_seconds": 0.0037655120249837637,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 3000,
+      "method": "xy_raw_order_LogReg_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_2000r_session",
+        "normal_1000r_session",
+        "normal_2000r_session",
+        "outBroken_1000r_session",
+        "outBroken_2000r_session",
+        "roll_1000r_session",
+        "roll_2000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_3000r_session",
+        "normal_3000r_session",
+        "outBroken_3000r_session",
+        "roll_3000r_session"
+      ],
+      "training_n": 173,
+      "test_n": 170,
+      "fit_predict_seconds": 0.001684660033788532,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 3000,
+      "method": "xy_raw_order_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_2000r_session",
+        "normal_1000r_session",
+        "normal_2000r_session",
+        "outBroken_1000r_session",
+        "outBroken_2000r_session",
+        "roll_1000r_session",
+        "roll_2000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_3000r_session",
+        "normal_3000r_session",
+        "outBroken_3000r_session",
+        "roll_3000r_session"
+      ],
+      "training_n": 173,
+      "test_n": 170,
+      "fit_predict_seconds": 0.002456274989526719,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 3000,
+      "method": "xy_envelope_order_LogReg_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_2000r_session",
+        "normal_1000r_session",
+        "normal_2000r_session",
+        "outBroken_1000r_session",
+        "outBroken_2000r_session",
+        "roll_1000r_session",
+        "roll_2000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_3000r_session",
+        "normal_3000r_session",
+        "outBroken_3000r_session",
+        "roll_3000r_session"
+      ],
+      "training_n": 173,
+      "test_n": 170,
+      "fit_predict_seconds": 0.0023845540126785636,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 3000,
+      "method": "xy_envelope_order_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_2000r_session",
+        "normal_1000r_session",
+        "normal_2000r_session",
+        "outBroken_1000r_session",
+        "outBroken_2000r_session",
+        "roll_1000r_session",
+        "roll_2000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_3000r_session",
+        "normal_3000r_session",
+        "outBroken_3000r_session",
+        "roll_3000r_session"
+      ],
+      "training_n": 173,
+      "test_n": 170,
+      "fit_predict_seconds": 0.0025555850006639957,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 3000,
+      "method": "xy_concat_order_LogReg_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_2000r_session",
+        "normal_1000r_session",
+        "normal_2000r_session",
+        "outBroken_1000r_session",
+        "outBroken_2000r_session",
+        "roll_1000r_session",
+        "roll_2000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_3000r_session",
+        "normal_3000r_session",
+        "outBroken_3000r_session",
+        "roll_3000r_session"
+      ],
+      "training_n": 173,
+      "test_n": 170,
+      "fit_predict_seconds": 0.002444893994834274,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    },
+    {
+      "holdout_rpm": 3000,
+      "method": "xy_concat_order_RBF_SVM_C1",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_2000r_session",
+        "normal_1000r_session",
+        "normal_2000r_session",
+        "outBroken_1000r_session",
+        "outBroken_2000r_session",
+        "roll_1000r_session",
+        "roll_2000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_3000r_session",
+        "normal_3000r_session",
+        "outBroken_3000r_session",
+        "roll_3000r_session"
+      ],
+      "training_n": 173,
+      "test_n": 170,
+      "fit_predict_seconds": 0.00385064200963825,
+      "scaler_train_only": true,
+      "source_retention_certified": false
+    }
+  ],
+  "feature_extraction_seconds": 0.37553070997819304,
+  "total_seconds": 0.6862587580108084,
+  "raw_zero_energy_axes": 0,
+  "envelope_zero_energy_axes": 0,
+  "all_features_finite": true,
+  "feature_sha256": "0dfedbe3adf3e13366ddcb2990ff29d3074ad0eb6695c44597b9b6f07a7852e4"
+}

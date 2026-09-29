@@ -1,0 +1,77 @@
+raw_rms001 [('native_released_head', 'all_evaluation', 'native', 'file', 0.25), ('native_released_head', 'all_evaluation', 'native', 'file', 0.25), ('new_contact_only_linear_head', '115200_to_460800', 'train', 'file', 1.0), ('new_contact_only_linear_head', '115200_to_460800', 'test', 'file', 1.0), ('new_contact_only_linear_head', '115200_to_460800', 'external', 'file', 0.0), ('new_contact_only_linear_head', '460800_to_115200', 'train', 'file', 1.0), ('new_contact_only_linear_head', '460800_to_115200', 'test', 'file', 1.0), ('new_contact_only_linear_head', '460800_to_115200', 'external', 'file', 0.0)]
+demean_rms001 [('native_released_head', 'all_evaluation', 'native', 'file', 0.25), ('native_released_head', 'all_evaluation', 'native', 'file', 0.25), ('new_contact_only_linear_head', '115200_to_460800', 'train', 'file', 1.0), ('new_contact_only_linear_head', '115200_to_460800', 'test', 'file', 0.5), ('new_contact_only_linear_head', '115200_to_460800', 'external', 'file', 0.0), ('new_contact_only_linear_head', '460800_to_115200', 'train', 'file', 1.0), ('new_contact_only_linear_head', '460800_to_115200', 'test', 'file', 0.75), ('new_contact_only_linear_head', '460800_to_115200', 'external', 'file', 0.0)]
+/home/huangyating/anomaly_detection/encoder_validation_20260923/rotllm/run_teacher.py:119: RuntimeWarning: invalid value encountered in divide
+  p4=p4unnorm/p4unnorm.sum(1,keepdims=True)
+raw_rms1 [('native_released_head', 'all_evaluation', 'native', 'file', 0.25), ('native_released_head', 'all_evaluation', 'native', 'file', 0.25), ('new_contact_only_linear_head', '115200_to_460800', 'train', 'file', 1.0), ('new_contact_only_linear_head', '115200_to_460800', 'test', 'file', 0.75), ('new_contact_only_linear_head', '115200_to_460800', 'external', 'file', 1.0), ('new_contact_only_linear_head', '460800_to_115200', 'train', 'file', 1.0), ('new_contact_only_linear_head', '460800_to_115200', 'test', 'file', 0.75), ('new_contact_only_linear_head', '460800_to_115200', 'external', 'file', 1.0)]
+/home/huangyating/anomaly_detection/encoder_validation_20260923/rotllm/run_teacher.py:119: RuntimeWarning: invalid value encountered in divide
+  p4=p4unnorm/p4unnorm.sum(1,keepdims=True)
+demean_rms1 [('native_released_head', 'all_evaluation', 'native', 'file', 0.25), ('native_released_head', 'all_evaluation', 'native', 'file', 0.25), ('new_contact_only_linear_head', '115200_to_460800', 'train', 'file', 1.0), ('new_contact_only_linear_head', '115200_to_460800', 'test', 'file', 1.0), ('new_contact_only_linear_head', '115200_to_460800', 'external', 'file', 0.0), ('new_contact_only_linear_head', '460800_to_115200', 'train', 'file', 1.0), ('new_contact_only_linear_head', '460800_to_115200', 'test', 'file', 0.75), ('new_contact_only_linear_head', '460800_to_115200', 'external', 'file', 1.0)]
+      variant                       method              mapping             fold   unit  gear_mass_mean  pred15_other_rate  n  accuracy  macro_f1    split
+   raw_rms001         native_released_head  bearing_conditional   all_evaluation window    2.663308e-04                0.0 58  0.224138  0.092857      NaN
+   raw_rms001         native_released_head       gear_as_errors   all_evaluation window    2.663308e-04                0.0 58  0.224138  0.092857      NaN
+   raw_rms001         native_released_head  bearing_conditional   all_evaluation   file    2.506646e-04                0.0  8  0.250000  0.100000      NaN
+   raw_rms001         native_released_head       gear_as_errors   all_evaluation   file    2.506646e-04                0.0  8  0.250000  0.100000      NaN
+   raw_rms001   native_head_on_mean_hidden  bearing_conditional   all_evaluation window             NaN                NaN 58  0.224138  0.092857      NaN
+   raw_rms001 new_contact_only_linear_head           four_class 115200_to_460800 window             NaN                NaN 32  1.000000  1.000000    train
+   raw_rms001 new_contact_only_linear_head           four_class 115200_to_460800 window             NaN                NaN 26  0.884615  0.858225     test
+   raw_rms001 new_contact_only_linear_head external_normal_only 115200_to_460800 window             NaN                NaN 12  0.000000       NaN external
+   raw_rms001 new_contact_only_linear_head           four_class 115200_to_460800   file             NaN                NaN  4  1.000000  1.000000    train
+   raw_rms001 new_contact_only_linear_head           four_class 115200_to_460800   file             NaN                NaN  4  1.000000  1.000000     test
+   raw_rms001 new_contact_only_linear_head external_normal_only 115200_to_460800   file             NaN                NaN  2  0.000000       NaN external
+   raw_rms001 new_contact_only_linear_head           four_class 460800_to_115200 window             NaN                NaN 26  1.000000  1.000000    train
+   raw_rms001 new_contact_only_linear_head           four_class 460800_to_115200 window             NaN                NaN 32  0.812500  0.808920     test
+   raw_rms001 new_contact_only_linear_head external_normal_only 460800_to_115200 window             NaN                NaN 12  0.000000       NaN external
+   raw_rms001 new_contact_only_linear_head           four_class 460800_to_115200   file             NaN                NaN  4  1.000000  1.000000    train
+   raw_rms001 new_contact_only_linear_head           four_class 460800_to_115200   file             NaN                NaN  4  1.000000  1.000000     test
+   raw_rms001 new_contact_only_linear_head external_normal_only 460800_to_115200   file             NaN                NaN  2  0.000000       NaN external
+demean_rms001         native_released_head  bearing_conditional   all_evaluation window    4.749866e-04                0.0 58  0.241379  0.164286      NaN
+demean_rms001         native_released_head       gear_as_errors   all_evaluation window    4.749866e-04                0.0 58  0.241379  0.164286      NaN
+demean_rms001         native_released_head  bearing_conditional   all_evaluation   file    4.045816e-04                0.0  8  0.250000  0.100000      NaN
+demean_rms001         native_released_head       gear_as_errors   all_evaluation   file    4.045816e-04                0.0  8  0.250000  0.100000      NaN
+demean_rms001   native_head_on_mean_hidden  bearing_conditional   all_evaluation window             NaN                NaN 58  0.206897  0.133963      NaN
+demean_rms001 new_contact_only_linear_head           four_class 115200_to_460800 window             NaN                NaN 32  1.000000  1.000000    train
+demean_rms001 new_contact_only_linear_head           four_class 115200_to_460800 window             NaN                NaN 26  0.807692  0.727808     test
+demean_rms001 new_contact_only_linear_head external_normal_only 115200_to_460800 window             NaN                NaN 12  0.000000       NaN external
+demean_rms001 new_contact_only_linear_head           four_class 115200_to_460800   file             NaN                NaN  4  1.000000  1.000000    train
+demean_rms001 new_contact_only_linear_head           four_class 115200_to_460800   file             NaN                NaN  4  0.500000  0.333333     test
+demean_rms001 new_contact_only_linear_head external_normal_only 115200_to_460800   file             NaN                NaN  2  0.000000       NaN external
+demean_rms001 new_contact_only_linear_head           four_class 460800_to_115200 window             NaN                NaN 26  1.000000  1.000000    train
+demean_rms001 new_contact_only_linear_head           four_class 460800_to_115200 window             NaN                NaN 32  0.812500  0.808920     test
+demean_rms001 new_contact_only_linear_head external_normal_only 460800_to_115200 window             NaN                NaN 12  0.000000       NaN external
+demean_rms001 new_contact_only_linear_head           four_class 460800_to_115200   file             NaN                NaN  4  1.000000  1.000000    train
+demean_rms001 new_contact_only_linear_head           four_class 460800_to_115200   file             NaN                NaN  4  0.750000  0.666667     test
+demean_rms001 new_contact_only_linear_head external_normal_only 460800_to_115200   file             NaN                NaN  2  0.000000       NaN external
+     raw_rms1         native_released_head  bearing_conditional   all_evaluation window    1.724138e-02                0.0 58  0.224138  0.091549      NaN
+     raw_rms1         native_released_head       gear_as_errors   all_evaluation window    1.724138e-02                0.0 58  0.224138  0.091549      NaN
+     raw_rms1         native_released_head  bearing_conditional   all_evaluation   file    1.532738e-02                0.0  8  0.250000  0.100000      NaN
+     raw_rms1         native_released_head       gear_as_errors   all_evaluation   file    1.532738e-02                0.0  8  0.250000  0.100000      NaN
+     raw_rms1   native_head_on_mean_hidden  bearing_conditional   all_evaluation window             NaN                NaN 58  0.224138  0.091549      NaN
+     raw_rms1 new_contact_only_linear_head           four_class 115200_to_460800 window             NaN                NaN 32  1.000000  1.000000    train
+     raw_rms1 new_contact_only_linear_head           four_class 115200_to_460800 window             NaN                NaN 26  0.807692  0.666667     test
+     raw_rms1 new_contact_only_linear_head external_normal_only 115200_to_460800 window             NaN                NaN 12  1.000000       NaN external
+     raw_rms1 new_contact_only_linear_head           four_class 115200_to_460800   file             NaN                NaN  4  1.000000  1.000000    train
+     raw_rms1 new_contact_only_linear_head           four_class 115200_to_460800   file             NaN                NaN  4  0.750000  0.666667     test
+     raw_rms1 new_contact_only_linear_head external_normal_only 115200_to_460800   file             NaN                NaN  2  1.000000       NaN external
+     raw_rms1 new_contact_only_linear_head           four_class 460800_to_115200 window             NaN                NaN 26  1.000000  1.000000    train
+     raw_rms1 new_contact_only_linear_head           four_class 460800_to_115200 window             NaN                NaN 32  0.718750  0.650000     test
+     raw_rms1 new_contact_only_linear_head external_normal_only 460800_to_115200 window             NaN                NaN 12  1.000000       NaN external
+     raw_rms1 new_contact_only_linear_head           four_class 460800_to_115200   file             NaN                NaN  4  1.000000  1.000000    train
+     raw_rms1 new_contact_only_linear_head           four_class 460800_to_115200   file             NaN                NaN  4  0.750000  0.666667     test
+     raw_rms1 new_contact_only_linear_head external_normal_only 460800_to_115200   file             NaN                NaN  2  1.000000       NaN external
+  demean_rms1         native_released_head  bearing_conditional   all_evaluation window    6.345338e-28                0.0 58  0.224138  0.091549      NaN
+  demean_rms1         native_released_head       gear_as_errors   all_evaluation window    6.345338e-28                0.0 58  0.224138  0.091549      NaN
+  demean_rms1         native_released_head  bearing_conditional   all_evaluation   file    4.600370e-28                0.0  8  0.250000  0.100000      NaN
+  demean_rms1         native_released_head       gear_as_errors   all_evaluation   file    4.600370e-28                0.0  8  0.250000  0.100000      NaN
+  demean_rms1   native_head_on_mean_hidden  bearing_conditional   all_evaluation window             NaN                NaN 58  0.224138  0.091549      NaN
+  demean_rms1 new_contact_only_linear_head           four_class 115200_to_460800 window             NaN                NaN 32  1.000000  1.000000    train
+  demean_rms1 new_contact_only_linear_head           four_class 115200_to_460800 window             NaN                NaN 26  0.884615  0.878571     test
+  demean_rms1 new_contact_only_linear_head external_normal_only 115200_to_460800 window             NaN                NaN 12  0.000000       NaN external
+  demean_rms1 new_contact_only_linear_head           four_class 115200_to_460800   file             NaN                NaN  4  1.000000  1.000000    train
+  demean_rms1 new_contact_only_linear_head           four_class 115200_to_460800   file             NaN                NaN  4  1.000000  1.000000     test
+  demean_rms1 new_contact_only_linear_head external_normal_only 115200_to_460800   file             NaN                NaN  2  0.000000       NaN external
+  demean_rms1 new_contact_only_linear_head           four_class 460800_to_115200 window             NaN                NaN 26  1.000000  1.000000    train
+  demean_rms1 new_contact_only_linear_head           four_class 460800_to_115200 window             NaN                NaN 32  0.750000  0.693860     test
+  demean_rms1 new_contact_only_linear_head external_normal_only 460800_to_115200 window             NaN                NaN 12  0.833333       NaN external
+  demean_rms1 new_contact_only_linear_head           four_class 460800_to_115200   file             NaN                NaN  4  1.000000  1.000000    train
+  demean_rms1 new_contact_only_linear_head           four_class 460800_to_115200   file             NaN                NaN  4  0.750000  0.666667     test
+  demean_rms1 new_contact_only_linear_head external_normal_only 460800_to_115200   file             NaN                NaN  2  1.000000       NaN external

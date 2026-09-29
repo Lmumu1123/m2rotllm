@@ -1,0 +1,94 @@
+{
+  "stage": "A: radar encoder into unchanged pretrained FCN linear2",
+  "registered_before_results": true,
+  "contact_embedding": "retrained_fcn_fixed_external hidden_mean, nonnegative 128-dimensional post-ReLU, XYZ/reference averaging",
+  "contact_head": "released-code-seed42/pretrain/fcn/classifier.pth linear2 unchanged",
+  "group_order": [
+    "normal",
+    "inner",
+    "outer",
+    "ball"
+  ],
+  "group_indices": [
+    [
+      0
+    ],
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      7,
+      8,
+      9
+    ],
+    [
+      4,
+      5,
+      6
+    ]
+  ],
+  "group_logits": "logsumexp of original member logits, never mean weights",
+  "tasks": {
+    "four_class_provisional_roi": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "three_class_geometry_compatible": [
+      0,
+      1,
+      3
+    ]
+  },
+  "folds": "115200 to 460800 and reverse; entire contact/radar paired recording held out together",
+  "seeds": [
+    17,
+    42,
+    73
+  ],
+  "all_known_external_seed": 42,
+  "steps": 400,
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "gradient_clip": 5
+  },
+  "radar_windows_per_source_bag_step": 16,
+  "architecture": "input ->128 LayerNorm GELU dropout(0.1) ->64 GELU ->128; h=ReLU(source_contact_mean+source_contact_scale*z)",
+  "source_only_scalers": true,
+  "recording_equal_weight": true,
+  "variants": {
+    "embedding_only": "MSE",
+    "ce_only": "groupCE",
+    "ce_feat_0p1": "groupCE+0.1*MSE+0.1*contrast",
+    "ce_feat_1": "groupCE+MSE+0.1*contrast",
+    "ce_feat_10": "groupCE+10*MSE+0.1*contrast",
+    "ce_feat_1_kd": "groupCE+MSE+0.1*contrast+0.5*KD(T=2)",
+    "phase_ce_feat_1": "256-D spectrum+phase, groupCE+MSE+0.1*contrast",
+    "smooth_ce_feat_1": "fixed 5-Hz Gaussian log-spectral smoothing, groupCE+MSE+0.1*contrast"
+  },
+  "classification_scope": "four original groups retained even in three-class evaluation; outer false predictions are not renormalized away",
+  "feature_loss": "MSE between bag mean standardized radar h and source-contact bag mean standardized h",
+  "contrast": "source bag prototype cosine, temperature 0.2, same-class positives only",
+  "KD": "mean source-contact 10-class probabilities after logit division by T, sum groups; no deletion of wrong teacher predictions",
+  "reporting": [
+    "all variants, no target-based best-selection",
+    "file accuracy and macro-F1",
+    "raw and standardized embedding MSE/cosine",
+    "four-group true-class margin",
+    "external normal files, excluded from training",
+    "seed42 reloaded checkpoints"
+  ],
+  "limitations": [
+    "one source bag per class makes contrast essentially class-prototype supervision, not temporal alignment",
+    "linear2-input alignment alone can exploit head directions; geometry and embedding metrics needed",
+    "nonnegative outputs necessary but insufficient to establish true FCN feature manifold membership",
+    "outer/keep retain invalid approximately 0.884m ROI; ADC unavailable; never considered repaired",
+    "classifier supervision is permitted here and cannot be called unsupervised transfer",
+    "perfect embedding preservation necessarily preserves a teacher's wrong prediction"
+  ]
+}

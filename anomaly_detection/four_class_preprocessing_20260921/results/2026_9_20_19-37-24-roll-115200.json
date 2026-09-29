@@ -1,0 +1,393 @@
+{
+  "metadata": {
+    "file": "2026_9_20_19-37-24-roll-115200.DAT",
+    "recording_id": "2026_9_20_19-37-24-roll-115200",
+    "state": "roll",
+    "label": 3,
+    "baud_raw": "115200",
+    "baud_candidate": 115200,
+    "filename_start_local": "2026-09-20T19:37:24",
+    "timezone": "Asia/Shanghai",
+    "timestamp_semantics": "file start only; not packet sample time",
+    "condition_id": null,
+    "bearing_entity_id": null,
+    "independent_run_id": null,
+    "split": "unassigned",
+    "four_class_eligible": true
+  },
+  "windows": [
+    {
+      "file": "2026_9_20_19-37-24-roll-115200.DAT",
+      "recording_id": "2026_9_20_19-37-24-roll-115200",
+      "state": "roll",
+      "label": 3,
+      "baud_raw": "115200",
+      "baud_candidate": 115200,
+      "filename_start_local": "2026-09-20T19:37:24",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 1,
+      "byte_start": 80518,
+      "row": 0,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.5316871572889393,
+        0.28691011103832553,
+        0.48205952061735546
+      ],
+      "value_min": [
+        -1.998604,
+        -1.277706,
+        -1.998604
+      ],
+      "value_max": [
+        1.998604,
+        1.411479,
+        1.998604
+      ]
+    },
+    {
+      "file": "2026_9_20_19-37-24-roll-115200.DAT",
+      "recording_id": "2026_9_20_19-37-24-roll-115200",
+      "state": "roll",
+      "label": 3,
+      "baud_raw": "115200",
+      "baud_candidate": 115200,
+      "filename_start_local": "2026-09-20T19:37:24",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 2,
+      "byte_start": 219012,
+      "row": 1,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.515145157478883,
+        0.2503596965487153,
+        0.43215319575994393
+      ],
+      "value_min": [
+        -1.188646,
+        -0.839848,
+        -1.998604
+      ],
+      "value_max": [
+        0.9211,
+        0.708637,
+        0.150426
+      ]
+    },
+    {
+      "file": "2026_9_20_19-37-24-roll-115200.DAT",
+      "recording_id": "2026_9_20_19-37-24-roll-115200",
+      "state": "roll",
+      "label": 3,
+      "baud_raw": "115200",
+      "baud_candidate": 115200,
+      "filename_start_local": "2026-09-20T19:37:24",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 3,
+      "byte_start": 357559,
+      "row": 2,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.5246662912068794,
+        0.24956086492992335,
+        0.44465561645404905
+      ],
+      "value_min": [
+        -1.145458,
+        -0.840275,
+        -1.998604
+      ],
+      "value_max": [
+        0.997716,
+        0.698145,
+        0.190808
+      ]
+    },
+    {
+      "file": "2026_9_20_19-37-24-roll-115200.DAT",
+      "recording_id": "2026_9_20_19-37-24-roll-115200",
+      "state": "roll",
+      "label": 3,
+      "baud_raw": "115200",
+      "baud_candidate": 115200,
+      "filename_start_local": "2026-09-20T19:37:24",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 4,
+      "byte_start": 496098,
+      "row": 3,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.5205466329028222,
+        0.2515624067989645,
+        0.4420129864682276
+      ],
+      "value_min": [
+        -1.108736,
+        -0.874618,
+        -1.998604
+      ],
+      "value_max": [
+        0.961299,
+        0.6771,
+        0.17934
+      ]
+    },
+    {
+      "file": "2026_9_20_19-37-24-roll-115200.DAT",
+      "recording_id": "2026_9_20_19-37-24-roll-115200",
+      "state": "roll",
+      "label": 3,
+      "baud_raw": "115200",
+      "baud_candidate": 115200,
+      "filename_start_local": "2026-09-20T19:37:24",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 5,
+      "byte_start": 634688,
+      "row": 4,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.5218537210225648,
+        0.2529506136279363,
+        0.4397830785630013
+      ],
+      "value_min": [
+        -1.154425,
+        -0.831613,
+        -1.998604
+      ],
+      "value_max": [
+        1.015223,
+        0.694058,
+        0.16165
+      ]
+    },
+    {
+      "file": "2026_9_20_19-37-24-roll-115200.DAT",
+      "recording_id": "2026_9_20_19-37-24-roll-115200",
+      "state": "roll",
+      "label": 3,
+      "baud_raw": "115200",
+      "baud_candidate": 115200,
+      "filename_start_local": "2026-09-20T19:37:24",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 6,
+      "byte_start": 773198,
+      "row": 5,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.5309007080106193,
+        0.2600472272646105,
+        0.447375230557741
+      ],
+      "value_min": [
+        -1.142835,
+        -0.872727,
+        -1.998604
+      ],
+      "value_max": [
+        1.068049,
+        0.638304,
+        0.121512
+      ]
+    },
+    {
+      "file": "2026_9_20_19-37-24-roll-115200.DAT",
+      "recording_id": "2026_9_20_19-37-24-roll-115200",
+      "state": "roll",
+      "label": 3,
+      "baud_raw": "115200",
+      "baud_candidate": 115200,
+      "filename_start_local": "2026-09-20T19:37:24",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 7,
+      "byte_start": 911739,
+      "row": 6,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.5262319353112029,
+        0.2534370682588478,
+        0.43893161330703073
+      ],
+      "value_min": [
+        -1.104344,
+        -0.805383,
+        -1.998604
+      ],
+      "value_max": [
+        1.022787,
+        0.610732,
+        0.156465
+      ]
+    },
+    {
+      "file": "2026_9_20_19-37-24-roll-115200.DAT",
+      "recording_id": "2026_9_20_19-37-24-roll-115200",
+      "state": "roll",
+      "label": 3,
+      "baud_raw": "115200",
+      "baud_candidate": 115200,
+      "filename_start_local": "2026-09-20T19:37:24",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 8,
+      "byte_start": 1050248,
+      "row": 7,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.5242514309960143,
+        0.2501108036248566,
+        0.4437586125115027
+      ],
+      "value_min": [
+        -1.16754,
+        -0.807152,
+        -1.998604
+      ],
+      "value_max": [
+        1.021628,
+        0.619882,
+        0.209413
+      ]
+    },
+    {
+      "file": "2026_9_20_19-37-24-roll-115200.DAT",
+      "recording_id": "2026_9_20_19-37-24-roll-115200",
+      "state": "roll",
+      "label": 3,
+      "baud_raw": "115200",
+      "baud_candidate": 115200,
+      "filename_start_local": "2026-09-20T19:37:24",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 9,
+      "byte_start": 1188798,
+      "row": 8,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.5299281305486373,
+        0.24403316872294134,
+        0.44706306564581844
+      ],
+      "value_min": [
+        -1.1041,
+        -0.763598,
+        -1.962004
+      ],
+      "value_max": [
+        0.956236,
+        0.570411,
+        0.144326
+      ]
+    }
+  ],
+  "quality": {
+    "valid_syntax_rows": 40574,
+    "packet_starts_observed": 10,
+    "complete_packets": 9,
+    "issue_count": 2,
+    "issues": [
+      {
+        "byte": 0,
+        "reason": "invalid_record",
+        "token": ".795806"
+      },
+      {
+        "byte": 1372205,
+        "reason": "unterminated_tail",
+        "token": "1350,0.725961,0.161650,-"
+      }
+    ]
+  },
+  "rejected_complete_packets": [],
+  "units": "unconfirmed original sensor units",
+  "timing": "packet-relative only; packet gaps unknown",
+  "ready_for_reference_pairing": true
+}

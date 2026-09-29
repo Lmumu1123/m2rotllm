@@ -1,0 +1,62 @@
+{
+  "group_probability_max_error": 1.1920928955078125e-07,
+  "models": [
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_no_demean/models/four_class_provisional_roi/115200_to_460800/embedding_only.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_no_demean/models/four_class_provisional_roi/115200_to_460800/ce_only.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_no_demean/models/four_class_provisional_roi/115200_to_460800/ce_feat_1_kd.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_no_demean/models/four_class_provisional_roi/460800_to_115200/embedding_only.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_no_demean/models/four_class_provisional_roi/460800_to_115200/ce_only.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_no_demean/models/four_class_provisional_roi/460800_to_115200/ce_feat_1_kd.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_no_demean/models/four_class_provisional_roi/all_known/embedding_only.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_no_demean/models/four_class_provisional_roi/all_known/ce_only.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_no_demean/models/four_class_provisional_roi/all_known/ce_feat_1_kd.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    }
+  ],
+  "head_sha256": "885d03d3be3e6aef0966d1d74b305ca94f3cef1814467413af270bb02e9c3340",
+  "script_sha256": "6b95d412cc44af7fa23a35b3da01aede25a4bc9f8150b5e6c6af0744d165b342",
+  "wall_seconds": 11.595769882202148
+}

@@ -1,0 +1,290 @@
+{
+  "source_artifacts_still_unchanged": true,
+  "model_count": 36,
+  "saved_window_probability_and_metadata_checks_passed": true,
+  "bag_aggregation_max_probability_difference": 1.1102230246251565e-16,
+  "wrong_class_target_following": {
+    "correct": 1224,
+    "total": 1236,
+    "fraction": 0.9902912621359223
+  },
+  "independent_recordings": 8,
+  "independent_bearings_not_established": true,
+  "parent_archive_exact_replay": [
+    {
+      "method": "ce_only",
+      "n_matches": 6,
+      "mse_max_abs_difference": 0.0,
+      "cosine_max_abs_difference": 0.0,
+      "bag_accuracy_max_abs_difference": 0.0
+    },
+    {
+      "method": "matched_bag_mse",
+      "n_matches": 6,
+      "mse_max_abs_difference": 0.0,
+      "cosine_max_abs_difference": 0.0,
+      "bag_accuracy_max_abs_difference": 0.0
+    },
+    {
+      "method": "full",
+      "n_matches": 6,
+      "mse_max_abs_difference": 0.0,
+      "cosine_max_abs_difference": 0.0,
+      "bag_accuracy_max_abs_difference": 0.0
+    }
+  ],
+  "models": [
+    {
+      "path": "115200_to_460800__ce_only__seed17.npz",
+      "total_saved_windows": 614,
+      "train_windows": 212,
+      "test_windows": 200,
+      "all_test_windows_correct": true
+    },
+    {
+      "path": "115200_to_460800__ce_only__seed42.npz",
+      "total_saved_windows": 614,
+      "train_windows": 212,
+      "test_windows": 200,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "115200_to_460800__ce_only__seed73.npz",
+      "total_saved_windows": 614,
+      "train_windows": 212,
+      "test_windows": 200,
+      "all_test_windows_correct": true
+    },
+    {
+      "path": "115200_to_460800__full__seed17.npz",
+      "total_saved_windows": 614,
+      "train_windows": 212,
+      "test_windows": 200,
+      "all_test_windows_correct": true
+    },
+    {
+      "path": "115200_to_460800__full__seed42.npz",
+      "total_saved_windows": 614,
+      "train_windows": 212,
+      "test_windows": 200,
+      "all_test_windows_correct": true
+    },
+    {
+      "path": "115200_to_460800__full__seed73.npz",
+      "total_saved_windows": 614,
+      "train_windows": 212,
+      "test_windows": 200,
+      "all_test_windows_correct": true
+    },
+    {
+      "path": "115200_to_460800__label_code_ce_mse__seed17.npz",
+      "total_saved_windows": 614,
+      "train_windows": 212,
+      "test_windows": 200,
+      "all_test_windows_correct": true
+    },
+    {
+      "path": "115200_to_460800__label_code_ce_mse__seed42.npz",
+      "total_saved_windows": 614,
+      "train_windows": 212,
+      "test_windows": 200,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "115200_to_460800__label_code_ce_mse__seed73.npz",
+      "total_saved_windows": 614,
+      "train_windows": 212,
+      "test_windows": 200,
+      "all_test_windows_correct": true
+    },
+    {
+      "path": "115200_to_460800__label_code_mse__seed17.npz",
+      "total_saved_windows": 614,
+      "train_windows": 212,
+      "test_windows": 200,
+      "all_test_windows_correct": true
+    },
+    {
+      "path": "115200_to_460800__label_code_mse__seed42.npz",
+      "total_saved_windows": 614,
+      "train_windows": 212,
+      "test_windows": 200,
+      "all_test_windows_correct": true
+    },
+    {
+      "path": "115200_to_460800__label_code_mse__seed73.npz",
+      "total_saved_windows": 614,
+      "train_windows": 212,
+      "test_windows": 200,
+      "all_test_windows_correct": true
+    },
+    {
+      "path": "115200_to_460800__matched_bag_mse__seed17.npz",
+      "total_saved_windows": 614,
+      "train_windows": 212,
+      "test_windows": 200,
+      "all_test_windows_correct": true
+    },
+    {
+      "path": "115200_to_460800__matched_bag_mse__seed42.npz",
+      "total_saved_windows": 614,
+      "train_windows": 212,
+      "test_windows": 200,
+      "all_test_windows_correct": true
+    },
+    {
+      "path": "115200_to_460800__matched_bag_mse__seed73.npz",
+      "total_saved_windows": 614,
+      "train_windows": 212,
+      "test_windows": 200,
+      "all_test_windows_correct": true
+    },
+    {
+      "path": "115200_to_460800__wrong_class_mse__seed17.npz",
+      "total_saved_windows": 614,
+      "train_windows": 212,
+      "test_windows": 200,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "115200_to_460800__wrong_class_mse__seed42.npz",
+      "total_saved_windows": 614,
+      "train_windows": 212,
+      "test_windows": 200,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "115200_to_460800__wrong_class_mse__seed73.npz",
+      "total_saved_windows": 614,
+      "train_windows": 212,
+      "test_windows": 200,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "460800_to_115200__ce_only__seed17.npz",
+      "total_saved_windows": 614,
+      "train_windows": 200,
+      "test_windows": 212,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "460800_to_115200__ce_only__seed42.npz",
+      "total_saved_windows": 614,
+      "train_windows": 200,
+      "test_windows": 212,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "460800_to_115200__ce_only__seed73.npz",
+      "total_saved_windows": 614,
+      "train_windows": 200,
+      "test_windows": 212,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "460800_to_115200__full__seed17.npz",
+      "total_saved_windows": 614,
+      "train_windows": 200,
+      "test_windows": 212,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "460800_to_115200__full__seed42.npz",
+      "total_saved_windows": 614,
+      "train_windows": 200,
+      "test_windows": 212,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "460800_to_115200__full__seed73.npz",
+      "total_saved_windows": 614,
+      "train_windows": 200,
+      "test_windows": 212,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "460800_to_115200__label_code_ce_mse__seed17.npz",
+      "total_saved_windows": 614,
+      "train_windows": 200,
+      "test_windows": 212,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "460800_to_115200__label_code_ce_mse__seed42.npz",
+      "total_saved_windows": 614,
+      "train_windows": 200,
+      "test_windows": 212,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "460800_to_115200__label_code_ce_mse__seed73.npz",
+      "total_saved_windows": 614,
+      "train_windows": 200,
+      "test_windows": 212,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "460800_to_115200__label_code_mse__seed17.npz",
+      "total_saved_windows": 614,
+      "train_windows": 200,
+      "test_windows": 212,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "460800_to_115200__label_code_mse__seed42.npz",
+      "total_saved_windows": 614,
+      "train_windows": 200,
+      "test_windows": 212,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "460800_to_115200__label_code_mse__seed73.npz",
+      "total_saved_windows": 614,
+      "train_windows": 200,
+      "test_windows": 212,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "460800_to_115200__matched_bag_mse__seed17.npz",
+      "total_saved_windows": 614,
+      "train_windows": 200,
+      "test_windows": 212,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "460800_to_115200__matched_bag_mse__seed42.npz",
+      "total_saved_windows": 614,
+      "train_windows": 200,
+      "test_windows": 212,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "460800_to_115200__matched_bag_mse__seed73.npz",
+      "total_saved_windows": 614,
+      "train_windows": 200,
+      "test_windows": 212,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "460800_to_115200__wrong_class_mse__seed17.npz",
+      "total_saved_windows": 614,
+      "train_windows": 200,
+      "test_windows": 212,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "460800_to_115200__wrong_class_mse__seed42.npz",
+      "total_saved_windows": 614,
+      "train_windows": 200,
+      "test_windows": 212,
+      "all_test_windows_correct": false
+    },
+    {
+      "path": "460800_to_115200__wrong_class_mse__seed73.npz",
+      "total_saved_windows": 614,
+      "train_windows": 200,
+      "test_windows": 212,
+      "all_test_windows_correct": false
+    }
+  ]
+}

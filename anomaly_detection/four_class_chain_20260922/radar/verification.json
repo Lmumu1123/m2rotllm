@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "rows": 614,
+  "four_class_rows": 412,
+  "unique_bags": 12,
+  "input_npz_and_sidecar_sha256_unchanged": true,
+  "finite_shape_features": true,
+  "feature_row_to_bag_mapping_valid": true,
+  "within_frame_known_tone_hz": 100,
+  "recovered_peak_hz": 100.0,
+  "artificial_frame_signs": "alternating; power remains valid",
+  "limitations": [
+    "not a hardware parser or packet-loss validation",
+    "does not certify correct physical ROI or synchronized clocks"
+  ]
+}

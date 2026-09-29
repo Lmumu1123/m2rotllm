@@ -1,0 +1,47 @@
+{
+  "created_utc": "2026-09-24T02:08:36.293655+00:00",
+  "task": "Frozen Bear radar encoders -> contact-only affine conversion -> frozen local UniFault four-class head",
+  "teacher_variant": "predeclared paper_100ms; official UniFault Tiny pretrained backbone frozen",
+  "mapping": "Same TRAIN contact windows, recording-balanced source and target StandardScaler, Ridge(alpha=1,solver=svd)",
+  "mapping_labels_used": false,
+  "mapping_radar_used": false,
+  "mapping_heldout_contact_used": false,
+  "mapping_output": "signed affine output; NO ReLU or clipping, because UniFault features are signed",
+  "folds": [
+    "115200_to_460800",
+    "460800_to_115200"
+  ],
+  "radar_methods": [
+    "ce_only",
+    "matched_bag_mse",
+    "full",
+    "label_code_mse",
+    "label_code_ce_mse",
+    "wrong_class_mse"
+  ],
+  "seeds": [
+    17,
+    42,
+    73
+  ],
+  "radar_retraining": false,
+  "head_training": false,
+  "trained_artifacts": "Exactly two contact-only affine mappings",
+  "radar_input": "existing geometry-corrected frame_shape 128; replay original saved radar scaler and weights",
+  "head": "existing per-fold UniFault local-contact-trained four-class head; its StandardScaler is already folded into weight4/bias4",
+  "native_wording": "native_Uni_contact means direct Uni FEATURES with the local FOUR-CLASS head, not original 16-way head",
+  "primary_metrics": "All fixed methods, per-window and mean-probability recording accuracy/macro-F1; no selection",
+  "secondary_metrics": "recording-mean standardized feature MSE/cosine against true heldout Uni contact features",
+  "inference_verification": "Reload and run all 36 frozen radar checkpoints; compare against archived hidden arrays",
+  "test_status": "Previously inspected development recordings, not new blind data",
+  "physical_units": "8 main recordings, 58 contact windows, 412 radar windows; seeds do not increase physical sample size",
+  "restrictions": [
+    "No same-class multiple-training-recording evidence",
+    "One physical bearing per class",
+    "No proof of class-beyond knowledge or unseen-fault recognition",
+    "New four-class Uni head has local label supervision; original public-task retention not established",
+    "Old saved controls mention invalid ROI historically; actual inputs here are v2 geometry_corrected"
+  ],
+  "no_hyperparameter_search": true,
+  "script_sha256": "40eb94dab8da4e1c0f64241b1e313d26043279bdf47c341a5cdb29d68b1a6914"
+}

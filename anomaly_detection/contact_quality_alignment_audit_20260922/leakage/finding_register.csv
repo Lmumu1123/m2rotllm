@@ -1,0 +1,14 @@
+id,classification,finding,evidence,scope
+S1,明确跨划分输入共享,原train输入中的健康reference包括6690个test-query ID和13425个val-query ID；健康身份参与reference选择,source_reference_cross_split.csv,继承MBHM原协议；不是local代码把目标故障标签喂入模型
+S2,明确完全重复,全源600组1504行DCN完全相同；148组299行跨划分；31个test和92个val query与train query逐字节相同,source_train_eval_duplicate_counts.json; source_cross_split_exact_duplicate_rows.json,已发布DCN输入层；不等于已经定位原始长录制来源
+S3,明确同工况共享,257/257个test condition在train出现，原split为query序号模10,source_split_statistics.csv,不支持未见condition泛化；是否定义为泄漏取决于任务声明
+S4,明确回放参考共享,1174 train query的3522对输入含340次test reference、715次val reference；另14次self-reference,source_replay_reference_summary.csv,query train-only成立；原始信号完全train-only不成立
+S5,明确测试重复使用,保守版本约束由查看v1 old-test子数据集退化后加强；之后再次用同一test回归,retention_alignment_20260922/scripts/refine_retention.py:3,各轮内部候选仍按train+val排序，但不能称第二轮新盲测
+S6,未知原始派生边界,无原始录制ID、实体序列号或窗口起止样本；DCN字节不同不能排除原始时间重叠/相邻同实体窗口,preliminary_summary.json; source_duplicate_summary.json,不能给原始数据实体独立性保证
+L1,明确实体共享,同类两次录制为同一轴承，同一主电机/台架；两fold只能称录制留出,local_split_membership.json; 用户确认,不自动等于录制分类任务代码泄漏，但不符合新轴承/新电机留出
+L2,未发现直接本地划分泄漏,train/test bag和窗口行不相交；同一配对contact/radar同步留出；外部样本未进入拟合,local_split_membership.json,仅所审计当前两fold实现，不扩展到旧MBHM
+L3,未发现scaler目标拟合,source scaler、contact/radar学生scaler均可由训练行独立精确重建,scaler_reconstruction.csv,当前代码和保存模型；不是数据实体独立证明
+L4,未发现本地exact复制,24 NPZ文件、88接触窗口、614雷达窗口和12280导出IQ帧没有exact重复；单文件帧区间无交叠,local_exact_duplicates.json; local_file_hashes.csv,原始DAT/bin未在本地，仍不能追溯跨文件原始样本/近重复
+L5,明确几何混杂,外圈/keep保留约0.884m距离门而实际40余cm；类别与几何关联,前轮radar/metadata.csv及用户距离确认,质量/混杂问题；不是证明代码直接读取测试标签
+L6,明确额外校准共享,local_healthy_reference辅助实验用另一个波特率normal录制作reference；其normal也在8个query中,preprocessing/local_healthy_reference/reference_manifest.json,不可混入主零校准CV；当前主head未使用该辅助特征
+L7,明确开发集重复评估,同8个本地录制与bigNormal已在多轮方法设计/错误分析中反复查看,前轮posthoc周期归一化及本轮保守开发过程,未发现目标标签进入当前loss，不代表完全未接触的最终盲测

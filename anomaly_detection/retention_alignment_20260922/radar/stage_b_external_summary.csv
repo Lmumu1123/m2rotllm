@@ -1,0 +1,7 @@
+variant,method,n,healthy_correct,normal_probability_mean
+query_no_demean,ce_feat_1_kd,2,0,0.053330931812524754
+query_no_demean,ce_only,2,0,0.00606486469041555
+query_no_demean,embedding_only,2,0,0.0920363366603851
+v0,ce_feat_1_kd,2,0,0.053714448586106245
+v0,ce_only,2,0,0.00456822756677865
+v0,embedding_only,2,0,0.08005489781498905

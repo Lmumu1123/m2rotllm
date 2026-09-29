@@ -1,0 +1,11 @@
+accelerate==1.4.0
+cachetools==7.2.0
+h5pickle==0.4.2
+h5py==3.16.0
+huggingface_hub==0.36.2
+numpy==1.26.0
+peft==0.15.2
+python-dotenv==1.0.1
+scipy==1.15.2
+tokenizers==0.21.4
+transformers==4.49.0

@@ -1,0 +1,88 @@
+[
+  {
+    "name": "baud_115200_to_460800",
+    "status": "exploratory_file_groups_not_verified_independent_runs",
+    "train_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-190512-outBroken-115200",
+      "20260920-192216-inBroken-115200",
+      "20260920-193718-roll-115200"
+    ],
+    "test_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-190913-outBroken-460800",
+      "20260920-192610-inBroken-460800",
+      "20260920-194108-roll-460800"
+    ],
+    "train_contact_files": [
+      "2026_9_20_18-41-41-normal-115200.npz",
+      "2026_9_20_19-05-05-outBroken-115200.npz",
+      "2026_9_20_19-22-20-inBroken-115200.npz",
+      "2026_9_20_19-37-24-roll-115200.npz"
+    ],
+    "test_contact_files": [
+      "2026_9_20_18-48-45-normal-460800.npz",
+      "2026_9_20_19-09-18-outBroken-460800.npz",
+      "2026_9_20_19-26-17-inBroken-460800.npz",
+      "2026_9_20_19-41-02-roll-460800.npz"
+    ],
+    "train_radar_files": [
+      "20260920-184058-normal-11520.npz",
+      "20260920-190512-outBroken-115200.npz",
+      "20260920-192216-inBroken-115200.npz",
+      "20260920-193718-roll-115200.npz"
+    ],
+    "test_radar_files": [
+      "20260920-184857-normal-460800.npz",
+      "20260920-190913-outBroken-460800.npz",
+      "20260920-192610-inBroken-460800.npz",
+      "20260920-194108-roll-460800.npz"
+    ],
+    "normal_training_query_with_no_independent_in_training_normal_reference": [
+      "2026_9_20_18-41-41-normal-115200.npz"
+    ]
+  },
+  {
+    "name": "baud_460800_to_115200",
+    "status": "exploratory_file_groups_not_verified_independent_runs",
+    "train_bags": [
+      "20260920-184857-normal-460800",
+      "20260920-190913-outBroken-460800",
+      "20260920-192610-inBroken-460800",
+      "20260920-194108-roll-460800"
+    ],
+    "test_bags": [
+      "20260920-184058-normal-11520",
+      "20260920-190512-outBroken-115200",
+      "20260920-192216-inBroken-115200",
+      "20260920-193718-roll-115200"
+    ],
+    "train_contact_files": [
+      "2026_9_20_18-48-45-normal-460800.npz",
+      "2026_9_20_19-09-18-outBroken-460800.npz",
+      "2026_9_20_19-26-17-inBroken-460800.npz",
+      "2026_9_20_19-41-02-roll-460800.npz"
+    ],
+    "test_contact_files": [
+      "2026_9_20_18-41-41-normal-115200.npz",
+      "2026_9_20_19-05-05-outBroken-115200.npz",
+      "2026_9_20_19-22-20-inBroken-115200.npz",
+      "2026_9_20_19-37-24-roll-115200.npz"
+    ],
+    "train_radar_files": [
+      "20260920-184857-normal-460800.npz",
+      "20260920-190913-outBroken-460800.npz",
+      "20260920-192610-inBroken-460800.npz",
+      "20260920-194108-roll-460800.npz"
+    ],
+    "test_radar_files": [
+      "20260920-184058-normal-11520.npz",
+      "20260920-190512-outBroken-115200.npz",
+      "20260920-192216-inBroken-115200.npz",
+      "20260920-193718-roll-115200.npz"
+    ],
+    "normal_training_query_with_no_independent_in_training_normal_reference": [
+      "2026_9_20_18-48-45-normal-460800.npz"
+    ]
+  }
+]

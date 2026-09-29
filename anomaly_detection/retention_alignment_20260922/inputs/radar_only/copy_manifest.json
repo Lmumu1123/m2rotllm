@@ -1,0 +1,17 @@
+[
+  {
+    "source": "/home/huangyating/anomaly_detection/four_class_chain_20260922/results/radar_only_demo_inputs/features.npz",
+    "copy": "/home/huangyating/anomaly_detection/retention_alignment_20260922/inputs/radar_only/features.npz",
+    "sha256": "aaa9863247d8bf8c88493fd8982ec2adc1b8e870d20cb82562eeb2e6ae7171e9"
+  },
+  {
+    "source": "/home/huangyating/anomaly_detection/four_class_chain_20260922/results/radar_only_demo_inputs/metadata.csv",
+    "copy": "/home/huangyating/anomaly_detection/retention_alignment_20260922/inputs/radar_only/metadata.csv",
+    "sha256": "35677c54f3579d3bf7d6d6854a38100757d10547218245f549d60d93a0cec41e"
+  },
+  {
+    "source": "/home/huangyating/anomaly_detection/four_class_chain_20260922/results/radar_only_demo_inputs/README.txt",
+    "copy": "/home/huangyating/anomaly_detection/retention_alignment_20260922/inputs/radar_only/README.txt",
+    "sha256": "488615cb5c167c57d37146a4881f283ea9fdfac6c069ec08d77d9fd8a0e47ca8"
+  }
+]

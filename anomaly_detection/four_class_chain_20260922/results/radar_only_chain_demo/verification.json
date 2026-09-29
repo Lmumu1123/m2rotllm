@@ -1,0 +1,24 @@
+{
+  "radar_only_probability_comparison_max_abs_difference": 1.0768351321743808e-08,
+  "tolerance": 1e-05,
+  "matching_records": 12,
+  "feature_shape": [
+    614,
+    128
+  ],
+  "feature_keys": [
+    "frame_shape"
+  ],
+  "metadata_columns": [
+    "bag_id",
+    "range_center_m",
+    "intended_distance_m",
+    "geometry_roi_mismatch"
+  ],
+  "no_label_or_state_or_contact_inputs": true,
+  "accuracy_and_f1_not_reported": true,
+  "missing_or_partial_geometry_remains_unverified": true,
+  "nonempty_output_rejected": true,
+  "historical_llm_outputs_unchanged": true,
+  "demonstration_contains_training_recordings_not_evaluation": true
+}

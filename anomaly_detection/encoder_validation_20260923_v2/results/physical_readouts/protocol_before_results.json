@@ -1,0 +1,39 @@
+{
+  "purpose": "falsifiable check for information beyond class prototypes, not automatic proof of rich knowledge",
+  "teacher_spaces": [
+    "Bear128",
+    "Rot128",
+    "third official pretrained teacher if input contract is valid"
+  ],
+  "targets": [
+    "log RMS of XYZ-averaged 20-800Hz band-limited acceleration",
+    "log crest factor of the same signal",
+    "log Pearson kurtosis of the same signal",
+    "power fraction 20-200Hz",
+    "power fraction 200-400Hz",
+    "power fraction 400-800Hz"
+  ],
+  "filter": "per-axis fourth-order Butterworth 20-800Hz SOS zero-phase at verified 4000Hz; remove per-axis mean; discard first and last 0.1 seconds for descriptor computation",
+  "spectral_descriptor": "Welch 512-point segments on trimmed band-passed window, integrate PSD in fixed intervals, average axis powers before ratios",
+  "readout_fit": "recording-balanced contact TRAIN windows only, StandardScaler on hidden and targets, multioutput Ridge alpha10, fixed in advance",
+  "evaluation": "contact window/recording error first; then radar recording mean of readout predictions; no instantaneous cross-modal pairing assumed",
+  "baselines": [
+    "training-global constant",
+    "oracle true-class training contact descriptor mean",
+    "oracle true-class training teacher embedding mean passed through readout",
+    "artificial-code student",
+    "CE-only student"
+  ],
+  "primary_metric": "MAE divided by TRAIN target std, equal recording weighting; R2 and rank diagnostics descriptive only with 8 records",
+  "gate": "do not interpret a radar target as successfully transferred if heldout contact readout is not better than the class-only baseline for that target",
+  "limitations": [
+    "window length mismatch",
+    "contact data are intermittent within radar recordings",
+    "amplitude readouts may reflect mounting/gain rather than failure",
+    "only class-level training bags prevent identifying detailed within-class correspondence"
+  ],
+  "descriptor_axis_rule": "RMS pooled across time/XYZ; crest and Pearson kurtosis averaged across axes before natural log; Welch axis powers averaged before band ratios",
+  "alpha": 10.0,
+  "oracle_baseline_uses_true_test_class": true,
+  "physical_descriptor_targets_not_fault_severity": true
+}

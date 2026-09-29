@@ -1,0 +1,23 @@
+{
+  "primary_target_variant": "raw_rms001",
+  "map": "contact training only: recording-balanced StandardScaler for both spaces, Ridge alpha=1",
+  "output_constraint": "ReLU applied to mapped hidden because both native penultimate spaces are nonnegative",
+  "head_policies": [
+    "untouched native 15-way head with explicit bearing-conditioned output",
+    "separate contact-trained 4-way readout"
+  ],
+  "ridge_alpha": 1.0,
+  "no_hyperparameter_or_method_selection": true,
+  "radar_encoder_retrained": false,
+  "map_uses_class_labels": false,
+  "map_uses_radar": false,
+  "new_four_class_head_used_local_contact_labels": true,
+  "states": "all methods and seeds from BearLLM-only control training; no RotLLM feature or score informed their losses",
+  "aggregation": "head(mean across contact axes) per short contact window, then mean probabilities over each recording; radar likewise per-window probabilities",
+  "caveats": [
+    "same previously inspected 8 recordings",
+    "outer radar ROI invalid",
+    "not a new-task test",
+    "contact readout has seen local training labels"
+  ]
+}

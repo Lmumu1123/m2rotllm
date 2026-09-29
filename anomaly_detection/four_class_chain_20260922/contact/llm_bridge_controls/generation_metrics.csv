@@ -1,0 +1,3 @@
+method,n,labelled_n,accuracy,macro_f1,probability_fidelity,unparseable,truncated
+oracle_coarse_onehot,4,4,1.0,1.0,1.0,0,0
+original_contact_fcn_bridge,12,8,0.25,0.1,1.0,0,0

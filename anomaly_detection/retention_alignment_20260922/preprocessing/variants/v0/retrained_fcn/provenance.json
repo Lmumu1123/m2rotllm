@@ -1,0 +1,15 @@
+{
+  "kind": "retrained_fcn",
+  "weights": {
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/pretrain/fcn/feature_encoder.pth": "e7322e179238ab5edf779830c2be562e2a0d613ac1285c4ccdb35080cc97f84e",
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/pretrain/fcn/classifier.pth": "885d03d3be3e6aef0966d1d74b305ca94f3cef1814467413af270bb02e9c3340"
+  },
+  "lora_merged": false,
+  "query_demean": true,
+  "reference_demean": false,
+  "reference_bandlimit": false,
+  "source_script_sha256": "4f72ae97e30be9d3f7d499b93acb8759bc70265dfc86276470042cd54a77bcbf",
+  "elapsed_s": 0.5196803528815508,
+  "model_weights_and_bn_frozen": true,
+  "no_label_used_for_prediction": true
+}

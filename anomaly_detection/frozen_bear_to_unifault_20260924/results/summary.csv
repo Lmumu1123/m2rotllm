@@ -1,0 +1,17 @@
+path,method,unit,correct_repeated,n_repeated,accuracy,macro_f1_seed_mean,accuracy_seed_std,seeds,unique_main_recordings,unique_main_windows
+Bear_contact_mapped_to_Uni_local4,none,recording,8,8,1.0,1.0,0.0,1,8,58
+Bear_contact_mapped_to_Uni_local4,none,window,55,58,0.9482758620689655,0.939401455026455,0.0,1,8,58
+direct_Uni_contact_local4,none,recording,8,8,1.0,1.0,0.0,1,8,58
+direct_Uni_contact_local4,none,window,58,58,1.0,1.0,0.0,1,8,58
+frozen_Bear_radar_mapped_to_Uni_local4,ce_only,recording,22,24,0.9166666666666666,0.9111111111111111,0.05892556509887896,3,8,412
+frozen_Bear_radar_mapped_to_Uni_local4,ce_only,window,1161,1236,0.9393203883495146,0.939687053604362,0.029989891574191956,3,8,412
+frozen_Bear_radar_mapped_to_Uni_local4,full,recording,24,24,1.0,1.0,0.0,3,8,412
+frozen_Bear_radar_mapped_to_Uni_local4,full,window,1235,1236,0.9991909385113269,0.999208973464996,0.0011441857300753192,3,8,412
+frozen_Bear_radar_mapped_to_Uni_local4,label_code_ce_mse,recording,24,24,1.0,1.0,0.0,3,8,412
+frozen_Bear_radar_mapped_to_Uni_local4,label_code_ce_mse,window,1190,1236,0.9627831715210357,0.9629895307757281,0.006959810086604064,3,8,412
+frozen_Bear_radar_mapped_to_Uni_local4,label_code_mse,recording,24,24,1.0,1.0,0.0,3,8,412
+frozen_Bear_radar_mapped_to_Uni_local4,label_code_mse,window,1175,1236,0.9506472491909385,0.951178038351606,0.008009300110527234,3,8,412
+frozen_Bear_radar_mapped_to_Uni_local4,matched_bag_mse,recording,24,24,1.0,1.0,0.0,3,8,412
+frozen_Bear_radar_mapped_to_Uni_local4,matched_bag_mse,window,1234,1236,0.9983818770226537,0.9984179469299922,0.0011441857300753192,3,8,412
+frozen_Bear_radar_mapped_to_Uni_local4,wrong_class_mse,recording,0,24,0.0,0.0,0.0,3,8,412
+frozen_Bear_radar_mapped_to_Uni_local4,wrong_class_mse,window,3,1236,0.0024271844660194173,0.0024509803921568627,0.003432557190225959,3,8,412

@@ -1,0 +1,9 @@
+Hash verified=True: .gitattributes
+Hash verified=True: README.md
+Hash verified=True: corpus.json
+Hash verified=True: demo_data.json
+Hash verified=True: metadata.parquet
+Hash verified=True: metadata.sqlite
+Hash verified=True: src/dcn.py
+Hash verified=True: src/demo.py
+Audit passed=True; report=outputs/data_setup/mbhm_metadata_audit.json

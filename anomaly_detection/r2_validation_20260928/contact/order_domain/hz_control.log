@@ -1,0 +1,5 @@
+holdout_rpm                         method   level   n  correct  accuracy  macro_f1  balanced_accuracy                                                   confusion_matrix
+ pooled_oof xyz_concat_fixed_hz_RBF_SVM_C1  packet 343      154  0.448980  0.422464           0.490814 [[48, 110, 4, 11], [19, 29, 0, 0], [0, 0, 73, 0], [15, 19, 11, 4]]
+ pooled_oof xyz_concat_fixed_hz_RBF_SVM_C1 session  12        7  0.583333  0.500000           0.583333           [[2, 1, 0, 0], [1, 2, 0, 0], [0, 0, 3, 0], [1, 1, 1, 0]]
+ pooled_oof  xy_concat_fixed_hz_RBF_SVM_C1  packet 343      158  0.460641  0.432592           0.496594  [[52, 110, 2, 9], [19, 29, 0, 0], [0, 0, 73, 0], [15, 19, 11, 4]]
+ pooled_oof  xy_concat_fixed_hz_RBF_SVM_C1 session  12        7  0.583333  0.500000           0.583333           [[2, 1, 0, 0], [1, 2, 0, 0], [0, 0, 3, 0], [1, 1, 1, 0]]

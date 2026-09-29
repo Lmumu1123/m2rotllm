@@ -1,0 +1,28 @@
+[
+  {
+    "fold": "115200_to_460800",
+    "class_train_bag_counts": {
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1
+    },
+    "matched_vs_class_prototype_max_abs": 0.0,
+    "class_prototype_loss_and_gradients_identical_for_every_possible_student_output": true,
+    "same_class_cross_recording_shuffle": "not possible with one training recording per class",
+    "within_class_cross_recording_CKA": "not defined; no result computed"
+  },
+  {
+    "fold": "460800_to_115200",
+    "class_train_bag_counts": {
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1
+    },
+    "matched_vs_class_prototype_max_abs": 0.0,
+    "class_prototype_loss_and_gradients_identical_for_every_possible_student_output": true,
+    "same_class_cross_recording_shuffle": "not possible with one training recording per class",
+    "within_class_cross_recording_CKA": "not defined; no result computed"
+  }
+]

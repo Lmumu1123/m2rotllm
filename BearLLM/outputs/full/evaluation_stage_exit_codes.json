@@ -1,0 +1,51 @@
+{
+  "unit_tests": {
+    "exit_code": 0,
+    "passed": 8,
+    "log": "outputs/full/evaluation_tests.log"
+  },
+  "equivalence": {
+    "exit_code": 0,
+    "artifact": "outputs/full/evaluation_equivalence.json"
+  },
+  "demo": {
+    "exit_code": 0,
+    "runtime": "outputs/full/demo_runtime_m2vllm.json"
+  },
+  "formal_stages": {
+    "main_and_corpus": {
+      "exit_code": 0,
+      "status": "complete",
+      "smoke_test_only": false,
+      "elapsed_seconds_this_session": 539.9266250380315,
+      "python": "3.12.14 (main, Sep  2 2026, 23:27:36) [GCC 15.3.0]",
+      "torch": "2.11.0+cu128",
+      "cuda": "12.8",
+      "device": "NVIDIA RTX PRO 5000 72GB Blackwell"
+    },
+    "fallback": {
+      "exit_code": 0,
+      "status": "complete",
+      "smoke_test_only": false,
+      "elapsed_seconds_this_session": 55.17646961985156,
+      "python": "3.12.14 (main, Sep  2 2026, 23:27:36) [GCC 15.3.0]",
+      "torch": "2.11.0+cu128",
+      "cuda": "12.8",
+      "device": "NVIDIA RTX PRO 5000 72GB Blackwell"
+    },
+    "test_generation": {
+      "exit_code": 0,
+      "status": "complete",
+      "smoke_test_only": false,
+      "elapsed_seconds_this_session": 186.7485872185789,
+      "python": "3.12.14 (main, Sep  2 2026, 23:27:36) [GCC 15.3.0]",
+      "torch": "2.11.0+cu128",
+      "cuda": "12.8",
+      "device": "NVIDIA RTX PRO 5000 72GB Blackwell"
+    }
+  },
+  "superseded_partial_corpus": {
+    "exit_code": 130,
+    "reason": "Intentional SIGINT for batch4-to-batch16 throughput change; partial corpus archived and all600 regenerated; finished vibration outputs retained unchanged."
+  }
+}

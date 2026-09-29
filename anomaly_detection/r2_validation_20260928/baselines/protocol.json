@@ -1,0 +1,129 @@
+{
+  "protocol": "fixed_leave_one_RPM_out_v1",
+  "held_out_rpms": [
+    1000,
+    2000,
+    3000
+  ],
+  "labels": [
+    "normal",
+    "inBroken",
+    "outBroken",
+    "roll"
+  ],
+  "methods": [
+    [
+      "complex_shape",
+      "linear_svc"
+    ],
+    [
+      "complex_shape",
+      "rbf_svc"
+    ],
+    [
+      "complex_shape",
+      "knn5_distance"
+    ],
+    [
+      "complex_shape",
+      "random_forest"
+    ],
+    [
+      "phase_shape",
+      "rbf_svc"
+    ],
+    [
+      "geometry_complex_shape",
+      "rbf_svc"
+    ],
+    [
+      "nuisance",
+      "rbf_svc"
+    ]
+  ],
+  "hyperparameter_search": "none",
+  "model_parameters": {
+    "linear_svc": {
+      "C": 1,
+      "class_weight": "balanced",
+      "dual": "auto",
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "loss": "squared_hinge",
+      "max_iter": 20000,
+      "multi_class": "ovr",
+      "penalty": "l2",
+      "random_state": 42,
+      "tol": 0.0001,
+      "verbose": 0
+    },
+    "rbf_svc": {
+      "C": 1,
+      "break_ties": false,
+      "cache_size": 200,
+      "class_weight": null,
+      "coef0": 0.0,
+      "decision_function_shape": "ovr",
+      "degree": 3,
+      "gamma": "scale",
+      "kernel": "rbf",
+      "max_iter": -1,
+      "probability": false,
+      "random_state": null,
+      "shrinking": true,
+      "tol": 0.001,
+      "verbose": false
+    },
+    "knn5_distance": {
+      "algorithm": "auto",
+      "leaf_size": 30,
+      "metric": "minkowski",
+      "metric_params": null,
+      "n_jobs": 2,
+      "n_neighbors": 5,
+      "p": 2,
+      "weights": "distance"
+    },
+    "random_forest": {
+      "bootstrap": true,
+      "ccp_alpha": 0.0,
+      "class_weight": "balanced",
+      "criterion": "gini",
+      "max_depth": null,
+      "max_features": "sqrt",
+      "max_leaf_nodes": null,
+      "max_samples": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 1,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "n_estimators": 300,
+      "n_jobs": 2,
+      "oob_score": false,
+      "random_state": 42,
+      "verbose": 0,
+      "warm_start": false
+    }
+  },
+  "scaler": "StandardScaler fitted only on training windows; each recording equal total weight",
+  "fit_weights": "each training recording equal total weight, normalized mean sample weight 1; KNN cannot accept fit sample_weight",
+  "record_prediction": "argmax arithmetic mean of window class scores; SVM uses softmax of OVR margins, not calibrated probabilities",
+  "window_prediction": "standard classifier.predict; recording SVM score aggregation may resolve ties differently from individual predict votes",
+  "group_isolation": "held-out RPM removes all four associated contact sessions from training",
+  "original_windows": "all retained; no quality-based filtering",
+  "quality_control_features": [
+    "nominal_duration_s",
+    "nominal_center_minus_declared_m",
+    "adc_near_limit_fraction",
+    "pilot_negative_positive_ratio",
+    "edge"
+  ],
+  "quality_control_classifier": "RBF SVC C=1 gamma=scale, record-level StandardScaler fitted on train only",
+  "limitations": [
+    "single collection day; repeat independence unverified",
+    "not contact-model inference; these are radar-only baselines",
+    "post-acquisition development evaluation; not a sealed final benchmark"
+  ],
+  "sklearn_version": "1.6.1"
+}

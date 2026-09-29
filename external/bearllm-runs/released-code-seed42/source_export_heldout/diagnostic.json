@@ -1,0 +1,255 @@
+{
+  "diagnostic": "原仓库保存方式对照（恢复初始BN）",
+  "verified": true,
+  "verified_at_utc": "2026-09-18T18:59:53.799723+00:00",
+  "checks": {
+    "diagnostic_process_exit_zero": true,
+    "full_12279_test_queries_completed": true,
+    "identical_evaluation_configuration_except_base_adapter": true,
+    "identical_heldout_protocol": true,
+    "main_weights_hashes_unchanged": true,
+    "diagnostic_weights_hashes_unchanged": true,
+    "lora_hash_identical_to_main": true,
+    "diagnostic_bn_is_exact_original_initializer": true,
+    "unique_query_ids": true,
+    "identical_queries_references_labels_order": true
+  },
+  "weight_manifest": {
+    "diagnostic": "原仓库保存方式对照（恢复初始BN）",
+    "created_at_utc": "2026-09-18T18:55:31.763201+00:00",
+    "source_initial_vibration_adapter": "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/finetune/initial_vibration_adapter.pth",
+    "source_final_weights": "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/finetune/weights",
+    "diagnostic_weights": "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/source_export_weights",
+    "main_weights_sha256": {
+      "vibration_adapter.pth": "37b85cb6cf0fae3c9a945e52a6c941b40997431c8d6f60ee6e507dbddc21031e",
+      "adapter_model.safetensors": "b2ea0a1d53bb74d8a33371c061b10ff20c61890ad1ecaeadd69c53e73902425e",
+      "adapter_config.json": "83f23c8ef7ff1a2ebd70029676d4f3cd8d892263936fe57a7bc50ddecef7049b"
+    },
+    "diagnostic_weights_sha256": {
+      "vibration_adapter.pth": "13f7889f1871a3de49065a63d45b6b3efbb1916ba172cb632bb6daae8e10d8ab",
+      "adapter_model.safetensors": "b2ea0a1d53bb74d8a33371c061b10ff20c61890ad1ecaeadd69c53e73902425e",
+      "adapter_config.json": "83f23c8ef7ff1a2ebd70029676d4f3cd8d892263936fe57a7bc50ddecef7049b"
+    },
+    "lora_and_config_byte_identical_to_final": true,
+    "all_72_non_bn_base_tensors_identical": true,
+    "only_different_tensors": [
+      "feature_encoder.conv_query.norm.running_mean",
+      "feature_encoder.conv_query.norm.running_var",
+      "feature_encoder.conv_query.norm.num_batches_tracked",
+      "feature_encoder.conv_ref.norm.running_mean",
+      "feature_encoder.conv_ref.norm.running_var",
+      "feature_encoder.conv_ref.norm.num_batches_tracked",
+      "feature_encoder.conv_res.norm.running_mean",
+      "feature_encoder.conv_res.norm.running_var",
+      "feature_encoder.conv_res.norm.num_batches_tracked",
+      "feature_encoder.conv.0.norm.running_mean",
+      "feature_encoder.conv.0.norm.running_var",
+      "feature_encoder.conv.0.norm.num_batches_tracked",
+      "feature_encoder.conv.1.norm.running_mean",
+      "feature_encoder.conv.1.norm.running_var",
+      "feature_encoder.conv.1.norm.num_batches_tracked",
+      "feature_encoder.conv.2.norm.running_mean",
+      "feature_encoder.conv.2.norm.running_var",
+      "feature_encoder.conv.2.norm.num_batches_tracked"
+    ],
+    "main_weights_unchanged": true,
+    "no_retraining_or_hyperparameter_selection": true,
+    "scope": "Full 12279 test queries; same prompt/seed42/reference draw/batch32/greedy generation/max64 as trained_heldout. Diagnostic only; never replace main metrics with preferred result."
+  },
+  "run": {
+    "diagnostic": "原仓库保存方式对照（恢复初始BN）",
+    "gpu": 0,
+    "status": "complete",
+    "started_at_utc": "2026-09-18T18:55:48.855886+00:00",
+    "command": [
+      "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+      "-u",
+      "scripts/evaluate_mbhm.py",
+      "--checkpoint",
+      "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/source_export_weights",
+      "--stage",
+      "heldout-generation",
+      "--split",
+      "test",
+      "--corpus-batch-size",
+      "32",
+      "--max-new-tokens",
+      "64",
+      "--output",
+      "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/source_export_heldout"
+    ],
+    "log": "/home/huangyating/BearLLM/outputs/full/source_export_heldout.log",
+    "exit_code": 0,
+    "elapsed_seconds": 167.34492459520698,
+    "finished_at_utc": "2026-09-18T18:58:36.200955+00:00"
+  },
+  "comparison": {
+    "generated_classification": {
+      "main_final_bn": {
+        "count": 12279,
+        "accuracy": 0.9377799495072888,
+        "macro_f1_fixed_classes": 0.8149801811102447,
+        "invalid_predictions": 0
+      },
+      "source_initial_bn": {
+        "count": 12279,
+        "accuracy": 0.957569834677091,
+        "macro_f1_fixed_classes": 0.8340889599663758,
+        "invalid_predictions": 0
+      },
+      "source_minus_main_accuracy_percentage_points": 1.978988516980218,
+      "paired_outcomes": {
+        "both_correct": 11438,
+        "changed_prediction": 452,
+        "main_only_correct": 77,
+        "source_only_correct": 320,
+        "both_wrong": 444
+      },
+      "by_dataset": {
+        "CWRU": {
+          "count": 7,
+          "main_accuracy": 1.0,
+          "source_accuracy": 1.0,
+          "source_minus_main_percentage_points": 0.0
+        },
+        "DIRG": {
+          "count": 102,
+          "main_accuracy": 0.9803921568627451,
+          "source_accuracy": 0.9803921568627451,
+          "source_minus_main_percentage_points": 0.0
+        },
+        "HIT": {
+          "count": 964,
+          "main_accuracy": 0.9699170124481328,
+          "source_accuracy": 0.966804979253112,
+          "source_minus_main_percentage_points": -0.3112033195020736
+        },
+        "IMS": {
+          "count": 4648,
+          "main_accuracy": 0.9819277108433735,
+          "source_accuracy": 0.9868760757314974,
+          "source_minus_main_percentage_points": 0.49483648881238906
+        },
+        "JUST": {
+          "count": 4399,
+          "main_accuracy": 0.8790634235053422,
+          "source_accuracy": 0.9327119799954535,
+          "source_minus_main_percentage_points": 5.364855649011135
+        },
+        "MFPT": {
+          "count": 4,
+          "main_accuracy": 0.75,
+          "source_accuracy": 0.75,
+          "source_minus_main_percentage_points": 0.0
+        },
+        "NCEPU": {
+          "count": 90,
+          "main_accuracy": 0.9888888888888889,
+          "source_accuracy": 0.9888888888888889,
+          "source_minus_main_percentage_points": 0.0
+        },
+        "PU": {
+          "count": 731,
+          "main_accuracy": 0.945280437756498,
+          "source_accuracy": 0.920656634746922,
+          "source_minus_main_percentage_points": -2.4623803009575895
+        },
+        "XJTU": {
+          "count": 1334,
+          "main_accuracy": 0.9437781109445277,
+          "source_accuracy": 0.9475262368815592,
+          "source_minus_main_percentage_points": 0.37481259370315545
+        }
+      }
+    },
+    "adapter_classification": {
+      "main_final_bn": {
+        "count": 12279,
+        "accuracy": 0.9403045850639303,
+        "macro_f1_fixed_classes": 0.8126587940391603,
+        "invalid_predictions": 0
+      },
+      "source_initial_bn": {
+        "count": 12279,
+        "accuracy": 0.9615603876537178,
+        "macro_f1_fixed_classes": 0.8385548264629676,
+        "invalid_predictions": 0
+      },
+      "source_minus_main_accuracy_percentage_points": 2.125580258978743,
+      "paired_outcomes": {
+        "both_correct": 11472,
+        "changed_prediction": 429,
+        "main_only_correct": 74,
+        "source_only_correct": 335,
+        "both_wrong": 398
+      },
+      "by_dataset": {
+        "CWRU": {
+          "count": 7,
+          "main_accuracy": 1.0,
+          "source_accuracy": 1.0,
+          "source_minus_main_percentage_points": 0.0
+        },
+        "DIRG": {
+          "count": 102,
+          "main_accuracy": 0.9803921568627451,
+          "source_accuracy": 0.9803921568627451,
+          "source_minus_main_percentage_points": 0.0
+        },
+        "HIT": {
+          "count": 964,
+          "main_accuracy": 0.9719917012448133,
+          "source_accuracy": 0.9657676348547718,
+          "source_minus_main_percentage_points": -0.6224066390041472
+        },
+        "IMS": {
+          "count": 4648,
+          "main_accuracy": 0.9814974182444062,
+          "source_accuracy": 0.987736660929432,
+          "source_minus_main_percentage_points": 0.6239242685025848
+        },
+        "JUST": {
+          "count": 4399,
+          "main_accuracy": 0.8858831552625597,
+          "source_accuracy": 0.9413503068879291,
+          "source_minus_main_percentage_points": 5.546715162536941
+        },
+        "MFPT": {
+          "count": 4,
+          "main_accuracy": 0.75,
+          "source_accuracy": 0.75,
+          "source_minus_main_percentage_points": 0.0
+        },
+        "NCEPU": {
+          "count": 90,
+          "main_accuracy": 0.9888888888888889,
+          "source_accuracy": 0.9888888888888889,
+          "source_minus_main_percentage_points": 0.0
+        },
+        "PU": {
+          "count": 731,
+          "main_accuracy": 0.9493844049247606,
+          "source_accuracy": 0.9274965800273598,
+          "source_minus_main_percentage_points": -2.188782489740082
+        },
+        "XJTU": {
+          "count": 1334,
+          "main_accuracy": 0.9422788605697151,
+          "source_accuracy": 0.9497751124437781,
+          "source_minus_main_percentage_points": 0.7496251874062998
+        }
+      }
+    }
+  },
+  "official_generated_accuracy_context_only": 0.9770339604202296,
+  "truncated_outputs": {
+    "main": 0,
+    "source_export": 0
+  },
+  "prediction_files_sha256": {
+    "main": "f8ec8832b5662af30283b0dda89059be6f0fda6b03ff724e6bd0fd068911406a",
+    "source_export": "410a2e293b717c081e271eddc609685d3022b3d9da18b4f26c12e1e55fdd3ea8"
+  },
+  "evaluator_sha256": "67449affd89721981a62cb87ad957d8dd863ef438a436eb8e9d87cf5e62f8e48",
+  "interpretation": "The same final learned LoRA is evaluated with pre-finetuning BN buffers to reproduce the original repository save behavior. This diagnostic makes no optimizer updates, changes no other base parameters or evaluation settings, and does not replace the main trained-model result. The official checkpoint has unknown training membership and is context only."
+}

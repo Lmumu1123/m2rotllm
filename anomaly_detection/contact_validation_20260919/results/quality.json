@@ -1,0 +1,209 @@
+[
+  {
+    "file": "SAVE2026_9_19_21-05-41-1000r.DAT",
+    "rpm": 1000,
+    "dat_bytes": 157056,
+    "txt_bytes": 157100,
+    "txt_payload_identical": true,
+    "dat_sha256": "bfc380617cff20b0acaf8f3654f74d090c101494f4b44d361a71a85fca89eb36",
+    "txt_sha256": "f353a3aa5a076e978d56b7e84bbdd3e978706741d507a7ab4c3c90d5e8e50b2a",
+    "receive_markers": [
+      {
+        "payload_offset": 100000,
+        "receive_time": "21:05:33.876"
+      },
+      {
+        "payload_offset": 106688,
+        "receive_time": "21:05:33.902"
+      }
+    ],
+    "exclusions": [
+      {
+        "token_index": 0,
+        "payload_start": 0,
+        "payload_end": 27,
+        "reason": "incomplete_or_invalid_record",
+        "raw_token": ".087352,-0.048007,-0.984418",
+        "receive_markers": []
+      },
+      {
+        "token_index": 2905,
+        "payload_start": 99997,
+        "payload_end": 100030,
+        "reason": "record_spans_receive_marker",
+        "raw_token": "164,-0.092476,-0.102358,-0.926285",
+        "receive_markers": [
+          {
+            "payload_offset": 100000,
+            "receive_time": "21:05:33.876"
+          }
+        ]
+      },
+      {
+        "token_index": 3096,
+        "payload_start": 106660,
+        "payload_end": 106694,
+        "reason": "record_spans_receive_marker",
+        "raw_token": "1833,-0.113704,-0.070760,-0.895358",
+        "receive_markers": [
+          {
+            "payload_offset": 106688,
+            "receive_time": "21:05:33.902"
+          }
+        ]
+      },
+      {
+        "token_index": 4542,
+        "payload_start": 157035,
+        "payload_end": 157056,
+        "reason": "incomplete_or_invalid_record",
+        "raw_token": "3279,-0.060085,-0.012",
+        "receive_markers": []
+      }
+    ],
+    "complete_4096_packets": [],
+    "trusted_rows": 4539,
+    "max_contiguous_samples": 1641,
+    "strict_one_second_windows": 0,
+    "unit": "unconfirmed; values retained in original units",
+    "sampling_rate_hz": 4000
+  },
+  {
+    "file": "SAVE2026_9_19_21-09-12-2000r.DAT",
+    "rpm": 2000,
+    "dat_bytes": 108448,
+    "txt_bytes": 108492,
+    "txt_payload_identical": true,
+    "dat_sha256": "95255526620203ecececca5b5e178cea2f243ea8c4f921889082f4238488f551",
+    "txt_sha256": "62f812add2808cde88c2012a8a8fdc30662851a0453b1b9efeb48f75319f6a65",
+    "receive_markers": [
+      {
+        "payload_offset": 100000,
+        "receive_time": "21:09:08.442"
+      },
+      {
+        "payload_offset": 106016,
+        "receive_time": "21:09:08.481"
+      }
+    ],
+    "exclusions": [
+      {
+        "token_index": 0,
+        "payload_start": 0,
+        "payload_end": 25,
+        "reason": "incomplete_or_invalid_record",
+        "raw_token": "45140,-0.070028,-0.455914",
+        "receive_markers": []
+      },
+      {
+        "token_index": 2945,
+        "payload_start": 99976,
+        "payload_end": 100008,
+        "reason": "record_spans_receive_marker",
+        "raw_token": "2120,0.139446,-0.150548,0.723826",
+        "receive_markers": [
+          {
+            "payload_offset": 100000,
+            "receive_time": "21:09:08.442"
+          }
+        ]
+      },
+      {
+        "token_index": 3121,
+        "payload_start": 106005,
+        "payload_end": 106039,
+        "reason": "record_spans_receive_marker",
+        "raw_token": "2296,-0.299022,-0.112423,-0.693570",
+        "receive_markers": [
+          {
+            "payload_offset": 106016,
+            "receive_time": "21:09:08.481"
+          }
+        ]
+      },
+      {
+        "token_index": 3192,
+        "payload_start": 108442,
+        "payload_end": 108448,
+        "reason": "incomplete_or_invalid_record",
+        "raw_token": "2367,-",
+        "receive_markers": []
+      }
+    ],
+    "complete_4096_packets": [],
+    "trusted_rows": 3189,
+    "max_contiguous_samples": 2119,
+    "strict_one_second_windows": 0,
+    "unit": "unconfirmed; values retained in original units",
+    "sampling_rate_hz": 4000
+  },
+  {
+    "file": "SAVE2026_9_19_21-12-32-3000r.DAT",
+    "rpm": 3000,
+    "dat_bytes": 139424,
+    "txt_bytes": 139468,
+    "txt_payload_identical": true,
+    "dat_sha256": "4fd4596ba6c65bc3aa8631c68d22e769f8f376799c9966856f8b2b5934a50374",
+    "txt_sha256": "cd5bcb48f209435e0d19f92b58105095cd666fa365dab46e3452c7ed5be1877d",
+    "receive_markers": [
+      {
+        "payload_offset": 100000,
+        "receive_time": "21:12:28.989"
+      },
+      {
+        "payload_offset": 106848,
+        "receive_time": "21:12:29.019"
+      }
+    ],
+    "exclusions": [
+      {
+        "token_index": 0,
+        "payload_start": 0,
+        "payload_end": 5,
+        "reason": "incomplete_or_invalid_record",
+        "raw_token": "59488",
+        "receive_markers": []
+      },
+      {
+        "token_index": 2961,
+        "payload_start": 99976,
+        "payload_end": 100007,
+        "reason": "record_spans_receive_marker",
+        "raw_token": "2019,0.376492,0.354227,-.008269",
+        "receive_markers": [
+          {
+            "payload_offset": 100000,
+            "receive_time": "21:12:28.989"
+          }
+        ]
+      },
+      {
+        "token_index": 3162,
+        "payload_start": 106840,
+        "payload_end": 106872,
+        "reason": "record_spans_receive_marker",
+        "raw_token": "2220,0.387411,0.213012,-0.622200",
+        "receive_markers": [
+          {
+            "payload_offset": 106848,
+            "receive_time": "21:12:29.019"
+          }
+        ]
+      },
+      {
+        "token_index": 4115,
+        "payload_start": 139419,
+        "payload_end": 139424,
+        "reason": "incomplete_or_invalid_record",
+        "raw_token": "3173,",
+        "receive_markers": []
+      }
+    ],
+    "complete_4096_packets": [],
+    "trusted_rows": 4112,
+    "max_contiguous_samples": 2018,
+    "strict_one_second_windows": 0,
+    "unit": "unconfirmed; values retained in original units",
+    "sampling_rate_hz": 4000
+  }
+]

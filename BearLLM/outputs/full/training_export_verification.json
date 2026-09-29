@@ -1,0 +1,75 @@
+{
+  "verified": true,
+  "verified_at_utc": "2026-09-18T18:49:04.957394+00:00",
+  "device": "cpu",
+  "checks": {
+    "cpu_only_no_cuda": true,
+    "complete_50_epochs_and_7500_steps": true,
+    "complete_ordered_epoch_records": true,
+    "all_epochs_cover_all_600_corpus_ids": true,
+    "all_epochs_have_exact_optimizer_steps": true,
+    "native_trainer_loss_protocol": true,
+    "native_trainer_state_completed": true,
+    "fcn_exports_match_recorded_hashes": true,
+    "fcn_to_finetune_initializer_hash_chain": true,
+    "final_exports_match_recorded_hashes": true,
+    "training_script_matches_recorded_hash": true,
+    "base_adapter_complete_keyset": true,
+    "final_base_adapter_matches_native_checkpoint": true,
+    "initial_feature_encoder_matches_source_selected_fcn": true,
+    "all_frozen_base_parameters_unchanged": true,
+    "frozen_feature_encoder_parameters_unchanged": true,
+    "all_six_batchnorm_counters_record_30000_examples": true,
+    "updated_batchnorm_statistics_are_preserved": true,
+    "final_lora_keyset_matches_native_checkpoint": true,
+    "final_lora_tensors_match_native_checkpoint": true,
+    "learned_lora_b_nonzero": true,
+    "all_exported_parameters_finite": true
+  },
+  "finetune_epochs": 50,
+  "finetune_optimizer_steps": 7500,
+  "corpus_examples_seen": 30000,
+  "final_epoch_train_loss": 0.00088,
+  "trainer_metrics": {
+    "train_runtime": 2622.2929,
+    "train_samples_per_second": 11.44,
+    "train_steps_per_second": 2.86,
+    "train_loss": 0.11930599042363464,
+    "epoch": 50.0
+  },
+  "source_selected_fcn_epoch": 11,
+  "exported_fcn_sha256": {
+    "feature_encoder.pth": "e7322e179238ab5edf779830c2be562e2a0d613ac1285c4ccdb35080cc97f84e",
+    "classifier.pth": "885d03d3be3e6aef0966d1d74b305ca94f3cef1814467413af270bb02e9c3340"
+  },
+  "exported_weights_sha256": {
+    "vibration_adapter.pth": "37b85cb6cf0fae3c9a945e52a6c941b40997431c8d6f60ee6e507dbddc21031e",
+    "adapter_model.safetensors": "b2ea0a1d53bb74d8a33371c061b10ff20c61890ad1ecaeadd69c53e73902425e"
+  },
+  "frozen_base_parameter_tensors_checked": 72,
+  "lora_tensors_checked": 398,
+  "batchnorm_counter_increments": {
+    "feature_encoder.conv_query.norm.num_batches_tracked": 30000,
+    "feature_encoder.conv_ref.norm.num_batches_tracked": 30000,
+    "feature_encoder.conv_res.norm.num_batches_tracked": 30000,
+    "feature_encoder.conv.0.norm.num_batches_tracked": 30000,
+    "feature_encoder.conv.1.norm.num_batches_tracked": 30000,
+    "feature_encoder.conv.2.norm.num_batches_tracked": 30000
+  },
+  "batchnorm_statistics_changed": [
+    "feature_encoder.conv_query.norm.running_mean",
+    "feature_encoder.conv_query.norm.running_var",
+    "feature_encoder.conv_ref.norm.running_mean",
+    "feature_encoder.conv_ref.norm.running_var",
+    "feature_encoder.conv_res.norm.running_mean",
+    "feature_encoder.conv_res.norm.running_var",
+    "feature_encoder.conv.0.norm.running_mean",
+    "feature_encoder.conv.0.norm.running_var",
+    "feature_encoder.conv.1.norm.running_mean",
+    "feature_encoder.conv.1.norm.running_var",
+    "feature_encoder.conv.2.norm.running_mean",
+    "feature_encoder.conv.2.norm.running_var"
+  ],
+  "latest_native_checkpoint": "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/finetune/trainer/checkpoint-7500",
+  "note": "CPU comparisons verify actual trained base/BatchNorm plus LoRA export. No model generation or GPU evaluation is performed here."
+}

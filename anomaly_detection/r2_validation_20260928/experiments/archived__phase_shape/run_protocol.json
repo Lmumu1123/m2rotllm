@@ -1,0 +1,26 @@
+{
+  "head": "archived",
+  "feature": "phase_shape",
+  "methods": [
+    "head_CE",
+    "contact_session_MSE",
+    "full"
+  ],
+  "seeds": [
+    17,
+    42,
+    73
+  ],
+  "steps": 400,
+  "primary": false,
+  "head_certification": "historical retained frozen",
+  "heldout_test_not_used_for_optimization": true,
+  "source_hashes": {
+    "/home/huangyating/anomaly_detection/r2_validation_20260928/contact/contact_features.npz": "87cebaff91249d90f07c1de819612a2adc516120e945fd78345d354280abf66f",
+    "/home/huangyating/anomaly_detection/r2_validation_20260928/radar/features.npz": "bcd9b6ad40794a4afcde7786fa94e3bfbe4f1c51dfbd71fa76063f4b6735e6f1",
+    "/home/huangyating/anomaly_detection/r2_validation_20260928/protocol_before_results.json": "9450b0617e508b19f85f5034f70cebbe4e6f5dfc5716421102f7df3efdb5dd92"
+  },
+  "physical_readout_alpha": 10,
+  "fit_weighting": "contact sessions / radar recordings equal total weight",
+  "program_sha256": "0221144e2aa38eb76d3c7bab4fa8cc53b4486d0d699f69c3ea21a208bf9aa45a"
+}

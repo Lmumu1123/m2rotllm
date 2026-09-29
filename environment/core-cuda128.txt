@@ -1,0 +1,11 @@
+# Linux x86_64, Python 3.12; NVIDIA driver must support this CUDA runtime.
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0+cu128
+numpy==1.26.0
+scipy==1.15.2
+h5py==3.16.0
+pandas==2.2.3
+scikit-learn==1.6.1
+matplotlib==3.10.1
+safetensors==0.6.2
+tqdm==4.67.1

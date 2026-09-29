@@ -1,0 +1,145 @@
+[
+  {
+    "key": "functional_stitching",
+    "url": "https://proceedings.mlr.press/v267/smith25a.html",
+    "final_url": "https://proceedings.mlr.press/v267/smith25a.html",
+    "status": 200,
+    "sha256": "0a43d01865b24311f45c0b15d07a6bf4442c197012142c2ab92f1c721b7df52e",
+    "fetched_utc": "2026-09-23T14:30:25.030577+00:00",
+    "title": "Functional Alignment Can Mislead: Examining Model Stitching",
+    "characters": 4674,
+    "text_file": "sources/functional_stitching.txt"
+  },
+  {
+    "key": "cka",
+    "url": "https://proceedings.mlr.press/v97/kornblith19a.html",
+    "final_url": "https://proceedings.mlr.press/v97/kornblith19a.html",
+    "status": 200,
+    "sha256": "8cb219c5764dcfd5f4603f9ef3193267befebba519f51e1860c713f4a26ca663",
+    "fetched_utc": "2026-09-23T14:30:23.159450+00:00",
+    "title": "Similarity of Neural Network Representations Revisited",
+    "characters": 4710,
+    "text_file": "sources/cka.txt"
+  },
+  {
+    "key": "probe_controls",
+    "url": "https://aclanthology.org/D19-1275/",
+    "final_url": "https://aclanthology.org/D19-1275/",
+    "status": 200,
+    "sha256": "6e15a439e1fb9fd141e5b63dfa07ec7a0dd757746e02e716fd29562cfff51146",
+    "fetched_utc": "2026-09-23T14:30:23.724297+00:00",
+    "title": "Designing and Interpreting Probes with Control Tasks - ACL Anthology",
+    "characters": 12443,
+    "text_file": "sources/probe_controls.txt"
+  },
+  {
+    "key": "rkd",
+    "url": "https://openaccess.thecvf.com/content_CVPR_2019/html/Park_Relational_Knowledge_Distillation_CVPR_2019_paper.html",
+    "final_url": "https://openaccess.thecvf.com/content_CVPR_2019/html/Park_Relational_Knowledge_Distillation_CVPR_2019_paper.html",
+    "status": 200,
+    "sha256": "fb422a5f055e7595ea1a3600c4206a4cc1e90f5fe177a038c531e30e2d201220",
+    "fetched_utc": "2026-09-23T14:30:23.438709+00:00",
+    "title": "CVPR 2019 Open Access Repository",
+    "characters": 1992,
+    "text_file": "sources/rkd.txt"
+  },
+  {
+    "key": "biox",
+    "url": "https://arxiv.org/html/2510.02276v2",
+    "final_url": "https://arxiv.org/html/2510.02276v2",
+    "status": 200,
+    "sha256": "6424d6fad963737d0ee69840cee267f8825ffb0ff1a090629f8224986888b4c9",
+    "fetched_utc": "2026-09-23T14:30:23.045351+00:00",
+    "title": "BioX-Bridge: Model Bridging for Unsupervised Cross-Modal Knowledge Transfer across Biosignals",
+    "characters": 92362,
+    "text_file": "sources/biox.txt"
+  },
+  {
+    "key": "pagkd",
+    "url": "https://arxiv.org/html/2601.09209v1",
+    "final_url": "https://arxiv.org/html/2601.09209v1",
+    "status": 200,
+    "sha256": "0beb7781904cbd227f6aa6781055d3be82ae49ce6f1a8a67757e653a3f4f1401",
+    "fetched_utc": "2026-09-23T14:30:45.864482+00:00",
+    "title": "Pairing-free Group-level Knowledge Distillation for Robust Gastrointestinal Lesion Classification in White-Light Endoscopy",
+    "characters": 60355,
+    "text_file": "sources/pagkd.txt"
+  },
+  {
+    "key": "ucmkd",
+    "url": "https://arxiv.org/html/2606.10504v1",
+    "final_url": "https://arxiv.org/html/2606.10504v1",
+    "status": 200,
+    "sha256": "a1d0031a30494fa99885a6a44a24e15155591f48b3fab5d8019cb96d1c3feebb",
+    "fetched_utc": "2026-09-23T14:30:23.355963+00:00",
+    "title": "Cross-Modal Knowledge Distillation without Paired Data:Theoretical Foundation and Algorithm",
+    "characters": 94528,
+    "text_file": "sources/ucmkd.txt"
+  },
+  {
+    "key": "resi",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/2eef1f75516b0cfd3e944345e5f88c08-Abstract-Conference.html",
+    "final_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/2eef1f75516b0cfd3e944345e5f88c08-Abstract-Conference.html",
+    "status": 200,
+    "sha256": "d32fbde5ea7584a1a2aa0d891e8392197a292155c3ffc11291076152b00a5f9c",
+    "fetched_utc": "2026-09-23T14:30:23.707523+00:00",
+    "title": "ReSi: A Comprehensive Benchmark for Representational Similarity Measures",
+    "characters": 1970,
+    "text_file": "sources/resi.txt"
+  },
+  {
+    "key": "cka_reliability",
+    "url": "https://arxiv.org/abs/2210.16156",
+    "final_url": "https://arxiv.org/abs/2210.16156",
+    "status": 200,
+    "sha256": "61e4f3893e6d22e80caebb5ec67bd8d3c947935f04513a023322d3f1482f0fcf",
+    "fetched_utc": "2026-09-23T14:30:24.231392+00:00",
+    "title": "[2210.16156] Reliability of CKA as a Similarity Measure in Deep Learning",
+    "characters": 4847,
+    "text_file": "sources/cka_reliability.txt"
+  },
+  {
+    "key": "unifault",
+    "url": "https://arxiv.org/html/2504.01373v2",
+    "final_url": "https://arxiv.org/html/2504.01373v2",
+    "status": 200,
+    "sha256": "64645cfeef93193b77886cef7ec2649e62719f8bc04c2baa899c5c023149d2e1",
+    "fetched_utc": "2026-09-23T14:30:24.245333+00:00",
+    "title": "UniFault: A Fault Diagnosis Foundation Model from Bearing Data",
+    "characters": 66501,
+    "text_file": "sources/unifault.txt"
+  },
+  {
+    "key": "biox_official",
+    "url": "https://github.com/chenqi-li/BioX-Bridge",
+    "final_url": "https://github.com/chenqi-li/BioX-Bridge",
+    "status": 200,
+    "sha256": "f3fd3ca1855b160cf4fb92ac1fc87bcf834d5cb539fee633584653ff09f7cd7c",
+    "fetched_utc": "2026-09-23T14:30:25.330386+00:00",
+    "title": "GitHub - chenqi-li/BioX-Bridge · GitHub",
+    "characters": 6291,
+    "text_file": "sources/biox_official.txt"
+  },
+  {
+    "key": "pagkd_official",
+    "url": "https://github.com/Huster-Hq/PaGKD",
+    "final_url": "https://github.com/Huster-Hq/PaGKD",
+    "status": 200,
+    "sha256": "136318da0e16926aa87a05ee6bc557b0b513346816c14d531c8fecec00ef7476",
+    "fetched_utc": "2026-09-23T14:30:26.183268+00:00",
+    "title": "GitHub - Huster-Hq/PaGKD: [AAAI 2026] Pairing-free Group-level Knowledge Distillation for Robust Gastrointestinal Lesion Classification in White-Light Endoscopy · GitHub",
+    "characters": 4445,
+    "text_file": "sources/pagkd_official.txt"
+  },
+  {
+    "key": "ucmkd_official",
+    "url": "https://github.com/anhducchu/UCMKD",
+    "final_url": "https://github.com/anhducchu/UCMKD",
+    "status": 200,
+    "sha256": "947819448a8a246748b1c657f655e3111b08928a927ca15b6edceeecbaf2ad85",
+    "fetched_utc": "2026-09-23T14:30:25.418285+00:00",
+    "title": "GitHub - anhducchu/UCMKD: UCMKD: Cross-Modal Knowledge Distillation without Paired Data · GitHub",
+    "characters": 5661,
+    "text_file": "sources/ucmkd_official.txt"
+  }
+]

@@ -1,0 +1,157 @@
+{
+  "status": "pass",
+  "arrays_checked": "all numeric arrays, every NPZ",
+  "files": [
+    {
+      "file": "2026_9_20_18-41-41-normal-115200.npz",
+      "bytes": 715767,
+      "sha256": "7b5599a6e3ef3114dec30f777b63209742eb14ffd658420bd780ca583f9056eb",
+      "status": "pass"
+    },
+    {
+      "file": "2026_9_20_18-48-45-normal-460800.npz",
+      "bytes": 615078,
+      "sha256": "719de0cb39eb281468019109db584eb4ddfc255432c487b3c81db7e4cf68d44c",
+      "status": "pass"
+    },
+    {
+      "file": "2026_9_20_19-05-05-outBroken-115200.npz",
+      "bytes": 818724,
+      "sha256": "768d03813fcc5bfaa87c8778e026137887419674d13576b714f56f6c083d5213",
+      "status": "pass"
+    },
+    {
+      "file": "2026_9_20_19-09-18-outBroken-460800.npz",
+      "bytes": 1021555,
+      "sha256": "865bbdb4bdb03f66a7a28ce6fe59f2613271a61bbe158d37e02ea8a15d7d9eac",
+      "status": "pass"
+    },
+    {
+      "file": "2026_9_20_19-22-20-inBroken-115200.npz",
+      "bytes": 820395,
+      "sha256": "8ff5b708e40e5e19f2a1ba6f406e00db047d21c9ed418f006a65d6f7983fca2d",
+      "status": "pass"
+    },
+    {
+      "file": "2026_9_20_19-26-17-inBroken-460800.npz",
+      "bytes": 720221,
+      "sha256": "70ebc315498e820f7c8163ebc9516af11610c701b627494d7bb61e8e6869703a",
+      "status": "pass"
+    },
+    {
+      "file": "2026_9_20_19-37-24-roll-115200.npz",
+      "bytes": 929315,
+      "sha256": "5315b9d76de84e99defe2850b3952175e3e45a9797e5caf2b48baac543ffc31a",
+      "status": "pass"
+    },
+    {
+      "file": "2026_9_20_19-41-02-roll-460800.npz",
+      "bytes": 313526,
+      "sha256": "49c5a3b3a85e0d57eca014a1aaacc1ea4a3d63a8134494585a3a379fb7ee5b2c",
+      "status": "pass"
+    },
+    {
+      "file": "2026_9_20_19-54-31-keep-115200.npz",
+      "bytes": 829222,
+      "sha256": "3f2af7f1050fd2d376ae489589d5d24f06250a34d226b0b36a4c51147b08774a",
+      "status": "pass"
+    },
+    {
+      "file": "2026_9_20_19-58-01-keep-460800.npz",
+      "bytes": 1035035,
+      "sha256": "3acab1e560acbbe33d1ecd6e9d6a1eac8c9a53cc7eb94ff2059ec4cbb5e7385a",
+      "status": "pass"
+    },
+    {
+      "file": "2026_9_20_20-17-49-bigNormal-115200.npz",
+      "bytes": 820586,
+      "sha256": "a11e9a2bcb5942f1c7f379ef72c3aa082023293bf23f507629fc916726b25c13",
+      "status": "pass"
+    },
+    {
+      "file": "2026_9_20_20-21-22-bigNormal-460800.npz",
+      "bytes": 412329,
+      "sha256": "e51c4c126906b06e7eb470af419244a8469945c9cc734d1040768b9d72012bee",
+      "status": "pass"
+    },
+    {
+      "file": "20260920-184058-normal-11520.npz",
+      "bytes": 31043142,
+      "sha256": "e898b5ae5343c4911fe11990879db8cafb92878b9d7154cda33fc81eea2fa51a",
+      "status": "pass"
+    },
+    {
+      "file": "20260920-184857-normal-460800.npz",
+      "bytes": 24392196,
+      "sha256": "b883c3bc83b2ccc1a04ecc4d8cbda3f03d50abcf73188f01bc3f930860acb4ea",
+      "status": "pass"
+    },
+    {
+      "file": "20260920-190512-outBroken-115200.npz",
+      "bytes": 25639689,
+      "sha256": "d91e812f7ef0fa804b8103a3d161b998b43548e6dc795badf4594893a70a42f7",
+      "status": "pass"
+    },
+    {
+      "file": "20260920-190913-outBroken-460800.npz",
+      "bytes": 25627888,
+      "sha256": "2a285e8c9d5f3a55fd7de2de4d1b6ab1235a8c0c5271ee6344f66223580e90f5",
+      "status": "pass"
+    },
+    {
+      "file": "20260920-192216-inBroken-115200.npz",
+      "bytes": 25297442,
+      "sha256": "d335da7a0521a4ec7dee1d71d3b7b0039509b0637a501b6e8d63ae43ae34d0b4",
+      "status": "pass"
+    },
+    {
+      "file": "20260920-192610-inBroken-460800.npz",
+      "bytes": 25871530,
+      "sha256": "25466f137bec5f28c72fbcbde98b1d43c05420100723c94dba377d9eaf84363e",
+      "status": "pass"
+    },
+    {
+      "file": "20260920-193718-roll-115200.npz",
+      "bytes": 26147204,
+      "sha256": "eeafc972ab29df310de1726afe54652f7ee70e8d47f9ee8115e068f84909f391",
+      "status": "pass"
+    },
+    {
+      "file": "20260920-194108-roll-460800.npz",
+      "bytes": 26141621,
+      "sha256": "b9fadfa7346c906ae2ad5f0bf2c30bc7946b33ee6bf0d11a5206b362b0d7739b",
+      "status": "pass"
+    },
+    {
+      "file": "20260920-195424-keep-115200.npz",
+      "bytes": 26220285,
+      "sha256": "ac56ec3033e67dec891b923069f5cad22016c3a140400da03bf3b6e93b9fc1e7",
+      "status": "pass"
+    },
+    {
+      "file": "20260920-195753-keep-460800.npz",
+      "bytes": 26210471,
+      "sha256": "8fa326e7dc64e1e7598eeb65af0a2124b9be01c870a571480b7e884f49cd3486",
+      "status": "pass"
+    },
+    {
+      "file": "20260920-201757-bigNormal-115200.npz",
+      "bytes": 25876416,
+      "sha256": "e8ca7f2d322cc1df56175743627c4995b38ae2056918e91f06945bac3750b444",
+      "status": "pass"
+    },
+    {
+      "file": "20260920-202115-bigNormal-460800.npz",
+      "bytes": 25946067,
+      "sha256": "7b2f9c8219102d68f45f6fe892947200925a7fa6945b365564b42cecf2f6a549",
+      "status": "pass"
+    }
+  ],
+  "total_contact_windows": 88,
+  "total_radar_windows": 614,
+  "four_class_contact_windows": 58,
+  "four_class_radar_windows": 412,
+  "server_model_executed": false,
+  "reference_pairs_assigned": false,
+  "radar_geometry_confirmed": true
+}

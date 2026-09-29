@@ -1,0 +1,52 @@
+{
+  "registered_before_stage_b_results": true,
+  "contact_variants": [
+    "v0",
+    "query_no_demean"
+  ],
+  "tasks": {
+    "four_class_provisional_roi": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "head": "per-fold source-retaining shared 10-class contact linear2, frozen during radar training",
+  "contact_encoder": "unchanged FCN and linear1, metadata and hidden_mean exact-match to shared-head targets",
+  "source_retention_gate": "shared head acceptance.json must state global test accuracy decline <=0.5 percentage points; no radar-based head selection",
+  "folds": [
+    "115200_to_460800",
+    "460800_to_115200"
+  ],
+  "seeds": [
+    17,
+    42,
+    73
+  ],
+  "all_known_seed": 42,
+  "steps": 400,
+  "methods": {
+    "embedding_only": "bag MSE",
+    "ce_only": "shared-head groupCE",
+    "ce_feat_1_kd": "groupCE + bag MSE + 0.1 class-positive contrast + 0.5 KD(T=2)"
+  },
+  "teacher_KD": "shared head probabilities from source contact only; exact grouping after original ten logits temperature",
+  "input": "same source-only standardized frame_shape 128 as Stage A; no independent radar classification head",
+  "architecture": "same nonnegative 128-D hidden encoder as Stage A",
+  "optimizer": "AdamW lr .001, weight_decay .01, 16 windows per source bag per step, clipping 5",
+  "reporting": [
+    "all methods and seeds, no target selection",
+    "file macro-F1 and accuracy",
+    "common hidden MSE and cosine",
+    "shared head contact teacher predictions",
+    "frozen shared-head parameter verification and source-retention provenance",
+    "bigNormal and keep excluded from any fitting"
+  ],
+  "limitations": [
+    "four-class outer ROI invalid",
+    "only bag/class alignment, no precise timestamps",
+    "two recordings per class are not separate bearings/motors",
+    "prior external failures retained; no target-based tuning"
+  ]
+}

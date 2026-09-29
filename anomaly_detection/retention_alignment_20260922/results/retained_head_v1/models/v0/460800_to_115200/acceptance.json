@@ -1,0 +1,12 @@
+{
+  "variant": "v0",
+  "fold": "460800_to_115200",
+  "source_test_acc10": 0.9883541004967831,
+  "source_test_acc4": 0.9901457773434319,
+  "delta_acc10_pp": -0.032575942666346336,
+  "delta_acc4_pp": -0.04071992833292182,
+  "meets_user_global_retention": true,
+  "status": "passes_global_regression_gate",
+  "per_source_declines_must_be_reviewed": true,
+  "encoder_and_linear1_unchanged": true
+}

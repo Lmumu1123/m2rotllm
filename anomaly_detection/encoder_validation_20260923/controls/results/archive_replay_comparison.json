@@ -1,0 +1,23 @@
+[
+  {
+    "method": "ce_only",
+    "n_matches": 6,
+    "mse_max_abs_difference": 0.0,
+    "cosine_max_abs_difference": 0.0,
+    "bag_accuracy_max_abs_difference": 0.0
+  },
+  {
+    "method": "matched_bag_mse",
+    "n_matches": 6,
+    "mse_max_abs_difference": 0.0,
+    "cosine_max_abs_difference": 0.0,
+    "bag_accuracy_max_abs_difference": 0.0
+  },
+  {
+    "method": "full",
+    "n_matches": 6,
+    "mse_max_abs_difference": 0.0,
+    "cosine_max_abs_difference": 0.0,
+    "bag_accuracy_max_abs_difference": 0.0
+  }
+]

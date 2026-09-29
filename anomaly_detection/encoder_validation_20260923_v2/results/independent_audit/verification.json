@@ -1,0 +1,182 @@
+{
+  "status": "pass",
+  "audited_scripts": {
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/scripts/physical_readouts.py": "f02d5817ea49e77e9804e76d0bd612b667826b466e419c97a55ce45724d922ab",
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/scripts/train_unifault_radar.py": "dd74de26650792b7fc02efa89a3ee46f0e75cad36cec6b5394d49ceeaa805c6c"
+  },
+  "all_tracked_inputs_unchanged": true,
+  "descriptor_windows": 88,
+  "descriptor_max_abs_error": 3.3306690738754696e-16,
+  "teacher_readout_fits": [
+    {
+      "teacher": "Bear128",
+      "fold": "115200_to_460800",
+      "train_windows": 32,
+      "test_windows": 26,
+      "teacher_metadata_keys_unique": true,
+      "max_reloaded_readout_prediction_error": 7.105427357601002e-15,
+      "max_target_scale_error": 0.0,
+      "max_contact_csv_error": 7.827072323607354e-15
+    },
+    {
+      "teacher": "Bear128",
+      "fold": "460800_to_115200",
+      "train_windows": 26,
+      "test_windows": 32,
+      "teacher_metadata_keys_unique": true,
+      "max_reloaded_readout_prediction_error": 3.108624468950438e-14,
+      "max_target_scale_error": 1.3877787807814457e-17,
+      "max_contact_csv_error": 8.271161533457416e-15
+    },
+    {
+      "teacher": "Rot128",
+      "fold": "115200_to_460800",
+      "train_windows": 32,
+      "test_windows": 26,
+      "teacher_metadata_keys_unique": true,
+      "max_reloaded_readout_prediction_error": 1.7763568394002505e-15,
+      "max_target_scale_error": 0.0,
+      "max_contact_csv_error": 1.1792650189690335e-14
+    },
+    {
+      "teacher": "Rot128",
+      "fold": "460800_to_115200",
+      "train_windows": 26,
+      "test_windows": 32,
+      "teacher_metadata_keys_unique": true,
+      "max_reloaded_readout_prediction_error": 1.3322676295501878e-15,
+      "max_target_scale_error": 1.3877787807814457e-17,
+      "max_contact_csv_error": 1.0241807402167069e-14
+    },
+    {
+      "teacher": "UniFault128",
+      "fold": "115200_to_460800",
+      "train_windows": 32,
+      "test_windows": 26,
+      "teacher_metadata_keys_unique": true,
+      "max_reloaded_readout_prediction_error": 1.3322676295501878e-15,
+      "max_target_scale_error": 0.0,
+      "max_contact_csv_error": 1.569577801063815e-14
+    },
+    {
+      "teacher": "UniFault128",
+      "fold": "460800_to_115200",
+      "train_windows": 26,
+      "test_windows": 32,
+      "teacher_metadata_keys_unique": true,
+      "max_reloaded_readout_prediction_error": 1.1102230246251565e-15,
+      "max_target_scale_error": 1.3877787807814457e-17,
+      "max_contact_csv_error": 8.770761894538737e-15
+    }
+  ],
+  "contact_gates": [
+    {
+      "teacher": "Bear128",
+      "target": "log_band_rms",
+      "passes": true
+    },
+    {
+      "teacher": "Bear128",
+      "target": "log_crest_factor",
+      "passes": true
+    },
+    {
+      "teacher": "Bear128",
+      "target": "log_pearson_kurtosis",
+      "passes": true
+    },
+    {
+      "teacher": "Bear128",
+      "target": "power_20_200",
+      "passes": false
+    },
+    {
+      "teacher": "Bear128",
+      "target": "power_200_400",
+      "passes": true
+    },
+    {
+      "teacher": "Bear128",
+      "target": "power_400_800",
+      "passes": true
+    },
+    {
+      "teacher": "Rot128",
+      "target": "log_band_rms",
+      "passes": false
+    },
+    {
+      "teacher": "Rot128",
+      "target": "log_crest_factor",
+      "passes": false
+    },
+    {
+      "teacher": "Rot128",
+      "target": "log_pearson_kurtosis",
+      "passes": false
+    },
+    {
+      "teacher": "Rot128",
+      "target": "power_20_200",
+      "passes": false
+    },
+    {
+      "teacher": "Rot128",
+      "target": "power_200_400",
+      "passes": false
+    },
+    {
+      "teacher": "Rot128",
+      "target": "power_400_800",
+      "passes": true
+    },
+    {
+      "teacher": "UniFault128",
+      "target": "log_band_rms",
+      "passes": true
+    },
+    {
+      "teacher": "UniFault128",
+      "target": "log_crest_factor",
+      "passes": false
+    },
+    {
+      "teacher": "UniFault128",
+      "target": "log_pearson_kurtosis",
+      "passes": true
+    },
+    {
+      "teacher": "UniFault128",
+      "target": "power_20_200",
+      "passes": false
+    },
+    {
+      "teacher": "UniFault128",
+      "target": "power_200_400",
+      "passes": false
+    },
+    {
+      "teacher": "UniFault128",
+      "target": "power_400_800",
+      "passes": true
+    }
+  ],
+  "unifault_models_reloaded": 36,
+  "unifault_largest_hidden_reload_error": 0.0,
+  "unifault_largest_head_probability_error": 1.1920928955078125e-07,
+  "unifault_largest_recording_MSE_error": 2.842170943040401e-14,
+  "physical_radar_prediction_groups_recomputed_first_fold": 216,
+  "physical_radar_prediction_largest_error": 2.220446049250313e-16,
+  "no_new_encoder_training": true,
+  "no_main_scripts_modified": true,
+  "interpretation_limits": [
+    "Six generic signal statistics are not fault severity ground truth.",
+    "Three band fractions are dependent and sum to 1.",
+    "Oracle class baselines explicitly receive true test labels and are diagnostic controls, not deployable predictors.",
+    "Contact validity gates average errors over eight recordings and are descriptive, not significance tests; all gates must be reported.",
+    "Each training class has one recording, so real bag means equal class prototypes.",
+    "Radar and intermittent contact windows are matched at recording level only.",
+    "Signed/ReLU comparison changes only output feasible domain under the frozen teacher head; it does not compare optimized arbitrary architectures.",
+    "ReLU cannot match negative teacher class-mean coordinates; the positive MSE lower bound is algebraic and does not prove rich knowledge."
+  ]
+}

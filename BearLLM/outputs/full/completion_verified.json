@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-09-18T19:04:28.533713+00:00",
+  "pipeline_checks": 14,
+  "training_export_checks": 22,
+  "source_export_diagnostic_checks": 10,
+  "each_model_unique_vibration_queries": 135516,
+  "each_model_corpus_generations": 600,
+  "each_model_test_query_generations": 12279,
+  "official_demo_exit_code": 0,
+  "trained_demo_exit_code": 0,
+  "evidence_sha256": {
+    "summary.json": "754402e8e58d29aad1f943ae9f35bc359ee90724ddc50c4de873be8459972843",
+    "prediction_coverage.json": "1e7ad269460204de5380e90ffc46c9a5e9cfb20e4b58aa2588a2af9872122267",
+    "training_export_verification.json": "1333e33adf6e8e205041103cbe463dec0132f6af95388c3ef5bcd97a656d725a",
+    "source_export_diagnostic.json": "8d85cb543acc0a6da1811e15fcdcfbdd6e64161d59e8ea2e4cc8625eb2712921"
+  }
+}

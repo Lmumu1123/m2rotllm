@@ -1,0 +1,10 @@
+*.npz binary
+*.npy binary
+*.pt binary
+*.pth binary
+*.safetensors binary
+*.ckpt binary
+*.gz binary
+*.zip binary
+*.png binary
+*.pdf binary

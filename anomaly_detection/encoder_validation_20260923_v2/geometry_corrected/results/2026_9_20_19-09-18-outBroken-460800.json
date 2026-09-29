@@ -1,0 +1,877 @@
+{
+  "metadata": {
+    "file": "2026_9_20_19-09-18-outBroken-460800.DAT",
+    "recording_id": "2026_9_20_19-09-18-outBroken-460800",
+    "state": "outBroken",
+    "label": 2,
+    "baud_raw": "460800",
+    "baud_candidate": 460800,
+    "filename_start_local": "2026-09-20T19:09:18",
+    "timezone": "Asia/Shanghai",
+    "timestamp_semantics": "file start only; not packet sample time",
+    "condition_id": null,
+    "bearing_entity_id": null,
+    "independent_run_id": null,
+    "split": "unassigned",
+    "four_class_eligible": true
+  },
+  "windows": [
+    {
+      "file": "2026_9_20_19-09-18-outBroken-460800.DAT",
+      "recording_id": "2026_9_20_19-09-18-outBroken-460800",
+      "state": "outBroken",
+      "label": 2,
+      "baud_raw": "460800",
+      "baud_candidate": 460800,
+      "filename_start_local": "2026-09-20T19:09:18",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 1,
+      "byte_start": 33177,
+      "row": 0,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.38150673511262434,
+        0.19380512032360056,
+        0.2998771916962253
+      ],
+      "value_min": [
+        -1.020103,
+        -0.726022,
+        -1.815543
+      ],
+      "value_max": [
+        0.808494,
+        0.676368,
+        0.042212
+      ]
+    },
+    {
+      "file": "2026_9_20_19-09-18-outBroken-460800.DAT",
+      "recording_id": "2026_9_20_19-09-18-outBroken-460800",
+      "state": "outBroken",
+      "label": 2,
+      "baud_raw": "460800",
+      "baud_candidate": 460800,
+      "filename_start_local": "2026-09-20T19:09:18",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 2,
+      "byte_start": 171994,
+      "row": 1,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.3832516543757282,
+        0.18273103853658898,
+        0.29520462821755195
+      ],
+      "value_min": [
+        -0.937814,
+        -0.658434,
+        -1.729899
+      ],
+      "value_max": [
+        0.814106,
+        0.580476,
+        -0.066978
+      ]
+    },
+    {
+      "file": "2026_9_20_19-09-18-outBroken-460800.DAT",
+      "recording_id": "2026_9_20_19-09-18-outBroken-460800",
+      "state": "outBroken",
+      "label": 2,
+      "baud_raw": "460800",
+      "baud_candidate": 460800,
+      "filename_start_local": "2026-09-20T19:09:18",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 3,
+      "byte_start": 310864,
+      "row": 2,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.3868041134098647,
+        0.20105078255521136,
+        0.29855178114016334
+      ],
+      "value_min": [
+        -0.998936,
+        -0.741394,
+        -1.940044
+      ],
+      "value_max": [
+        0.868579,
+        0.634278,
+        0.087108
+      ]
+    },
+    {
+      "file": "2026_9_20_19-09-18-outBroken-460800.DAT",
+      "recording_id": "2026_9_20_19-09-18-outBroken-460800",
+      "state": "outBroken",
+      "label": 2,
+      "baud_raw": "460800",
+      "baud_candidate": 460800,
+      "filename_start_local": "2026-09-20T19:09:18",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 35,
+      "byte_start": 4407814,
+      "row": 3,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.38202639827269436,
+        0.20381100409550057,
+        0.3046353014534181
+      ],
+      "value_min": [
+        -0.99735,
+        -0.805932,
+        -1.889292
+      ],
+      "value_max": [
+        0.997777,
+        0.674355,
+        0.068686
+      ]
+    },
+    {
+      "file": "2026_9_20_19-09-18-outBroken-460800.DAT",
+      "recording_id": "2026_9_20_19-09-18-outBroken-460800",
+      "state": "outBroken",
+      "label": 2,
+      "baud_raw": "460800",
+      "baud_candidate": 460800,
+      "filename_start_local": "2026-09-20T19:09:18",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 36,
+      "byte_start": 4546650,
+      "row": 4,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.37977912500213523,
+        0.19285330997169745,
+        0.29987979354222893
+      ],
+      "value_min": [
+        -0.99247,
+        -0.685274,
+        -1.900882
+      ],
+      "value_max": [
+        0.971852,
+        0.59841,
+        0.080276
+      ]
+    },
+    {
+      "file": "2026_9_20_19-09-18-outBroken-460800.DAT",
+      "recording_id": "2026_9_20_19-09-18-outBroken-460800",
+      "state": "outBroken",
+      "label": 2,
+      "baud_raw": "460800",
+      "baud_candidate": 460800,
+      "filename_start_local": "2026-09-20T19:09:18",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 38,
+      "byte_start": 4924404,
+      "row": 5,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.38083457369968987,
+        0.1932605010430999,
+        0.29715002276690533
+      ],
+      "value_min": [
+        -1.117947,
+        -0.856928,
+        -1.998604
+      ],
+      "value_max": [
+        0.922076,
+        0.675453,
+        0.015738
+      ]
+    },
+    {
+      "file": "2026_9_20_19-09-18-outBroken-460800.DAT",
+      "recording_id": "2026_9_20_19-09-18-outBroken-460800",
+      "state": "outBroken",
+      "label": 2,
+      "baud_raw": "460800",
+      "baud_candidate": 460800,
+      "filename_start_local": "2026-09-20T19:09:18",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 39,
+      "byte_start": 5063264,
+      "row": 6,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.3789883417089218,
+        0.19091552552516694,
+        0.29680700754083744
+      ],
+      "value_min": [
+        -0.969046,
+        -0.745237,
+        -1.964932
+      ],
+      "value_max": [
+        0.829722,
+        0.587125,
+        0.084973
+      ]
+    },
+    {
+      "file": "2026_9_20_19-09-18-outBroken-460800.DAT",
+      "recording_id": "2026_9_20_19-09-18-outBroken-460800",
+      "state": "outBroken",
+      "label": 2,
+      "baud_raw": "460800",
+      "baud_candidate": 460800,
+      "filename_start_local": "2026-09-20T19:09:18",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 40,
+      "byte_start": 5202119,
+      "row": 7,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.37956598156355253,
+        0.19393153059353166,
+        0.29710385296852343
+      ],
+      "value_min": [
+        -0.972828,
+        -0.809958,
+        -1.861842
+      ],
+      "value_max": [
+        0.818376,
+        0.624701,
+        0.139446
+      ]
+    },
+    {
+      "file": "2026_9_20_19-09-18-outBroken-460800.DAT",
+      "recording_id": "2026_9_20_19-09-18-outBroken-460800",
+      "state": "outBroken",
+      "label": 2,
+      "baud_raw": "460800",
+      "baud_candidate": 460800,
+      "filename_start_local": "2026-09-20T19:09:18",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 41,
+      "byte_start": 5340916,
+      "row": 8,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.38051061924576046,
+        0.195458918956284,
+        0.3000776181743488
+      ],
+      "value_min": [
+        -1.006012,
+        -0.75457,
+        -1.970666
+      ],
+      "value_max": [
+        0.827648,
+        0.705282,
+        0.16348
+      ]
+    },
+    {
+      "file": "2026_9_20_19-09-18-outBroken-460800.DAT",
+      "recording_id": "2026_9_20_19-09-18-outBroken-460800",
+      "state": "outBroken",
+      "label": 2,
+      "baud_raw": "460800",
+      "baud_candidate": 460800,
+      "filename_start_local": "2026-09-20T19:09:18",
+      "timezone": "Asia/Shanghai",
+      "timestamp_semantics": "file start only; not packet sample time",
+      "condition_id": null,
+      "bearing_entity_id": null,
+      "independent_run_id": null,
+      "split": "unassigned",
+      "four_class_eligible": true,
+      "packet_ordinal_observed": 42,
+      "byte_start": 5479727,
+      "row": 9,
+      "sample_start_in_packet": 48,
+      "relative_packet_start_s": 0.012,
+      "duration_s": 1.0,
+      "sample_rate_hz": 4000,
+      "absolute_window_start": null,
+      "ac_rms": [
+        0.3811492803030712,
+        0.1927783130369079,
+        0.29541887789449367
+      ],
+      "value_min": [
+        -0.967704,
+        -0.717726,
+        -1.901126
+      ],
+      "value_max": [
+        0.905972,
+        0.785009,
+        0.082777
+      ]
+    }
+  ],
+  "quality": {
+    "valid_syntax_rows": 167392,
+    "packet_starts_observed": 43,
+    "complete_packets": 10,
+    "issue_count": 90,
+    "issues": [
+      {
+        "byte": 0,
+        "reason": "invalid_record",
+        "token": ",0.268400,0.200446,-1.142164"
+      },
+      {
+        "byte": 547050,
+        "reason": "invalid_record",
+        "token": "2882,-0.945622"
+      },
+      {
+        "byte": 557972,
+        "reason": "invalid_record",
+        "token": "1154,-0.779214,-0.3064203,0.078873,-0.091500,-0.824171"
+      },
+      {
+        "byte": 651486,
+        "reason": "invalid_record",
+        "token": "1877,-0-1.252818"
+      },
+      {
+        "byte": 658515,
+        "reason": "invalid_record",
+        "token": "!2,-0.390949"
+      },
+      {
+        "byte": 750225,
+        "reason": "invalid_record",
+        "token": "694,-0.052338,0.121390,-0.7052-0.937326"
+      },
+      {
+        "byte": 751221,
+        "reason": "invalid_record",
+        "token": "2747,-0.231983,0.132492,-1.13030.475739,-0.474336,-0.366244"
+      },
+      {
+        "byte": 809118,
+        "reason": "invalid_record",
+        "token": "2427,-0.058316,0..741516"
+      },
+      {
+        "byte": 914631,
+        "reason": "invalid_record",
+        "token": "1452,0.079422,0.165432,-0.82362296,-0.757925"
+      },
+      {
+        "byte": 933598,
+        "reason": "invalid_record",
+        "token": "4022,-0.472"
+      },
+      {
+        "byte": 1005296,
+        "reason": "counter_discontinuity",
+        "expected": 11,
+        "observed": 2057
+      },
+      {
+        "byte": 1013674,
+        "reason": "invalid_record",
+        "token": "2302,-0.664473,-0.0896378"
+      },
+      {
+        "byte": 1057629,
+        "reason": "invalid_record",
+        "token": "10"
+      },
+      {
+        "byte": 1089770,
+        "reason": "counter_discontinuity",
+        "expected": 451,
+        "observed": 2515
+      },
+      {
+        "byte": 1126423,
+        "reason": "invalid_record",
+        "token": "3589,0.384117,0.102358,-1.45729.448228,-0.316834,-1.036512"
+      },
+      {
+        "byte": 1128498,
+        "reason": "invalid_record",
+        "token": "1600,-0.079361,-0.15542,0.082777,-1.071892"
+      },
+      {
+        "byte": 1165196,
+        "reason": "invalid_record",
+        "token": "650,-0.00096"
+      },
+      {
+        "byte": 1201332,
+        "reason": "invalid_record",
+        "token": "3732,-0.054046,-0.36983"
+      },
+      {
+        "byte": 1264253,
+        "reason": "invalid_record",
+        "token": "3559,0.345931,0.1511,-0.486536,-0.355386,-0.679784"
+      },
+      {
+        "byte": 1288131,
+        "reason": "invalid_record",
+        "token": "224,-0.537166"
+      },
+      {
+        "byte": 1376098,
+        "reason": "invalid_record",
+        "token": "712,0.035,-0.913292"
+      },
+      {
+        "byte": 1389603,
+        "reason": "invalid_record",
+        "token": "3165,-0.660752,-0.336903,-0.23655840,-0.773968"
+      },
+      {
+        "byte": 1415940,
+        "reason": "invalid_record",
+        "token": "1887,0.-0.497577,-0.265350,-0.457500"
+      },
+      {
+        "byte": 1429459,
+        "reason": "invalid_record",
+        "token": "246,-0.000549,-0.0468"
+      },
+      {
+        "byte": 1487426,
+        "reason": "invalid_record",
+        "token": "3979,-0.1.446642,-0.096868,-0.652517"
+      },
+      {
+        "byte": 1498270,
+        "reason": "invalid_record",
+        "token": "2282,-0.010370,-0.049654,-0.8040886,-0.713212"
+      },
+      {
+        "byte": 1515822,
+        "reason": "invalid_record",
+        "token": "56078,-0.689056"
+      },
+      {
+        "byte": 1526634,
+        "reason": "invalid_record",
+        "token": "3112,-0.570411,-0.1467-0.175985,0.080154,-0.810080"
+      },
+      {
+        "byte": 1586501,
+        "reason": "invalid_record",
+        "token": "795,0.451644,0.305244,-1.07.812520,-0.454389,-0.473970"
+      },
+      {
+        "byte": 1592424,
+        "reason": "invalid_record",
+        "token": "209874"
+      },
+      {
+        "byte": 1690754,
+        "reason": "invalid_record",
+        "token": "1805,0.472018,-0.069353"
+      },
+      {
+        "byte": 1695659,
+        "reason": "invalid_record",
+        "token": "3963,-0.147315,-0.368196,-1.19,0.526796,-0.043188,-1.125572"
+      },
+      {
+        "byte": 1848128,
+        "reason": "invalid_record",
+        "token": "23542,-0.736819"
+      },
+      {
+        "byte": 1872063,
+        "reason": "invalid_record",
+        "token": "1000,0.615185,0.16720627"
+      },
+      {
+        "byte": 1952444,
+        "reason": "counter_discontinuity",
+        "expected": 1338,
+        "observed": 3353
+      },
+      {
+        "byte": 1978397,
+        "reason": "counter_discontinuity",
+        "expected": 18,
+        "observed": 2098
+      },
+      {
+        "byte": 2066098,
+        "reason": "invalid_record",
+        "token": "590,-0.222406,-0.246440,-0.49422-0.437736,-0.633424"
+      },
+      {
+        "byte": 2090855,
+        "reason": "invalid_record",
+        "token": "3341,0.001403,-0.102480,-0.85479473970,-0.007564,-0.667950"
+      },
+      {
+        "byte": 2165277,
+        "reason": "invalid_record",
+        "token": "83,-0.356606"
+      },
+      {
+        "byte": 2184532,
+        "reason": "invalid_record",
+        "token": "2019,0.596031,0.336232,-1.0187-0.568398,-0.259433,-0.454755"
+      },
+      {
+        "byte": 2227444,
+        "reason": "invalid_record",
+        "token": "1261,-0.0-0.845704"
+      },
+      {
+        "byte": 2279075,
+        "reason": "invalid_record",
+        "token": "716,-0.500322,-0.353922,-0270,-0.355386"
+      },
+      {
+        "byte": 2296254,
+        "reason": "invalid_record",
+        "token": "3276,0.186782,0.029707,486536,-1.346209"
+      },
+      {
+        "byte": 2318006,
+        "reason": "invalid_record",
+        "token": "1864,-0-1.091900"
+      },
+      {
+        "byte": 2335172,
+        "reason": "invalid_record",
+        "token": "332,-0.002562,0.1-0.316224,-0.015250,-0.592798"
+      },
+      {
+        "byte": 2389937,
+        "reason": "invalid_record",
+        "token": "3969,0.34544.095648,0.060756,-1.029314"
+      },
+      {
+        "byte": 2404008,
+        "reason": "invalid_record",
+        "token": "2367,"
+      },
+      {
+        "byte": 2432578,
+        "reason": "invalid_record",
+        "token": "3203,-0.570594,6636,0.228872,-0.983686"
+      },
+      {
+        "byte": 2477764,
+        "reason": "invalid_record",
+        "token": "2477,-0.029402,-0.058682,-0.88874,-0.285236,-0.669231"
+      },
+      {
+        "byte": 2491842,
+        "reason": "invalid_record",
+        "token": "870,-0.448350,-71286,0.125050,-1.178642"
+      },
+      {
+        "byte": 2558454,
+        "reason": "invalid_record",
+        "token": "769,0.3025,-0.398574,-0.287981,-0.350140"
+      },
+      {
+        "byte": 2560673,
+        "reason": "invalid_record",
+        "token": "2890,0.40.718824,-0.477386,-0.515633"
+      },
+      {
+        "byte": 2597016,
+        "reason": "invalid_record",
+        "token": "1905,0"
+      },
+      {
+        "byte": 2599208,
+        "reason": "invalid_record",
+        "token": "4018,-0.601826,-0.163846,-0.57998.414739,-0.127063,-0.915427"
+      },
+      {
+        "byte": 2663746,
+        "reason": "invalid_record",
+        "token": "3858,-0.361364,-0.039650,-0.284504,-1.211277"
+      },
+      {
+        "byte": 2665972,
+        "reason": "invalid_record",
+        "token": "1909,-0.002013,-0.16846"
+      },
+      {
+        "byte": 2690655,
+        "reason": "invalid_record",
+        "token": "570,0.156282,0.134139,-1.12632,0.287188,0.107970,-1.069330"
+      },
+      {
+        "byte": 2745288,
+        "reason": "invalid_record",
+        "token": "142,-0.512766,-0.247233,-0.50907,-1.562576"
+      },
+      {
+        "byte": 2758709,
+        "reason": "invalid_record",
+        "token": "510,-0.570,-1.277340"
+      },
+      {
+        "byte": 2853904,
+        "reason": "invalid_record",
+        "token": "1297,-0.334953311,-0.564372,-0.134749,-0.477325"
+      },
+      {
+        "byte": 2870324,
+        "reason": "invalid_record",
+        "token": "3791,0.02564,-0.551989"
+      },
+      {
+        "byte": 2951583,
+        "reason": "invalid_record",
+        "token": "630.199714,-0.179340,-0.758596"
+      },
+      {
+        "byte": 2960506,
+        "reason": "invalid_record",
+        "token": "2367,0.482937,-,-0.607316"
+      },
+      {
+        "byte": 3012916,
+        "reason": "invalid_record",
+        "token": "1887,0.3767972210"
+      },
+      {
+        "byte": 3044521,
+        "reason": "counter_discontinuity",
+        "expected": 756,
+        "observed": 2812
+      },
+      {
+        "byte": 3118588,
+        "reason": "invalid_record",
+        "token": "914,0.523197,-0.138043,-1.237-1.290089"
+      },
+      {
+        "byte": 3215712,
+        "reason": "invalid_record",
+        "token": "3,-0.178486,-0.366915"
+      },
+      {
+        "byte": 3240061,
+        "reason": "invalid_record",
+        "token": "2424,-0.442128,-0.454938-0.718336"
+      },
+      {
+        "byte": 3274025,
+        "reason": "invalid_record",
+        "token": "1404,0.558272,-0.009089,1891,-1.279048"
+      },
+      {
+        "byte": 3325739,
+        "reason": "invalid_record",
+        "token": "0.087779,-1.248792"
+      },
+      {
+        "byte": 3365389,
+        "reason": "invalid_record",
+        "token": "2029,-0.599203,-0.104615,-0.92-0.386984,-0.671854"
+      },
+      {
+        "byte": 3382522,
+        "reason": "invalid_record",
+        "token": "501,0.113643,0.094550,-1.3589583280,-1.183888"
+      },
+      {
+        "byte": 3432243,
+        "reason": "invalid_record",
+        "token": "3986,-0.524112,-0.33171814"
+      },
+      {
+        "byte": 3449373,
+        "reason": "invalid_record",
+        "token": "2473,-0.004026,0.000793,-0.9-0.656726,-0.268339,-0.257176"
+      },
+      {
+        "byte": 3459620,
+        "reason": "invalid_record",
+        "token": "715183278"
+      },
+      {
+        "byte": 3476745,
+        "reason": "invalid_record",
+        "token": "3274,-0.7818497062"
+      },
+      {
+        "byte": 3517118,
+        "reason": "invalid_record",
+        "token": "2406,0.28717360"
+      },
+      {
+        "byte": 3642872,
+        "reason": "invalid_record",
+        "token": "2022,-0.360510,-0.04042,-0.199836,-0.718946"
+      },
+      {
+        "byte": 3649789,
+        "reason": "invalid_record",
+        "token": "151,0.26600362"
+      },
+      {
+        "byte": 3744791,
+        "reason": "invalid_record",
+        "token": "940,-0.366732,-0.2957,-0.345992,-0.282735,-0.488488"
+      },
+      {
+        "byte": 3758135,
+        "reason": "invalid_record",
+        "token": "3347,-0.289567-1.215669"
+      },
+      {
+        "byte": 3961039,
+        "reason": "invalid_record",
+        "token": "3209,-0.383933666"
+      },
+      {
+        "byte": 3976904,
+        "reason": "invalid_record",
+        "token": "1625,-1.315404"
+      },
+      {
+        "byte": 4067940,
+        "reason": "invalid_record",
+        "token": "2275,-0.487512479,-0.862052"
+      },
+      {
+        "byte": 4080689,
+        "reason": "invalid_record",
+        "token": "588,-0.150670,-0.0749,-0.363560,-0.214354,-0.687409"
+      },
+      {
+        "byte": 4171959,
+        "reason": "invalid_record",
+        "token": "1257,-0.033062,-0.2,-0.766526,-0.223382,-0.811056"
+      },
+      {
+        "byte": 4276628,
+        "reason": "invalid_record",
+        "token": "235,-0.359046,-0.251747,-0.4329780.095892,-1.149240"
+      },
+      {
+        "byte": 4281060,
+        "reason": "invalid_record",
+        "token": "2401,-0.007686,-0.13.503921,-0.298107,-0.584990"
+      },
+      {
+        "byte": 4401003,
+        "reason": "invalid_record",
+        "token": "1848,-0.675636"
+      },
+      {
+        "byte": 4820732,
+        "reason": "invalid_record",
+        "token": "3993,0.436028,-0.067832,-1.1270360����1064,-0.159393,0.106689,-0.513559"
+      }
+    ]
+  },
+  "rejected_complete_packets": [],
+  "units": "unconfirmed original sensor units",
+  "timing": "packet-relative only; packet gaps unknown",
+  "ready_for_reference_pairing": true
+}

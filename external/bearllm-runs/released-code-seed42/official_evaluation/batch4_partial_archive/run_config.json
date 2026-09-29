@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "stage": "all",
+  "seed": 42,
+  "references": 3,
+  "reference_policy": "same-condition",
+  "split": "test",
+  "signal_storage": "memory",
+  "vibration_batch_size": 128,
+  "corpus_batch_size": 4,
+  "max_new_tokens": 2048,
+  "limit": null,
+  "dataset": "/media/nas_users/huangyating/bearllm-assets/mbhm_dataset",
+  "checkpoint": "/media/nas_users/huangyating/bearllm-assets/bearllm_weights",
+  "qwen": "/media/nas_users/huangyating/bearllm-assets/qwen_weights",
+  "metadata_sha256": "87134ccb87c93646b8613251bca712b4afb8910baf32d049c263dc8ab9e96ef0",
+  "corpus_sha256": "eb19e542138758ade543ba99d2269ae6e8247470d4a8ddf4961a525a7719469a",
+  "vibration_adapter_sha256": "c2dcd2ff546804dfa0baf37cb0df30ec7fc67afe442a4c99ad0a15d0aae46190",
+  "lora_sha256": "867fb65139f581e7cf36f35d988b172d79c3c140ed9c2cdf3b6a8a5aefe9b10b"
+}

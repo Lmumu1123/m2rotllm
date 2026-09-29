@@ -1,0 +1,92 @@
+{
+  "all_stages_passed": true,
+  "gpu1_main_and_corpus": {
+    "gpu": 1,
+    "status": "complete",
+    "command": [
+      "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+      "scripts/evaluate_mbhm.py",
+      "--stage",
+      "all",
+      "--checkpoint",
+      "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/finetune/weights",
+      "--vibration-batch-size",
+      "128",
+      "--corpus-batch-size",
+      "16",
+      "--max-new-tokens",
+      "2048",
+      "--output",
+      "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/trained_evaluation"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 642.1361684720032
+  },
+  "gpu0_heldout_fallback_demo": {
+    "gpu": 0,
+    "status": "complete",
+    "stages": [
+      {
+        "stage": "heldout",
+        "command": [
+          "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+          "scripts/evaluate_mbhm.py",
+          "--checkpoint",
+          "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/finetune/weights",
+          "--stage",
+          "heldout-generation",
+          "--split",
+          "test",
+          "--corpus-batch-size",
+          "32",
+          "--max-new-tokens",
+          "64",
+          "--output",
+          "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/trained_heldout"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 192.06061558471993,
+        "log": "outputs/full/trained_heldout.log"
+      },
+      {
+        "stage": "fallback",
+        "command": [
+          "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+          "scripts/evaluate_mbhm.py",
+          "--checkpoint",
+          "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/finetune/weights",
+          "--stage",
+          "vibration",
+          "--reference-policy",
+          "excluded-same-source-fallback",
+          "--vibration-batch-size",
+          "128",
+          "--corpus-batch-size",
+          "16",
+          "--max-new-tokens",
+          "2048",
+          "--output",
+          "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/trained_fallback"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 54.3935670289211,
+        "log": "outputs/full/trained_fallback.log"
+      },
+      {
+        "stage": "demo",
+        "command": [
+          "./scripts/run_demo.sh",
+          "--checkpoint",
+          "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/finetune/weights",
+          "--seed",
+          "42",
+          "--output",
+          "outputs/full/demo_response_trained.txt"
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 10.485526544041932,
+        "log": "outputs/full/demo_trained.log"
+      }
+    ]
+  }
+}

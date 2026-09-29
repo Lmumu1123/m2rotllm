@@ -1,0 +1,17 @@
+{
+  "created_before_inference": true,
+  "purpose": "Frozen original FCN with extra local healthy calibration; not zero-shot or main no-calibration holdout",
+  "query_scope": "8 known-class main-rig files only; 58 windows",
+  "reference_selection": "For every query recording, choose normal recording with opposite baud, independent of query fault label",
+  "reference_windows": "Deterministic linspace indices, at most 4 per reference recording; no outcome search",
+  "axis_pairing": "x-to-x, y-to-y, z-to-z; mean probabilities and hidden across reference windows then axes",
+  "variants": [
+    "v0",
+    "query_no_demean"
+  ],
+  "model": "retrained_fcn",
+  "weights_frozen": true,
+  "calibration_limit": "Same rig/cfg/distance user-confirmed, but RPM/load unconfirmed. Do not claim exact same-condition reference.",
+  "external_files": "Neither keep nor bigNormal is used as reference or query",
+  "leakage_boundary": "Reference is disjoint recording from each query; this protocol may use the other baud normal for calibration and is not the prior holdout protocol. Training/CV scores must not be pooled with this diagnostic."
+}

@@ -1,0 +1,55 @@
+{
+  "created_before_inference": true,
+  "variants": {
+    "v0": {
+      "query_demean": true,
+      "reference_demean": false,
+      "reference_bandlimit": false
+    },
+    "reference_bandlimited2k": {
+      "query_demean": true,
+      "reference_demean": false,
+      "reference_bandlimit": true
+    },
+    "query_no_demean": {
+      "query_demean": false,
+      "reference_demean": false,
+      "reference_bandlimit": false
+    },
+    "query_no_demean_ref2k": {
+      "query_demean": false,
+      "reference_demean": false,
+      "reference_bandlimit": true
+    },
+    "query_ref_demean": {
+      "query_demean": true,
+      "reference_demean": true,
+      "reference_bandlimit": false
+    },
+    "query_ref_demean_ref2k": {
+      "query_demean": true,
+      "reference_demean": true,
+      "reference_bandlimit": true
+    }
+  },
+  "query_sampling_rate_hz": 4000,
+  "query_samples": 4000,
+  "query_duration_s": 1,
+  "dct_type": 2,
+  "dct_normalization": "backward",
+  "coefficient_frequency_hz": "k / 2; 0 <= k < 4000 has measured support; padding does not add information",
+  "dcn": "0.01 * sqrt(24000) * c / ||c||2; signed coefficients retained",
+  "reference_seed": 42,
+  "reference_rule": "one public MBHM source-training healthy row per dataset; unchanged choice across all variants",
+  "reference_condition": "not matched to local rig; protocol deviation explicitly retained",
+  "forbidden": "No test-normal reference; no local label or external bigNormal selection; no weight updates; no fabricated 4096-point data",
+  "smoothing": "SFN is Spectral Folding Network. No smoothing variant is silently inserted into pretrained BearLLM; incompatible representation needs source replay training.",
+  "primary_model": "retrained_fcn",
+  "audit_models": [
+    "retrained_fcn",
+    "retrained_final",
+    "official_final"
+  ],
+  "source_sha256": "4f72ae97e30be9d3f7d499b93acb8759bc70265dfc86276470042cd54a77bcbf",
+  "feature_schema": "same as prior contact_features.npz; metadata row order fixed"
+}

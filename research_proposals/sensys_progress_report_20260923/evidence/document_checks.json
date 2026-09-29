@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "document": "导师汇报_10分钟提纲.docx",
+      "tables": 1,
+      "images": 0,
+      "text_characters": 1654
+    },
+    {
+      "document": "导师汇报_接触式知识迁移到毫米波诊断与SenSys计划.docx",
+      "tables": 20,
+      "images": 2,
+      "text_characters": 21549
+    }
+  ],
+  "scope": "DOCX container, content, image embedding and local links; no page-level Word rendering"
+}

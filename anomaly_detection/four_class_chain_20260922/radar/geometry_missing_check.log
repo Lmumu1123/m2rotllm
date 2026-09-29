@@ -1,0 +1,39 @@
+{
+  "status": "blocked_missing_or_invalid_inputs",
+  "check_only": true,
+  "raw_dir": "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results",
+  "raw_dir_exists": true,
+  "output": "/home/huangyating/anomaly_detection/four_class_chain_20260922/geometry_check_should_not_exist",
+  "existing_results": "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results",
+  "required_radar_files": 12,
+  "found_unique_radar_files": 0,
+  "missing_raw_files": [
+    "20260920-184058-normal-11520.bin",
+    "20260920-184857-normal-460800.bin",
+    "20260920-190512-outBroken-115200.bin",
+    "20260920-190913-outBroken-460800.bin",
+    "20260920-192216-inBroken-115200.bin",
+    "20260920-192610-inBroken-460800.bin",
+    "20260920-193718-roll-115200.bin",
+    "20260920-194108-roll-460800.bin",
+    "20260920-195424-keep-115200.bin",
+    "20260920-195753-keep-460800.bin",
+    "20260920-201757-bigNormal-115200.bin",
+    "20260920-202115-bigNormal-460800.bin"
+  ],
+  "duplicate_raw_files": {},
+  "size_mismatches": [],
+  "missing_archived_raw_manifest": [],
+  "missing_contact_exports": [],
+  "contact_exports_reused": 12,
+  "radar_config_checked": "exact supported R0 fields",
+  "config": "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/雷达原始配置.cfg",
+  "shared_distance_m": 0.45,
+  "shared_roi_m": [
+    0.29000000000000004,
+    0.61
+  ],
+  "sha256_policy": "Full raw SHA256 checked against archived manifest before any output is created",
+  "synchronized_window_pairs": false
+}
+ERROR conda.cli.main_run:execute(148): `conda run python /home/huangyating/anomaly_detection/four_class_chain_20260922/scripts/reprocess_geometry.py --raw-dir /home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results --output /home/huangyating/anomaly_detection/four_class_chain_20260922/geometry_check_should_not_exist --check-only` failed. (See above for error)

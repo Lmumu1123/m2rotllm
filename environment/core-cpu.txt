@@ -1,0 +1,11 @@
+# Install Python 3.12 first. CPU package avoids NVIDIA driver assumptions.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.11.0+cpu
+numpy==1.26.0
+scipy==1.15.2
+h5py==3.16.0
+pandas==2.2.3
+scikit-learn==1.6.1
+matplotlib==3.10.1
+safetensors==0.6.2
+tqdm==4.67.1

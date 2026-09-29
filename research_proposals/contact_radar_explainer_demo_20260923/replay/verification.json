@@ -1,0 +1,154 @@
+{
+  "status": "passed",
+  "no_training": true,
+  "no_scaler_refit": true,
+  "labels_used_in_forward": false,
+  "selection": "first valid exported window per recording; independent of predictions",
+  "predictions_match_archived_input_path": true,
+  "scope": "12 first-window examples, not a new dataset accuracy estimate",
+  "elapsed_seconds": 1.6434016227722168,
+  "checks": [
+    {
+      "bag_id": "20260920-184058-normal-11520",
+      "radar_feature_max_error": 2.5331974029541016e-07,
+      "contact_dcn_max_error": 0.0,
+      "contact_hidden_max_error": 0.00067138671875,
+      "radar_probability_max_error": 3.725290298461914e-08,
+      "contact_probability_max_error": 1.1146068572998047e-05,
+      "same_head": true
+    },
+    {
+      "bag_id": "20260920-184857-normal-460800",
+      "radar_feature_max_error": 2.682209014892578e-07,
+      "contact_dcn_max_error": 0.0,
+      "contact_hidden_max_error": 0.0012807846069335938,
+      "radar_probability_max_error": 0.0,
+      "contact_probability_max_error": 0.00016373395919799805,
+      "same_head": true
+    },
+    {
+      "bag_id": "20260920-190512-outBroken-115200",
+      "radar_feature_max_error": 3.5762786865234375e-07,
+      "contact_dcn_max_error": 0.0,
+      "contact_hidden_max_error": 0.0014066696166992188,
+      "radar_probability_max_error": 9.313225746154785e-09,
+      "contact_probability_max_error": 0.0003605484962463379,
+      "same_head": true
+    },
+    {
+      "bag_id": "20260920-190913-outBroken-460800",
+      "radar_feature_max_error": 2.980232238769531e-07,
+      "contact_dcn_max_error": 0.0,
+      "contact_hidden_max_error": 0.0006060600280761719,
+      "radar_probability_max_error": 2.384185791015625e-07,
+      "contact_probability_max_error": 0.0002530813217163086,
+      "same_head": true
+    },
+    {
+      "bag_id": "20260920-192216-inBroken-115200",
+      "radar_feature_max_error": 3.5762786865234375e-07,
+      "contact_dcn_max_error": 0.0,
+      "contact_hidden_max_error": 0.0013294219970703125,
+      "radar_probability_max_error": 1.7285346984863281e-06,
+      "contact_probability_max_error": 0.0003777742385864258,
+      "same_head": true
+    },
+    {
+      "bag_id": "20260920-192610-inBroken-460800",
+      "radar_feature_max_error": 3.5762786865234375e-07,
+      "contact_dcn_max_error": 0.0,
+      "contact_hidden_max_error": 0.0007195472717285156,
+      "radar_probability_max_error": 8.195638656616211e-08,
+      "contact_probability_max_error": 4.309415817260742e-05,
+      "same_head": true
+    },
+    {
+      "bag_id": "20260920-193718-roll-115200",
+      "radar_feature_max_error": 2.682209014892578e-07,
+      "contact_dcn_max_error": 0.0,
+      "contact_hidden_max_error": 0.0019283294677734375,
+      "radar_probability_max_error": 2.384185791015625e-07,
+      "contact_probability_max_error": 0.00036650896072387695,
+      "same_head": true
+    },
+    {
+      "bag_id": "20260920-194108-roll-460800",
+      "radar_feature_max_error": 2.682209014892578e-07,
+      "contact_dcn_max_error": 0.0,
+      "contact_hidden_max_error": 0.00319671630859375,
+      "radar_probability_max_error": 1.862645149230957e-08,
+      "contact_probability_max_error": 0.00018703937530517578,
+      "same_head": true
+    },
+    {
+      "bag_id": "20260920-195424-keep-115200",
+      "radar_feature_max_error": 2.682209014892578e-07,
+      "contact_dcn_max_error": 0.0,
+      "contact_hidden_max_error": 0.0014333724975585938,
+      "radar_probability_max_error": 2.384185791015625e-07,
+      "contact_probability_max_error": 0.00011491775512695312,
+      "same_head": true
+    },
+    {
+      "bag_id": "20260920-195753-keep-460800",
+      "radar_feature_max_error": 3.2782554626464844e-07,
+      "contact_dcn_max_error": 0.0,
+      "contact_hidden_max_error": 0.0023136138916015625,
+      "radar_probability_max_error": 5.960464477539063e-08,
+      "contact_probability_max_error": 0.00011527538299560547,
+      "same_head": true
+    },
+    {
+      "bag_id": "20260920-201757-bigNormal-115200",
+      "radar_feature_max_error": 3.5762786865234375e-07,
+      "contact_dcn_max_error": 0.0,
+      "contact_hidden_max_error": 0.00359344482421875,
+      "radar_probability_max_error": 1.9371509552001953e-07,
+      "contact_probability_max_error": 1.3397141174209537e-09,
+      "same_head": true
+    },
+    {
+      "bag_id": "20260920-202115-bigNormal-460800",
+      "radar_feature_max_error": 3.5762786865234375e-07,
+      "contact_dcn_max_error": 0.0,
+      "contact_hidden_max_error": 0.0033931732177734375,
+      "radar_probability_max_error": 2.980232238769531e-07,
+      "contact_probability_max_error": 1.0037837228082935e-10,
+      "same_head": true
+    }
+  ],
+  "input_sha256": {
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/20260920-184058-normal-11520.npz": "d4218738b2a4f0cea1a972c386f84aaca2cf01c95e41fee2e3788b96d47a0da2",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_18-41-41-normal-115200.npz": "7b5599a6e3ef3114dec30f777b63209742eb14ffd658420bd780ca583f9056eb",
+    "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_v1/models/v0/460800_to_115200/retained_head.npz": "61c257101c9a03bf4e53a5ca27fae603e49a4442f83bd1e7920172c4a7f28549",
+    "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_v0/models/four_class_provisional_roi/460800_to_115200/ce_feat_1_kd.pt": "e37e2ba246cedc37e4b9d989bb944f41759387c91d2e99b375d47fc5c528e53a",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/20260920-184857-normal-460800.npz": "3ac0a93b339088b4ca234b3cff693f3a1cc86be0c6a89bc54c8beb22dedbe4d0",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_18-48-45-normal-460800.npz": "719de0cb39eb281468019109db584eb4ddfc255432c487b3c81db7e4cf68d44c",
+    "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_v1/models/v0/115200_to_460800/retained_head.npz": "252f3395d039be7db7c5cde018141ac8beaa1b20330c5c6ba93d289dabd09d5e",
+    "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_v0/models/four_class_provisional_roi/115200_to_460800/ce_feat_1_kd.pt": "bfe6ee4f34b6f47da9bbcb8fec1a405264931ad0ab05ceb684252e58f5e9fa43",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/20260920-190512-outBroken-115200.npz": "4fcdd08e08e211a820d6f4ced2f32d17b6ce4f3c0ebad058796588a15f69294d",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_19-05-05-outBroken-115200.npz": "768d03813fcc5bfaa87c8778e026137887419674d13576b714f56f6c083d5213",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/20260920-190913-outBroken-460800.npz": "ba6b0eae8e3c5f7fb27b688445d162b8d33c6e19e0563b01243f8c071fa4d377",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_19-09-18-outBroken-460800.npz": "865bbdb4bdb03f66a7a28ce6fe59f2613271a61bbe158d37e02ea8a15d7d9eac",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/20260920-192216-inBroken-115200.npz": "2b94caeab5ca67077e870c9f1f1b3d1a76be3e6ff81dee6364bc7f83cd91906e",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_19-22-20-inBroken-115200.npz": "8ff5b708e40e5e19f2a1ba6f406e00db047d21c9ed418f006a65d6f7983fca2d",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/20260920-192610-inBroken-460800.npz": "199896d9764c5b84cef7233bd696df165a47073fef5212bc2a9098c83872f1b9",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_19-26-17-inBroken-460800.npz": "70ebc315498e820f7c8163ebc9516af11610c701b627494d7bb61e8e6869703a",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/20260920-193718-roll-115200.npz": "6b0c919f6626ee9382c56dc6c26d7c0eef4bc39ad289cb25510ff359bb75b57c",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_19-37-24-roll-115200.npz": "5315b9d76de84e99defe2850b3952175e3e45a9797e5caf2b48baac543ffc31a",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/20260920-194108-roll-460800.npz": "310be69f70b7502f19dfbe1b644ec1322ab1ca5e926f13a76f0a6e709006af04",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_19-41-02-roll-460800.npz": "49c5a3b3a85e0d57eca014a1aaacc1ea4a3d63a8134494585a3a379fb7ee5b2c",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/20260920-195424-keep-115200.npz": "0e786cedd9f97b40246360629524e62f953b2134d1d2039ce03d00d40e32aefb",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_19-54-31-keep-115200.npz": "3f2af7f1050fd2d376ae489589d5d24f06250a34d226b0b36a4c51147b08774a",
+    "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_conservative/models/v0/all_known/retained_head.npz": "4ba0bb522c516c3104c3b3d9e9c0d9a0eeaf5a0fc3fc5dc7364b7152e852ad72",
+    "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_b_conservative_v0/models/four_class_provisional_roi/all_known/ce_feat_1_kd.pt": "373d47ca7b81af7da62d14a557bc13afa3fd854b669c3477dae45c719a5c4359",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/20260920-195753-keep-460800.npz": "819fd015957105970b7068fee90b7caca8ce8a6de2c66baeedb13ff9deefe347",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_19-58-01-keep-460800.npz": "3acab1e560acbbe33d1ecd6e9d6a1eac8c9a53cc7eb94ff2059ec4cbb5e7385a",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/20260920-201757-bigNormal-115200.npz": "1f33627eea95ab0d6ffa224364bd76c7710586ebdeb01a51a87217b321603c69",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_20-17-49-bigNormal-115200.npz": "a11e9a2bcb5942f1c7f379ef72c3aa082023293bf23f507629fc916726b25c13",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/20260920-202115-bigNormal-460800.npz": "6826f38977f39ad8d2300887b05f1e20cadcf18f50d3a227d585c952a5f24ce5",
+    "/home/huangyating/anomaly_detection/four_class_preprocessing_20260921/results/2026_9_20_20-21-22-bigNormal-460800.npz": "e51c4c126906b06e7eb470af419244a8469945c9cc734d1040768b9d72012bee"
+  },
+  "unchanged_inputs": true,
+  "python": "/home/huangyating/miniconda3/envs/m2vllm/bin/python"
+}

@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "new_training": false,
+  "new_accuracy_experiment": false,
+  "source_inputs_unchanged": true,
+  "checked_local_links": 20,
+  "missing_local_links": [],
+  "score_tables_cross_checked": true,
+  "figures": [
+    "01_pipeline",
+    "02_results"
+  ],
+  "source_manifest": [
+    {
+      "source": "/home/huangyating/anomaly_detection/acceptance_contact98_radar95/metrics.csv",
+      "snapshot": "evidence/01_metrics.csv",
+      "sha256": "f389e69af48632e527c0f6568b11fe9648074551670dae757d9814c0aae05fbb"
+    },
+    {
+      "source": "/home/huangyating/anomaly_detection/acceptance_contact98_radar95/student_teacher_audit/window_totals.csv",
+      "snapshot": "evidence/02_window_totals.csv",
+      "sha256": "bde8da68f9456f7c78d8143ddc2e1d40858b039c1aa96e8df8652c2497b5cb3c"
+    },
+    {
+      "source": "/home/huangyating/anomaly_detection/contact_quality_alignment_audit_20260922/leakage/source_accuracy_retention.csv",
+      "snapshot": "evidence/03_source_accuracy_retention.csv",
+      "sha256": "62955a0b7abe3e3be7b08db4cefdec37bf2792865b657214c3005fa433dd2690"
+    },
+    {
+      "source": "/home/huangyating/anomaly_detection/contact_quality_alignment_audit_20260922/leakage/source_duplicate_summary.json",
+      "snapshot": "evidence/04_source_duplicate_summary.json",
+      "sha256": "dfbc2ff24eb673af15284ccc16e15d4ac1d1c5f633b7332c68a02759e90b011b"
+    },
+    {
+      "source": "/home/huangyating/anomaly_detection/contact_quality_alignment_audit_20260922/leakage/source_train_eval_duplicate_counts.json",
+      "snapshot": "evidence/05_source_train_eval_duplicate_counts.json",
+      "sha256": "81c5389c78ef1fce7ad614bb5dd870de3451ad347e170c07e22384703c000c24"
+    },
+    {
+      "source": "/home/huangyating/anomaly_detection/contact_quality_alignment_audit_20260922/quality/verification.json",
+      "snapshot": "evidence/06_verification.json",
+      "sha256": "5b72a177fc04ee589ef1e44406730ef5549a4b454b9dff1ad682f0d74333f7e6"
+    },
+    {
+      "source": "/home/huangyating/anomaly_detection/contact_quality_alignment_audit_20260922/theory/verification.json",
+      "snapshot": "evidence/07_verification.json",
+      "sha256": "90b7f8086a60a5e5399ec6fa7fddb6fc5e014a616bd2a693711d780d472b47da"
+    }
+  ],
+  "documents": [
+    {
+      "file": "导师汇报_10分钟提纲.md",
+      "sha256": "f9f32bbdd79379767dbb7c43d1cd1d0ee196235842c66a8ad8d0ec25c03d81b6"
+    },
+    {
+      "file": "导师汇报_接触式知识迁移到毫米波诊断与SenSys计划.md",
+      "sha256": "553eac6e157c6ff4c8f694f18733ae94c0724a10740e97b443c961d21e895334"
+    }
+  ],
+  "python": "/home/huangyating/miniconda3/envs/m2vllm/bin/python"
+}

@@ -1,0 +1,12 @@
+{
+  "retrained_final": {
+    "max_abs_difference": 3.814697265625e-06,
+    "method": "merged standalone classifier vs repository PEFT adapter loader with identical inputs",
+    "passed": true
+  },
+  "official_final": {
+    "max_abs_difference": 2.86102294921875e-06,
+    "method": "merged standalone classifier vs repository PEFT adapter loader with identical inputs",
+    "passed": true
+  }
+}

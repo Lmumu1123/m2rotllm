@@ -1,0 +1,31 @@
+{
+  "all_local_links_exist": true,
+  "primary_numbers_verified": true,
+  "source_check_reports": {
+    "audit": {
+      "path": "/home/huangyating/anomaly_detection/r2_validation_20260928/audit/audit_summary.json",
+      "status": "see details"
+    },
+    "contact": {
+      "path": "/home/huangyating/anomaly_detection/r2_validation_20260928/contact/independent_verification.json",
+      "status": "see details"
+    },
+    "radar": {
+      "path": "/home/huangyating/anomaly_detection/r2_validation_20260928/radar/verification.json",
+      "status": "see details"
+    },
+    "baselines": {
+      "path": "/home/huangyating/anomaly_detection/r2_validation_20260928/baselines/verification.json",
+      "status": true
+    },
+    "neural": {
+      "path": "/home/huangyating/anomaly_detection/r2_validation_20260928/independent_check/verification.json",
+      "status": "passed"
+    },
+    "order": {
+      "path": "/home/huangyating/anomaly_detection/r2_validation_20260928/contact/order_domain/independent_verification.json",
+      "status": "see details"
+    }
+  },
+  "does_not_certify_new_head_source_retention": true
+}

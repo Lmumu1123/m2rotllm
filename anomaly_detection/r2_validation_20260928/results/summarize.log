@@ -1,0 +1,9 @@
+    head       feature                     method     level  accuracy_mean  accuracy_seed_sd  macro_f1_mean  macro_f1_seed_sd  seeds  n_per_seed
+archived complex_shape             class_code_MSE recording       0.275463          0.021216       0.238425          0.038234      3         144
+archived complex_shape        class_prototype_MSE recording       0.250000          0.000000       0.100000          0.000000      3         144
+archived complex_shape        contact_session_MSE recording       0.252315          0.004009       0.104691          0.008125      3         144
+archived complex_shape                 direct_MLP recording       0.291667          0.020833       0.274464          0.010045      3         144
+archived complex_shape                       full recording       0.284722          0.025039       0.187887          0.014599      3         144
+archived complex_shape                    head_CE recording       0.268519          0.021216       0.262720          0.039709      3         144
+archived complex_shape same_class_wrong_speed_MSE recording       0.282407          0.010608       0.177684          0.022182      3         144
+/home/huangyating/anomaly_detection/r2_validation_20260928/results

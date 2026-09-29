@@ -1,0 +1,32 @@
+{
+  "python": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "torch": "2.11.0+cu128",
+  "numpy": "1.26.0",
+  "device": "cuda:0",
+  "source_sha256": "41fc28b5bc8409b982c3e1fdc261fa9eed27e7e8631ad13c30364e8561c29347",
+  "FCN_sha256": "e296b0bc6411ebeead68cf1d4e26f01e62b19c2b882928db7f1ccebbb6406b6a",
+  "input_files": 12,
+  "windows": 88,
+  "label_map": [
+    [
+      0
+    ],
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      7,
+      8,
+      9
+    ],
+    [
+      4,
+      5,
+      6
+    ]
+  ],
+  "local_references_used": false,
+  "original_weights_modified": false
+}

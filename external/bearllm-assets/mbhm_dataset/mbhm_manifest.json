@@ -1,0 +1,70 @@
+{
+  "repo": "SIA-IDE/MBHM",
+  "revision": "78cd9b8b6b65cd43eebf4879b060d783d5f7dcfe",
+  "endpoint": "https://hf-mirror.com",
+  "directory": "/media/nas_users/huangyating/bearllm-assets/mbhm_dataset",
+  "verified": true,
+  "files": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "41ea47c1fcf071b1a70e1c5936ab7e75134d6ab9",
+      "size": 2559
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "f0fcc2f18dda0ac3c241125367ca939381c40791",
+      "size": 2802
+    },
+    {
+      "rfilename": "corpus.json",
+      "blobId": "885d711835e46c9a0f2a72d04c67042815387861",
+      "size": 1507812
+    },
+    {
+      "rfilename": "data.hdf5",
+      "blobId": "86976deeaf4189dbf7114baa52a7852a83c6d62f",
+      "size": 13009537400,
+      "lfs": {
+        "sha256": "ba5e5c9da0538e8d0dfd22d683b95098cb1abee14c6c6e2bbc478ee6339040b8",
+        "size": 13009537400,
+        "pointerSize": 136
+      }
+    },
+    {
+      "rfilename": "demo_data.json",
+      "blobId": "5372317dfbc97700df48315b528c53a91191946a",
+      "size": 1520901
+    },
+    {
+      "rfilename": "metadata.parquet",
+      "blobId": "4cbe4a885accdc0fc2ddfd45aa3253fb66998257",
+      "size": 836365,
+      "lfs": {
+        "sha256": "1589edfde1172d3997c3037a228c2f8fc40c9fe010c761750e42ce488b909cf8",
+        "size": 836365,
+        "pointerSize": 131
+      }
+    },
+    {
+      "rfilename": "metadata.sqlite",
+      "blobId": "7d6750a29bf379ae91f1728942b6b47dfdce3ffa",
+      "size": 4464640,
+      "lfs": {
+        "sha256": "87134ccb87c93646b8613251bca712b4afb8910baf32d049c263dc8ab9e96ef0",
+        "size": 4464640,
+        "pointerSize": 132
+      }
+    },
+    {
+      "rfilename": "src/dcn.py",
+      "blobId": "de0577366b9458589f564aa99465d514048fae8d",
+      "size": 596
+    },
+    {
+      "rfilename": "src/demo.py",
+      "blobId": "535c51a07a4d8bca49829f54e86a6c76a50fa880",
+      "size": 1922
+    }
+  ],
+  "verified_at_utc": "2026-09-18T17:08:15.673440+00:00"
+}

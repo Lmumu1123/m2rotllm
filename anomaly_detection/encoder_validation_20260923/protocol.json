@@ -1,0 +1,47 @@
+{
+  "experiment_status": "new_iterations_on_previously_seen_development_data_not_new_blind_test",
+  "environment": "m2vllm",
+  "data": {
+    "radar_features": "/home/huangyating/anomaly_detection/four_class_chain_20260922/radar/features.npz",
+    "radar_metadata": "/home/huangyating/anomaly_detection/four_class_chain_20260922/radar/metadata.csv",
+    "contact_bearllm": "/home/huangyating/anomaly_detection/retention_alignment_20260922/preprocessing/variants/v0/retrained_fcn",
+    "labels": ["normal", "inner", "outer", "ball"],
+    "folds": [[115200, 460800], [460800, 115200]],
+    "test_is_development": true,
+    "synchronized_recordings_not_windows": true,
+    "known_invalid_roi": "outer radar around 0.884m, user actual distance around 0.45m; preserve and report flag"
+  },
+  "teacher_order": ["official RotLLM native, predefined preprocessing", "separately trained contact-only four-class readout if required"],
+  "rotllm_primary_preprocessing": "released entrypoint scale RMS 0.01, no demeaning; sensitivity branches reported separately, no target-based selection",
+  "radar_training": {
+    "input": "128-dimensional frame_shape",
+    "student": "Linear128-LayerNorm-GELU-Dropout0.1-Linear64-GELU-Linear128, native activation constraint documented",
+    "steps": 400,
+    "seeds": [17, 42, 73],
+    "windows_per_training_bag_per_step": 16,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "gradient_clip": 5,
+    "methods": ["ce_only", "embedding_only", "full"],
+    "loss": "CE + bag mean standardized MSE + 0.1 same-label contrast + 0.5 bag KL with T=2",
+    "head_frozen": true,
+    "scalers": "fit training recordings only, recording-balanced weights",
+    "selection": "fixed last step; no choosing checkpoints, scaling branch, or seed based on heldout results"
+  },
+  "leave_teacher_out": {
+    "radar_model": "archived BearLLM students trained before RotLLM was acquired",
+    "mapping": "contact-only StandardScaler plus Ridge alpha=1 with recording-balanced weights",
+    "mapping_pairs": "same contact window encoded by BearLLM and RotLLM, matched by bag_id and window_row",
+    "mapping_fit": "source fold contact windows only, no radar and no class labels",
+    "native_teacher": "report original 15-class other-category predictions alongside conditional bearing results",
+    "additional_four_class_head": "if fit using local contact labels, label cost declared; not zero-local-label system",
+    "outputs": ["native B contact", "B head on A contact after mapping", "B head on frozen radar A after mapping"]
+  },
+  "reporting": {
+    "unit": ["short window", "complete recording via mean probabilities"],
+    "geometry": ["all four known classes, explicitly invalid-ROI development result", "known-ROI-valid subset sensitivity, still four-class predictions"],
+    "source_retention": "old checkpoints and routing untouched; weights hash checked; no new head claimed to preserve original task accuracy without testing",
+    "blocked_claims": ["same-class recording shuffle with one training recording per class", "severity transfer without real severity labels", "clean four-class physical diagnosis before ROI repair", "new blind generalization from already seen recordings"]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "seed": 42,
+  "total_queries": 135516,
+  "eligible_queries": 122792,
+  "excluded_queries_without_reference": {
+    "CWRU": 3862,
+    "DIRG": 6120,
+    "MFPT": 42,
+    "NCEPU": 2700
+  },
+  "pair_counts": {
+    "train": 257865,
+    "val": 73674,
+    "test": 36837
+  },
+  "query_counts": {
+    "train": 85955,
+    "val": 24558,
+    "test": 12279
+  },
+  "reference_policy": "all healthy rows of the same condition, across splits",
+  "split_policy": "released SQL order; eligible index modulo 10: train 0..6, val 7..8, test 9",
+  "train_references_outside_training_queries": 77436,
+  "val_references_outside_training_queries": 21798,
+  "test_references_outside_training_queries": 11205
+}

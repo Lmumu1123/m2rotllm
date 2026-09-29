@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "training": false,
+  "actual_frozen_models": 2,
+  "permutations_per_model": 50,
+  "max_loss_change": 8.326672684688674e-16,
+  "loss_check_scope": "All windows per training bag, equally weighted bag CE; same mathematical loss terms as training, no random 16-window minibatch/dropout",
+  "what_is_permuted": "Order of complete window embeddings after feature extraction; not waveform samples inside a window",
+  "exact_theoretical_invariance": true,
+  "synthetic_quarter_cycle_shift": {
+    "bag_mean_MSE": 8.011868568650901e-30,
+    "paired_time_MSE": 1.0
+  },
+  "equal_mean_unequal_distribution": {
+    "P": [
+      0.0,
+      2.0
+    ],
+    "Q": [
+      1.0,
+      1.0
+    ],
+    "mean_P": 1.0,
+    "mean_Q": 1.0,
+    "variance_P": 1.0,
+    "variance_Q": 0.0
+  },
+  "conclusion": "Current bag objective cannot identify time order or certify event alignment. No claim that real bearing diagnosis never needs time alignment."
+}

@@ -1,0 +1,31 @@
+{
+  "checks": [
+    {
+      "fold": "115200_to_460800",
+      "metadata_identity": true,
+      "train_only_minmax_verified": true,
+      "reproduced_train_test_external_rows": [
+        0,
+        7,
+        58
+      ],
+      "feature_reload_max_abs": 4.76837158203125e-07,
+      "classifier_reload_max_probability_abs": 1.1102230246251565e-16,
+      "no_exact_contact_window_duplicates_across_recordings": true
+    },
+    {
+      "fold": "460800_to_115200",
+      "metadata_identity": true,
+      "train_only_minmax_verified": true,
+      "reproduced_train_test_external_rows": [
+        7,
+        0,
+        58
+      ],
+      "feature_reload_max_abs": 2.384185791015625e-07,
+      "classifier_reload_max_probability_abs": 1.1102230246251565e-16,
+      "no_exact_contact_window_duplicates_across_recordings": true
+    }
+  ],
+  "scores_not_used_for_selection": true
+}

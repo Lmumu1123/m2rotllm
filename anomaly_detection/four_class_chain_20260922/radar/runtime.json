@@ -1,0 +1,10 @@
+{
+  "python": "3.12.14 (main, Sep  2 2026, 23:27:36) [GCC 15.3.0]",
+  "executable": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "numpy": "1.26.0",
+  "seconds": 6.531301021575928,
+  "script_sha256": "b5915e22328024f8a3b47c9acc11d33830ec5b908dc7987c32441d8ecfd9febc",
+  "source": "four_class_preprocessing_20260921/results",
+  "threads": 2,
+  "window_count": 614
+}

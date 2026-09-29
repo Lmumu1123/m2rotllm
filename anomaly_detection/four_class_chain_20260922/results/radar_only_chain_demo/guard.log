@@ -1,0 +1,1 @@
+{"rows": 12, "raw_llm_probability_fidelity_count": 12, "fallback_count": 0, "guarded_rule_consistency_count": 12, "diagnosis_status_counts": {"experimental_known_class_candidate": 8, "invalid_target_roi": 4}}

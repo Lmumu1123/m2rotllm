@@ -1,0 +1,67 @@
+{
+  "created_utc": "2026-09-28T09:55:27.744589+00:00",
+  "status": "fixed before new-batch classification results",
+  "primary": "leave-one-rpm-out: 3 folds, each holds out all radar and all contact of 1000/2000/3000rpm",
+  "seeds": [
+    17,
+    42,
+    73
+  ],
+  "methods": [
+    "head_CE",
+    "contact_session_MSE",
+    "full",
+    "class_prototype_MSE",
+    "class_code_MSE",
+    "same_class_wrong_speed_MSE"
+  ],
+  "baselines": [
+    "linear_SVM",
+    "RBF_SVM",
+    "kNN5",
+    "RF300",
+    "direct_radar_MLP",
+    "amplitude_QC_RBF_SVM"
+  ],
+  "feature_primary": "complex_shape: physical frame spectra 5–2000Hz 128 bins",
+  "feature_sensitivity": [
+    "phase_shape",
+    "geometry_complex_shape"
+  ],
+  "teacher": "frozen historical Bear FCN v0 plus frozen historical retained all_known ten-way head",
+  "training": {
+    "steps": 400,
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "gradient_clip": 5,
+    "windows_per_contact_session_per_step": 16,
+    "student_architecture": "128→128 LayerNorm GELU Dropout(.1)→64 GELU→128; training-contact mean/scale affine and ReLU",
+    "loss_full": "CE + standardized session-mean MSE + .1 supervised contrast + .5 temperature-2 KD",
+    "code_construction": "400 steps Adam .05, fixed frozen head CE + .001 standardized code L2",
+    "checkpoint_selection": "fixed final step; no held-out result used for early stopping or tuning"
+  },
+  "split_rules": [
+    "entire held-out rpm excluded from all fitting, including contact scaler/prototypes/physical-readout training",
+    "radar windows grouped by recording; contact packets grouped by original contact_id",
+    "radar scaler balances recordings; teacher scaler balances contact sessions",
+    "no physical paired window correspondences invented",
+    "all quality flagged observations retained in main results",
+    "same-class wrong-speed target swaps the two training speeds without changing class"
+  ],
+  "metrics": [
+    "window accuracy/macro-F1",
+    "recording mean-probability accuracy/macro-F1",
+    "contact-session mean hidden fidelity MSE/cosine; only 12 independent target sessions",
+    "frozen contact-only ridge physical readout versus explicitly oracle true-class train means",
+    "head row-space and null-space error"
+  ],
+  "source_retention": "existing checkpoints immutable and SHA verified; any new local-only diagnostic head is separate and not deployed nor declared source-retention-certified",
+  "secondary_contact": "frozen native/retained heads; new contact-only diagnostic LogisticRegression on training rpm only, plus physical-feature SVM; XY-only sensitivity all classes uniformly",
+  "scope_limits": [
+    "one bearing/installation per class remains possible; rpm holdout is not new bearing/motor evidence",
+    "same-session multiple radar recordings do not multiply independent teacher sessions",
+    "shared long-DAT precludes strict contact-independent distance-only split without reliable timestamp segmentation",
+    "no new-model tuning based on these test-fold results; followups must be explicitly developmental"
+  ]
+}

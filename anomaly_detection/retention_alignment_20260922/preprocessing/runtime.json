@@ -1,0 +1,13 @@
+{
+  "python": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "torch": "2.11.0+cu128",
+  "numpy": "1.26.0",
+  "device": "cuda:1",
+  "source_sha256": "4f72ae97e30be9d3f7d499b93acb8759bc70265dfc86276470042cd54a77bcbf",
+  "reference_loader_sha256": "41fc28b5bc8409b982c3e1fdc261fa9eed27e7e8631ad13c30364e8561c29347",
+  "variants": 6,
+  "models": 3,
+  "windows": 88,
+  "raw_mean_preserved_in_export": true,
+  "max_demean_recompute_difference": 1.1920928955078125e-07
+}

@@ -1,0 +1,22 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/conv.py:186: UserWarning: Initializing zero-element tensors is a no-op
+  init.kaiming_uniform_(self.weight, a=math.sqrt(5))
+generated 8/144
+generated 16/144
+generated 24/144
+generated 32/144
+generated 40/144
+generated 48/144
+generated 56/144
+generated 64/144
+generated 72/144
+generated 80/144
+generated 88/144
+generated 96/144
+generated 104/144
+generated 112/144
+generated 120/144
+generated 128/144
+generated 136/144
+generated 144/144
+{"rows": 144, "raw_probability_fidelity": 0.9097222222222222, "class_conflicts": 13, "unparseable": 0, "invalid_geometry": 48}

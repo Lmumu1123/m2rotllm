@@ -1,0 +1,146 @@
+Using Python 3.12.14 environment at: /home/huangyating/miniconda3/envs/m2vllm
+Resolved 73 packages in 6.17s
+Downloading nvidia-cufft-cu12 (184.2MiB)
+Downloading nvidia-nvjitlink-cu12 (37.4MiB)
+Downloading nvidia-nccl-cu12 (283.0MiB)
+Downloading nvidia-cusparse-cu12 (274.9MiB)
+Downloading nvidia-cublas-cu12 (566.8MiB)
+Downloading nvidia-curand-cu12 (60.7MiB)
+Downloading nvidia-cuda-cupti-cu12 (9.8MiB)
+Downloading nvidia-cusolver-cu12 (255.1MiB)
+ Downloading nvidia-cuda-cupti-cu12
+Downloading nvidia-cudnn-cu12 (627.4MiB)
+ Downloading nvidia-nvjitlink-cu12
+Downloading nvidia-cuda-nvrtc-cu12 (84.0MiB)
+ Downloading nvidia-curand-cu12
+Downloading torch (782.3MiB)
+ Downloading nvidia-cuda-nvrtc-cu12
+Downloading nvidia-cusparselt-cu12 (273.9MiB)
+ Downloading nvidia-cufft-cu12
+Downloading nvidia-nvshmem-cu12 (132.7MiB)
+ Downloading nvidia-cusolver-cu12
+Downloading nvidia-cufile-cu12 (1.1MiB)
+ Downloading nvidia-cufile-cu12
+Downloading triton (179.5MiB)
+ Downloading nvidia-nccl-cu12
+Downloading pyarrow (40.1MiB)
+ Downloading nvidia-cusparse-cu12
+Downloading scipy (35.6MiB)
+ Downloading nvidia-nvshmem-cu12
+Downloading numpy (17.1MiB)
+ Downloading nvidia-cusparselt-cu12
+Downloading scikit-learn (12.5MiB)
+ Downloading nvidia-cublas-cu12
+ Downloading nvidia-cudnn-cu12
+Downloading pandas (12.1MiB)
+Downloading transformers (9.5MiB)
+ Downloading scikit-learn
+Downloading matplotlib (8.2MiB)
+ Downloading transformers
+ Downloading numpy
+Downloading cuda-bindings (7.2MiB)
+Downloading pillow (6.6MiB)
+ Downloading pandas
+Downloading sympy (6.0MiB)
+ Downloading matplotlib
+ Downloading pillow
+ Downloading cuda-bindings
+Downloading h5py (5.2MiB)
+Downloading fonttools (5.2MiB)
+ Downloading sympy
+Downloading hf-xet (4.3MiB)
+Downloading tokenizers (3.0MiB)
+ Downloading tokenizers
+ Downloading hf-xet
+Downloading networkx (2.0MiB)
+ Downloading h5py
+ Downloading fonttools
+Downloading nltk (1.4MiB)
+ Downloading scipy
+Downloading kiwisolver (1.4MiB)
+Downloading setuptools (1.0MiB)
+ Downloading networkx
+ Downloading nltk
+ Downloading setuptools
+ Downloading kiwisolver
+ Downloading pyarrow
+   Building rouge-score==0.1.2
+      Built rouge-score==0.1.2
+ Downloading triton
+ Downloading torch
+Prepared 72 packages in 8m 00s
+Uninstalled 1 package in 4ms
+Installed 72 packages in 135ms
+ + absl-py==2.5.0
+ + accelerate==1.4.0
+ + cachetools==7.2.0
+ + certifi==2026.7.22
+ + charset-normalizer==3.5.1
+ + click==8.5.0
+ + cloudpickle==3.1.2
+ + contourpy==1.3.3
+ + cuda-bindings==12.9.8
+ + cuda-pathfinder==1.8.2
+ + cuda-toolkit==12.8.1
+ + cycler==0.12.1
+ + filelock==4.0.0
+ + fonttools==4.65.0
+ + fsspec==2026.7.0
+ + h5pickle==0.4.2
+ + h5py==3.16.0
+ + hf-xet==1.6.0
+ + huggingface-hub==0.36.2
+ + idna==3.20
+ + jinja2==3.1.6
+ + joblib==1.6.0
+ + kiwisolver==1.5.1
+ + markupsafe==3.0.3
+ + matplotlib==3.10.1
+ + mpmath==1.3.0
+ + networkx==3.6.1
+ + nltk==3.9.1
+ + numpy==1.26.0
+ + nvidia-cublas-cu12==12.8.4.1 (from https://pypi.nvidia.cn/nvidia-cublas-cu12/nvidia_cublas_cu12-12.8.4.1-py3-none-manylinux_2_27_x86_64.whl#sha256=8ac4e771d5a348c551b2a426eda6193c19aa630236b418086020df5ba9667142)
+ + nvidia-cuda-cupti-cu12==12.8.90 (from https://pypi.nvidia.cn/nvidia-cuda-cupti-cu12/nvidia_cuda_cupti_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl#sha256=ea0cb07ebda26bb9b29ba82cda34849e73c166c18162d3913575b0c9db9a6182)
+ + nvidia-cuda-nvrtc-cu12==12.8.93 (from https://pypi.nvidia.cn/nvidia-cuda-nvrtc-cu12/nvidia_cuda_nvrtc_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl#sha256=a7756528852ef889772a84c6cd89d41dfa74667e24cca16bb31f8f061e3e9994)
+ + nvidia-cuda-runtime-cu12==12.8.90 (from https://pypi.nvidia.cn/nvidia-cuda-runtime-cu12/nvidia_cuda_runtime_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl#sha256=adade8dcbd0edf427b7204d480d6066d33902cab2a4707dcfc48a2d0fd44ab90)
+ + nvidia-cudnn-cu12==9.19.0.56 (from https://pypi.nvidia.cn/nvidia-cudnn-cu12/nvidia_cudnn_cu12-9.19.0.56-py3-none-manylinux_2_27_x86_64.whl#sha256=ac6ad90a075bb33a94f2b4cf4622eac13dd4dc65cf6dd9c7572a318516a36625)
+ + nvidia-cufft-cu12==11.3.3.83 (from https://pypi.nvidia.cn/nvidia-cufft-cu12/nvidia_cufft_cu12-11.3.3.83-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl#sha256=4d2dd21ec0b88cf61b62e6b43564355e5222e4a3fb394cac0db101f2dd0d4f74)
+ + nvidia-cufile-cu12==1.13.1.3 (from https://pypi.nvidia.cn/nvidia-cufile-cu12/nvidia_cufile_cu12-1.13.1.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl#sha256=1d069003be650e131b21c932ec3d8969c1715379251f8d23a1860554b1cb24fc)
+ + nvidia-curand-cu12==10.3.9.90 (from https://pypi.nvidia.cn/nvidia-curand-cu12/nvidia_curand_cu12-10.3.9.90-py3-none-manylinux_2_27_x86_64.whl#sha256=b32331d4f4df5d6eefa0554c565b626c7216f87a06a4f56fab27c3b68a830ec9)
+ + nvidia-cusolver-cu12==11.7.3.90 (from https://pypi.nvidia.cn/nvidia-cusolver-cu12/nvidia_cusolver_cu12-11.7.3.90-py3-none-manylinux_2_27_x86_64.whl#sha256=4376c11ad263152bd50ea295c05370360776f8c3427b30991df774f9fb26c450)
+ + nvidia-cusparse-cu12==12.5.8.93 (from https://pypi.nvidia.cn/nvidia-cusparse-cu12/nvidia_cusparse_cu12-12.5.8.93-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl#sha256=1ec05d76bbbd8b61b06a80e1eaf8cf4959c3d4ce8e711b65ebd0443bb0ebb13b)
+ + nvidia-cusparselt-cu12==0.7.1 (from https://pypi.nvidia.cn/nvidia-cusparselt-cu12/nvidia_cusparselt_cu12-0.7.1-py3-none-manylinux2014_x86_64.whl#sha256=f1bb701d6b930d5a7cea44c19ceb973311500847f81b634d802b7b539dc55623)
+ + nvidia-nccl-cu12==2.28.9 (from https://pypi.nvidia.cn/nvidia-nccl-cu12/nvidia_nccl_cu12-2.28.9-py3-none-manylinux_2_18_x86_64.whl#sha256=485776daa8447da5da39681af455aa3b2c2586ddcf4af8772495e7c532c7e5ab)
+ + nvidia-nvjitlink-cu12==12.8.93 (from https://pypi.nvidia.cn/nvidia-nvjitlink-cu12/nvidia_nvjitlink_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl#sha256=81ff63371a7ebd6e6451970684f916be2eab07321b73c9d244dc2b4da7f73b88)
+ + nvidia-nvshmem-cu12==3.4.5 (from https://pypi.nvidia.cn/nvidia-nvshmem-cu12/nvidia_nvshmem_cu12-3.4.5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl#sha256=042f2500f24c021db8a06c5eec2539027d57460e1c1a762055a6554f72c369bd)
+ + nvidia-nvtx-cu12==12.8.90 (from https://pypi.nvidia.cn/nvidia-nvtx-cu12/nvidia_nvtx_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl#sha256=5b17e2001cc0d751a5bc2c6ec6d26ad95913324a4adb86788c944f8ce9ba441f)
+ + pandas==2.2.3
+ + peft==0.15.2
+ + pillow==12.3.0
+ + psutil==7.2.2
+ + pyarrow==19.0.1
+ + pyparsing==3.3.2
+ + python-dateutil==2.9.0.post0
+ + python-dotenv==1.0.1
+ + pytz==2026.3.post1
+ + pyyaml==6.0.3
+ + regex==2026.9.10
+ + requests==2.34.2
+ + rouge-score==0.1.2
+ + safetensors==0.6.2
+ + scikit-learn==1.6.1
+ + scipy==1.15.2
+ - setuptools==84.0.0
+ + setuptools==81.0.0
+ + six==1.17.0
+ + sympy==1.14.0
+ + threadpoolctl==3.7.0
+ + tokenizers==0.21.4
+ + torch==2.11.0+cu128 (from https://download-r2.pytorch.org/whl/cu128/torch-2.11.0%2Bcu128-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=d252cf975fb18c94a85336323ad425f473df56dab35a44b00399bd70c7a3b997)
+ + tqdm==4.67.1
+ + transformers==4.49.0
+ + triton==3.6.0
+ + typing-extensions==4.16.0
+ + tzdata==2026.4
+ + urllib3==2.8.0

@@ -1,0 +1,530 @@
+{
+  "policy": "source-only explicit relocation; no result JSON/CSV changes",
+  "files": [
+    {
+      "path": "anomaly_detection/acceptance_contact98_radar95/check_saved_models.py",
+      "original_sha256": "b9b0b81b6e12141e5d6aa1df9dc07e181d3a9803aaa05936953a0b7cb7565b37",
+      "relocated_sha256": "aa7aedded605cba616f7c9242cc090fba5c06948ee7e87d6697f3b41d4502daa",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/acceptance_contact98_radar95/student_teacher_audit/audit_alignment_levels.py",
+      "original_sha256": "28f13b96f8216f41143e6d162a00986b5b3c7be9a92ec6f2742516ad06bf6c56",
+      "relocated_sha256": "2c8917c730d0b7ed26122d3e50b0b7d1c1cc27c39871fe7311e17fcb42d731d0",
+      "changes": 2,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/acceptance_contact98_radar95/student_teacher_audit/verify_shared_path.py",
+      "original_sha256": "7223b567f9629935058268926acaf44e567bee56acfcee2e7db291bc9ff8c325",
+      "relocated_sha256": "9e0006a9a2f037fb350c836271c13b3a17ff97f9a5513ddd8cea8b29014a1ab6",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/contact_quality_alignment_audit_20260922/leakage/audit_leakage.py",
+      "original_sha256": "f982c8f1d91450e367e152a4dde30eebe484572d8fc3cc95b564a545adc7cbcb",
+      "relocated_sha256": "b81f9bf6eda450dcb4ca89cdeae3685c8f966b108c8f0f3050498afe676e8e8c",
+      "changes": 4,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/contact_quality_alignment_audit_20260922/leakage/augment_duplicate_audit.py",
+      "original_sha256": "96e6ecc0bab21a25cb3ddf5a0b6f8fb4fadba197789e41444e39266a14367814",
+      "relocated_sha256": "1b37e2f5397a4e0b1da77b1c5421d49411e875e34efdac03c70c114d7cb132ea",
+      "changes": 2,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/contact_quality_alignment_audit_20260922/leakage/make_report.py",
+      "original_sha256": "e3c630001251389d87a0daccaeab71b22db4e2214b9d80e8b73fc185dd300483",
+      "relocated_sha256": "906ad08175e3b9dfff687e533512aaa3eb670dda73eb51c574c78abdf12e7f41",
+      "changes": 1,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/contact_quality_alignment_audit_20260922/leakage/verify_selection_and_integrity.py",
+      "original_sha256": "007197be5bb94348088c278a163927df8cedbbfa2a90915e1ab4e0b33f57dc59",
+      "relocated_sha256": "9daf557b67deb758fff4e9ec1a86cf3ceaa990f22e5987b6983c3a3b928126be",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/contact_quality_alignment_audit_20260922/quality/analyze_quality.py",
+      "original_sha256": "a67ff4a0c39aad5475ab0cfdbde34514a69683c19da79ae56bb48b206dd4da78",
+      "relocated_sha256": "69336a5983ae2b00111040e1622bb0b790f2158a38d21ed4e1d72c621341344f",
+      "changes": 6,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/contact_quality_alignment_audit_20260922/theory/check_time_identifiability.py",
+      "original_sha256": "82090b1d0ce289d7ba7fd80fee04910790a0c166774d137d20df102b992760cd",
+      "relocated_sha256": "8413444bb385b071f6dcbf1e53a6efb1ec0ed498f7a25ed8e40bf57b4d772332",
+      "changes": 2,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/contact_validation_20260919/scripts/teacher_bridge.py",
+      "original_sha256": "b5b0913aabe0d45fad2c928435b29c0828eac15eca6ad4735a1071210a2c0fe3",
+      "relocated_sha256": "a81b98faff2d6cb49f3ae8dc4ca2a01ba71344dbaeeb1b807bd34ee51a0a0438",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/contact_validation_20260919/scripts/verify_pipeline.py",
+      "original_sha256": "08701420f150138dd8965ea4ea16e647a5e4365fde3bb5b2f48d56875715d6d7",
+      "relocated_sha256": "2261968e25641054cf4e43d25f50a060bd8f1ae4683ed2f6cc337c96392c0b68",
+      "changes": 1,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/encoder_validation_20260923/controls/audit_stitch.py",
+      "original_sha256": "fa4f92f84582fcad601280c5ec38b53051130bf9664a2447f9bfc871ea98bc5a",
+      "relocated_sha256": "a9ee2513c81bad89eeaf2c335eb3cfbdc77c1e9d5062c91d46c9c66490adb504",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/encoder_validation_20260923/controls/run_controls.py",
+      "original_sha256": "f2e0a3e4f9c5302f9d205b4642e2ab7dbc7f67123d84b0e253bb4d901ee1a3ff",
+      "relocated_sha256": "166b5740a205e052fb52df7b691d68353d4e2b28755a04fbbccc0650e790c8bc",
+      "changes": 7,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/encoder_validation_20260923/data_audit/audit_data.py",
+      "original_sha256": "9287a03f39857986c816c88514d47286edb6c0a223a1616259639cf5d306327e",
+      "relocated_sha256": "6510e9951dff281eb079d57fac65bece4c30c401bd9db3ea959762809002ee8e",
+      "changes": 7,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/encoder_validation_20260923/data_audit/receive_and_reprocess.py",
+      "original_sha256": "800714b2822fc43e3f30651d6b10186a4b6ad81fc4f75b414ba0b9ea77828608",
+      "relocated_sha256": "084271ef396a6e4d22e2ded32c608d1b545e91b2ad22bc980d435f09e18b7231",
+      "changes": 2,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/encoder_validation_20260923/rotllm/run_radar_transfer.py",
+      "original_sha256": "c2b4c5e4c8f6f8478281f0cf560d0f184d26e15d5428a2b5d1d4d1b201e3d917",
+      "relocated_sha256": "946ff42c49fc947a41afa57bfb884e3652fa11d634e6b6abca7021140a4eab1f",
+      "changes": 5,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/encoder_validation_20260923/rotllm/run_teacher.py",
+      "original_sha256": "f021489ce70e49b933038260dc0e87d5638f368d3166d6fcbc321fb78ee8b5e1",
+      "relocated_sha256": "fd28c5fb6f2b94c26bda8f996a6f6ba26b0b474c2f3901dd5a341b8022d6986f",
+      "changes": 4,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/encoder_validation_20260923/rotllm/summarize_results.py",
+      "original_sha256": "4d61322bc04a2c6c041589a533c5d5f203b17f03577be80c9fee829b791f1f17",
+      "relocated_sha256": "157747f1e449ac4925306de4562a1ed5371f7d50f6c8d29ed08691aeb94c322e",
+      "changes": 1,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/encoder_validation_20260923/scripts/contact_only_stitch.py",
+      "original_sha256": "036ac37ad3c382134a84f1e2a9fbbb18d1a281fc733365da92a0ecade261d7bf",
+      "relocated_sha256": "e97c7ab03a8131c4109dceaa2b9590317173f63052581f639a4f9929c44661cd",
+      "changes": 4,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/provenance/extract_features.py",
+      "original_sha256": "c3d41d3db73de7f28a119756252cb8312d9093fd9345c36153f5ee67e57ffc27",
+      "relocated_sha256": "4961a93d0782d54f696866e0508b61ce342c0e6eb32f888ca652866afefd8777",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/encoder_validation_20260923_v2/heldout_radar_class/run_heldout.py",
+      "original_sha256": "211bd8eecbd221ec6aa9595797f5f30b76fb56cd43e07734bb363c7fbae3e9c6",
+      "relocated_sha256": "2cd95bd1f66853acce655234bc353719f33e5e83cf07fe05773baee352286e5d",
+      "changes": 6,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/encoder_validation_20260923_v2/raw/audit_raw_and_geometry.py",
+      "original_sha256": "08e7c1e27e9a91d192fb62fd77f8b1cc1a17aa9d9a18236c90e65d0f1667b816",
+      "relocated_sha256": "bb9edfaf3ee67bdec1ca2d42a7d0c97fb35ffd81761ad4bb7f465c07fda08c27",
+      "changes": 7,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/encoder_validation_20260923_v2/scripts/physical_readouts.py",
+      "original_sha256": "f02d5817ea49e77e9804e76d0bd612b667826b466e419c97a55ce45724d922ab",
+      "relocated_sha256": "4ac1f5ea7a94253fc8a27cc15c95d570de24f22d2ca308874339601a853e3cd9",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/encoder_validation_20260923_v2/scripts/run_corrected_models.py",
+      "original_sha256": "26f05e006e8b007b72a2311ace9e50b263bdc3f10373b2dbc2a235c9f7971470",
+      "relocated_sha256": "04a26132e01b70a5d7fcbba1f0789dc9a96d0ef0b428247412cb5c6488c1f332",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/encoder_validation_20260923_v2/scripts/run_corrected_rotllm.py",
+      "original_sha256": "24aa91c4590792afdef0bb70c4c097769703c3f8eb3e766ee8e0d2155b30179a",
+      "relocated_sha256": "5f8b8787179f7705ea26f31e8057eb1519a68ec3346eb7c24e2cb377d931bb3e",
+      "changes": 6,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/encoder_validation_20260923_v2/scripts/run_corrected_stitch.py",
+      "original_sha256": "2f0e14f636ee6496d72e361fec5f72b01790737e8030fc0c3d11d9dd5557ea97",
+      "relocated_sha256": "b8feb9c3fbd61e134fbec5d33aceb56b2db67a4fe4f772b1090d0b47cae8bd94",
+      "changes": 5,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/encoder_validation_20260923_v2/scripts/train_unifault_radar.py",
+      "original_sha256": "dd74de26650792b7fc02efa89a3ee46f0e75cad36cec6b5394d49ceeaa805c6c",
+      "relocated_sha256": "39799d4032e274add24922da2c432c46e2cca208c562fc5ab814fbfccf61eacc",
+      "changes": 2,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/encoder_validation_20260923_v2/teachers/contact_sanity_controls.py",
+      "original_sha256": "6201a6ab1660bcba788a06f0308ea4021263de59d9ac930a822d1102b70bca68",
+      "relocated_sha256": "5087264c536e6a1bf5130cc2f4a741fa16a2bfb55877d1ec0baed22db90c4527",
+      "changes": 2,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/encoder_validation_20260923_v2/teachers/run_unifault.py",
+      "original_sha256": "ceb0d4f5b3fe00cce7e3f949183c59a235e066cc3d4dd41489b3cba9ed9f103a",
+      "relocated_sha256": "32b8502a23daa40172253a7cf9d3f0cfb3d1093f28f66a846f28ff65b1a98e6e",
+      "changes": 4,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/environment_validation_20260919/scripts/radar_environment.py",
+      "original_sha256": "ba5e8437c77f843ca840a85038a9c81adcf5c095ad6ca0a69b915a517169283a",
+      "relocated_sha256": "da304b6a11ab913946bdf711b80630b34ab694419f3867a60376310a9e7c272e",
+      "changes": 2,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/four_class_chain_20260922/audit/run_audit.py",
+      "original_sha256": "c580b72f17cb2a619309c35210c92c86b993a332dc4816abfa316b14a9a278f0",
+      "relocated_sha256": "3e0d38cec65f6e51f0a23ffc8c0245c3a56605529df5d014e16820818abb4c3b",
+      "changes": 4,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/four_class_chain_20260922/contact/evaluate_contact.py",
+      "original_sha256": "41fc28b5bc8409b982c3e1fdc261fa9eed27e7e8631ad13c30364e8561c29347",
+      "relocated_sha256": "faabeeabc02fefa0b351c4f57c1d74730d7faf7827374fc6c89bd7da8c170075",
+      "changes": 6,
+      "cached_reference_fallback": true
+    },
+    {
+      "path": "anomaly_detection/four_class_chain_20260922/contact/run_llm_bridge.py",
+      "original_sha256": "da83d4e7b93383155d764ebdfe467c467cc4adb2247223ebc0774742b0b64def",
+      "relocated_sha256": "6150931264d434e0e1000db30f6213a7bc11df2b59a2c4e2daadbb96c38de8d7",
+      "changes": 4,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/four_class_chain_20260922/period_normalization/run_posthoc.py",
+      "original_sha256": "0916ed33804863ec617fda5ea8a1610090e28fb949d5b254a8ac16e453889a9d",
+      "relocated_sha256": "1e5f7312492c9573f5b8415db7ba36732f00aaf505492cd7c69b10a07e5600bd",
+      "changes": 2,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/four_class_chain_20260922/radar/extract_features.py",
+      "original_sha256": "c3d41d3db73de7f28a119756252cb8312d9093fd9345c36153f5ee67e57ffc27",
+      "relocated_sha256": "4961a93d0782d54f696866e0508b61ce342c0e6eb32f888ca652866afefd8777",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/four_class_chain_20260922/radar/script_archive/extract_features_20260922_original.py",
+      "original_sha256": "b5915e22328024f8a3b47c9acc11d33830ec5b908dc7987c32441d8ecfd9febc",
+      "relocated_sha256": "b6b23c1904bd2657762dfc8d92a1dae3213460e93d05353b69a2c09563a2fce7",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/four_class_chain_20260922/scripts/benchmark_student.py",
+      "original_sha256": "643eeb083830a75655fb50a845c36308fff314f426ec1c10e0dd72c50a451f2c",
+      "relocated_sha256": "150796f86bc9db761b2e498d61c4a1b1fe7ba6756cb6b71080d5353362e9134b",
+      "changes": 4,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/four_class_chain_20260922/scripts/finalize_artifacts.py",
+      "original_sha256": "48e104fde9fb03283953ba50185712721cf352d24ff453c77424c0701a7e4290",
+      "relocated_sha256": "7e5f665f642692c600807a95957d33bd6dee73d5fcd536dfe3c33a7954d6e0cc",
+      "changes": 4,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/four_class_chain_20260922/scripts/run_chain.py",
+      "original_sha256": "a70b0c066e99835849d04051fc4583dbadb2f55e3bd7ee2dc8843ec25a3ff817",
+      "relocated_sha256": "a195c1b297937b917dda71dbdc01717825d09a6a5a25da86c819c0575127a5da",
+      "changes": 5,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/frozen_bear_to_unifault_20260924/run_frozen_transfer.py",
+      "original_sha256": "40eb94dab8da4e1c0f64241b1e313d26043279bdf47c341a5cdb29d68b1a6914",
+      "relocated_sha256": "a650ebe54fdade2cbfd2245ecaab758cad9a833b70f118918daa83e782589831",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/r2_validation_20260928/audit/run_audit.py",
+      "original_sha256": "1343ba63eb9288684067f08f6aea979590667fc2ef823aa870a678298248739e",
+      "relocated_sha256": "76d695845fe50c462ad88f68e1516db0af1c68d1ba7e6890879c33ace3b65f23",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/r2_validation_20260928/baselines/run_baselines.py",
+      "original_sha256": "b0297ca62deaa35fca31e155fd9c8875dc542b70f754e1237353b17c1d0aadc4",
+      "relocated_sha256": "6128e85e08b4ca80c9928d3211f93923c8d9d59ee16b4e5299ede8dc2f509505",
+      "changes": 4,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/r2_validation_20260928/contact/diagnose_loso.py",
+      "original_sha256": "2f714bd62252a5d855c8a8550b87a45bc073fc61b80f040de941022f4c25c3de",
+      "relocated_sha256": "49baff194c38a6fe7b70577c6d41376a2f4fd0bb743685762c5bfd9f07eb6397",
+      "changes": 4,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/r2_validation_20260928/contact/diagnose_within_session.py",
+      "original_sha256": "7a075e7ed80593b42e0d2d00565cc796775d5c807df278bceedb0f12f5d40f6b",
+      "relocated_sha256": "b0be837fb6dde7591b6d2deb38f5258eb43d175589eba7a62c40f007a02ac5c9",
+      "changes": 1,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/r2_validation_20260928/contact/evaluate_new_contact.py",
+      "original_sha256": "47af118939da2205874250b6dca911565c97a512edbcba2b41f56cc097e813a6",
+      "relocated_sha256": "435d81afb2ac4358047148f6fcb00c4db0b037aaf8019e94391ee3f9583f684f",
+      "changes": 5,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/r2_validation_20260928/contact/order_domain/run_order_diagnostics.py",
+      "original_sha256": "eda429ba302c175ed7f29f364b7e09d96fc6b97248cda860ef092864a3b7f4d2",
+      "relocated_sha256": "6e72413c62d7b74cae88160b02129714eb47b21f63c3875def19f44c64e67a31",
+      "changes": 4,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/r2_validation_20260928/contact/order_domain_point_sample_failedcheck/run_order_diagnostics.py",
+      "original_sha256": "32c2e5aa96a1d8b36dba488c3a2bbdd7d941272b049d8b0292a508d7d705b90c",
+      "relocated_sha256": "b50a4fec2c6fd5c918ab27f1c3470669b7e95458337c742cb27a087fbf8db24a",
+      "changes": 4,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/r2_validation_20260928/contact/verify_contact_results.py",
+      "original_sha256": "b726ffec3e8f01218da00bdbf13f27dd5f291c4f781c0d7c72b62a058015bc6d",
+      "relocated_sha256": "105130f2457d4a6573b666502db421e20d1b5189ae2f0a2ca50208522141c23b",
+      "changes": 2,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/r2_validation_20260928/radar/extract_r2_features.py",
+      "original_sha256": "010cb98db0014b8096f304307cce0bf593b26a42b8dfb3cbff140f476ea8062e",
+      "relocated_sha256": "7be6ec8d7e068fe08c676dcb4d2a3e37f8a7d56edd124c9348abe70e4b8b6d45",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/retention_alignment_20260922/preprocessing/export_variants.py",
+      "original_sha256": "4f72ae97e30be9d3f7d499b93acb8759bc70265dfc86276470042cd54a77bcbf",
+      "relocated_sha256": "6bf974aa5170858899f84bff3f88647d2336bdd3731d0ec797a64ff96eeed963",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/retention_alignment_20260922/preprocessing/verify_and_plot.py",
+      "original_sha256": "178f1a29ab1e52530804f108d4494fcdec5f2a680d6185de2d920393407f7555",
+      "relocated_sha256": "73e26821901f64fe38cdc9b90ce86c722e7a87d52f5d9f3947015b50b717134b",
+      "changes": 2,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/retention_alignment_20260922/radar/make_stage_a_report.py",
+      "original_sha256": "7b4a9adb3b1ae39b47e2c27ea882fadcda5700da3ce55615b9ac51ed3bc462d7",
+      "relocated_sha256": "07e19638c181140cbad8e8f17819bba2c91c2ec0fa845b2830e27eb632bee231",
+      "changes": 1,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/retention_alignment_20260922/radar/stage_a_no_demean/train_script_snapshot.py",
+      "original_sha256": "3965590db5eab1a33a24ee5a321c2bd8893e46a22cbba47f370696fc76480667",
+      "relocated_sha256": "d01a09ac10e91d41412a13e53700562e9abe25de5f680ad0ac64509b89a69ae9",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/retention_alignment_20260922/radar/stage_a_replicates/train_script_snapshot.py",
+      "original_sha256": "3965590db5eab1a33a24ee5a321c2bd8893e46a22cbba47f370696fc76480667",
+      "relocated_sha256": "d01a09ac10e91d41412a13e53700562e9abe25de5f680ad0ac64509b89a69ae9",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/train_script_snapshot.py",
+      "original_sha256": "4c21279dbb9c14d7496e12fda68f2e22d42f18cb55a6d276d71c951c88ff2486",
+      "relocated_sha256": "410ccbf17e16700c163b75818ccb12d3ede5d3c8e781c7dec13f97e0bdbd168b",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/retention_alignment_20260922/radar/stage_b_conservative_no_demean/train_script_snapshot.py",
+      "original_sha256": "ce324df89033696d50b0556e3a4d5155454233e4e934edcdfe0bc330c95d3cf4",
+      "relocated_sha256": "94e541c1e7b99dacd1154b1e4495aead1eb512338de3a003d6e06eab0208e71e",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/retention_alignment_20260922/radar/stage_b_conservative_v0/train_script_snapshot.py",
+      "original_sha256": "ce324df89033696d50b0556e3a4d5155454233e4e934edcdfe0bc330c95d3cf4",
+      "relocated_sha256": "94e541c1e7b99dacd1154b1e4495aead1eb512338de3a003d6e06eab0208e71e",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/retention_alignment_20260922/radar/stage_b_no_demean/train_script_snapshot.py",
+      "original_sha256": "6b95d412cc44af7fa23a35b3da01aede25a4bc9f8150b5e6c6af0744d165b342",
+      "relocated_sha256": "b3eccbb80b160cef35ad9b117f865f3f039d11c145bfbfbe76fee236b5b3261b",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/retention_alignment_20260922/radar/stage_b_v0/train_script_snapshot.py",
+      "original_sha256": "6b95d412cc44af7fa23a35b3da01aede25a4bc9f8150b5e6c6af0744d165b342",
+      "relocated_sha256": "b3eccbb80b160cef35ad9b117f865f3f039d11c145bfbfbe76fee236b5b3261b",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/retention_alignment_20260922/radar/train_fixed_head.py",
+      "original_sha256": "3965590db5eab1a33a24ee5a321c2bd8893e46a22cbba47f370696fc76480667",
+      "relocated_sha256": "d01a09ac10e91d41412a13e53700562e9abe25de5f680ad0ac64509b89a69ae9",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/retention_alignment_20260922/radar/train_shared_head.py",
+      "original_sha256": "ce324df89033696d50b0556e3a4d5155454233e4e934edcdfe0bc330c95d3cf4",
+      "relocated_sha256": "94e541c1e7b99dacd1154b1e4495aead1eb512338de3a003d6e06eab0208e71e",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/retention_alignment_20260922/scripts/evaluate_full_old_train.py",
+      "original_sha256": "a4b1f548d76bb6de74468e5ab0bac7fe10e172dc422bbec14436689f6a048cc0",
+      "relocated_sha256": "1d73ae45d469abe8a55789f8142a2c8b79c84cef19ee0fa000709e737430158c",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/retention_alignment_20260922/scripts/run_p10_llm.py",
+      "original_sha256": "3da20604caa9c8a1af9c3f92494097a5ae454a9b6d79a05fbedf9bd6e5b9baa6",
+      "relocated_sha256": "e071a9c9a6a8c4d111b045f4322e363f5545f254d3b28a955e0b31fb30f83ade",
+      "changes": 4,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/retention_alignment_20260922/scripts/shared_contact_model.py",
+      "original_sha256": "cdeef1c1508b8ee79eca91e69045b34490272b9b9641459bb63580855d0e0ac9",
+      "relocated_sha256": "67f0ba6b4d688978ec2cd20be88cfbe7de82bd3739f5f976ec6cce998894fdaf",
+      "changes": 2,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/retention_alignment_20260922/scripts/train_retained_head.py",
+      "original_sha256": "3cd06205a7c6f997198471bdb1805fd8118a2d5cc8cdc73f97460ea00efccc24",
+      "relocated_sha256": "8b48bee3e5ec424e73869ccd6c62515b1e74a05cfe9858234cd521776b8c2926",
+      "changes": 2,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/retention_alignment_20260922/scripts/verify_shared_contact_model.py",
+      "original_sha256": "a901b9be842e8afc77b2d9979f71f4de5bf54418921bc92473b158bee0cefd74",
+      "relocated_sha256": "f7c5323b65bc51599ba82af9ddd67ffdb959de46b67bb01621a5c4dc8521a5eb",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "anomaly_detection/retention_alignment_20260922/source/cache_source.py",
+      "original_sha256": "44e0812b5051707aeaf7206d458091fd2591560abebaf7906fd01842058f2aa9",
+      "relocated_sha256": "51eb71cf83dc079e9abe4757c1eacb1030d602a5a7e881653ca738dca1049c23",
+      "changes": 5,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "BearLLM/scripts/plot_training.py",
+      "original_sha256": "a52c58a652bff61bec78b9f71800b70a614cec75534a589f9980050a78115a5b",
+      "relocated_sha256": "e24498512b07d9fd7ab4a2e7aef1bda524aa1ebcb503110b3464c3d4edafcd36",
+      "changes": 2,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "BearLLM/scripts/summarize_reproduction.py",
+      "original_sha256": "22eebc3a1dc8a053e9fe58f80ac94bdab85d7b68929013c1d5317f6cfec5139c",
+      "relocated_sha256": "f15ba032d13e3f88dd41b5d5dae5794ae09e748000835af5a861b4dab24b5901",
+      "changes": 16,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "BearLLM/scripts/verify_prediction_coverage.py",
+      "original_sha256": "77c2010f58091339b5aa3b4160f93e5ab012be36e9fea1e6e790564ee73d7902",
+      "relocated_sha256": "2a700017b0bc4089c49df3280a3e34de323989a88b38ddd226cf0996f1fb8db2",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "research_proposals/contact_radar_explainer_demo_20260923/run_demo.py",
+      "original_sha256": "a75b2deb0c45af4a5f8738b289f18142e71a2e34c861cc0e36cca02c9162a531",
+      "relocated_sha256": "fe0b94bc359cdb120d028bf8b820eed11e05b7e62a72acd645ce8e11c6bd52a7",
+      "changes": 3,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "research_proposals/encoder_transfer_study_20260923/evidence/summarize_existing.py",
+      "original_sha256": "de3259a91a336f6bee84667cfbfc88bc7d1c2abd72127406722dd146ec0670c3",
+      "relocated_sha256": "eea30170e8bdfb10072e008322000cbffb17399c91f81c1447d7f8ff3f5317cf",
+      "changes": 2,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "research_proposals/sensys_progress_report_20260923/scripts/build_report.py",
+      "original_sha256": "1371a448dc1cdf6d05ea9b903f6d69121342af78db248c137d7814e908ce21ea",
+      "relocated_sha256": "ac2cb2f5b3db207cd998cb652512542aa2d63dc8d8a11c9180ebc00639c4e2fc",
+      "changes": 7,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "research_proposals/validation_without_severity_20260924/env_compatibility/check_compatibility.py",
+      "original_sha256": "b071cbdb0af6b381652e7b91f2b1a0eb3236bf05522eb919e13a0868f8e12096",
+      "relocated_sha256": "fb7882929c791ad3c43ee66d8adb8b58b2b836b8b19168f2d4370d36c9ed9461",
+      "changes": 2,
+      "cached_reference_fallback": false
+    },
+    {
+      "path": "research_proposals/validation_without_severity_20260924/inventory_existing.py",
+      "original_sha256": "d409276880d7c2d783902867613f92412932932c5e2503986e5860b65cb56129",
+      "relocated_sha256": "36790d5a41e22b0b5560f27ef6e80a1dd29b259e3f46a96d205f1b8daf6860cf",
+      "changes": 4,
+      "cached_reference_fallback": false
+    }
+  ]
+}

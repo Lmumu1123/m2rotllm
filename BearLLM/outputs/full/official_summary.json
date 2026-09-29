@@ -1,0 +1,79 @@
+{
+  "status": "complete",
+  "dataset_rows": 135516,
+  "main_unique_queries": 122792,
+  "main_pairs": 368376,
+  "fallback_unique_queries": 12724,
+  "fallback_pairs": 38172,
+  "main_and_fallback_union_unique_queries": 135516,
+  "reference_protocols_reported_separately": true,
+  "main_internal_adapter_accuracy": {
+    "pre_lora_adapter": {
+      "all": 0.9955398831628554,
+      "split/train": 0.9987357725941869,
+      "split/val": 0.9880147677606754,
+      "split/test": 0.98821836740234
+    },
+    "final_lora_adapter": {
+      "all": 0.9841439181705649,
+      "split/train": 0.9877532817559576,
+      "split/val": 0.9752965768113582,
+      "split/test": 0.9765724678991231
+    }
+  },
+  "fallback_internal_adapter_accuracy": {
+    "pre_lora_adapter": 0.03953159383841559,
+    "final_lora_adapter": 0.041155821020643406
+  },
+  "training_corpus_replay": {
+    "fault_detection": {
+      "count": 150,
+      "correct": 150,
+      "accuracy": 1.0,
+      "rouge_l_f1": 1.0,
+      "reference_token_nll": 5.238119842639814e-05
+    },
+    "fault_classification": {
+      "count": 150,
+      "correct": 150,
+      "accuracy": 1.0,
+      "rouge_l_f1": 1.0,
+      "reference_token_nll": 2.7112189084565375e-05
+    },
+    "maintenance": {
+      "count": 150,
+      "correct": 149,
+      "accuracy": 0.9933333333333333,
+      "rouge_l_f1": 0.998432671582325,
+      "reference_token_nll": 0.0005910828183412052
+    },
+    "risk_analysis": {
+      "count": 150,
+      "correct": 147,
+      "accuracy": 0.98,
+      "rouge_l_f1": 0.9954544919614737,
+      "reference_token_nll": 0.0007940459866099673
+    }
+  },
+  "reconstructed_test_generation": {
+    "count": 12279,
+    "accuracy": 0.9770339604202296,
+    "macro_f1_fixed_classes": 0.8876424397709535,
+    "invalid_predictions": 0
+  },
+  "corpus_truncated_outputs": 0,
+  "test_generation_truncated_outputs": 0,
+  "limitations": [
+    "Official checkpoint training membership is not published; reconstructed test split is not proof of independent held-out performance.",
+    "All 600 corpus examples belong to reconstructed training queries; scores measure training-corpus replay.",
+    "Same-source fallback deliberately changes the required reference condition and is not an official/paper-comparable score.",
+    "CWRU, DIRG and NCEPU main eligible queries are all healthy; high source accuracy there does not validate fault recognition.",
+    "pre_lora_adapter means the same exported checkpoint with LoRA deltas disabled, not necessarily original pre-finetuning weights.",
+    "Reference texts394/505 lack substantive diagnosis; risk outputs487/568 generate wrong classes. High lexical overlap is not factual validation."
+  ],
+  "artifact_directories": {
+    "main_and_corpus": "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/official_evaluation",
+    "fallback": "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/official_fallback",
+    "test_generation": "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/official_heldout"
+  }
+}

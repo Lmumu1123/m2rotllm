@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "n_raw_query_reference_pairs": 27,
+  "device": "cuda:1",
+  "source_queries": [
+    9,
+    3941,
+    11081,
+    20721,
+    67201,
+    111191,
+    113973,
+    114873,
+    122183
+  ],
+  "source_hidden_max_error": 0.0032300949096679688,
+  "source_hidden_relative_l2_error": 0.00010530719737289473,
+  "original_FCN_same_batch_hidden_max_error": 0.0,
+  "cached_batch_numeric_difference_disclosed": true,
+  "source_probability_max_error": 4.947185516357422e-06,
+  "group_logsumexp_probability_identity_max_error": 1.1920928955078125e-07,
+  "public_forward_classes": 4,
+  "retained_internal_logits": 10,
+  "contact_and_radar_share_identical_head": true,
+  "original_weights_unchanged": true,
+  "original_weight_hashes": {
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/pretrain/fcn/feature_encoder.pth": "e7322e179238ab5edf779830c2be562e2a0d613ac1285c4ccdb35080cc97f84e",
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/pretrain/fcn/classifier.pth": "885d03d3be3e6aef0966d1d74b305ca94f3cef1814467413af270bb02e9c3340"
+  }
+}

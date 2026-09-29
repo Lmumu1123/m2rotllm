@@ -1,0 +1,27 @@
+{
+  "created_before_signal_error_comparison": true,
+  "fs_hz": 4000,
+  "window_samples": 4000,
+  "observed_boundary_proxy": "Largest absolute value over all available raw_xyz, selected without outcomes; not confirmed hardware full scale",
+  "review_flags": {
+    "endpoint_fraction_at_least": 0.001,
+    "endpoint_run_samples_at_least": 4,
+    "constant_run_samples_at_least": 20
+  },
+  "flags_are_not_rejection_rules": true,
+  "never_drop_windows": true,
+  "never_tune_thresholds_to_accuracy": true,
+  "objective_quality": "finite/shape/complete-packet provenance/constant runs/exact duplicates; RMS, kurtosis, crest, DC and spectrum are descriptive",
+  "intrinsic_fault_warning": "Large crest/kurtosis/amplitude may be fault signal, not bad data",
+  "comparison": "v0 retained_head_v1 heldout only; within-recording wrong/correct medians, not pooled causal inference or model confidence",
+  "unknowns": [
+    "hardware ADC range and units",
+    "actual timestamp and clock drift",
+    "true inter-packet gaps",
+    "dropped unseen packet starts",
+    "raw DAT currently unavailable"
+  ],
+  "no_training": true,
+  "no_label_quality_inferred_from_teacher_confidence": true,
+  "periodogram": "Hann, nfft=4000, 1 Hz grid; quarter-window nfft=1000, 4 Hz grid; no synthetic missing samples"
+}

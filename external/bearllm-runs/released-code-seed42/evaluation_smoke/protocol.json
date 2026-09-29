@@ -1,0 +1,23 @@
+{
+  "seed": 42,
+  "reference_draws_per_query": 3,
+  "reference_policy": "random.Random(seed).choice, replacement, all healthy rows in same condition; includes same-row references",
+  "split_policy": "eligible queries ordered by file_id; ordinal modulo 10: 0..6=train,7..8=val,9=test",
+  "interpretation": "reconstructed released-code split; released checkpoint membership is unknown; not an independent held-out test",
+  "metadata_rows": 135516,
+  "selected_unique_queries": 122792,
+  "same_condition_eligible_unique_queries": 122792,
+  "excluded_from_upstream_unique_queries": 12724,
+  "total_pairs": 368376,
+  "excluded_by_source": {
+    "CWRU": 3862,
+    "DIRG": 6120,
+    "MFPT": 42,
+    "NCEPU": 2700
+  },
+  "split_unique_queries": {
+    "test": 12279,
+    "train": 85955,
+    "val": 24558
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "kind": "official_final",
+  "weights": {
+    "/media/nas_users/huangyating/bearllm-assets/bearllm_weights/vibration_adapter.pth": "c2dcd2ff546804dfa0baf37cb0df30ec7fc67afe442a4c99ad0a15d0aae46190",
+    "/media/nas_users/huangyating/bearllm-assets/bearllm_weights/adapter_model.safetensors": "867fb65139f581e7cf36f35d988b172d79c3c140ed9c2cdf3b6a8a5aefe9b10b",
+    "/media/nas_users/huangyating/bearllm-assets/bearllm_weights/adapter_config.json": "c5f3caa5bac314392d499542859dfeb0c7dbc32270f91f875f7a81faef830a2f"
+  },
+  "lora_merged": true,
+  "lora_scale": 8.0,
+  "reference_protocol": "fixed_external",
+  "elapsed_seconds": 0.2204249920323491
+}

@@ -1,0 +1,296 @@
+{
+  "group_probability_max_error": 1.1920928955078125e-07,
+  "models": [
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/115200_to_460800/embedding_only.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/115200_to_460800/ce_only.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/115200_to_460800/ce_feat_0p1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/115200_to_460800/ce_feat_1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/115200_to_460800/ce_feat_10.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/115200_to_460800/ce_feat_1_kd.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/115200_to_460800/phase_ce_feat_1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/115200_to_460800/smooth_ce_feat_1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/460800_to_115200/embedding_only.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/460800_to_115200/ce_only.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/460800_to_115200/ce_feat_0p1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/460800_to_115200/ce_feat_1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/460800_to_115200/ce_feat_10.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/460800_to_115200/ce_feat_1_kd.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/460800_to_115200/phase_ce_feat_1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/460800_to_115200/smooth_ce_feat_1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/all_known/embedding_only.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/all_known/ce_only.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/all_known/ce_feat_0p1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/all_known/ce_feat_1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/all_known/ce_feat_10.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/all_known/ce_feat_1_kd.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/all_known/phase_ce_feat_1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/four_class_provisional_roi/all_known/smooth_ce_feat_1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/115200_to_460800/embedding_only.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/115200_to_460800/ce_only.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/115200_to_460800/ce_feat_0p1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/115200_to_460800/ce_feat_1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/115200_to_460800/ce_feat_10.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/115200_to_460800/ce_feat_1_kd.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/115200_to_460800/phase_ce_feat_1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/115200_to_460800/smooth_ce_feat_1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/460800_to_115200/embedding_only.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/460800_to_115200/ce_only.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/460800_to_115200/ce_feat_0p1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/460800_to_115200/ce_feat_1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/460800_to_115200/ce_feat_10.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/460800_to_115200/ce_feat_1_kd.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/460800_to_115200/phase_ce_feat_1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/460800_to_115200/smooth_ce_feat_1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/all_known/embedding_only.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/all_known/ce_only.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/all_known/ce_feat_0p1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/all_known/ce_feat_1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/all_known/ce_feat_10.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/all_known/ce_feat_1_kd.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/all_known/phase_ce_feat_1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    },
+    {
+      "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/radar/stage_a_seed42/models/three_class_geometry_compatible/all_known/smooth_ce_feat_1.pt",
+      "probability_reload_max_error": 0.0,
+      "nonnegative": true,
+      "head_unchanged": true
+    }
+  ],
+  "head_sha256": "885d03d3be3e6aef0966d1d74b305ca94f3cef1814467413af270bb02e9c3340",
+  "script_sha256": "4c21279dbb9c14d7496e12fda68f2e22d42f18cb55a6d276d71c951c88ff2486",
+  "wall_seconds": 30.69436550140381
+}

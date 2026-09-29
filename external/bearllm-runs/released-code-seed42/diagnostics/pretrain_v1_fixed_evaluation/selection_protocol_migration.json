@@ -1,0 +1,8 @@
+{
+  "completed_epochs": 3,
+  "historical_epochs_improved_both_criteria": true,
+  "source_selection_unchanged_for_completed_epochs": true,
+  "corrected_batch_mean_validation_loss": 0.08330430655223608,
+  "previous_sample_weighted_validation_loss": 0.08331965673493909,
+  "note": "Completed optimizer updates retained; only the unfinished epoch was replayed from saved RNG/optimizer."
+}

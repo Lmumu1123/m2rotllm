@@ -1,0 +1,22 @@
+{
+  "source_batches": {
+    "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/llm_native_p10_chain/generation_predictions.csv": "eec85cf094d683d41d2b29fc222d74e72a87d39d42c0aa62d49ec37e16d51c75",
+    "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/llm_native_p10_conservative/generation_predictions.csv": "f6bcce177cc9912ae7f28ecf7c5a887a4f37333b76a5c292dcaf7406b8f6d354"
+  },
+  "source_provenance": {
+    "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/llm_native_p10_chain/provenance.json": "14c0555945a404b9e00db21f62d3ef90b3291c894f19879672eb441fc9e5e9d2",
+    "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/llm_native_p10_conservative/provenance.json": "359b1dafc9f0ea1576d88ddce1d0b539df7de194e321686015182113253d55d2"
+  },
+  "rows": 152,
+  "raw_faithful": 139,
+  "raw_fidelity": 0.9144736842105263,
+  "raw_class_conflicts": 13,
+  "unparseable": 0,
+  "truncated": 0,
+  "invalid_geometry": 52,
+  "p10_to_p4_checked": true,
+  "guard_truth_independent": true,
+  "controls_separate": 4,
+  "inference_rows_not_independent_recordings": true,
+  "native_probabilities_used_without_p4_expansion": true
+}

@@ -1,0 +1,13 @@
+recording_rep4 rep4 complex_shape rbf_svc window 0.9279112754158965 record 0.9444444444444444
+recording_rep4 rep4 complex_shape random_forest window 0.9482439926062847 record 0.9722222222222222
+recording_rep4 rep4 nuisance rbf_svc window 0.9057301293900185 record 0.8888888888888888
+leave_one_distance 20cm complex_shape rbf_svc window 0.3004172461752434 record 0.3125
+leave_one_distance 20cm complex_shape random_forest window 0.24200278164116829 record 0.25
+leave_one_distance 20cm nuisance rbf_svc window 0.32962447844228093 record 0.3125
+leave_one_distance 40cm complex_shape rbf_svc window 0.2513888888888889 record 0.20833333333333334
+leave_one_distance 40cm complex_shape random_forest window 0.2125 record 0.22916666666666666
+leave_one_distance 40cm nuisance rbf_svc window 0.30416666666666664 record 0.2708333333333333
+leave_one_distance 80cm complex_shape rbf_svc window 0.26008344923504867 record 0.25
+leave_one_distance 80cm complex_shape random_forest window 0.3435326842837274 record 0.3333333333333333
+leave_one_distance 80cm nuisance rbf_svc window 0.25034770514603616 record 0.25
+DONE

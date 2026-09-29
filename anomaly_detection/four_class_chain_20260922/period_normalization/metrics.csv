@@ -1,0 +1,13 @@
+method,fold,n_train_bags,n_test_bags,file_accuracy,file_macro_f1,file_balanced_accuracy,window_accuracy_secondary,ignored_source_absent_features
+contact_spectral,115200_to_460800,4,4,1.0,1.0,1.0,1.0,0
+contact_period_normalized,115200_to_460800,4,4,1.0,1.0,1.0,1.0,0
+contact_hidden,115200_to_460800,4,4,1.0,1.0,1.0,1.0,0
+contact_hidden_plus_period_normalized,115200_to_460800,4,4,1.0,1.0,1.0,1.0,0
+radar_frame_shape,115200_to_460800,4,4,1.0,1.0,1.0,1.0,0
+radar_period_normalized,115200_to_460800,4,4,0.75,0.6666666666666666,0.75,0.845,0
+contact_spectral,460800_to_115200,4,4,1.0,1.0,1.0,0.96875,0
+contact_period_normalized,460800_to_115200,4,4,1.0,1.0,1.0,0.96875,0
+contact_hidden,460800_to_115200,4,4,1.0,1.0,1.0,0.84375,0
+contact_hidden_plus_period_normalized,460800_to_115200,4,4,1.0,1.0,1.0,0.84375,0
+radar_frame_shape,460800_to_115200,4,4,1.0,1.0,1.0,0.9952830188679245,0
+radar_period_normalized,460800_to_115200,4,4,0.5,0.3333333333333333,0.5,0.5943396226415094,0

@@ -1,0 +1,24 @@
+{
+  "python": "3.12.3 (main, Aug 14 2025, 17:47:21) [GCC 13.3.0]",
+  "torch": "2.10.0a0+b558c986e8.nv25.11",
+  "cuda": "13.0",
+  "gpu": "NVIDIA RTX PRO 5000 72GB Blackwell",
+  "compute_capability": [
+    12,
+    0
+  ],
+  "upstream_commit": "4bdd29bf013971909e81cd79732c4b3813101ca9",
+  "packages": {
+    "transformers": "4.49.0",
+    "peft": "0.15.2",
+    "accelerate": "1.4.0",
+    "numpy": "1.26.0",
+    "scipy": "1.15.2",
+    "python-dotenv": "1.0.1",
+    "h5pickle": "0.4.2",
+    "h5py": "3.16.0",
+    "huggingface-hub": "0.36.2",
+    "tokenizers": "0.21.4",
+    "safetensors": "0.6.2"
+  }
+}

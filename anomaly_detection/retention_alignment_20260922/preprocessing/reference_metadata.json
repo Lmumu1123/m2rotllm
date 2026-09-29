@@ -1,0 +1,65 @@
+[
+  {
+    "file_id": 4,
+    "condition_id": 0,
+    "label": 0,
+    "source": "CWRU",
+    "source_training_query": true
+  },
+  {
+    "file_id": 4718,
+    "condition_id": 116,
+    "label": 0,
+    "source": "DIRG",
+    "source_training_query": true
+  },
+  {
+    "file_id": 17033,
+    "condition_id": 766,
+    "label": 0,
+    "source": "HIT",
+    "source_training_query": true
+  },
+  {
+    "file_id": 42276,
+    "condition_id": 804,
+    "label": 0,
+    "source": "IMS",
+    "source_training_query": true
+  },
+  {
+    "file_id": 86343,
+    "condition_id": 823,
+    "label": 0,
+    "source": "JUST",
+    "source_training_query": true
+  },
+  {
+    "file_id": 111202,
+    "condition_id": 844,
+    "label": 0,
+    "source": "MFPT",
+    "source_training_query": true
+  },
+  {
+    "file_id": 114039,
+    "condition_id": 991,
+    "label": 0,
+    "source": "NCEPU",
+    "source_training_query": true
+  },
+  {
+    "file_id": 118897,
+    "condition_id": 1035,
+    "label": 0,
+    "source": "PU",
+    "source_training_query": true
+  },
+  {
+    "file_id": 125569,
+    "condition_id": 1040,
+    "label": 0,
+    "source": "XJTU",
+    "source_training_query": true
+  }
+]

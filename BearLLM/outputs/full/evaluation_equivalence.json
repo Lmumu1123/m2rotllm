@@ -1,0 +1,18 @@
+{
+  "adapter_logits_max_error": 0.0,
+  "prompt_embeddings_max_error": 0.0,
+  "batch_size": 2,
+  "prompt_lengths": [
+    228,
+    189
+  ],
+  "native_vs_injected_generation_exact_match": true,
+  "responses": [
+    "Okay, based on the provided bearing status description:\n\n**Selection:** Fault-Free\n\n**Analysis of Potential Risks:**\n\nSince the bearing is described as \"Fault-Free,\" there are **no immediate potential risks** associated with a bearing being in this state.\n\n**Potential Consequences of Bearing Fault (Hypothetical -",
+    "Fault-Free"
+  ],
+  "python": "3.12.14 (main, Sep  2 2026, 23:27:36) [GCC 15.3.0]",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "device": "NVIDIA RTX PRO 5000 72GB Blackwell"
+}

@@ -1,0 +1,8179 @@
+[
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "all",
+    "n": 343,
+    "correct": 74,
+    "accuracy": 0.21574344023323616,
+    "macro_f1": 0.0912186330618534,
+    "balanced_accuracy": 0.2514450867052023,
+    "confusion_matrix": [
+      [
+        1,
+        0,
+        172,
+        0
+      ],
+      [
+        2,
+        0,
+        46,
+        0
+      ],
+      [
+        0,
+        0,
+        73,
+        0
+      ],
+      [
+        0,
+        0,
+        49,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "rpm_1000",
+    "n": 119,
+    "correct": 31,
+    "accuracy": 0.2605042016806723,
+    "macro_f1": 0.10333333333333333,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        54,
+        0
+      ],
+      [
+        0,
+        0,
+        19,
+        0
+      ],
+      [
+        0,
+        0,
+        31,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "rpm_2000",
+    "n": 54,
+    "correct": 17,
+    "accuracy": 0.3148148148148148,
+    "macro_f1": 0.11971830985915492,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        17,
+        0
+      ],
+      [
+        0,
+        0,
+        12,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "rpm_3000",
+    "n": 170,
+    "correct": 26,
+    "accuracy": 0.15294117647058825,
+    "macro_f1": 0.06956845238095238,
+    "balanced_accuracy": 0.25229357798165136,
+    "confusion_matrix": [
+      [
+        1,
+        0,
+        108,
+        0
+      ],
+      [
+        2,
+        0,
+        12,
+        0
+      ],
+      [
+        0,
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        0,
+        22,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "session",
+    "scope": "all",
+    "n": 12,
+    "correct": 3,
+    "accuracy": 0.25,
+    "macro_f1": 0.1,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "inBroken_1000r_session",
+    "n": 19,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        19,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "inBroken_2000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "inBroken_3000r_session",
+    "n": 14,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        12,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "normal_1000r_session",
+    "n": 54,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        54,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "normal_2000r_session",
+    "n": 10,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "normal_3000r_session",
+    "n": 109,
+    "correct": 1,
+    "accuracy": 0.009174311926605505,
+    "macro_f1": 0.004545454545454545,
+    "balanced_accuracy": 0.009174311926605505,
+    "confusion_matrix": [
+      [
+        1,
+        0,
+        108,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "outBroken_1000r_session",
+    "n": 31,
+    "correct": 31,
+    "accuracy": 1.0,
+    "macro_f1": 0.25,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        31,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "outBroken_2000r_session",
+    "n": 17,
+    "correct": 17,
+    "accuracy": 1.0,
+    "macro_f1": 0.25,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        17,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "outBroken_3000r_session",
+    "n": 25,
+    "correct": 25,
+    "accuracy": 1.0,
+    "macro_f1": 0.25,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "roll_1000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "roll_2000r_session",
+    "n": 12,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        12,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "roll_3000r_session",
+    "n": 22,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        22,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "all",
+    "n": 343,
+    "correct": 36,
+    "accuracy": 0.10495626822157435,
+    "macro_f1": 0.0676754939050021,
+    "balanced_accuracy": 0.12999720436119652,
+    "confusion_matrix": [
+      [
+        0,
+        9,
+        126,
+        38
+      ],
+      [
+        2,
+        0,
+        46,
+        0
+      ],
+      [
+        2,
+        8,
+        32,
+        31
+      ],
+      [
+        2,
+        8,
+        35,
+        4
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "rpm_1000",
+    "n": 119,
+    "correct": 12,
+    "accuracy": 0.10084033613445378,
+    "macro_f1": 0.08119658119658119,
+    "balanced_accuracy": 0.13118279569892471,
+    "confusion_matrix": [
+      [
+        0,
+        7,
+        9,
+        38
+      ],
+      [
+        0,
+        0,
+        19,
+        0
+      ],
+      [
+        0,
+        2,
+        8,
+        21
+      ],
+      [
+        0,
+        6,
+        5,
+        4
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "rpm_2000",
+    "n": 54,
+    "correct": 2,
+    "accuracy": 0.037037037037037035,
+    "macro_f1": 0.019230769230769232,
+    "balanced_accuracy": 0.029411764705882353,
+    "confusion_matrix": [
+      [
+        0,
+        2,
+        8,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        5,
+        2,
+        10
+      ],
+      [
+        0,
+        2,
+        10,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "rpm_3000",
+    "n": 170,
+    "correct": 22,
+    "accuracy": 0.12941176470588237,
+    "macro_f1": 0.05851063829787234,
+    "balanced_accuracy": 0.22,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        109,
+        0
+      ],
+      [
+        2,
+        0,
+        12,
+        0
+      ],
+      [
+        2,
+        1,
+        22,
+        0
+      ],
+      [
+        2,
+        0,
+        20,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "session",
+    "scope": "all",
+    "n": 12,
+    "correct": 1,
+    "accuracy": 0.08333333333333333,
+    "macro_f1": 0.045454545454545456,
+    "balanced_accuracy": 0.08333333333333333,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "inBroken_1000r_session",
+    "n": 19,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        19,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "inBroken_2000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "inBroken_3000r_session",
+    "n": 14,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        12,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "normal_1000r_session",
+    "n": 54,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        7,
+        9,
+        38
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "normal_2000r_session",
+    "n": 10,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        2,
+        8,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "normal_3000r_session",
+    "n": 109,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        109,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "outBroken_1000r_session",
+    "n": 31,
+    "correct": 8,
+    "accuracy": 0.25806451612903225,
+    "macro_f1": 0.10256410256410256,
+    "balanced_accuracy": 0.25806451612903225,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        8,
+        21
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "outBroken_2000r_session",
+    "n": 17,
+    "correct": 2,
+    "accuracy": 0.11764705882352941,
+    "macro_f1": 0.05263157894736842,
+    "balanced_accuracy": 0.11764705882352941,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        5,
+        2,
+        10
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "outBroken_3000r_session",
+    "n": 25,
+    "correct": 22,
+    "accuracy": 0.88,
+    "macro_f1": 0.23404255319148937,
+    "balanced_accuracy": 0.88,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        22,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "roll_1000r_session",
+    "n": 15,
+    "correct": 4,
+    "accuracy": 0.26666666666666666,
+    "macro_f1": 0.10526315789473684,
+    "balanced_accuracy": 0.26666666666666666,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        5,
+        4
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "roll_2000r_session",
+    "n": 12,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        10,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "roll_3000r_session",
+    "n": 22,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        20,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "all",
+    "n": 343,
+    "correct": 52,
+    "accuracy": 0.15160349854227406,
+    "macro_f1": 0.13117815381954526,
+    "balanced_accuracy": 0.1576833624613041,
+    "confusion_matrix": [
+      [
+        29,
+        4,
+        87,
+        53
+      ],
+      [
+        7,
+        1,
+        39,
+        1
+      ],
+      [
+        16,
+        2,
+        1,
+        54
+      ],
+      [
+        13,
+        1,
+        14,
+        21
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "rpm_1000",
+    "n": 119,
+    "correct": 14,
+    "accuracy": 0.11764705882352941,
+    "macro_f1": 0.06140350877192982,
+    "balanced_accuracy": 0.23333333333333334,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        1,
+        53
+      ],
+      [
+        1,
+        0,
+        17,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        31
+      ],
+      [
+        0,
+        0,
+        1,
+        14
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "rpm_2000",
+    "n": 54,
+    "correct": 7,
+    "accuracy": 0.12962962962962962,
+    "macro_f1": 0.09722222222222222,
+    "balanced_accuracy": 0.14583333333333334,
+    "confusion_matrix": [
+      [
+        0,
+        3,
+        7,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        17
+      ],
+      [
+        0,
+        1,
+        4,
+        7
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "rpm_3000",
+    "n": 170,
+    "correct": 31,
+    "accuracy": 0.18235294117647058,
+    "macro_f1": 0.11572503808447056,
+    "balanced_accuracy": 0.09437090432503277,
+    "confusion_matrix": [
+      [
+        29,
+        1,
+        79,
+        0
+      ],
+      [
+        6,
+        1,
+        7,
+        0
+      ],
+      [
+        16,
+        2,
+        1,
+        6
+      ],
+      [
+        13,
+        0,
+        9,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "session",
+    "scope": "all",
+    "n": 12,
+    "correct": 2,
+    "accuracy": 0.16666666666666666,
+    "macro_f1": 0.125,
+    "balanced_accuracy": 0.16666666666666666,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        0,
+        0,
+        2
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "inBroken_1000r_session",
+    "n": 19,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        17,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "inBroken_2000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "inBroken_3000r_session",
+    "n": 14,
+    "correct": 1,
+    "accuracy": 0.07142857142857142,
+    "macro_f1": 0.03333333333333333,
+    "balanced_accuracy": 0.07142857142857142,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        1,
+        7,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "normal_1000r_session",
+    "n": 54,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        1,
+        53
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "normal_2000r_session",
+    "n": 10,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        3,
+        7,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "normal_3000r_session",
+    "n": 109,
+    "correct": 29,
+    "accuracy": 0.26605504587155965,
+    "macro_f1": 0.10507246376811594,
+    "balanced_accuracy": 0.26605504587155965,
+    "confusion_matrix": [
+      [
+        29,
+        1,
+        79,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "outBroken_1000r_session",
+    "n": 31,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        31
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "outBroken_2000r_session",
+    "n": 17,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        17
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "outBroken_3000r_session",
+    "n": 25,
+    "correct": 1,
+    "accuracy": 0.04,
+    "macro_f1": 0.019230769230769232,
+    "balanced_accuracy": 0.04,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        16,
+        2,
+        1,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "roll_1000r_session",
+    "n": 15,
+    "correct": 14,
+    "accuracy": 0.9333333333333333,
+    "macro_f1": 0.2413793103448276,
+    "balanced_accuracy": 0.9333333333333333,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        14
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "roll_2000r_session",
+    "n": 12,
+    "correct": 7,
+    "accuracy": 0.5833333333333334,
+    "macro_f1": 0.18421052631578946,
+    "balanced_accuracy": 0.5833333333333334,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        4,
+        7
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "roll_3000r_session",
+    "n": 22,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        9,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "all",
+    "n": 343,
+    "correct": 105,
+    "accuracy": 0.30612244897959184,
+    "macro_f1": 0.18114925014034805,
+    "balanced_accuracy": 0.2942632037374297,
+    "confusion_matrix": [
+      [
+        33,
+        1,
+        110,
+        29
+      ],
+      [
+        15,
+        0,
+        33,
+        0
+      ],
+      [
+        1,
+        0,
+        72,
+        0
+      ],
+      [
+        0,
+        0,
+        49,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "rpm_1000",
+    "n": 119,
+    "correct": 30,
+    "accuracy": 0.25210084033613445,
+    "macro_f1": 0.125,
+    "balanced_accuracy": 0.24193548387096775,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        25,
+        29
+      ],
+      [
+        0,
+        0,
+        19,
+        0
+      ],
+      [
+        1,
+        0,
+        30,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "rpm_2000",
+    "n": 54,
+    "correct": 24,
+    "accuracy": 0.4444444444444444,
+    "macro_f1": 0.292022792022792,
+    "balanced_accuracy": 0.425,
+    "confusion_matrix": [
+      [
+        7,
+        1,
+        2,
+        0
+      ],
+      [
+        9,
+        0,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        17,
+        0
+      ],
+      [
+        0,
+        0,
+        12,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "rpm_3000",
+    "n": 170,
+    "correct": 51,
+    "accuracy": 0.3,
+    "macro_f1": 0.16888569812470086,
+    "balanced_accuracy": 0.30963302752293576,
+    "confusion_matrix": [
+      [
+        26,
+        0,
+        83,
+        0
+      ],
+      [
+        6,
+        0,
+        8,
+        0
+      ],
+      [
+        0,
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        0,
+        22,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "session",
+    "scope": "all",
+    "n": 12,
+    "correct": 4,
+    "accuracy": 0.3333333333333333,
+    "macro_f1": 0.21969696969696967,
+    "balanced_accuracy": 0.3333333333333333,
+    "confusion_matrix": [
+      [
+        1,
+        0,
+        1,
+        1
+      ],
+      [
+        2,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "inBroken_1000r_session",
+    "n": 19,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        19,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "inBroken_2000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        9,
+        0,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "inBroken_3000r_session",
+    "n": 14,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        8,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "normal_1000r_session",
+    "n": 54,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        25,
+        29
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "normal_2000r_session",
+    "n": 10,
+    "correct": 7,
+    "accuracy": 0.7,
+    "macro_f1": 0.20588235294117646,
+    "balanced_accuracy": 0.7,
+    "confusion_matrix": [
+      [
+        7,
+        1,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "normal_3000r_session",
+    "n": 109,
+    "correct": 26,
+    "accuracy": 0.23853211009174313,
+    "macro_f1": 0.0962962962962963,
+    "balanced_accuracy": 0.23853211009174313,
+    "confusion_matrix": [
+      [
+        26,
+        0,
+        83,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "outBroken_1000r_session",
+    "n": 31,
+    "correct": 30,
+    "accuracy": 0.967741935483871,
+    "macro_f1": 0.2459016393442623,
+    "balanced_accuracy": 0.967741935483871,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        30,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "outBroken_2000r_session",
+    "n": 17,
+    "correct": 17,
+    "accuracy": 1.0,
+    "macro_f1": 0.25,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        17,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "outBroken_3000r_session",
+    "n": 25,
+    "correct": 25,
+    "accuracy": 1.0,
+    "macro_f1": 0.25,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "roll_1000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "roll_2000r_session",
+    "n": 12,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        12,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "roll_3000r_session",
+    "n": 22,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        22,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "all",
+    "n": 343,
+    "correct": 112,
+    "accuracy": 0.32653061224489793,
+    "macro_f1": 0.202692908117752,
+    "balanced_accuracy": 0.3063583815028902,
+    "confusion_matrix": [
+      [
+        39,
+        0,
+        85,
+        49
+      ],
+      [
+        24,
+        0,
+        24,
+        0
+      ],
+      [
+        0,
+        0,
+        73,
+        0
+      ],
+      [
+        0,
+        0,
+        49,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "rpm_1000",
+    "n": 119,
+    "correct": 31,
+    "accuracy": 0.2605042016806723,
+    "macro_f1": 0.15346534653465346,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        5,
+        49
+      ],
+      [
+        0,
+        0,
+        19,
+        0
+      ],
+      [
+        0,
+        0,
+        31,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "rpm_2000",
+    "n": 54,
+    "correct": 21,
+    "accuracy": 0.3888888888888889,
+    "macro_f1": 0.23148148148148148,
+    "balanced_accuracy": 0.35,
+    "confusion_matrix": [
+      [
+        4,
+        0,
+        6,
+        0
+      ],
+      [
+        13,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        17,
+        0
+      ],
+      [
+        0,
+        0,
+        12,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "rpm_3000",
+    "n": 170,
+    "correct": 60,
+    "accuracy": 0.35294117647058826,
+    "macro_f1": 0.19679584325611604,
+    "balanced_accuracy": 0.3302752293577982,
+    "confusion_matrix": [
+      [
+        35,
+        0,
+        74,
+        0
+      ],
+      [
+        11,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        0,
+        22,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "session",
+    "scope": "all",
+    "n": 12,
+    "correct": 3,
+    "accuracy": 0.25,
+    "macro_f1": 0.125,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        2,
+        1
+      ],
+      [
+        2,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "inBroken_1000r_session",
+    "n": 19,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        19,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "inBroken_2000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "inBroken_3000r_session",
+    "n": 14,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        11,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "normal_1000r_session",
+    "n": 54,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        5,
+        49
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "normal_2000r_session",
+    "n": 10,
+    "correct": 4,
+    "accuracy": 0.4,
+    "macro_f1": 0.14285714285714285,
+    "balanced_accuracy": 0.4,
+    "confusion_matrix": [
+      [
+        4,
+        0,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "normal_3000r_session",
+    "n": 109,
+    "correct": 35,
+    "accuracy": 0.3211009174311927,
+    "macro_f1": 0.12152777777777778,
+    "balanced_accuracy": 0.3211009174311927,
+    "confusion_matrix": [
+      [
+        35,
+        0,
+        74,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "outBroken_1000r_session",
+    "n": 31,
+    "correct": 31,
+    "accuracy": 1.0,
+    "macro_f1": 0.25,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        31,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "outBroken_2000r_session",
+    "n": 17,
+    "correct": 17,
+    "accuracy": 1.0,
+    "macro_f1": 0.25,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        17,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "outBroken_3000r_session",
+    "n": 25,
+    "correct": 25,
+    "accuracy": 1.0,
+    "macro_f1": 0.25,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "roll_1000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "roll_2000r_session",
+    "n": 12,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        12,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "roll_3000r_session",
+    "n": 22,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        22,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "all",
+    "n": 343,
+    "correct": 164,
+    "accuracy": 0.478134110787172,
+    "macro_f1": 0.17083333333333334,
+    "balanced_accuracy": 0.23699421965317918,
+    "confusion_matrix": [
+      [
+        164,
+        8,
+        0,
+        1
+      ],
+      [
+        29,
+        0,
+        19,
+        0
+      ],
+      [
+        73,
+        0,
+        0,
+        0
+      ],
+      [
+        41,
+        8,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "rpm_1000",
+    "n": 119,
+    "correct": 46,
+    "accuracy": 0.3865546218487395,
+    "macro_f1": 0.16428571428571428,
+    "balanced_accuracy": 0.21296296296296297,
+    "confusion_matrix": [
+      [
+        46,
+        7,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        17,
+        0
+      ],
+      [
+        31,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        8,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "rpm_2000",
+    "n": 54,
+    "correct": 9,
+    "accuracy": 0.16666666666666666,
+    "macro_f1": 0.07377049180327869,
+    "balanced_accuracy": 0.225,
+    "confusion_matrix": [
+      [
+        9,
+        1,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        2,
+        0
+      ],
+      [
+        17,
+        0,
+        0,
+        0
+      ],
+      [
+        12,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "rpm_3000",
+    "n": 170,
+    "correct": 109,
+    "accuracy": 0.6411764705882353,
+    "macro_f1": 0.1953405017921147,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        109,
+        0,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "session",
+    "scope": "all",
+    "n": 12,
+    "correct": 3,
+    "accuracy": 0.25,
+    "macro_f1": 0.10714285714285714,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        1,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "inBroken_1000r_session",
+    "n": 19,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        17,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "inBroken_2000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "inBroken_3000r_session",
+    "n": 14,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "normal_1000r_session",
+    "n": 54,
+    "correct": 46,
+    "accuracy": 0.8518518518518519,
+    "macro_f1": 0.23,
+    "balanced_accuracy": 0.8518518518518519,
+    "confusion_matrix": [
+      [
+        46,
+        7,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "normal_2000r_session",
+    "n": 10,
+    "correct": 9,
+    "accuracy": 0.9,
+    "macro_f1": 0.23684210526315788,
+    "balanced_accuracy": 0.9,
+    "confusion_matrix": [
+      [
+        9,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "normal_3000r_session",
+    "n": 109,
+    "correct": 109,
+    "accuracy": 1.0,
+    "macro_f1": 0.25,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        109,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "outBroken_1000r_session",
+    "n": 31,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        31,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "outBroken_2000r_session",
+    "n": 17,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        17,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "outBroken_3000r_session",
+    "n": 25,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "roll_1000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        8,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "roll_2000r_session",
+    "n": 12,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        12,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_probability_pool",
+    "level": "packet",
+    "scope": "roll_3000r_session",
+    "n": 22,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "all",
+    "n": 343,
+    "correct": 148,
+    "accuracy": 0.4314868804664723,
+    "macro_f1": 0.15352697095435686,
+    "balanced_accuracy": 0.2138728323699422,
+    "confusion_matrix": [
+      [
+        148,
+        15,
+        0,
+        10
+      ],
+      [
+        47,
+        0,
+        1,
+        0
+      ],
+      [
+        72,
+        0,
+        0,
+        1
+      ],
+      [
+        42,
+        7,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "rpm_1000",
+    "n": 119,
+    "correct": 31,
+    "accuracy": 0.2605042016806723,
+    "macro_f1": 0.1076388888888889,
+    "balanced_accuracy": 0.14351851851851852,
+    "confusion_matrix": [
+      [
+        31,
+        13,
+        0,
+        10
+      ],
+      [
+        18,
+        0,
+        1,
+        0
+      ],
+      [
+        31,
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        5,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "rpm_2000",
+    "n": 54,
+    "correct": 8,
+    "accuracy": 0.14814814814814814,
+    "macro_f1": 0.06779661016949153,
+    "balanced_accuracy": 0.2,
+    "confusion_matrix": [
+      [
+        8,
+        2,
+        0,
+        0
+      ],
+      [
+        15,
+        0,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0,
+        1
+      ],
+      [
+        10,
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "rpm_3000",
+    "n": 170,
+    "correct": 109,
+    "accuracy": 0.6411764705882353,
+    "macro_f1": 0.1953405017921147,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        109,
+        0,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "session",
+    "scope": "all",
+    "n": 12,
+    "correct": 3,
+    "accuracy": 0.25,
+    "macro_f1": 0.1,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "inBroken_1000r_session",
+    "n": 19,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        18,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "inBroken_2000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        15,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "inBroken_3000r_session",
+    "n": 14,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "normal_1000r_session",
+    "n": 54,
+    "correct": 31,
+    "accuracy": 0.5740740740740741,
+    "macro_f1": 0.18235294117647058,
+    "balanced_accuracy": 0.5740740740740741,
+    "confusion_matrix": [
+      [
+        31,
+        13,
+        0,
+        10
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "normal_2000r_session",
+    "n": 10,
+    "correct": 8,
+    "accuracy": 0.8,
+    "macro_f1": 0.2222222222222222,
+    "balanced_accuracy": 0.8,
+    "confusion_matrix": [
+      [
+        8,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "normal_3000r_session",
+    "n": 109,
+    "correct": 109,
+    "accuracy": 1.0,
+    "macro_f1": 0.25,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        109,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "outBroken_1000r_session",
+    "n": 31,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        31,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "outBroken_2000r_session",
+    "n": 17,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "outBroken_3000r_session",
+    "n": 25,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "roll_1000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        5,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "roll_2000r_session",
+    "n": 12,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        2,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool",
+    "level": "packet",
+    "scope": "roll_3000r_session",
+    "n": 22,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "all",
+    "n": 343,
+    "correct": 124,
+    "accuracy": 0.36151603498542273,
+    "macro_f1": 0.16353138778081042,
+    "balanced_accuracy": 0.20113247611183202,
+    "confusion_matrix": [
+      [
+        118,
+        11,
+        2,
+        42
+      ],
+      [
+        44,
+        0,
+        3,
+        1
+      ],
+      [
+        58,
+        3,
+        0,
+        12
+      ],
+      [
+        40,
+        3,
+        0,
+        6
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "rpm_1000",
+    "n": 119,
+    "correct": 13,
+    "accuracy": 0.1092436974789916,
+    "macro_f1": 0.06544980443285528,
+    "balanced_accuracy": 0.0962962962962963,
+    "confusion_matrix": [
+      [
+        10,
+        1,
+        1,
+        42
+      ],
+      [
+        16,
+        0,
+        2,
+        1
+      ],
+      [
+        27,
+        0,
+        0,
+        4
+      ],
+      [
+        11,
+        1,
+        0,
+        3
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "rpm_2000",
+    "n": 54,
+    "correct": 6,
+    "accuracy": 0.1111111111111111,
+    "macro_f1": 0.10271739130434782,
+    "balanced_accuracy": 0.1375,
+    "confusion_matrix": [
+      [
+        3,
+        7,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        1,
+        0
+      ],
+      [
+        6,
+        3,
+        0,
+        8
+      ],
+      [
+        7,
+        2,
+        0,
+        3
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "rpm_3000",
+    "n": 170,
+    "correct": 105,
+    "accuracy": 0.6176470588235294,
+    "macro_f1": 0.19090909090909092,
+    "balanced_accuracy": 0.2408256880733945,
+    "confusion_matrix": [
+      [
+        105,
+        3,
+        1,
+        0
+      ],
+      [
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "session",
+    "scope": "all",
+    "n": 12,
+    "correct": 1,
+    "accuracy": 0.08333333333333333,
+    "macro_f1": 0.041666666666666664,
+    "balanced_accuracy": 0.08333333333333333,
+    "confusion_matrix": [
+      [
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "inBroken_1000r_session",
+    "n": 19,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        16,
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "inBroken_2000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "inBroken_3000r_session",
+    "n": 14,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "normal_1000r_session",
+    "n": 54,
+    "correct": 10,
+    "accuracy": 0.18518518518518517,
+    "macro_f1": 0.078125,
+    "balanced_accuracy": 0.18518518518518517,
+    "confusion_matrix": [
+      [
+        10,
+        1,
+        1,
+        42
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "normal_2000r_session",
+    "n": 10,
+    "correct": 3,
+    "accuracy": 0.3,
+    "macro_f1": 0.11538461538461539,
+    "balanced_accuracy": 0.3,
+    "confusion_matrix": [
+      [
+        3,
+        7,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "normal_3000r_session",
+    "n": 109,
+    "correct": 105,
+    "accuracy": 0.963302752293578,
+    "macro_f1": 0.24532710280373832,
+    "balanced_accuracy": 0.963302752293578,
+    "confusion_matrix": [
+      [
+        105,
+        3,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "outBroken_1000r_session",
+    "n": 31,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        27,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "outBroken_2000r_session",
+    "n": 17,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        3,
+        0,
+        8
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "outBroken_3000r_session",
+    "n": 25,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "roll_1000r_session",
+    "n": 15,
+    "correct": 3,
+    "accuracy": 0.2,
+    "macro_f1": 0.08333333333333333,
+    "balanced_accuracy": 0.2,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        11,
+        1,
+        0,
+        3
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "roll_2000r_session",
+    "n": 12,
+    "correct": 3,
+    "accuracy": 0.25,
+    "macro_f1": 0.1,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        2,
+        0,
+        3
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "retrained_fcn_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "roll_3000r_session",
+    "n": 22,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "all",
+    "n": 343,
+    "correct": 152,
+    "accuracy": 0.44314868804664725,
+    "macro_f1": 0.18750755939524838,
+    "balanced_accuracy": 0.23548974582310556,
+    "confusion_matrix": [
+      [
+        144,
+        1,
+        28,
+        0
+      ],
+      [
+        42,
+        0,
+        6,
+        0
+      ],
+      [
+        65,
+        0,
+        8,
+        0
+      ],
+      [
+        39,
+        0,
+        10,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "rpm_1000",
+    "n": 119,
+    "correct": 27,
+    "accuracy": 0.226890756302521,
+    "macro_f1": 0.10542929292929293,
+    "balanced_accuracy": 0.12843488649940263,
+    "confusion_matrix": [
+      [
+        26,
+        0,
+        28,
+        0
+      ],
+      [
+        13,
+        0,
+        6,
+        0
+      ],
+      [
+        30,
+        0,
+        1,
+        0
+      ],
+      [
+        9,
+        0,
+        6,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "rpm_2000",
+    "n": 54,
+    "correct": 16,
+    "accuracy": 0.2962962962962963,
+    "macro_f1": 0.21153846153846154,
+    "balanced_accuracy": 0.32794117647058824,
+    "confusion_matrix": [
+      [
+        9,
+        1,
+        0,
+        0
+      ],
+      [
+        15,
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        0,
+        7,
+        0
+      ],
+      [
+        8,
+        0,
+        4,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "rpm_3000",
+    "n": 170,
+    "correct": 109,
+    "accuracy": 0.6411764705882353,
+    "macro_f1": 0.1953405017921147,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        109,
+        0,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "session",
+    "scope": "all",
+    "n": 12,
+    "correct": 3,
+    "accuracy": 0.25,
+    "macro_f1": 0.1,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "inBroken_1000r_session",
+    "n": 19,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "inBroken_2000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        15,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "inBroken_3000r_session",
+    "n": 14,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "normal_1000r_session",
+    "n": 54,
+    "correct": 26,
+    "accuracy": 0.48148148148148145,
+    "macro_f1": 0.1625,
+    "balanced_accuracy": 0.48148148148148145,
+    "confusion_matrix": [
+      [
+        26,
+        0,
+        28,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "normal_2000r_session",
+    "n": 10,
+    "correct": 9,
+    "accuracy": 0.9,
+    "macro_f1": 0.23684210526315788,
+    "balanced_accuracy": 0.9,
+    "confusion_matrix": [
+      [
+        9,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "normal_3000r_session",
+    "n": 109,
+    "correct": 109,
+    "accuracy": 1.0,
+    "macro_f1": 0.25,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        109,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "outBroken_1000r_session",
+    "n": 31,
+    "correct": 1,
+    "accuracy": 0.03225806451612903,
+    "macro_f1": 0.015625,
+    "balanced_accuracy": 0.03225806451612903,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        30,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "outBroken_2000r_session",
+    "n": 17,
+    "correct": 7,
+    "accuracy": 0.4117647058823529,
+    "macro_f1": 0.14583333333333334,
+    "balanced_accuracy": 0.4117647058823529,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        0,
+        7,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "outBroken_3000r_session",
+    "n": 25,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        25,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "roll_1000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        9,
+        0,
+        6,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "roll_2000r_session",
+    "n": 12,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        8,
+        0,
+        4,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool",
+    "level": "packet",
+    "scope": "roll_3000r_session",
+    "n": 22,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        22,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "all",
+    "n": 343,
+    "correct": 141,
+    "accuracy": 0.4110787172011662,
+    "macro_f1": 0.2253494623655914,
+    "balanced_accuracy": 0.26512392113389815,
+    "confusion_matrix": [
+      [
+        110,
+        1,
+        46,
+        16
+      ],
+      [
+        28,
+        0,
+        20,
+        0
+      ],
+      [
+        42,
+        0,
+        31,
+        0
+      ],
+      [
+        19,
+        0,
+        30,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "rpm_1000",
+    "n": 119,
+    "correct": 12,
+    "accuracy": 0.10084033613445378,
+    "macro_f1": 0.06349745331069609,
+    "balanced_accuracy": 0.06586021505376344,
+    "confusion_matrix": [
+      [
+        9,
+        0,
+        29,
+        16
+      ],
+      [
+        0,
+        0,
+        19,
+        0
+      ],
+      [
+        28,
+        0,
+        3,
+        0
+      ],
+      [
+        4,
+        0,
+        11,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "rpm_2000",
+    "n": 54,
+    "correct": 24,
+    "accuracy": 0.4444444444444444,
+    "macro_f1": 0.2869116698903933,
+    "balanced_accuracy": 0.425,
+    "confusion_matrix": [
+      [
+        7,
+        1,
+        2,
+        0
+      ],
+      [
+        14,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        17,
+        0
+      ],
+      [
+        2,
+        0,
+        10,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "rpm_3000",
+    "n": 170,
+    "correct": 105,
+    "accuracy": 0.6176470588235294,
+    "macro_f1": 0.2842896174863388,
+    "balanced_accuracy": 0.3255963302752294,
+    "confusion_matrix": [
+      [
+        94,
+        0,
+        15,
+        0
+      ],
+      [
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        11,
+        0
+      ],
+      [
+        13,
+        0,
+        9,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "session",
+    "scope": "all",
+    "n": 12,
+    "correct": 3,
+    "accuracy": 0.25,
+    "macro_f1": 0.1625,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        2,
+        0,
+        1,
+        0
+      ],
+      [
+        2,
+        0,
+        1,
+        0
+      ],
+      [
+        2,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        2,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "inBroken_1000r_session",
+    "n": 19,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        19,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "inBroken_2000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "inBroken_3000r_session",
+    "n": 14,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "normal_1000r_session",
+    "n": 54,
+    "correct": 9,
+    "accuracy": 0.16666666666666666,
+    "macro_f1": 0.07142857142857142,
+    "balanced_accuracy": 0.16666666666666666,
+    "confusion_matrix": [
+      [
+        9,
+        0,
+        29,
+        16
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "normal_2000r_session",
+    "n": 10,
+    "correct": 7,
+    "accuracy": 0.7,
+    "macro_f1": 0.20588235294117646,
+    "balanced_accuracy": 0.7,
+    "confusion_matrix": [
+      [
+        7,
+        1,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "normal_3000r_session",
+    "n": 109,
+    "correct": 94,
+    "accuracy": 0.8623853211009175,
+    "macro_f1": 0.2315270935960591,
+    "balanced_accuracy": 0.8623853211009175,
+    "confusion_matrix": [
+      [
+        94,
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "outBroken_1000r_session",
+    "n": 31,
+    "correct": 3,
+    "accuracy": 0.0967741935483871,
+    "macro_f1": 0.04411764705882353,
+    "balanced_accuracy": 0.0967741935483871,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        28,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "outBroken_2000r_session",
+    "n": 17,
+    "correct": 17,
+    "accuracy": 1.0,
+    "macro_f1": 0.25,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        17,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "outBroken_3000r_session",
+    "n": 25,
+    "correct": 11,
+    "accuracy": 0.44,
+    "macro_f1": 0.1527777777777778,
+    "balanced_accuracy": 0.44,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        14,
+        0,
+        11,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "roll_1000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        11,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "roll_2000r_session",
+    "n": 12,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        10,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "query_no_demean_ref2k",
+    "model": "existing_retained_head_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "roll_3000r_session",
+    "n": 22,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        13,
+        0,
+        9,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_probability_pool",
+    "level": "packet",
+    "scope": "all",
+    "n": 343,
+    "correct": 73,
+    "accuracy": 0.21282798833819241,
+    "macro_f1": 0.08795180722891566,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        172,
+        1
+      ],
+      [
+        0,
+        0,
+        48,
+        0
+      ],
+      [
+        0,
+        0,
+        73,
+        0
+      ],
+      [
+        0,
+        0,
+        49,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_probability_pool",
+    "level": "packet",
+    "scope": "rpm_1000",
+    "n": 119,
+    "correct": 31,
+    "accuracy": 0.2605042016806723,
+    "macro_f1": 0.1040268456375839,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        53,
+        1
+      ],
+      [
+        0,
+        0,
+        19,
+        0
+      ],
+      [
+        0,
+        0,
+        31,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_probability_pool",
+    "level": "packet",
+    "scope": "rpm_2000",
+    "n": 54,
+    "correct": 17,
+    "accuracy": 0.3148148148148148,
+    "macro_f1": 0.11971830985915492,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        17,
+        0
+      ],
+      [
+        0,
+        0,
+        12,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_probability_pool",
+    "level": "packet",
+    "scope": "rpm_3000",
+    "n": 170,
+    "correct": 25,
+    "accuracy": 0.14705882352941177,
+    "macro_f1": 0.0641025641025641,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        109,
+        0
+      ],
+      [
+        0,
+        0,
+        14,
+        0
+      ],
+      [
+        0,
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        0,
+        22,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_probability_pool",
+    "level": "session",
+    "scope": "all",
+    "n": 12,
+    "correct": 3,
+    "accuracy": 0.25,
+    "macro_f1": 0.1,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_probability_pool",
+    "level": "packet",
+    "scope": "inBroken_1000r_session",
+    "n": 19,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        19,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_probability_pool",
+    "level": "packet",
+    "scope": "inBroken_2000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_probability_pool",
+    "level": "packet",
+    "scope": "inBroken_3000r_session",
+    "n": 14,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        14,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_probability_pool",
+    "level": "packet",
+    "scope": "normal_1000r_session",
+    "n": 54,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        53,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_probability_pool",
+    "level": "packet",
+    "scope": "normal_2000r_session",
+    "n": 10,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_probability_pool",
+    "level": "packet",
+    "scope": "normal_3000r_session",
+    "n": 109,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        109,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_probability_pool",
+    "level": "packet",
+    "scope": "outBroken_1000r_session",
+    "n": 31,
+    "correct": 31,
+    "accuracy": 1.0,
+    "macro_f1": 0.25,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        31,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_probability_pool",
+    "level": "packet",
+    "scope": "outBroken_2000r_session",
+    "n": 17,
+    "correct": 17,
+    "accuracy": 1.0,
+    "macro_f1": 0.25,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        17,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_probability_pool",
+    "level": "packet",
+    "scope": "outBroken_3000r_session",
+    "n": 25,
+    "correct": 25,
+    "accuracy": 1.0,
+    "macro_f1": 0.25,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_probability_pool",
+    "level": "packet",
+    "scope": "roll_1000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_probability_pool",
+    "level": "packet",
+    "scope": "roll_2000r_session",
+    "n": 12,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        12,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_probability_pool",
+    "level": "packet",
+    "scope": "roll_3000r_session",
+    "n": 22,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        22,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool",
+    "level": "packet",
+    "scope": "all",
+    "n": 343,
+    "correct": 75,
+    "accuracy": 0.21865889212827988,
+    "macro_f1": 0.13847780126849896,
+    "balanced_accuracy": 0.27530053117137265,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        121,
+        52
+      ],
+      [
+        0,
+        0,
+        48,
+        0
+      ],
+      [
+        0,
+        0,
+        64,
+        9
+      ],
+      [
+        0,
+        0,
+        38,
+        11
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool",
+    "level": "packet",
+    "scope": "rpm_1000",
+    "n": 119,
+    "correct": 33,
+    "accuracy": 0.2773109243697479,
+    "macro_f1": 0.20424403183023873,
+    "balanced_accuracy": 0.360752688172043,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        2,
+        52
+      ],
+      [
+        0,
+        0,
+        19,
+        0
+      ],
+      [
+        0,
+        0,
+        22,
+        9
+      ],
+      [
+        0,
+        0,
+        4,
+        11
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool",
+    "level": "packet",
+    "scope": "rpm_2000",
+    "n": 54,
+    "correct": 17,
+    "accuracy": 0.3148148148148148,
+    "macro_f1": 0.11971830985915492,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        17,
+        0
+      ],
+      [
+        0,
+        0,
+        12,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool",
+    "level": "packet",
+    "scope": "rpm_3000",
+    "n": 170,
+    "correct": 25,
+    "accuracy": 0.14705882352941177,
+    "macro_f1": 0.0641025641025641,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        109,
+        0
+      ],
+      [
+        0,
+        0,
+        14,
+        0
+      ],
+      [
+        0,
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        0,
+        22,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool",
+    "level": "session",
+    "scope": "all",
+    "n": 12,
+    "correct": 4,
+    "accuracy": 0.3333333333333333,
+    "macro_f1": 0.2153846153846154,
+    "balanced_accuracy": 0.3333333333333333,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        1
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool",
+    "level": "packet",
+    "scope": "inBroken_1000r_session",
+    "n": 19,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        19,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool",
+    "level": "packet",
+    "scope": "inBroken_2000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool",
+    "level": "packet",
+    "scope": "inBroken_3000r_session",
+    "n": 14,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        14,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool",
+    "level": "packet",
+    "scope": "normal_1000r_session",
+    "n": 54,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        2,
+        52
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool",
+    "level": "packet",
+    "scope": "normal_2000r_session",
+    "n": 10,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool",
+    "level": "packet",
+    "scope": "normal_3000r_session",
+    "n": 109,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        109,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool",
+    "level": "packet",
+    "scope": "outBroken_1000r_session",
+    "n": 31,
+    "correct": 22,
+    "accuracy": 0.7096774193548387,
+    "macro_f1": 0.20754716981132076,
+    "balanced_accuracy": 0.7096774193548387,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        22,
+        9
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool",
+    "level": "packet",
+    "scope": "outBroken_2000r_session",
+    "n": 17,
+    "correct": 17,
+    "accuracy": 1.0,
+    "macro_f1": 0.25,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        17,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool",
+    "level": "packet",
+    "scope": "outBroken_3000r_session",
+    "n": 25,
+    "correct": 25,
+    "accuracy": 1.0,
+    "macro_f1": 0.25,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool",
+    "level": "packet",
+    "scope": "roll_1000r_session",
+    "n": 15,
+    "correct": 11,
+    "accuracy": 0.7333333333333333,
+    "macro_f1": 0.21153846153846154,
+    "balanced_accuracy": 0.7333333333333333,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        11
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool",
+    "level": "packet",
+    "scope": "roll_2000r_session",
+    "n": 12,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        12,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool",
+    "level": "packet",
+    "scope": "roll_3000r_session",
+    "n": 22,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        22,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "all",
+    "n": 343,
+    "correct": 49,
+    "accuracy": 0.14285714285714285,
+    "macro_f1": 0.11069693406372788,
+    "balanced_accuracy": 0.201053697272717,
+    "confusion_matrix": [
+      [
+        1,
+        0,
+        117,
+        55
+      ],
+      [
+        0,
+        0,
+        48,
+        0
+      ],
+      [
+        1,
+        0,
+        27,
+        45
+      ],
+      [
+        0,
+        0,
+        28,
+        21
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "rpm_1000",
+    "n": 119,
+    "correct": 15,
+    "accuracy": 0.12605042016806722,
+    "macro_f1": 0.07193396226415094,
+    "balanced_accuracy": 0.2413978494623656,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        1,
+        53
+      ],
+      [
+        0,
+        0,
+        19,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        30
+      ],
+      [
+        0,
+        0,
+        1,
+        14
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "rpm_2000",
+    "n": 54,
+    "correct": 9,
+    "accuracy": 0.16666666666666666,
+    "macro_f1": 0.15,
+    "balanced_accuracy": 0.18553921568627452,
+    "confusion_matrix": [
+      [
+        1,
+        0,
+        7,
+        2
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        15
+      ],
+      [
+        0,
+        0,
+        5,
+        7
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "rpm_3000",
+    "n": 170,
+    "correct": 25,
+    "accuracy": 0.14705882352941177,
+    "macro_f1": 0.0641025641025641,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        109,
+        0
+      ],
+      [
+        0,
+        0,
+        14,
+        0
+      ],
+      [
+        0,
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        0,
+        22,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool_xy_sensitivity",
+    "level": "session",
+    "scope": "all",
+    "n": 12,
+    "correct": 3,
+    "accuracy": 0.25,
+    "macro_f1": 0.175,
+    "balanced_accuracy": 0.25,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        1,
+        2
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "inBroken_1000r_session",
+    "n": 19,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        19,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "inBroken_2000r_session",
+    "n": 15,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "inBroken_3000r_session",
+    "n": 14,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        14,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "normal_1000r_session",
+    "n": 54,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        1,
+        53
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "normal_2000r_session",
+    "n": 10,
+    "correct": 1,
+    "accuracy": 0.1,
+    "macro_f1": 0.045454545454545456,
+    "balanced_accuracy": 0.1,
+    "confusion_matrix": [
+      [
+        1,
+        0,
+        7,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "normal_3000r_session",
+    "n": 109,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        109,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "outBroken_1000r_session",
+    "n": 31,
+    "correct": 1,
+    "accuracy": 0.03225806451612903,
+    "macro_f1": 0.015625,
+    "balanced_accuracy": 0.03225806451612903,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        30
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "outBroken_2000r_session",
+    "n": 17,
+    "correct": 1,
+    "accuracy": 0.058823529411764705,
+    "macro_f1": 0.027777777777777776,
+    "balanced_accuracy": 0.058823529411764705,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        15
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "outBroken_3000r_session",
+    "n": 25,
+    "correct": 25,
+    "accuracy": 1.0,
+    "macro_f1": 0.25,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        25,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "roll_1000r_session",
+    "n": 15,
+    "correct": 14,
+    "accuracy": 0.9333333333333333,
+    "macro_f1": 0.2413793103448276,
+    "balanced_accuracy": 0.9333333333333333,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        14
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "roll_2000r_session",
+    "n": 12,
+    "correct": 7,
+    "accuracy": 0.5833333333333334,
+    "macro_f1": 0.18421052631578946,
+    "balanced_accuracy": 0.5833333333333334,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        5,
+        7
+      ]
+    ]
+  },
+  {
+    "variant": "v0",
+    "model": "official_final_original_hidden_pool_xy_sensitivity",
+    "level": "packet",
+    "scope": "roll_3000r_session",
+    "n": 22,
+    "correct": 0,
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "balanced_accuracy": 0.0,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        22,
+        0
+      ]
+    ]
+  }
+]

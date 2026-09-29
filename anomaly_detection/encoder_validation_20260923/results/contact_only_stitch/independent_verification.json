@@ -1,0 +1,250 @@
+{
+  "status": "passed_with_interpretation_limits",
+  "tested_script_sha256": "036ac37ad3c382134a84f1e2a9fbbb18d1a281fc733365da92a0ecade261d7bf",
+  "audit_script_sha256": "fa4f92f84582fcad601280c5ec38b53051130bf9664a2447f9bfc871ea98bc5a",
+  "source_files_unchanged": true,
+  "independently_recomputed_folds": [
+    {
+      "fold": "115200_to_460800",
+      "contact_train_windows": 32,
+      "contact_test_windows": 26,
+      "train_recordings": 4,
+      "test_recordings": 4,
+      "mapping_weight_max_abs": 0.0,
+      "mapping_bias_max_abs": 0.0,
+      "heldout_feature_and_label_poisoning_leaves_mapping_bitwise_identical": true,
+      "independent_four_class_head_weight_max_abs": 0.0,
+      "independent_four_class_head_bias_max_abs": 0.0,
+      "scaler_already_folded_into_new4": true,
+      "hypothetical_double_scaling_probability_error": 0.9999999999214205
+    },
+    {
+      "fold": "460800_to_115200",
+      "contact_train_windows": 26,
+      "contact_test_windows": 32,
+      "train_recordings": 4,
+      "test_recordings": 4,
+      "mapping_weight_max_abs": 0.0,
+      "mapping_bias_max_abs": 0.0,
+      "heldout_feature_and_label_poisoning_leaves_mapping_bitwise_identical": true,
+      "independent_four_class_head_weight_max_abs": 0.0,
+      "independent_four_class_head_bias_max_abs": 0.0,
+      "scaler_already_folded_into_new4": true,
+      "hypothetical_double_scaling_probability_error": 0.9999865339234246
+    }
+  ],
+  "contact_metadata_join_exact": true,
+  "shared_raw_contact_file_and_window_rows": true,
+  "frozen_radar_rows_and_test_roles_exact": true,
+  "native15_label_groups_verified_from_official_sqlite": true,
+  "new4_head_not_double_standardized": true,
+  "max_metric_difference": 1.1102230246251565e-16,
+  "max_bag_probability_difference": 1.4988010832439613e-15,
+  "max_native_gear_diagnostic_difference": 4.0657581468206416e-20,
+  "full_vs_label_code_independent_replay": [
+    {
+      "fold": "115200_to_460800",
+      "method": "full",
+      "seed": 17,
+      "scope": "all_four_development",
+      "window_accuracy": 1.0,
+      "recording_accuracy": 1.0
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "full",
+      "seed": 17,
+      "scope": "known_roi_valid_subset",
+      "window_accuracy": 1.0,
+      "recording_accuracy": 1.0
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "full",
+      "seed": 42,
+      "scope": "all_four_development",
+      "window_accuracy": 1.0,
+      "recording_accuracy": 1.0
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "full",
+      "seed": 42,
+      "scope": "known_roi_valid_subset",
+      "window_accuracy": 1.0,
+      "recording_accuracy": 1.0
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "full",
+      "seed": 73,
+      "scope": "all_four_development",
+      "window_accuracy": 1.0,
+      "recording_accuracy": 1.0
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "full",
+      "seed": 73,
+      "scope": "known_roi_valid_subset",
+      "window_accuracy": 1.0,
+      "recording_accuracy": 1.0
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "label_code_mse",
+      "seed": 17,
+      "scope": "all_four_development",
+      "window_accuracy": 0.75,
+      "recording_accuracy": 0.75
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "label_code_mse",
+      "seed": 17,
+      "scope": "known_roi_valid_subset",
+      "window_accuracy": 1.0,
+      "recording_accuracy": 1.0
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "label_code_mse",
+      "seed": 42,
+      "scope": "all_four_development",
+      "window_accuracy": 0.75,
+      "recording_accuracy": 0.75
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "label_code_mse",
+      "seed": 42,
+      "scope": "known_roi_valid_subset",
+      "window_accuracy": 1.0,
+      "recording_accuracy": 1.0
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "label_code_mse",
+      "seed": 73,
+      "scope": "all_four_development",
+      "window_accuracy": 0.75,
+      "recording_accuracy": 0.75
+    },
+    {
+      "fold": "115200_to_460800",
+      "method": "label_code_mse",
+      "seed": 73,
+      "scope": "known_roi_valid_subset",
+      "window_accuracy": 1.0,
+      "recording_accuracy": 1.0
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "full",
+      "seed": 17,
+      "scope": "all_four_development",
+      "window_accuracy": 0.9952830188679245,
+      "recording_accuracy": 1.0
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "full",
+      "seed": 17,
+      "scope": "known_roi_valid_subset",
+      "window_accuracy": 0.9938271604938271,
+      "recording_accuracy": 1.0
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "full",
+      "seed": 42,
+      "scope": "all_four_development",
+      "window_accuracy": 0.9952830188679245,
+      "recording_accuracy": 1.0
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "full",
+      "seed": 42,
+      "scope": "known_roi_valid_subset",
+      "window_accuracy": 0.9938271604938271,
+      "recording_accuracy": 1.0
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "full",
+      "seed": 73,
+      "scope": "all_four_development",
+      "window_accuracy": 0.9952830188679245,
+      "recording_accuracy": 1.0
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "full",
+      "seed": 73,
+      "scope": "known_roi_valid_subset",
+      "window_accuracy": 0.9938271604938271,
+      "recording_accuracy": 1.0
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "label_code_mse",
+      "seed": 17,
+      "scope": "all_four_development",
+      "window_accuracy": 0.7216981132075472,
+      "recording_accuracy": 0.75
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "label_code_mse",
+      "seed": 17,
+      "scope": "known_roi_valid_subset",
+      "window_accuracy": 0.9444444444444444,
+      "recording_accuracy": 1.0
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "label_code_mse",
+      "seed": 42,
+      "scope": "all_four_development",
+      "window_accuracy": 0.7216981132075472,
+      "recording_accuracy": 0.75
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "label_code_mse",
+      "seed": 42,
+      "scope": "known_roi_valid_subset",
+      "window_accuracy": 0.9444444444444444,
+      "recording_accuracy": 1.0
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "label_code_mse",
+      "seed": 73,
+      "scope": "all_four_development",
+      "window_accuracy": 0.7264150943396226,
+      "recording_accuracy": 0.75
+    },
+    {
+      "fold": "460800_to_115200",
+      "method": "label_code_mse",
+      "seed": 73,
+      "scope": "known_roi_valid_subset",
+      "window_accuracy": 0.9444444444444444,
+      "recording_accuracy": 1.0
+    }
+  ],
+  "audited_method_selection": "All six methods, three seeds, two folds; alpha=1 and raw_rms001 fixed in script. No result-dependent selector found.",
+  "fitting_limits": "Source code review and reconstruction show contact training rows only for map; four-class readout uses training contact labels. This cannot certify absence of all prior human development choices.",
+  "caveats": [
+    "same four diagnosis labels in both models; not a new-task transfer test",
+    "each training class has one recording; class-prototype transfer can explain benefit",
+    "the 25pp recording advantage of full over label-code disappears on exclusion of invalid outer ROI",
+    "native15_conditioned excludes gear classes and is not full fifteen-class accuracy",
+    "native fifteen-way head remains poor; useful results require separately trained contact four-way readout",
+    "mean hidden then softmax differs from mean axis softmax; the stitching script consistently uses the former",
+    "cross-recording splits share physical bearings, not blind cross-bearing/general-purpose proof",
+    "summaries average fold/seed metrics, not pooled windows"
+  ]
+}

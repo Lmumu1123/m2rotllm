@@ -1,0 +1,6 @@
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/conv.py:186: UserWarning: Initializing zero-element tensors is a no-op
+  init.kaiming_uniform_(self.weight, a=math.sqrt(5))
+{"stage": "vibration", "complete_pairs": 8, "total_pairs": 8, "elapsed_seconds_this_session": 1.6216113418340683, "pairs_per_second": 4.933364606929717}
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+{"stage": "corpus", "complete": 4, "total": 8, "elapsed_seconds_this_session": 2.44939097808674}
+{"stage": "corpus", "complete": 8, "total": 8, "elapsed_seconds_this_session": 4.816387447994202}

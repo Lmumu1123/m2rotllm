@@ -1,0 +1,126 @@
+{
+  "checks": [
+    {
+      "variant": "v0",
+      "kind": "retrained_fcn",
+      "finite_hidden": true,
+      "hidden_min": 0.0,
+      "n_packets": 343,
+      "model_inputs_require_grad": false,
+      "model_batchnorm_buffers_unchanged": true,
+      "pretrained_files_unchanged": true,
+      "model_provenance": {
+        "kind": "retrained_fcn",
+        "weights": {
+          "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/pretrain/fcn/feature_encoder.pth": "e7322e179238ab5edf779830c2be562e2a0d613ac1285c4ccdb35080cc97f84e",
+          "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/pretrain/fcn/classifier.pth": "885d03d3be3e6aef0966d1d74b305ca94f3cef1814467413af270bb02e9c3340"
+        },
+        "lora_merged": false
+      }
+    },
+    {
+      "variant": "query_no_demean_ref2k",
+      "kind": "retrained_fcn",
+      "finite_hidden": true,
+      "hidden_min": 0.0,
+      "n_packets": 343,
+      "model_inputs_require_grad": false,
+      "model_batchnorm_buffers_unchanged": true,
+      "pretrained_files_unchanged": true,
+      "model_provenance": {
+        "kind": "retrained_fcn",
+        "weights": {
+          "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/pretrain/fcn/feature_encoder.pth": "e7322e179238ab5edf779830c2be562e2a0d613ac1285c4ccdb35080cc97f84e",
+          "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/pretrain/fcn/classifier.pth": "885d03d3be3e6aef0966d1d74b305ca94f3cef1814467413af270bb02e9c3340"
+        },
+        "lora_merged": false
+      }
+    },
+    {
+      "variant": "v0",
+      "kind": "official_final",
+      "finite_hidden": true,
+      "hidden_min": 0.0,
+      "n_packets": 343,
+      "model_inputs_require_grad": false,
+      "model_batchnorm_buffers_unchanged": true,
+      "pretrained_files_unchanged": true,
+      "model_provenance": {
+        "kind": "official_final",
+        "weights": {
+          "/media/nas_users/huangyating/bearllm-assets/bearllm_weights/vibration_adapter.pth": "c2dcd2ff546804dfa0baf37cb0df30ec7fc67afe442a4c99ad0a15d0aae46190",
+          "/media/nas_users/huangyating/bearllm-assets/bearllm_weights/adapter_model.safetensors": "867fb65139f581e7cf36f35d988b172d79c3c140ed9c2cdf3b6a8a5aefe9b10b",
+          "/media/nas_users/huangyating/bearllm-assets/bearllm_weights/adapter_config.json": "c5f3caa5bac314392d499542859dfeb0c7dbc32270f91f875f7a81faef830a2f"
+        },
+        "lora_merged": true,
+        "lora_scale": 8.0
+      }
+    }
+  ],
+  "heads": [
+    {
+      "head_path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_v1/models/v0/all_known/retained_head.npz",
+      "sha256": "da3e753cc8493ddfe28671b7afd7026db658567210c4f8d361e9377f3442aff4",
+      "trained_old_bags": [
+        "20260920-184058-normal-11520",
+        "20260920-184857-normal-460800",
+        "20260920-190512-outBroken-115200",
+        "20260920-190913-outBroken-460800",
+        "20260920-192216-inBroken-115200",
+        "20260920-192610-inBroken-460800",
+        "20260920-193718-roll-115200",
+        "20260920-194108-roll-460800"
+      ],
+      "source_acceptance": {
+        "variant": "v0",
+        "fold": "all_known",
+        "source_test_acc10": 0.9851779460868149,
+        "source_test_acc4": 0.9872139425034612,
+        "delta_acc10_pp": -0.3501913836631676,
+        "delta_acc4_pp": -0.33390341232999443,
+        "meets_user_global_retention": true,
+        "status": "passes_global_regression_gate",
+        "per_source_declines_must_be_reviewed": true,
+        "encoder_and_linear1_unchanged": true
+      }
+    },
+    {
+      "head_path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/results/retained_head_v1/models/query_no_demean_ref2k/all_known/retained_head.npz",
+      "sha256": "c14e4a7d8940976442f84a6602da6097cae85c69fe55952dfcd6269c150ed1c8",
+      "trained_old_bags": [
+        "20260920-184058-normal-11520",
+        "20260920-184857-normal-460800",
+        "20260920-190512-outBroken-115200",
+        "20260920-190913-outBroken-460800",
+        "20260920-192216-inBroken-115200",
+        "20260920-192610-inBroken-460800",
+        "20260920-193718-roll-115200",
+        "20260920-194108-roll-460800"
+      ],
+      "source_acceptance": {
+        "variant": "query_no_demean_ref2k",
+        "fold": "all_known",
+        "source_test_acc10": 0.9853408258001466,
+        "source_test_acc4": 0.9871325026467953,
+        "delta_acc10_pp": -0.33390341232999443,
+        "delta_acc4_pp": -0.342047397996581,
+        "meets_user_global_retention": true,
+        "status": "passes_global_regression_gate",
+        "per_source_declines_must_be_reviewed": true,
+        "encoder_and_linear1_unchanged": true
+      }
+    }
+  ],
+  "no_new_label_training": true,
+  "input_files_unchanged": true,
+  "source_checkpoints_unchanged": true,
+  "n_packets": 343,
+  "sessions": 12,
+  "elapsed_seconds": 3.369726739998441,
+  "python": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "torch": "2.11.0+cu128",
+  "raw_output_is_unstandardized": true,
+  "one_contact_session_shared_across_radar_distances_and_repeats": true,
+  "independent_cross_modal_pairs_are_sessions_not_144_recordings": true,
+  "contact_preprocessing_source_sha256": "47af118939da2205874250b6dca911565c97a512edbcba2b41f56cc097e813a6"
+}

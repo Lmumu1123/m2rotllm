@@ -1,0 +1,7 @@
+modality,version,fold,scope,threshold,window_correct,window_n,window_accuracy,file_correct,file_n,file_accuracy,numerical_file_threshold_pass
+contact,retained_head_v1,115200_to_460800,heldout_recordings,0.98,24,26,0.9230769230769231,4,4,1.0,True
+radar,retained_head_v1,115200_to_460800,heldout_recordings,0.95,200,200,1.0,4,4,1.0,True
+contact,retained_head_v1,460800_to_115200,heldout_recordings,0.98,22,32,0.6875,4,4,1.0,True
+radar,retained_head_v1,460800_to_115200,heldout_recordings,0.95,211,212,0.9952830188679245,4,4,1.0,True
+contact,retained_head_conservative,all_known,training_recordings,0.98,53,58,0.9137931034482759,8,8,1.0,True
+radar,retained_head_conservative,all_known,training_recordings,0.95,412,412,1.0,8,8,1.0,True

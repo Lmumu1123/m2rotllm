@@ -1,0 +1,210 @@
+[
+  {
+    "variant": "v0",
+    "query_file": "2026_9_20_18-41-41-normal-115200.npz",
+    "reference_file": "2026_9_20_18-48-45-normal-460800.npz",
+    "reference_window_rows": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "query_baud": 115200,
+    "reference_baud": 460800
+  },
+  {
+    "variant": "v0",
+    "query_file": "2026_9_20_18-48-45-normal-460800.npz",
+    "reference_file": "2026_9_20_18-41-41-normal-115200.npz",
+    "reference_window_rows": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "query_baud": 460800,
+    "reference_baud": 115200
+  },
+  {
+    "variant": "v0",
+    "query_file": "2026_9_20_19-05-05-outBroken-115200.npz",
+    "reference_file": "2026_9_20_18-48-45-normal-460800.npz",
+    "reference_window_rows": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "query_baud": 115200,
+    "reference_baud": 460800
+  },
+  {
+    "variant": "v0",
+    "query_file": "2026_9_20_19-09-18-outBroken-460800.npz",
+    "reference_file": "2026_9_20_18-41-41-normal-115200.npz",
+    "reference_window_rows": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "query_baud": 460800,
+    "reference_baud": 115200
+  },
+  {
+    "variant": "v0",
+    "query_file": "2026_9_20_19-22-20-inBroken-115200.npz",
+    "reference_file": "2026_9_20_18-48-45-normal-460800.npz",
+    "reference_window_rows": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "query_baud": 115200,
+    "reference_baud": 460800
+  },
+  {
+    "variant": "v0",
+    "query_file": "2026_9_20_19-26-17-inBroken-460800.npz",
+    "reference_file": "2026_9_20_18-41-41-normal-115200.npz",
+    "reference_window_rows": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "query_baud": 460800,
+    "reference_baud": 115200
+  },
+  {
+    "variant": "v0",
+    "query_file": "2026_9_20_19-37-24-roll-115200.npz",
+    "reference_file": "2026_9_20_18-48-45-normal-460800.npz",
+    "reference_window_rows": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "query_baud": 115200,
+    "reference_baud": 460800
+  },
+  {
+    "variant": "v0",
+    "query_file": "2026_9_20_19-41-02-roll-460800.npz",
+    "reference_file": "2026_9_20_18-41-41-normal-115200.npz",
+    "reference_window_rows": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "query_baud": 460800,
+    "reference_baud": 115200
+  },
+  {
+    "variant": "query_no_demean",
+    "query_file": "2026_9_20_18-41-41-normal-115200.npz",
+    "reference_file": "2026_9_20_18-48-45-normal-460800.npz",
+    "reference_window_rows": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "query_baud": 115200,
+    "reference_baud": 460800
+  },
+  {
+    "variant": "query_no_demean",
+    "query_file": "2026_9_20_18-48-45-normal-460800.npz",
+    "reference_file": "2026_9_20_18-41-41-normal-115200.npz",
+    "reference_window_rows": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "query_baud": 460800,
+    "reference_baud": 115200
+  },
+  {
+    "variant": "query_no_demean",
+    "query_file": "2026_9_20_19-05-05-outBroken-115200.npz",
+    "reference_file": "2026_9_20_18-48-45-normal-460800.npz",
+    "reference_window_rows": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "query_baud": 115200,
+    "reference_baud": 460800
+  },
+  {
+    "variant": "query_no_demean",
+    "query_file": "2026_9_20_19-09-18-outBroken-460800.npz",
+    "reference_file": "2026_9_20_18-41-41-normal-115200.npz",
+    "reference_window_rows": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "query_baud": 460800,
+    "reference_baud": 115200
+  },
+  {
+    "variant": "query_no_demean",
+    "query_file": "2026_9_20_19-22-20-inBroken-115200.npz",
+    "reference_file": "2026_9_20_18-48-45-normal-460800.npz",
+    "reference_window_rows": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "query_baud": 115200,
+    "reference_baud": 460800
+  },
+  {
+    "variant": "query_no_demean",
+    "query_file": "2026_9_20_19-26-17-inBroken-460800.npz",
+    "reference_file": "2026_9_20_18-41-41-normal-115200.npz",
+    "reference_window_rows": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "query_baud": 460800,
+    "reference_baud": 115200
+  },
+  {
+    "variant": "query_no_demean",
+    "query_file": "2026_9_20_19-37-24-roll-115200.npz",
+    "reference_file": "2026_9_20_18-48-45-normal-460800.npz",
+    "reference_window_rows": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "query_baud": 115200,
+    "reference_baud": 460800
+  },
+  {
+    "variant": "query_no_demean",
+    "query_file": "2026_9_20_19-41-02-roll-460800.npz",
+    "reference_file": "2026_9_20_18-41-41-normal-115200.npz",
+    "reference_window_rows": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "query_baud": 460800,
+    "reference_baud": 115200
+  }
+]

@@ -1,0 +1,16 @@
+{"task": "four_class_provisional_roi", "fold": "0000", "method": "supervised", "seed": 42, "seconds": 0.22}
+{"task": "four_class_provisional_roi", "fold": "0000", "method": "head_only", "seed": 42, "seconds": 0.01}
+{"task": "four_class_provisional_roi", "fold": "0000", "method": "distill", "seed": 42, "seconds": 0.02}
+{"task": "four_class_provisional_roi", "fold": "0000", "method": "shuffled", "seed": 42, "seconds": 0.01}
+{"task": "four_class_provisional_roi", "fold": "0000", "method": "original_head", "seed": 42, "seconds": 0.01}
+{"task": "four_class_provisional_roi", "fold": "1111", "method": "supervised", "seed": 42, "seconds": 0.01}
+{"task": "four_class_provisional_roi", "fold": "1111", "method": "head_only", "seed": 42, "seconds": 0.01}
+{"task": "four_class_provisional_roi", "fold": "1111", "method": "distill", "seed": 42, "seconds": 0.01}
+{"task": "four_class_provisional_roi", "fold": "1111", "method": "shuffled", "seed": 42, "seconds": 0.01}
+{"task": "four_class_provisional_roi", "fold": "1111", "method": "original_head", "seed": 42, "seconds": 0.01}
+{"task": "four_class_provisional_roi", "fold": "all_known", "method": "supervised", "seed": 42, "seconds": 0.01}
+{"task": "four_class_provisional_roi", "fold": "all_known", "method": "head_only", "seed": 42, "seconds": 0.01}
+{"task": "four_class_provisional_roi", "fold": "all_known", "method": "distill", "seed": 42, "seconds": 0.01}
+{"task": "four_class_provisional_roi", "fold": "all_known", "method": "shuffled", "seed": 42, "seconds": 0.01}
+{"task": "four_class_provisional_roi", "fold": "all_known", "method": "original_head", "seed": 42, "seconds": 0.01}
+COMPLETE results/smoke_5steps

@@ -1,0 +1,4 @@
+split,n_queries,n_pairs,self_reference_pairs,n_conditions,conditions_shared_with_train,query_id_overlap_with_train
+train,85955,257865,549,258,258,
+val,24558,73674,166,257,257,0.0
+test,12279,36837,78,257,257,0.0

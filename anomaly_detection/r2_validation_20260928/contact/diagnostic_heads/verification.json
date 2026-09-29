@@ -1,0 +1,260 @@
+{
+  "checks": [
+    {
+      "holdout_rpm": 1000,
+      "model": "Bear128",
+      "folded_raw_linear_max_error": 1.4210854715202004e-14,
+      "train_sessions": [
+        "inBroken_2000r_session",
+        "inBroken_3000r_session",
+        "normal_2000r_session",
+        "normal_3000r_session",
+        "outBroken_2000r_session",
+        "outBroken_3000r_session",
+        "roll_2000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_1000r_session",
+        "normal_1000r_session",
+        "outBroken_1000r_session",
+        "roll_1000r_session"
+      ]
+    },
+    {
+      "holdout_rpm": 1000,
+      "model": "Bear128_XY_sensitivity",
+      "folded_raw_linear_max_error": 7.105427357601002e-15,
+      "train_sessions": [
+        "inBroken_2000r_session",
+        "inBroken_3000r_session",
+        "normal_2000r_session",
+        "normal_3000r_session",
+        "outBroken_2000r_session",
+        "outBroken_3000r_session",
+        "roll_2000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_1000r_session",
+        "normal_1000r_session",
+        "outBroken_1000r_session",
+        "roll_1000r_session"
+      ]
+    },
+    {
+      "holdout_rpm": 1000,
+      "model": "ContactPSD128",
+      "folded_raw_linear_max_error": 1.7763568394002505e-15,
+      "train_sessions": [
+        "inBroken_2000r_session",
+        "inBroken_3000r_session",
+        "normal_2000r_session",
+        "normal_3000r_session",
+        "outBroken_2000r_session",
+        "outBroken_3000r_session",
+        "roll_2000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_1000r_session",
+        "normal_1000r_session",
+        "outBroken_1000r_session",
+        "roll_1000r_session"
+      ]
+    },
+    {
+      "holdout_rpm": 1000,
+      "model": "ContactPSD128_XY_sensitivity",
+      "folded_raw_linear_max_error": 3.552713678800501e-15,
+      "train_sessions": [
+        "inBroken_2000r_session",
+        "inBroken_3000r_session",
+        "normal_2000r_session",
+        "normal_3000r_session",
+        "outBroken_2000r_session",
+        "outBroken_3000r_session",
+        "roll_2000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_1000r_session",
+        "normal_1000r_session",
+        "outBroken_1000r_session",
+        "roll_1000r_session"
+      ]
+    },
+    {
+      "holdout_rpm": 2000,
+      "model": "Bear128",
+      "folded_raw_linear_max_error": 1.021405182655144e-14,
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_3000r_session",
+        "normal_1000r_session",
+        "normal_3000r_session",
+        "outBroken_1000r_session",
+        "outBroken_3000r_session",
+        "roll_1000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_2000r_session",
+        "normal_2000r_session",
+        "outBroken_2000r_session",
+        "roll_2000r_session"
+      ]
+    },
+    {
+      "holdout_rpm": 2000,
+      "model": "Bear128_XY_sensitivity",
+      "folded_raw_linear_max_error": 5.995204332975845e-15,
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_3000r_session",
+        "normal_1000r_session",
+        "normal_3000r_session",
+        "outBroken_1000r_session",
+        "outBroken_3000r_session",
+        "roll_1000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_2000r_session",
+        "normal_2000r_session",
+        "outBroken_2000r_session",
+        "roll_2000r_session"
+      ]
+    },
+    {
+      "holdout_rpm": 2000,
+      "model": "ContactPSD128",
+      "folded_raw_linear_max_error": 3.552713678800501e-15,
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_3000r_session",
+        "normal_1000r_session",
+        "normal_3000r_session",
+        "outBroken_1000r_session",
+        "outBroken_3000r_session",
+        "roll_1000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_2000r_session",
+        "normal_2000r_session",
+        "outBroken_2000r_session",
+        "roll_2000r_session"
+      ]
+    },
+    {
+      "holdout_rpm": 2000,
+      "model": "ContactPSD128_XY_sensitivity",
+      "folded_raw_linear_max_error": 2.6645352591003757e-15,
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_3000r_session",
+        "normal_1000r_session",
+        "normal_3000r_session",
+        "outBroken_1000r_session",
+        "outBroken_3000r_session",
+        "roll_1000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_2000r_session",
+        "normal_2000r_session",
+        "outBroken_2000r_session",
+        "roll_2000r_session"
+      ]
+    },
+    {
+      "holdout_rpm": 3000,
+      "model": "Bear128",
+      "folded_raw_linear_max_error": 7.105427357601002e-15,
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_2000r_session",
+        "normal_1000r_session",
+        "normal_2000r_session",
+        "outBroken_1000r_session",
+        "outBroken_2000r_session",
+        "roll_1000r_session",
+        "roll_2000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_3000r_session",
+        "normal_3000r_session",
+        "outBroken_3000r_session",
+        "roll_3000r_session"
+      ]
+    },
+    {
+      "holdout_rpm": 3000,
+      "model": "Bear128_XY_sensitivity",
+      "folded_raw_linear_max_error": 1.0658141036401503e-14,
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_2000r_session",
+        "normal_1000r_session",
+        "normal_2000r_session",
+        "outBroken_1000r_session",
+        "outBroken_2000r_session",
+        "roll_1000r_session",
+        "roll_2000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_3000r_session",
+        "normal_3000r_session",
+        "outBroken_3000r_session",
+        "roll_3000r_session"
+      ]
+    },
+    {
+      "holdout_rpm": 3000,
+      "model": "ContactPSD128",
+      "folded_raw_linear_max_error": 2.4980018054066022e-15,
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_2000r_session",
+        "normal_1000r_session",
+        "normal_2000r_session",
+        "outBroken_1000r_session",
+        "outBroken_2000r_session",
+        "roll_1000r_session",
+        "roll_2000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_3000r_session",
+        "normal_3000r_session",
+        "outBroken_3000r_session",
+        "roll_3000r_session"
+      ]
+    },
+    {
+      "holdout_rpm": 3000,
+      "model": "ContactPSD128_XY_sensitivity",
+      "folded_raw_linear_max_error": 2.886579864025407e-15,
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_2000r_session",
+        "normal_1000r_session",
+        "normal_2000r_session",
+        "outBroken_1000r_session",
+        "outBroken_2000r_session",
+        "roll_1000r_session",
+        "roll_2000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_3000r_session",
+        "normal_3000r_session",
+        "outBroken_3000r_session",
+        "roll_3000r_session"
+      ]
+    }
+  ],
+  "source_retention_not_evaluated": true,
+  "all_folds_have_disjoint_contact_sessions": true,
+  "fixed_hyperparameters_no_test_tuning": true,
+  "source_feature_hash_unchanged": true
+}

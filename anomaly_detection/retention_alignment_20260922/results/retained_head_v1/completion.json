@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "original_weights_modified": false,
+  "source_test_for_selection": false,
+  "local_test_for_selection": false,
+  "python": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "script_sha256": "3cd06205a7c6f997198471bdb1805fd8118a2d5cc8cdc73f97460ea00efccc24",
+  "source_cache_sha256": "1a2cd2b385b49caa30a0118a590a44831c2a760f840c3be2b981963fb3335cec",
+  "variants": [
+    "v0",
+    "query_no_demean",
+    "query_no_demean_ref2k"
+  ],
+  "n_models": 9,
+  "n_candidate_snapshots": 108
+}

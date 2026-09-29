@@ -1,0 +1,39 @@
+{
+  "timestamp_utc": "2026-09-19T01:47:33.996938+00:00",
+  "python": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "status": "passed",
+  "original_files": 42,
+  "windows": 652,
+  "primary_metric_rows": 30,
+  "supplementary_metric_rows": 18,
+  "input_size_mtime_manifest_unchanged": true,
+  "recorded_sha256_count": 42,
+  "identical_file_hashes": false,
+  "all_feature_values_finite": true,
+  "all_scripts_parse": true,
+  "parser_synthetic_and_masked_ls_self_check": "passed",
+  "reloaded_models": [
+    {
+      "model": "P0_three_speed__room_to_narrow__iq_multi_shape.npz",
+      "files": 15,
+      "max_probability_error": 1.1102230246251565e-16
+    },
+    {
+      "model": "P0_three_speed__narrow_to_room__iq_multi_shape.npz",
+      "files": 21,
+      "max_probability_error": 1.1102230246251565e-16
+    },
+    {
+      "model": "P0_four_state__room_to_narrow__iq_multi_shape.npz",
+      "files": 18,
+      "max_probability_error": 1.1102230246251565e-16
+    },
+    {
+      "model": "P0_four_state__narrow_to_room__iq_multi_shape.npz",
+      "files": 24,
+      "max_probability_error": 1.1102230246251565e-16
+    }
+  ],
+  "figure_groups": 6,
+  "note": "File hashes were computed after extraction; finalization compares sizes/mtime and the saved hash inventory. Neither proves UDP completeness or independent recording."
+}

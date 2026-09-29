@@ -1,0 +1,12 @@
+version,variant,fold,source_weight,step,selection_reproduces_declared_train_and_source_val_rule,used_local_test_in_rule,used_source_test_in_rule
+v1,query_no_demean,115200_to_460800,10,800,True,False,False
+v1,query_no_demean,460800_to_115200,10,800,True,False,False
+v1,query_no_demean,all_known,1,400,True,False,False
+v1,query_no_demean_ref2k,115200_to_460800,10,800,True,False,False
+v1,query_no_demean_ref2k,460800_to_115200,10,800,True,False,False
+v1,query_no_demean_ref2k,all_known,1,400,True,False,False
+v1,v0,115200_to_460800,10,800,True,False,False
+v1,v0,460800_to_115200,10,800,True,False,False
+v1,v0,all_known,1,800,True,False,False
+conservative,query_no_demean,all_known,10,400,True,False,False
+conservative,v0,all_known,10,800,True,False,False

@@ -1,0 +1,22 @@
+{
+  "gpu": 1,
+  "status": "complete",
+  "command": [
+    "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+    "scripts/evaluate_mbhm.py",
+    "--stage",
+    "all",
+    "--checkpoint",
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/finetune/weights",
+    "--vibration-batch-size",
+    "128",
+    "--corpus-batch-size",
+    "16",
+    "--max-new-tokens",
+    "2048",
+    "--output",
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/trained_evaluation"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 642.1361684720032
+}

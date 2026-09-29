@@ -1,0 +1,22 @@
+{
+  "iteration": "second development iteration after v1 subgroup review",
+  "source_test_is_reused_regression_not_new_blind_test": true,
+  "source_weights": [
+    10,
+    100
+  ],
+  "steps": [
+    400,
+    800
+  ],
+  "variants": [
+    "v0",
+    "query_no_demean"
+  ],
+  "seed": 42,
+  "model_and_loss": "Identical to train_retained_head.py; frozen FCN and original linear1",
+  "acceptance": "source val each source dataset and global ten/four accuracy drop <=.5 percentage points",
+  "selection": "Among passing candidates maximize local TRAIN file macro-F1, then source-val ten accuracy, then source-val four accuracy, then minimum delta parameter norm; no new source test scores used.",
+  "deployment_rejection": "Global and every source test ten/four regression checked after selection; report failures without selecting another checkpoint from test outcomes.",
+  "reason": "Global aggregate v1 tolerance hid >.5pp declines in some datasets. Stronger conservative constraint rather than more local CE fitting."
+}

@@ -1,0 +1,49 @@
+{
+  "prompt": "Based on the bearing state #state_place_holder#, classify the bearing into exactly one coarse category: Normal, Inner race fault, Outer race fault, or Rolling element fault. Answer with only one category. Do not state fault severity.",
+  "rows": 8,
+  "python": "/home/huangyating/miniconda3/envs/m2vllm/bin/python",
+  "device": "cuda:0",
+  "torch": "2.11.0+cu128",
+  "weights": {
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/finetune/weights/vibration_adapter.pth": "37b85cb6cf0fae3c9a945e52a6c941b40997431c8d6f60ee6e507dbddc21031e",
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/finetune/weights/adapter_model.safetensors": "b2ea0a1d53bb74d8a33371c061b10ff20c61890ad1ecaeadd69c53e73902425e",
+    "/media/nas_users/huangyating/bearllm-runs/released-code-seed42/finetune/weights/adapter_config.json": "83f23c8ef7ff1a2ebd70029676d4f3cd8d892263936fe57a7bc50ddecef7049b"
+  },
+  "weights_unchanged": true,
+  "qwen_model_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+  "input_snapshot_sha256": "aea37b91970081e58b18fea72cb4648bb55ce981a8b6a494eec375cf9b494801",
+  "script_sha256": "3da20604caa9c8a1af9c3f92494097a5ae454a9b6d79a05fbedf9bd6e5b9baa6",
+  "linear3_merged_equivalence_max_abs_difference": 1.4901161193847656e-08,
+  "max_probability_rounding_normalization": 1.1920928955078125e-07,
+  "native_p10_used": true,
+  "p4_expanded_into_severity": false,
+  "true_label_used_in_prompt_or_embeddings": false,
+  "group_map": [
+    [
+      0
+    ],
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      7,
+      8,
+      9
+    ],
+    [
+      4,
+      5,
+      6
+    ]
+  ],
+  "bridge": "native p10 -> actual frozen final LoRA linear3 -> 5x1536 -> actual frozen Qwen with trained LoRA",
+  "fixed_models": true,
+  "do_sample": false,
+  "seed": 42,
+  "elapsed_seconds": 1.7628283710218966,
+  "guard": "Probability argmax fallback for parse/class conflict; actual geometry metadata invalidates diagnosis. Raw output is retained. No truth or fault label used by guard.",
+  "severity": "Internal ten-way probabilities preserved, but local severity lacks ground truth and no severity accuracy is claimed.",
+  "limitation": "Native probability interface validation; this is not new LLM training. Classifier accuracy and raw LLM fidelity are separate. Rule guard consistency is not learned model accuracy."
+}

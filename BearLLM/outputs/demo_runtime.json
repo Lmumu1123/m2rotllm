@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/home/huangyating/BearLLM/scripts/run_demo.sh",
+    "--data",
+    "/media/nas_users/huangyating/bearllm-assets/mbhm_dataset/demo_data.json",
+    "--seed",
+    "42",
+    "--output",
+    "/home/huangyating/BearLLM/outputs/demo_response.txt"
+  ],
+  "launch_directory": "/tmp",
+  "seed": 42,
+  "returncode": 0,
+  "wall_time_seconds": 17.726
+}

@@ -1,0 +1,212 @@
+[
+  {
+    "file": "narrow-1000r-20cm-normal1.bin",
+    "bytes": 249196544,
+    "sha256": "49802f897eb789fef18cdd6b34862770da004b9004d6dd86b57b8739ccdd2aef"
+  },
+  {
+    "file": "narrow-1000r-20cm-normal2.bin",
+    "bytes": 242024448,
+    "sha256": "d938040000a2c85462e31388b6995c1e0654de9ffe4b3d3968ee611cfb66ce3f"
+  },
+  {
+    "file": "narrow-1000r-40cm-normal1.bin",
+    "bytes": 239792128,
+    "sha256": "6f253eaa3c323f3662d9e7efacb9fd2d8b7ffb0eda07f71385107eb3b8497cc6"
+  },
+  {
+    "file": "narrow-1000r-40cm-normal2.bin",
+    "bytes": 248078336,
+    "sha256": "9327ae03c31a015dafa0630ba8e38fc3bf5a566a3bc9ebb74ab22cc0a0d7e66d"
+  },
+  {
+    "file": "narrow-1000r-80cm-normal1.bin",
+    "bytes": 256876544,
+    "sha256": "45b45dc469ecaef55348d881f05e00291422348ae45b765c39d889093943c091"
+  },
+  {
+    "file": "narrow-1000r-80cm-normal2.bin",
+    "bytes": 263847936,
+    "sha256": "f5912264cfdc8ca3d6bb5013ec1d8bb9bca0182b3733bb742e6001f7e2fc94fc"
+  },
+  {
+    "file": "narrow-2000r-20cm-normal1.bin",
+    "bytes": 267116544,
+    "sha256": "ef83fa0047dfb6eef991302c984c55b8475fbd1f25268da5815c78a574c32404"
+  },
+  {
+    "file": "narrow-2000r-40cm-normal1.bin",
+    "bytes": 234766336,
+    "sha256": "3299cfa77ee0a0ee8bcd103af5e58d6ac84ecf671133ec08137bffa4dd55e216"
+  },
+  {
+    "file": "narrow-2000r-80cm-normal1.bin",
+    "bytes": 270008320,
+    "sha256": "45ed202095b74d231197a5f301af8353da4ae236a734532dc289ae399d1fd672"
+  },
+  {
+    "file": "narrow-3000r-20cm-normal1.bin",
+    "bytes": 254713856,
+    "sha256": "f1f3f4d86a18d2372435b27c3ecdde42b977072a8f4b9623699b76b85fc30d66"
+  },
+  {
+    "file": "narrow-3000r-20cm-normal2.bin",
+    "bytes": 245689808,
+    "sha256": "ea93ee8a9514fcfc571df0abb93c52e4d8600fe860797efb5b52bf77543fdfe4"
+  },
+  {
+    "file": "narrow-3000r-40cm-normal1.bin",
+    "bytes": 243556352,
+    "sha256": "db4e7030d47085e27b0cdacd5bcf7ae80a4066df05624b3d4605e1895beda1d9"
+  },
+  {
+    "file": "narrow-3000r-40cm-normal2.bin",
+    "bytes": 243949568,
+    "sha256": "883fb4f35dd0f43c169c32d1cb77d1cb58c97878f29e0d37356a13ffc0b66836"
+  },
+  {
+    "file": "narrow-3000r-80cm-normal1.bin",
+    "bytes": 242581504,
+    "sha256": "3c07580b156557172beee48b77f06fd43b815279106c4e9c5d9b5c7a33b041ec"
+  },
+  {
+    "file": "narrow-3000r-80cm-normal2.bin",
+    "bytes": 269746176,
+    "sha256": "876bb6e656a65a53008b440366759496d57e4126756cd4ee9a42be3874219eff"
+  },
+  {
+    "file": "narrow-off-20cm-motor.bin",
+    "bytes": 243560448,
+    "sha256": "08d6ee5ce0cce6b683d2855c3f2e96015f1c3581efb59080c13573a2c089a00f"
+  },
+  {
+    "file": "narrow-off-40cm-motor.bin",
+    "bytes": 242114560,
+    "sha256": "b22301861d32462ad3b639f7bb979076b322485d8f167b09a7d1d829e46e9586"
+  },
+  {
+    "file": "narrow-off-80cm-motor.bin",
+    "bytes": 242958336,
+    "sha256": "fc39a3ef6e3197699f4b3d640cb28b05aeea6097c53d455c1049d36bf8100c7b"
+  },
+  {
+    "file": "room-1000r-20cm-normal1.bin",
+    "bytes": 248971264,
+    "sha256": "809150692bcfe1f2c1a8c8542801bfff754f8b4a12c1a744e540e5f3af405453"
+  },
+  {
+    "file": "room-1000r-20cm-normal2.bin",
+    "bytes": 243310592,
+    "sha256": "d5f9b4dfe7e735e36b928d9fb6937c1e1cc382f8025bde84b0ad82ffff888b36"
+  },
+  {
+    "file": "room-1000r-20cm-normal3.bin",
+    "bytes": 246054912,
+    "sha256": "0370333872223d170112ba06ea6d7c6c4910005bc0df49692651201a2fb11dc9"
+  },
+  {
+    "file": "room-1000r-40cm-normal1.bin",
+    "bytes": 247119872,
+    "sha256": "de28e6e80c1e1696d0e36278f2dc685e9677656bf16a0e5e0259ce7897bb3e09"
+  },
+  {
+    "file": "room-1000r-40cm-normal2.bin",
+    "bytes": 264491008,
+    "sha256": "f510872c807abd485311d18198354a4a419a46badb120480b84cc175d7595b80"
+  },
+  {
+    "file": "room-1000r-40cm-normal3.bin",
+    "bytes": 264720384,
+    "sha256": "ee152e87a38db3c8075a40e76d16b782b38593ef6e9017f820971f1d76ec979a"
+  },
+  {
+    "file": "room-1000r-80cm-normal1.bin",
+    "bytes": 255873024,
+    "sha256": "bfaadb0252836ee019475460141a0dfc44546324ed1dc4400ab1b4740ed0dc50"
+  },
+  {
+    "file": "room-1000r-80cm-normal2.bin",
+    "bytes": 269746176,
+    "sha256": "fcb9df7952e3fb292afb8f8c80e570f97eecf4260f0e80c903347b716355fb05"
+  },
+  {
+    "file": "room-1000r-80cm-normal3.bin",
+    "bytes": 269746176,
+    "sha256": "eed7c30f07d77bc31a8b2e315816802dd61cdd471e7a9e604c908a0b4067c40b"
+  },
+  {
+    "file": "room-2000r-20cm-normal.bin",
+    "bytes": 269746176,
+    "sha256": "cac9b00110a48950addc61fee01b2d86a7e947a7110cb920a8032b0e4ace5885"
+  },
+  {
+    "file": "room-2000r-40cm-normal.bin",
+    "bytes": 269746176,
+    "sha256": "495e73c6d3be1418d20a028acbd8c86b04b1b3b0e1f6ef665628d47e67497464"
+  },
+  {
+    "file": "room-2000r-80cm-normal.bin",
+    "bytes": 269746176,
+    "sha256": "1270c59cd39d8403f391f21aa6c310ab305702be3d33d443443772962e1a9754"
+  },
+  {
+    "file": "room-3000r-20cm-normal1.bin",
+    "bytes": 269746176,
+    "sha256": "cc216eee0babed6d79c781884094824682c51c92eca6d2e47b332c6d671dc5ae"
+  },
+  {
+    "file": "room-3000r-20cm-normal2.bin",
+    "bytes": 246571008,
+    "sha256": "588106327c78ca1922b4ce040b1bba5df0a4ee037e634f81893442d8ccc06a2b"
+  },
+  {
+    "file": "room-3000r-20cm-normal3.bin",
+    "bytes": 248745984,
+    "sha256": "46989d7f2444a2cc2c1147e47023fd2d915a3e33765a49ba4c1fe01f51842233"
+  },
+  {
+    "file": "room-3000r-40cm-normal1.bin",
+    "bytes": 269484032,
+    "sha256": "76a87c228cacdb83c8a5deb7a324e008bc5a7b5dc47c5e121739888e3de12567"
+  },
+  {
+    "file": "room-3000r-40cm-normal2.bin",
+    "bytes": 256323584,
+    "sha256": "2b98bc87dce817b7a3a2df9595d44d8fbf5c5820765b138ca88b8da65f8cbd12"
+  },
+  {
+    "file": "room-3000r-40cm-normal3.bin",
+    "bytes": 269746176,
+    "sha256": "60e4d98679a6211193949f343e41a974fd4e70fc71e595c47d6814651f47407d"
+  },
+  {
+    "file": "room-3000r-80cm-normal1.bin",
+    "bytes": 269746176,
+    "sha256": "6bfbd84a7aafd52ba75a1499acad6dfbc3e4c1aee998ff16cb9eed3cdaa20ea2"
+  },
+  {
+    "file": "room-3000r-80cm-normal2.bin",
+    "bytes": 257318912,
+    "sha256": "858216a3d21cd5d1fcd039fa7fedee4a5f5892f3dd72736eb90ec1c875ce15ef"
+  },
+  {
+    "file": "room-3000r-80cm-normal3.bin",
+    "bytes": 269746176,
+    "sha256": "153b5b5faf3d05ab3f7142af1b2cb92b00f891e3efafc6169e2dd96cd48bc7cd"
+  },
+  {
+    "file": "room-off-20cm-motor.bin",
+    "bytes": 244473856,
+    "sha256": "0c841c4bde7c1b9a271e2c45c61a42322085b0fa83bf30c218888152cf725d0f"
+  },
+  {
+    "file": "room-off-40cm-motor.bin",
+    "bytes": 74727424,
+    "sha256": "1fdb81c7960a688426aac555de55635eb9b272f903274f1931873ac78cbb7488"
+  },
+  {
+    "file": "room-off-80cm-motor.bin",
+    "bytes": 259211264,
+    "sha256": "d632930342bb5e6309efa8c8ddfb31f0304141feaa1a733f8d10c252826e5182"
+  }
+]

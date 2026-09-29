@@ -1,0 +1,7 @@
+{
+  "scope": "Clarification of the literal chronology in the preserved protocol; no experiment outputs changed",
+  "protocol_statement": "leave_teacher_out.radar_model describes archived BearLLM students trained before RotLLM was acquired",
+  "actual_execution": "The stitching experiment consumes the 36 rerun students saved in controls/results/windows. Three baseline methods reproduce earlier stage_b_v0 archived metrics exactly; artificial-code and wrong-class controls are newly trained in this iteration.",
+  "valid_independence_statement": "No RotLLM features, head, scores, or labels are used by run_controls.py to fit the radar students or construct their targets. The radar students are frozen before contact-only mapping and evaluation.",
+  "not_claimed": "All current student checkpoint files predate retrieval of the RotLLM model; blind evaluation on new recordings; universal teacher transfer"
+}

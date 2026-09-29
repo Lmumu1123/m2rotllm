@@ -1,0 +1,70 @@
+{
+  "encoder_parameters_and_buffers_unchanged": true,
+  "inputs_and_checkpoint_unchanged": true,
+  "complete_strict_checkpoint_loaded": true,
+  "native_16_class_semantics_unknown": true,
+  "no_native_four_class_accuracy_claim": true,
+  "no_local_encoder_training": true,
+  "contact_normalization_and_head_use_train_only": true,
+  "all_predeclared_variants_reported": true,
+  "all_feature_arrays_finite": true,
+  "checks": [
+    {
+      "variant": "paper_100ms",
+      "fold": "115200_to_460800",
+      "folded_head_max_probability_error": 6.74258617827661e-08,
+      "normalized_min": -0.6446054577827454,
+      "normalized_max": 1.566125750541687,
+      "signed_hidden_fraction": 0.4921875,
+      "training_windows": 32,
+      "test_windows": 26,
+      "warnings": [],
+      "head_iterations": [
+        32
+      ]
+    },
+    {
+      "variant": "paper_100ms",
+      "fold": "460800_to_115200",
+      "folded_head_max_probability_error": 3.393188986733353e-09,
+      "normalized_min": -1.3879793882369995,
+      "normalized_max": 2.4399466514587402,
+      "signed_hidden_fraction": 0.47407670454545453,
+      "training_windows": 26,
+      "test_windows": 32,
+      "warnings": [],
+      "head_iterations": [
+        39
+      ]
+    },
+    {
+      "variant": "code_native1024",
+      "fold": "115200_to_460800",
+      "folded_head_max_probability_error": 1.1171513603080996e-08,
+      "normalized_min": -0.269685834646225,
+      "normalized_max": 1.218605399131775,
+      "signed_hidden_fraction": 0.49476207386363635,
+      "training_windows": 32,
+      "test_windows": 26,
+      "warnings": [],
+      "head_iterations": [
+        42
+      ]
+    },
+    {
+      "variant": "code_native1024",
+      "fold": "460800_to_115200",
+      "folded_head_max_probability_error": 5.5936948406554166e-09,
+      "normalized_min": -0.6807112097740173,
+      "normalized_max": 1.8487746715545654,
+      "signed_hidden_fraction": 0.5030184659090909,
+      "training_windows": 26,
+      "test_windows": 32,
+      "warnings": [],
+      "head_iterations": [
+        39
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.7626218781806529
+}

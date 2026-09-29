@@ -1,0 +1,12 @@
+{
+  "epoch": 2,
+  "seen_ids": [
+    0,
+    1,
+    3,
+    2
+  ],
+  "loss_sum": 1.494,
+  "loss_steps": 1,
+  "last_logged_step": 2
+}

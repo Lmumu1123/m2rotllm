@@ -1,0 +1,329 @@
+{
+  "successful_new_model_fits": 20,
+  "retained_trained_checkpoints": 3,
+  "fits": [
+    {
+      "protocol": "leave_one_rpm_out",
+      "heldout_rpm": 1000,
+      "method": "Bear128",
+      "algorithm": "LogisticRegression C1",
+      "train_only_standard_scaler": true,
+      "session_weights": true,
+      "checkpoint_saved": true,
+      "source_retention_evaluated": false,
+      "accepted_for_source_retention": false,
+      "allowed_use": "diagnostic exploration only; not replacement deployment head",
+      "checkpoint": "/home/huangyating/anomaly_detection/r2_validation_20260928/contact/diagnostic_heads/holdout_1000.npz",
+      "sha256": "0737d113e607222d58277f2cf2c8abd4a194d91e2faf1043f714cca06ed2c937",
+      "train_sessions": [
+        "inBroken_2000r_session",
+        "inBroken_3000r_session",
+        "normal_2000r_session",
+        "normal_3000r_session",
+        "outBroken_2000r_session",
+        "outBroken_3000r_session",
+        "roll_2000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_1000r_session",
+        "normal_1000r_session",
+        "outBroken_1000r_session",
+        "roll_1000r_session"
+      ],
+      "feature": "raw unstandardized Bear128 embedding",
+      "interface": "embedding @ weight4.T + bias4 -> 4 logits"
+    },
+    {
+      "protocol": "leave_one_rpm_out",
+      "heldout_rpm": 1000,
+      "method": "Bear128_XY_sensitivity",
+      "algorithm": "LogisticRegression C1",
+      "train_only_standard_scaler": true,
+      "session_weights": true,
+      "checkpoint_saved": false,
+      "source_retention_evaluated": false,
+      "accepted_for_source_retention": false,
+      "allowed_use": "diagnostic exploration only; not replacement deployment head"
+    },
+    {
+      "protocol": "leave_one_rpm_out",
+      "heldout_rpm": 1000,
+      "method": "ContactPSD128",
+      "algorithm": "LogisticRegression C1",
+      "train_only_standard_scaler": true,
+      "session_weights": true,
+      "checkpoint_saved": false,
+      "source_retention_evaluated": false,
+      "accepted_for_source_retention": false,
+      "allowed_use": "diagnostic exploration only; not replacement deployment head"
+    },
+    {
+      "protocol": "leave_one_rpm_out",
+      "heldout_rpm": 1000,
+      "method": "ContactPSD128_XY_sensitivity",
+      "algorithm": "LogisticRegression C1",
+      "train_only_standard_scaler": true,
+      "session_weights": true,
+      "checkpoint_saved": false,
+      "source_retention_evaluated": false,
+      "accepted_for_source_retention": false,
+      "allowed_use": "diagnostic exploration only; not replacement deployment head"
+    },
+    {
+      "protocol": "leave_one_rpm_out",
+      "heldout_rpm": 1000,
+      "method": "Physical6_RBF_SVM",
+      "algorithm": "RBF SVC C1 gamma scale",
+      "train_only_standard_scaler": true,
+      "session_weights": true,
+      "checkpoint_saved": false,
+      "source_retention_evaluated": false,
+      "accepted_for_source_retention": false,
+      "allowed_use": "diagnostic exploration only; not replacement deployment head"
+    },
+    {
+      "protocol": "leave_one_rpm_out",
+      "heldout_rpm": 2000,
+      "method": "Bear128",
+      "algorithm": "LogisticRegression C1",
+      "train_only_standard_scaler": true,
+      "session_weights": true,
+      "checkpoint_saved": true,
+      "source_retention_evaluated": false,
+      "accepted_for_source_retention": false,
+      "allowed_use": "diagnostic exploration only; not replacement deployment head",
+      "checkpoint": "/home/huangyating/anomaly_detection/r2_validation_20260928/contact/diagnostic_heads/holdout_2000.npz",
+      "sha256": "6750483ebfd9e022a80f316b2bc0ed739dd48f9fb1a8e3a72afda9db019124d9",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_3000r_session",
+        "normal_1000r_session",
+        "normal_3000r_session",
+        "outBroken_1000r_session",
+        "outBroken_3000r_session",
+        "roll_1000r_session",
+        "roll_3000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_2000r_session",
+        "normal_2000r_session",
+        "outBroken_2000r_session",
+        "roll_2000r_session"
+      ],
+      "feature": "raw unstandardized Bear128 embedding",
+      "interface": "embedding @ weight4.T + bias4 -> 4 logits"
+    },
+    {
+      "protocol": "leave_one_rpm_out",
+      "heldout_rpm": 2000,
+      "method": "Bear128_XY_sensitivity",
+      "algorithm": "LogisticRegression C1",
+      "train_only_standard_scaler": true,
+      "session_weights": true,
+      "checkpoint_saved": false,
+      "source_retention_evaluated": false,
+      "accepted_for_source_retention": false,
+      "allowed_use": "diagnostic exploration only; not replacement deployment head"
+    },
+    {
+      "protocol": "leave_one_rpm_out",
+      "heldout_rpm": 2000,
+      "method": "ContactPSD128",
+      "algorithm": "LogisticRegression C1",
+      "train_only_standard_scaler": true,
+      "session_weights": true,
+      "checkpoint_saved": false,
+      "source_retention_evaluated": false,
+      "accepted_for_source_retention": false,
+      "allowed_use": "diagnostic exploration only; not replacement deployment head"
+    },
+    {
+      "protocol": "leave_one_rpm_out",
+      "heldout_rpm": 2000,
+      "method": "ContactPSD128_XY_sensitivity",
+      "algorithm": "LogisticRegression C1",
+      "train_only_standard_scaler": true,
+      "session_weights": true,
+      "checkpoint_saved": false,
+      "source_retention_evaluated": false,
+      "accepted_for_source_retention": false,
+      "allowed_use": "diagnostic exploration only; not replacement deployment head"
+    },
+    {
+      "protocol": "leave_one_rpm_out",
+      "heldout_rpm": 2000,
+      "method": "Physical6_RBF_SVM",
+      "algorithm": "RBF SVC C1 gamma scale",
+      "train_only_standard_scaler": true,
+      "session_weights": true,
+      "checkpoint_saved": false,
+      "source_retention_evaluated": false,
+      "accepted_for_source_retention": false,
+      "allowed_use": "diagnostic exploration only; not replacement deployment head"
+    },
+    {
+      "protocol": "leave_one_rpm_out",
+      "heldout_rpm": 3000,
+      "method": "Bear128",
+      "algorithm": "LogisticRegression C1",
+      "train_only_standard_scaler": true,
+      "session_weights": true,
+      "checkpoint_saved": true,
+      "source_retention_evaluated": false,
+      "accepted_for_source_retention": false,
+      "allowed_use": "diagnostic exploration only; not replacement deployment head",
+      "checkpoint": "/home/huangyating/anomaly_detection/r2_validation_20260928/contact/diagnostic_heads/holdout_3000.npz",
+      "sha256": "9c0ec1f822968bde0ff34019a69ff81cef885be5d82cee7bae67aaaed913cbcf",
+      "train_sessions": [
+        "inBroken_1000r_session",
+        "inBroken_2000r_session",
+        "normal_1000r_session",
+        "normal_2000r_session",
+        "outBroken_1000r_session",
+        "outBroken_2000r_session",
+        "roll_1000r_session",
+        "roll_2000r_session"
+      ],
+      "test_sessions": [
+        "inBroken_3000r_session",
+        "normal_3000r_session",
+        "outBroken_3000r_session",
+        "roll_3000r_session"
+      ],
+      "feature": "raw unstandardized Bear128 embedding",
+      "interface": "embedding @ weight4.T + bias4 -> 4 logits"
+    },
+    {
+      "protocol": "leave_one_rpm_out",
+      "heldout_rpm": 3000,
+      "method": "Bear128_XY_sensitivity",
+      "algorithm": "LogisticRegression C1",
+      "train_only_standard_scaler": true,
+      "session_weights": true,
+      "checkpoint_saved": false,
+      "source_retention_evaluated": false,
+      "accepted_for_source_retention": false,
+      "allowed_use": "diagnostic exploration only; not replacement deployment head"
+    },
+    {
+      "protocol": "leave_one_rpm_out",
+      "heldout_rpm": 3000,
+      "method": "ContactPSD128",
+      "algorithm": "LogisticRegression C1",
+      "train_only_standard_scaler": true,
+      "session_weights": true,
+      "checkpoint_saved": false,
+      "source_retention_evaluated": false,
+      "accepted_for_source_retention": false,
+      "allowed_use": "diagnostic exploration only; not replacement deployment head"
+    },
+    {
+      "protocol": "leave_one_rpm_out",
+      "heldout_rpm": 3000,
+      "method": "ContactPSD128_XY_sensitivity",
+      "algorithm": "LogisticRegression C1",
+      "train_only_standard_scaler": true,
+      "session_weights": true,
+      "checkpoint_saved": false,
+      "source_retention_evaluated": false,
+      "accepted_for_source_retention": false,
+      "allowed_use": "diagnostic exploration only; not replacement deployment head"
+    },
+    {
+      "protocol": "leave_one_rpm_out",
+      "heldout_rpm": 3000,
+      "method": "Physical6_RBF_SVM",
+      "algorithm": "RBF SVC C1 gamma scale",
+      "train_only_standard_scaler": true,
+      "session_weights": true,
+      "checkpoint_saved": false,
+      "source_retention_evaluated": false,
+      "accepted_for_source_retention": false,
+      "allowed_use": "diagnostic exploration only; not replacement deployment head"
+    },
+    {
+      "protocol": "within_same_session_early224_late119",
+      "method": "Bear128",
+      "algorithm": "LogisticRegression C1",
+      "train_only_standard_scaler": true,
+      "session_weights": true,
+      "checkpoint_saved": false,
+      "source_retention_evaluated": false,
+      "accepted_for_source_retention": false,
+      "allowed_use": "within-session separability diagnostic only; not independent generalization"
+    },
+    {
+      "protocol": "within_same_session_early224_late119",
+      "method": "Bear128_XY_sensitivity",
+      "algorithm": "LogisticRegression C1",
+      "train_only_standard_scaler": true,
+      "session_weights": true,
+      "checkpoint_saved": false,
+      "source_retention_evaluated": false,
+      "accepted_for_source_retention": false,
+      "allowed_use": "within-session separability diagnostic only; not independent generalization"
+    },
+    {
+      "protocol": "within_same_session_early224_late119",
+      "method": "ContactPSD128",
+      "algorithm": "LogisticRegression C1",
+      "train_only_standard_scaler": true,
+      "session_weights": true,
+      "checkpoint_saved": false,
+      "source_retention_evaluated": false,
+      "accepted_for_source_retention": false,
+      "allowed_use": "within-session separability diagnostic only; not independent generalization"
+    },
+    {
+      "protocol": "within_same_session_early224_late119",
+      "method": "ContactPSD128_XY_sensitivity",
+      "algorithm": "LogisticRegression C1",
+      "train_only_standard_scaler": true,
+      "session_weights": true,
+      "checkpoint_saved": false,
+      "source_retention_evaluated": false,
+      "accepted_for_source_retention": false,
+      "allowed_use": "within-session separability diagnostic only; not independent generalization"
+    },
+    {
+      "protocol": "within_same_session_early224_late119",
+      "method": "Physical6_RBF_SVM",
+      "algorithm": "RBF SVC C1 gamma scale",
+      "train_only_standard_scaler": true,
+      "session_weights": true,
+      "checkpoint_saved": false,
+      "source_retention_evaluated": false,
+      "accepted_for_source_retention": false,
+      "allowed_use": "within-session separability diagnostic only; not independent generalization"
+    }
+  ],
+  "failed_attempts": [
+    {
+      "protocol": "leave_one_rpm_out",
+      "heldout_rpm": 1000,
+      "method": "Bear128",
+      "reason": "float32 scaling versus float64 raw folded-head equivalence exceeded 1e-8 before persistence; corrected calculations to float64 without changing features or hyperparameters",
+      "checkpoint_saved": false,
+      "included_in_metrics": false
+    }
+  ],
+  "frozen_inference_models": [
+    {
+      "kind": "retrained_fcn",
+      "variant": "v0",
+      "training": false
+    },
+    {
+      "kind": "retrained_fcn",
+      "variant": "query_no_demean_ref2k",
+      "training": false
+    },
+    {
+      "kind": "official_final",
+      "variant": "v0",
+      "training": false
+    }
+  ],
+  "all_original_checkpoints_unchanged": true
+}

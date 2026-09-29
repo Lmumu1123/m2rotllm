@@ -1,0 +1,20 @@
+{
+  "independent_known_recordings": 8,
+  "known_contact_windows": 58,
+  "known_radar_windows": 412,
+  "trained_student_instances": 592,
+  "saved_model_reload_checks": 48,
+  "metric_rows": 888,
+  "statistical_caveat": "Repeated partitions are dependent. No independent-bearing confidence interval is estimated.",
+  "external_three_class_contact_spectral_exception": [
+    {
+      "task": "three_class_geometry_compatible",
+      "method": "contact_spectral",
+      "modality": "contact",
+      "n_healthy_recordings": 2,
+      "healthy_accepted": 2,
+      "mean_healthy_probability": 0.9153199276811823,
+      "false_alarm_fraction": 0.0
+    }
+  ]
+}

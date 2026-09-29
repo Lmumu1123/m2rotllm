@@ -1,0 +1,43 @@
+{
+  "status": "development_iteration_after_observing_primary_results_not_a_new_blind_test",
+  "motivating_observation": "Primary contact raw PSD LOSO 41.69% versus within-session 99.16%; fixed front ends test whether rotor-frequency shifts explain part of the gap",
+  "primary_results_not_replaced": true,
+  "no_bear_weight_or_preprocessing_modification": true,
+  "source_retention_not_certified": true,
+  "source_accuracy_not_evaluated": true,
+  "prior": "true recorded RPM supplied for every training and test packet; deployment would need known RPM or separately validated RPM estimation",
+  "raw_input": "all 343 one-second packets at4000Hz, no clipping deletion or score-based filtering",
+  "axis_rule": "XYZ main and XY uniform sensitivity, all classes treated identically",
+  "amplitude_rule": "each packet and axis demeaned then divided by its own RMS; no population statistics fitted before split",
+  "raw_spectrum": "1s Hann periodogram, nfft=4000, 1Hz Fourier grid; Hann equivalent noise bandwidth1.5Hz and broader spectral response",
+  "envelope": "fourth-order Butterworth bandpass500-1800Hz designed by scipy.signal.butter(4), forward-backward SOS filtering, Hilbert envelope, remove400 samples each edge, demean and axiswise RMS normalize remaining0.8s",
+  "envelope_spectrum": "0.8s Hann periodogram, nfft=3200, 1.25Hz Fourier grid; no claim of sub-grid information",
+  "order_coordinate": "128 equal-width frequency-energy bins bounded by129 order edges0.5..20; f_rot=rpm/60; integrate piecewise-linear PSD at frequency edges=order_edges*f_rot; log(max(power,1e-12)), then subtract per-window feature-block mean",
+  "order_resolution": "raw Fourier-grid orders=1/f_rot; envelope=1.25/f_rot; order aggregation does not improve physical resolution",
+  "correction_disclosed": "Earlier sparse point-sampled128-grid failed a synthetic5-order peak-retention check; archived separately, not used for conclusions. This version integrates PSD over128 bins with unchanged classifiers/splits. No hyperparameter tuning.",
+  "concatenation": "concatenate raw128 and envelope128 after their independent per-window log-centering",
+  "classifier": "fold-only session-weighted StandardScaler then LogisticRegression C1 max_iter3000 or RBF SVC C1 gamma=scale; no tuning",
+  "split": "three leave-entire-RPM-out folds; four held-out contact sessions each; every packet tested exactly once per method",
+  "session_pooling": "LogReg mean window probabilities; SVM hard-class vote fractions",
+  "configurations": [
+    "xyz_raw_order_LogReg_C1",
+    "xyz_raw_order_RBF_SVM_C1",
+    "xyz_envelope_order_LogReg_C1",
+    "xyz_envelope_order_RBF_SVM_C1",
+    "xyz_concat_order_LogReg_C1",
+    "xyz_concat_order_RBF_SVM_C1",
+    "xy_raw_order_LogReg_C1",
+    "xy_raw_order_RBF_SVM_C1",
+    "xy_envelope_order_LogReg_C1",
+    "xy_envelope_order_RBF_SVM_C1",
+    "xy_concat_order_LogReg_C1",
+    "xy_concat_order_RBF_SVM_C1"
+  ],
+  "configuration_count": 12,
+  "model_fit_count": 36,
+  "input_hashes": {
+    "/home/huangyating/anomaly_detection/r2_validation_20260928/contact/raw_contact_windows.npz": "ec78a877c51693e5e3934e9a35ba8ced8a4d6b3c84f127f256c738f3e9b1535b",
+    "/home/huangyating/anomaly_detection/r2_validation_20260928/contact/contact_features.npz": "87cebaff91249d90f07c1de819612a2adc516120e945fd78345d354280abf66f"
+  },
+  "script_sha256": "eda429ba302c175ed7f29f364b7e09d96fc6b97248cda860ef092864a3b7f4d2"
+}

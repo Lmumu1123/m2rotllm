@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: url(#_未命名的渐变_3);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-width: 20px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-7 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-4 {
+        stroke: #003a5d;
+      }
+
+      .cls-9 {
+        fill: #1d2f3b;
+      }
+
+      .cls-10 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: url(#_未命名的渐变);
+      }
+
+      .cls-4 {
+        stroke-dasharray: 11.86 11.86;
+      }
+
+      .cls-5 {
+        stroke: url(#_未命名的渐变_2);
+      }
+
+      .cls-6 {
+        stroke: #fff;
+      }
+
+      .cls-6, .cls-7 {
+        stroke-width: 40px;
+      }
+
+      .cls-6, .cls-8 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-7 {
+        stroke: #1d2f3b;
+      }
+
+      .cls-8 {
+        stroke: url(#_未命名的渐变_4);
+        stroke-width: 12px;
+      }
+    </style>
+    <linearGradient id="_未命名的渐变" data-name="未命名的渐变" x1="64.37" y1="362.21" x2="453.76" y2="362.21" gradientTransform="translate(0 514) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset=".16" stop-color="#495661"/>
+      <stop offset=".83" stop-color="#121e28"/>
+    </linearGradient>
+    <linearGradient id="_未命名的渐变_2" data-name="未命名的渐变 2" x1="64.37" y1="159.07" x2="455.76" y2="159.07" gradientTransform="translate(0 514) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#11496c"/>
+      <stop offset="1" stop-color="#118bcc"/>
+    </linearGradient>
+    <linearGradient id="_未命名的渐变_3" data-name="未命名的渐变 3" x1="479.82" y1="245.95" x2="440.38" y2="285.39" gradientTransform="translate(0 514) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset=".5" stop-color="#062231"/>
+      <stop offset="1" stop-color="#118bcc"/>
+    </linearGradient>
+    <linearGradient id="_未命名的渐变_4" data-name="未命名的渐变 4" x1="162.5" y1="263.7" x2="359.44" y2="263.7" gradientTransform="translate(0 514) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset=".26" stop-color="#045f96"/>
+      <stop offset=".78" stop-color="#0c2031"/>
+    </linearGradient>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 709)  -->
+  <g>
+    <g id="_图层_1" data-name="图层_1">
+      <circle class="cls-10" cx="259.15" cy="249.1" r="109.41"/>
+      <g id="_图层_1-2" data-name="_图层_1">
+        <path class="cls-3" d="M74.37,246.33c-.17-74.32,61.29-164.54,161.09-177.35,120.58-15.47,194.94,74.32,208.48,144.75"/>
+        <circle class="cls-7" cx="259.92" cy="250.3" r="113.41"/>
+        <g>
+          <polygon class="cls-9" points="224.14 361.92 297.64 361.91 278.78 406.06 241.9 406.32 224.14 361.92"/>
+          <polygon class="cls-9" points="155.74 303.81 207.72 355.77 163.17 373.66 136.9 347.76 155.74 303.81"/>
+          <polygon class="cls-9" points="148.47 214.35 148.48 287.85 104.33 268.99 104.06 232.11 148.47 214.35"/>
+          <polygon class="cls-9" points="206.57 145.96 154.61 197.93 136.73 153.38 162.62 127.11 206.57 145.96"/>
+          <polygon class="cls-9" points="296.03 138.68 222.53 138.69 241.39 94.54 278.27 94.27 296.03 138.68"/>
+          <polygon class="cls-9" points="364.43 196.79 312.45 144.82 357 126.94 383.27 152.83 364.43 196.79"/>
+          <polygon class="cls-9" points="371.71 286.24 371.7 212.74 415.84 231.6 416.11 268.49 371.71 286.24"/>
+          <polygon class="cls-9" points="313.6 354.64 365.56 302.66 383.45 347.21 357.55 373.48 313.6 354.64"/>
+        </g>
+        <path class="cls-5" d="M74.37,258.62c1,89.08,74.15,182.68,186.76,182.73,102.9.05,178.76-86.81,184.67-156.13"/>
+        <g>
+          <path class="cls-2" d="M88.77,117.64c-1.34,1.44-2.67,2.94-3.97,4.49"/>
+          <path class="cls-4" d="M77.58,131.54C24.65,206.85,12.5,372.97,157.47,447.47c144.98,74.51,289.3-27.37,312.4-127.06"/>
+          <path class="cls-2" d="M471.07,314.61c.36-1.98.68-3.95.95-5.92"/>
+        </g>
+        <circle class="cls-1" cx="460.1" cy="248.33" r="17.89"/>
+        <line class="cls-6" x1="167.32" y1="250.3" x2="353.43" y2="250.3"/>
+        <path class="cls-8" d="M168.5,248.92c7.46-.02,22.38-.07,22.38-.07l13.09-56.35,22.12,115.6,24.96-115.42,22.2,115.42,22.86-115.42,23.96,115.42,14.53-59.7,18.84-.06"/>
+      </g>
+    </g>
+  </g>
+</svg>

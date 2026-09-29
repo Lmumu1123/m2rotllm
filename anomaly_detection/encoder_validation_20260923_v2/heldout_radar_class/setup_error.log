@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/heldout_radar_class/run_heldout.py", line 165, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/heldout_radar_class/run_heldout.py", line 113, in main
+    kd=4*(qt*(qt.clamp_min(1e-10).log()-p4.clamp_min(1e-10).log())).sum(1).mean()
+          ~~^^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+RuntimeError: Inference tensors cannot be saved for backward. Please do not use Tensors created in inference mode in computation tracked by autograd. To work around this, you can make a clone to get a normal tensor and use it in autograd, or use `torch.no_grad()` instead of `torch.inference_mode()`.

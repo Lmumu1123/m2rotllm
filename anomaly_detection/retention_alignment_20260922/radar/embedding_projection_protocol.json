@@ -1,0 +1,26 @@
+{
+  "fold": "115200_to_460800",
+  "seed": 42,
+  "pca_fit": "source contact windows only; no target or radar fit",
+  "common_coordinate_scaler": "Stage A source contact statistics used for all displayed points",
+  "pc_variance_ratio": [
+    0.5207089403923958,
+    0.16298634565674433
+  ],
+  "source_bags": [
+    "20260920-184058-normal-11520",
+    "20260920-190512-outBroken-115200",
+    "20260920-192216-inBroken-115200",
+    "20260920-193718-roll-115200"
+  ],
+  "target_bags": [
+    "20260920-184857-normal-460800",
+    "20260920-192610-inBroken-460800",
+    "20260920-190913-outBroken-460800",
+    "20260920-194108-roll-460800"
+  ],
+  "teacher_encoder_unchanged_between_A_B": true,
+  "recomputed_v0_hidden_max_difference": 0.00017410517,
+  "recomputed_v0_hidden_mse": 8.9893155e-11,
+  "limits": "2-D projection does not substitute 128-D fidelity or classifier margin metrics; outer ROI invalid"
+}

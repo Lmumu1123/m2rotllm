@@ -1,0 +1,17 @@
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/conv.py:186: UserWarning: Initializing zero-element tensors is a no-op
+  init.kaiming_uniform_(self.weight, a=math.sqrt(5))
+{"stage": "loaded", "seconds": 50.245508924126625, "queries": 38011, "signal_GB": 13.009536}
+{"stage": "encode", "complete_queries": 64, "total_queries": 38011, "elapsed_seconds": 0.17903495766222477}
+{"stage": "encode", "complete_queries": 3264, "total_queries": 38011, "elapsed_seconds": 0.9538432327099144}
+{"stage": "encode", "complete_queries": 6464, "total_queries": 38011, "elapsed_seconds": 1.711166771594435}
+{"stage": "encode", "complete_queries": 9664, "total_queries": 38011, "elapsed_seconds": 2.4674463076516986}
+{"stage": "encode", "complete_queries": 12864, "total_queries": 38011, "elapsed_seconds": 3.2241212208755314}
+{"stage": "encode", "complete_queries": 16064, "total_queries": 38011, "elapsed_seconds": 3.981966924853623}
+{"stage": "encode", "complete_queries": 19264, "total_queries": 38011, "elapsed_seconds": 4.748833887744695}
+{"stage": "encode", "complete_queries": 22464, "total_queries": 38011, "elapsed_seconds": 5.5125321336090565}
+{"stage": "encode", "complete_queries": 25664, "total_queries": 38011, "elapsed_seconds": 6.271319884806871}
+{"stage": "encode", "complete_queries": 28864, "total_queries": 38011, "elapsed_seconds": 7.026147431693971}
+{"stage": "encode", "complete_queries": 32064, "total_queries": 38011, "elapsed_seconds": 7.778186252806336}
+{"stage": "encode", "complete_queries": 35264, "total_queries": 38011, "elapsed_seconds": 8.533764125779271}
+{"stage": "cache_saved", "path": "/home/huangyating/anomaly_detection/retention_alignment_20260922/source/cache.npz", "seconds": 12.249510237015784}
+{"stage": "completed", "queries": 38011, "seconds": 12.848931255750358}

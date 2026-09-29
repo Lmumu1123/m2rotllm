@@ -1,0 +1,71 @@
+{
+  "date": "2026-09-24",
+  "raw_environment_path_exists": false,
+  "exact_band_edges_equal": true,
+  "all_environment_windows_have_full_scheduled_chirp_coverage": true,
+  "environment_feature_keys_and_shapes": {
+    "raw_amplitude": [
+      652,
+      12
+    ],
+    "phase_single": [
+      652,
+      128
+    ],
+    "iq_multi_abs": [
+      652,
+      128
+    ],
+    "iq_multi_shape": [
+      652,
+      128
+    ],
+    "iq_frame_shape": [
+      652,
+      128
+    ],
+    "power_binned": [
+      652,
+      128
+    ],
+    "frame_power_binned": [
+      652,
+      128
+    ],
+    "spectra": [
+      652,
+      1591
+    ],
+    "frequencies": [
+      1591
+    ]
+  },
+  "environment_frame_binned_power_min": 0.0005627651089432064,
+  "old_frame_fft_size": 2048,
+  "new_frame_fft_size": 4000,
+  "synthetic_operator_checks": [
+    {
+      "fixture": "near_5_6_hz_band",
+      "max_abs_feature_difference": 0.12337167775444069,
+      "mean_abs_feature_difference": 0.024160754179807353
+    },
+    {
+      "fixture": "shaft_tone_33hz",
+      "max_abs_feature_difference": 0.43719476891396836,
+      "mean_abs_feature_difference": 0.055411835259946834
+    },
+    {
+      "fixture": "synthetic_complex_broadband",
+      "max_abs_feature_difference": 0.026016787963125232,
+      "mean_abs_feature_difference": 0.0016546275458695775
+    }
+  ],
+  "compatible_for_unqualified_frozen_model_test": false,
+  "inference_run": false,
+  "status": "Stopped: frequency-grid band averaging operators differ; no environment ROI IQ retained in feature archive.",
+  "source_hashes": {
+    "/home/huangyating/anomaly_detection/environment_validation_20260919/scripts/radar_environment.py": "ba5e8437c77f843ca840a85038a9c81adcf5c095ad6ca0a69b915a517169283a",
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/provenance/preprocess.py": "4978c28eac430c1ed1dd95357b4e92bebc125c4f6d8746abdf50b4f82b2e857c",
+    "/home/huangyating/anomaly_detection/encoder_validation_20260923_v2/geometry_corrected/provenance/extract_features.py": "c3d41d3db73de7f28a119756252cb8312d9093fd9345c36153f5ee67e57ffc27"
+  }
+}

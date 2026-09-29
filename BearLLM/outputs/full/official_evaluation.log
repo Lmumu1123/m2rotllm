@@ -1,0 +1,42 @@
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+/home/huangyating/miniconda3/envs/m2vllm/lib/python3.12/site-packages/torch/nn/modules/conv.py:186: UserWarning: Initializing zero-element tensors is a no-op
+  init.kaiming_uniform_(self.weight, a=math.sqrt(5))
+{"signal_storage": "memory", "bytes": 13009536000, "load_seconds": 47.20358181092888}
+{"stage": "corpus", "complete": 16, "total": 600, "elapsed_seconds_this_session": 48.48305403999984}
+{"stage": "corpus", "complete": 32, "total": 600, "elapsed_seconds_this_session": 48.73265135474503}
+{"stage": "corpus", "complete": 48, "total": 600, "elapsed_seconds_this_session": 48.96848296513781}
+{"stage": "corpus", "complete": 64, "total": 600, "elapsed_seconds_this_session": 49.20879207504913}
+{"stage": "corpus", "complete": 80, "total": 600, "elapsed_seconds_this_session": 49.44945225911215}
+{"stage": "corpus", "complete": 96, "total": 600, "elapsed_seconds_this_session": 49.68872699001804}
+{"stage": "corpus", "complete": 112, "total": 600, "elapsed_seconds_this_session": 49.933503180742264}
+{"stage": "corpus", "complete": 128, "total": 600, "elapsed_seconds_this_session": 50.25392106780782}
+{"stage": "corpus", "complete": 144, "total": 600, "elapsed_seconds_this_session": 50.499643387738615}
+{"stage": "corpus", "complete": 160, "total": 600, "elapsed_seconds_this_session": 50.844945521093905}
+{"stage": "corpus", "complete": 176, "total": 600, "elapsed_seconds_this_session": 51.1924345549196}
+{"stage": "corpus", "complete": 192, "total": 600, "elapsed_seconds_this_session": 51.54208436701447}
+{"stage": "corpus", "complete": 208, "total": 600, "elapsed_seconds_this_session": 51.90051920991391}
+{"stage": "corpus", "complete": 224, "total": 600, "elapsed_seconds_this_session": 52.24825551500544}
+{"stage": "corpus", "complete": 240, "total": 600, "elapsed_seconds_this_session": 52.59833279205486}
+{"stage": "corpus", "complete": 256, "total": 600, "elapsed_seconds_this_session": 52.94524913979694}
+{"stage": "corpus", "complete": 272, "total": 600, "elapsed_seconds_this_session": 53.30353610077873}
+{"stage": "corpus", "complete": 288, "total": 600, "elapsed_seconds_this_session": 53.65999095514417}
+{"stage": "corpus", "complete": 304, "total": 600, "elapsed_seconds_this_session": 75.74325395701453}
+{"stage": "corpus", "complete": 320, "total": 600, "elapsed_seconds_this_session": 94.85445985989645}
+{"stage": "corpus", "complete": 336, "total": 600, "elapsed_seconds_this_session": 112.82685432070866}
+{"stage": "corpus", "complete": 352, "total": 600, "elapsed_seconds_this_session": 130.43193527078256}
+{"stage": "corpus", "complete": 368, "total": 600, "elapsed_seconds_this_session": 150.75565928779542}
+{"stage": "corpus", "complete": 384, "total": 600, "elapsed_seconds_this_session": 176.137410110794}
+{"stage": "corpus", "complete": 400, "total": 600, "elapsed_seconds_this_session": 200.8867828170769}
+{"stage": "corpus", "complete": 416, "total": 600, "elapsed_seconds_this_session": 218.320633568801}
+{"stage": "corpus", "complete": 432, "total": 600, "elapsed_seconds_this_session": 237.55889041582122}
+{"stage": "corpus", "complete": 448, "total": 600, "elapsed_seconds_this_session": 255.4931287909858}
+{"stage": "corpus", "complete": 464, "total": 600, "elapsed_seconds_this_session": 284.0757449087687}
+{"stage": "corpus", "complete": 480, "total": 600, "elapsed_seconds_this_session": 309.0013130130246}
+{"stage": "corpus", "complete": 496, "total": 600, "elapsed_seconds_this_session": 336.49118045484647}
+{"stage": "corpus", "complete": 512, "total": 600, "elapsed_seconds_this_session": 366.126953470055}
+{"stage": "corpus", "complete": 528, "total": 600, "elapsed_seconds_this_session": 393.3018788038753}
+{"stage": "corpus", "complete": 544, "total": 600, "elapsed_seconds_this_session": 416.1912226108834}
+{"stage": "corpus", "complete": 560, "total": 600, "elapsed_seconds_this_session": 446.48208701005206}
+{"stage": "corpus", "complete": 576, "total": 600, "elapsed_seconds_this_session": 474.46805860381573}
+{"stage": "corpus", "complete": 592, "total": 600, "elapsed_seconds_this_session": 506.00537131214514}
+{"stage": "corpus", "complete": 600, "total": 600, "elapsed_seconds_this_session": 530.4569464060478}

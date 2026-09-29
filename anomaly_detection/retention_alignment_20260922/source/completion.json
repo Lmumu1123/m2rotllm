@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "queries": 38011,
+  "cached_reference_pairs": 114033,
+  "weights_and_buffers_unchanged": true,
+  "source_head_reconstruction_max_abs_error": 1.1444091796875e-05,
+  "elapsed_seconds": 12.817161772865802,
+  "cache_sha256": "1a2cd2b385b49caa30a0118a590a44831c2a760f840c3be2b981963fb3335cec",
+  "metadata_sha256": "eaa1a21b6faefa1c81c1b6cf6d09f409b61d64efe9dfb7072f9733367bab438c"
+}

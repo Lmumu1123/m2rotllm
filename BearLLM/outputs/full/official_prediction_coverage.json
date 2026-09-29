@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "models": {
+    "official": {
+      "main": {
+        "pairs": 368376,
+        "unique_queries": 122792,
+        "sha256": "23373a08b5f042dfe7aed07d94bd327d28bf0ce064f752662cf95fa97922c004",
+        "metadata_and_seeded_references": "passed",
+        "probabilities_and_aggregate_counts": "passed"
+      },
+      "fallback": {
+        "pairs": 38172,
+        "unique_queries": 12724,
+        "sha256": "9dfc1426559afee57931ed1ac687f6f16289f95a5ea61f0e14357ba6c2d64846",
+        "metadata_and_seeded_references": "passed",
+        "probabilities_and_aggregate_counts": "passed"
+      },
+      "all_unique_queries": 135516,
+      "disjoint_union_matches_all_metadata": true,
+      "heldout": {
+        "count": 12279,
+        "sha256": "66bcca905f91343efbc47f9d97b2483f83d3593968e759007be018ab28c2b2fb",
+        "generation_fields_and_aggregate_metrics": "passed"
+      },
+      "corpus": {
+        "count": 600,
+        "sha256": "ba65d9851f8498f822fde4b62aa3f4ed35b8b3e2402040193174e05375ab7816",
+        "generation_fields_and_aggregate_metrics": "passed"
+      }
+    }
+  },
+  "metadata_sha256": "87134ccb87c93646b8613251bca712b4afb8910baf32d049c263dc8ab9e96ef0",
+  "training_pairs_sha256": "0ad21e94140f9866f046ef6a0e0b081e64a88f53a638ad15c84aadaed1b4455f"
+}

@@ -1,0 +1,15 @@
+{
+  "n_tests": 7,
+  "status": "passed",
+  "test_file": "test_features.py",
+  "validated_invariants": [
+    "frequency_of_known_250_Hz_modulation",
+    "band_integration_of_constant_spectrum",
+    "global_amplitude_scaling_shape_invariance",
+    "complex_conjugation_power_invariance",
+    "independent_frame_phase_rotation_invariance",
+    "invalid_frame_exclusion_without_cross_gap_join",
+    "explicit_zero_fallback_for_fully_unobservable_window"
+  ],
+  "command": "/home/huangyating/miniconda3/envs/m2vllm/bin/python test_features.py"
+}
